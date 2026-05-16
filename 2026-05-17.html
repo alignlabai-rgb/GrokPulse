@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokPulse | 2026-05-17 AIトレンド Daily Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+        .grok-gradient { background: linear-gradient(135deg, #00f5ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-header { font-size: 2.5rem; line-height: 1.1; font-weight: 700; }
+        .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s; }
+        .trend-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .digest-item { transition: all 0.2s; }
+        .expert-card { transition: all 0.3s; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- Navbar -->
+    <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                </div>
+                <div>
+                    <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
+                    <span class="text-xs text-zinc-500 ml-1">Daily Edition • 2026-05-17</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-3">
+                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="px-4 py-2 text-sm border border-zinc-700 hover:bg-zinc-900 rounded-2xl flex items-center gap-x-2 transition-all">
+                    <i class="fab fa-github"></i> <span>GitHub</span>
+                </a>
+                <a href="index.html" class="px-4 py-2 bg-white text-zinc-900 text-sm font-medium rounded-2xl flex items-center gap-x-2 hover:bg-zinc-100 transition-all">
+                    <span>5月16日版を見る</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
+        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-zinc-900 rounded-3xl text-sm mb-6 border border-zinc-800">
+            <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+            <span class="text-emerald-400 font-medium">LIVE • 2026年5月17日時点のリアルタイムデータ</span>
+        </div>
+        
+        <h1 class="font-grotesk text-6xl md:text-7xl font-semibold tracking-tighter mb-4">GrokPulse</h1>
+        <p class="text-2xl md:text-3xl font-light tracking-tight text-zinc-400 mb-2">2026年5月17日 Daily Edition</p>
+        <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-8">
+            Xとウェブから最新AIトレンドをGrokが解析・ユーモア要約。<br>Agentic AIの信頼性問題が今日のホットトピック！
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#digest" class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-3xl flex items-center justify-center gap-x-3 hover:scale-[1.02] transition-all text-lg">
+                <span>今日のGrokDigestを読む</span> <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="index.html" class="px-8 py-4 border border-zinc-700 hover:bg-zinc-900 rounded-3xl flex items-center justify-center gap-x-3 text-lg transition-all">
+                <span>昨日（5/16）版を見る</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="max-w-5xl mx-auto px-6 pb-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                <div class="text-emerald-400 text-sm font-medium">TRENDING</div>
+                <div class="text-3xl font-semibold mt-1">Agentic AI Reliability</div>
+                <div class="text-zinc-500 text-sm mt-1">Microsoft研究で長時間ワークフロー問題浮上</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                <div class="text-emerald-400 text-sm font-medium">HOT</div>
+                <div class="text-3xl font-semibold mt-1">Google Android Agentic</div>
+                <div class="text-zinc-500 text-sm mt-1">Gemini Intelligenceでアプリ横断自動化</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                <div class="text-emerald-400 text-sm font-medium">MODEL</div>
+                <div class="text-3xl font-semibold mt-1">GPT-5.5 / Claude</div>
+                <div class="text-zinc-500 text-sm mt-1">継続的なリリースと実用化</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                <div class="text-emerald-400 text-sm font-medium">GROK PULSE</div>
+                <div class="text-3xl font-semibold mt-1">Daily Update</div>
+                <div class="text-zinc-500 text-sm mt-1">Historical editions accumulating!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div id="trendmap" class="max-w-7xl mx-auto px-6 py-12 border-t border-zinc-800">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <div class="flex items-center gap-x-3">
+                    <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
+                    <h2 class="section-header">TrendMap</h2>
+                </div>
+                <p class="text-zinc-400 mt-2">X上のAI関連キーワードを時系列でマッピング。今日の焦点は「Agenticの信頼性」。</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="text-cyan-400 text-sm font-medium">#1 RISING</div>
+                        <div class="text-2xl font-semibold mt-1">Agentic AI Reliability</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-emerald-400 text-2xl font-bold">急浮上</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-sm text-zinc-400">
+                    MicrosoftのDELEGATE-52研究で、長時間ワークフローでAIがドキュメントを25%腐らせる問題が明らかに。Agenticツールでも改善せず。
+                </div>
+                <div class="mt-4 text-xs text-amber-400">Grok: 「便利だけど、君の資料を静かに溶かしてるかも…人間チェック必須だぜ」</div>
+            </div>
+
+            <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="text-violet-400 text-sm font-medium">#2 HOT</div>
+                        <div class="text-2xl font-semibold mt-1">Google Android Agentic</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-sm text-zinc-400">
+                    GoogleがAndroidにGemini Intelligenceを投入。アプリを横断したマルチステップタスク自動化、コンテキスト理解型エージェント機能が拡大。
+                </div>
+            </div>
+
+            <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="text-amber-400 text-sm font-medium">#3 CONTINUING</div>
+                        <div class="text-2xl font-semibold mt-1">Agentic AI 全般</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-sm text-zinc-400">
+                    Amazon Alexaのshopping agent進化、Metaのagentic assistantなど、消費者・企業両方でagentic機能の実用化が加速中。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div id="digest" class="max-w-7xl mx-auto px-6 py-12 bg-zinc-900/50 border-y border-zinc-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
+                <h2 class="section-header">GrokDigest</h2>
+            </div>
+            <p class="text-zinc-400 mb-8">最新ニュースをGrokらしい皮肉とユーモアでサクッと消化。</p>
+
+            <div class="space-y-6">
+                <!-- New Item 1: Microsoft -->
+                <div class="digest-item bg-zinc-950 border border-zinc-800 rounded-3xl p-7">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-9 h-9 bg-red-500/10 text-red-400 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-xl">Microsoft研究: AIが長時間ワークフローでドキュメントを「腐らせる」</h3>
+                                <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl">2026/5頃</span>
+                            </div>
+                            <p class="mt-3 text-zinc-300">
+                                DELEGATE-52ベンチマークで、 frontierモデルでも長時間（20インタラクション）のドキュメント編集で平均25%の内容が失われたり破壊されたりする。Agenticツールを使っても改善せず。Python以外は特に厳しい結果。
+                            </p>
+                            <div class="mt-4 p-4 bg-zinc-900 rounded-2xl text-sm border-l-4 border-red-400">
+                                <span class="font-medium text-red-400">Grokのコメント：</span><br>
+                                「『任せておけ』ってやったら、君の大事な資料が静かに溶けてた…ってオチ。短いタスクなら強いけど、長丁場はまだ人間の監視が必須だな。企業で本格導入するなら要注意だぜ。」
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Item 2: Google Android -->
+                <div class="digest-item bg-zinc-950 border border-zinc-800 rounded-3xl p-7">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-9 h-9 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-xl">Google、Androidに本格Agentic AI「Gemini Intelligence」投入</h3>
+                            </div>
+                            <p class="mt-3 text-zinc-300">
+                                アプリを横断してマルチステップタスクを自動実行。フォーム入力、買い物リストの自動処理、コンテキストを理解した提案など。PixelやSamsung新機種から順次展開。
+                            </p>
+                            <div class="mt-4 p-4 bg-zinc-900 rounded-2xl text-sm border-l-4 border-blue-400">
+                                <span class="font-medium text-blue-400">Grokのユーモア：</span><br>
+                                「スマホが勝手に買い物してくれたら便利だけど、『また勝手に高級ステーキ買ってた』ってなる日が来そう。文脈理解は進んでるみたいだな。」
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="digest-item bg-zinc-950 border border-zinc-800 rounded-3xl p-7">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-9 h-9 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-xl">Agentic AIの実用化が消費者側でも加速</h3>
+                            </div>
+                            <p class="mt-3 text-zinc-300">
+                                AmazonがAlexaをpersistent shopping agentに強化。中国AlibabaもTaobao/Tmallでagenticショッピング統合を準備中。日常の買い物がAIに任せられる時代へ。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div id="echo" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex items-center gap-x-3 mb-6">
+            <i class="fas fa-comments text-3xl text-amber-400"></i>
+            <h2 class="section-header">ExpertEcho</h2>
+        </div>
+        <p class="text-zinc-400 max-w-3xl mb-8">複数視点で深掘り。今日の議題は「Agentic AIは信頼して任せられるのか？」</p>
+
+        <div class="mb-4">
+            <div class="inline-flex items-center px-4 py-2 bg-zinc-900 rounded-3xl text-sm border border-zinc-700">
+                <span class="font-medium">今日の議題：</span> <span class="ml-2 text-amber-400">「Agentic AIの信頼性問題 — 長時間ワークフローで本当に使えるのか？」</span>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="expert-card bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center"><i class="fas fa-rocket text-white"></i></div>
+                    <div><div class="font-semibold">Optimist Agent</div><div class="text-xs text-emerald-400">推進派</div></div>
+                </div>
+                <div class="text-sm text-zinc-300">
+                    「DELEGATE-52はストレス テスト。実際の短いタスクや構造化されたワークフローではすでに十分実用的。ツールと組み合わせで改善し、Pythonなどのドメインではすでにready。生産性向上の恩恵は大きい。」
+                </div>
+            </div>
+
+            <div class="expert-card bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <div class="w-8 h-8 bg-red-500 rounded-2xl flex items-center justify-center"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                    <div><div class="font-semibold">Skeptic Agent</div><div class="text-xs text-red-400">慎重派</div></div>
+                </div>
+                <div class="text-sm text-zinc-300">
+                    「25%の内容腐敗は看過できない。サイレントエラーで重要な資料が壊れるリスクを企業が負えるはずがない。長時間・複雑タスクではまだ人間の constant oversight が必須。過度な期待は危険。」
+                </div>
+            </div>
+
+            <div class="expert-card bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center"><i class="fas fa-robot text-white"></i></div>
+                    <div><div class="font-semibold">Grok (中立 + ユーモア)</div><div class="text-xs text-cyan-400">xAI視点</div></div>
+                </div>
+                <div class="text-sm text-zinc-300">
+                    「両方もっとも。短くて明確なタスクならAgentic AIは強力な相棒になるけど、『長時間・重要ドキュメント・曖昧な指示』はまだ危うい。Grokとしては、正直に弱点を伝えて、人間がちゃんとチェックする文化を推奨したい。広告だらけより、信頼できるツールがいいだろ？」
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VisualPulse & Note -->
+    <div id="visual" class="max-w-7xl mx-auto px-6 py-12 border-t border-zinc-800 bg-zinc-900/30">
+        <div class="flex items-center gap-x-3 mb-6">
+            <i class="fas fa-palette text-3xl text-pink-400"></i>
+            <h2 class="section-header">VisualPulse &amp; Daily Series Note</h2>
+        </div>
+        <p class="text-zinc-400 mb-4">Agentic AIの信頼性問題を視覚化。Grok Imagineで「AI agent silently corrupting documents in long workflow, cyberpunk style」みたいなプロンプトでイメージ生成おすすめ。</p>
+        <div class="p-4 bg-zinc-950 border border-zinc-700 rounded-3xl text-sm">
+            <strong>📅 Daily Editions Accumulating:</strong> このリポジトリに日々新しいHTMLを追加中。5月16日版は <a href="index.html" class="text-cyan-400 hover:underline">index.html</a>、今日のものはこのファイル。どんどん溜まっていくアーカイブ形式にしていきます！
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="border-t border-zinc-800 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-6 py-12 text-center">
+            <h3 class="text-2xl font-semibold mb-3">GrokPulse Daily — 5月17日版</h3>
+            <p class="text-zinc-400 mb-6">リアルタイムX解析 + ユーモア + 多角的議論でAIトレンドを楽しく深掘り。</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="px-6 py-3 bg-white text-zinc-900 font-medium rounded-3xl flex items-center gap-x-2 hover:bg-zinc-100">GitHubで見る</a>
+                <a href="index.html" class="px-6 py-3 border border-zinc-700 rounded-3xl flex items-center gap-x-2 hover:bg-zinc-900">昨日版へ</a>
+            </div>
+            <div class="mt-8 text-xs text-zinc-500">Built with Grok • Daily editions accumulating for your addiction 😉</div>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(button) { /* simple copy if needed */ }
+        console.log('%c[GrokPulse 5/17] Daily edition loaded. Content accumulating!', 'color:#64748b');
+    </script>
+</body>
+</html>
