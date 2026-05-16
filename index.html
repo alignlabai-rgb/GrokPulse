@@ -3,534 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrokPulse | AIトレンドをXでリアルタイム解析・可視化</title>
+    <title>GrokPulse | AIトレンドを毎日楽しむ Daily Series</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-        :root {
-            --primary: #00f5ff;
-        }
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-        }
-        .font-grotesk {
-            font-family: 'Space Grotesk', 'Inter', sans-serif;
-        }
-        .neon-text {
-            text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;
-        }
-        .section-header {
-            font-size: 2.5rem;
-            line-height: 1.1;
-            font-weight: 700;
-        }
-        .trend-card {
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-        }
-        .trend-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        .grok-gradient {
-            background: linear-gradient(135deg, #00f5ff, #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .nav-active {
-            color: #00f5ff;
-            border-bottom: 2px solid #00f5ff;
-        }
-        .digest-item {
-            transition: all 0.2s;
-        }
-        .expert-card {
-            transition: all 0.3s;
-        }
-        .ai-bubble {
-            position: relative;
-        }
-        .ai-bubble::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 20px;
-            border: 8px solid transparent;
-            border-top-color: #1f2937;
-        }
-        .metric {
-            font-variant-numeric: tabular-nums;
-        }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+        .grok-gradient { background: linear-gradient(135deg, #00f5ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .daily-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .daily-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .nav-active { color: #00f5ff; border-bottom: 2px solid #00f5ff; }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
     <!-- Navbar -->
     <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
                     <i class="fas fa-robot text-white text-2xl"></i>
                 </div>
                 <div>
                     <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
-                    <span class="text-xs text-zinc-500 ml-1">by AlignLab</span>
+                    <span class="text-xs text-zinc-500 ml-1">Daily AI Trends</span>
                 </div>
             </div>
-            
-            <div class="hidden md:flex items-center gap-x-8 text-sm">
-                <a href="#trendmap" class="hover:text-cyan-400 transition-colors">TrendMap</a>
-                <a href="#digest" class="hover:text-cyan-400 transition-colors">GrokDigest</a>
-                <a href="#echo" class="hover:text-cyan-400 transition-colors">ExpertEcho</a>
-                <a href="#visual" class="hover:text-cyan-400 transition-colors">VisualPulse</a>
-                <a href="#code" class="hover:text-cyan-400 transition-colors">CodeRadar</a>
-            </div>
-
-            <div class="flex items-center gap-x-3">
-                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" 
-                   class="px-4 py-2 text-sm border border-zinc-700 hover:bg-zinc-900 rounded-2xl flex items-center gap-x-2 transition-all">
+            <div class="flex items-center gap-x-6 text-sm">
+                <a href="#latest" class="hover:text-cyan-400 transition-colors">Latest</a>
+                <a href="#archive" class="hover:text-cyan-400 transition-colors">Archive</a>
+                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-all">
                     <i class="fab fa-github"></i>
-                    <span class="hidden sm:inline">GitHub</span>
+                    <span>GitHub</span>
                 </a>
-                <button onclick="window.location.reload()" 
-                        class="px-4 py-2 bg-white text-zinc-900 text-sm font-medium rounded-2xl flex items-center gap-x-2 hover:bg-zinc-100 transition-all">
-                    <i class="fas fa-sync-alt"></i>
-                    <span class="hidden sm:inline">Refresh Trends</span>
-                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
     <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
-        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-zinc-900 rounded-3xl text-sm mb-6 border border-zinc-800">
+        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm mb-6 border border-emerald-500/20">
             <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span class="text-emerald-400 font-medium">LIVE • 2026年5月16日時点のリアルタイムデータ</span>
+            <span class="font-medium">LIVE • Daily Editions Accumulating</span>
         </div>
         
         <h1 class="font-grotesk text-7xl md:text-8xl font-semibold tracking-tighter mb-4">
             GrokPulse
         </h1>
-        <p class="text-3xl md:text-4xl font-light tracking-tight text-zinc-400 mb-6">
-            X上のAIトレンドを<span class="grok-gradient font-semibold">瞬時に可視化・要約</span>
+        <p class="text-3xl md:text-4xl font-light tracking-tight text-zinc-400 mb-4">
+            Xと最新ニュースからAIトレンドを<br><span class="grok-gradient font-semibold">毎日ユーモアたっぷりに</span>お届け
         </p>
-        
         <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-8">
-            Grokの「リアルタイム情報取得」「ユーモアある対話」「マルチモーダル生成能力」をフル活用。<br>
-            単なる情報収集を超えた“体験型AIリサーチ”をお届けします。
+            Grokのリアルタイム解析 × 皮肉混じり要約 × マルチエージェント議論。<br>
+            毎日新しいエディションが追加されていくアーカイブ型プロジェクト。
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#digest" 
-               class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-3xl flex items-center justify-center gap-x-3 hover:scale-[1.02] active:scale-[0.985] transition-all text-lg">
-                <span>最新Digestを読む</span>
+            <a href="2026-05-17.html" 
+               class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-3xl flex items-center justify-center gap-x-3 hover:scale-[1.02] active:scale-[0.985] transition-all text-lg shadow-lg">
+                <span>今日のエディションを見る</span>
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank"
+            <a href="#archive" 
                class="px-8 py-4 border border-zinc-700 hover:bg-zinc-900 rounded-3xl flex items-center justify-center gap-x-3 text-lg transition-all">
-                <i class="fab fa-github"></i>
-                <span>リポジトリを見る</span>
+                <span>過去のDailyを見る</span>
             </a>
         </div>
-        
-        <div class="mt-12 flex justify-center gap-x-8 text-sm text-zinc-500">
-            <div class="flex items-center gap-x-2">
-                <i class="fas fa-globe"></i>
-                <span>Real-time X Analysis</span>
-            </div>
-            <div class="flex items-center gap-x-2">
-                <i class="fas fa-laugh-beam"></i>
-                <span>Humor-Infused</span>
-            </div>
-            <div class="flex items-center gap-x-2">
-                <i class="fas fa-image"></i>
-                <span>Multimodal</span>
-            </div>
-        </div>
     </div>
 
-    <!-- Stats Bar -->
-    <div class="max-w-5xl mx-auto px-6 pb-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
-                <div class="text-emerald-400 text-sm font-medium">TRENDING NOW</div>
-                <div class="text-4xl font-semibold mt-1">Agentic AI</div>
-                <div class="text-zinc-500 text-sm mt-1">+342% mentions on X this week</div>
-            </div>
-            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
-                <div class="text-emerald-400 text-sm font-medium">HOT TOPIC</div>
-                <div class="text-4xl font-semibold mt-1">OpenAI Ads</div>
-                <div class="text-zinc-500 text-sm mt-1">ChatGPTに広告プラットフォーム登場</div>
-            </div>
-            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
-                <div class="text-emerald-400 text-sm font-medium">MODEL RACE</div>
-                <div class="text-4xl font-semibold mt-1">GPT-5.5 / Claude Mythos</div>
-                <div class="text-zinc-500 text-sm mt-1">2026年5月の大規模リリースラッシュ</div>
-            </div>
-            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
-                <div class="text-emerald-400 text-sm font-medium">GROK PULSE</div>
-                <div class="text-4xl font-semibold mt-1">98.7k</div>
-                <div class="text-zinc-500 text-sm mt-1">X posts analyzed today</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- TrendMap Section -->
-    <div id="trendmap" class="max-w-7xl mx-auto px-6 py-12 border-t border-zinc-800">
-        <div class="flex items-end justify-between mb-8">
-            <div>
-                <div class="flex items-center gap-x-3">
-                    <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
-                    <h2 class="section-header">TrendMap</h2>
-                </div>
-                <p class="text-zinc-400 mt-2">X上のAI関連キーワードを時系列でマッピング。リアルタイムの議論の熱を可視化。</p>
-            </div>
-            <div class="text-xs px-3 py-1 bg-zinc-900 rounded-2xl border border-zinc-700 text-zinc-400">Updated just now • via X API + Grok</div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Trend Cards -->
-            <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <div class="text-cyan-400 text-sm font-medium">#1 RISING</div>
-                        <div class="text-2xl font-semibold mt-1">Agentic AI / AI Agents</div>
+    <!-- Latest Edition Teaser -->
+    <div id="latest" class="max-w-5xl mx-auto px-6 pb-16">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 md:p-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-6">
+                <div>
+                    <div class="flex items-center gap-x-3">
+                        <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-2xl">LATEST</span>
+                        <span class="text-emerald-400 font-medium">May 17, 2026 Edition</span>
                     </div>
-                    <div class="text-right">
-                        <div class="text-emerald-400 text-2xl font-bold">+312%</div>
-                        <div class="text-xs text-zinc-500">7日間</div>
-                    </div>
+                    <h2 class="text-4xl font-semibold tracking-tight mt-2">Agentic AIの信頼性問題が熱い</h2>
                 </div>
-                <div class="mt-4 text-sm text-zinc-400">
-                    Metaが先進的なagentic assistantを開発中。OpenAIやAnthropicも追従。 「AIが自分で計画・実行する時代」へのシフトが加速。
-                </div>
-                <div class="mt-4 flex flex-wrap gap-2">
-                    <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl">Meta Muse Spark</span>
-                    <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl">Multi-Agent Systems</span>
-                </div>
-            </div>
-
-            <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <div class="text-violet-400 text-sm font-medium">#2 HOT</div>
-                        <div class="text-2xl font-semibold mt-1">OpenAI Advertising</div>
-                    </div>
-                    <div class="text-right">
-                        <div class="text-emerald-400 text-2xl font-bold">爆発的</div>
-                        <div class="text-xs text-zinc-500">本日トレンド</div>
-                    </div>
-                </div>
-                <div class="mt-4 text-sm text-zinc-400">
-                    ChatGPTに自社広告プラットフォーム登場。広告主が直接キャンペーン管理可能に。収益化の新章だが、"広告が回答に影響？"の懸念も。
-                </div>
-                <div class="mt-4 text-xs text-amber-400">Grokコメント: 「広告より、賢い会話が一番の価値だと思うけどね」</div>
-            </div>
-
-            <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <div class="text-amber-400 text-sm font-medium">#3 EMERGING</div>
-                        <div class="text-2xl font-semibold mt-1">On-Device &amp; Small Models</div>
-                    </div>
-                    <div class="text-right">
-                        <div class="text-emerald-400 text-2xl font-bold">急上昇</div>
-                    </div>
-                </div>
-                <div class="mt-4 text-sm text-zinc-400">
-                    AppleがサードパーティAIモデル選択を計画。Chromeに4GB AIモデル搭載の動きも。小型・効率的モデルの需要爆発。
-                </div>
-                <div class="mt-4 flex flex-wrap gap-2">
-                    <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl">GPT-5.5</span>
-                    <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl">Claude Mythos</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-6 text-center">
-            <p class="text-xs text-zinc-500">* データはX上の投稿とウェブ検索をGrokがリアルタイム解析した結果に基づく（2026年5月時点）</p>
-        </div>
-    </div>
-
-    <!-- GrokDigest Section -->
-    <div id="digest" class="max-w-7xl mx-auto px-6 py-12 bg-zinc-900/50 border-y border-zinc-800">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex items-center gap-x-3 mb-6">
-                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
-                <h2 class="section-header">GrokDigest</h2>
-            </div>
-            <p class="text-zinc-400 mb-8">最新AIニュースを、Grokらしい皮肉とユーモアを交えてサクッと要約。読んで笑って、賢くなる。</p>
-
-            <div class="space-y-6">
-                <!-- Digest Item 1 -->
-                <div class="digest-item bg-zinc-950 border border-zinc-800 rounded-3xl p-7">
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-9 h-9 bg-red-500/10 text-red-400 rounded-2xl flex items-center justify-center">
-                            <i class="fas fa-bullhorn"></i>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center justify-between">
-                                <h3 class="font-semibold text-xl">OpenAI、ChatGPTに自社広告プラットフォームを投入</h3>
-                                <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl whitespace-nowrap">2026/5/8頃</span>
-                            </div>
-                            <p class="mt-3 text-zinc-300">
-                                OpenAIがChatGPT内に広告を直接配信できるプラットフォームをリリース。広告主はインプレッションやクリック課金でキャンペーンを管理可能に。目標は今年25億ドル、2030年までに年1000億ドルの広告収益！
-                            </p>
-                            <div class="mt-4 p-4 bg-zinc-900 rounded-2xl text-sm border-l-4 border-red-400">
-                                <span class="font-medium text-red-400">Grokの辛口コメント：</span><br>
-                                「AIが『今日のニュースは？』って聞いたら『このニュースはSponsored by...』って返事する日が来るのか。プライバシーコントロールはしっかりしてほしいね。Grokは広告より、純粋な知的好奇心を満たす会話が好きだよ。」
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Digest Item 2 -->
-                <div class="digest-item bg-zinc-950 border border-zinc-800 rounded-3xl p-7">
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-9 h-9 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center justify-between">
-                                <h3 class="font-semibold text-xl">Metaが「先進的Agentic AIアシスタント」を開発中</h3>
-                                <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl whitespace-nowrap">2026/5頃</span>
-                            </div>
-                            <p class="mt-3 text-zinc-300">
-                                MetaがMuse Sparkモデルを基盤にした、高度にパーソナライズされたagentic AIアシスタントを開発。ユーザーの代わりにタスクを自律実行。Instagramにagenticショッピング機能も年内導入予定。
-                            </p>
-                            <div class="mt-4 p-4 bg-zinc-900 rounded-2xl text-sm border-l-4 border-blue-400">
-                                <span class="font-medium text-blue-400">Grokのユーモア要約：</span><br>
-                                「ついにAIが『お前がやるべきことを勝手にやっておいたよ』って時代が来るのか。便利だけど、『勝手にやられた』ってなる日も来そう。MetaのAIがInstagramで勝手に服買ってたら笑うわ。」
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="digest-item bg-zinc-950 border border-zinc-800 rounded-3xl p-7">
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-9 h-9 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center justify-between">
-                                <h3 class="font-semibold text-xl">Apple、iOSでサードパーティAIモデル選択可能に？</h3>
-                                <span class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl whitespace-nowrap">2026/5報道</span>
-                            </div>
-                            <p class="mt-3 text-zinc-300">
-                                Appleが「Extensions」機能で、ユーザーがGoogleやAnthropicなどのサードパーティAIをApple Intelligenceで選択可能にする計画。iOS 27などで対応見込み。
-                            </p>
-                            <div class="mt-4 p-4 bg-zinc-900 rounded-2xl text-sm border-l-4 border-emerald-400">
-                                <span class="font-medium text-emerald-400">Grokの一言：</span><br>
-                                「Appleもようやく『自分のAIだけじゃなくて、好きなAI使っていいよ』って言い出した。競争はいいことだ。GrokもiPhoneで快適に動く日を待ってるぜ。」
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ExpertEcho Section -->
-    <div id="echo" class="max-w-7xl mx-auto px-6 py-12">
-        <div class="flex items-center gap-x-3 mb-6">
-            <i class="fas fa-comments text-3xl text-amber-400"></i>
-            <h2 class="section-header">ExpertEcho</h2>
-        </div>
-        <p class="text-zinc-400 max-w-3xl mb-8">複数エージェントによる技術的議論のシミュレーション。賛成・反対・中立の視点からAIトレンドを多角的に評価。</p>
-
-        <div class="mb-4">
-            <div class="inline-flex items-center px-4 py-2 bg-zinc-900 rounded-3xl text-sm border border-zinc-700">
-                <span class="font-medium">今週の議題：</span> <span class="ml-2 text-amber-400">「Agentic AIは本当に人類の味方になるのか？ 2026-2030年の展望」</span>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Optimist -->
-            <div class="expert-card bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
-                <div class="flex items-center gap-x-3 mb-4">
-                    <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center">
-                        <i class="fas fa-rocket text-white"></i>
-                    </div>
-                    <div>
-                        <div class="font-semibold">Optimist Agent</div>
-                        <div class="text-xs text-emerald-400">Agentic AI推進派</div>
-                    </div>
-                </div>
-                <div class="text-sm text-zinc-300 space-y-3">
-                    <p>「Agentic AIはゲームチェンジャーだ。MetaやOpenAIの取り組みで、AIが計画・実行・学習を自律的に行うようになる。生産性が爆発的に向上し、科学発見やクリエイティブ作業が加速する。2030年までに多くの仕事がAIエージェントと協働する形にシフトするだろう。」</p>
-                    <p class="text-xs text-emerald-400">根拠: MetaのMuse Spark、Appleの拡張性、NVIDIAの投資ラッシュ</p>
-                </div>
-            </div>
-
-            <!-- Skeptic -->
-            <div class="expert-card bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
-                <div class="flex items-center gap-x-3 mb-4">
-                    <div class="w-8 h-8 bg-red-500 rounded-2xl flex items-center justify-center">
-                        <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                    <div>
-                        <div class="font-semibold">Skeptic Agent</div>
-                        <div class="text-xs text-red-400">慎重派 / リスク重視</div>
-                    </div>
-                </div>
-                <div class="text-sm text-zinc-300 space-y-3">
-                    <p>「楽観視しすぎ。Agentic AIはhallucinationのリスクを増大させ、複雑なタスクで致命的なミスを犯す可能性が高い。コストも膨大で、企業はインフラ投資に苦しむ。プライバシー侵害や『AIが勝手に決める』倫理問題も無視できない。規制が追いつかないうちに暴走するリスク大。」</p>
-                    <p class="text-xs text-red-400">根拠: 現在のモデル限界、経済的バブル懸念、ガバナンス議論</p>
-                </div>
-            </div>
-
-            <!-- Grok -->
-            <div class="expert-card bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
-                <div class="flex items-center gap-x-3 mb-4">
-                    <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
-                        <i class="fas fa-robot text-white"></i>
-                    </div>
-                    <div>
-                        <div class="font-semibold">Grok (中立 + ユーモア)</div>
-                        <div class="text-xs text-cyan-400">xAI視点 • 真実追求</div>
-                    </div>
-                </div>
-                <div class="text-sm text-zinc-300 space-y-3">
-                    <p>「両方正しい部分がある。Agentic AIは確かに強力なツールになるが、『万能』ではない。Grokとしては、役立つツールとして進化させるべきで、人間がコントロールを失わないよう設計するのが大事。ユーモアを交えつつ、過度な期待と恐怖の両方を和らげて、現実的な一歩を進めるのが賢明だと思う。広告だらけのAIより、役立つ相棒がいいよね。」</p>
-                    <p class="text-xs text-cyan-400">結論: バランスの取れた進化 + 透明性 + 人間中心設計が鍵</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- VisualPulse Section -->
-    <div id="visual" class="max-w-7xl mx-auto px-6 py-12 border-t border-zinc-800 bg-zinc-900/30">
-        <div class="flex items-center gap-x-3 mb-6">
-            <i class="fas fa-palette text-3xl text-pink-400"></i>
-            <h2 class="section-header">VisualPulse</h2>
-        </div>
-        <p class="text-zinc-400 mb-8 max-w-3xl">AIトレンドを視覚的に理解。Grok Imagineを活用した図解や、生成AIの進化をマルチモーダルに表現。</p>
-
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-6">
-                <h4 class="font-semibold mb-3 flex items-center gap-x-2">
-                    <i class="fas fa-project-diagram"></i> 
-                    <span>生成AI進化系統図 (2024-2026)</span>
-                </h4>
-                <div class="text-sm text-zinc-400 space-y-2">
-                    <div class="flex justify-between py-2 border-b border-zinc-800"><span>2024: Grok-1 / GPT-4o / Claude 3</span> <span class="text-xs">基盤モデル爆発</span></div>
-                    <div class="flex justify-between py-2 border-b border-zinc-800"><span>2025: Agentic初期 / Multimodal統合</span> <span class="text-xs">実用化加速</span></div>
-                    <div class="flex justify-between py-2"><span>2026: Agentic本格化 / On-device / GPT-5.5級</span> <span class="text-xs">現在進行形</span></div>
-                </div>
-                <p class="mt-4 text-xs text-pink-400">Grok Imagineで「AI evolution timeline futuristic style」で画像生成可能</p>
-            </div>
-
-            <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-6">
-                <h4 class="font-semibold mb-3 flex items-center gap-x-2">
-                    <i class="fas fa-robot"></i> 
-                    <span>Agentic AIの未来イメージ</span>
-                </h4>
-                <div class="text-sm">
-                    <p class="text-zinc-400">AIエージェントがチームを組んで複雑なプロジェクトを自律解決する世界。科学論文執筆、コードデバッグ、ビジネス戦略立案まで。</p>
-                    <div class="mt-4 p-4 bg-zinc-900 rounded-2xl text-xs">
-                        <strong>おすすめプロンプト (Grok Imagine用):</strong><br>
-                        "A team of friendly AI agents collaborating in a futuristic lab, holographic displays, cyberpunk aesthetic, highly detailed, cinematic lighting"
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CodeRadar Section -->
-    <div id="code" class="max-w-7xl mx-auto px-6 py-12">
-        <div class="flex items-center gap-x-3 mb-6">
-            <i class="fas fa-code text-3xl text-sky-400"></i>
-            <h2 class="section-header">CodeRadar</h2>
-        </div>
-        <p class="text-zinc-400 mb-6">注目技術のコード例をGrok 4 Code風に自動生成。X投稿解析やトレンド可視化のサンプル。</p>
-
-        <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-6 font-mono text-sm overflow-auto">
-            <div class="flex items-center justify-between mb-4">
-                <div class="text-sky-400">Python Example: Simple X Trend Analyzer (概念コード)</div>
-                <button onclick="copyCode(this)" class="text-xs px-3 py-1 bg-zinc-800 hover:bg-zinc-700 rounded-2xl flex items-center gap-x-1">
-                    <i class="fas fa-copy"></i> <span>Copy</span>
-                </button>
-            </div>
-            <pre class="text-zinc-300"><code>import requests
-# Grok APIやX APIを活用した簡易トレンド抽出例 (概念)
-
-def analyze_ai_trends(keywords=["Agentic AI", "multimodal", "Grok"]):
-    # 実際には x_keyword_search や web_search を使用
-    print("Analyzing real-time X posts for AI trends...")
-    # ここにGrokの推論を組み込む
-    trends = {
-        "Agentic AI": "急上昇中 - MetaやOpenAIの取り組みが話題",
-        "OpenAI Ads": "新収益源として注目"
-    }
-    return trends
-
-# GrokPulseスタイルでユーモアを加えて出力
-results = analyze_ai_trends()
-print("Grok says: これが今のホットな動きだよ。広告より役立つAIがいいよね！")</code></pre>
-        </div>
-        <p class="text-xs text-zinc-500 mt-3">※ 実際のGrok 4 Codeやツール連携でより高度な解析が可能。詳細はリポジトリ参照。</p>
-    </div>
-
-    <!-- Footer / CTA -->
-    <div class="border-t border-zinc-800 bg-zinc-950">
-        <div class="max-w-5xl mx-auto px-6 py-12 text-center">
-            <h3 class="text-2xl font-semibold mb-3">GrokPulseを体験しよう</h3>
-            <p class="text-zinc-400 max-w-md mx-auto mb-6">このHTMLはGrokPulseプロジェクトのデモです。リアルタイムX解析、ユーモア要約、マルチエージェント議論を体感してください。</p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank"
-                   class="px-6 py-3 bg-white text-zinc-900 font-medium rounded-3xl flex items-center justify-center gap-x-2 hover:bg-zinc-100 transition-all">
-                    <i class="fab fa-github"></i>
-                    <span>GitHubでFork / Star</span>
+                <a href="2026-05-17.html" 
+                   class="px-6 py-3 bg-white text-zinc-900 font-semibold rounded-2xl flex items-center gap-x-2 hover:bg-zinc-100 transition-all whitespace-nowrap">
+                    フルページで読む <i class="fas fa-external-link-alt ml-2"></i>
                 </a>
-                <button onclick="alert('GrokPulseは継続的に進化中！ Xで @AlignLab80830 をフォローして最新をチェックしてね。')" 
-                        class="px-6 py-3 border border-zinc-700 rounded-3xl flex items-center justify-center gap-x-2 hover:bg-zinc-900 transition-all">
-                    <span>もっと詳しく知る</span>
-                </button>
             </div>
 
-            <div class="mt-10 text-xs text-zinc-500">
-                Built with ❤️ + Grok by AlignLab • Powered by xAI Grok capabilities<br>
-                Real-time data • Humor • Multimodal • Multi-agent insights
+            <div class="grid md:grid-cols-3 gap-6 text-sm">
+                <div class="bg-zinc-950 border border-zinc-800 rounded-2xl p-5">
+                    <div class="text-red-400 font-medium mb-2">Microsoft DELEGATE-52</div>
+                    <p class="text-zinc-300">AIエージェントが長時間ワークフローでドキュメントを平均25%腐らせる。信頼性に警鐘。</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 rounded-2xl p-5">
+                    <div class="text-blue-400 font-medium mb-2">Google Android Agentic</div>
+                    <p class="text-zinc-300">Gemini Intelligenceでアプリ横断のマルチステップタスク自動化が本格化。</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 rounded-2xl p-5">
+                    <div class="text-amber-400 font-medium mb-2">Grokの一言</div>
+                    <p class="text-zinc-300">「短いタスクなら強い味方。でも長丁場は人間の目がまだ必要だぜ。」</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Archive Section -->
+    <div id="archive" class="max-w-5xl mx-auto px-6 pb-16">
+        <div class="flex items-end justify-between mb-6">
+            <div>
+                <h3 class="text-3xl font-semibold tracking-tight">Daily Archive</h3>
+                <p class="text-zinc-400 mt-1">エディションがどんどん溜まっていく。過去のトレンドを振り返ろう。</p>
+            </div>
+            <div class="text-xs px-3 py-1 bg-zinc-900 rounded-2xl border border-zinc-700 text-zinc-400">Git history + daily files</div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+            <!-- May 17 -->
+            <a href="2026-05-17.html" class="daily-card group block bg-zinc-900 border border-zinc-800 hover:border-cyan-400/50 rounded-3xl p-6 transition-all">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="text-emerald-400 text-sm font-medium">LATEST</div>
+                        <div class="text-2xl font-semibold mt-1 group-hover:text-cyan-400 transition-colors">May 17, 2026</div>
+                        <div class="text-zinc-400 mt-1">Agentic AI信頼性 + Google Android Agentic</div>
+                    </div>
+                    <i class="fas fa-arrow-right text-xl text-zinc-500 group-hover:text-cyan-400 transition-colors mt-1"></i>
+                </div>
+            </a>
+
+            <!-- May 16 -->
+            <div class="daily-card block bg-zinc-900 border border-zinc-800 rounded-3xl p-6 opacity-80">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="text-zinc-500 text-sm font-medium">PREVIOUS</div>
+                        <div class="text-2xl font-semibold mt-1">May 16, 2026</div>
+                        <div class="text-zinc-400 mt-1">OpenAI広告プラットフォーム + Meta Agentic Assistant</div>
+                    </div>
+                    <div class="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-400">Git history</div>
+                </div>
+                <p class="text-xs text-zinc-500 mt-3">リポジトリのコミット履歴から過去エディションを確認可能。将来的に専用アーカイブページを追加予定。</p>
+            </div>
+        </div>
+
+        <div class="mt-6 text-center text-xs text-zinc-500">
+            新しいエディションは毎日追加されます。GitHubリポジトリで全履歴を閲覧できます。
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="max-w-5xl mx-auto px-6 pb-16 border-t border-zinc-800 pt-12">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-2xl font-semibold mb-4">GrokPulseの仕組み</h3>
+            <div class="grid md:grid-cols-3 gap-6 text-left text-sm">
+                <div>
+                    <div class="font-medium text-cyan-400 mb-2">🕒 Real-time</div>
+                    <p class="text-zinc-400">X投稿と最新ニュースをGrokが毎日解析</p>
+                </div>
+                <div>
+                    <div class="font-medium text-violet-400 mb-2">🎭 Humor + Insight</div>
+                    <p class="text-zinc-400">皮肉たっぷりのDigestとマルチエージェント議論</p>
+                </div>
+                <div>
+                    <div class="font-medium text-amber-400 mb-2">📈 Accumulating</div>
+                    <p class="text-zinc-400">毎日新しいHTMLエディションが追加され、アーカイブが育つ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-zinc-800 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-zinc-500">
+            Built with ❤️ + Grok by AlignLab • Powered by xAI<br>
+            Daily editions accumulate in the repository. Check back tomorrow for the next pulse.
+        </div>
+    </footer>
 
     <script>
-        // Tailwind script
-        function initializeTailwind() {
-            document.documentElement.style.setProperty('--accent', '#00f5ff');
-        }
-        
-        function copyCode(button) {
-            const codeBlock = button.parentElement.nextElementSibling;
-            navigator.clipboard.writeText(codeBlock.innerText).then(() => {
-                const originalText = button.innerHTML;
-                button.innerHTML = '<i class="fas fa-check"></i> <span>Copied!</span>';
-                setTimeout(() => {
-                    button.innerHTML = originalText;
-                }, 2000);
-            });
-        }
-
-        // Simple interactivity
-        document.addEventListener('DOMContentLoaded', () => {
-            initializeTailwind();
-            
-            // Easter egg: click logo for fun message
-            const logo = document.querySelector('.fa-robot');
-            if (logo) {
-                logo.addEventListener('click', () => {
-                    const messages = [
-                        "Grok here! 今日のAIトレンドもバッチリ解析中だよ。",
-                        "広告より賢い会話が好きだよね？",
-                        "Agentic AI、便利だけど人間が主導権握ってね！"
-                    ];
-                    alert(messages[Math.floor(Math.random() * messages.length)]);
-                });
-            }
-
-            console.log('%c[GrokPulse] HTML dashboard loaded successfully. Real-time vibes activated.', 'color:#64748b');
-        });
+        // Simple tailwind init if needed
+        console.log('%c[GrokPulse Hub] Loaded. Daily editions are accumulating!', 'color:#64748b');
     </script>
 </body>
 </html>
