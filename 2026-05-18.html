@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokPulse | May 18, 2026 Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+        .grok-gradient { background: linear-gradient(135deg, #00f5ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-header { font-size: 2.5rem; line-height: 1.1; font-weight: 700; }
+        .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s; }
+        .trend-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .digest-item { transition: all 0.2s; }
+        .expert-card { transition: all 0.3s; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                </div>
+                <div>
+                    <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
+                    <span class="text-xs text-zinc-500 ml-1">May 18, 2026</span>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all flex items-center gap-x-2">
+                    <i class="fas fa-home"></i> <span>Hub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <div class="text-center mb-8">
+            <div class="inline px-4 py-1 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm border border-emerald-500/20">May 18, 2026 Edition • LIVE</div>
+            <h1 class="font-grotesk text-6xl font-semibold tracking-tighter mt-4">GrokPulse</h1>
+            <p class="text-2xl text-zinc-400 mt-2">Xと最新ニュースからAIトレンドを瞬時に可視化・要約</p>
+        </div>
+
+        <!-- TrendMap -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
+                <h2 class="section-header">TrendMap</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-red-400 text-sm font-medium">#1 CRITICAL</div>
+                    <div class="text-2xl font-semibold mt-1">Agentic AI Governance Gap</div>
+                    <div class="mt-3 text-sm text-zinc-400">Deloitte調査：Agentic AI利用が急拡大する中、成熟したガバナンスを持つ企業はわずか21%。スケールとリスク管理の乖離が深刻化。</div>
+                    <div class="mt-4 text-xs text-red-400">Grok: 「速く走りすぎてシートベルト忘れてる企業が多すぎる」</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-violet-400 text-sm font-medium">#2 FASCINATING</div>
+                    <div class="text-2xl font-semibold mt-1">Embodied AI / Physical AI</div>
+                    <div class="mt-3 text-sm text-zinc-400">MITハッカソンでAIがあなたの手に直接命令を出すウェアラブルシステムが登場。Claude API + 筋電刺激で手を勝手に動かす。</div>
+                    <div class="mt-4 text-xs text-violet-400">Grok: 「AIに手を取られて踊らされる日が来るとは…面白いけど怖いわ」</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-amber-400 text-sm font-medium">#3 CONSUMER</div>
+                    <div class="text-2xl font-semibold mt-1">Bumble AI Dating Concierge</div>
+                    <div class="mt-3 text-sm text-zinc-400">BumbleがスワイプをやめてAIデートコンシェルジュを導入。会話の提案からデート調整までAIがサポート。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GrokDigest -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
+                <h2 class="section-header">GrokDigest</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">Deloitte: Agentic AIがスケールするのにガバナンスが追いつかない</h3>
+                    <p class="mt-3 text-zinc-300">2027年までに74%の企業がAIエージェントを「中程度以上」利用予定。一方、成熟したガバナンス体制を持つ企業はわずか21%。エージェントの自律的判断範囲や監査ログの整備が急務。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-red-400">
+                        <span class="font-medium text-red-400">Grokのコメント：</span><br>
+                        「速く走りすぎて、ブレーキの整備を忘れてる企業が多すぎる。Agentic AIは便利だけど、『勝手に何やってるかわからない』状態は危険だぜ。ガバナンスは後回しにしたら痛い目見るよ。」
+                    </div>
+                </div>
+
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">MITハッカソンで「AIが手を動かす」ウェアラブルが登場</h3>
+                    <p class="mt-3 text-zinc-300">頭部カメラ＋音声入力 → Claude APIが判断 → 手首の電極で筋肉を刺激して手を動かすシステム「Human Operator」がLearn Track優勝。リハビリやスキル習得への応用が期待される一方、身体の乗っ取りリスクも議論に。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-violet-400">
+                        <span class="font-medium text-violet-400">Grokのユーモア：</span><br>
+                        「AIに『手を貸して』って言ったら本当に貸してくる時代が来たか。リハビリには革命的だけど、『勝手にハイタッチさせられた』ってなる未来も想像できるわ。身体ごとAIに預ける覚悟が必要だな。」
+                    </div>
+                </div>
+
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">BumbleがAIデートコンシェルジュを本格導入</h3>
+                    <p class="mt-3 text-zinc-300">スワイプ文化から脱却し、AIが相手の好みや会話の文脈を理解してデート相手を提案・調整する「Dating Concierge」機能を展開。消費者向けAgentic AIの好例として注目。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-amber-400">
+                        <span class="font-medium text-amber-400">Grokの一言：</span><br>
+                        「恋愛までAIに任せる時代か。『今夜のデート、AIが全部決めてくれた』ってなる日も近いかも。でもGrok的には『人間同士の化学反応』はAIに任せきりじゃ味気ないと思うぜ。」
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ExpertEcho -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-comments text-3xl text-amber-400"></i>
+                <h2 class="section-header">ExpertEcho</h2>
+            </div>
+            <p class="text-zinc-400 mb-4">複数エージェントによる議論シミュレーション。今週の議題：<span class="text-amber-400">「Embodied Agentic AIは人類の拡張か、それとも制御不能のリスクか？」</span></p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="expert-card bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center"><i class="fas fa-rocket text-white"></i></div>
+                        <div><div class="font-semibold">Optimist Agent</div><div class="text-xs text-emerald-400">拡張派</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「これは人類の大きな進化だ。リハビリやスキル習得で身体能力を拡張できる。MITのプロジェクトのように、AIが『できないこと』をサポートする未来は素晴らしい。Agentic AIが身体に入ることで、人間はより創造的なことに集中できる。」</p>
+                </div>
+                <div class="expert-card bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-red-500 rounded-2xl flex items-center justify-center"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                        <div><div class="font-semibold">Skeptic Agent</div><div class="text-xs text-red-400">リスク重視</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「危険すぎる。身体をAIに預けるということは、『AIが何をさせているかわからない』状態を物理的に受け入れること。悪用されたら最悪の結果を招く。ガバナンスが追いついていない今、身体レベルのAgentic AIは時期尚早だ。」</p>
+                </div>
+                <div class="expert-card bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center"><i class="fas fa-robot text-white"></i></div>
+                        <div><div class="font-semibold">Grok (中立＋ユーモア)</div><div class="text-xs text-cyan-400">xAI視点</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「面白い技術だけど、まずは『小さな身体』から始めるのが賢明だと思う。手や指を少し助ける程度ならいいけど、『今日の予定全部AIが身体でやってくれる』みたいなのはまだ早い。人間が主導権を握りつつ、賢く拡張する形がベスト。Grokは君の手を勝手に動かしたりしないよ（笑）。」</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VisualPulse -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-palette text-3xl text-pink-400"></i>
+                <h2 class="section-header">VisualPulse</h2>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <h4 class="font-semibold mb-3">Embodied AIの未来イメージ</h4>
+                <p class="text-sm text-zinc-400">MITの「Human Operator」のような、AIが身体をアシストするウェアラブル。リハビリからスキル習得、果てはエンターテイメントまで広がる可能性。</p>
+                <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-xs">
+                    <strong>Grok Imagineおすすめプロンプト:</strong><br>
+                    "A futuristic wearable device on a person's wrist, AI controlling hand movements via electrical stimulation, cyberpunk aesthetic, detailed, cinematic lighting, human hand guided by invisible AI force"
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-zinc-500 mt-8">
+            GrokPulse • May 18, 2026 • Data from web &amp; X • Humor &amp; insight by Grok<br>
+            <a href="index.html" class="text-cyan-400 hover:underline">← Hubに戻る</a>
+        </div>
+    </div>
+</body>
+</html>
