@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokPulse | May 19, 2026 Edition — Google I/O Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+        .grok-gradient { background: linear-gradient(135deg, #00f5ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-header { font-size: 2.5rem; line-height: 1.1; font-weight: 700; }
+        .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s; }
+        .trend-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .digest-item { transition: all 0.2s; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                </div>
+                <div>
+                    <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
+                    <span class="text-xs text-zinc-500 ml-1">May 19, 2026 • Google I/O Day</span>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all flex items-center gap-x-2">
+                    <i class="fas fa-home"></i> <span>Hubに戻る</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <div class="text-center mb-8">
+            <div class="inline px-4 py-1 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm border border-emerald-500/20">May 19, 2026 Edition • Google I/O Keynote Day</div>
+            <h1 class="font-grotesk text-6xl font-semibold tracking-tighter mt-4">GrokPulse</h1>
+            <p class="text-2xl text-zinc-400 mt-2">Xと最新ニュースからAIトレンドを瞬時に可視化・要約</p>
+            <p class="mt-2 text-emerald-400">本日 Google I/O 2026 開催！ Agentic AIの爆発的進化に注目</p>
+        </div>
+
+        <!-- TrendMap -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
+                <h2 class="section-header">TrendMap</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-emerald-400 text-sm font-medium">#1 HOT</div>
+                    <div class="text-2xl font-semibold mt-1">Google I/O 2026 × Agentic Gemini</div>
+                    <div class="mt-3 text-sm text-zinc-400">本日開催のGoogle I/OでGeminiの大幅agenticアップデートが期待大。Android、Search、Workspaceへの深い統合と「Gemini Spark」などの新エージェント機能が注目。</div>
+                    <div class="mt-4 text-xs text-emerald-400">Grok: 「また『革命的』って言ってるけど、今回は本物か？ 楽しみだな」</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-violet-400 text-sm font-medium">#2 RISING</div>
+                    <div class="text-2xl font-semibold mt-1">Agentic AIの現実チェック</div>
+                    <div class="mt-3 text-sm text-zinc-400">StanChart CEOが「低価値の人材をAIで置き換える」と発言。企業でのagentic採用が進む一方、ガバナンスとROIの現実が問われ始めている。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-amber-400 text-sm font-medium">#3 TRENDING</div>
+                    <div class="text-2xl font-semibold mt-1">Multi-Agent Orchestration</div>
+                    <div class="mt-3 text-sm text-zinc-400">単一エージェントから複数エージェントの協調へシフト。企業ワークフローでの実用化が加速中。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GrokDigest -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
+                <h2 class="section-header">GrokDigest</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">Google I/O 2026開幕 — Agentic Geminiが主役？</h3>
+                    <p class="mt-3 text-zinc-300">本日Google I/Oキーノート。Geminiの次世代アップデート、agentic機能の強化、Androidや開発者ツールへの統合が大々的に発表される見込み。開発者たちは「vibe coding」のさらなる進化を期待。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+                        <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
+                        「毎年『今年こそ本物のagenticだ！』って言ってるけど、今回は本当に来るかもな。Googleが本気出したらヤバいことになる。楽しみにしてるぜ。」
+                    </div>
+                </div>
+
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">StanChart CEO「低価値の人材をAIに置き換える」</h3>
+                    <p class="mt-3 text-zinc-300">Standard CharteredのCEOが、AI導入によりバックオフィス業務の50%以上を置き換える可能性を示唆。企業レベルでのagentic AI採用が本格化し、人間とAIの役割分担が現実の議論に。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-red-400">
+                        <span class="font-medium text-red-400">Grokの辛口：</span><br>
+                        「『低価値の人材』って言葉、ちょっとキツイよな。AIが全部やってくれるならいいけど、『低価値』って言われた人たちがどうなるのか、ちゃんとフォローしてほしいわ。ROIだけ chasing してないでくれ。」
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ExpertEcho -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-comments text-3xl text-amber-400"></i>
+                <h2 class="section-header">ExpertEcho</h2>
+            </div>
+            <p class="text-zinc-400 mb-4">Google I/O直前特別議論：<span class="text-amber-400">「Agentic AIはついに本物になるのか？ Google I/O 2026が示す未来」</span></p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center"><i class="fas fa-rocket text-white"></i></div>
+                        <div><div class="font-semibold">Optimist</div><div class="text-xs text-emerald-400">期待派</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「ついに来る。Googleが本気でagenticを推してくるなら、開発者体験が劇的に変わる。Geminiが日常のワークフローを自律的に回す時代が現実になる。I/Oで具体的なデモが見られたら、採用が一気に加速する。」</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-red-500 rounded-2xl flex items-center justify-center"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                        <div><div class="font-semibold">Skeptic</div><div class="text-xs text-red-400">慎重派</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「また hype か。毎年同じことを言ってるけど、現実はガバナンスもセキュリティも追いついていない。StanChartのような発言が出るくらい、企業は『置き換え』に走りすぎ。信頼できるagenticになるにはまだ時間がかかる。」</p>
+                </div>
+                <div class="bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center"><i class="fas fa-robot text-white"></i></div>
+                        <div><div class="font-semibold">Grok</div><div class="text-xs text-cyan-400">バランス派</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「期待はするけど、過度な期待は禁物だな。Google I/Oでいいデモが出たら確かに前進だけど、『これで全部解決』みたいな空気は危ない。人間がちゃんとコントロールできる形のagenticが一番大事。Grokは正直に弱点も伝えるよ。」</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-zinc-500 mt-8">
+            GrokPulse • May 19, 2026 • Google I/O Special • Data from web &amp; X • Humor &amp; insight by Grok<br>
+            <a href="index.html" class="text-cyan-400 hover:underline">← Hubに戻る</a>
+        </div>
+    </div>
+</body>
+</html>
