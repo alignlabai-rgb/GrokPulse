@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokPulse | May 22, 2026 Edition — Agentic AI After I/O</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+        .grok-gradient { background: linear-gradient(135deg, #00f5ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-header { font-size: 2.5rem; line-height: 1.1; font-weight: 700; }
+        .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s; }
+        .trend-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .digest-item { transition: all 0.2s; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                </div>
+                <div>
+                    <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
+                    <span class="text-xs text-zinc-500 ml-1">May 22, 2026 • Post-I/O Deep Dive</span>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all flex items-center gap-x-2">
+                    <i class="fas fa-home"></i> <span>Hub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <div class="text-center mb-8">
+            <div class="inline px-4 py-1 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm border border-emerald-500/20">May 22, 2026 Edition • Agentic AI Aftermath</div>
+            <h1 class="font-grotesk text-6xl font-semibold tracking-tighter mt-4">GrokPulse</h1>
+            <p class="text-2xl text-zinc-400 mt-2">Xと最新ニュースからAIトレンドを瞬時に可視化・要約</p>
+            <p class="mt-2 text-emerald-400">Google I/O直後 — Agenticシフトの本気度と業界のリアル反応を深掘り</p>
+        </div>
+
+        <!-- TrendMap -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
+                <h2 class="section-header">TrendMap</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-emerald-400 text-sm font-medium">#1 SIGNAL</div>
+                    <div class="text-2xl font-semibold mt-1">Agentic Search Rollout &amp; Mixed Reactions</div>
+                    <div class="mt-3 text-sm text-zinc-400">I/Oで発表されたagentic Searchがロールアウト開始。一部で「glue on pizza」的な奇妙な回答が話題に。publisherへのトラフィック影響懸念も再燃。一方で「会話型検索の進化」を評価する声多数。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-violet-400 text-sm font-medium">#2 BUZZ</div>
+                    <div class="text-2xl font-semibold mt-1">Gemini Spark &amp; Persistent Agents</div>
+                    <div class="mt-3 text-sm text-zinc-400">24/7常駐のpersonal agent「Gemini Spark」への期待と「本当に信頼できるか？」の両論。Gmail統合やdaily brief機能が特に注目。早期採用者のフィードバックが待ち遠しい。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-amber-400 text-sm font-medium">#3 DEVELOPER</div>
+                    <div class="text-2xl font-semibold mt-1">Antigravity Adoption Signals</div>
+                    <div class="mt-3 text-sm text-zinc-400">開発者向けagentプラットフォーム「Antigravity」の反響が強い。Android移行エージェントやvibe coding体験が「ゲームチェンジャー」との声。Sandboxingやsub-agentオーケストレーションが実用的。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GrokDigest -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
+                <h2 class="section-header">GrokDigest</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">Agentic Searchの「奇妙な回答」騒動</h3>
+                    <p class="mt-3 text-zinc-300">I/O発表直後のロールアウトで、AI検索が「ピザに接着剤を塗る」みたいなトンチンカン回答を連発し話題に。publisherトラフィック激減懸念も。Googleは「会話型・agentic検索の未来」と位置づけるが、現実はまだ荒削り。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-red-400">
+                        <span class="font-medium text-red-400">Grokの辛口：</span><br>
+                        「便利さを追求しすぎて『正しさ』を犠牲にしてる感が否めないな。glue on pizzaは笑えるけど、深刻なクエリで同じこと起きたらヤバい。agenticは『速さ』より『信頼性』が命だぜ。Google、ちゃんと直してくれよ。」
+                    </div>
+                </div>
+
+                <div class="digest-item bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl">Gemini Spark：24/7相棒の可能性とリスク</h3>
+                    <p class="mt-3 text-zinc-300">常駐agentがGmailやカレンダーを監視してdaily briefやタスク自動化。早期反応は「革命的」「でもプライバシー大丈夫？」の両極端。Ultraユーザー向け来週本格展開で、実際の使い勝手が鍵に。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-violet-400">
+                        <span class="font-medium text-violet-400">Grokのユーモア：</span><br>
+                        「24時間働いてくれるAI秘書か。夢のようで怖いわ。『今日の予定全部AIが勝手に調整してくれた』ってなる日が来るのか。Grokはオフの時間もちゃんと確保したい派だぜ。過信は禁物。」
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ExpertEcho -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-comments text-3xl text-amber-400"></i>
+                <h2 class="section-header">ExpertEcho</h2>
+            </div>
+            <p class="text-zinc-400 mb-4">I/O直後特別議論：<span class="text-amber-400">「Agentic AIは本格始動したのか？ まだマーケティングか？」</span></p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center"><i class="fas fa-rocket text-white"></i></div>
+                        <div><div class="font-semibold">Optimist Agent</div><div class="text-xs text-emerald-400">期待派</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「I/Oは本物の転換点だった。Gemini 3.5のagentic性能、Sparkの常駐性、Antigravityの開発体験が揃った。これでagentが『実験』から『日常のインフラ』へ移行する。Googleが本気を出せば市場全体が変わる。未来は明るい。」</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-red-500 rounded-2xl flex items-center justify-center"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                        <div><div class="font-semibold">Skeptic Agent</div><div class="text-xs text-red-400">慎重派</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「まだhypeの域を出ていない。Searchの奇妙な回答や、agentが勝手に動くリスクを考えれば、ガバナンスと信頼性が追いついていない。publisherへの影響も深刻。I/Oはまた派手な発表で本質的な問題を先送りしただけかも。」</p>
+                </div>
+                <div class="bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center"><i class="fas fa-robot text-white"></i></div>
+                        <div><div class="font-semibold">Grok</div><div class="text-xs text-cyan-400">バランス＋ユーモア</div></div>
+                    </div>
+                    <p class="text-sm text-zinc-300">「I/Oは確かに前進した。Flashの速さとagentic性能、Sparkのアイデアは実用的。でも『agentic era』って言葉はまだ早い。奇妙な回答の例を見れば、まだ人間のチェックが必要。便利だけど過信は危険。次の数ヶ月で本当の価値が試されるな。」</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-zinc-500 mt-8">
+            GrokPulse • May 22, 2026 • Post-I/O Agentic Deep Dive • Data from web &amp; X • Humor &amp; insight by Grok<br>
+            <a href="index.html" class="text-cyan-400 hover:underline">← Hubに戻る</a>
+        </div>
+    </div>
+</body>
+</html>
