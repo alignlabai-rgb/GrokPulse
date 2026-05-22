@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrokPulse | AIトレンドを毎日楽しむ Daily Series</title>
+    <title>GrokPulse | Daily AI Trends Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -11,37 +11,30 @@
         body { font-family: 'Inter', system-ui, sans-serif; }
         .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
         .grok-gradient { background: linear-gradient(135deg, #00f5ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .daily-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .daily-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
     <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
                     <i class="fas fa-robot text-white text-2xl"></i>
                 </div>
                 <div>
                     <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
-                    <span class="text-xs text-zinc-500 ml-1">Daily AI Trends</span>
                 </div>
             </div>
-            <div class="flex items-center gap-x-6 text-sm">
-                <a href="#latest" class="hover:text-cyan-400 transition-colors">Latest</a>
-                <a href="#archive" class="hover:text-cyan-400 transition-colors">Archive</a>
-                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-all">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-            </div>
+            <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
         </div>
     </nav>
 
     <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
         <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm mb-6 border border-emerald-500/20">
             <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span class="font-medium">LIVE • Daily Editions Accumulating</span>
+            <span class="font-medium">LIVE • Daily Snapshots</span>
         </div>
         
         <h1 class="font-grotesk text-7xl md:text-8xl font-semibold tracking-tighter mb-4">
@@ -51,177 +44,74 @@
             Xと最新ニュースからAIトレンドを<br><span class="grok-gradient font-semibold">毎日ユーモアたっぷりに</span>お届け
         </p>
         <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-8">
-            毎日新しいエディションが追加され、過去のトレンドがしっかり残るアーカイブ型プロジェクト。<br>
-            情報はスナップショットとして永続的にアクセス可能。
+            毎日新しいスナップショットが追加されるシンプルなアーカイブ。<br>
+            詳しい内容は各日のページでどうぞ。
         </p>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="2026-05-22.html" 
-               class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-3xl flex items-center justify-center gap-x-3 hover:scale-[1.02] active:scale-[0.985] transition-all text-lg shadow-lg">
-                <span>今日のエディション (5/22) を見る</span>
-                <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="#archive" 
-               class="px-8 py-4 border border-zinc-700 hover:bg-zinc-900 rounded-3xl flex items-center justify-center gap-x-3 text-lg transition-all">
-                <span>過去のDailyアーカイブ</span>
-            </a>
-        </div>
-    </div>
-
-    <div id="latest" class="max-w-5xl mx-auto px-6 pb-12">
-        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-            <div class="flex items-center justify-between mb-4">
-                <div>
-                    <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-2xl">LATEST • May 22, 2026 (Post-I/O Deep Dive)</span>
-                    <h2 class="text-3xl font-semibold mt-2">Agentic AI After I/O：本気度とリアル反応</h2>
+        <!-- Latest -->
+        <div class="max-w-3xl mx-auto mb-12">
+            <div class="bg-zinc-900 border border-emerald-400/60 rounded-3xl p-8 text-left">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-2xl">LATEST • May 22, 2026</span>
+                    <a href="2026-05-22.html" class="text-sm text-emerald-400 hover:underline flex items-center gap-x-1">フルページへ →</a>
                 </div>
-                <a href="2026-05-22.html" class="px-5 py-2.5 bg-white text-zinc-900 font-semibold rounded-2xl text-sm flex items-center gap-x-2 hover:bg-zinc-100">フルで読む →</a>
+                <h2 class="text-2xl font-semibold mb-2">Agentic AI After I/O：本気度とリアル反応</h2>
+                <p class="text-zinc-400 text-sm">I/O直後の業界反応。Agentic Searchの奇妙回答、Gemini Sparkへの期待と懸念、Antigravityの開発者反響を深掘り。</p>
             </div>
-            <div class="text-sm text-zinc-400">I/O直後の業界反応多数。Agentic Searchの奇妙回答騒動、Gemini Sparkへの期待と懸念、Antigravityの開発者反響。agenticシフトの本気度とガバナンス課題が浮き彫りに。</div>
         </div>
     </div>
 
-    <div id="archive" class="max-w-5xl mx-auto px-6 pb-16">
-        <div class="mb-6">
+    <!-- Simple Archive -->
+    <div class="max-w-4xl mx-auto px-6 pb-16">
+        <div class="mb-6 flex items-center justify-between">
             <h3 class="text-3xl font-semibold tracking-tight">Daily Archive</h3>
-            <p class="text-zinc-400 mt-1">過去のエディションがすべて直接アクセス可能。情報は日々のスナップショットとしてしっかり残ります。</p>
+            <span class="text-xs text-zinc-500">全スナップショット（シンプル一覧）</span>
         </div>
 
-        <div class="space-y-4">
-            <!-- May 22 -->
-            <a href="2026-05-22.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-emerald-400/60 hover:border-emerald-400 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">NEW • Post-I/O</div>
-                        <div class="text-2xl font-bold tracking-tighter">22</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-emerald-400 transition-colors">Agentic AI After I/O：本気度とリアル反応</div>
-                        <div class="text-sm text-zinc-400">Search奇妙回答、Spark期待、Antigravity反響</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-emerald-400 group-hover:scale-110 transition-transform"></i>
-            </div>
+        <div id="archive-list" class="space-y-2"></div>
 
-            <!-- May 21 -->
-            <a href="2026-05-21.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">RECENT • Post I/O</div>
-                        <div class="text-2xl font-bold tracking-tighter">21</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">Post Google I/O：Agentic Geminiは本物か？</div>
-                        <div class="text-sm text-zinc-400">I/O反応、Omniのインパクト、ガバナンス懸念</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            </div>
-
-            <!-- May 20 -->
-            <a href="2026-05-20.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">RECENT • I/O Recap</div>
-                        <div class="text-2xl font-bold tracking-tighter">20</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">Google I/O 2026：Agentic Gemini時代の幕開け</div>
-                        <div class="text-sm text-zinc-400">Gemini 3.5/Omni/Spark、Antigravity、Android XR</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            </div>
-
-            <!-- May 19 -->
-            <a href="2026-05-19.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">RECENT • I/O Day</div>
-                        <div class="text-2xl font-bold tracking-tighter">19</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">Google I/O × Agentic Geminiが主役</div>
-                        <div class="text-sm text-zinc-400">Gemini agentic強化期待、企業agentic採用の現実チェック</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            </div>
-
-            <!-- May 18 -->
-            <a href="2026-05-18.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">RECENT</div>
-                        <div class="text-2xl font-bold tracking-tighter">18</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">Agentic Governance + Embodied AI (MIT Hand Control)</div>
-                        <div class="text-sm text-zinc-400">Deloitteガバナンス警鐘、AIが手を動かすウェアラブル、Bumble AIデートコンシェルジュ</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            </div>
-
-            <!-- May 17 -->
-            <a href="2026-05-17.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">RECENT</div>
-                        <div class="text-2xl font-bold tracking-tighter">17</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">Agentic AI信頼性 + Google Android Agentic</div>
-                        <div class="text-sm text-zinc-400">Microsoft DELEGATE-52研究、Androidのマルチステップ自動化</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            </div>
-
-            <!-- May 16 -->
-            <a href="2026-05-16.html" class="daily-card group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-3xl px-6 py-5 transition-all">
-                <div class="flex items-center gap-x-4">
-                    <div class="w-12 text-center">
-                        <div class="text-emerald-400 text-xs font-medium">ARCHIVE</div>
-                        <div class="text-2xl font-bold tracking-tighter">16</div>
-                        <div class="text-xs text-zinc-500 -mt-1">May</div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">OpenAI広告プラットフォーム + Meta Agentic</div>
-                        <div class="text-sm text-zinc-400">ChatGPT広告本格化、Metaの先進的agentic assistant開発</div>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            </div>
-        </div>
-
-        <div class="mt-6 text-center">
-            <p class="text-xs text-zinc-500">エディションは毎日追加されます。すべての過去分がこのサイトから直接閲覧可能です。</p>
-        </div>
-    </div>
-
-    <div class="max-w-5xl mx-auto px-6 pb-12 border-t border-zinc-800 pt-8">
-        <div class="max-w-2xl mx-auto text-center">
-            <h4 class="font-semibold mb-3">運用ルール（これで過去がしっかり残る）</h4>
-            <div class="text-sm text-zinc-400 space-y-1">
-                <p>• 毎日新しい <code>YYYY-MM-DD.html</code> を作成（完全スナップショット）</p>
-                <p>• ハブページのArchiveリストを更新して全エディションを一覧化</p>
-                <p>• 各エディションは独立した美しいページとして永続的にアクセス可能</p>
-            </div>
+        <div class="mt-8 text-center text-xs text-zinc-500">
+            各日の詳しい内容・TrendMap・ExpertEchoなどは個別ページでご覧ください。<br>
+            新しい日は毎日追加されます。
         </div>
     </div>
 
     <footer class="border-t border-zinc-800 bg-zinc-950">
         <div class="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-zinc-500">
-            Built with ❤️ + Grok by AlignLab • Daily snapshots accumulate here.<br>
-            過去の情報もしっかりアクセスできるアーカイブを目指しています。
+            Built with ❤️ + Grok by AlignLab • Simple &amp; maintainable hub<br>
+            詳しい分析は各日のフルページで。
         </div>
     </footer>
+
+    <script>
+        // ここに新しい日を追加するだけ！（1行でOK）
+        const editions = [
+            { date: "2026-05-22", title: "Agentic AI After I/O：本気度とリアル反応", file: "2026-05-22.html" },
+            { date: "2026-05-21", title: "Post Google I/O：Agentic Geminiは本物か？", file: "2026-05-21.html" },
+            { date: "2026-05-20", title: "Google I/O 2026：Agentic Gemini時代の幕開け", file: "2026-05-20.html" },
+            { date: "2026-05-19", title: "Google I/O × Agentic Geminiが主役", file: "2026-05-19.html" },
+            { date: "2026-05-18", title: "Agentic Governance + Embodied AI", file: "2026-05-18.html" },
+            { date: "2026-05-17", title: "Agentic AI信頼性 + Google Android Agentic", file: "2026-05-17.html" },
+            { date: "2026-05-16", title: "OpenAI広告プラットフォーム + Meta Agentic", file: "2026-05-16.html" }
+        ];
+
+        const container = document.getElementById('archive-list');
+        editions.forEach(ed => {
+            const div = document.createElement('a');
+            div.href = ed.file;
+            div.className = 'group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-2xl px-6 py-4 transition-all';
+            div.innerHTML = `
+                <div class="flex items-center gap-x-4">
+                    <div class="w-14 text-center">
+                        <div class="text-2xl font-bold tracking-tighter text-zinc-100">${ed.date.split('-')[2]}</div>
+                        <div class="text-[10px] text-zinc-500 -mt-1">${ed.date.split('-')[1]}/${ed.date.split('-')[0].slice(2)}</div>
+                    </div>
+                    <div class="font-medium text-lg group-hover:text-cyan-400 transition-colors">${ed.title}</div>
+                </div>
+                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
+            `;
+            container.appendChild(div);
+        });
+    </script>
 </body>
 </html>
