@@ -34,7 +34,7 @@
     <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
         <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm mb-6 border border-emerald-500/20">
             <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span class="font-medium">LIVE • Daily Snapshots</span>
+            <span class="font-medium">LIVE • Daily Snapshots • Full Archive</span>
         </div>
         
         <h1 class="font-grotesk text-7xl md:text-8xl font-semibold tracking-tighter mb-4">
@@ -45,7 +45,7 @@
         </p>
         <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-8">
             毎日新しいスナップショットが追加されるシンプルなアーカイブ。<br>
-            詳しい内容は各日のページでどうぞ。
+            詳しい内容は各日のページでどうぞ。過去分も全部見られます！
         </p>
 
         <!-- Latest -->
@@ -61,36 +61,56 @@
         </div>
     </div>
 
-    <!-- Simple Archive -->
+    <!-- Simple Archive - FULL LIST -->
     <div class="max-w-4xl mx-auto px-6 pb-16">
         <div class="mb-6 flex items-center justify-between">
-            <h3 class="text-3xl font-semibold tracking-tight">Daily Archive</h3>
-            <span class="text-xs text-zinc-500">全スナップショット（シンプル一覧）</span>
+            <h3 class="text-3xl font-semibold tracking-tight">Daily Archive <span class="text-sm text-emerald-400">（全履歴）</span></h3>
+            <span class="text-xs text-zinc-500">2026-05-16 〜 2026-06-09 全スナップショット</span>
         </div>
 
         <div id="archive-list" class="space-y-2"></div>
 
         <div class="mt-8 text-center text-xs text-zinc-500">
             各日の詳しい内容・TrendMap・ExpertEchoなどは個別ページでご覧ください。<br>
-            新しい日は毎日追加されます。
+            新しい日は毎日追加されます。過去分も全部残っています！
         </div>
     </div>
 
     <footer class="border-t border-zinc-800 bg-zinc-950">
         <div class="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-zinc-500">
-            Built with ❤️ + Grok by AlignLab • Simple &amp; maintainable hub<br>
+            Built with ❤️ + Grok by AlignLab • Simple &amp; maintainable hub • Full historical archive<br>
             詳しい分析は各日のフルページで。
         </div>
     </footer>
 
     <script>
-        // ここに新しい日を追加するだけ！（1行でOK）
+        // 完全リスト：2026-05-16 から 2026-06-09 まで全部表示！
         const editions = [
             { date: "2026-06-09", title: "Apple Siri AI Reboot & Multi-Model Wave：WWDCとチップ・IPO熱", file: "2026-06-09.html" },
             { date: "2026-06-08", title: "Apple AI Comeback & Chip Alliances：WWDCとメモリ提携", file: "2026-06-08.html" },
             { date: "2026-06-07", title: "Sovereignty, Safety & Agentic Warnings：規制・主権と安全警鐘", file: "2026-06-07.html" },
             { date: "2026-06-06", title: "Sovereignty, Safety & Scaling Realities：規制・主権とagenticコスト", file: "2026-06-06.html" },
-            { date: "2026-06-05", title: "Regulatory Surge & Agentic Reality：規制波とScoutの実装", file: "2026-06-05.html" }
+            { date: "2026-06-05", title: "Regulatory Surge & Agentic Reality：規制波とScoutの実装", file: "2026-06-05.html" },
+            { date: "2026-06-04", title: "Canada AI Strategy & Market Reality：国家戦略とBuild余波", file: "2026-06-04.html" },
+            { date: "2026-06-03", title: "Build Aftermath & Agentic Reality：Build余波とコスト現実", file: "2026-06-03.html" },
+            { date: "2026-06-02", title: "Microsoft Build 2026 Explosion：Agentic全開とIPO熱", file: "2026-06-02.html" },
+            { date: "2026-06-01", title: "Nvidia PC Chip & AI Rally：RTX SparkとBuildプレビュー", file: "2026-06-01.html" },
+            { date: "2026-05-31", title: "New Models & Agentic Push：Claude 4.8 & Microsoft Build", file: "2026-05-31.html" },
+            { date: "2026-05-30", title: "Anthropic Leap & Real-World Pushback：資金調達と社会コスト", file: "2026-05-30.html" },
+            { date: "2026-05-29", title: "Anthropic Surge & AI Realities：資金調達と支出の実態", file: "2026-05-29.html" },
+            { date: "2026-05-28", title: "Vatican AI & Chip Boom：教皇書簡反応とハードウェア急騰", file: "2026-05-28.html" },
+            { date: "2026-05-27", title: "Vatican AI & Chip Boom：教皇書簡反応とハードウェア急騰", file: "2026-05-27.html" },
+            { date: "2026-05-26", title: "Vatican AI Warning & Real-World Risks", file: "2026-05-26.html" },
+            { date: "2026-05-25", title: "Agentic AI & Human Dignity：Vaticanのメッセージと現実", file: "2026-05-25.html" },
+            { date: "2026-05-24", title: "Agentic Era in Action：採用の勢いと現実の壁", file: "2026-05-24.html" },
+            { date: "2026-05-23", title: "Vatican AI & Real-World Ethics：教皇メッセージと実務", file: "2026-05-23.html" },
+            { date: "2026-05-22", title: "Agentic AI Momentum：採用加速と課題", file: "2026-05-22.html" },
+            { date: "2026-05-21", title: "Google I/O Aftermath & Agentic Focus", file: "2026-05-21.html" },
+            { date: "2026-05-20", title: "Google I/O 2026 Deep Dive：Agentic AIの進化", file: "2026-05-20.html" },
+            { date: "2026-05-19", title: "Vatican AI Warning & Global Reactions", file: "2026-05-19.html" },
+            { date: "2026-05-18", title: "Vatican Encyclical & AI Ethics Surge", file: "2026-05-18.html" },
+            { date: "2026-05-17", title: "Early Agentic Trends & Model Releases", file: "2026-05-17.html" },
+            { date: "2026-05-16", title: "GrokPulse Launch & Initial AI Buzz", file: "2026-05-16.html" }
         ];
 
         const container = document.getElementById('archive-list');
