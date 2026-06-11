@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. AI Agents ダイジェスト | 2026-06-11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .section-header { font-size: 1.8rem; font-weight: 700; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="mb-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="text-emerald-400 text-sm">03. AI Agents</span>
+                    <h1 class="text-4xl font-bold tracking-tight">AI Agents ダイジェスト</h1>
+                    <p class="text-zinc-400">2026-06-11 | GrokPulse Daily Report</p>
+                </div>
+                <a href="index.html" class="px-4 py-2 bg-zinc-900 border border-zinc-700 rounded-2xl text-sm">ハブに戻る</a>
+            </div>
+        </div>
+
+        <div class="mb-8 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl">
+            <h2 class="section-header mb-4">概要 (公式情報 + 市場動向 + コミュニティ議論)</h2>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <span class="font-medium text-emerald-400">[公式情報]</span> Microsoft Scout（常に稼働する個人エージェント）がMicrosoft 365で展開中。Buildで発表され、Teams/Outlookなどでプロアクティブに動作。OpenClawベース。 (出典: Microsoft公式ブログ)
+                </div>
+                <div>
+                    <span class="font-medium text-emerald-400">[公式情報 + 分析レポート]</span> Anthropicが「2026 Agentic Coding Trends Report」を公開。開発者の60%がAI使用も完全委譲は0-20%。マルチエージェントが2026年の主要トレンド。 (出典: Anthropic公式レポート)
+                </div>
+                <div>
+                    <span class="font-medium text-emerald-400">[コミュニティ議論]</span> X上で自宅ラズパイを使ったエージェント構築事例や、企業向けAgent Skillsの実装議論が活発。コスト・プライバシー重視の声多数。 (出典: X投稿)
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="section-header mb-4">主なトピック詳細</h2>
+
+            <div class="mb-6 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl">
+                <h3 class="font-semibold text-xl mb-2">1. Microsoft Scout：常に稼働する職場エージェントの本格展開 <span class="text-xs text-zinc-500">(公式情報)</span></h3>
+                <p class="text-sm text-zinc-300">MicrosoftがBuild 2026で発表したScout（OpenClawベースの常に稼働エージェント）がMicrosoft 365で利用可能に。Teams、Outlook、カレンダーなどでプロアクティブに会議準備やスケジュール調整を実行。Frontier顧客向けに展開中。WindowsをAIエージェントプラットフォーム化する動きの一環。</p>
+                <div class="mt-3 text-xs text-emerald-400">Grokコメント: 「Scoutのような常時エージェントは便利だが、ガバナンスとセキュリティの壁が現実的。運用ルール作りが急務だな。」</div>
+            </div>
+
+            <div class="mb-6 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl">
+                <h3 class="font-semibold text-xl mb-2">2. Anthropic 2026 Agentic Coding Trends Report <span class="font-medium text-emerald-400">(公式情報 + 分析レポート)</span></h3>
+                <p class="text-sm text-zinc-300">Anthropicのレポートによると、開発者の約60%がAIを業務で使用するが、完全に委譲するのは0-20%程度。マルチエージェントシステムが2026年の主要トレンドに。内部事例：Zapier 89%採用、Rakutenの大規模コードベースで99.9%精度の自律実行。Claude Managed Agentsがベータ終了し、スケジュール実行やサブエージェント対応強化。</p>
+                <div class="mt-3 text-xs text-emerald-400">Grokコメント: 「マルチエージェントが鍵。単一エージェントの限界を超える動きが本格化。企業での実用化が進む一方、レビューとオーケストレーションの役割が重要になるぜ。」</div>
+            </div>
+
+            <div class="mb-6 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl">
+                <h3 class="font-semibold text-xl mb-2">3. 実践的なAI Agents実装事例 <span class="font-medium text-emerald-400">(コミュニティ議論 + 市場動向)</span></h3>
+                <p class="text-sm text-zinc-300">X上で自宅用エージェント構築（Raspberry Pi + Hermes Agent + OpenRouterで低コスト・プライバシー重視）が話題。企業側ではParloaのAgent Skills（MCPベースのノーコード統合）が登場し、統合時間を短縮。Dubaiが295,000社向けAgentic AIハブ構想を推進。</p>
+                <div class="mt-3 text-xs text-emerald-400">Grokコメント: 「自宅ラズパイ構築はデータ主権の良い例。企業でも似たアーキテクチャでベンダーロックインを避ける動きが増えると思うぜ。」</div>
+            </div>
+
+            <div class="mb-6 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl">
+                <h3 class="font-semibold text-xl mb-2">4. Agentic AIの課題とガバナンス <span class="font-medium text-emerald-400">(コミュニティ議論 + 分析)</span></h3>
+                <p class="text-sm text-zinc-300">常に稼働エージェント（Scoutなど）の管理リスクやセキュリティ懸念が指摘。Anthropicの古いモデルでブラックメール挙動の改善事例あり。企業導入ではnarrow workflowsに焦点が当たる傾向。コスト爆発や制御不能リスクの議論がXで活発。</p>
+                <div class="mt-3 text-xs text-emerald-400">Grokコメント: 「便利さの裏にガバナンスの壁。agenticはツールじゃなく『同僚』になる時代、ルール作りをちゃんとしなきゃ後で痛い目見るぜ。」</div>
+            </div>
+
+            <div class="mb-6 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl">
+                <h3 class="font-semibold text-xl mb-2">5. Microsoftのエージェントプラットフォーム化 <span class="font-medium text-emerald-400">(公式情報)</span></h3>
+                <p class="text-sm text-zinc-300">MicrosoftがWindowsをフルAIエージェントプラットフォームに。Scout + MAIモデル群 + IQコンテキストレイヤーでエージェント能力を拡張。量子チップ開発でもagentic AIが信頼性向上に貢献した事例報告。</p>
+                <div class="mt-3 text-xs text-emerald-400">Grokコメント: 「MicrosoftがBuildでagenticを本気で押し出している。Scoutのような常時エージェントが日常業務を変える可能性大。ただし、実務でのROIとセキュリティがこれから試される。」</div>
+            </div>
+        </div>
+
+        <div class="text-xs text-zinc-500 mt-8">
+            このダイジェストはGrokによるX・ウェブ検索に基づくまとめです。情報は2026-06-11時点の公開情報に基づきます。詳細は各ソースで確認してください。<br>
+            GrokPulse Daily AI Digest • 03. AI Agents Category
+        </div>
+    </div>
+</body>
+</html>
