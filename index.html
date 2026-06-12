@@ -31,84 +31,102 @@
         </div>
     </nav>
 
-    <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
-        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm mb-6 border border-emerald-500/20">
-            <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span class="font-medium">LIVE • Daily Snapshots • Full Archive</span>
+    <div class="max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm mb-4 border border-emerald-500/20">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="font-medium">Daily Categorized AI News</span>
+            </div>
+            <h1 class="font-grotesk text-6xl font-semibold tracking-tighter mb-3">GrokPulse</h1>
+            <p class="text-2xl text-zinc-400">Xから集めたAIニュースを6つのカテゴリで毎日整理</p>
         </div>
-        
-        <h1 class="font-grotesk text-7xl md:text-8xl font-semibold tracking-tighter mb-4">
-            GrokPulse
-        </h1>
-        <p class="text-3xl md:text-4xl font-light tracking-tight text-zinc-400 mb-4">
-            Xと最新ニュースからAIトレンドを<br><span class="grok-gradient font-semibold">毎日ユーモアたっぷりに</span>お届け
-        </p>
-        <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-8">
-            毎日新しいスナップショットが追加されるシンプルなアーカイブ。<br>
-            詳しい内容は各日のページでどうぞ。過去分も全部見られます！
-        </p>
 
-        <!-- Latest -->
-        <div class="max-w-3xl mx-auto mb-12">
-            <div class="bg-zinc-900 border border-emerald-400/60 rounded-3xl p-8 text-left">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-2xl">LATEST • June 11, 2026 • 06. Generative AI & Creative Tools</span>
-                    <a href="2026-06-11-generative-ai-creative-tools.html" class="text-sm text-emerald-400 hover:underline flex items-center gap-x-1">フルページへ →</a>
-                </div>
-                <h2 class="text-2xl font-semibold mb-2">06. Generative AI & Creative Tools ダイジェスト：Apple WWDCとClaude Fable 5の生成革命</h2>
-                <p class="text-zinc-400 text-sm">Apple Siri AI刷新とマルチモデル生成、Claude Fable 5のクリエイティブパワー、マルチモデルエコシステムを網羅。公式情報とコミュニティ議論をバランスよくまとめました。</p>
+        <!-- Today's Digests -->
+        <div class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-3xl font-semibold tracking-tight">今日のダイジェスト <span class="text-base text-emerald-400 font-normal">(2026-06-11)</span></h2>
+                <span class="text-sm text-zinc-500">6カテゴリ更新済み</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- 01 AI -->
+                <a href="daily/2026-06-11/01-ai.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-6 transition-all">
+                    <div class="flex items-center gap-x-3 mb-3">
+                        <span class="text-emerald-400 font-mono text-sm">01</span>
+                        <span class="font-semibold text-xl group-hover:text-emerald-400 transition-colors">AI</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 line-clamp-2">OpenAIトークン価格戦争とIPOラッシュ、規制動向などを深掘り</p>
+                </a>
+
+                <!-- 02 Chinese AI & Tech -->
+                <a href="daily/2026-06-11/02-chinese-ai-tech.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-6 transition-all">
+                    <div class="flex items-center gap-x-3 mb-3">
+                        <span class="text-emerald-400 font-mono text-sm">02</span>
+                        <span class="font-semibold text-xl group-hover:text-emerald-400 transition-colors">Chinese AI &amp; Tech</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 line-clamp-2">中国国内AIチップの進展、Huawei/Baidu戦略、米中摩擦</p>
+                </a>
+
+                <!-- 03 AI Agents -->
+                <a href="daily/2026-06-11/03-ai-agents.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-6 transition-all">
+                    <div class="flex items-center gap-x-3 mb-3">
+                        <span class="text-emerald-400 font-mono text-sm">03</span>
+                        <span class="font-semibold text-xl group-hover:text-emerald-400 transition-colors">AI Agents</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 line-clamp-2">Microsoft Scout展開、Anthropic Agentic Coding Trends、ガバナンス課題</p>
+                </a>
+
+                <!-- 04 Hardware & Physical Tech -->
+                <a href="daily/2026-06-11/04-hardware-physical-tech.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-6 transition-all">
+                    <div class="flex items-center gap-x-3 mb-3">
+                        <span class="text-emerald-400 font-mono text-sm">04</span>
+                        <span class="font-semibold text-xl group-hover:text-emerald-400 transition-colors">Hardware &amp; Physical Tech</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 line-clamp-2">中国国内チップ進展、Nvidiaエコシステム、SpaceX IPO、量子ハードウェア</p>
+                </a>
+
+                <!-- 05 Longevity & Biotech -->
+                <a href="daily/2026-06-11/05-longevity-biotech.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-6 transition-all">
+                    <div class="flex items-center gap-x-3 mb-3">
+                        <span class="text-emerald-400 font-mono text-sm">05</span>
+                        <span class="font-semibold text-xl group-hover:text-emerald-400 transition-colors">Longevity &amp; Biotech</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 line-clamp-2">Longevity biotechへの投資急増、AI駆動老化研究、臨床試験進展</p>
+                </a>
+
+                <!-- 06 Generative AI & Creative Tools -->
+                <a href="daily/2026-06-11/06-generative-ai-creative-tools.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-6 transition-all">
+                    <div class="flex items-center gap-x-3 mb-3">
+                        <span class="text-emerald-400 font-mono text-sm">06</span>
+                        <span class="font-semibold text-xl group-hover:text-emerald-400 transition-colors">Generative AI &amp; Creative Tools</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 line-clamp-2">Apple WWDC生成AI刷新、Claude Fable 5のクリエイティブパワー</p>
+                </a>
             </div>
         </div>
-    </div>
 
-    <!-- Simple Archive - FULL LIST -->
-    <div class="max-w-4xl mx-auto px-6 pb-16">
-        <div class="mb-6 flex items-center justify-between">
-            <h3 class="text-3xl font-semibold tracking-tight">Daily Archive <span class="text-sm text-emerald-400">（全履歴）</span></h3>
-            <span class="text-xs text-zinc-500">2026-05-16 〜 2026-06-11 全スナップショット</span>
+        <!-- Historical Archive -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-semibold tracking-tight mb-6">過去のアーカイブ</h2>
+            <div class="text-sm text-zinc-400">
+                過去の日付のダイジェストは <span class="font-mono">daily/年-月-日/</span> フォルダ内に保存されています。<br>
+                各日の6カテゴリ別レポートが確認できます。
+            </div>
         </div>
 
-        <div id="archive-list" class="space-y-2"></div>
-
-        <div class="mt-8 text-center text-xs text-zinc-500">
-            各日的詳しい内容・TrendMap・ExpertEchoなどは個別ページでご覧ください。<br>
-            新しい日は毎日追加されます。過去分も全部残っています！
+        <div class="text-center">
+            <a href="https://alignlabai-rgb.github.io/ai-news-from-x/" target="_blank" 
+               class="inline-flex items-center gap-x-2 text-xs text-zinc-500 hover:text-zinc-400 transition-colors">
+                <i class="fas fa-external-link-alt"></i>
+                <span>AI News from X（旧サイト / Legacy）</span>
+            </a>
         </div>
     </div>
 
-    <footer class="border-t border-zinc-800 bg-zinc-950">
+    <footer class="border-t border-zinc-800 bg-zinc-950 mt-12">
         <div class="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-zinc-500">
-            Built with ❤️ + Grok by AlignLab • Simple &amp; maintainable hub • Full historical archive<br>
-            詳しい分析は各日のフルページで。
+            Built with ❤️ + Grok by AlignLab • Categorized Daily AI News from X
         </div>
     </footer>
-
-    <script>
-        const editions = [
-            { date: "2026-06-11", title: "06. Generative AI & Creative Tools ダイジェスト：Apple WWDCとClaude Fable 5の生成革命", file: "2026-06-11-generative-ai-creative-tools.html" },
-            { date: "2026-06-11-longevity", title: "05. Longevity & Biotech ダイジェスト：投資シフトとAI駆動老化研究のブレイク", file: "2026-06-11-longevity-biotech.html" },
-            { date: "2026-06-11-hardware", title: "04. Hardware & Physical Tech ダイジェスト：中国国内チップ進展とインフラ投資熱", file: "2026-06-11-hardware-physical-tech.html" },
-            { date: "2026-06-11-ai-agents", title: "03. AI Agents ダイジェスト：Microsoft Scoutとマルチエージェントの進展", file: "2026-06-11-ai-agents.html" },
-            { date: "2026-06-11-chinese", title: "02. Chinese AI & Tech ダイジェスト：中国テック株変動と国内AIチップ進展", file: "2026-06-11-chinese-ai-tech.html" }
-        ];
-
-        const container = document.getElementById('archive-list');
-        editions.forEach(ed => {
-            const div = document.createElement('a');
-            div.href = ed.file;
-            div.className = 'group flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-cyan-400/60 rounded-2xl px-6 py-4 transition-all';
-            div.innerHTML = `
-                <div class="flex items-center gap-x-4">
-                    <div class="w-14 text-center">
-                        <div class="text-2xl font-bold tracking-tighter text-zinc-100">${ed.date.split('-')[2]}</div>
-                        <div class="text-[10px] text-zinc-500 -mt-1">${ed.date.split('-')[1]}/${ed.date.split('-')[0].slice(2)}</div>
-                    </div>
-                    <div class="font-medium text-lg group-hover:text-cyan-400 transition-colors">${ed.title}</div>
-                </div>
-                <i class="fas fa-arrow-right text-xl text-zinc-400 group-hover:text-cyan-400 transition-colors"></i>
-            `;
-            container.appendChild(div);
-        });
-    </script>
 </body>
 </html>
