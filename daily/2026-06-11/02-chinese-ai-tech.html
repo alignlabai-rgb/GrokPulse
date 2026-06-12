@@ -6,57 +6,102 @@
     <title>02. Chinese AI & Tech ダイジェスト | 2026-06-11</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; }
+        .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .trend-card:hover { transform: translateY(-6px); }
+    </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
-    <div class="max-w-4xl mx-auto p-6">
+    <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
         <div class="mb-8">
             <a href="../../index.html" class="text-emerald-400 text-sm hover:underline">&larr; GrokPulseに戻る</a>
-            <div class="mt-4 flex items-center gap-x-3">
+            <div class="mt-4">
                 <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">02</span>
-                <h1 class="text-4xl font-bold tracking-tight">Chinese AI &amp; Tech ダイジェスト</h1>
-            </div>
-            <p class="text-zinc-400 mt-1">2026-06-11 • Xと最新ニュースから</p>
-        </div>
-
-        <div class="mb-10 p-7 bg-zinc-900 border border-zinc-800 rounded-3xl">
-            <h2 class="text-2xl font-semibold mb-4 flex items-center gap-x-2">
-                <i class="fas fa-chart-line text-emerald-400"></i> 
-                <span>概要</span>
-            </h2>
-            <div class="space-y-4 text-sm">
-                <div class="flex gap-3">
-                    <span class="font-medium text-emerald-400 min-w-[90px]">[市場動向]</span>
-                    <span>中国テック株がAI/ハードウェアセクターの売りに押され、ベアマーケットの瀬戸際。Huawei関連チップ株は一部反発も全体として弱含み。</span>
-                </div>
-                <div class="flex gap-3">
-                    <span class="font-medium text-emerald-400 min-w-[90px]">[公式情報]</span>
-                    <span>中国国内AIチップシェアが41%近くまで上昇。Huawei AscendやBaidu KunlunがNvidiaギャップを埋める動きを加速。</span>
-                </div>
+                <h1 class="text-5xl font-bold tracking-tighter mt-2">Chinese AI &amp; Tech ダイジェスト</h1>
+                <p class="text-zinc-400 mt-1">2026-06-11 • Xと最新ニュースから</p>
             </div>
         </div>
 
-        <div class="space-y-8">
-            <div>
-                <h3 class="font-semibold text-xl mb-3">1. 中国国内AIチップの急速な進展</h3>
-                <p class="text-sm text-zinc-300 leading-relaxed">Huaweiが中国AIチップエコシステムのリーダーとして台頭。Ascend 950PRチップの生産拡大（2026年に75万台規模）、SMICとの連携強化。中国国内AIチップシェアが41%近くに上昇（IDCデータ）。</p>
-                <div class="mt-4 p-4 bg-zinc-950 border-l-4 border-emerald-400 rounded-r-2xl text-sm">
-                    <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
-                    「HuaweiのAscendがCUDA互換に近づいているのは重要。米国制裁下での中国の自立努力が実を結び始めているな。ハードウェアの進化がAIの可能性を広げてるぜ。」
-                </div>
+        <!-- TrendMap -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
+                <h2 class="section-header">TrendMap</h2>
             </div>
-
-            <div>
-                <h3 class="font-semibold text-xl mb-3">2. BaiduのAIチップ戦略とロードマップ</h3>
-                <p class="text-sm text-zinc-300 leading-relaxed">BaiduがKunlun AIチップの5年ロードマップを発表（M100 in 2026、M300 in 2027など）。Nvidiaギャップを埋める主要プレイヤーとして位置づけ。アナリストはBaiduチップ売上を2026年に6倍増と予測。</p>
-                <div class="mt-4 p-4 bg-zinc-950 border-l-4 border-emerald-400 rounded-r-2xl text-sm">
-                    <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
-                    「Baiduが国内チップで本気を出しているのは中国AIエコシステムの強み。Nvidia依存脱却の動きがハードウェアレベルで加速しているぜ。」
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-emerald-400 text-sm font-medium mb-1">#1 CHIPS</div>
+                    <div class="text-2xl font-semibold">Domestic Chip Surge</div>
+                    <div class="mt-3 text-sm text-zinc-400">中国国内AIチップシェアが41%近くに上昇。Huawei AscendとBaidu Kunlunが急速に台頭。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-violet-400 text-sm font-medium mb-1">#2 STRATEGY</div>
+                    <div class="text-2xl font-semibold">Baidu &amp; Huawei Push</div>
+                    <div class="mt-3 text-sm text-zinc-400">BaiduがKunlunチップの5年ロードマップを発表。Huaweiが中国AIチップエコシステムをリード。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-amber-400 text-sm font-medium mb-1">#3 TENSION</div>
+                    <div class="text-2xl font-semibold">US-China Tech Friction</div>
+                    <div class="mt-3 text-sm text-zinc-400">米国が中国企業子会社へのAIチップ輸出規制を明確化。中国の国内開発努力がさらに加速。</div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-10 text-xs text-zinc-500">
-            GrokPulse Daily Digest • 02. Chinese AI &amp; Tech • 2026-06-11
+        <!-- GrokDigest -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
+                <h2 class="section-header">GrokDigest</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl mb-3">中国国内AIチップの急速な進展</h3>
+                    <p class="text-sm text-zinc-300">Huaweiが中国AIチップエコシステムのリーダーとして台頭。Ascendチップ生産拡大、SMIC連携強化で国内シェアが41%近くに上昇。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+                        <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
+                        「HuaweiのAscendがCUDA互換に近づいているのは重要。米国制裁下での中国の自立努力が実を結び始めているな。」
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl mb-3">BaiduのAIチップ戦略</h3>
+                    <p class="text-sm text-zinc-300">BaiduがKunlun AIチップの5年ロードマップを発表。Nvidiaギャップを埋める主要プレイヤーとして位置づけ。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+                        <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
+                        「Baiduが国内チップで本気を出しているのは中国AIエコシステムの強み。ハードウェアレベルでNvidia依存脱却が加速しているぜ。」
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ExpertEcho -->
+        <div>
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-comments text-3xl text-amber-400"></i>
+                <h2 class="section-header">ExpertEcho</h2>
+            </div>
+            <p class="text-sm text-zinc-400 mb-4">今日の議論：<span class="text-amber-400">「中国の国内AIチップ戦略は成功するのか？」</span></p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="font-semibold mb-3 text-emerald-400">Optimist Agent</div>
+                    <p class="text-sm text-zinc-300">HuaweiとBaiduの努力により、中国は着実に国内チップ自給率を高めている。長期的に見て技術的自立は確実だ。</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+                    <div class="font-semibold mb-3 text-red-400">Skeptic Agent</div>
+                    <p class="text-sm text-zinc-300">性能面でまだNvidiaに大きく劣り、制裁の影響も継続。国内チップへの完全移行はまだ時間がかかる。</p>
+                </div>
+                <div class="bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
+                    <div class="font-semibold mb-3 text-cyan-400">Grok</div>
+                    <p class="text-sm text-zinc-300">中国の国内チップ努力は本気で、シェアも確実に上がっている。ただ性能とエコシステムの差はまだ大きい。制裁が逆に開発を加速させているのは皮肉だな。実力で追いつくにはまだ時間がかかるけど、方向性は正しいと思うぜ。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-xs text-zinc-500 text-center">
+            GrokPulse • 02. Chinese AI &amp; Tech • 2026-06-11
         </div>
     </div>
 </body>

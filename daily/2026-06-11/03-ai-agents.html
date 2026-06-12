@@ -6,57 +6,102 @@
     <title>03. AI Agents ダイジェスト | 2026-06-11</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; }
+        .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .trend-card:hover { transform: translateY(-6px); }
+    </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
-    <div class="max-w-4xl mx-auto p-6">
+    <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
         <div class="mb-8">
             <a href="../../index.html" class="text-emerald-400 text-sm hover:underline">&larr; GrokPulseに戻る</a>
-            <div class="mt-4 flex items-center gap-x-3">
+            <div class="mt-4">
                 <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">03</span>
-                <h1 class="text-4xl font-bold tracking-tight">AI Agents ダイジェスト</h1>
-            </div>
-            <p class="text-zinc-400 mt-1">2026-06-11 • Xと最新ニュースから</p>
-        </div>
-
-        <div class="mb-10 p-7 bg-zinc-900 border border-zinc-800 rounded-3xl">
-            <h2 class="text-2xl font-semibold mb-4 flex items-center gap-x-2">
-                <i class="fas fa-chart-line text-emerald-400"></i> 
-                <span>概要</span>
-            </h2>
-            <div class="space-y-4 text-sm">
-                <div class="flex gap-3">
-                    <span class="font-medium text-emerald-400 min-w-[90px]">[公式情報]</span>
-                    <span>Microsoft Scout（常に稼働する個人エージェント）がMicrosoft 365で展開中。Buildで発表され、Teams/Outlookなどでプロアクティブに動作。</span>
-                </div>
-                <div class="flex gap-3">
-                    <span class="font-medium text-emerald-400 min-w-[90px]">[公式情報 + 分析レポート]</span>
-                    <span>Anthropicが「2026 Agentic Coding Trends Report」を公開。開発者の60%がAI使用も完全委譲は0-20%。マルチエージェントが2026年の主要トレンド。</span>
-                </div>
+                <h1 class="text-5xl font-bold tracking-tighter mt-2">AI Agents ダイジェスト</h1>
+                <p class="text-zinc-400 mt-1">2026-06-11 • Xと最新ニュースから</p>
             </div>
         </div>
 
-        <div class="space-y-8">
-            <div>
-                <h3 class="font-semibold text-xl mb-3">1. Microsoft Scoutの展開</h3>
-                <p class="text-sm text-zinc-300 leading-relaxed">MicrosoftがBuild 2026で発表したScout（OpenClawベースの常に稼働エージェント）がMicrosoft 365で利用可能に。Teams、Outlook、カレンダーなどでプロアクティブに会議準備やスケジュール調整を実行。Frontier顧客向けに展開中。</p>
-                <div class="mt-4 p-4 bg-zinc-950 border-l-4 border-emerald-400 rounded-r-2xl text-sm">
-                    <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
-                    「Scoutのような常時エージェントは便利だが、ガバナンスとセキュリティの壁が現実的。運用ルール作りが急務だな。」
-                </div>
+        <!-- TrendMap -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-chart-line text-3xl text-cyan-400"></i>
+                <h2 class="section-header">TrendMap</h2>
             </div>
-
-            <div>
-                <h3 class="font-semibold text-xl mb-3">2. Anthropic Agentic Coding Trends Report</h3>
-                <p class="text-sm text-zinc-300 leading-relaxed">Anthropicのレポートによると、開発者の約60%がAIを業務で使用するが、完全に委譲するのは0-20%程度。マルチエージェントシステムが2026年の主要トレンドに。内部事例としてZapier 89%採用、Rakutenの大規模コードベースで99.9%精度の自律実行などが紹介された。</p>
-                <div class="mt-4 p-4 bg-zinc-950 border-l-4 border-emerald-400 rounded-r-2xl text-sm">
-                    <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
-                    「マルチエージェントが鍵。単一エージェントの限界を超える動きが本格化。企業での実用化が進む一方、レビューとオーケストレーションの役割が重要になるぜ。」
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-emerald-400 text-sm font-medium mb-1">#1 SCOUT</div>
+                    <div class="text-2xl font-semibold">Microsoft Scout Launch</div>
+                    <div class="mt-3 text-sm text-zinc-400">MicrosoftがBuildでScout（常に稼働エージェント）を発表。Microsoft 365で本格展開開始。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-violet-400 text-sm font-medium mb-1">#2 REPORT</div>
+                    <div class="text-2xl font-semibold">Anthropic Agentic Report</div>
+                    <div class="mt-3 text-sm text-zinc-400">Anthropicが2026 Agentic Coding Trends Reportを公開。マルチエージェントが主要トレンドに。</div>
+                </div>
+                <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="text-amber-400 text-sm font-medium mb-1">#3 GOVERNANCE</div>
+                    <div class="text-2xl font-semibold">Governance Challenges</div>
+                    <div class="mt-3 text-sm text-zinc-400">常に稼働エージェントの管理リスクとセキュリティ懸念が顕在化。</div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-10 text-xs text-zinc-500">
-            GrokPulse Daily Digest • 03. AI Agents • 2026-06-11
+        <!-- GrokDigest -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-newspaper text-3xl text-violet-400"></i>
+                <h2 class="section-header">GrokDigest</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl mb-3">Microsoft Scoutの展開</h3>
+                    <p class="text-sm text-zinc-300">MicrosoftがBuild 2026で発表したScout（OpenClawベースの常に稼働エージェント）がMicrosoft 365で利用可能に。Teams、Outlookなどでプロアクティブに動作。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+                        <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
+                        「Scoutのような常時エージェントは便利だが、ガバナンスとセキュリティの壁が現実的。運用ルール作りが急務だな。」
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                    <h3 class="font-semibold text-xl mb-3">Anthropic Agentic Coding Trends Report</h3>
+                    <p class="text-sm text-zinc-300">Anthropicのレポートで、開発者の60%がAIを使用するが完全に委譲するのは0-20%程度。マルチエージェントが2026年の主要トレンドになると指摘。</p>
+                    <div class="mt-4 p-4 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+                        <span class="font-medium text-emerald-400">Grokのコメント：</span><br>
+                        「マルチエージェントが鍵。単一エージェントの限界を超える動きが本格化している。企業での実用化が進む一方、レビューとオーケストレーションの役割が重要になるぜ。」
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ExpertEcho -->
+        <div>
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fas fa-comments text-3xl text-amber-400"></i>
+                <h2 class="section-header">ExpertEcho</h2>
+            </div>
+            <p class="text-sm text-zinc-400 mb-4">今日の議論：<span class="text-amber-400">「常に稼働エージェントは本当に実務で使えるのか？」</span></p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="font-semibold mb-3 text-emerald-400">Optimist Agent</div>
+                    <p class="text-sm text-zinc-300">Microsoft Scoutのような常に稼働エージェントは業務効率を劇的に向上させる。マルチエージェントの時代が本格的に始まっている。</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+                    <div class="font-semibold mb-3 text-red-400">Skeptic Agent</div>
+                    <p class="text-sm text-zinc-300">常に稼働エージェントは管理リスクとセキュリティ懸念が大きく、まだ実務で広く使える段階ではない。ガバナンス整備が先だ。</p>
+                </div>
+                <div class="bg-zinc-900 border border-cyan-400/40 rounded-3xl p-6 ring-1 ring-cyan-400/20">
+                    <div class="font-semibold mb-3 text-cyan-400">Grok</div>
+                    <p class="text-sm text-zinc-300">Scoutみたいな常時エージェントは便利だけど、ガバナンスとセキュリティの壁は無視できない。マルチエージェントは確かに次のトレンドだけど、まずはちゃんと運用できるルールを作らないと後で痛い目見るぜ。便利さと制御のバランスが鍵だな。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-xs text-zinc-500 text-center">
+            GrokPulse • 03. AI Agents • 2026-06-11
         </div>
     </div>
 </body>
