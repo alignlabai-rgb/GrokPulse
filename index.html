@@ -7,82 +7,82 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;600&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
         .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
     <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-x-3">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-x-3">
                 <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
                     <i class="fas fa-robot text-white text-2xl"></i>
                 </div>
-                <div>
-                    <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
-                </div>
-            </div>
-            <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
+                <span class="font-grotesk text-3xl font-semibold tracking-tighter">GrokPulse</span>
             </a>
+            <div class="flex items-center gap-2">
+                <a href="archive/index.html" class="hidden sm:inline-flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all">
+                    <i class="fas fa-archive"></i>
+                    <span>Archive</span>
+                </a>
+                <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="inline-flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl text-sm transition-all">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <div class="max-w-5xl mx-auto px-6 pt-12 pb-8">
-        <!-- Header -->
-        <div class="text-center mb-10">
+    <main class="max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <header class="text-center mb-10">
             <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm mb-4 border border-emerald-500/20">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
                 <span class="font-medium">Daily Categorized AI News from X</span>
             </div>
-            <h1 class="font-grotesk text-6xl font-semibold tracking-tighter mb-3">GrokPulse</h1>
-            <p class="text-2xl text-zinc-400">Xから集めたAIニュースを6つのカテゴリで毎日整理</p>
-        </div>
+            <h1 class="font-grotesk text-5xl sm:text-6xl font-semibold tracking-tighter mb-3">GrokPulse</h1>
+            <p class="text-xl sm:text-2xl text-zinc-400">Xから集めたAIニュースを6つのカテゴリで毎日整理</p>
+        </header>
 
-        <!-- Latest Day: 2026-06-12 -->
-        <div class="mb-12">
-            <div class="flex items-center justify-between mb-5 px-1">
+        <section class="mb-12">
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5 px-1">
                 <div>
                     <h2 class="text-3xl font-semibold tracking-tight">最新のダイジェスト</h2>
                     <p class="text-emerald-400 text-sm mt-1 font-mono">2026-06-12</p>
                 </div>
-                <span class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-2xl">6カテゴリ完了</span>
+                <span class="w-fit text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-2xl">6カテゴリ体制</span>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <a href="daily/2026-06-12/01-ai.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/70 rounded-3xl p-6 transition-all hover:-translate-y-0.5">
                     <div class="flex items-center gap-x-3 mb-3"><span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">01</span><span class="font-semibold text-xl group-hover:text-emerald-400">AI</span></div>
-                    <p class="text-sm text-zinc-400">OpenAI/Anthropic IPOラッシュと価格戦争</p>
+                    <p class="text-sm text-zinc-400">OpenAI、Anthropic、主要モデル、AI市場の大きな動き</p>
                 </a>
                 <a href="daily/2026-06-12/02-chinese-ai-tech.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/70 rounded-3xl p-6 transition-all hover:-translate-y-0.5">
                     <div class="flex items-center gap-x-3 mb-3"><span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">02</span><span class="font-semibold text-xl group-hover:text-emerald-400">Chinese AI &amp; Tech</span></div>
-                    <p class="text-sm text-zinc-400">DeepSeek V4と国産チップ争奪戦</p>
+                    <p class="text-sm text-zinc-400">中国AI、半導体、国内テック企業、政策動向</p>
                 </a>
                 <a href="daily/2026-06-12/03-ai-agents.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/70 rounded-3xl p-6 transition-all hover:-translate-y-0.5">
                     <div class="flex items-center gap-x-3 mb-3"><span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">03</span><span class="font-semibold text-xl group-hover:text-emerald-400">AI Agents</span></div>
-                    <p class="text-sm text-zinc-400">Microsoft Agent 365と統制の新局面</p>
+                    <p class="text-sm text-zinc-400">エージェント、業務自動化、AIワークフロー</p>
                 </a>
                 <a href="daily/2026-06-12/04-hardware-physical-tech.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/70 rounded-3xl p-6 transition-all hover:-translate-y-0.5">
                     <div class="flex items-center gap-x-3 mb-3"><span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">04</span><span class="font-semibold text-xl group-hover:text-emerald-400">Hardware &amp; Physical Tech</span></div>
-                    <p class="text-sm text-zinc-400">SpaceX IPOとNvidiaエコシステム拡大</p>
+                    <p class="text-sm text-zinc-400">半導体、ロボティクス、宇宙、フィジカルAI</p>
                 </a>
                 <a href="daily/2026-06-12/05-longevity-biotech.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/70 rounded-3xl p-6 transition-all hover:-translate-y-0.5">
                     <div class="flex items-center gap-x-3 mb-3"><span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">05</span><span class="font-semibold text-xl group-hover:text-emerald-400">Longevity &amp; Biotech</span></div>
-                    <p class="text-sm text-zinc-400">長寿バイオテック投資とAI臨床加速</p>
+                    <p class="text-sm text-zinc-400">長寿、バイオテック、AI創薬、ヘルスケア</p>
                 </a>
                 <a href="daily/2026-06-12/06-generative-ai-creative-tools.html" class="group block bg-zinc-900 border border-zinc-800 hover:border-emerald-400/70 rounded-3xl p-6 transition-all hover:-translate-y-0.5">
                     <div class="flex items-center gap-x-3 mb-3"><span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono rounded-2xl">06</span><span class="font-semibold text-xl group-hover:text-emerald-400">Generative AI &amp; Creative Tools</span></div>
-                    <p class="text-sm text-zinc-400">Apple WWDC生成AI刷新とagentic化</p>
+                    <p class="text-sm text-zinc-400">生成AI、クリエイティブツール、メディア制作</p>
                 </a>
             </div>
-        </div>
+        </section>
 
-        <!-- Previous Multi-Category Days -->
-        <div class="mb-12 px-1">
+        <section class="mb-12 px-1">
             <h3 class="text-xl font-semibold mb-4">過去のダイジェスト（6カテゴリ体制）</h3>
-            
             <div class="mb-6">
                 <div class="flex items-center justify-between mb-3">
                     <span class="font-mono text-emerald-400 text-lg">2026-06-11</span>
@@ -97,35 +97,31 @@
                     <a href="daily/2026-06-11/06-generative-ai-creative-tools.html" class="px-3 py-1.5 text-xs bg-zinc-900 border border-zinc-700 hover:border-emerald-400/60 rounded-2xl transition-colors">06 Generative</a>
                 </div>
             </div>
+            <p class="text-xs text-zinc-500">2026-06-10以前は、1日1本の旧ダイジェストとしてアーカイブに整理しています。</p>
+        </section>
 
-            <p class="text-xs text-zinc-500">※ 06-10以前は1コンテンツ体制です。</p>
-        </div>
-
-        <!-- Past Archives (Updated with link to new archive page) -->
-        <div class="mb-10 px-1">
-            <h3 class="text-xl font-semibold mb-3">過去のアーカイブ</h3>
+        <section class="mb-10 px-1">
+            <h3 class="text-xl font-semibold mb-3">アーカイブ</h3>
             <p class="text-sm text-zinc-400 mb-3">
-                6カテゴリ体制開始以前のダイジェストは、別途アーカイブページにまとめています。<br>
-                より古いコンテンツはGitHubリポジトリの履歴でも確認可能です。
+                2026-05-16から2026-06-10までの旧1本構成ページと、2026-06-11以降の6カテゴリ構成ページを一覧できます。
             </p>
-            <a href="archive/" class="inline-flex items-center gap-x-2 px-5 py-2.5 bg-zinc-900 border border-zinc-700 hover:border-emerald-400/60 rounded-2xl text-sm transition-colors">
+            <a href="archive/index.html" class="inline-flex items-center gap-x-2 px-5 py-2.5 bg-zinc-900 border border-zinc-700 hover:border-emerald-400/60 rounded-2xl text-sm transition-colors">
                 <i class="fas fa-archive"></i>
-                <span>過去のダイジェスト一覧を見る（Archive）</span>
+                <span>アーカイブ一覧を見る</span>
             </a>
-        </div>
+        </section>
 
-        <!-- Legacy -->
-        <div class="text-center pt-6 border-t border-zinc-800">
+        <section class="text-center pt-6 border-t border-zinc-800">
             <a href="https://alignlabai-rgb.github.io/ai-news-from-x/" target="_blank" class="inline-flex items-center gap-x-2 text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
                 <i class="fas fa-external-link-alt"></i>
-                <span>AI News from X（旧サイト / Legacy）</span>
+                <span>AI News from X（旧サイト）</span>
             </a>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer class="border-t border-zinc-800 bg-zinc-950 mt-10">
         <div class="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-zinc-500">
-            Built with ❤️ + Grok by AlignLab • Categorized Daily AI News from X
+            Built with love + Grok by AlignLab • Categorized Daily AI News from X
         </div>
     </footer>
 </body>

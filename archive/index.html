@@ -7,93 +7,141 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;600&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
         .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
     <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-x-3">
-                <a href="https://alignlabai-rgb.github.io/GrokPulse/" class="flex items-center gap-x-3">
-                    <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
-                        <i class="fas fa-robot text-white text-xl"></i>
-                    </div>
-                    <span class="font-grotesk text-2xl font-semibold tracking-tighter">GrokPulse</span>
-                </a>
-            </div>
-            <a href="https://alignlabai-rgb.github.io/GrokPulse/" class="text-sm px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-colors">メインに戻る</a>
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+            <a href="../index.html" class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-xl"></i>
+                </div>
+                <span class="font-grotesk text-2xl font-semibold tracking-tighter">GrokPulse</span>
+            </a>
+            <a href="../index.html" class="text-sm px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-colors">メインに戻る</a>
         </div>
     </nav>
 
-    <div class="max-w-5xl mx-auto px-6 pt-10 pb-16">
-        <div class="mb-8">
+    <main class="max-w-5xl mx-auto px-6 pt-10 pb-16">
+        <header class="mb-8">
             <h1 class="font-grotesk text-4xl font-semibold tracking-tighter">GrokPulse Archive</h1>
-            <p class="text-zinc-400 mt-1">過去のダイジェスト一覧（存在するファイルに直接リンク）</p>
-        </div>
+            <p class="text-zinc-400 mt-1">6カテゴリ体制のダイジェストと、旧1本構成の過去記事をまとめた一覧です。</p>
+        </header>
 
-        <!-- 2026年6月（新体制：6カテゴリ） -->
-        <div class="mb-10">
+        <section class="mb-10">
             <div class="flex items-center gap-x-3 mb-4">
-                <h2 class="text-2xl font-semibold">2026年6月</h2>
-                <span class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-2xl border border-emerald-500/20">6カテゴリ体制</span>
+                <h2 class="text-2xl font-semibold">6カテゴリ体制</h2>
+                <span class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-2xl border border-emerald-500/20">2026-06-11以降</span>
             </div>
 
-            <!-- 06-12 -->
-            <div class="mb-6 bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="font-mono text-xl text-emerald-400">2026-06-12</span>
-                </div>
+            <div class="space-y-4">
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-12</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                        <a href="../daily/2026-06-12/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-12/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-12/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-12/04-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
+                        <a href="../daily/2026-06-12/05-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
+                        <a href="../daily/2026-06-12/06-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
+                    </div>
+                </article>
+
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-11</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                        <a href="../daily/2026-06-11/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-11/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-11/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-11/04-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
+                        <a href="../daily/2026-06-11/05-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
+                        <a href="../daily/2026-06-11/06-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="flex items-center gap-x-3 mb-4">
+                <h2 class="text-2xl font-semibold">2026-06-11 別バージョン</h2>
+                <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-300 rounded-2xl border border-amber-500/20">ルート直下の派生版</span>
+            </div>
+
+            <article class="bg-zinc-900 border border-amber-500/20 rounded-3xl p-6">
+                <p class="text-sm text-zinc-400 mb-4">
+                    日付フォルダ配下の正式版とは別に、ルート直下へ生成された 2026-06-11 の別バージョンです。
+                </p>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                    <a href="../daily/2026-06-12/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
-                    <a href="../daily/2026-06-12/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
-                    <a href="../daily/2026-06-12/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
-                    <a href="../daily/2026-06-12/04-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
-                    <a href="../daily/2026-06-12/05-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
-                    <a href="../daily/2026-06-12/06-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
+                    <a href="../2026-06-11.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                    <a href="../2026-06-11-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                    <a href="../2026-06-11-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                    <a href="../2026-06-11-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
+                    <a href="../2026-06-11-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
+                    <a href="../2026-06-11-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
                 </div>
-            </div>
+            </article>
+        </section>
 
-            <div class="text-xs text-zinc-500 px-1 mb-6">※ 2026-06-11 はメインインデックスで表示しています。</div>
-        </div>
-
-        <!-- 2026年5月〜6月上旬（旧体制：1コンテンツ） -->
-        <div class="mb-8">
+        <section class="mb-10">
             <div class="flex items-center gap-x-3 mb-4">
-                <h2 class="text-2xl font-semibold">2026年5月 〜 6月上旬</h2>
-                <span class="text-xs px-3 py-1 bg-zinc-700 text-zinc-400 rounded-2xl">1コンテンツ体制</span>
+                <h2 class="text-2xl font-semibold">旧1本構成</h2>
+                <span class="text-xs px-3 py-1 bg-zinc-700 text-zinc-300 rounded-2xl">2026-05-16〜2026-06-10</span>
             </div>
 
-            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-2 text-sm">
-                    <a href="../daily/2026-05-16.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-16</a>
-                    <a href="../daily/2026-05-17.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-17</a>
-                    <a href="../daily/2026-05-18.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-18</a>
-                    <a href="../daily/2026-05-19.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-19</a>
-                    <a href="../daily/2026-05-20.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-20</a>
-                    <a href="../daily/2026-05-21.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-21</a>
-                    <a href="../daily/2026-05-22.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-22</a>
-                    <a href="../daily/2026-05-23.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-23</a>
-                    <a href="../daily/2026-05-24.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-24</a>
-                    <a href="../daily/2026-05-25.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-25</a>
-                    <a href="../daily/2026-05-26.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-26</a>
-                    <a href="../daily/2026-05-27.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-27</a>
-                    <a href="../daily/2026-05-28.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-28</a>
-                    <a href="../daily/2026-05-29.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-29</a>
-                    <a href="../daily/2026-05-30.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-30</a>
-                    <a href="../daily/2026-05-31.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-31</a>
-                    <a href="../daily/2026-06-01.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-01</a>
-                    <a href="../daily/2026-06-02.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-02</a>
-                </div>
-                <p class="text-xs text-zinc-500 mt-4">※ 上記の日付でファイルが存在するものは直接リンクしています。存在しない日はGitHub履歴から確認してください。</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <h3 class="text-lg font-semibold mb-3">2026年6月</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-sm">
+                        <a href="../2026-06-10.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-10</a>
+                        <a href="../2026-06-09.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-09</a>
+                        <a href="../2026-06-08.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-08</a>
+                        <a href="../2026-06-07.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-07</a>
+                        <a href="../2026-06-06.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-06</a>
+                        <a href="../2026-06-05.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-05</a>
+                        <a href="../2026-06-04.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-04</a>
+                        <a href="../2026-06-03.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-03</a>
+                        <a href="../2026-06-02.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-02</a>
+                        <a href="../2026-06-01.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-01</a>
+                    </div>
+                </article>
+
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <h3 class="text-lg font-semibold mb-3">2026年5月</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-sm">
+                        <a href="../2026-05-31.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-31</a>
+                        <a href="../2026-05-30.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-30</a>
+                        <a href="../2026-05-29.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-29</a>
+                        <a href="../2026-05-28.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-28</a>
+                        <a href="../2026-05-27.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-27</a>
+                        <a href="../2026-05-26.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-26</a>
+                        <a href="../2026-05-25.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-25</a>
+                        <a href="../2026-05-24.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-24</a>
+                        <a href="../2026-05-23.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-23</a>
+                        <a href="../2026-05-22.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-22</a>
+                        <a href="../2026-05-21.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-21</a>
+                        <a href="../2026-05-20.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-20</a>
+                        <a href="../2026-05-19.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-19</a>
+                        <a href="../2026-05-18.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-18</a>
+                        <a href="../2026-05-17.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-17</a>
+                        <a href="../2026-05-16.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-16</a>
+                    </div>
+                </article>
             </div>
-        </div>
-    </div>
+
+            <p class="text-xs text-zinc-500 mt-4">旧ページは既存URLを維持するため、ルート直下のHTMLへ直接リンクしています。</p>
+        </section>
+    </main>
 
     <footer class="border-t border-zinc-800 bg-zinc-950 py-8">
         <div class="max-w-5xl mx-auto px-6 text-center text-xs text-zinc-500">
-            Built with ❤️ + Grok by AlignLab • <a href="https://alignlabai-rgb.github.io/GrokPulse/" class="hover:text-zinc-400">メインに戻る</a>
+            Built with love + Grok by AlignLab • <a href="../index.html" class="hover:text-zinc-400">メインに戻る</a>
         </div>
     </footer>
 </body>
