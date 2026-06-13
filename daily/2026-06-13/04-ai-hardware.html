@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware & Semiconductors ダイジェスト | 2026-06-13 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware & Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-06-13 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">NVIDIA Blackwellエコシステムが生産デプロイメント期へ<br>GB200 NVL72ラック、Ultraバージョン出荷、ハイパースケーラーcapex爆発</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">エージェント・長時間タスク向けの大規模クラスタが実隕に動き始め、Blackwellの供給ランプとハイパースケーラーの続く投資が構造的デマンドを支えている。CUDAモートとカスタムASICの緩慢な争いも注目。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: GB200 NVL72 Scale -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 SCALE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA GB200 NVL72<br>72ブラックウェルGPUラック、1.4 exaFLOPS</div>
+          <div class="mt-4 text-sm text-zinc-400">データセンタースーパーチップとして72 Blackwell GPUをNVLinkで結合、1.4 exaFLOPS、超帯域バンドウィヅで分散訓練の新パラダイム。ラックレベルでの大規模エージェント・長時間タスク向けクラスタが現実のものに。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i> 
+            <span>テクニカルスペック・ハイパースケーラー話題より</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Blackwell Ultra Shipping -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#02 DEPLOYMENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Blackwell Ultraチップ出荷開始<br>Meta・Microsoft・Oracleへクラスタ配備</div>
+          <div class="mt-4 text-sm text-zinc-400">オリジナルBlackwellより大容量メモリ・高速インファレンスのUltraバージョンがクラウドプロバイダーへ出荷中。IndiaでもSarvam AIが最初のBlackwellクラスタをオンライン化、2027年まで10s of MWスケールを目指す。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-truck"></i> 
+            <span>クラウドプロバイダー話題・主権国クラスタ話題より</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Pricing, Supply & Competition -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 SUPPLY & COMPETITION</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Blackwell供給まだ希少<br>B200 spot $5.98/GPU-hr、カスタムASICの緩慢進化</div>
+          <div class="mt-4 text-sm text-zinc-400">Blackwell B200は供給制限が嚳しく、H100より127%高いspot価格。ハイパースケーラーのcapex爆発が続く一方、Google TPU・Amazon TrainiumなどカスタムASICの競争は進むが年単位の緩慢な侵食。中国輸出制限も収益圧力となる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dollar-sign"></i> 
+            <span>マーケットデータ・分析レポートより</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年6月13日のAI Hardwareは、NVIDIA Blackwell世代が「発表」から「実隕の大規模デプロイ」へ移行した一日であった。GB200 NVL72ラックシステム（72 GPU、1.4 exaFLOPS、NVLink超帯域連携）がデータセンターの新パラダイムとして注目され、Blackwell UltraバージョンがMeta・Microsoft・Oracleへ出荷、IndiaでもSarvam AIが最初のBlackwellクラスタをオンライン化した。エージェント・長時間タスク向けのスケールが現実的になってきた証左である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今、これが起きているのか。ハイパースケーラーのcapexが構造的に続いており、Microsoft・Google・Meta・AmazonがGPU投資を増加している。Blackwellはオリジナルより大容量メモリ・高速インファレンスでエージェントワークロードに適しており、CUDA 20年のソフトエコシステムモートが他プラットフォームへの移行を難しくしている。一方でB200 spot価格はH100より127%高く、供給がまだ希少であることからプリミアム価格が続いている。Google TPU・Amazon TrainiumなどカスタムASICの競争は進んでいるが、年単位での緩慢な侵食であり、中国輸出制限もNVIDIA収益に圧力をかけている。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">ブラックウェルが「まだ金のように高い」のは、モデル性能がエージェント・長時間タスクで真价値を発揮したからだ。FableやKimiが長時間動作で強い世界で、Blackwellがそれを実隕に動かすハードを提供している。しかし、カスタムASICが年かけで競争力を上げ、中国制限が加われば、NVIDIAのプリミアムが永続するかは不明。今は「最強のチップを買う」から「最強のクラスタ・ソフト・パワーを構築できるか」の時代に入った。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">パワー・コストとエージェントスケーリングの新ボトルネック</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">エージェントAIが生産化するにつれ、電力・クーリング・データセンター幅が新たな制約となってきている。Blackwellのagents-per-watt優位性は、エージェントワークロードのスケーリングで優位的であるが、ハイパースケーラーのcapexが続く限り、電力コストが経済性の大きな部分を占めるようになってきた。今後は「チップの性能」だけではなく「クラスタ全体の電力効率・コスト・可用性」が競争力の新な指標となる。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i> 
+            <span>NVIDIAエコシステム関係者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「GB200 NVL72は単にるGPUの集合ではない。ラック全体で分散訓練・インファレンスを高速に回すための新構造だ。エージェントが数日間・数週間動作する世界では、このレベルのバンドウィヅとメモリ幅が決定的に優位。Ultraの出荷でいよいよ生産スケールが見えてきた。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cloud"></i> 
+            <span>ハイパースケーラーインフラ負読</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Blackwellは現在、トレーニング・インファレンスの両方で最もコスト効率が高い選択肢の一つ。ただし供給が希少でspot価格が高すぎるので、自社クラスタの構築とオンプレミスのバランスが重要。Indiaや中東での主権国クラスタ構築も加速している。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i> 
+            <span>カスタムASIC開発者（Google/Amazon観点）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Blackwellの性能とCUDAモートは強いが、我々のTPU・Trainiumは特定ワークロード（トレーニング・インファレンス）でコスト効率を追いつつある。年単位での進化は緩やかだが、大規模ハイパースケーラーは多層的なハードウェアポートフォリオを持つ方向である。完全依存は風险が大きい。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>マーケットアナリスト / 供給チェーン</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Blackwellは供給制限が嚳しい限り、プリミアム価格が続いている。しかし生産ランプが進めば2027年までに価格が累進的に下落する可能性がある。中国輸出制限の影響で、アジア・中東の主権国クラスタ需要が増えているのも趣味深い。グローバルでの分散化が進む。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i> 
+            <span>電力・エネルギー・データセンター専門家</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エージェントAIのスケーリングで、電力コストが経済性の大半を占めるようになってきた。Blackwellのagents-per-watt優位性は強いが、クラスタ全体の電力効率・クーリング効率が次の競争軸になる。データセンター幅の制約が、新たなボトルネックとして現在化している。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe"></i> 
+            <span>主権国・グローバル適用者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「IndiaのSarvam AIがBlackwellクラスタをオンライン化したのは象徴的。米国モデル制限の中でも、主権国・グローバルプレイヤーがBlackwellを採用して自立的なスケールを押し进めている。ハードウェアは現在、米国企業の強いモートが残るが、ソフト・クラウド・主権国クラスタの競争が今後の関鍵になる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware & Semiconductors • 2026-06-13 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿、ハイパースケーラー話題、技術スペック・マーケットデータ（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-06-13', 'color:#10b981');
+  </script>
+</body>
+</html>
