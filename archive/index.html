@@ -7,19 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;600&display=swap');
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .font-grotesk { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
-    <nav class="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <nav class="sticky top-0 z-50 bg-zinc-950/90 backdrop-blur border-b border-zinc-800">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
             <a href="../index.html" class="flex items-center gap-x-3">
-                <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-500 flex items-center justify-center">
                     <i class="fas fa-robot text-white text-xl"></i>
                 </div>
-                <span class="font-grotesk text-2xl font-semibold tracking-tighter">GrokPulse</span>
+                <span class="font-display text-2xl font-semibold tracking-tighter">GrokPulse</span>
             </a>
             <a href="../index.html" class="text-sm px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-colors">メインに戻る</a>
         </div>
@@ -27,20 +27,38 @@
 
     <main class="max-w-5xl mx-auto px-6 pt-10 pb-16">
         <header class="mb-8">
-            <h1 class="font-grotesk text-4xl font-semibold tracking-tighter">GrokPulse Archive</h1>
-            <p class="text-zinc-400 mt-1">6カテゴリ体制のダイジェストと、旧1本構成の過去記事をまとめた一覧です。</p>
+            <h1 class="font-display text-4xl font-semibold tracking-tighter">GrokPulse Archive</h1>
+            <p class="text-zinc-400 mt-2">日別カテゴリ構成のダイジェストと、旧1本構成の過去記事をまとめた一覧です。</p>
         </header>
 
         <section class="mb-10">
             <div class="flex items-center gap-x-3 mb-4">
-                <h2 class="text-2xl font-semibold">6カテゴリ体制</h2>
+                <h2 class="text-2xl font-semibold">日別カテゴリ構成</h2>
                 <span class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-2xl border border-emerald-500/20">2026-06-11以降</span>
             </div>
 
             <div class="space-y-4">
                 <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                    <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-13</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-13/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-13/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-13/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-13/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-13/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-13/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-13/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-13/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
                         <span class="font-mono text-xl text-emerald-400">2026-06-12</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">6カテゴリ</span>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                         <a href="../daily/2026-06-12/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
@@ -53,8 +71,9 @@
                 </article>
 
                 <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-                    <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center justify-between mb-4">
                         <span class="font-mono text-xl text-emerald-400">2026-06-11</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">6カテゴリ</span>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                         <a href="../daily/2026-06-11/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
@@ -75,9 +94,7 @@
             </div>
 
             <article class="bg-zinc-900 border border-amber-500/20 rounded-3xl p-6">
-                <p class="text-sm text-zinc-400 mb-4">
-                    日付フォルダ配下の正式版とは別に、ルート直下へ生成された 2026-06-11 の別バージョンです。
-                </p>
+                <p class="text-sm text-zinc-400 mb-4">日付フォルダ配下の正式版とは別に、ルート直下へ生成された2026-06-11の別バージョンです。</p>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                     <a href="../2026-06-11.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
                     <a href="../2026-06-11-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
@@ -134,14 +151,12 @@
                     </div>
                 </article>
             </div>
-
-            <p class="text-xs text-zinc-500 mt-4">旧ページは既存URLを維持するため、ルート直下のHTMLへ直接リンクしています。</p>
         </section>
     </main>
 
     <footer class="border-t border-zinc-800 bg-zinc-950 py-8">
         <div class="max-w-5xl mx-auto px-6 text-center text-xs text-zinc-500">
-            Built with love + Grok by AlignLab • <a href="../index.html" class="hover:text-zinc-400">メインに戻る</a>
+            GrokPulse Archive • <a href="../index.html" class="hover:text-zinc-400">メインに戻る</a>
         </div>
     </footer>
 </body>
