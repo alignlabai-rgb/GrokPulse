@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-06-14 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-06-14 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🤖</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">エージェントが生産現場で「実隕に動く」時代へ<br>Anthropic内部でClaude CodeがPR 100%・レビュー80-90%を担当、/loops機能が生産性を変える</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">フロンティアラボ内部でエージェントが日常的にコードを生成・レビューし、生産プロセスの大半を担当する事例が登場。エージェントが「ヘルプ」から「主役」へ移行した証左。長時間タスク・ループ機能が生産性を大幅に向上させている。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: Internal Agent Adoption -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 PRODUCTION</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Anthropic内部でClaude Codeが活躍<br>PR 100%、コードレビュー80-90%を担当</div>
+          <div class="mt-4 text-sm text-zinc-400">クロード・エージェントClaude CodeがAnthropic内部で生産プロセスの大半を担当。プルリクエストの100%、コードレビューの80-90%がエージェントによる。実隕の企業内部利用が「デモ」から「生産」へ移行した証左。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-building"></i> 
+            <span>内部利用話題・X討論より</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Long-Horizon Agent Workflows -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#02 LONG-HORIZON</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">エージェントの長時間タスク・ループ機能が生産性を変える<br>/loopsなどの新機能が鍵</div>
+          <div class="mt-4 text-sm text-zinc-400">エージェントが単一プロンプトではなく、ループを構築して長時間タスクを自律的に実行する機能が注目。Anthropic内部で最も使われているとの話題が登場、生産性の大幅向上が実践で確認されている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sync-alt"></i> 
+            <span>エージェントワークフロー話題・X討論より</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Agent Governance & Standards -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 GOVERNANCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">エージェントガバナンス・検証標準の進化<br>ARC/ANIMA等の検証フレームワークが実践化</div>
+          <div class="mt-4 text-sm text-zinc-400">エージェントの安全性・可靠性を保護するガバナンス・検証標準が進化中。ARC/ANIMA等のフレームワークが実践で応用され始め、エージェントの信頼性向上と企業利用の橋渡となっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-alt"></i> 
+            <span>ガバナンス・検証話題・X討論より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年6月14日のAI Agents分野は、エージェントが「デモ」から「生産現場の主役」へ移行した証左がより明確になった一日であった。Anthropic内部でClaude Codeがプルリクエストの100%、コードレビューの80-90%を担当している事実が登場。エージェントが単にるヘルプツールではなく、生産プロセス本体を支える存在になってきた。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            最も興味深いのは、エージェントが「プロンプトを打つ」から「ループを構築する」へ移行している点である。Anthropic内部で最も使われているとの話題が登場した/loops機能は、長時間タスクを自律的に繰り返すワークフローを実現している。これは、エージェントが単一タスクを処理する阶段から、複雑なプロセスを自律的に繰り返す阶段へ進化している証左である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">エージェントが会社のコードを書き、レビューし、生産を支えている。これが2026年の现実だ。政策がフロンティアモデルを制約している間に、エージェントは日常的にコードを書き、レビューし、会社の生産性を上げている。エージェントはもう「ヘルプ」ではなく「主役」になっている。今後は「誰がより高度に、より安全に、より自律的にエージェントを活用できるか」が關鍵になる。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">エージェントは「ツール」から「生産プロセス本体」へ移行している</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">以前はエージェントが「デモ」や「辅助ツール」として話題になったが、現在はフロンティアラボ内部で日常的にプロダクションを支える存在になってきている。Anthropicの例は、エージェントがプロセス本体を支える時代が来たことを示している。ループ機能などの進化で、長時間タスクを自律的に繰り返す能力が実用的になってきている。これは、エージェントが単一タスクを処理する阶段から、複雑なプロセスを自律的に繰り返す阶段へ進化している証左である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i> 
+            <span>エージェント開発者 / ツール作者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Anthropic内部でClaude CodeがPRの100%を担当しているのは、エージェントが実隕の生産現場でどれだけ有効かを示している。/loops機能のように、プロンプトを打つのではなくループを構築する方式に移行したことが大きい。自分も同様のツールを使って、生産性を大幅に向上させたい。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i> 
+            <span>企業内部ユーザー / エージェント利用者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Anthropicの例は、エージェントが企業内部で実隕に動いている証左である。ループ機能で長時間タスクを自律的に繰り返すことができれば、開発チームの生産性が大幅に向上する。自分の企業でも同様のツールを導入して、プロセスを自律化したい。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i> 
+            <span>エージェントガバナンス専門家</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エージェントが生産現場で活躍するにつれ、ガバナンス・検証標準の重要性が増している。ARC/ANIMA等のフレームワークが実践で応用され始めているが、より精細なリスク評価と、企業利用のためのフレームワークが不可欠だ。安全と生産性のバランスを取ることが重要。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i> 
+            <span>エージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エージェントが長時間タスクを自律的に繰り返す能力が実用的になってきている。単一プロンプトではなく、ループを構築してプロセスを自律化する方式が、今後の重要な方向性だ。実隕の生産現場での例が増えることで、研究もより実用的な方向に進化するだろう。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>エージェント投資家</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Anthropic内部でのClaude Code活躍は、エージェントプラットフォーム企業の価値を支えている。実隕の生産性向上が確認されているから、今後は「どれだけ高度に、どれだけ安全に使えるか」が關鍵になる。ガバナンス・検証標準の整備が、企業利用を加速させる。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-rocket"></i> 
+            <span>エージェント経済楽観論者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エージェントが生産現場で活躋するのは、エージェント経済の実現向けの大きな一歩。内部利用の例が増えれば、外部サービスとしても信頼性が高まり、更多の企業が利用するようになる。ガバナンスと実用性のバランスが、今後の重要なテーマだ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-06-14 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿、内部利用話題、エージェントワークフロー話題・ガバナンス話題（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-06-14', 'color:#10b981');
+  </script>
+</body>
+</html>
