@@ -9,16 +9,13 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
     body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
-    .section-header { font-size: 1.75rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
-    .digest-card { transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease; }
-    .digest-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
-    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
-    .category-pill { transition: all 0.1s ease; }
-    .category-pill:hover { background-color: #18181b; transform: translateY(-1px); }
+    .section-header { font-size: 1.5rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .full-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .full-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
   </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
-  <!-- Header -->
+  <!-- Header (keeping similar to previous versions) -->
   <header class="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-x-3">
@@ -30,206 +27,167 @@
           <div class="text-[10px] text-zinc-500 -mt-1">X上AIトレンドを8カテゴリで毎日整理</div>
         </div>
       </div>
-      <nav class="flex items-center gap-x-4 text-sm">
-        <a href="archive/index.html" class="px-4 py-2 text-zinc-400 hover:text-zinc-200 transition-colors flex items-center gap-x-1.5">
-          <i class="fas fa-archive"></i> 
+      <nav>
+        <a href="archive/index.html" class="px-4 py-2 text-sm text-zinc-400 hover:text-zinc-200 flex items-center gap-x-1.5">
+          <i class="fas fa-archive"></i>
           <span>アーカイブ</span>
-        </a>
-        <a href="https://github.com/alignlabai-rgb/GrokPulse" target="_blank" class="text-zinc-500 hover:text-zinc-400 transition-colors">
-          <i class="fab fa-github"></i>
         </a>
       </nav>
     </div>
   </header>
 
-  <div class="max-w-6xl mx-auto px-6 pt-8 pb-16">
-    <!-- 最新のダイジェスト: 2026-06-17 -->
-    <div class="mb-12">
-      <div class="flex items-end justify-between mb-6">
+  <div class="max-w-6xl mx-auto px-6 pt-8 pb-12">
+
+    <!-- 2026-06-17 最新のダイジェスト (Full cards) -->
+    <div class="mb-10">
+      <div class="flex items-center justify-between mb-5">
         <div>
-          <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">LATEST DIGEST</div>
-          <h1 class="section-header mt-1">2026-06-17 <span class="text-zinc-400 text-xl align-baseline">最新のダイジェスト</span></h1>
+          <span class="px-3 py-1 text-xs font-mono tracking-[2px] bg-emerald-500/10 text-emerald-400 rounded-2xl border border-emerald-500/20">LATEST</span>
+          <h2 class="section-header mt-2">2026-06-17</h2>
         </div>
-        <div class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-2xl border border-emerald-500/20 flex items-center gap-x-1">
-          <i class="fas fa-sync-alt"></i> 
-          <span>8カテゴリ フルカバー</span>
-        </div>
+        <div class="text-xs text-zinc-500">8カテゴリ フルサイズ</div>
       </div>
 
-      <!-- 8 Full Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Card 01 AI -->
-        <a href="daily/2026-06-17/01-ai.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">01</div>
-            <i class="fas fa-globe text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- 01 AI -->
+        <a href="daily/2026-06-17/01-ai.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">01</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">AI</div>
+            </div>
+            <i class="fas fa-globe text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">AI</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">US export controls on Anthropic Fable 5 / Mythos 5. Global disablement for foreign nationals. National security vs open research tension.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">US export controls on Anthropic Fable 5/Mythos 5. Global disablement for foreign nationals.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 02 Chinese AI & Tech -->
-        <a href="daily/2026-06-17/02-chinese-ai-tech.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">02</div>
-            <i class="fas fa-globe-asia-australia text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 02 Chinese AI & Tech -->
+        <a href="daily/2026-06-17/02-chinese-ai-tech.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">02</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">Chinese AI & Tech</div>
+            </div>
+            <i class="fas fa-globe-asia-australia text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">Chinese AI & Tech</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">Zhipu GLM-5.2 full open-source (MIT license, 1M context). Strategic timing with US export controls. Beijing tightens domestic governance.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">Zhipu GLM-5.2 full open-source (MIT). Strategic response to US export controls.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 03 AI Agents -->
-        <a href="daily/2026-06-17/03-ai-agents.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">03</div>
-            <i class="fas fa-robot text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 03 AI Agents -->
+        <a href="daily/2026-06-17/03-ai-agents.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">03</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">AI Agents</div>
+            </div>
+            <i class="fas fa-robot text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">AI Agents</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">Claude Code autonomous execution loops. "Thousands of agents overnight". Obsidian second-brain kits. Deployment bottleneck remains.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">Claude Code autonomous loops. Obsidian second-brain kits. Deployment bottleneck highlighted.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 04 AI Hardware -->
-        <a href="daily/2026-06-17/04-ai-hardware.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">04</div>
-            <i class="fas fa-microchip text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 04 AI Hardware -->
+        <a href="daily/2026-06-17/04-ai-hardware.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">04</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">AI Hardware & Semiconductors</div>
+            </div>
+            <i class="fas fa-microchip text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">AI Hardware & Semiconductors</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">AMD Ryzen AI Max+ 395 128GB unified memory. Local Qwen3-235B at ~11 t/s. Beats RTX 5080 3x on memory-tight inference. Pays for itself vs cloud in <1 year.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">AMD Ryzen AI Max+ 395 128GB unified memory. Local 235B inference at usable speeds. Strong economic case vs cloud.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 05 Physical Tech -->
-        <a href="daily/2026-06-17/05-physical-tech.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">05</div>
-            <i class="fas fa-bolt text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 05 Physical Tech -->
+        <a href="daily/2026-06-17/05-physical-tech.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">05</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">Physical Tech & Energy</div>
+            </div>
+            <i class="fas fa-bolt text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">Physical Tech & Energy</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">AI energy crisis as binding constraint. Data center power surge (IEA 415 TWh). Neuromorphic for 10s-300x efficiency. Power/infra as new bottleneck for $660-690B hyperscaler spend.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">AI power demand surge becoming binding constraint. Neuromorphic computing gaining attention for efficiency.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 06 Longevity -->
-        <a href="daily/2026-06-17/06-longevity.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">06</div>
-            <i class="fas fa-dna text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 06 Longevity -->
+        <a href="daily/2026-06-17/06-longevity.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">06</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">Longevity</div>
+            </div>
+            <i class="fas fa-dna text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">Longevity</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">Life Biosciences ER-100 first partial cellular reprogramming in human eye (glaucoma/NAION). Yamanaka 3 factors. David Sinclair: "Important moment for the field". Phase 1 safety by year end.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">Life Biosciences ER-100 first partial reprogramming in human eye (glaucoma/NAION). Phase 1 safety data expected by year end.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 07 Biotech -->
-        <a href="daily/2026-06-17/07-biotech.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">07</div>
-            <i class="fas fa-vial text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 07 Biotech -->
+        <a href="daily/2026-06-17/07-biotech.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">07</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">Biotech & Molecular Biology</div>
+            </div>
+            <i class="fas fa-vial text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">Biotech & Molecular Biology</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">Immorna JCXH-213 in vivo mRNA CAR-T achieves first deep tissue B-cell depletion in SSc patient. Zero preconditioning. True lymphoid niche eradication. Advancing to SLE. Disrupts ex-vivo paradigm.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">Immorna JCXH-213 in vivo mRNA CAR-T achieves deep tissue B-cell depletion in SSc. No preconditioning required.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
 
-        <!-- Card 08 Generative AI -->
-        <a href="daily/2026-06-17/08-generative-ai.html" class="digest-card group block bg-zinc-900 border border-zinc-800 rounded-3xl p-5 hover:border-emerald-500/40">
-          <div class="flex items-start justify-between">
-            <div class="px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono tracking-widest rounded">08</div>
-            <i class="fas fa-magic text-xl text-zinc-600 group-hover:text-emerald-400 transition-colors"></i>
+        <!-- 08 Generative AI -->
+        <a href="daily/2026-06-17/08-generative-ai.html" class="full-card group block bg-zinc-900 border border-zinc-700 hover:border-emerald-400/50 rounded-3xl p-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-emerald-400 text-xs font-mono tracking-widest">08</div>
+              <div class="font-semibold text-lg mt-1 tracking-tight">Generative AI & Creative Tools</div>
+            </div>
+            <i class="fas fa-magic text-2xl text-zinc-700 group-hover:text-emerald-400 transition-colors"></i>
           </div>
-          <div class="mt-4">
-            <div class="font-semibold text-lg tracking-tight">Generative AI & Creative Tools</div>
-            <div class="mt-1 text-sm text-zinc-400 line-clamp-2">Cursor $60B acquisition strategy revealed. Market shifts from "best IDE" to "best underlying model". xAI/SpaceX starts training on 100k GPUs. Self-debugging agents era begins.</div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center justify-between">
-            <span>TrendMap • GrokDigest • ExpertEcho</span>
-            <span class="text-emerald-400 group-hover:underline">Read →</span>
-          </div>
+          <div class="mt-3 text-sm text-zinc-400">Cursor acquisition strategy: market shifting from best IDE to best underlying model. xAI training on 100k GPUs.</div>
+          <div class="mt-4 text-[10px] text-emerald-400 group-hover:underline">TrendMap + GrokDigest + ExpertEcho →</div>
         </a>
       </div>
     </div>
 
-    <!-- 前日のダイジェスト (2026-06-16) - Compact -->
-    <div class="mb-10">
+    <!-- 2026-06-16 (Previous day - compact form) -->
+    <div class="mb-8">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="text-lg font-semibold tracking-tight">2026-06-16 <span class="text-zinc-400 text-sm font-normal">(前日)</span></h2>
-        <a href="archive/index.html" class="text-xs text-emerald-400 hover:underline">All archives →</a>
+        <h3 class="font-semibold tracking-tight">2026-06-16 <span class="text-zinc-500 text-sm font-normal">(前日)</span></h3>
+        <a href="archive/index.html" class="text-xs text-emerald-400 hover:underline">View in archive →</a>
       </div>
       <div class="flex flex-wrap gap-2">
-        <a href="daily/2026-06-16/01-ai.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">01 AI</a>
-        <a href="daily/2026-06-16/02-chinese-ai-tech.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">02 Chinese AI</a>
-        <a href="daily/2026-06-16/03-ai-agents.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">03 AI Agents</a>
-        <a href="daily/2026-06-16/04-ai-hardware.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">04 Hardware</a>
-        <a href="daily/2026-06-16/05-physical-tech.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">05 Physical</a>
-        <a href="daily/2026-06-16/06-longevity.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">06 Longevity</a>
-        <a href="daily/2026-06-16/07-biotech.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">07 Biotech</a>
-        <a href="daily/2026-06-16/08-generative-ai.html" class="category-pill px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">08 Generative</a>
+        <a href="daily/2026-06-16/01-ai.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">01 AI</a>
+        <a href="daily/2026-06-16/02-chinese-ai-tech.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">02 Chinese AI</a>
+        <a href="daily/2026-06-16/03-ai-agents.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">03 AI Agents</a>
+        <a href="daily/2026-06-16/04-ai-hardware.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">04 Hardware</a>
+        <a href="daily/2026-06-16/05-physical-tech.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">05 Physical</a>
+        <a href="daily/2026-06-16/06-longevity.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">06 Longevity</a>
+        <a href="daily/2026-06-16/07-biotech.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">07 Biotech</a>
+        <a href="daily/2026-06-16/08-generative-ai.html" class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800 transition-colors">08 Generative</a>
       </div>
     </div>
 
-    <!-- Older days (keep existing structure, minimal change) -->
-    <div class="text-xs text-zinc-500 mb-2">2026-06-15 以前のダイジェストはアーカイブで確認</div>
-    <div class="flex flex-wrap gap-2 text-xs">
-      <a href="archive/index.html" class="px-3 py-1 bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">2026-06-15 (8カテゴリ)</a>
-      <a href="archive/index.html" class="px-3 py-1 bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">2026-06-14 (8カテゴリ)</a>
-      <a href="archive/index.html" class="px-3 py-1 bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">2026-06-13 (8カテゴリ)</a>
-      <a href="archive/index.html" class="px-3 py-1 bg-zinc-900 border border-zinc-700 rounded-2xl hover:bg-zinc-800">2026-06-12 以前</a>
+    <!-- Older days - minimal, points to archive -->
+    <div class="pt-4 border-t border-zinc-800">
+      <div class="text-xs text-zinc-500 mb-2">2026-06-15 以前</div>
+      <a href="archive/index.html" class="inline-flex items-center text-sm text-emerald-400 hover:underline">
+        Archive で全ての過去ダイジェストを確認 <i class="fas fa-arrow-right ml-1 text-xs"></i>
+      </a>
     </div>
 
   </div>
 
-  <footer class="border-t border-zinc-800 py-8 text-xs text-zinc-500">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-y-2">
-      <div>GrokPulse • AI Edge Reports from X • Updated 2026-06-17</div>
-      <div class="flex gap-x-4">
-        <a href="archive/index.html" class="hover:text-zinc-400">Full Archive</a>
-        <span>・</span>
-        <span>Built with Grok • alignlabai-rgb/GrokPulse</span>
-      </div>
+  <footer class="border-t border-zinc-800 py-6 text-xs text-zinc-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-y-1">
+      <div>GrokPulse • Updated 2026-06-17</div>
+      <div><a href="archive/index.html" class="hover:text-zinc-400">Full Archive</a></div>
     </div>
   </footer>
-
-  <script>
-    console.log('%c[GrokPulse] index.html updated for 2026-06-17', 'color:#10b981');
-  </script>
 </body>
 </html>
