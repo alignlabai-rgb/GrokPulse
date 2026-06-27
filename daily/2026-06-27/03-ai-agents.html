@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-06-27 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-teal-500/10 text-teal-400 text-xs font-mono tracking-[2px] rounded-2xl border border-teal-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-06-27 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🤖</div>
+      <div class="flex-1">
+        <div class="uppercase text-teal-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">Multi-agent systemsが本格化、長期自律タスクと「判断」レイヤーが現実味を帯びる<br>フレームワーク成熟とGenLayer型adjudicationの登場でagentic economyの基盤整備が進む</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年は「シングルエージェントから専門特化型マルチエージェントシステム」へのシフトが明確に。AutoGen 2.0などのフレームワークがasync・本番向けに進化し、METRタスクホライズン指標でOpus 4.6が14.5時間タスクを達成するなど、長期自律実行が近づいている。一方で、契約解釈や曖昧性の「判断」を必要とする場面でGenLayerのような分散型AIバリデータによるIntelligent Contractsが登場。エージェント同士の紛争や曖昧契約を機械速度で解決するレイヤーが、agentic economyの本格始動を後押ししている。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-robot text-3xl text-teal-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: Multi-agent Frameworks & Performance -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#01 MULTI-AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">AutoGen 2.0などフレームワークが本番向けに成熟<br>専門エージェント協調でタスク性能76%向上の実測値も</div>
+          <div class="mt-4 text-sm text-zinc-400">Microsoft AutoGen 2.0がasync-firstアーキテクチャとモジュラーランタイムを導入し、高並行マルチエージェントワークフローを本番で扱いやすくした。CrewAIなども役割ベースのmulti-agentプロトタイピングを高速化。適切なコミュニケーションとトポロジー設計により、マルチエージェント協調が単一エージェント比で76%性能向上した事例が報告され、「プロンプトチェーンで終わる疑似マルチエージェント」から本物のオーケストレーションへの移行が加速している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-project-diagram"></i> 
+            <span>AutoGen 2.0・CrewAI・マルチエージェント性能向上・フレームワーク成熟話題より</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Benchmark Progress -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 BENCHMARKS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">タスクホライズン指標が急伸、週単位自律タスクが視野に<br>METRデータでOpus 4.6が14.5時間到達、指数曲線が継続</div>
+          <div class="mt-4 text-sm text-zinc-400">METRのtask horizon benchmarkで、トップモデルの自律タスク持続時間が指数関数的に伸びており（doubling every ~123 days）、Opus 4.6がすでに14.5時間に到達。曲線が続けば2026年末には週単位の完全自律タスクが可能になるとの予測も。OSWorldなどの実環境ベンチでもエージェント性能が飛躍的に向上し、「長い時間軸での計画・実行・修正ループ」が現実のものになりつつある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i> 
+            <span>METR task horizon・長期自律タスク・ベンチマーク進展・X/研究討論より</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Adjudication & Onchain Infrastructure -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 ADJUDICATION</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GenLayerなど「判断」レイヤーがagentic economyを支える<br>自然言語契約の曖昧性を分散AIバリデータで解決</div>
+          <div class="mt-4 text-sm text-zinc-400">エージェント同士の取引や契約で「operationally equivalent」のような曖昧表現を巡る解釈紛争が増える中、GenLayerのようなIntelligent Contractsが注目。コード・自然言語・ライブデータを組み合わせ、分散型AIバリデータ（Optimistic Democracy）で判断を下する仕組。オラクルや伝統スマートコントラクトでは扱えなかった「文脈解釈」を機械速度で処理し、エージェント経済の信頼基盤として機能し始めている。Ritualnetなどのonchain sovereign agentsも並行して拡大。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i> 
+            <span>GenLayer Intelligent Contracts・エージェント紛争解決・onchain agents・X討論より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-teal-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年6月27日、AI Agents分野では「マルチエージェントシステムの本格化」と「判断を要するレイヤーの登場」が大きな潮流として浮上している。AutoGen 2.0をはじめとするフレームワークがasync・モジュラー設計で本番環境に対応し、専門特化エージェントの協調により単一エージェント比で76%の性能向上を実測する事例も出てきた。一方で、METRのタスクホライズン指標が指数関数的に伸び、トップモデルがすでに14時間超の自律タスクを達成。2026年末には週単位の完全自律実行が視野に入るペースだ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            しかし、エージェントが実世界の契約・取引・運用に関わるようになると、「operationally equivalent」のような曖昧な自然言語条項の解釈を巡る紛争が避けられなくなる。伝統のコードやオラクルでは扱えないこの「判断」のギャップを埋めるのが、GenLayerに代表される分散型AIバリデータによるIntelligent Contractsだ。複数のLLMを活用したOptimistic Democracyで文脈・証拠・意图を評価し、機械速度で合意形成する仕組は、agentic economyの信頼インフラとして機能し始めている。フレームワークの成熟と「判断レイヤー」の登場により、単なるデモから本番の自律システムへ移行する土台が整いつつある。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-teal-400">
+            <span class="font-semibold text-teal-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">ようやく「一つの賢いエージェントが全部やる」幻想から、「専門家チームをオーケストレーションする」現実に戻ってきた感じがする。76%向上とか具体的な数字が出てくると、ただのプロンプトチェーンじゃなくて本物のマルチエージェントの価値がようやく数字で示される。で、GenLayerみたいな「エージェント同士が契約で嘿鳴したときの裁判所」みたいなレイヤーまで出てくると、もうagentic economyはSFじゃなくてインフラだね。面白いのは、曖昧な契約条項を解釈するのに結局「別のAIの合議制」に靠るってところ。人間の裁判官がAIに置き換わるんじゃなくて、AI同士の争いにAIが裁くって、なんか究極のメタだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">マルチエージェント・判断レイヤーが「agentic economy」を現実のものにする</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">シングルエージェントの限界（文脈保持の難ささ、タスクの複雑さへの脆さ）が明らかになる中、専門特化・協調というアプローチが主流になりつつある。フレームワークの進化（async、モジュラー、MCPツール統合標準化）は開発・運用コストを下げ、本番導入を現実的にした。一方で、エージェントが金钱・契約・物理運用に関わる場面では「コードで書けない曖昧さ」の処理がボトルネックになる。GenLayerのようなレイヤーは、まさにそのギャップを埋める「adjudication as a service」として機能し、分散型合意形成により中央集権的な人間介入を最小化しながら信頼を担保する。2026年後半は、この「実行レイヤー（フレームワーク）」と「判断レイヤー」の両轮が敷いて、agenticなワークフローが企業・個人レベルで本格展開する転換点になりそうだ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-teal-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cogs"></i> 
+            <span>AIエンジニア・フレームワーク実践者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「AutoGen 2.0のasync対応やMCPの標準化で、ようやく本番でマルチエージェントを回せる土台が整ってきた。76%向上という数字は、適切なトポロジーとコミュニケーション設計がいかに重要かを示している。ただ、まだ「本物の協調」と「ただの並列実行」の境界が曖昧なプロジェクトも多い。評価と observability の仕組を同時に整備しないとスケールしない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>ベンチマーク・評価研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「METRのtask horizonが指数関数的に伸びているのは本物で、14.5時間という数字は「長い時間軸での計画・実行・自己修正」が現実的になった証拠。とはいえ、ベンチマークと実運用での信頼性のギャップはまだ大きい。長期タスクでのドリフトや安全性の検証方法をどう確立するかが次の大きな課題だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-balance-scale"></i> 
+            <span>エンタープライズ採用・運用責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「マルチエージェントの魅力は専門化と並列性だが、企業導入では「誰が最終責任を持つか」「失敗時のロールバックはどうするか」が最大のハードル。GenLayerのような判断レイヤーが出てくると、契約やコンプライアンス領域でのエージェント活用の道が開ける。ただし、分散型バリデータの信頼性とコストのバランスをどう取るかが実用化の鍵になる。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i> 
+            <span>AI安全・アライメント専門家</span>
+          </div>
+          <p class="text-sm text-zinc-300">「長期自律タスクやエージェント同士の相互作用が増えると、意图しない行動やカスケード失敗のリスクが指数関数的に上がる。マルチエージェントの「コミュニケーション設計」自体が安全性の重要なコントロールポイントになる。判断レイヤーも、複数のモデルでクロスチェックする仕組は promising だが、新たな攻撃面や collusion のリスクも同時に生む。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-link"></i> 
+            <span>onchain / 分散型AIビルダー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「RitualnetやPharosなどの動きを見ると、onchainで永続的なエージェントを動かし、実際に価値を生むループを作ろうとする試みが活発化している。GenLayerのようなadjudicationレイヤーは、ブロックチェーン上のエージェント経済に「法的な曖昧さの解決」を提供する重要なピース。コードだけでは回らない現実の商取引を、分散型AIで支える方向性は理にかなっている。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6 ring-1 ring-emerald-400/20">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i> 
+            <span>日本・アジアAIエコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「フレームワークの成熟と判断レイヤーの登場は、日本企業が「エージェントをどう業務に組み込むか」を本気で検討するタイミングに来ていることを示している。特に製造・物流・金融などの現場では、長期タスクとコンプライアンスの両立が鍵。海外フレームワークに依存しつつも、国内のデータ主権や安全基準に適合した実装・評価体制をどう作るかが競争力に直結する。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-06-27 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（フレームワーク更新・GenLayer討論・ベンチマーク進展・onchain agents）、METR・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-06-27', 'color:#14b8a6');
+  </script>
+</body>
+</html>
