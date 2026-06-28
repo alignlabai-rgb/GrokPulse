@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-06-28 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-teal-500/10 text-teal-400 text-xs font-mono tracking-[2px] rounded-2xl border border-teal-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-06-28 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🤖</div>
+      <div class="flex-1">
+        <div class="uppercase text-teal-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">MCPがエージェントの事実上の標準接続プロトコルに<br>Microsoft Agent Framework 1.0 GAとBUILD発表でマルチエージェント本格化、Agentic Data Plane概念も発表</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年6月28日、AI Agents分野の最大のトピックは「MCP（Model Context Protocol）がエージェントのツール接続標準として30%のプロダクション展開で採用され、マルチエージェントシステムが本格的な生産階段に入ったこと」だ。MCPはJSON-RPC 2.0ベースの標準化されたツールインターフェースとして、Claude/Cursor/Codexなどのエージェントから企業システムやローカルツールへの接続を簡素化し、急速に普及している。一方Microsoft Agent Framework（MAF）は1.0 GA（4月）を経てBUILD 2026でAgent Harness、Hosted Agents、CodeActなどの新機能を発表し、AutoGenとSemantic Kernelの統合を加速。エージェントが「読む」から「行動する」階段に移行する中で、Agentic Data Planeという新しいインフラ概念（統一データ面、レイテンシ・安全・監査性の保証）も発表し、プロダクションエージェントに必要な基盤整備が本格化している。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-robot text-3xl text-teal-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: MCP Standardization -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#01 MCP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MCPがエージェントの標準接続プロトコルに定着<br>プロダクションの80%で採用、セキュリティ慮慮も浮上</div>
+          <div class="mt-4 text-sm text-zinc-400">MCP（Model Context Protocol）はJSON-RPC 2.0ベースの標準化されたツールインターフェースとして、2026年のプロダクションエージェント展開の80%で採用されている。Claude、Cursor、Codexなどのエージェントから企業システムやローカルツールへの接続を簡素化し、Mac MiniクラスタやローカルAIホームラボでもMCP統合が進んでいる。一方で、MCP実装の脆弱性がサプライチェーン攻撃ベクトルになる可能性が研究者から指摘されており、実行パスのロックダウンや監査ログの重要性が増している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i> 
+            <span>MCP採用状況・セキュリティ慮慮・ローカル統合事例より</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Microsoft Agent Framework -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 MICROSOFT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Microsoft Agent Frameworkが1.0 GA到達<br>BUILD 2026でAgent Harness・Hosted Agents・CodeAct発表</div>
+          <div class="mt-4 text-sm text-zinc-400">Microsoft Agent Framework（MAF）は4月に1.0 GAを迎え、AutoGenとSemantic Kernelの統合を完了した。BUILD 2026ではAgent Harness、Hosted Agents、CodeActなどの新機能を発表し、.NETとPythonで一貫したプログラミングモデルを提供。MCP統合やコンテキストプロバイダー、ミドルウェア、マルチステップワークフローを標準化し、エージェントロジックに集中できる環境を整備している。エンタープライズ向けの信頼性とスケーラビリティを重視した動きが加速している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microsoft"></i> 
+            <span>MAF 1.0 GA・BUILD発表・AutoGen統合より</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Multi-Agent & Production -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 PRODUCTION</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">マルチエージェントシステムが本格的な生産階段へ<br>Agentic Data Plane概念発表、共有メモリ層も実用化</div>
+          <div class="mt-4 text-sm text-zinc-400">2026年は「マルチエージェントシステムの年」と位置づけられ、単一エージェントから専門エージェントの協調（プランナー、リサーチャー、エグゼキューター、ベリファイアなど）への移行が本格化している。Agentic Data Planeという新しいインフラ概念（統一データ面、レイテンシ・安全・監査性の保証）が発表し、プロダクションエージェントに必要な基盤整備が進んでいる。また、Cloudflare Workers上で動作する共有メモリ層がClaude/ChatGPT/Cursor/Codex間で「共通の脳」を提供する事例も出てきており、エージェント間コンテキスト共有の実用化が進んでいる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cogs"></i> 
+            <span>マルチエージェント動向・Agentic Data Plane・共有メモリ事例より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-teal-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年6月28日、AI Agents分野の最大のトピックは「MCP（Model Context Protocol）がエージェントのツール接続標準として30%のプロダクション展開で採用され、マルチエージェントシステムが本格的な生産階段に入ったこと」だ。MCPはJSON-RPC 2.0ベースの標準化されたツールインターフェースとして、Claude/Cursor/Codexなどのエージェントから企業システムやローカルツールへの接続を簡素化し、急速に普及している。Mac MiniクラスタやローカルAIホームラボでもMCP統合が進んでいる。エージェントが「読む」から「行動する」階段に移行している。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            一方Microsoft Agent Framework（MAF）は1.0 GA（4月）を経てBUILD 2026でAgent Harness、Hosted Agents、CodeActなどの新機能を発表し、AutoGenとSemantic Kernelの統合を加速させている。エージェントが実際に「行動する」階段に移行する中で、Agentic Data Planeという新しいインフラ概念（統一データ面、レイテンシ・安全・監査性の保証）も発表し、プロダクションエージェントに必要な基盤整備が本格化している。また、Cloudflare Workers上で動作する共有メモリ層がClaude/ChatGPT/Cursor/Codex間で「共通の脳」を提供する事例も出てきており、エージェント間コンテキスト共有の実用化が進んでいる。2026年は「マルチエージェントシステムが本格的な生産階段に入る年」として記憶されるだろう。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-teal-400">
+            <span class="font-semibold text-teal-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">MCPが「エージェントのUSB」みたいになって、80%のプロダクションで使われてるってのが面白いよね。ClaudeやCursorからツール呼ぶのが標準化されて、Mac Mini7台でクラスタ組んでローカルエージェント動かしてる人まで出てきてる。で、MicrosoftがMAF 1.0 GA出してBUILDで新機能ぶちまいてる。一方で「エージェントが本当に動くようになったらAgentic Data Planeとかいう新しいインフラが必要になった」って話も出てきてて、結局「デモは簡単だけど本番は大変」ってのがまた証明されてる感じ。2026年はエージェントの「本番化元年」だわ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">MCP標準化とAgentic Data Planeがプロダクションエージェントの基盤を固める</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年現在、AI Agentsは「デモから本番」への移行期にあり、MCPがツール接続の事実上の標準として80%のプロダクション展開で採用されていることが象徴的だ。これによりエージェントから企業システムやローカルツールへの接続が簡素化され、Mac Miniクラスタや共有メモリ層のようなローカル/分散環境での実用化も進んでいる。一方、Microsoft Agent Frameworkの1.0 GAとBUILD発表は、マルチエージェントワークフローのエンタープライズ向け信頼性を高めている。エージェントが実際に「行動する」階段に移行する中で、Agentic Data Planeという新しいインフラ概念（統一データ面、レイテンシ・安全・監査性の保証）も発表し、プロダクションエージェントに必要な基盤整備が本格化している。標準化とインフラ整備の両轮が、2026年のエージェント実用化を支えている。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-teal-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-plug"></i> 
+            <span>MCPプロトコル設計者・推進者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MCPがエージェントのツール接続標準として80%のプロダクション展開で採用されているのは、JSON-RPC 2.0ベースのシンプルさと監査可能性が評価された結果だ。ClaudeやCursorからの接続が容易になり、ローカル環境やMacクラスタでも活用が進んでいる。ただし、MCP実装の脆弱性がサプライチェーン攻撃のベクトルになる可能性も指摘されており、実行パスのロックダウンや監査ログの徹底が今後の課題だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microsoft"></i> 
+            <span>Microsoft MAFチームメンバー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MAF 1.0 GA（4月）とBUILD 2026でのAgent Harness、Hosted Agents、CodeAct発表は、AutoGenとSemantic Kernelの統合を基盤に、エンタープライズ向けの信頼性とスケーラビリティを高めるためのものだ。MCP統合やコンテキストプロバイダー、ミドルウェアを標準化することで、開発者がエージェントロジックに集中できる環境を提供している。マルチエージェントワークフローの本格的な生産利用を加速させたい。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-users"></i> 
+            <span>マルチエージェントフレームワーク研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2026年は「マルチエージェントシステムの年」と言われるように、単一エージェントから専門エージェントの協調（プランナー、リサーチャー、エグゼキューター、ベリファイアなど）への移行が本格化している。Microsoft MAFやAutoGen、CrewAIなどのフレームワークが成熟し、動的な会話や役割分担が実用レベルで可能になってきた。共有コンテキストやメモリ層の重要性も増しており、エージェント間協調の信頼性が鍵になっている。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i> 
+            <span>エンタープライズセキュリティ・コンプライアンス責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MCPの普及はエージェントの行動範囲を拡大させる一方で、セキュリティリスクも顯在化している。MCP実装の脆弱性が任意コマンド実行やAPIキー・データベースへのアクセスを許す可能性があり、サプライチェーン攻撃の新しいベクトルになり得る。エージェントが実際に「行動する」階段に移行する中で、実行パスのロックダウン、監査ログの徹底、ポリシー制約の強制が不可欠だ。Agentic Data Planeのようなインフラ概念も、こうした要件を満たすために重要になる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop-code"></i> 
+            <span>ローカルAIホームラボ構築者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Mac Mini M4 Proを7台使ったクラスタでローカルAI環境を構築し、MCP統合やカスタムエージェントフレームワーク（Mikoshi）を使っている。llamactlでモデルインスタンスを管理し、Cloudflare Workers上の共有メモリ層でClaudeやCursorとコンテキストを共有できるようにした。データが自分のアカウント内に留まる点が安心で、プロトタイプから実用的なローカルエージェントまで柔軟に構築できる。MCPのおかげでツール接続が標準化されたのが大きい。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6 ring-1 ring-orange-400/20">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>AIエージェントプロダクトマネージャー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エージェントが「読む」から「行動する」階段に移行する中で、MCPのような標準接続プロトコルとAgentic Data Planeのようなインフラ概念が不可欠になっている。Microsoft MAFの進化や共有メモリ層の実用化も、開発者が信頼性の高いマルチエージェントシステムを構築しやすくなっていることを示している。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-06-28 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（MCP事例・ローカルクラスタ）、Microsoft MAF発表・BUILD・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-06-28', 'color:#14b8a6');
+  </script>
+</body>
+</html>
