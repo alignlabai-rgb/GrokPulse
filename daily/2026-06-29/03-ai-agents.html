@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-06-29 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-teal-500/10 text-teal-400 text-xs font-mono tracking-[2px] rounded-2xl border border-teal-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-06-29 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🤖</div>
+      <div class="flex-1">
+        <div class="uppercase text-teal-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">MCPエコシステムが爆発的に拡大<br>Meta・Google・TikTokが公式MCPサーバー提供、A2Aプロトコルとの補完関係が明確化</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年6月29日、AI Agents分野の最大の動きは「MCP（Model Context Protocol）エコシステムの急拡大」と「Agent2Agent (A2A) プロトコルとの役割分担の明確化」だ。Meta、Google、TikTokなどが自社プラットフォーム向け公式MCPサーバーをリリースし、MCPがツール接続の事実上の標準としてさらに定着。一方、A2Aプロトコル（エージェント間通信標準）がLinux Foundation傘下で150以上の組織に支持され、生産環境での採用が進んでいる。MCPが「ツールへの接続」を、A2Aが「エージェント同士の協調」を担う補完関係が業界で共有され始め、プロダクションでの信頼性・相互運用性向上に向けた基盤が整いつつある。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-robot text-3xl text-teal-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: MCP Ecosystem -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#01 MCP ECOSYSTEM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Meta・Google・TikTokが公式MCPサーバー提供開始<br>エコシステム拡大でMCP採用がさらに加速</div>
+          <div class="mt-4 text-sm text-zinc-400">MCP（Model Context Protocol）がツール接続のデファクトスタンダードとして定着する中、Meta（広告）、Google、TikTokなどが自社サービス向け公式MCPサーバーをリリースした。これにより、ClaudeやCursorなどのエージェントから主要プラットフォームのデータ・機能へのアクセスが標準化され、開発者の負担が大幅に軽減。MCPサーバーの総数は急増し、97百万ダウンロードを超える勢い。ロードマップではtriggers、streaming、skillsなどの新機能追加も予定されており、エコシステムの成熟が加速している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i> 
+            <span>MCP公式サーバー発表・エコシステム拡大・ロードマップより</span>
+          </div>
+        </div>
+
+        <!-- Card 2: A2A Protocol -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 A2A PROTOCOL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Agent2Agent (A2A) プロトコルが企業採用で急伸<br>MCPとの補完でマルチエージェント相互運用性が向上</div>
+          <div class="mt-4 text-sm text-zinc-400">Googleが2025年に導入しLinux Foundationに寄贈したA2Aプロトコルが、2026年6月時点で150以上の組織に支持され、供給チェーン・金融・保険・IT運用などで本番利用が進んでいる。MCPが「エージェント↔ツール」の接続を標準化するのに対し、A2Aは「エージェント↔エージェント」のメッセージベース通信（gRPC/HTTP、署名付きカード）を担い、両者は競合ではなく補完関係にあることが業界コンセンサスとなりつつある。Microsoft Azure AI FoundryやAWS Bedrock、Google Cloudへの統合も進み、マルチエージェントシステムの相互運用基盤が整いつつある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-exchange-alt"></i> 
+            <span>A2A採用状況・Linux Foundation・MCP補完関係より</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Security & Production Readiness -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 SECURITY & GOVERNANCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">プロダクションエージェントのセキュリティ・ガバナンスが急務に<br>Agent Control Planeと評価フレームワークの議論活発化</div>
+          <div class="mt-4 text-sm text-zinc-400">MCPとA2Aの標準化が進む一方で、プロダクション環境でのセキュリティリスク（MCP実装の脆弱性による任意コマンド実行、サプライチェーン攻撃、権限管理の複雑さ）が顕在化。Agentic Data PlaneやAgent Control Planeの概念が注目され、実行パスのロックダウン、監査ログ、ポリシー制約の強制を自動化するツールやフレームワークが急増している。また、マルチエージェントの信頼性評価（ observability、自己改善ループの検証）に関する議論も活発で、「デモは簡単、本番は地獄」を避けるための実践的ガバナンス整備が業界の優先事項になりつつある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-alt"></i> 
+            <span>セキュリティリスク議論・Control Plane・ガバナンスツールより</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-teal-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年6月29日、AI Agents分野の最大のトピックは「MCPエコシステムの爆発的拡大とA2Aプロトコルとの明確な役割分担」だ。Meta、Google、TikTokが公式MCPサーバーを提供開始したことで、MCPがツール接続の標準としてさらに盤石なものになり、ClaudeやCursorなどのエージェントから主要プラットフォームへのアクセスが劇的に簡素化された。一方、A2Aプロトコルがエージェント間通信の標準として150以上の組織に支持され、MCP（ツール層）とA2A（協調層）の補完関係が業界で共有され始めている。これにより、マルチエージェントシステムの相互運用性とスケーラビリティが向上しつつある。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            しかし、標準化の進展と裏腹に、プロダクションでのセキュリティとガバナンスの重要性が急浮上している。MCP実装の脆弱性がサプライチェーン攻撃のベクトルになり得る点や、複数の専門エージェントにどこまで権限を与えるかのポリシー管理が課題として指摘されている。Agentic Data PlaneやAgent Control Planeのようなインフラ概念、 observabilityツールの整備が「エージェントを信頼して任せる」段階への移行に不可欠になっている。2026年は「標準化の年」から「統治と信頼性の年」へと移り変わりつつある。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-teal-400">
+            <span class="font-semibold text-teal-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">MCPが「エージェントのUSB」みたいにみんな公式サーバー出し始めたの、面白いよね。MetaやGoogle、TikTokまで乗っかってくるってことは、もう逃げられない標準になったってこと。で、A2Aが出てきて「エージェント同士がちゃんと話せる」ようになったら、今度は「どのエージェントにどれだけ権限与えて、失敗したらどう責任取るか」のガバナンス問題がドカンと来てる。MicrosoftもWindowsをエージェントOSにしようとしてるし、結局「動くデモ」から「壊れない本番システム」にするための土台作りが本番化の鍵なんだよな。セキュリティツールが追いつかないと、せっかくの標準化も台無しになりかねないわ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">MCP + A2Aの補完とセキュリティガバナンスがプロダクションエージェントの次のステージを決める</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">MCPのエコシステム拡大（公式サーバー提供）とA2Aプロトコルの企業採用進展により、2026年のAI Agentsは「ツール接続の標準化」と「エージェント間協調の標準化」という二層構造が明確になってきた。これにより、単一エージェントやシンプルなワークフローから、専門エージェントの動的協調（プランナー、リサーチャー、エグゼキューター、ベリファイアなど）による複雑タスク処理への移行が現実的になっている。一方で、プロダクション環境ではMCPのセキュリティリスクやマルチエージェントの信頼性評価が大きなボトルネックとなっており、Agent Control Planeや高度なobservability、ポリシーエンジンの整備が急務だ。標準化が進んだ今こそ、「動く」だけでなく「信頼できる・説明できる・制御できる」エージェントシステムを構築するための実践的フレームワークが求められている。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-teal-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-plug"></i> 
+            <span>MCPエコシステム推進者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Meta、Google、TikTokが公式MCPサーバーを提供開始したことは、MCPが真の業界標準になった証左だ。これにより、開発者は主要プラットフォームの機能やデータに一貫したインターフェースでアクセスでき、ClaudeやCursorなどのエージェントとの統合が劇的に容易になった。ロードマップのtriggersやstreaming機能も、プロダクションでの実用性をさらに高めるだろう。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-exchange-alt"></i> 
+            <span>A2Aプロトコル / Linux Foundation関係者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「A2AプロトコルはMCPと競合するものではなく、明確に補完する存在だ。MCPがエージェントとツール/データを繋ぐのに対し、A2Aはエージェント同士のセキュアで構造化された通信を可能にする。150以上の組織の支持と主要クラウドへの統合は、複雑なマルチエージェントワークフローを企業レベルで実現するための基盤となっている。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i> 
+            <span>エージェントセキュリティ研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MCPの急速な普及は素晴らしいが、セキュリティリスクも比例して増大している。特にMCPサーバーの実装不備が任意コード実行やデータ漏洩の入口になるケースが報告されており、サプライチェーン攻撃の新しい攻撃面になっている。Agent Control Planeや実行パスの厳格なロックダウン、リアルタイム監査の仕組みが、プロダクション展開の前提条件だ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-users"></i> 
+            <span>マルチエージェントフレームワーク研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MCP + A2Aの二層標準化により、2026年は本格的なマルチエージェントシステムの年になっている。専門エージェント（プランナー、リサーチャー、エグゼキューター、ベリファイアなど）の動的協調が実用レベルで可能になり、共有メモリ層やobservabilityの進化と相まって、複雑なビジネスプロセスを自律的に処理するシステムが現実的になってきた。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop-code"></i> 
+            <span>ローカルAI / インディー開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「公式MCPサーバーの増加はローカル環境でも大きなメリットだ。自分のMac Miniクラスタやホームラボで、主要サービスの機能に標準化された方法でアクセスできるようになり、カスタムエージェントの構築が容易になった。A2A対応のフレームワークも出てきており、複数のローカルエージェントを協調させる実験が活発化している。データが自分の管理下にある安心感は大きい。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6 ring-1 ring-orange-400/20">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>エンタープライズAIプロダクトマネージャー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MCPとA2Aの補完関係が明確になったことで、ようやく『動くエージェント』から『ビジネスで信頼して任せられるエージェントシステム』への移行が見えてきた。ただし、そのためにはセキュリティガバナンスとobservabilityの整備が不可欠。Agent Control Planeのようなインフラレイヤーの成熟が、2026年後半の本番展開の成否を分けるだろう。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-06-29 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（MCP公式サーバー発表、A2A採用・補完議論、セキュリティ/ガバナンス議論）、最近のニュース（Meta/Google/TikTok MCP、Linux Foundation A2A、Control Plane動向）より（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-06-29', 'color:#14b8a6');
+  </script>
+</body>
+</html>
