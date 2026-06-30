@@ -3,95 +3,434 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrokPulse Archive • 日別ダイジェスト一覧</title>
+    <title>GrokPulse Archive</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
         body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
         .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
-    <div class="max-w-5xl mx-auto px-6 pt-8 pb-16">
-        <!-- Nav -->
-        <nav class="flex items-center justify-between mb-10">
-            <div class="flex items-center gap-x-3">
-                <div class="w-8 h-8 rounded-2xl bg-emerald-500 flex items-center justify-center">
-                    <i class="fas fa-archive text-white"></i>
+    <nav class="sticky top-0 z-50 bg-zinc-950/90 backdrop-blur border-b border-zinc-800">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
+            <a href="../index.html" class="flex items-center gap-x-3">
+                <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-500 flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-xl"></i>
                 </div>
-                <div class="font-display text-2xl font-semibold tracking-tighter">GrokPulse Archive</div>
+                <span class="font-display text-2xl font-semibold tracking-tighter">GrokPulse</span>
+            </a>
+            <a href="../index.html" class="text-sm px-4 py-2 border border-zinc-700 hover:bg-zinc-900 rounded-2xl transition-colors">メインに戻る</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 pt-10 pb-16">
+        <header class="mb-8">
+            <h1 class="font-display text-4xl font-semibold tracking-tighter">GrokPulse Archive</h1>
+            <p class="text-zinc-400 mt-2">日別カテゴリ構成のダイジェストと、旧1本構成の過去記事をまとめた一覧です。</p>
+        </header>
+
+        <section class="mb-10">
+            <div class="flex items-center gap-x-3 mb-4">
+                <h2 class="text-2xl font-semibold">日別カテゴリ構成</h2>
+                <span class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-2xl border border-emerald-500/20">2026-06-11以降</span>
             </div>
-            <a href="../index.html" class="inline-flex items-center gap-x-2 px-4 py-2 border border-zinc-700 hover:border-emerald-400/60 rounded-2xl text-sm transition-colors">
-                <span>メインに戻る</span>
-            </a>
-        </nav>
 
-        <h1 class="font-display text-4xl font-semibold tracking-tighter mb-2">日別カテゴリ構成</h1>
-        <p class="text-zinc-400 mb-8">2026-06-11以降の8カテゴリ構成ダイジェスト一覧</p>
+            <div class="space-y-4">
+                <!-- 2026-06-28 -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-28</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-28/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-28/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-28/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-28/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-28/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-28/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-28/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-28/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
 
-        <div class="space-y-4">
-            <!-- 2026-06-28 新規追加 -->
-            <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-mono text-xl text-emerald-400">2026-06-28</span>
-                    <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <a href="../daily/2026-06-28/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
-                    <a href="../daily/2026-06-28/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI & Tech</a>
-                    <a href="../daily/2026-06-28/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
-                    <a href="../daily/2026-06-28/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware & Semiconductors</a>
-                    <a href="../daily/2026-06-28/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech & Energy</a>
-                    <a href="../daily/2026-06-28/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
-                    <a href="../daily/2026-06-28/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech & Molecular Biology</a>
-                    <a href="../daily/2026-06-28/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative AI & Creative Tools</a>
+                <!-- 2026-06-27 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-27</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-27/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-27/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-27/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-27/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-27/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-27/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-27/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-27/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-26 新規追加 (最新) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-26</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-26/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-26/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-26/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-26/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-26/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-26/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-26/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-26/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-25 (シフト) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-25</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-25/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-25/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-25/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-25/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-25/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-25/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-25/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-25/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-24 (シフト) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-24</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-24/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-24/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-24/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-24/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-24/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-24/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-24/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-24/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-23 (シフト) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-23</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-23/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-23/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-23/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-23/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-23/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-23/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-23/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-23/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-22 (既存) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-22</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-22/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-22/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-22/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-22/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-22/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-22/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-22/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-22/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-21 (既存) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-21</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-21/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-21/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-21/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-21/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-21/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-21/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-21/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-21/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-20 (既存) -->
+                <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-20</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-20/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-20/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-20/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-20/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-20/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-20/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-20/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-20/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-19 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-19</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-19/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-19/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-19/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-19/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-19/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-19/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-19/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-19/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-18 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-18</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-18/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-18/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-18/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-18/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-18/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-18/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-18/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-18/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-17 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-17</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-17/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-17/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-17/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-17/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-17/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-17/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-17/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-17/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-16 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-16</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-16/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-16/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-16/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-16/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-16/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-16/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-16/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-16/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-15 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-15</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-15/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-15/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-15/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-15/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-15/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-15/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-15/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-15/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-14 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-14</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-14/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-14/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-14/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-14/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-14/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-14/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-14/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-14/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-13 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-13</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <a href="../daily/2026-06-13/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-13/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-13/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-13/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
+                        <a href="../daily/2026-06-13/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
+                        <a href="../daily/2026-06-13/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
+                        <a href="../daily/2026-06-13/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
+                        <a href="../daily/2026-06-13/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-12 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-12</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">6カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                        <a href="../daily/2026-06-12/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-12/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-12/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-12/04-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
+                        <a href="../daily/2026-06-12/05-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
+                        <a href="../daily/2026-06-12/06-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
+                    </div>
+                </article>
+
+                <!-- 2026-06-11 -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-mono text-xl text-emerald-400">2026-06-11</span>
+                        <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">6カテゴリ</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                        <a href="../daily/2026-06-11/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                        <a href="../daily/2026-06-11/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                        <a href="../daily/2026-06-11/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                        <a href="../daily/2026-06-11/04-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
+                        <a href="../daily/2026-06-11/05-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
+                        <a href="../daily/2026-06-11/06-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="flex items-center gap-x-3 mb-4">
+                <h2 class="text-2xl font-semibold">2026-06-11 別バージョン</h2>
+                <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-300 rounded-2xl border border-amber-500/20">ルート直下の派生版</span>
+            </div>
+
+            <article class="bg-zinc-900 border border-amber-500/20 rounded-3xl p-6">
+                <p class="text-sm text-zinc-400 mb-4">日付フォルダ配下の正式版とは別に、ルート直下へ生成された2026-06-11の別バージョンです。</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                    <a href="../2026-06-11.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
+                    <a href="../2026-06-11-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI</a>
+                    <a href="../2026-06-11-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
+                    <a href="../2026-06-11-hardware-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 Hardware</a>
+                    <a href="../2026-06-11-longevity-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Longevity</a>
+                    <a href="../2026-06-11-generative-ai-creative-tools.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Generative</a>
                 </div>
             </article>
+        </section>
 
-            <!-- 2026-06-27 (既存) -->
-            <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-mono text-xl text-emerald-400">2026-06-27</span>
-                    <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <a href="../daily/2026-06-27/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
-                    <a href="../daily/2026-06-27/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI & Tech</a>
-                    <a href="../daily/2026-06-27/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
-                    <a href="../daily/2026-06-27/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware & Semiconductors</a>
-                    <a href="../daily/2026-06-27/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech & Energy</a>
-                    <a href="../daily/2026-06-27/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
-                    <a href="../daily/2026-06-27/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech & Molecular Biology</a>
-                    <a href="../daily/2026-06-27/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative AI & Creative Tools</a>
-                </div>
-            </article>
+        <section class="mb-10">
+            <div class="flex items-center gap-x-3 mb-4">
+                <h2 class="text-2xl font-semibold">旧1本構成</h2>
+                <span class="text-xs px-3 py-1 bg-zinc-700 text-zinc-300 rounded-2xl">2026-05-16〜2026-06-10</span>
+            </div>
 
-            <!-- 2026-06-26 (既存) -->
-            <article class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-mono text-xl text-emerald-400">2026-06-26</span>
-                    <span class="text-xs px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-2xl">8カテゴリ</span>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <a href="../daily/2026-06-26/01-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">01 AI</a>
-                    <a href="../daily/2026-06-26/02-chinese-ai-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">02 Chinese AI & Tech</a>
-                    <a href="../daily/2026-06-26/03-ai-agents.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">03 AI Agents</a>
-                    <a href="../daily/2026-06-26/04-ai-hardware.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">04 AI Hardware</a>
-                    <a href="../daily/2026-06-26/05-physical-tech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">05 Physical Tech</a>
-                    <a href="../daily/2026-06-26/06-longevity.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">06 Longevity</a>
-                    <a href="../daily/2026-06-26/07-biotech.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">07 Biotech</a>
-                    <a href="../daily/2026-06-26/08-generative-ai.html" class="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-2xl text-sm text-center transition-colors">08 Generative AI</a>
-                </div>
-            </article>
+            <div class="grid md:grid-cols-2 gap-4">
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <h3 class="text-lg font-semibold mb-3">2026年6月</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-sm">
+                        <a href="../2026-06-10.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-10</a>
+                        <a href="../2026-06-09.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-09</a>
+                        <a href="../2026-06-08.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-08</a>
+                        <a href="../2026-06-07.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-07</a>
+                        <a href="../2026-06-06.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-06</a>
+                        <a href="../2026-06-05.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-05</a>
+                        <a href="../2026-06-04.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-04</a>
+                        <a href="../2026-06-03.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-03</a>
+                        <a href="../2026-06-02.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-02</a>
+                        <a href="../2026-06-01.html" class="hover:text-emerald-400 transition-colors py-1">2026-06-01</a>
+                    </div>
+                </article>
 
-            <!-- さらに古い日は既存のまま（運用ルールに従い削除せず最小限整理） -->
+                <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <h3 class="text-lg font-semibold mb-3">2026年5月</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-sm">
+                        <a href="../2026-05-31.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-31</a>
+                        <a href="../2026-05-30.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-30</a>
+                        <a href="../2026-05-29.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-29</a>
+                        <a href="../2026-05-28.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-28</a>
+                        <a href="../2026-05-27.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-27</a>
+                        <a href="../2026-05-26.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-26</a>
+                        <a href="../2026-05-25.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-25</a>
+                        <a href="../2026-05-24.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-24</a>
+                        <a href="../2026-05-23.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-23</a>
+                        <a href="../2026-05-22.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-22</a>
+                        <a href="../2026-05-21.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-21</a>
+                        <a href="../2026-05-20.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-20</a>
+                        <a href="../2026-05-19.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-19</a>
+                        <a href="../2026-05-18.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-18</a>
+                        <a href="../2026-05-17.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-17</a>
+                        <a href="../2026-05-16.html" class="hover:text-emerald-400 transition-colors py-1">2026-05-16</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-zinc-800 bg-zinc-950 py-8">
+        <div class="max-w-5xl mx-auto px-6 text-center text-xs text-zinc-500">
+            GrokPulse Archive • <a href="../index.html" class="hover:text-zinc-400">メインに戻る</a>
         </div>
-
-        <div class="mt-10 text-center">
-            <a href="../index.html" class="inline-flex items-center gap-x-2 px-5 py-2.5 border border-zinc-700 hover:border-emerald-400/60 rounded-2xl text-sm transition-colors">
-                <span>メインのトップページに戻る</span>
-            </a>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
