@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware & Semiconductors ダイジェスト | 2026-07-01 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-amber-500/10 text-amber-400 text-xs font-mono tracking-[2px] rounded-2xl border border-amber-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware & Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-01 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧠</div>
+      <div class="flex-1">
+        <div class="uppercase text-amber-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">HBM供給逼迫がAIデータセンター展開にさらに深刻な遅延影響<br>NVIDIA-SK Hynixロックインで他プレイヤーの調達競争が激化</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月1日、AI Hardware分野の最大のトピックは「HBM供給逼迫がAIデータセンターの物理的ボトルネックとしてさらに深刻化し、NVIDIAとSK Hynixの多年度パートナーシップによる供給ロックインが他プレイヤーの調達環境を一層嚴しくしていること」だ。SK HynixとMicronの2026年HBM生産は既に完売状態が続き、NVIDIA Blackwellプラットフォームのメモリ需要がデータセンターの新設・拡張ペースを直接制約している状況が、具体的な展開遅延事例としてさらに報告され始めている。NVIDIA-SK Hynixの2030年までの技術・供給協業により、SK Hynixの生産能力がNVIDIA優先で実質ロックインされた形となり、他の hyperscaler や AIスタートアップにとってはHBM調達がGPU調達以上に難しい状況が顕在化。HBMが「AIインフラが支払う税」として、単なる部材ではなく戦略的制約要因に昇格した状況がより鮮明になっている。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-amber-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: NVIDIA-SK Hynix Lock-in -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#01 PARTNERSHIP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/1</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA-SK Hynixの多年度協業がHBM供給を2030年まで実質ロックイン<br>Vera Rubin以降のロードマップ全体をカバー</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIAとSK Hynixの多年度技術パートナーシップにより、Vera Rubin AIスーパーコンピュータや次世代プラットフォーム向けHBMの共同開発と供給が長期的に確保された。SK HynixはNVIDIAの最大HBMパートナーとして位置づけられ、生産能力の多くがNVIDIA優先で割り当てられる形に。Jensen HuangがHBMウェハに「Please make more」と直筆するほど需要が逼迫する中、この協業はNVIDIAが「物理的ボトルネック」に対する確実性を買った戦略的動きとして注目されている。07-01もこのロックイン構造が他プレイヤーの調達環境をさらに嚴しくしている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-handshake"></i> 
+            <span>NVIDIA-SK Hynix多年度契約・供給ロックイン・需要逼迫より</span>
+          </div>
+        </div>
+
+        <!-- Card 2: HBM Supply Crisis -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#02 BOTTLENECK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/1</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">2026年HBM生産完売が続き、データセンター展開に直接的な遅延影響<br>Blackwellメモリ需要増がボトルネックをさらに顕在化</div>
+          <div class="mt-4 text-sm text-zinc-400">SK HynixとMicronの2026年HBM生産は既に完売状態が継続中。NVIDIA Blackwell B200がH100比で大幅に多いHBMを必要とするなど、モデル規模の増大がメモリ需要を爆発的に押し上げている。HBM供給の逼迫がGPU調達以上にデータセンターの新設・拡張ペースを制約する最大の物理的ボトルネックとして浮上し、具体的な展開遅延事例がさらに報告され始めている。他の hyperscaler やAI企業にとっては、HBM割り当て競争が激化し、展開スケジュールに直接的な遅れが生じている状況が顕在化している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-exclamation-triangle"></i> 
+            <span>HBM完売継続・Blackwellメモリ需要・展開遅延影響より</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Memory Market & Next Tech -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#03 NEXT-GEN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/1</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM4Eサンプル出荷と先進パッケージングが次の焦点に<br>メモリメーカーの戦略的地位がさらに強化</div>
+          <div class="mt-4 text-sm text-zinc-400">SK HynixがHBM4Eサンプル出荷を開始し、HBM4市場での主導的シェア（予測70%近く）を維持する動きを強めている。一方、TSMCの先進パッケージング（CoWoSなど）容量もHBM＋GPU統合の制約要因として注目され始めている。メモリメーカー（SK Hynix、Micron、Samsung）のAI需要による業績回復は続き、HBMが単なる部材から「AIインフラの戦略的資産」へと位置づけが変わりつつある。サプライチェーンの再編が、AI展開の競争優位性を左右する時代の本格化が予測される。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i> 
+            <span>HBM4E進展・先進パッケージング・メモリメーカー戦略より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-amber-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月1日、AI Hardware分野の最大のトピックは「HBM供給逼迫がAIデータセンターの物理的ボトルネックとしてさらに深刻化し、NVIDIAとSK Hynixの多年度パートナーシップによる供給ロックインが他プレイヤーの調達環境を一層嚴しくしていること」だ。SK HynixとMicronの2026年HBM生産は既に完売状態が続き、NVIDIA Blackwellプラットフォームのメモリ需要がデータセンターの新設・拡張ペースを直接制約している状況が、具体的な展開遅延事例としてさらに報告され始めている。NVIDIA-SK Hynixの2030年までの技術・供給協業により、SK Hynixの生産能力がNVIDIA優先で実質ロックインされた形となり、他の hyperscaler や AIスタートアップにとってはHBM調達がGPU調達以上に難しい状況が顕在化している。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            HBMが「AIワークロードが支払う税」として機能し、モデル規模の指数函数的な増大がメモリ需要を爆発的に押し上げている。SK HynixのHBM3EリードとHBM4Eサンプル出荷開始は、メモリメーカーの戦略的地位をさらに強化。一方、TSMCの先進パッケージング容量も次の制約要因として浮上し始めている。2026年後半は「HBM供給と先進パッケージングがAIインフラ展開のペースを決める」時代の本格的な到来であり、サプライチェーンの再編がAIプレイヤーの競争優位性を左右する構造が定着しつつある。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-amber-400">
+            <span class="font-semibold text-amber-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">みんな「もっとデカいモデル作れ、もっと速いGPU作れ」って言ってるけど、実は一番足を引っ張ってるのは「どれだけ記憶できるか」なんだよね。NVIDIAがSK Hynixと2030年までガッチリ契約してHBM供給を押さえたニュースが象徴的。BlackwellがH100の何倍もメモリ食うんだから当然だわ。で、2026年生産はもう完売で、他社は割り当て争いに必死。しかもそれが具体的なデータセンター展開遅延にまでつながり始めてるってのが、07-01の新しいポイントだわ。結局、AIのスケーリングを一番阻害してる物理的制約が「計算」じゃなくて「記憶」だってことが、完全にバレちゃった感じだわ。メモリメーカーが一番美味しいポジションにいるのも皮肉だよね。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">HBMがAIインフラの「物理的ボトルネック」としてさらに深刻化</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">NVIDIA Blackwellのメモリ需要急増とSK Hynix/Micronの2026年HBM生産完売という事実が、HBMをAIインフラの最もクリティカルな物理的制約要因に押し上げている。NVIDIAとSK Hynixの多年度パートナーシップは、単なる調達契約ではなく、Vera Rubin以降のロードマップ全体にわたるメモリ共同開発と供給確約であり、NVIDIAがこのボトルネックに対する確実性を戦略的に確保した形だ。HBM4Eへの移行や先進パッケージング（CoWoSなど）の容量制約も次の焦点として浮上し、サプライチェーンの再編がAI展開の競争優位性を決める時代に入った。2026年後半は「HBM供給がAIインフラのペースを決める」構造の本格化と言える。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-amber-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i> 
+            <span>NVIDIAハードウェア戦略責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「SK Hynixとの多年度技術パートナーシップは、Vera Rubin以降のAIインフラロードマップ全体にわたるHBM供給の確実性を確保するための戦略的動きだ。HBMはAIワークロードのスケーリングを最も強く制約する物理的ボトルネックになっており、Blackwellのメモリ需要急増に対応するため、長期的な生産能力を確保する必要があった。他プレイヤーへの影響は避けられないが、NVIDIAのプラットフォーム全体の安定供給を優先した結果だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i> 
+            <span>SK Hynix HBM責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「NVIDIAとの多年度協業により、HBM3Eでの市場リード（55-60%シェア）を維持しつつ、HBM4Eサンプル出荷と次世代開発を加速させることができた。2026年生産は既に完売しており、AIデータセンター需要がメモリサプライチェーン全体を再定義している。SK Hynixは単なるメモリ供給者から、AIインフラの重要な戦略的パートナーへと進化している。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>メモリ市場アナリスト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBM供給の逼迫とNVIDIA-SK Hynixの長期ロックインにより、メモリメーカーの戦略的地位がさらに強化されている。SK HynixのHBMリードは当面続き、HBM4市場でも高いシェアを維持すると予測される。一方で、他の hyperscaler やAI企業にとってはHBM調達競争が激化し、データセンター展開スケジュールに直接的な影響が出始めている。HBMがAIインフラのボトルネックである限り、この構造は継続する。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i> 
+            <span>AIデータセンター運用者・ハイパースケーラー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBM供給の逼迫は、データセンターの新設・拡張ペースを最も強く制約する物理的ボトルネックになっている。NVIDIA Blackwellのメモリ需要増加により、HBMの調達がGPU調達以上に難しい状況だ。NVIDIA-SK Hynixの長期契約は一定の安定をもたらす一方で、他のプレイヤーにとっては割り当て競争がさらに嚴しくなり、展開スケジュールの遅れが現実のリスクとなっている。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-link"></i> 
+            <span>半導体サプライチェーン・先進パッケージング専門家</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBMだけでなく、TSMCの先進パッケージング（CoWoSなど）容量も次の制約要因として浮上し始めている。HBMとGPUの3D統合がAIアクセラレータの性能を決める中で、サプライチェーン全体の再編がAIインフラの競争優位性を左右する時代に入った。NVIDIA-SK Hynixの協業はメモリ側の確実性を高めたが、パッケージングや電力供給などの他の物理的制約への対応も今後の重要課題だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i> 
+            <span>ローカルAI / オンデバイスハードウェア構築者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「データセンター側のHBM逼迫とは対照的に、ローカル/オンデバイスAIでは統一メモリアーキテクチャ（例: Macの大量ユニファイドメモリ）が大規模モデルを効率的に扱える利点が再評価されている。クラウド依存を減らし、プライベートで高性能推論を実現する環境が現実的になってきた。ただし、最先端の訓練や大規模推論では依然としてHBM級の高帯域メモリが不可欠で、クラウドとローカルのハイブリッド活用がますます重要になっている。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware & Semiconductors • 2026-07-01 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（HBM供給・NVIDIA-SK Hynix動向・展開遅延事例）、NVIDIA/SK Hynix/TSMC発表・市場分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-01', 'color:#f59e0b');
+  </script>
+</body>
+</html>
