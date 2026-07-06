@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-06 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-06 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🛠️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">Claude Sonnet 5が「最もagenticなSonnet」として登場<br>agenticタスクのコストパフォーマンスが劇的に向上。GLM-5.2も長期実行・コーディングagentで存在感を強める</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月6日、AI Agents分野の最大の動きはAnthropicがClaude Sonnet 5をリリースしたことだ。Sonnet 5は「計画立案・ツール使用・自律実行」に強く最適化され、Opus 4.8に近いagentic性能を大幅に低コストで提供する。Terminal-BenchやOSWorldなどのagenticベンチマークで前モデルから大幅向上し、「実務で使えるagent」をより手軽に構築できる環境が整いつつある。一方、中国のGLM-5.2も長期実行タスクや大規模リポジトリコーディングでのagent性能で注目を集め、低コストという強みを活かしてアジア企業でのagent採用を後押ししている。Grok 4.5はこうした「モデルとしてのagent性能競争」とは別に、TeslaのFSDやOptimusといった実世界のembodied agentタスクで継続的に成果を出し、物理世界での信頼性という別の軸でリードを維持している。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 AGENTIC MODEL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Sonnet 5が「最もagenticなSonnet」としてリリース<br>ツール使用・計画・長期タスクで大幅向上、低コストで実務agentを実現</div>
+          <div class="mt-4 text-sm text-zinc-400">AnthropicがClaude Sonnet 5を正式リリース。agenticタスクに特化して設計され、Terminal-Bench 2.1で前モデルから大幅スコアアップ、OSWorld-VerifiedやBrowseCompでもOpus 4.8に迫る性能を示した。価格はOpusの数分の1で提供され、「高性能agentを安く使う」選択肢が現実的になった。企業・開発者からagent構築のハードルが下がったとの声が上がっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i> 
+            <span>Claude Sonnet 5 agentic性能向上・コスト効率化より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 CHINESE AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GLM-5.2が長期実行・大規模コーディングagentで強みを発揮<br>低コストと1Mトークン文脈が実務agentに適した形に</div>
+          <div class="mt-4 text-sm text-zinc-400">Zhipu AIのGLM-5.2が長期実行タスクや大規模リポジトリを扱うコーディングagentで高い評価を集めている。1Mトークン文脈とコスト優位性を活かし、アジアのソフトウェア開発チームや自動化プロジェクトでの採用が進んでいる。USモデルのアクセス制限下で「実用的なagentを低コストで回したい」企業にとって有力な選択肢となっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe"></i> 
+            <span>GLM-5.2 長期agent・低コスト実務採用より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 REAL-WORLD AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok 4.5がembodied agent（物理世界）で継続成果<br>Tesla FSD・Optimusでの実運用信頼性がさらに向上</div>
+          <div class="mt-4 text-sm text-zinc-400">xAIのGrok 4.5がTeslaのFSD v13開発やOptimusロボット制御といった実世界のembodied agentタスクで安定した成果を出し続けている。シミュレーションだけでなく実機・実環境での長期運用信頼性が評価され、プライベートベータ企業からの信頼がさらに高まっている。テキストベースのagentとは異なる「物理世界でのロバストネス」がGrokの強みとして際立っている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-car"></i> 
+            <span>Grok 4.5 embodied agent実運用信頼性向上より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月6日、AI Agents分野の最大の動きはAnthropicがClaude Sonnet 5をリリースしたことだ。Sonnet 5は「計画立案・ツール使用・自律実行」に強く最適化され、Terminal-BenchやOSWorldなどのagenticベンチマークで前モデルから大幅にスコアを伸ばし、Opus 4.8に迫る性能をより低コストで提供する。これにより「高性能なagentを現実的なコストで構築・運用する」環境が一気に整いつつある。一方、中国のGLM-5.2も長期実行タスクや大規模リポジトリを扱うコーディングagentで存在感を強め、低コストという明確な優位性を活かしてアジア企業での採用を加速させている。Grok 4.5はこうした「モデルとしてのagent性能競争」とは別に、Tesla FSDやOptimusといった物理世界のembodied agentで継続的に実運用成果を出し、信頼性という別の軸でリードを維持している。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            07-06でより鮮明になったのは、「agentic AI」がついに「デモやベンチマークの域を超えて実務でどれだけ安定して動くか」を問われるフェーズに入ったという事実だ。Sonnet 5はコストと性能のバランスを大幅に改善し、GLM-5.2は「安くて長く動く」実用性を武器にアジアで地盤を固めている。一方、Grok 4.5はテキスト中心のagent競争とは異なる「物理世界でのロバストネスと継続改善ループ」で差別化を図っている。2026年後半のagent開発は「どれだけ賢いか」より「どれだけ長く・安く・信頼性高く実務を回せるか」が本当の評価軸になっていく。派手なベンチマーク更新より、地味だが確実な実運用信頼性の積み重ねが勝負を決める時代が本格的に始まったと言える。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">Sonnet 5が出て「これでagentが安く作れるようになった！」って喜んでる人たちを見て、GLM-5.2が「うちはもっと安くて長く動くよ」ってアジア企業に食い込んでるの、なんか最高に2026年らしい（笑）。Grok 4.5はそんなの完全スルーでTeslaとOptimusの実機で「とにかく壊れずに動け」ってやってるし。結局、agentって「賢いこと」より「ちゃんと最後までやり遂げること」が一番難しいんだよな。07-06もその本質が少しずつ見えてきた一日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">「どれだけ長く・安く・信頼性高く実務を回せるか」が本当の評価軸に</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月6日現在のAI Agents分野は、Claude Sonnet 5のリリースによりagenticタスクのコストパフォーマンスが大幅に改善された。一方でGLM-5.2のような低コスト長文脈モデルが実務での長期実行agentとしてアジア企業に支持を広げている。Grok 4.5はテキストベースのagent競争とは異なる「物理世界での継続的信頼性」で独自のポジションを固めつつある。2026年後半のagent開発・運用は、ベンチマーク上の「賢さ」より「実環境でどれだけ安定して価値を生み出し続けられるか」がより厳しく問われるフェーズに入った。コスト、信頼性、長期運用性の三つ巴が本当の勝負どころになっている。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i> 
+            <span>フロンティアラボ（Anthropic）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Sonnet 5はagenticタスクに特化して設計されており、ツール使用・計画・長期実行の各領域で前モデルから明確な改善が見られる。コストを抑えつつOpus級の性能に近づけることで、より多くの企業・開発者が実務レベルのagentを構築できる環境を提供したいと考えている。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe"></i> 
+            <span>中国AI開発者（Zhipu AI寄り）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「GLM-5.2は1Mトークン文脈と低コストを活かし、長期実行を要する実務agent（特に大規模コーディングや自動化タスク）で高い実用性を発揮している。アジア企業を中心に『高性能を安く長く使える』選択肢として支持が広がっており、規制環境下でも実務で成果を出せるモデルとしてポジションを固めている。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-car"></i> 
+            <span>Embodied AI / ロボティクス研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「テキストベースのagent性能競争とは別に、物理世界での長期運用信頼性（embodied agent）がますます重要になっている。Grok 4.5がTesla FSDやOptimusで示している継続的な実運用成果は、シミュレーションだけでなく実機環境でのロバストネスが本当の差別化要因であることを示唆している。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>企業自動化リーダー（アジア製造業）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Sonnet 5のような低コスト高性能agentモデルの登場と、GLM-5.2の長期実行実用性により、製造・物流現場でのagent導入ハードルが下がってきている。ただし、実際の運用では『どれだけ長く壊れずに動くか』と『コストの予測可能性』が最も重要な評価軸になっており、モデル選択はベンチマークより実務での安定性で決まるケースが増えている。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i> 
+            <span>AI安全・評価研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「agenticベンチマーク（OSWorld, Terminal-Benchなど）の重要性が高まる一方で、実環境での長期信頼性や失敗時のリカバリ能力の評価がまだ不十分な状況が続いている。Sonnet 5やGLM-5.2の進化は喜ばしいが、agentが複雑な実務を自律的に長期間回すための安全性・ロバストネスの研究が追いついていない点が懸念材料だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i> 
+            <span>日本企業・開発者視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Claude Sonnet 5のコストパフォーマンス向上とGLM-5.2の長期実行強みにより、agent導入の選択肢が現実的になってきた。ただし、日本企業では『規制リスク・データセキュリティ・運用コストの予測性』を総合的に判断する必要があり、単に性能が高いモデルを選ぶだけでは不十分。実務での安定運用実績を重視した慎重な評価が求められている。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-06 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Claude Sonnet 5 agentic性能、GLM-5.2長期agent実用性、Grok embodied agent信頼性）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-06', 'color:#10b981');
+  </script>
+</body>
+</html>
