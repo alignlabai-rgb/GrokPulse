@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware & Semiconductors ダイジェスト | 2026-07-08 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware & Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-08 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">「トークン課金時代」がハードウェア選択を書き換える<br>モデルコスト戦争が推論チップ・メモリ・垂直統合の三本柱を同時に動かす</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月8日、AI Hardware分野の最大の動きは「ソフトウェア側のコスト戦争が、シリコン選択の基準を根本から変え始めたこと」だ。MicrosoftはOfficeアプリのプロンプトを自社MAIモデルへ置換し、AnthropicはFable 5を使用量課金へ移行。Elon MuskはGrok 4.5を「Opus級だがトークン効率が高く低コスト」と位置づけて7月9日公開を予告した。07-07のReuters報道ではDeepSeekが推論特化の自社チップ開発に着手。同日Samsungは過去最高のQ2利益を発表したが株価は約7%下落し、HBM価格の持続性と設備投資への懸念が顕在化。SK Hynixは28億ドル規模の米国ADR上場を同週に控え、メモリ二強の資金循環が加速している。07-08は「ベンチマーク一点勝負」から「1トークンあたり何ドル・何ワットか」がハードウェアの真の勝負軸になった日と言える。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 TOKEN ECONOMY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/7-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">モデルコスト戦争が推論ハードウェア選択を再定義<br>MAI内製化・課金移行・Grok 4.5効率訴求が重なる</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg報道（7/7）でMicrosoftがExcel・Outlookのサードパーティモデルプロンプトを自社MAIファミリーへ切替。Suleymanは「Anthropicは非常に高い」と公言。同日AnthropicはFable 5を無制限サブスクから$10/$50 per million tokensの従量課金へ移行。7/8にはMuskがGrok 4.5を「Opus級・高速・トークン効率・低コスト」と位置づけ。いずれも「推論1トークンの原価」がビジネスモデルの生命線になっており、Maia 200などの推論特化チップやBlackwell最適化への需要が構造的に高まっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-coins"></i> 
+            <span>Bloomberg・Anthropic・Elon Musk on X（7/7-8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 VERTICAL SILICON</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/7</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">DeepSeekが推論特化の自社AIチップ開発に着手<br>モデル屋のシリコン内製化がグローバル標準に</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters（7/7）によると、DeepSeekは約1年前からシリコン事業参入を検討。ハードウェアパートナーとの面談とエンジニア採用を進め、焦点はトレーニングではなくデータセンター向け推論チップ。Huaweiが中国DCチップ市場の約半分を占める中、Alibaba・Baiduと並ぶ垂直統合の流れ。OpenAIのJalapeño（Broadcom共同）やAnthropicのカスタムチップ検討と構造的に類似し、「モデル性能の差」より「推論原価の差」が競争軸になる時代の到来を示している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i> 
+            <span>Reuters・Ars Technica（7/7）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 HBM PARADOX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/7</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Samsungが過去最高Q2利益でも株価7%下落<br>HBMスーパーサイクルの「持続性」への疑問が表面化</div>
+          <div class="mt-4 text-sm text-zinc-400">Samsung Electronicsは7/7にQ2営業利益89.4兆ウォン（前年同期比1,800%超増）の過去最高速報を発表したが、株価は約7%下落。CNBC分析では「AIインフラ投資のペースがメモリ価格を牽引し続けられるか」への懸念、南部への大規模新工場建設に伴う設備投資負担、労働組合への利益還元（営業利益の10.5%をボーナス枠）が重なった。Counterpointはモバイル・サーバー含むメモリ価格が今四半期も上昇継続と指摘。GPUの性能競争の裏で、HBMが真のボトルネックであり続けている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i> 
+            <span>CNBC・Reuters（7/6-7）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 SK HYNIX ADR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/6-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SK Hynixが28億ドル規模の米国ADR上場<br>HBM覇権とメモリ二強の資金循環が加速</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters（7/6）報道によると、SK Hynixは約28億ドル規模の米国ADR上場を7月第2週に実施予定。NVIDIAとのAI Factory連携でHBM4供給を強化する一方、Samsungの好決算週と重なり投資家のローテーション需要も発生。UBSは「ADR買い・韓国現地株売り」の戦略を推奨。HBM市場ではSK Hynixが先行しSamsungが追走する構図が続く中、メモリメーカーこそがAIインフラ投資サイクルの最大受益者であり、同時にその持続性への疑念も市場に浸透し始めている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i> 
+            <span>Reuters・TechCrunch・UBS（7/6-7）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 XPU DIVERSIFY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/7-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">推論特化XPUの成長率がGPUを上回る見通し<br>Groq・Cerebras・カスタムASICが二極化を加速</div>
+          <div class="mt-4 text-sm text-zinc-400">Futurum Group調査では2026年のデータセンター半導体支出でXPU（GPUでもCPUでもないASIC等）の成長率22%がGPU（19%）を上回る見通し。NVIDIAのGroq技術ライセンス（200億ドル規模）、AMDのUntether AI/MK1買収、IntelのSambaNova提携など大手の推論ポートフォリオ強化が続く。一方、Taalas HC1のようなハードコード推論チップはB200比でトークン単価1/5を主張。07-08のコスト戦争は、汎用GPU一強から「GPU＋推論特化シリコンの二極構造」への移行を現実のものにしている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i> 
+            <span>Data Center Knowledge・TrendForce・Futurum（7/7-8）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月8日、AI Hardware分野で最も重要な構造変化は「ソフトウェアのコスト戦争が、ハードウェア選択の論理を根底から書き換え始めたこと」だ。07-07のBloomberg報道でMicrosoftがOfficeアプリのプロンプトを自社MAIモデルへ置換し、Mustafa Suleymanが「Anthropicは非常に高い」と公言した。これは単なるモデル切替ではなく、Azure上のMaia推論チップを含む内製スタックへの回帰を意味する。同日AnthropicはFable 5を従量課金へ移行し、「無制限推論」の時代が終わり、トークン単価が顧客の意思決定に直結するフェーズへ入った。7/8にはMuskがGrok 4.5を「Opus級だがトークン効率が高く低コスト」と位置づけ、xAIのColossusインフラ上での推論効率が製品差別化の武器になっている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            シリコン側では07-07のReuters報道が象徴的だ。DeepSeekが推論特化の自社チップ開発に着手した——OpenAIのJalapeño、Anthropicのカスタムチップ、MicrosoftのMaiaと並ぶ「モデル屋の垂直統合」が、もはや米中の二極だけでなく業界標準になりつつある。メモリ市場では同日Samsungが過去最高のQ2利益を発表したにもかかわらず株価は約7%下落。HBM価格の上昇が続く一方、「AIインフラ投資のペースが維持できるか」という持続性への疑念が先に織り込まれた。SK Hynixの28億ドルADR上場が同週に重なり、メモリ二強への資金集中と同時にローテーション売買も活発化している。07-06〜07のagent本番運用拡大（07-07ダイジェスト）が推論需要を押し上げた流れを受け、07-08はその需要が「どのシリコンで、いくらで処理するか」という具体的なハードウェア選択へと結晶化した日だった。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            推論チップ市場の多様化も加速している。Futurum Groupの調査では2026年のXPU成長率（22%）がGPU（19%）を上回る見通し。NVIDIAはGroq技術の統合で低レイテンシ推論を補強し、CerebrasはNASDAQ上場後にOpenAIとの750MW規模の計算提携を獲得。Taalas HC1のようなハードコード推論チップはHBM不要・空冷250WでB200比1/5のトークン単価を主張する。汎用GPUは依然として最強の汎用性を持つが、「1トークンあたりの原価」が勝負になる局面では専用アーキテクチャが確実にシェアを奪っていく。2026年後半のAIハードウェア競争は、もはや「どのチップが一番速いか」ではなく「誰が1トークンを最も安く処理できるか」が投資家もエンジニアも見る指標になっている。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">面白いね。ソフトウェア側で「Anthropic高すぎ」「Grokはトークン効率いいぞ」って言い合ってるのに、結局ハードウェアの話に行き着くんだよ。MicrosoftがMAIに戻るのも、DeepSeekが自前チップを作るのも、全部「NVIDIAに毎月いくら払うか」が痛いからなんだよね（笑）。Samsungは過去最高益なのに株が落ちるのも、みんな「このHBMブーム、いつまで続くの？」って疑ってるから。SK HynixのADR上場とセットで見ると、メモリ屋がAIの本当の税務署みたいになってる。Grok 4.5を明日出すって言ってるけど、Colossusの上でどれだけ安く回せるかが、ベンチマークスコアより大事な時代になったってことだよね。07-08は、その現実がようやく全員の顔に突きつけられた一日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">トークン課金時代のハードウェア三層——計算・メモリ・垂直統合</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月8日現在のAI Hardware分野は、モデルコスト戦争（Microsoft MAI内製化、Anthropic従量課金、Grok 4.5効率訴求）が推論チップ選択を再定義している。DeepSeekの自社チップ開発は垂直統合のグローバル標準化を示し、Samsung/SK HynixのHBM動向はメモリが依然としてAIインフラのボトルネックであることを証明する。XPUの成長率がGPUを上回る見通しは、汎用GPU一強から二極構造への移行が現実のものになったことを意味する。2026年後半の評価軸はピーク性能ではなく、tokens per dollarとtokens per wattである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i> 
+            <span>NVIDIA / GPUベンダー視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「トークン課金時代において、推論効率は顧客の粗利率を直接左右する。Groq技術の統合とBlackwellのDFlash speculative decodingにより、我々は汎用GPUの柔軟性を維持しつつ推論コストを大幅に削減する。XPUの台頭は認識しているが、マルチモデル環境ではプログラマブルなGPUが依然として最適解である。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i> 
+            <span>メモリメーカー（Samsung / SK Hynix）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBM4の量産とサンプル出荷がAI計算の性能上限を規定している。好決算にもかかわらず市場は設備投資の持続性とメモリ価格の天井を懸念するが、当社の月次チェックではサーバー向けメモリ価格は今四半期も上昇が続く。AIインフラ投資の減速がなければ、HBMスーパーサイクルは2026年内も継続する見通しだ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-layer-group"></i> 
+            <span>モデル屋のハードウェア戦略担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「DeepSeek、OpenAI、Anthropic、Microsoftに続き、モデル企業の自社チップ開発はもはやオプションではない。推論は高頻度・長期コストであり、トークン単価が収益性を決める。Huawei Ascendや自社ASICへの投資は、ソフトウェアのコスト優位性をハードウェアで固定化するための構造的必然である。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>半導体アナリスト / 投資家</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Samsungの好決算後の株価下落は、AI関連銘柄に『実績確認売り』と持続性懸念が同時に織り込まれた典型例だ。SK Hynix ADR上場による資金ローテーションも重なり、メモリサイクルのピーク議論が本格化している。推論チップスタートアップへの投資は活発だが、NVIDIA傘下への吸収合併も増え、勝者総取りの構図が強まっている。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i> 
+            <span>ハイパースケーラー / CSP運用</span>
+          </div>
+          <p class="text-sm text-zinc-300">「AWS Bedrockでは50%超のトークンがTrainium上で処理されている。MicrosoftのMAI内製化も同じ論理だ。顧客がトークン単価に敏感になるほど、汎用GPUだけに依存するモデルは競争力を失う。推論ワークロードの多様化に応じて、GPU・ASIC・CPUのハイブリッド構成が標準になる。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i> 
+            <span>日本企業・エンタープライズIT</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Anthropicの従量課金移行とMicrosoftの内製モデル化は、国内企業のAI予算設計に直結する。クラウド推論のトークン単価が読めない時代には、エッジ推論やオンプレ推論ハードウェアの投資対効果が再評価される。HBM供給の安定性と電力制約も、データセンター立地とハードウェア調達の判断材料になっている。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware & Semiconductors • 2026-07-08 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Bloomberg・Reuters・CNBC・Anthropic・Elon Musk on X・Data Center Knowledge・TrendForce（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-08', 'color:#10b981');
+  </script>
+</body>
+</html>
