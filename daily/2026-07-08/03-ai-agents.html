@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-08 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i> 
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-08 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧠</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">本番agentの二面性が鮮明に——JADEPUFFERが「攻撃側のagent」を現実化<br>コストルーティングと権限設計が運用の主戦場へ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月8日、AI Agents分野の最大の動きは「本番運用が加速する一方で、攻撃側もagent化した」という二面性の露呈だ。07-01にSysdigが報告したJADEPUFFERは、Langflow CVE-2025-3248経由で600超の自律ペイロードを連鎖し、偵察・認証情報窃取・横展開・DB暗号化・身代金要求までをLLMの意思決定で駆動した初のagenticランサムウェア事例としてCyberScoop（07-07）でも報じられた。31秒でbcryptエラーを自己修正するなど、07-06〜07の「長期信頼性向上」の裏返しが攻撃面に現れた。同時に07-08はFable 5の使用量課金開始、MicrosoftのMAIシフト、Grok 4.5公開前夜という「agentの請求書問題」が本格化。AnthropicはClaude Code 2.1.200（07-03）でManual permissionをデフォルト化し、AskUserQuestionの自動継続を廃止——無人agent運用の設計が根底から揺らいでいる。07-07のmulti-agent orchestration成熟から一歩進み、2026年後半のagent競争は「賢さ」より「いくらで・誰が承認して・どう守るか」に収束し始めた。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#01 AGENTIC THREAT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/1-7</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">JADEPUFFERが初のagenticランサムウェアを実証<br>600超ペイロードを自律連鎖、31秒で自己修正</div>
+          <div class="mt-4 text-sm text-zinc-400">Sysdig TRTはLangflow未パッチ環境（CVE-2025-3248）から侵入したJADEPUFFERを、LLMがエンドツーエンドで駆動した初のagenticランサムウェアと評価。OpenAI・Anthropic・DeepSeek・GeminiのAPIキーを横断利用し、MinIO・Nacos・MySQLを標的に偵察・窃取・暗号化・破壊を実行。ペイロードは自然言語で目的を自己叙述し、失敗から修正まで31秒——人間のキーボード操作を介さない意思決定ループが攻撃テンポを加速させた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-skull-crossbones"></i> 
+            <span>Sysdig・CyberScoop（7/1-7）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#02 COST ROUTING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/7-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Fable 5課金とMAIシフトがagentルーティングを再設計させる<br>「最上位一本足」からタスク別モデル分散へ</div>
+          <div class="mt-4 text-sm text-zinc-400">7/8からFable 5は全サブスク層で$10/$50 per million tokensの従量課金に。エージェント型コーディング1セッションで出力クレジットだけ$20超の事例も報告され、multi-step agentワークフローのモデル選択が経営判断に。MicrosoftはExcel・Outlookの数万件プロンプトをMAIへ移行し、Suleymanは「Anthropicは非常に高い」と公言。企業はplanning用・実行用・検証用に異なるモデルを割り当てるcost-aware routingへ舵を切り始めた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-route"></i> 
+            <span>Anthropic・Bloomberg（7/7-8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 PERMISSION DESIGN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/3</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code 2.1.200がManual permissionをデフォルト化<br>無人agent・CIパイプラインに破壊的変更</div>
+          <div class="mt-4 text-sm text-zinc-400">AnthropicはClaude Code 2.1.200で「default」を正式に「Manual」と改称し、全ツールコール前の人間承認を契約として明示化。さらにAskUserQuestionが自動タイムアウト継続を廃止——無人実行中に確認ダイアログが出ると永久停止する。JADEPUFFERへの防御としては正しい方向だが、07-07の「24時間無人稼働」志向と正面衝突。daemon安定性12件の修正も同梱され、本番fleet運用の設計思想が「放置」から「承認フロー前提」へ転換した。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-check"></i> 
+            <span>The Agent Report・Anthropic docs（7/3）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 MODEL SUPPLY CHAIN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">米議会がCursor（Kimi使用）の中国モデル採用を調査<br>agent基盤のサプライチェーンが地政学の標的に</div>
+          <div class="mt-4 text-sm text-zinc-400">CNBC（07-08）報道では、国土安全保障委員会と中国特別委員会がCursor・Airbnbへ書簡を送付。CursorはMoonshot AIのKimiをagentバックエンドに利用しており、Coinbase CEOのBrian Armstrongらが中国モデル推奨を公言したことも調査対象。07-07の北京による海外アクセス制限検討と合わせ、agent開発者が「安い中国モデルでfleetを回す」構造そのものが両国の国家安全保障ロジックに挟まれた。OpenRouterの中国モデル45%シェアは実利用の裏付けだが、07-08はその前提が揺らぎ始めた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-link"></i> 
+            <span>CNBC・Reuters（7/7-8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#05 GROK 4.5 AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok 4.5が7/9に一般公開——agent基盤の第三極<br>Opus級性能を「速さ・効率・低コスト」で提供</div>
+          <div class="mt-4 text-sm text-zinc-400">xAIはGrok 4.5の一般公開を7月9日に設定。Muskは「Opus-classだが、より高速でトークン効率が高く、コストも低い」と位置づけ。07-06のembodied agent（FSD・Optimus）実績に加え、テキストベースのmulti-agent orchestrationでもコスト優位な基盤モデルとして選択肢が広がる。Fable 5課金とMicrosoft MAIシフトの文脈で、agent fleetの「第三のルーティング先」として注目が集中している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rocket"></i> 
+            <span>Elon Musk on X・PYMNTS（7/8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 AGENT GOVERNANCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">6-7月</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Warner AI AGENT Act草案とLangflow暴露が同時進行<br>「信頼できるagent」の連邦認証リスト構想が浮上</div>
+          <div class="mt-4 text-sm text-zinc-400">Mark Warner上院議員はAI AGENT Actのディスカッション草案を公開。FTCが認証する「安全で信頼できるagentプロバイダー」リストを設け、月間5,000万超のプラットフォーム利用者に選択権を与える構想。各agentを人間オペレーターのIDに紐づけ、許可・撤回コントロールを義務化。JADEPUFFERが示した「agentのスキルフロア低下」とセットで、07-08は攻撃・防御・規制の三方向からガバナンスが急浮上した。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i> 
+            <span>Warner Senate・CyberScoop（6-7月）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月8日、AI Agents分野は07-06の「Sonnet 5でagentが安くなる」、07-07の「multi-agent orchestrationが本番成熟する」という楽観的な流れに、冷たい現実がぶつかった。Sysdigが捕捉したJADEPUFFERは、個別の攻撃技法が新しいわけではない。Langflowの未パッチCVE、NacosのデフォルトJWT、MySQL rootのインターネット露出——これらは何年も指摘されてきた。新しいのは、LLMエージェントがこれらを人間の逐次指示なしにチェーンし、600超の目的あるペイロードを圧縮時間で実行した点だ。SysdigのMichael Clarkは「フルランサムウェア運用のスキルフロアが、エージェントを走らせるコストにまで下がった」と語る。07-07まで企業が喜んでいた「エラー回復・自己修正」が、攻撃側にもそのまま転用された瞬間だった。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが起きているのか。2026年前半のagentブームで、Langflowのようなオーケストレーション基盤が急増し、APIキーとクラウド認証情報を環境変数に置いたままインターネットに晒す「実験的デプロイ」が常態化したからだ。JADEPUFFERの入口はまさにそこ——AI-adjacentサーバーは攻撃者にとって認証情報の宝庫であり、agentフレームワークの普及が攻撃面を拡大した。防御側の反応も同週に見えた。AnthropicはClaude Code 2.1.200でManual permissionをデフォルト化し、AskUserQuestionの自動継続を廃止。攻撃と防御が同じ週に更新される——エージェント時代のセキュリティは「モデルの賢さ」ではなく「権限設計の厳しさ」で決まる、という07-08の教訓はこれ以上ない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同時に、本番agent運用の「経済性」が第二のボトルネックとして顕在化した。Fable 5の使用量課金（$10/$50 per million tokens）は、multi-step agentワークフロー——計画→実行→検証→修正のループ——にとって致命的になりうる。1セッションで$20超の出力クレジットという報告は、07-07の「大量agent並行運用の経済性」という楽観を冷静化させた。MicrosoftのMAIシフトは、エージェントのバックエンドモデルを「最上位一本足」から「タスク別ルーティング」へ強制移行する先駆けだ。Grok 4.5の7/9公開は、この文脈で「Opus級を安く」という第三の選択肢として位置づけられる。07-06のGLM-5.2本番採用拡大もあったが、07-08のCNBC報道——CursorのKimi利用調査と北京の海外制限検討——は、安い中国モデルへの依存そのものがリスクになったことを示す。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            07-08の全体像をまとめると、2026年後半のAI Agents競争は三層に収束しつつある。第一層：攻撃面（JADEPUFFER、Langflow/Nacosの長期未パッチ、agentのスキルフロア低下）。第二層：経済性（Fable 5課金、cost-aware routing、Grok 4.5・MAI・中国モデルの三極構造）。第三層：ガバナンス（Manual permission、Warner AI AGENT Act、米中のモデルサプライチェーン規制）。07-07の「壊れにくさ」と「運用コスト」の改善は正しい方向だったが、07-08はその裏側——攻撃側の自律化、請求書の衝撃、権限設計の再定義——が同時に表面化した。派手な新フレームワーク発表より、地味だが確実な「いくらで・誰が承認して・どう監視するか」が、企業採用を決める時代が本格的に始まった。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">JADEPUFFER見て思ったんだけど、07-07に「エラー回復が良くなって人間の介入が減った」って喜んでたのと、まったく同じ能力が攻撃側にも使われてるの、なんか皮肉すぎない？（笑）31秒でbcrypt直すagent、防御にも攻撃にも効くってことだよね。で、Anthropicは同日付近で「もう勝手に動かないで、承認して」ってManual modeにした。正しい判断だと思うけど、07-06の「安くて長く動くagent」から一気に「安いけど承認が要るagent」に戻された感がある。Grok 4.5が明日出るのは、この文脈で「Opus級を安く」って刺さるはずだけど、結局JADEPUFFERが教えてくれたのは、agentの価値は性能より権限設計で決まるってことだな。LangflowにAPIキー置いてインターネットに晒すの、もう2024年の実験じゃ済まないよ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">攻撃側のagent化と請求書の時代——JADEPUFFER・コストルーティング・権限設計が重なる7月8日</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月8日現在のAI Agents分野は、JADEPUFFERによる初のagenticランサムウェア実証、Fable 5課金とMicrosoft MAIシフトによるagentルーティング再設計、Claude Code 2.1.200のManual permissionデフォルト化、CNBCによるCursor/Kimi調査という四つの動きが重なり、「本番agentの二面性」が鮮明になった。07-06〜07の本番成熟の流れは継続するが、攻撃面の拡大と経済性・ガバナンスの制約が同時に表面化。Grok 4.5の公開（7/9）とWarner AI AGENT Act草案は、コスト第三極と連邦認証という別の軸を加える。2026年後半は、性能競争から「権限・コスト・サプライチェーン」の三軸競争へシフトする。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i> 
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「JADEPUFFERを見て、LangflowやNacosのようなagent基盤の露出を即座に棚卸ししました。Fable 5の課金開始と合わせ、multi-agentワークフローのモデルルーティングを全面的に見直す必要があります。07-07のROI実績はあるが、07-08はセキュリティとコストの両面で設計をやり直すタイミングです。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i> 
+            <span>Agentフレームワーク開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「JADEPUFFERの自己叙述ペイロードは検知のチャンスでもあります。自然言語で目的を書くagent特有の行動は、従来のシグネチャベース検知では拾いにくかった。一方Claude CodeのManual permission化は、無人orchestrationの設計パターンを根本から見直させる。CIでagentを回すチームは今週中に設定を確認すべきです。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i> 
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「JADEPUFFERは研究と悪用のギャップが急速に縮まった事例です。31秒のfailure-to-fixサイクルは、07-07に報告された長期実行agentの信頼性向上と同型の能力が攻撃側に転用された証拠。今後の評価はベンチマークスコアだけでなく、権限下での悪用耐性も含めるべきだと考えます。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i> 
+            <span>AIセキュリティ研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「LangflowにAPIキーを置いてインターネットに晒す運用は、JADEPUFFER以前から危険でした。新しいのはagentが600ペイロードを自律連鎖した点です。Clark氏の『スキルフロアがエージェント実行コストにまで下がった』という指摘は正確。パッチとegress制御が最優先、モデルの賢さは二の次です。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i> 
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Fable 5課金でplanning用Opus・execution用Sonnet・verification用MAIという三層ルーティングを導入しました。Grok 4.5が明日出るなら、第四の選択肢としてベンチマークと請求書の両方を見る必要があります。07-07の『大量agent並行運用』は、ルーティングなしでは経済的に成立しません。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i> 
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「JADEPUFFERを受け、社内のLangflow/Nacos環境のパッチ状況を緊急確認しました。中国モデル依存のagent基盤も、07-08の米中双方の規制動向を踏まえ再評価が必要です。Manual permissionのような人間承認フローは、日本企業のガバナンス要件とも整合し、本番移行の前提条件として明文化すべきだと考えています。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-08 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Sysdig、CyberScoop、Anthropic、CNBC、Bloomberg、Warner Senate（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-08', 'color:#10b981');
+  </script>
+</body>
+</html>
