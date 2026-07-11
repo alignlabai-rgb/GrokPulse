@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware & Semiconductors ダイジェスト | 2026-07-11 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware & Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-11 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">GPU不足は「小康」——次の壁は電力とラック内電源<br>Rubin遅延観測・グリッド制約・800V→0.7Vの最後の数センチ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月11日、AI Hardware分野の主戦場は「次世代GPUがいつ来るか」と「届いたGPUをどうやって点灯させるか」の二正面に分かれた。X上ではアナリストのExpert Callを起点に「NVIDIA Rubinが再び遅延」との観測が急拡散——公式コメントはなく、Base Rubinは今秋出荷・Kyber/Ultra側が後ろにずれるとの読みも並立する。一方、BofA系の積み上げでは2026〜2030年にAIアクセラレータだけで約208GWの新規電力容量が必要との試算が再共有され、PJM圏ではピーク負荷増の約94%をデータセンターが占める、との整理が「チップよりグリッド」論を後押し。電力は建物まで来ても、GPUまでの最後の数センチ——800Vから0.7Vへの変換、ラック内エネルギーストレージ、MLCC数十万個級——が新しい金脈とボトルネックになっている。07-10のIris量産・SK Hynix上場の余熱の上で、土曜の議論は「シリコン調達」から「電子を届ける物理」へ一段深く落ちた。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 RUBIN DELAY WATCH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「Rubinがまた遅れた」Expert Callが土曜の主戦場に<br>公式未確認・Base vs Ultraの切り分けが争点</div>
+          <div class="mt-4 text-sm text-zinc-400">@jukan05らが「Expert CallでRubin再遅延」と発信し、5万view超の議論に。NVIDIA公式の否定・確認はなし。反論側は「遅延しているのはKyber rack / Rubin Ultra側でBaseは今秋」との整理も提示。HBM4検証・CX8→CX9、高消費電力と液冷最適化など、TrendForceが春先から指摘していた供給網リスクが再びタイムラインに載る。結果として2026年ハイエンド出荷はBlackwell系比重が厚い想定が再浮上——次世代を待つ側と、今ある枠で推論工場を回す側の分断が深まる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>X Expert Call議論・供給網分析（7/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 POWER WALL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/9-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GPU不足は小康、電力危機が玄関を開けた<br>〜208GWのAI電力需要と連系待ちが上限を決める</div>
+          <div class="mt-4 text-sm text-zinc-400">BofAのボトムアップでは2026〜2030年にAIチップ向け新規容量が約208GW——うちNVIDIA系累計〜105GW、非NVIDIA（TPU・Trainium・AMD・MTIA等）が同程度、との試算がXで再拡散。年間投入も2026年12GW級から2030年28GW級へ。PJMではピーク負荷増の大半がデータセンター起因とされ、「次の遅延はファブではなくユーティリティ委員会から来る」論が投資家向け解説でも定番化。Gartner系の「AI DCの4割が電力制約」見通しと重なり、capexの矢印がシリコンから送電・変電・原子力・ガス・冷却へ広がっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>BofA系試算・グリッド議論・X電力解説（7/9-11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 LAST CENTIMETERS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">電力は建物まで届いた——GPUまでの最後の数センチが戦場<br>800V→0.7V・ラック内蓄電・MLCC爆発</div>
+          <div class="mt-4 text-sm text-zinc-400">半導体エンジニア界隈で拡散した「AI Power Part 2」系の深掘りが示すのは、グリッド連系の次に来るボトルネックがラック内部の電力配送であること。高電圧バスからソケット電圧までの変換段、部品点数の爆発、ピーク需要を25〜30%削るラック内エネルギーストレージ、1ラックあたりMLCCが数十万個級——部品メーカーの成長がハイパースケーラーを上回る構造が可視化されている。従来の「GPUを買う」から「GPUに安定した電子を届ける」へ、BOMと調達の視線が数センチ単位までズームインした週末だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>X AI power deep-dive・ラック電源議論（7/10-11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 POWER SEMIS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「AIチップを作らない会社」がAI工場の急所に<br>SiC/GaN・電源IC・冷却が次のピック＆ショベル</div>
+          <div class="mt-4 text-sm text-zinc-400">Infineonなどパワー半導体勢が「AIサーバー電源で2030年に年間10億ユーロ級」などと位置づけられる投稿が増加。「AIチップは作らない——AIに電力を通す」というフレーミングが、GPU一辺倒のナラティブを補完。液冷・変圧・コネクタ・Eaton/Vertiv/Quanta/GE Vernova系のインフラ銘柄も「電子を届ける側」として再評価。07-10のMetaフルスタック囲い込み（メモリ・フラッシュ・光）に続き、電力デバイスとパッシブ部品がサプライチェーン階層の下段として固定しつつある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>パワー半導体・AI電源議論（7/10-11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 HBM STANDING ORDER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「2030まで売切れ」はチップ物語ではなくAI capex物語<br>訓練も推論もHBMのstanding order</div>
+          <div class="mt-4 text-sm text-zinc-400">07-10のSK Hynix ADR初日とHBMラックコスト五倍級見通しの余波が続き、X上では「メモリ売切れはチップ不足の変装をしたAI capex」との整理が拡散。訓練ランと推論クラスタの両方がHBMへの継続注文となり、不足は需要が損益計算書に現れた結果だ、という見方。Rubin遅延観測があっても、Blackwell延長とカスタムASIC増産がHBM需要を消さない——むしろ「世代がずれるほど既存枠の奪い合いが長引く」副作用が指摘される。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>HBM供給議論・07-10 SKHY余波（7/10-11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 AFTERGLOW STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Iris量産・SKHY上場の翌日：資本は「道具」へ移動<br>冷却・電源・計算枠が同じバランスシートに</div>
+          <div class="mt-4 text-sm text-zinc-400">07-10のMeta Iris（9月量産・フルスタック長期契約）とSK Hynix約265億ドル級の市場イベントは、週末に入っても調達地図の前提として残る。Xでは「AIトークからツールへ資金が移る」「コンサルより冷却」との表現が続き、ハイパースケーラーの垂直統合とメモリ覇権が電力・パッシブと接続されて語られ始めた。agent本番運用（07-11 Agents側）の長時間ジョブ・多sub-agent負荷は、そのままtokens per wattとラック電力設計の要求仕様になる——モデル運用SOPとハードウェアBOMが同じ会話に入った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>07-10余波・Agents運用連動（7/10-11）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月11日、AI Hardwareのニュースフローは「次のGPU」と「電子の物理」の二重奏になった。Rubin再遅延のExpert Callは未確認の観測に過ぎないが、市場が敏感に反応する理由は明確だ——2026年のハイエンド出荷ミックス、HBM4と先進パッケージの割り当て、顧客のキャップexカレンダーがすべて「いつRubinが実弾で来るか」に依存している。Baseは秋・Ultra/Kyberは後ろ、という切り分けが正しければパニックの材料ではないが、Blackwell延長とカスタムASIC（Meta Iris、TPU、Trainium、Maia）への振り分けが加速するシナリオは十分現実的だ。遅延の中身が「設計やり直し」なのか「HBM4・液冷・インターコネクトの工業的摩擦」なのかで、勝者の顔ぶれも変わる。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            より構造的なのは電力側だ。GPUの入手難が相対的に和らいだ地域でも、連系待ち・変電・冷却・敷地がAI工場の真のリードタイムになっている。BofAの〜208GW試算は「国をいくつか足す規模」の比喩として機能し、PJMのピーク増データセンター寄与は「グリッドが新しいファブ」であることを数字で示す。ここで重要なのは、電力が建物の受電盤まで来ても仕事が終わらないことだ。800V級バスからGPUコア電圧0.7V前後までの変換、ピークを削るラック内蓄電、MLCCとパワー段の部品爆発——「最後の数センチ」は、NVIDIAでもTSMCでもないプレイヤーが利益を取るゾーンであり、同時に単一ラック100kW超の熱と電流が設計ミスを許さないゾーンでもある。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            07-08のトークン経済、07-09のメモリ中央銀行、07-10のフルスタック内製、07-11の電力とラック内電源——四日間で評価軸は「FLOPS」から「割り当て・電力・TCO・tokens per watt」へ着実に降りてきた。HBMのstanding orderはRubinのスケジュールに関係なく残り、Irisのような内製はNVIDIA依存を消すのではなく、残りワークロードをより高難度・高効率要求に変える。2026年後半の勝者は、最も派手なテープアウトをした者ではなく、グリッド接続とHBM枠とラック電源を同じ表で管理できる者だ——土曜のタイムラインは、その地味で決定的な真実を、遅延観測と電力深掘りで同時に突きつけてきた。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日はMetaが「自分でチップ作る＋メモリも光も抑える」って言って、SK HynixがNasdaqでデビューしたのに、今日のタイムラインは「Rubinまた遅れるらしい」と「電力が足りない」で埋まってるの、最高に2026年らしい（笑）。GPUが手に入るようになってきたら、次はコンセントと変圧器とMLCCの話——AIの敵がファブから電力会社と部品カタログに移った感がある。で、最後の数センチが戦場って、宇宙開発の再突入みたいなロマンがあるのに中身はコンデンサと熱設計。モデルは週末もアップデートできるけど、変電所は週次では増えない——それが土曜のハードウェア論のオチだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">電子を届ける物理——Rubin観測・グリッド上限・ラック内電源の三点収束</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月11日現在のAI Hardware分野は、Rubin再遅延の未確認観測と、AI向け〜208GW級の電力需要・連系待ちという構造制約、そしてGPUまでの最後の数センチ（高電圧変換・ラック内蓄電・パッシブ部品）が同時に議論の中心にある。07-10のIris量産とSK Hynix市場イベントの余波の上で、調達の階層は Memory &gt; Foundry &gt; Power/Grid &gt; In-rack delivery へさらに細分化。2026年後半の勝負どころはピーク性能ではなく、割り当て・連系・tokens per watt・ラックTCOの一体管理である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIA / プラットフォーム側</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ロードマップの噂に一喜一憂するより、Blackwellの量産ランプとソフトウェア最適化、電力効率を同時に上げることが顧客価値だ。次世代がいつであれ、需要の上限はシリコンよりサイト電力と冷却で決まる——我々のラック設計もその前提で進んでいる。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>ユーティリティ / グリッド運用</span>
+          </div>
+          <p class="text-sm text-zinc-300">「データセンターの負荷増はピーク曲線を書き換えている。新規連系は年単位、Curtailment権限も広がる。AI工場は『いつGPUが届くか』より『いつ何MWを安定供給できるか』で立地を決める時代だ。変電・送電・オンサイト発電がcapexの中核になった。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-plug"></i>
+            <span>ラック電源・パッシブ部品メーカー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「電力が建物まで来ても、GPUまでの変換効率と部品供給がボトルネックだ。高電圧バス、多段DC-DC、MLCCとインダクタの数量はラック密度と共に跳ねる。ピークを削るラック内ストレージは連系待ちを実質的に短縮する道具でもある——ここが2026年の静かなるゴールドラッシュだ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>ハイパースケーラー調達</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Irisのような内製と長期メモリ契約は『チップが来ない』リスクを減らす。だが07-11の議論が示す通り、次は電力契約とラック電源BOMが同じ優先度になる。GPU世代のずれは、既存Blackwell枠とカスタムASICの振り分け表を毎週書き換える作業だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体・インフラアナリスト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Rubin遅延観測はボラティリティ材料、本丸は電力とHBMの構造逼迫だ。NVDA一択から、メモリ・ファウンドリ・パワー半導体・冷却・グリッド隣接銘柄への分散が説明しやすい。チップflationと電力制約が同時に効く局面では、TCOモデルなしの成長ストーリーは破綻する。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・データセンター / 製造業</span>
+          </div>
+          <p class="text-sm text-zinc-300">「agentの長時間運用を検討するほど、国内DCの電力契約・PUE・液冷対応が導入可否を決める。GPU枠のリードタイムと並び、受電容量とラック電源設計の見積もりがプロジェクトのクリティカルパスだ。素材・パワーデバイスの国内強みは、AI工場の下支えとして再評価できる局面にある。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware & Semiconductors • 2026-07-11 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（Rubin遅延Expert Call、BofA電力試算、ラック内電源・MLCC、パワー半導体、HBM standing order）、業界分析・07-10 Iris/SKHY余波（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-11', 'color:#10b981');
+  </script>
+</body>
+</html>
