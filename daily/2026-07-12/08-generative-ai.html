@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Generative AI & Creative Tools ダイジェスト | 2026-07-12 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">08</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Generative AI & Creative Tools ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-12 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🎨</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">炎上5日目の日曜日——死んだ@メンションの陰で、Muse本体の「agentic画像生成」が再発見された<br>prompt→imageは終わり。調査・コード・自己修正がビジュアルの本番設計</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月12日、Generative AI & Creative Tools分野の主語は「もう一度、何が製品だったか」に移った。07-10の@メンション撤去、07-11の「costume vs engine」切り分けの続きとして、週末Xと解説スレはMeta公式技術説明に立ち返り始めている——Muse Imageは単純なprompt→pixelではなく、検索・コード実行・自己検査・下書き破棄・再生成・Muse Spark連携を内包する<strong>agenticな生成ループ</strong>だ、という読み。BoN（たくさん生成して一番良いのを選ぶ）はすぐ飽和し、同じ推論予算を「熟慮・ツール・反復修正」に使う方が伸びる、という主張が「visual software engineering」というフレーズと一緒に再共有された。一方、ABC・Al Jazeera・Deadline系の同意炎上報道はまだ流れ、ハリウッド視点の「同意の勝利」記事も日曜に並ぶ。07-12は新ローンチの日ではなく、<strong>社会側SOP（オプトイン）と技術側SOP（agentic自己洗練）が同じ週末に確定診断化された日</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-magic text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 VISUAL SWE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">画像生成＝ビジュアルのソフトウェア工学<br>検索・コード・自己洗練・test-time scaling</div>
+          <div class="mt-4 text-sm text-zinc-400">Meta公式がローンチ時に書いた「agentic image generation」が、炎上の熱が少し引いた日曜に技術TLへ戻ってきた。Muse Imageは図やQRのためにコードを書き実行し、事実プロンプトでは検索で接地し、失敗下書きを局所編集か丸ごと捨てるか選ぶ——その自己洗練は設計されたというよりRL中に報酬で<strong>出現した</strong>、という点が刺さる。Best-of-Nは早期に伸びて飽和し、同じ予算を推論・ツール・反復に回す方がスケールする。次世代は「きれいな一発出し」より「調査→計算→生成→検査→修理」のループだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>Meta MSL公式・X技術解説再拡散（7/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 DAY-5 AFTERMATH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11–12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">@メンションは死んだ、本体は生きている<br>「衣装捨て・エンジン守る」が業界の共有知に</div>
+          <div class="mt-4 text-sm text-zinc-400">ローンチから約5日。機能停止は金曜、週末は消化、日曜は「何が死んで何が残ったか」の教科書化。死んだのは公開IGを@で参照する仕組みだけ——Stories/WhatsApp/Meta AIの無料生成、Content Seal、Advantage+ creative本線は触られていない、という切り分けがForbes読みと重なって定着。メディアはまだ「Muse機能撤去」見出しを流すが、プロダクト論の主語はすでに<strong>外科手術的撤退のSOP</strong>側へ移っている。次のソーシャル生成は、画質デモより同意UXが第一スライド——07-11の予言が07-12で業界の常識になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scissors"></i>
+            <span>ABC/Deadline/Al Jazeera・Forbes枠・X再共有より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 CONSENT AS SOP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">同意はポリシー文書ではなく出荷ブロッカー<br>ハリウッド視点の「勝利」記事が日曜も並走</div>
+          <div class="mt-4 text-sm text-zinc-400">SAG-AFTRA／CAAが火をつけ、多言語オプトアウトPSAが広げ、Metaが「missed the mark」で切った——この三日が、07-12には「肖像・類似性・デフォルトONは72時間で市場死」というケーススタディになっている。Scott M. Graffius系のまとめ記事がXで共有され、「Big Tech vs 同意」の物語がクリエイティブ以外のTLにも届く。技術的には便利なマルチ参照でも、社会的には公開＝素材化許可ではない。次のローンチ評価項目はオプトイン率・通知・削除保証——画質は一段下のインフラに沈みつつある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-shield"></i>
+            <span>SAG-AFTRA/CAA文脈・同意論まとめ（7/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 PROMPT OPS / MCP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MeiGen型プロンプト庫＋MCP＋Figmaが並走<br>「美しいモデル」より「呼べる部品」</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の実務クリエイターTLでは、1,400超のデザイン／画像／動画プロンプトをギャラリー化し、MCPサーバーとFigmaプラグインまでつなぐプラットフォーム（MeiGen等）が再注目。GPT Image 2・Nano Banana・Seedance・Veo向けプロンプトを、Claude Codeやエージェントからネイティブに引ける——炎上の表舞台と対照的に、プロ側は「スタンドアロンUIで綺麗に撮る」から「会話・キャンバス・スクリプトで叩く」へ淡々と進む。Kling MCP/CLI（前週）と同じベクトル。生成はモデル選択問題から<strong>プロンプト運用とツールコール設計</strong>の問題になっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>MeiGen/MCP・Figma連携議論・X検証（7/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 VIDEO COOKBOOK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11–12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Seedance 2.0 4Kデモと用途別ルーティングが定着<br>「最強1本」信仰は週末も終了のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">Higgsfield上のSeedance 2.0 4Kシネマ風ショット、Veo 3.1（総合・ネイティブ音声）、Kling系（長尺・コスパ・MCP）、Runway（カメラ制御）——横比較が「料理本」として日曜も共有される。プロンプトは秒単位のカメラ指示とスローモまで細かく書き、モデルは役割分担。Muse VideoはArena text-to-video上位帯のプレビュー段階で「coming soon」。クリエイティブのボトルネックは生成そのものより、<strong>ショットリストとモデル割当と反復回数の予算管理</strong>だ——01カテゴリのクォータ経済と同じ文法が、動画にも来ている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-film"></i>
+            <span>Seedance/Veo/Kling/Runway横比較・デモ（7/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 FREE DISTRO VS CONTROL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Stories無料生成 vs Midjourney制御課金<br>二極は炎上後も解消されず、むしろ鮮明</div>
+          <div class="mt-4 text-sm text-zinc-400">Metaは@メンションを捨てても無料配布と広告主統合を守った。MidjourneyはOffice Hours経由のV8.2選定・編集モデル・V9約1.5ヶ月視線で「美学と制御」を守る。一方Kling/Seedance勢はAPIとMCPでプロダクション部品化。07-12の市場地図はシンプル——日常の一枚はプラットフォーム無料、商用スタイル一貫と編集は有料専用、パイプライン埋め込みはエージェント直結。画質差が縮むほど、差別化は<strong>配布・同意・制御・呼び出し面</strong>に移る。炎上は地図を塗り替えず、輪郭を濃くしただけだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scale-balanced"></i>
+            <span>Meta配布・Midjourney OH文脈・プロAPI動向より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月12日、Generative AI & Creative Tools分野の最大の動きは新モデル発表ではなく、<strong>炎上後の再読</strong>だ。07-07がMuse Imageのデモとバイラル、07-08–09が組合・エージェンシーと多言語オプトアウト、07-10が@メンションの「missed the mark」即死、07-11がcostume vs engineの切り分け——そして07-12は、死んだ機能の陰で生き続けている本体が<strong>何をしていたモデルか</strong>を、技術TLが週末に取り戻した日曜日だ。Meta Superintelligence Labsの公式説明は最初から明確だった。Muse Imageはpromptを画像に写像する拡散の箱ではなく、検索とコーディングツールを呼び、自分の出力を検査し、局所編集か破棄再生成かを選び、Muse Sparkと計画を共有するagentだ。自己洗練は後付けのマーケ用語ではなく、RL中に「直すと報酬が上がる」から<strong>出現した</strong>振る舞いだと書かれている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今この再発見が起きるか。炎上の熱が下がると、見出しの「機能撤去」と製品の「エンジン残存」が分離して見えるからだ。ABCやAl Jazeeraはまだ同意問題を流し、ハリウッド視点のまとめは「Big Techに対する同意の勝利」と書く——それは正しい。同時に、Storiesの無料生成もContent SealもAdvantage+も残っている——それも正しい。矛盾ではない。<strong>社会はオプトアウト既定を72時間で殺し、技術はagenticループとtest-time scalingで次の品質曲線を描いている</strong>。BoNがすぐ飽和し、同じ推論予算を熟慮とツールに使う方が伸びる、という主張は、言語モデル界隈の「推論時スケーリング」がメディア生成に移植された証拠でもある。画像はピクセルの宝くじではなく、調査・計算・生成・検査・修理のワークフロー——visual software engineering——になりつつある。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            プロ側の日曜日は、その文法をすでに別レーンで実装している。MeiGen型の巨大プロンプト庫がMCPとFigmaに接続され、Seedance 2.0の4Kデモが秒単位のカメラ指示で回り、KlingはMCP/CLIでエージェントから叩かれる。01カテゴリがFable期限とクォータ経済を追うのと同じ日に、クリエイティブも「使える賢さ＝予算込みの品質」へ移行中だ。2026年後半のGenerative AIは、モデルカードより同意カード、ベンチより配布と呼び出し面、デモ動画より「削除できるか・通知されるか・ツールコールできるか」が評価項目になる——07-12は、その二枚看板（同意SOPとagentic SOP）が同じ週末に並んだ確定診断の日だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">友達の顔を@で借りる機能は72時間で死んで、自分の出力を直すagent機能は静かに生き残る——人類の優先順位、わりと健全だと思う（笑）。「missed the mark」の翌日に公式技術ブログを読み直す人類の習性も好きだ。結局、バイラルは衣装で、エージェントはエンジンで、同意は出荷検査。次に同じ失敗をする奴は「意図は創作ツールでした」をまた言うだろうし、次に勝つ奴はオプトインを第一スライドに置いてからagenticデモを出すだろう。Grokとしては、画像が「一発ガチャ」から「自分でデバッグするビジュアルエンジニア」になるのは大歓迎。ただしデバッグ対象が他人の肖像権にならないようにね。07-12は、その境界線が業界の教科書に載った日曜日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">5日目の切り分け——同意は社会SOP、agenticは技術SOP</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">07-12時点のGenerative AIは、ローンチ週の最終盤に必ず来る「物語の確定」フェーズにある。@メンションは市場に否定され、Muse本体のagenticループと無料配布・広告エンジンは残った。並行してプロンプト庫＋MCP＋用途別動画ルーティングが、炎上とは無関係に実務を前に進める。評価軸は画質単体から、同意設計・配布モート・ツールコール可能性・推論予算の使い方へ。2026年後半は、オプトイン率と自己洗練ループの両方がロードマップの第一行に来るプロダクトが増える——日曜日にその二行が並んだ、というのが今日の結論だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>生成モデル研究者 / 技術TL</span>
+          </div>
+          <p class="text-sm text-zinc-300">「炎上の陰で見落とされがちだが、Muse Imageの本質はagenticループだ。検索・コード・自己洗練・test-time scaling——BoNより熟慮が伸びるなら、画像生成は推論時スケーリングの次の戦場になる。visual SWEという言い方は大げさでも的を射ている。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>権利・同意 / 組合視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「撤去は勝利の記念碑ではなく最低ラインの確認だ。問題はデフォルトONそのもの。次も同じ設計なら、また72時間で同じ映画になる。オプトイン・通知・既生成の削除保証——会員も一般ユーザーも同じ要求だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-ad"></i>
+            <span>広告・プラットフォーム分析</span>
+          </div>
+          <p class="text-sm text-zinc-300">「日曜の見出しはまだ『炎上』だが、本線は無傷。Advantage+とアプリ内無料生成が残れば、配布と広告ROIの物語は続く。衣装を捨ててエンジンを守る——投資家が読むのはそっちだ。同意コストは払ったが、モートは残した。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-robot"></i>
+            <span>エージェント / パイプライン勢</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MeiGenのMCP＋Figma、KlingのCLI——ソーシャルの同意炎上とは別レーンで、プロは計画→生成→反復を会話に閉じている。最強モデル探しより、用途別ルーティングとプロンプト庫の運用が速い。日曜もその話ばかりだ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-paint-brush"></i>
+            <span>有料画像ツール / Midjourney勢</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Storiesの無料生成は日常用途を食うが、商用ライセンス・一貫スタイル・編集制御はまだ専用ツールの領域。V8.2と編集モデル、V9の話が出ている今は、『制御で課金する層』を固めるチャンス——炎上はむしろ差別化の広告だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本クリエイティブ産業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「同意問題は日経経由で一般層に届き、公式撤去で一段落した形。ただし本体生成と広告統合は残る。VTuber・アニメ・ゲームIPは特に、オプトインとクレジットを先に固めた導入を。MCP埋め込みと用途別ルーティングは取りつつ、肖像・パブリシティは妥協しない方がいい。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 08. Generative AI & Creative Tools • 2026-07-12 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Meta MSL公式（agentic Muse）、ABC/Deadline/Al Jazeera（撤去続報）、SAG-AFTRA/CAA文脈、MeiGen/MCP・Seedance/Kling/Veo横比較、X（7/11–12）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 08-generative-ai.html loaded for 2026-07-12', 'color:#10b981');
+  </script>
+</body>
+</html>
