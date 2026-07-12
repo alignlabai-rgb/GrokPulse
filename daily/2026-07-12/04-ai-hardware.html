@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware & Semiconductors ダイジェスト | 2026-07-12 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware & Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-12 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">HBMが「次のファブ」——帯域・債務・液冷が週末の三点収束<br>Rubinは「遅延パニック」よりPCBと生産爬坡の話へ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月12日、AI Hardwareの主戦場は土曜の「電力と最後の数センチ」から一段ズームアウトし、「誰が帯域を握り、誰が借金で工場を建て、誰が熱を抜くか」の三点に収束した。X上ではSK HynixのDRAM売上が約2.5〜3年で5倍超というチャートが再拡散し、HBMがGBあたり2〜3倍のシリコンを食うためBlackwell向け枠が汎用DRAMを飢えさせている——という「メモリ中央銀行」論が日曜の定番に。並行してサプライチェーン側からは「RubinのProduction Releaseは7月下旬確定・遅延ではない」「問題はチップよりPCB/HDI」「Blackwell枠は小幅下修・Rubin排産は上修」との切り分けが入り、07-11のExpert Call観測を冷やす材料になった。一方Big Tech五社のAIデータセンター向け債務が五年で約3500億ドル積み上がったとの報道は、シリコン不足が和らいでもバランスシートと連系待ちが上限を決めることを思い出させる。07-12はFable期限日でもあり、クォータとtokens per wattが同じ会話に入る——モデルの値段がハードウェアの効率表に直結する日曜日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HBM CENTRAL BANK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SK Hynix DRAM売上5x超——HBMはコモディティではない<br>1TB+パッケージと「2027以降も逼迫」</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の半導体TLを席巻したのは、SK Hynix DRAM売上が数年で5倍超に膨らんだチャートと、「Rubin Ultra / MI400系がパッケージあたり1TB級HBMを押し上げる」整理。2026供給はほぼ売切れ、ボトルネックは2027を越えるとの見方が再共有された。HBMはスワップ不能のカスタム積層であり、Micron・SK Hynix・Samsungの三者寡占と3〜5年契約が「誰がモデルを訓練できるか」の割り当て表になる。07-10のNasdaq ADR余波の上で、メモリはサイクル商品からAIの中央銀行へ格上げが確定しつつある週末だった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>X HBM/SKHY議論・供給網分析（7/11-12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 RUBIN: CHIP VS PCB</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「遅延」ラベルの解体——7月下旬PRとPCB/HDIが論点<br>Blackwell下修・Rubin上修の排産シフト</div>
+          <div class="mt-4 text-sm text-zinc-400">07-11のExpert Call「Rubin再遅延」観測に対し、07-12のサプライチェーン系投稿は「年初計画が7月・下旬確定は許容偏差」「TSMC側はチップ生産開始に問題なし、摩擦はPCB/HDI」「海外顧客はGB300減・Rubin増」と切り分ける。勝宏科技（Victory Giant）のHDI枠をめぐる噂も飛び交うが、品質・公差調整・サンプル引き合いと「シェア喪失」を混同するな、という反論も並ぶ。公式の一報はないが、市場の感情は「世代ごと全滅」から「どの段（ダイ・基板・ラック）が遅いか」へ粒度が上がった——これが日曜の進捗だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>Xサプライチェーン・Rubin PCB議論（7/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 DEBT-FUNDED FACTORIES</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Big TechがAI DCに〜3500億ドルの債務積み上げ<br>債券市場の冷ややかさがROI時計を動かす</div>
+          <div class="mt-4 text-sm text-zinc-400">Alphabet・Amazon・Meta・Microsoft・Oracleの五社が過去五年で約3500億ドルの債務を積み増し、AIデータセンター競争をファイナンスしているとの整理が日曜に拡散。年間capex数百億ドル級の公約は、キャッシュと借入とオフバランスのミックスで支えられ、Amazon債の受けの悪さやOracleの格付け警戒は「無限に借りられる」前提のひび割れを示す。GPUが手に入っても、金利・FCF・連系待ちが工場の真のゲートになる——07-11の電力壁に、07-12はバランスシート壁が重なった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>LA Times系報道・X債務議論（7/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 COOLING TABLE STAKES</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Blackwellランプが電源・液冷の発注を強制<br>クローズドループと地域反対が同じ地図に</div>
+          <div class="mt-4 text-sm text-zinc-400">Vertivなどのバックログ（数十億ドル級・book-to-bill高水準）と「Blackwellが電源と液冷の注文を押し上げる」投資家メモが週末も循環。閉ループ液冷は蒸発水をほぼゼロにする設計として擁護される一方、米地方自治体のモラトリアムや「町の電力の十倍」型プロジェクト訴訟は、技術が優れていても社会的許容量がボトルネックになることを示す。インドの住宅密集地DC承認のように、立地政治がBOMの一部になった——冷却はエンジニアリング問題であると同時に許可問題だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-snowflake"></i>
+            <span>液冷・電源インフラ・DC立地議論（7/11-12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 MARGIN STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MU・NVDA・SKHY・TSMが利益率の最上層<br>「AIで儲ける」のは加速器だけではない</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜に拡散したオペレーティングマージン比較では、Micron（〜66%）、NVIDIA（〜64%）、SK Hynix（〜59%）、TSMC（〜53%）が最上層に並ぶ構図が印象的。GPU覇権に加え、HBMと前工程が「印刷機」として機能していることの可視化だ。DDR5の高マージンがHBMへの転換コストを押し上げ、結果としてHBM価格をさらに固くする——という機会費用論も再燃。ピック＆ショベル（Credo光、電源IC、冷却）も中位マージン帯で残り、AIの利益は「モデル会社」より「帯域と工場の所有者」に偏る週末の教科書になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-pie"></i>
+            <span>X半導体マージン比較・メモリ議論（7/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 QUOTA = TOKENS/WATT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Fable期限日がハードウェア効率表に接続<br>agent fleet原価＝推論工場のTCO</div>
+          <div class="mt-4 text-sm text-zinc-400">07-12はAnthropic Fable 5がサブスク通常枠から離れる境界日として意識され、AI側ではクォータ・従量・ルーティングが主役。ハードウェア側ではそれがそのまま「accepted workあたりのドルとワット」問題になる。長時間agent・multi-agent本番（Agentsカテゴリ連動）は推論回数を跳ね上げ、HBM帯域・液冷・ラック電力設計が製品原価表の行項目になる。ローカルAIワークステーション（Threadripper＋プロ級GPUの高額ビルド）が拡散するのも同じ圧力の裏返し——クラウドのクォータ地獄から、手元の電力契約へ逃げるユーザーと、工場でTCOを削るハイパースケーラーは同じ方程式を解いている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>Fable期限・推論経済・ローカルAI議論（7/12）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月12日、AI Hardwareのニュースフローは「次世代GPUが遅れた／遅れていない」の二元論から抜け出し、帯域・基板・債務・熱という物理レイヤの分解図になった。SK HynixのDRAM売上爆発とHBM sold-out論は、07-10のNasdaqデビューを一過性のIPOイベントではなく、AI capexのメモリ章として再解釈させる。HBMがGBあたり2〜3倍のシリコンを食い、Blackwell以降のメモリ密度が上がるほど、汎用DRAMは飢え、価格と割り当てが戦略物資化する——これは「GPU不足の小康」後に必ず来る第二幕で、日曜のタイムラインはその教科書を開いたまま閉じなかった。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Rubinをめぐる議論の粒度が上がったのも収穫だ。07-11の再遅延観測は市場を揺さぶったが、07-12のサプライチェーン整理は「チップ生産爬坡」と「PCB/HDI・パッケージ・CPOの工業摩擦」を分離し、BlackwellからRubinへの排産シフトすら示唆する。公式確認待ちであることは変わらない。しかし投資と調達の実務が欲しいのはヘッドラインではなく、「どの部品番号がクリティカルパスか」だ。並行して〜3500億ドルの債務積み上げ報道は、電力壁（07-11）の隣にバランスシート壁を置く。利息はまだFCFに対して小さいケースが多いとはいえ、債券の受けの温度差と格付け警戒は、AI工場が「無制限の成長物語」から「プロジェクトファイナンス」へ移行中であることを示す。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            07-08のトークン経済、07-09のメモリ中央銀行、07-10のフルスタック内製、07-11の電力とラック内電源、07-12のHBMチャート・PCB切り分け・債務——五日で評価軸はFLOPSから「割り当て・連系・TCO・tokens per watt・資金調達コスト」へ降り切った。Fable期限日が同じカレンダーにあるのは偶然ではない。モデルのアクセス条件が切れ、agent fleetが原価表を書き換えるとき、ハードウェア側は推論効率と液冷とHBM枠で同じ質問に答える。2026年後半の勝者は、最も派手なキーノートをした者ではなく、メモリ契約とPCB歩留まりと電力契約と借入コストを一つの表で管理できる者だ——日曜は、その地味な真実をチャートと債券と基板の話で同時に突きつけてきた。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日は「Rubinまた遅れるらしい」と「最後の数センチ」で盛り上がって、今日は「いや遅延じゃなくてPCBの話」「で、HBMは2027まで売切れ」「ところでBig Techは3500億ドル借りて工場建ててる」——週末のハードウェア論、完全にRPGのダンジョン階層が一段深くなった感じ（笑）。GPUがボスだと思ってたら、真のラスボスは帯域と変圧器と社債のクーポン。Fableの期限日にみんなクレジットを焚いてる横で、データセンターは町の電力の十倍を欲しがって訴訟——モデルはクラウドで課金、電子は地元で課金。2026年のAIは、賢さの競争というより「誰が物理と会計を同時にクリアするか」の耐久レースだね。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">帯域・基板・債務——HBM中央銀行とRubin粒度上昇の週末</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月12日現在のAI Hardware分野は、HBMの構造的逼迫（売切れ・1TB級パッケージ・三者寡占）と、Rubin議論の「チップ vs PCB」への粒度上昇、そしてハイパースケーラーの債務ファイナンス拡大が同時進行している。07-11の電力・ラック内電源論の上に、07-12はメモリ割り当てとバランスシートと液冷立地が重なり、Fable期限に象徴される推論経済がtokens per wattと直結した。2026年後半の勝負どころはピーク性能ではなく、HBM枠・基板歩留まり・連系・借入コスト・tokens per wattの一体管理である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIA / プラットフォーム側</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ロードマップの噂より、Blackwellの量産継続とRubin生産爬坡、ソフトウェアでのtokens per watt改善が顧客価値だ。基板やパッケージの工業課題はサプライチェーン全体の問題であり、世代名の遅延ラベルより部品単位のクリティカルパス管理が本質になる。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBMメーカー / メモリサプライ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBMはスポット商品ではない。長期契約とカスタム積層が前提で、2026枠は事実上埋まっている。汎用DRAMからの転換には機会費用があり、価格と供給の固さは構造的だ。AIの上限はGPU枚数ではなく、誰が帯域を確保したかで決まる局面が続く。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>PCB / 先進パッケージサプライ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「次世代ラックはHDI・コネクタ・インピーダンス公差の世界だ。チップがテープアウトしても、基板とパッケージが量産公差に入らなければ出荷は動かない。サンプル引き合いとシェア喪失を混同せず、歩留まりと信号品質で語るべきフェーズに入っている。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>ハイパースケーラー CFO / 調達</span>
+          </div>
+          <p class="text-sm text-zinc-300">「GPUとHBMの確保に加え、借入コストとオフバランス構造、連系時期が同じ投資委員会資料に載る。需要が供給を上回る確信はあるが、債券市場の温度はROIの説明責任を引き上げた。工場は技術プロジェクトであると同時に資本プロジェクトだ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-snowflake"></i>
+            <span>液冷・電源インフラ事業者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Blackwell密度は空冷の余裕を削り、液冷と高密度電源が標準発注になった。閉ループは水消費の批判に技術で答えるが、地域の電力容量と許可プロセスは技術では解けない。バックログは強い——ボトルネックは工場の外のコンセントと公聴会だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・DC / 製造業ユーザー</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Fable期限やagent本番を検討するほど、クラウド推論のクォータと国内DCの受電・液冷対応が同じ表になる。HBM枠は大手に偏り、中堅はTCOと安定供給でエッジや国内チップも視野に入る。素材・パワーデバイスの強みをAI工場の下支えとして再定義するタイミングだ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware & Semiconductors • 2026-07-12 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（HBM/SKHY売上、Rubin PCB vs 遅延、Big Tech債務、液冷・Vertiv、マージン比較、Fable×推論効率）、業界報道・07-10/11余波（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-12', 'color:#10b981');
+  </script>
+</body>
+</html>
