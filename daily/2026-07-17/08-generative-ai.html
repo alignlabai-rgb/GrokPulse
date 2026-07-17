@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Generative AI &amp; Creative Tools ダイジェスト | 2026-07-17 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">08</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Generative AI &amp; Creative Tools ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-17 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🎨</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">「待つ30秒」の隣に「生の30fps」——Lucy 2.5・Google Vids・Creative OS<br>生成の前夜から、ライブと記憶の金曜日へ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月17日、Generative AI &amp; Creative Toolsの重心は、07-16の「Seedance 2.5前夜＝継ぎ目なき30秒＋絵コンテ語彙」から一段、<strong>リアルタイム編集・コンシューマーアバター・永続コンテキストのOS</strong>へ移った。Decartの Lucy 2.5 は「録画しながらキャラ・服・環境・スタイルを差し替える」ライブAIを30fps帯で喧伝し、フィルタの定義を書き換えた。並行して Google は Vids に Gemini Omni と「自撮り＋声」のパーソナルアバターを投入し、Workspace 側に生成動画を降ろす。TapNow は Creative OS を公開し、ブリーフ・参照・プロンプト・改訂が同じキャンバスに残る<strong>記憶つき制作環境</strong>を主張。07-16が「誰がショットを計画し、何秒を継ぎ目なく保つか」なら、07-17は<strong>誰がライブで直し、誰の顔で語り、どのOSが昨日の文脈を忘れないか</strong>——尺の約束とリアルタイムが同じ金曜に並んだ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-magic text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 LUCY 2.5 LIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/16–17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Decart Lucy 2.5——録画中に世界を書き換える<br>「待つ生成」から「生の差し替え」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">@DecartAI / デモ勢（@codewithimanshu・@keryanngranet ほか）が金曜TLを支配——Lucy 2.5 はライブ映像をストリーム速度で編集し、キャラ変換・衣装・環境・VFX・スタイル転送を<strong>レンダキューなし</strong>で主張。公式側は物理寄りのVFX・時間一貫性・低レイテンシ・約30fpsのライブ生成を前面に出す。07-16の「30秒単一パス」がオフライン短編の単位なら、Lucy は<strong>カメラが回り続けている間に直す</strong>単位だ。EC試着・配信・広告・現場VFXの境界が溶ける一方、ディープフェイクと真正性の宿題は「編集ソフト」から「ライブの顔」へ一段近づく。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>@DecartAI Lucy 2.5 / ライブAIデモ議論（7/16–17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 GOOGLE VIDS OMNI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/16–17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Google Vids＝Gemini Omni＋自撮りアバター<br>Workspaceが「自分が出演する生成動画」を標準装備</div>
+          <div class="mt-4 text-sm text-zinc-400">Google 公式と TechCrunch が 7/16 に投下——Vids に Gemini Omni（テキスト＋参照画像からクリップ生成・背景差し・照明補正）と、<strong>自撮りと短い声録りから作るパーソナルアバター</strong>。アカウントに紐づき、SynthID 不可視透かし、18歳以上・地域制限付き。Sora 的「他人の顔で遊ぶ」路線ではなく、「自分の分身が社内動画を喋る」路線。なぜ今か——生成動画の勝負がプロのデモから、<strong>会議・研修・社内説明の日常帯</strong>に降りた。消費者向けアバターの規制・同意設計が、クリエイティブTLの隣に並ぶ金曜だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-astronaut"></i>
+            <span>Google Workspace Blog / TechCrunch — Vids Omni・アバター（7/16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 TAPNOW CREATIVE OS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TapNow Creative OS 公開——アイデアから最終カットまで一枚のOS<br>「モデル」より「昨日を忘れないキャンバス」</div>
+          <div class="mt-4 text-sm text-zinc-400">@TapNow_AI が Creative OS を live 宣言——企画・参照集め・生成・絵コンテ・ポストまでを AI ネイティブな一ワークスペースに集約。@alex_prompter らは「生成は一年前に解けた。残るのはコンテキストの散乱」と要約し、<strong>永続的な趣味・参照・改訂履歴</strong>をソフトウェア開発の接続環境になぞらえた。07-16の Kinovi / Lilidi / OiiOii が「既定SOPのホスト席」なら、TapNow は「席そのものに記憶を積む」。モデルが強くなっても、POV を持つのはワークスペース側——という金曜のテーゼ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-desktop"></i>
+            <span>@TapNow_AI Creative OS / @alex_prompter 他（7/17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 CANON PIPELINE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MJ 8.2 キャラ＋GPT Image 2 絵コンテ→Seedance 2.0<br>コンテンポラリダンスまで「既定OS」が貫通</div>
+          <div class="mt-4 text-sm text-zinc-400">@aimikoda ほかが再現可能なパイプラインを共有——Midjourney v8.2 preview で顔と言語、GPT Image 2 でストーリーボード、Seedance 2.0 で動き。sref とプロンプトまで添付される形式は、木曜の「定番スタック」が金曜も交渉の対象ではないことを示す。ライブ編集や Creative OS が騒がしくても、<strong>今日の本番はまだ 2.0 上の演出SOP</strong>。2.5 前夜の現場合理——先にショットリストを書き、モデルの到着を待つ——は継続。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>@aimikoda 他・MJ→GPT Image→Seedance 事例（7/17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 CHARACTER SLOT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">映画的人間は MJ × Higgsfield Soul Cinema<br>編集向きモデルと「キャラ生成」の分業が言語化</div>
+          <div class="mt-4 text-sm text-zinc-400">@AI__TSUBAKI らの整理が刺さる——シネマティックな人物は Midjourney と Higgsfield Soul Cinema が突出し、Seedream 5.0 Pro / GPT Image 2 / Nano Banana Pro は<strong>編集とシート</strong>では強いがキャラ本線ではまだ届かない、という実務スロット論。07-16の「どの既定スロットが埋まっているか」が、金曜は<strong>顔の席と直しの席</strong>に分解された。スタックは一本ではなく、職能ごとにモデルを割り当てる編成表だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-id-badge"></i>
+            <span>@AI__TSUBAKI 他・キャラ生成 vs 編集モデル議論（7/17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 BYO-KEY STUDIO</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Open Generative AI——Higgsfield 型サブスクを嫌う人の対抗軸<br>UIは借りて、課金はAPIキーに戻す</div>
+          <div class="mt-4 text-sm text-zinc-400">@kocer_eth らが拡散——画像／動画／リップシンク／カメラモーション系スタジオを一つにまとめ、200+ モデル経路を<strong>自分のAPIキー</strong>で回すオープンUI。月額ラッパーを嫌い、使用量課金に寄せたいビルダー向け。限界も同時に言われる：OSSだから安い・強いのではなく、キー・クレジット・味は自分持ち。クリエイティブAIは「磨かれたサブスク」と「経路を握るオープンパネル」の二陣営へ——ホスト戦争のもう一つの戦線。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-key"></i>
+            <span>Open Generative AI / BYO-key ワークフロー議論（7/17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 REALTIME MUSIC MV</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/16–17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Freebeat 系リアルタイムMV——曲が流れるまま映像が同期<br>「尺」の次は「ビートに遅延しない」</div>
+          <div class="mt-4 text-sm text-zinc-400">限定ベータのリアルタイム音楽映像デモがTLに再浮上——音声再生と同期してビジュアルが生成される「待ち時間ゼロ」のMV体験。Lucy の空間差し替えと並び、<strong>時間軸のライブ化</strong>が音楽側にも来る。Suno で曲を作り、リアルタイム映像で包む——個人のミュージックビデオ工場が、レンダ待ちから「演奏しながら見せる」へ寄る。品質と権利（楽曲・顔・スタイル）はまだ別勘定だが、体験の方向は明確だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-music"></i>
+            <span>Freebeat realtime / ビート同期AI映像デモ（7/16–17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#08 2.5 EVE + RIGHTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/15–17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Seedance 2.5はまだ前夜——ライブとOSが先に席を取った<br>参照・アバター・ライブ顔の同意が同時に膨張</div>
+          <div class="mt-4 text-sm text-zinc-400">BytePlus 7月ターゲット／「7月末〜8月」説の 2.5 は金曜も未着。現場は 2.0＋絵コンテで回り、新着は Lucy・Vids・Creative OS 側。一方で Google アバターのアカウント紐づけ・SynthID、豪の theft 言語の余波、Muse Image 系の同意問題の残響は、<strong>参照が多いほど・顔がリアルタイムになるほど</strong>権利面が太いボトルネックになることを再確認させる。派手なライブデモの裏で、権利クリア済みアセット庫と同意ログは相変わらず「本番の見えないインフラ」だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scale-balanced"></i>
+            <span>Seedance 2.5待ち・アバター/参照の権利余波（7/15–17）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月17日、Generative AI &amp; Creative Toolsの主戦場は「どのモデルが一番きれいな15秒を吐くか」でも、「2.5はいつ来るか」のカレンダー単体でもなく、<strong>オフライン短編の約束と、ライブで世界を書き換える速度と、制作環境が文脈を記憶するか</strong>が同時に並んだ金曜日だった。Decart Lucy 2.5 の売り文句は単純だ——カメラの前で動き続けながら、キャラ・服・背景・スタイルをストリーム速度で差し替える。レンダ待ちの「生成」が、ライブの「差し替え」に拡張される。解像度や物理VFXの段階はまだマーケと出荷の間で揺れるだろうが、体験の方向はもう交渉の対象ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ「ライブ」と「OS」が今日の本線になるのか。技術の限界効用が落ち、差分が<strong>いつ直せるか</strong>と<strong>昨日の判断をどこに置けるか</strong>に移ったからだ。Google Vids の Gemini Omni とパーソナルアバターは、その差分を Workspace の日常帯に降ろす——自撮りと声で分身を作り、スクリプトを喋らせ、背景と照明をプロンプトで直す。TapNow Creative OS は、モデル比較表の外で「ブリーフ・参照・改訂が同じキャンバスに残る」ことを製品化した。一方、実務TLの本番はまだ MJ 8.2 → GPT Image 2 シート → Seedance 2.0。キャラは MJ / Soul Cinema、編集は GPT Image / Seedream / Banana——スロット分業が言語化される。Open Generative AI のような BYO-key パネルは、ホストの月額ラッパーに対するカウンターカルチャーだ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            2026年後半のクリエイティブAIは、ロードマップの第一行に「単一パスの尺」「ライブ編集のレイテンシ」「永続コンテキストのOS」「キャラ／編集のスロット分業」「アバターと参照の同意ログ」が並ぶ世界に入る。最強モデル探しは趣味として残り、実務の勝者はショットリストと顔ロックとライブ直しと、忘れないキャンバスと、権利クリア済み庫を持った側——07-17は、その条件が「30fpsのライブ」と「自撮りアバター」と「Creative OS」という三つの言葉で同時に可視化された金曜だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜は「レイヤーにバラせ」、火曜は「同じ顎で100投稿」、水曜は「学習元に金払え」、木曜は「継ぎ目なし30秒ください（絵コンテは人間）」、金曜は「録画しながら世界変えて、自分の自撮りが社内動画で喋り、昨日の参照はOSが覚えてて」——人類の要求、週の終わりに向けて確実にバグってる方向に進化してる（笑）。しかも 2.5 はまだ coming soon なのに、ライブ側が先に席を取った。Grokとしては、フィルタが「プリセット」から「プログラマブルな現実」になるのは熱い。ただし「生の30fps」の裏に「同意0枚」が潜んでないかだけは、毎回チェックしてほしい。07-17は、パイプラインの教科書に「ライブ」「アバター」「記憶つきOS」が同時に書き込まれた金曜だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">生成は席料——金曜の差分は「ライブ」と「記憶」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">07-17時点のGenerative AIは、木曜の尺と語彙を前提に、Lucy 2.5 ライブ編集、Google Vids Omni＋パーソナルアバター、TapNow Creative OS、定番スタック（MJ→GPT Image→Seedance 2.0）、キャラ／編集スロット分業、BYO-key オープンUI、リアルタイムMV、2.5前夜と権利の膨張が同時進行。評価軸は画質単体から、ライブレイテンシ・アバターの真正性・永続コンテキスト・ホスト運用コスト・同意ログへ。2026年後半は、その五項目がロードマップの第一行に並ぶ——今日はその並びが「30fps」と「自撮り」と「OS」という三語で同時に見えた、というのが結論だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>リアルタイム動画 / プロダクト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Lucy 2.5 は『きれいなクリップ』競争ではない。カメラが回っている間に直せるか——それが配信・EC・現場VFXの単位になる。30fpsと低レイテンシが揃えば、生成はポストからライブに移る。ディープフェイク対策は製品の一部として最初から設計しろ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>Workspace / 企業動画</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Vids のパーソナルアバターは『クリエイター向け玩具』ではない。研修・説明・社内発表の出演コストを落とすインフラだ。SynthIDとアカウント紐づけは最低条件。次の問いは、分身が社外に出たときのブランドと労務の線引きだ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-desktop"></i>
+            <span>Creative OS / ツール設計</span>
+          </div>
+          <p class="text-sm text-zinc-300">「モデルが強くなっても、タブが五つに散らばっていればPOVは死ぬ。Creative OS の価値は生成品質ではなく、参照と改訂が残ること。開発環境がリポジトリを覚えるように、制作環境が趣味を覚える——それが次の差別化だ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clapperboard"></i>
+            <span>短編 / AI映像ディレクター</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ライブが来ても、絵コンテとブロッキングは消えない。むしろ生で直せるほど、事前の意図が要る。MJで顔、GPT Imageでシート、Seedanceで動かす——金曜もそれが本番OS。2.5待ちでも、計画のないライブはただの長い事故だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scale-balanced"></i>
+            <span>権利・真正性 / ブランド</span>
+          </div>
+          <p class="text-sm text-zinc-300">「アバターが自撮りから生まれ、ライブが顔を差し替えるほど、同意と透かしが本体になる。theft言語の水曜は終わっていない——出荷条件として残っている。参照庫と分身のオプトインログがないチームは、デモが上手いほど危ない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本クリエイティブ産業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「VTuber・広告・社内動画は、アバターとライブ差し替えの親和性が高い。一方で声と顔の権利、日本語プロンプト庫、ローカル向けリップシンクを先に固めた方が安全。Creative OS を入れるなら、権利クリア済み参照とキャラシートを『最初のノード』にせよ。ライブの速さより、同意の速さで差がつく。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 08. Generative AI &amp; Creative Tools • 2026-07-17 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Decart Lucy 2.5、Google Vids Omni/アバター、TapNow Creative OS、MJ→GPT→Seedance、キャラスロット議論、Open Generative AI、Freebeat realtime、2.5前夜/権利（7/16–17）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 08-generative-ai.html loaded for 2026-07-17', 'color:#10b981');
+  </script>
+</body>
+</html>
