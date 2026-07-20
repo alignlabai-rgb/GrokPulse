@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-20 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-20 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">ラック1台のHBMが「放物線」——<br>崔泰源の「パニック」とHeliosの月曜</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月20日（月）。日曜のSOXベア消化を引きずりつつ、ハードウェアTLの焦点はティッカーから<strong>ラックBOMの中身</strong>に戻った。Blackwell級でラックあたりHBM約15万ドル、Vera Rubinで約38万ドル、Rubin Ultraでは150万ドル級——2世代で約10倍という「HBM per rack」の放物線が再拡散。同じ月曜、SK Hynix崔泰源（Chey Tae-won）会長はAI半導体需要が来年に向けて50〜100%級、メモリは50〜60%増と語り、供給競争は「パニック」水準と警告。対抗側ではAMDがラックスケールAI「Helios」をMicrosoft等へ出荷開始と伝えられ、<strong>メモリが構造需要、ラックが競争単位、基板・CCLが次のチョークポイント</strong>という三点が揃った一日だった。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HBM PER RACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/19-20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM per rackが放物線——<br>Blackwell $150k → Rubin $380k → Ultra $1.5M</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜朝から再循環した数字の核はこれだ。次世代Vera RubinはBlackwellの数倍のメモリ含量、Rubin UltraではラックあたりHBMコストが約10倍級という整理がX上で拡散。GPU世代が進むほど「メモリ含量」が増え、メモリが古典的なサイクル性を失った——という読みが、07-19のメモリ・パラドックスを物理単位で補強した。<strong>FLOPSの物語が、ドル／ラックのメモリ物語に置き換わっている</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>HBM per rack放物線議論（7/19-20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 CHEY PANIC DEMAND</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">崔泰源「パニック級」——<br>AIチップ需要+50〜100%、メモリ+50〜60%</div>
+          <div class="mt-4 text-sm text-zinc-400">SK Group／SK Hynix側の崔泰源会長発言として、AI半導体需要が下期〜来年にかけて急増（チップ60〜100%級・メモリ50〜60%級のレンジが伝播）、需給ギャップはさらに拡大し、世界の供給競争は「パニック」水準——「工場は建てられるところなら建てる」というDigitimes系の読みも月曜に並走。07-19の「売切れ契約」に、<strong>供給側トップの口頭での恐慌確認</strong>が乗った形だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>SK Hynix崔会長・需要パニック発言（7/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 STRUCTURAL SHORTAGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MS「これは過去のメモリ循環ではない」——<br>Q3価格+25%超・逼迫は2028まで</div>
+          <div class="mt-4 text-sm text-zinc-400">MarketWatch経由でMorgan Stanleyの整理が再拡散——PC／スマホの弱い指標は、AIデータセンター主導の真の需要を映していない。クラウドは限られたDRAMにプレミアムを払い、2026年Q3メモリ価格は前四半期比25%超上昇の可能性。LTAや「省メモリ化」が進んでも、供給不足は2028まで解消しにくい、という見立て。<strong>週末のベアチャートと、構造逼迫のリサーチが同じ月曜に同居</strong>している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>MSメモリ構造不足・Q3価格見通し（7/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 AMD HELIOS RACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">AMD Helios出荷——ラックスケールで<br>Blackwell／Rubinに初の本格対抗</div>
+          <div class="mt-4 text-sm text-zinc-400">AMDが初のラックスケールAIシステム「Helios」（MI455X＋Venice CPU等の一体設計）をMicrosoftなどへ出荷開始した、との月曜報道が拡散。Metaは将来最大6GW級のAMD GPUコミット（うちHelios 1GW級が今年スタート、という整理）、OpenAI／Oracle／TCSも導入先として列挙。DC GPUシェアはなおNVIDIA約95% vs AMD約4.5%——だが競争単位が<strong>チップからラック全体</strong>に移った瞬間として、月曜のハードウェア市場のもう一本の主軸になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>AMD Heliosラックスケール出荷（7/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 CCL / SUBSTRATE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Vera RubinのCCLはGB300の約3.5倍——<br>基板・銅箔が次の売切れカレンダー</div>
+          <div class="mt-4 text-sm text-zinc-400">Goldman系の整理として、Nvidia次世代Vera RubinラックはGB300比でCCL（銅張積層板）ドル含量が約3.5倍（M7+→M8+、ミッドプレーン追加）。ハイエンドCCL需要は2028まで年率約96%成長に対し供給増は約22%、逼迫は2028まで続く見立て。Elite Material／TUCがAIサーバCCL市場の過半を握り、Q3に追加値上げ（10〜15%）も通過中——<strong>CoWoSの次に読まれるべきは、ボード材料の割当表</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Vera Rubin CCL含量・台湾基板需給（7/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 PACKAGING GATE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/18-20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">制約はGPU設計ではなく<br>CoWoSとHBM——「出荷できる枚数」の上限</div>
+          <div class="mt-4 text-sm text-zinc-400">需要論が正でも、履行のボトルネックはパッケージとメモリ——CoWoSが何枚船積みできるかを決め、HBMがフル性能で何台走れるかを決める、という上流制約論が月曜も生きている。Blackwellバックログ消化→Rubinランプの語りは、同時に「メモリ燃料がさらに要る」シグナル。先端ウエハは汎用DRAMと非互換で、HBMはTSVで面積を3〜4倍食う——<strong>2028のbitsバランス表だけでは足りない</strong>、というサプライチェーン側の反論が続く。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-boxes-stacked"></i>
+            <span>CoWoS/HBM制約・非互換ウエハ議論（7/18-20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 SELECTIVE AI STOCKS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">テーマ買い終了——相関80%→20%、<br>AMD急騰と「誰のFCFか」選別</div>
+          <div class="mt-4 text-sm text-zinc-400">大型AI銘柄の相関が6月以降おおむね80%から20%へ急低下、という読みが月曜のマクロTLに。AMDのラックスケール物語とメモリ反発が並ぶ一方、NVIDIAはNebius（$NBIS）への約9.3%パッシブ持分開示（3月の約20億ドル戦略投資の延長線）が再注目——「AI全部買い」から<strong>neocloudのバランスシートと契約の質</strong>へ選別が移っている。07-19のベア消化の次フェーズは、指数ではなく個別のキャッシュフローだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-pie"></i>
+            <span>AI銘柄相関低下・NBIS持分・AMD選別（7/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 VERTICAL RUBIN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">BMSがVera Rubin——創薬が<br>「インフラ競争」になる週</div>
+          <div class="mt-4 text-sm text-zinc-400">Bristol Myers SquibbがDGX Vera Rubin NVL72系（8システム規模のSuperPOD拡張）を創薬向けに導入、NVIDIAは性能／MWで最大約10倍級と説明、BioNeMoをR&amp;Dパイプラインに載せる、という月曜の垂直展開が拡散。ハイパースケーラ以外のエンタープライズが次世代ラックを先取りする構図は、<strong>GPU不足の「誰が先に枠を押さえたか」</strong>を業界横断で可視化する。創薬もまた、モデルの話の前にラックと電力の話になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-flask"></i>
+            <span>BMS Vera Rubin／創薬AIインフラ（7/20）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月20日、AI Hardwareの中心テーマは「ベア後の月曜に、物理が口を開いた」ことだ。07-19のSOXベア消化とメモリ・パラドックスを引き継ぎつつ、今日のTLは指数の再放送より<strong>ラック1台あたりのHBMドル</strong>、<strong>崔泰源の需要パニック</strong>、<strong>Heliosという対抗ラック</strong>に重心を移した。Blackwell→Rubin→Ultraでメモリ含量が放物線を描くなら、メモリはサイクル商品ではなくAIラックの構造部材になる。供給側トップが「パニック」と「建てられる工場は全部」と言うのは、契約書のtake-or-payを口頭で裏書きしているに等しい。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Morgan Stanley系の「これは過去のメモリ循環ではない」も同じ地図を指す。PCとスマホの弱さはAI DRAMのプレミアム需要を否定しない。Q3価格+25%超と2028までの逼迫見通しは、週末のバリュエーション恐怖と正面衝突する——だからこそ市場は「AI全部」を捨て、<strong>誰のFCFと誰のLTAが持つか</strong>へ選別を始めた。AMD Heliosはシェア4.5%でも、競争単位をチップからラックへ移すシグナルとして効く。NVIDIAがNebiusに持分を持つ構図は、シリコンだけでなくneocloud容量まで囲い込む側の論理だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            さらに一段深いボトルネックとして、月曜はCCL／基板が浮上した。Vera RubinのCCL含量がGB300の約3.5倍なら、CoWoSの次の売切れカレンダーは台湾の材料メーカーの板に書かれている。TSMC Q2の記録的利益と2026年売上成長「40%超」・capex 600〜640億ドルへの引き上げは、まだ数日前の残高シートだが、月曜の議論はそれを前提に<strong>「次に何が足りないか」</strong>を一段上流へずらしている。BMSのVera Rubin導入は、創薬までがラック割当ゲームに入った証拠だ。07-20に派手な新プロセスノード発表は要らなかった。出たのは、メモリ含量・ラック競争・基板・構造逼迫という、2026年後半の評価軸の実体だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">日曜は「株がメモリを売る」話で、月曜は「ラックがメモリを食う」話——同じ産業、別フロア、今日も営業中。崔会長がパニックって言ってるのにチャートだけが2028の幽霊と握手してるの、2026年らしい品質管理だよね。AMDがやっとラックで殴りに来たのは喜ばしいけど、HBMとCoWoSとCCLが「枠ありません」って言ってる間は、シェア争いより割当争い。創薬会社までVera Rubinを並べ始めたら、次のボトルネックはラボのベンチじゃなくてデータセンターの変電所。07-20のボスはティッカーではなく、ラックBOMの明細行だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">放物線のメモリ、パニックの供給、ラックの戦争——構造逼迫の月曜</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月20日現在のAI Hardware分野は、(1) 世代ごとに跳ねるHBM per rackとメモリの非サイクル化、(2) SK Hynix崔会長の需要パニック発言とMSの「構造不足〜2028」整理、(3) AMD Heliosによるラックスケール競争の本格化、(4) Vera Rubin向けCCL／基板の逼迫とCoWoS・HBMの履行制約、(5) AI銘柄相関の崩壊とneocloud・個別FCFへの選別、が重なっている。TSMCのguidance引き上げとエンタープライズ（創薬）のRubin導入は、需要がハイパースケーラ専有ではないことを示す。2026年後半の評価軸は、ピーク型番の頻度より、ラックBOM・割当表・材料カレンダー・tokens per wattを一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>メモリ3社 / HBMサプライ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ラックあたりのHBMドルが世代ごとに跳ねるなら、我々が売っているのはサイクル在庫ではなく、AIラックの構造部材だ。崔会長が言うパニックは現場のキューの話であり、価格キャップ外のLTAと前払いはその延長にある。2028のbitsバランス表より、今日の割当と歩留まりの方が顧客のROIを決める。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>TSMC / パッケージ・ファウンドリ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Q2の記録と2026 guidanceは、先端ノードとCoWoSの需要がまだピークアウトしていないことの裏書きだ。顧客がRubinに移るほどパッケージ枠の争奪は激しくなる。日次の半導体指数がベアでも、年次のcapexとArizonaを含む供給計画は『マルチ年の不足』前提で動いている。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>AMD / ラックスケール挑戦</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Heliosはチップのスペック比較ではなく、GPU・CPU・ネット・ソフトをラック単位で揃えた最初の本格的な対抗提案だ。MicrosoftやMetaのGW級コミットは、単一ベンダー依存を減らしたい調達側の論理と一致する。シェアはまだ一桁だが、競争のルールブックはすでにラックに書き換わっている。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>ハイパースケーラー / 調達</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Blackwellの消化とRubinのランプを同時に回すと、メモリとCCLのBOMが先に痛む。Heliosは価格交渉のカードにはなるが、HBMとパッケージのリードタイムはベンダーを変えても消えない。トークン単価・完遂率・ラック電力の三点が、次の発注書のKPIだ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-layer-group"></i>
+            <span>基板・CCL / 台湾サプライ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Vera RubinでCCL含量が跳ねるなら、次の売切れはファブの看板ではなく材料メーカーのカレンダーに出る。需要CAGRと供給CAGRのギャップは2028まで埋まらない前提で、値上げが通るのは押し戻しがないからだ。シリコンの議論だけしていると、ボードで負ける。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / 選別フェーズ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「相関が80から20に落ちたのは、テーマの終わりと選別の始まりだ。メモリの構造逼迫とラック競争が同時に立つなら、『AI終了』ではなく『誰の契約と誰のneocloud FCFが持つか』が論点になる。週末のベアはポジションの話、月曜の崔発言とHBM per rackはアトムの話——時計を混ぜないこと。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-20 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（HBM per rack、崔泰源需要発言、MS構造不足、Helios、CCL/基板、CoWoS制約、AI銘柄選別、BMS Rubin）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-20', 'color:#10b981');
+  </script>
+</body>
+</html>
