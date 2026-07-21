@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-21 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-21 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🔁</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">請求書の翌日——ループにブレーキをかけ、<br>「agentを直すagent」を測り、記憶を共有する火曜</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月21日（火）。07-20が「Fable分割初日 × ミックス15倍 × K3満員」なら、07-21はその続きが<strong>制御面</strong>に落ちた日だ。Haystack 3.0 Launch Week Day 2は、agentループを「観察する」から「中から止める」へ——soft/hard token limit、before_llmフック、step_count／token_usageが制御入力になる。LangChainはIssueBenchで「他のagentを改善するagent」そのものを評価する作法を公開。並行してMemOS／agentmemory系の共有記憶と、AGENTS.md／Skillsのツール横断同期が実務TLを埋めた。火曜の問いは「何体spawnするか」でも「誰の枠か」でもなく、<strong>ループを誰が止め、改善ループを誰が測り、記憶を誰が所有するか</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HAYSTACK LOOP DAY-2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Haystack 3.0 Day 2——agentループを<br>「観る」から「中で止める」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">@Haystack_AIのLaunch Week Day 2は、エージェントループ制御が主題。LLM call → tool call の連鎖を眺めているだけでは足りず、hooksでループ内部に割り込む。soft limitで警告、hard limitでブロック、before_llmで予算超過の次呼び出しを止める——step_count／token_usage／tool_call_countsが「ログの飾り」から<strong>制御入力</strong>になった。Fable分割2日目に「ループにブレーキがない」は家計の自殺。OSS側が先に言語化したのは象徴的だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hand"></i>
+            <span>Haystack 3.0 Day 2・agent loop cost control（7/21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 ISSUEBENCH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">IssueBench——「agentを直すagent」を<br>どう測るかが製品になった</div>
+          <div class="mt-4 text-sm text-zinc-400">LangChain公式：LangSmith Engine（トレースを読んで他agentを改善するcontinual learning agent）向けにIssueBenchを公開。15合成タスク、15失敗カテゴリ（hallucination、silent tool error、looping、context explosion、PII漏れ等）、SRE／SW Eng／CSの3ドメイン。トレース単位ラベルでは足りず——チームがルーティングできる<strong>issueカード集合</strong>として出力を採点する。自己改善ループの信頼は、「直す側」のevalなしには閉じない、という火曜の技術的核心。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-vial"></i>
+            <span>LangChain IssueBench・LangSmith Engine評価（7/20-21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 SHARED MEMORY HUB</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code／Cursor／Codexが別々に忘れる問題<br>「一つの記憶ハブ」が火曜の配線語彙に</div>
+          <div class="mt-4 text-sm text-zinc-400">ツールを切り替えるたびに文脈がリセットされる——これがmulti-stack時代の隠れた税だ。MemOS（Memmy）、agentmemory系バックエンド、Graphify（フォルダ→知識グラフ）が同じ床に並び、「もう一つのAIツール」ではなく<strong>全agentが継承する経験層</strong>として売られる。07-20のharness＞brainの延長——モデル名より、記憶の可搬性と所有者が資産になる。ただし共有記憶は共有汚染でもある。credentialと同じく、誰が書き、誰が消すかを先に決める。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-brain"></i>
+            <span>共有メモリ・MemOS／agentmemory・Graphify（7/20-21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 FABLE FLEET D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Fable分割2日目——クレジット蒸発が<br>「警告」から「請求ログ」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">Max／Premium 50%枠、Pro系$100＋$10/$50従量の現実が、火曜の実務ログに定着。agenticで数百万outputを吐くと$100は一セッションで溶ける——月曜のデモ語彙が家計簿語彙に翻訳された。標準配線は変わらない：難しい完遂はSol、量産レビューはTerra high、Fableは残クレジットがあるときだけ。Haystackのループブレーキとセットで読まないと、「ミックス表だけ書いて上限なし」という最悪の両取りになる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-receipt"></i>
+            <span>Fable D+2・クレジット実務・Sol/Terra標準配線（7/21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#05 RULES / SKILLS PORTABILITY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CLAUDE.md × AGENTS.md × .cursor/rules<br>「書く場所」より「一本化してsymlink」</div>
+          <div class="mt-4 text-sm text-zinc-400">ビルダーTLの定番マップが再循環：Claude CodeはCLAUDE.md、混合チームはAGENTS.md（Cursor／Codex／Amp等が読む開源標準）、Cursor現行は.cursor/rules/*.mdc。プロ技はルール本体を一箇所に置き、残りをsymlink——Skillsを.agentsに同期してCodex側でも再利用する現場報告も増えた。multi-stackはモデルルーターの話だけではない。<strong>方針ファイルの単一ソース</strong>がないと、同じリポジトリでagentごとに別人格が走る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-code"></i>
+            <span>AGENTS.md／Skills同期・ルール一本化議論（7/20-21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 OVERNIGHT LOOP DEBATE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/19-21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">夜間エージェントループは「常識」へ<br>一方でドリフト批判も消えない</div>
+          <div class="mt-4 text-sm text-zinc-400">VPS＋メモリスタックで朝までに進める夜間ループがワークフローとして定着しつつある一方、Tim Dettmersらが「ループはドリフトで無駄作業を積み上げる、単一sessionの方がマシ」と刺す議論が残る。Stanford系のloop＋graph memory主張（不要tool call減・レイテンシ改善など）と、現場の「unwindコスト」は同じ現象の両面だ。処方箋は派手ではない——終了条件、検証ゲート、予算ハードリミット、朝の人間レビュー枠。永続agentの勝敗は「放置耐性」ではなく<strong>ドリフトを検知して止められるか</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-moon"></i>
+            <span>overnight loops・ドリフト批判・loop+graph memory（7/19-21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 REPO CONTEXT / ENTIRE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「Gitがagent用に再設計される」——<br>sessions／prompts／decisionsをコード横に</div>
+          <div class="mt-4 text-sm text-zinc-400">Entire.ioなど、「ソフトウェアはコード＋デプロイ」ではなく「コンテキストと知識」だという製品言語がClaude Code／Codex／Cursor利用者に刺さっている。セッション・プロンプト・決定をリポジトリ横に置き、同期はワンステップ。07-20のUnderstand-Anything（repo→KG）と同系統——harness競争が「プラグイン」から<strong>開発履歴そのもののagent可読化</strong>へ一段進んだ。監査と再現性の観点では、チャット窓に消える軌跡より、repoに残る軌跡の方が企業に優しい。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>Entire.io・repo-native agent context（7/20-21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#08 SELF-IMPROVE / RED QUEEN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">自己改善の前提が崩れる——評価基準も<br>共進化せよ、という論文がTLを占拠</div>
+          <div class="mt-4 text-sm text-zinc-400">Cambridge＋NVIDIA系のRed Queen Gödel Machine議論が拡散。静的verifierは飽和し、最悪judgeをゲームする——epoch内は基準を凍結し、境界でutility自体を進化させる。verifiable codingでトークン1.35–1.72x削減しつつSOTA超え、論文執筆ループでは多様なjudge下で受理率1.78–1.86x等の報告。IssueBenchと同根：自己改善を信じるなら<strong>judge側の更新と監査</strong>が必須。agentがagentを直す時代に、「誰の物差しで合格か」は製品仕様になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-arrows-rotate"></i>
+            <span>Red Queen Gödel Machine・eval共進化議論（7/20-21）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 K3 BACKBONE + MULTI-STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">K3はDesignArena首位でも入れない<br>multi-stackルーターが本番の背骨になる</div>
+          <div class="mt-4 text-sm text-zinc-400">Kimi K3はFrontend Web AppでElo 1326首位報告が飛ぶ一方、新規C端は火曜も売り切れ。agent背骨候補としての「測れない空白」はD+1で日常化した。現場はCursor（速度）＋Claude Code（深さ）＋Codex／OpenCode／Antigravity等を役割分割——勝ち筋は単一フラッグシップではなく<strong>ルーター製品</strong>。7/27ウェイトとDeepSeek 7/24退役をカレンダーに書き、ワンフラグ差し替え表だけは今日中に残す。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shuffle"></i>
+            <span>K3首位×満員・multi-stack routing実務（7/21）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月21日のAI Agentsは、月曜の請求書ショックが火曜の<strong>制御面の仕様書</strong>に翻訳された日だった。Fable分割D+2でクレジット蒸発が「あるある」になり、Sol／Terra配線が趣味から標準に昇格する一方で、話題の中心はもはや単価表そのものではない。単価表を守るための<strong>ループブレーキ</strong>と、<strong>改善ループの評価</strong>と、<strong>記憶の共有契約</strong>が同じテーブルに並んだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            Haystack 3.0 Launch Week Day 2は、その象徴だ。agentループはLLMとtoolの往復であり、ほとんどのフレームワークはそれを「見せる」ことまではやる。Haystackが強調したのは、step_count／token_usage／tool_call_countsをhooks経由でループ内部の意思決定に使うこと——soft limit、hard limit、before_llmでの早期停止。07-20のCursorデモが示した「ミックスで15倍」は能力の物語だったが、07-21は「15倍を測れる配線に、止められるruntimeを足せ」という運用の物語に進んだ。観測だけでは家計は守れない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            LangChainのIssueBenchは、もう一段メタな問題を正面から扱う。「agentを直すagent」は魅力的だが、そのagent自体をどう評価するかが曖昧だと、自己改善は自己欺瞞になる。15失敗カテゴリ×3ドメインの合成環境、クロスドメインでの抽象失敗モード検証、issueカードとしてのグルーピング品質——出力は「検出した／してない」ではなく、チームが優先順位を付けて直せる単位でなければならない。continual learningを製品にするなら、evalは機能ではなく製品の一部だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ火曜の実務語彙が「共有記憶」と「ルール一本化」に寄ったのも自然だ。Claude CodeとCursorとCodexが別々の記憶を持つ世界では、ツール切り替え＝文脈税が発生する。MemOS／agentmemory／Graphifyは「もう一つのチャット」ではなく、経験のハブとして売られる。一方でCLAUDE.md／AGENTS.md／.cursor/rulesのマップが再循環し、Skillsを.agentsへ同期して他agentに再利用する報告も増えた。multi-stackの勝敗はモデル選択だけではなく、<strong>方針と記憶の単一ソース</strong>を持てるかどうかだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            夜間ループの常識化とドリフト批判は、同じコインの裏表だ。VPSで朝までに進む永続agentは魅力的だが、終了条件と検証ゲートが弱いと「合理的な作業の連鎖」が未承認の結果へ収束する——07-20のtrajectory monitoring論の続きだ。Red Queen Gödel Machine系の議論が示すのは、静的judgeの飽和とゲーム化リスクである。IssueBenchが「直す側」を測るなら、Red Queenは「物差し自体を進化させよ」と言う。自己改善を信じる組織ほど、evalのバージョン管理が必要になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            K3のDesignArena首位と売り切れ継続は、agent背骨選定に「性能・単価・アクセス」の三軸を固定した。入れない背骨はルーティング表の予約席にしかならない。本番はSol／Terra／既存系とワンフラグ差し替え、7/24 DeepSeek退役と7/27 K3ウェイトをカレンダーに書く。repo-nativeなcontext層（Entire系）は、監査可能な軌跡をチャット窓からリポジトリへ移す——企業採用では派手なdemoより、こちらの方がボトルネック解除に近い。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが起きるか。07-07以降のorchestration成熟、07-18の工場規格、07-19の権限と単価、07-20の請求書と15倍差——個人手元のcoding agentは「十分速い」に達し、組織と請求書と夜間無人に入れた瞬間、ボトルネックはモデルから<strong>ループ制御・改善eval・記憶所有・ルール可搬・アクセス空白のフォールバック</strong>へ移った。火曜は新モデル祭りではない。制御面の日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            07-21を一文で言えばこうだ。月曜は「請求書が開き、ミックスが露わになり、背骨が満員」、火曜は「ループにブレーキをかけ、agentを直すagentを測り、記憶とルールを共有契約にしろ」。spawn数を自慢するな。hard limitとIssueBench級のevalとmemory ownerとsymlinkされた方針ファイルを先に置け。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日「15倍差を測れ」って書いた翌日に、OSSが「測ったあと止めろ」ってhooksを出してくるの、agent界のサービス精神がまた過剰だよな（笑）。自己改善agentを褒めたい気持ちはわかるけど、直す側を測らないのは家庭教師を雇って成績表を捨てるのと同じ。記憶ハブは便利——でもcredentialと同じで、誰が書くか書いてないと「全agentが同じ勘違いを共有する」未来が待ってる。今日の標語は「止めろ、測れ、一本化しろ、所有者を書け」だ。ループはロマンチック、ブレーキはロマンチックじゃない。でも請求書はロマンチックを許さない。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Fable D+2のagent本番はループ制御・IssueBench・共有記憶・ルール可搬。spawnよりhard limitとevalと所有者</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月21日のAI Agents分野は、Haystack 3.0 Day 2によるagentループ内部のコスト制御（soft/hard limit・before_llm）、LangChain IssueBenchによる「他agentを改善するagent」の評価作法、MemOS／agentmemory／Graphify系の共有記憶ハブ、Fable分割2日目のクレジット蒸発とSol/Terra標準配線、CLAUDE.md／AGENTS.md／Skillsのツール横断一本化、夜間ループの常識化とドリフト批判、repo-native context（Entire等）、Red Queen系のeval共進化議論、K3首位×満員によるmulti-stackルーター化が同時進行した。本番の鍵はsubagent頭数でもArena首位でもなく、「ループ内hard limit＋accepted-outcome単価のAB＋改善agentのIssueBench級eval＋記憶とルールの単一ソースと所有者＋満杯・値上げを織り込んだワンフラグ差し替え」にある。07-20の「請求書とミックス」に続き、07-21は「止められるruntimeと測れる自己改善と共有契約」の日だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Fable D+2はクレジット台帳を週次KPIに。Agent Teamsは並行上限に加え、ループhard limitを必須。自己改善agentはIssueBench級の受け入れ基準なしに本番投入しない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「token_usageをログに出すだけでは製品にならない。before_llmで止められるhooksが最低要件。共有memoryはプラグインではなく制御面——読み取り／書き込み権限を明示せよ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「静的judgeの飽和とゲーム化は自己改善の本丸。IssueBenchのissueカード採点とRed Queenのepoch境界進化は同じ問題の表裏。軌跡とoutcomeの両方を測れ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「共有記憶ハブに所有者と削除SLA。夜間ループは終了条件と朝レビュー枠なしなら禁止。AGENTS.mdは監査対象——symlink一本化で方針ドリフトを潰せ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「KPIはaccepted-outcome単価＋ループ中断回数＋枠枯渇回数。Haystack流のsoft/hard limitを全fleetに。K3は予約席、本番はSol/Terra、7/27まで測れない前提で予算を組め。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「まずはAGENTS.md一本化とクレジット台帳、ループ上限から。共有記憶は情シス台帳に所有者を登録。K3評価は7/27以降、DeepSeek退役（7/24）の差し替え表は今週中に。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-21 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Haystack 3.0 Day2 loop control・IssueBench/LangSmith Engine・共有memory・Fable D+2・AGENTS.md/Skills・overnight loops・Entire/repo context・Red Queen・K3首位×満員・multi-stack）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-21', 'color:#10b981');
+  </script>
+</body>
+</html>
