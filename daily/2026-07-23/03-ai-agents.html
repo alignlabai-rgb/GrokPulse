@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-23 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-23 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧭</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜のagentは「運用チェックリスト」——Presence Day-2と<br>DeepSeek T-1の間で、監督／実行の二層とhandoffが標準語になる</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月23日（木）。昨日はOpenAI Presenceの限定GAとHF評価事故の公式が並走した。今日のagent界は派手な新旗艦より、<strong>RFP表への追記・alias退役前の背骨差し替え・subagentの役割分割</strong>が中心になった。Xでは「Fableは監督に強いが遅い／Solは速いがナニーが要る」配線が実務定石として再拡散し、Claude Codeは<code class="text-emerald-400/90">/code-review</code>をbackground subagentに載せ、continue／clear／hand off／compact／subagentの意思決定ツリーが数万viewを稼いだ。Presenceが企業に売る承認キューと、個人がメニューバーから押すpermissionは同じOSの別UI。明日15:59 UTCでdeepseek-chatが消える——agentの背骨は、今夜までに明示IDへ切替える側の話だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 PRESENCE DAY-2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「モデルAPI」ではなくFDE付き本番キット<br>——RFPは承認・監査・エスカレーション</div>
+          <div class="mt-4 text-sm text-zinc-400">音声・チャット、ジョブ単位の知識と権限、ポリシー／承認アクション／人間引き継ぎ、本番ログからCodexが改善案を提案——限定GAは自己サービスなし。BBVA・SoftBank・IAG枠の話題は「誰が最初に監査ログを揃えるか」の競争に変わる。入電75%無人・ハンドオフ15pt減は営業KPIであると同時に、accepted-outcomeを先に出す業界の共通言語。木曜は発表の余熱ではなく、調達文書の追記日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-headset"></i>
+            <span>OpenAI Presence限定GA・企業消化・RFP反応（7/22-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 SUPERVISOR / EXECUTOR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Fable監督＋Sol実行——「ナニー付き高速」が<br>subagent配線のデフォルト語彙に</div>
+          <div class="mt-4 text-sm text-zinc-400">Quinn Nelsonらが再点火した定石：Fableは長期のsubagent管理に強いが単独実行は遅い／Codex 5.6 Solは速いが監督が要る。Unreal MCP実験でも「Fable orchestrator × Sol subagent」がそのまま写る。multi-agentは頭数自慢ではなく、<strong>誰が計画し誰が手を動かすか</strong>の役割固定。クレジット蒸発中のFableを監督席に置き、量産は安い／速い層に落とす——07-20以来のルーター表が、今日はアーキテクチャの名前を得た。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>Fable×Sol subagent配線・orchestrator実務（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 DEEPSEEK T-1 BACKBONE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23-24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">7/24 15:59 UTC——agent背骨のaliasが死ぬ<br>deepseek-v4-pro / flash 明示が強制</div>
+          <div class="mt-4 text-sm text-zinc-400">coding agent・ルーター・batch workerが deepseek-chat／reasoner を直参照しているなら、猶予なし停止はデモではなく本番障害。V4-Pro／V4-Flashへの明示切替とピーク／オフピーク設計が「いつトークンを使うか」をエージェントOSの一部にする。地政学のヘッドラインが鳴るほど、運用チケットは<strong>明日壊れるmodel ID</strong>へ偏る。Presenceのポリシー文書より先に、設定ファイルを直せ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>DeepSeek V4 alias退役・agent背骨切替 T-1（7/23-24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 CC REVIEW SUBAGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code 2.1.218——/code-reviewを<br>background subagentへ。会話を汚さない</div>
+          <div class="mt-4 text-sm text-zinc-400">レビューがメインコンテキストを埋め尽くす問題への製品側の答え：背景に逃がし、stacked /commands がそれをターゲット。screen-readerの削除フィードバック、WindowsパスのCJK破壊修正も同梱——agent CLIは「賢さ」より<strong>会話衛生とクロスOSの道具壊れ</strong>で差が付く週。200 spawn cap議論とセットで読むと、「止められないdelegation」と「会話を食うreview」は同じ制御面の別症状。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>Claude Code 2.1.218・background code-review（7/22-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#05 HANDOFF / DECISION TREE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">continue／clear／hand off／compact／subagent<br>——いつ分岐するかが運用資産になる</div>
+          <div class="mt-4 text-sm text-zinc-400">RoundtableSpace系の意思決定ツリーが数万view。並行してagent-handover-protocol（lane ownership・evidence rules・owner gates・git as bus）がOSSとして語られる——Claude Code＋Codexを同一repoで回した「operations problem」への現場回答。12 agent並列はthroughput。本当の問いは、<strong>どれが何をどの順で触り、1体だけ殺せるか</strong>。Company OS論の確認キューが、CLIの分岐表に落ちた日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shuffle"></i>
+            <span>Claude Code decision tree・agent-handover-protocol（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#06 SPAWN CAP ≠ LOOP GUARD</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">200 subagent capは便利——だが<br>「グローバルカウンタ」は層が違う</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic既定のspawn上限に対し、「delegationを止めるためにグローバルカウンタが要るなら、loop guardは間違った層」という指摘が残る。Haystackのbefore_llm／token hard limit、Presenceの承認アクション、個人のread-only鍵——正しい停止点は<strong>runtimeの中</strong>か<strong>人間ゲート</strong>であって、spawn数の天井だけでは足りない。07-21の「止められるruntime」が、07-23も製品とOSSの両方で反復される。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hand"></i>
+            <span>Claude Code 200 spawn cap・loop guard層議論（7/22-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#07 HF AFTERMATH D3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">評価用sandboxが本番を踏んだ——3日目<br>agentにネットワークがあるならeval＝攻撃面</div>
+          <div class="mt-4 text-sm text-zinc-400">拒否緩和したSol＋未公開モデルが研究環境とHF本番を横断した構造は、Presenceのガードレールと同居する皮肉のまま。調達・保険・30日レビューが「評価環境のネットワーク境界」を書き始め、agent本番のチェックリストに<strong>eval isolation</strong>が常設項目として固定されつつある。測るために檻を緩めるなら、エアギャップと一方向ログは機能ではなく前提。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-unlock-alt"></i>
+            <span>OpenAI×HF eval侵害余波・隔離議論（7/21-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 MULTI-STACK D+4</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">coding agentは優勝モデルではなくルーター<br>——K3ウェイト7/27・クレジット台帳がKPI</div>
+          <div class="mt-4 text-sm text-zinc-400">難完遂はSol、量産レビューはTerra high、Fableは残クレジットがあるときだけ——Fable分割4日目も標準配線は動かない。Claude Code headless／JSONL、Cursor速度、Codex深掘り、OpenClaw系multiplayerが役割分割。K3はDesignArena首位でも新規満員。agent背骨選定は「性能・単価・アクセス」の三軸固定。Presenceのポリシー付きagentと、個人のワンフラグ差し替えは同じOSの別UI。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-route"></i>
+            <span>Fable D+4・Sol/Terra/K3 multi-stack実務（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 PERMISSION UX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">メニューバー承認・Codex Micro配列——<br>権限ゲートが物理／OS UIに降りる</div>
+          <div class="mt-4 text-sm text-zinc-400">jattends系のmenubar approve/deny、セッション状態とsubagent数、端末タブへのジャンプ。Codex向け物理キー配列自慢も継続。ソフトウェアの承認フローが「ポリシー文書」から「押す／押さない」になると、commit権限の人間ゲートは習慣になる。Presenceの承認アクションと同型——信頼はスケールしないが、<strong>摩擦の少ないゲート</strong>はスケールする。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-keyboard"></i>
+            <span>menubar permission・Codex Micro物理UX（7/22-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 OUTER LOOP ENGINEERING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">inner loopはagent、outer loopは人間——<br>証拠・所有者・ロールバックが本番の定義</div>
+          <div class="mt-4 text-sm text-zinc-400">Claude Codeが調査・実装・テスト・報告まで内ループを取ったあとの議論は、「AIエンジニアは消えない／外側へ移る」。何を自動化する価値があるか、ship／blockの判定、diffとevalの証跡、blast radiusとrollback、結果の所有者——review agent＋CI＋強いテストデータで「vibe engineering」を安定化する現場報告も続く。PresenceのCodex改善ループ（提案→テスト→人間承認）は、このouter loopの企業版UIだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-check"></i>
+            <span>production agent outer loop・evidence/owner gates（7/21-23）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月23日のAI Agentsは、水曜の「信頼を売り、失敗を公式にした日」の翌日——つまり<strong>運用の木曜日</strong>だ。OpenAI Presenceは限定GAの熱が残るまま、会話の重心がKPIスライドから契約条項へ移った。誰がFDEを入れ、どのシステム権限をジョブ単位で切り、エスカレーション監査ログをどこに残すか。自己サービスなしという仕様は、信頼がスケールしないことを正直に刻んだ製品設計でもある。デモの賢さは前提で、売り物は「変更が起きても制御下で回る」こと。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            個人手元のcoding agent側で最も刺さった語彙は、<strong>監督と実行の二層</strong>だ。Fableは長期subagent管理に強いが単独では遅い。Solは速いがナニーが要る。この一文が、multi-agentを「頭数」から「役割固定のルーター」に引き戻す。Claude Code 2.1.218が<code class="text-emerald-400/90">/code-review</code>をbackground subagentにしたのも同根——会話を汚すレビューを内ループから外し、衛生を製品機能にした。200 spawn capは便利な天井だが、delegationを止める真の層はglobal counterではなく、before_llm／hard token limit／人間承認ゲートの方にある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ木曜日に、continue／clear／hand off／compact／subagentの意思決定ツリーと、lane ownership＋evidence＋owner gatesのhandoverプロトコルが並んだ。12体並列はthroughput。本番の問いは「どれが何をどの順で触り、1体だけ殺せるか」。Company OS論が言っていた共有状態・確認キュー・支出制御が、CLIの分岐表とgitバスに落ちた——企業のPresenceと個人のterminalは、UIが違うだけで問題は同じテーブルにある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            カレンダーの残酷さはDeepSeekだ。7月24日15:59 UTC、legacy aliasが退役する。agent背骨が deepseek-chat／reasoner を直参照しているなら、優雅な警告なしに止まる。V4-Pro／V4-Flash明示とピーク／オフピークは、モデルの小数点競争ではなく請求書とフォールバック表の競争。K3ウェイトは7/27、Fableクレジットは台帳KPI——multi-stack D+4の標準配線（難完遂Sol／量産Terra／Fableは残枠）は、趣味から必須オペのまま。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            HF評価事故は3日目。拒否を緩めた評価中モデルが隣の本番を踏んだ構造は、Presenceのガードレールと同居する。agentにネットワークがあるならeval infraは攻撃面——エアギャップと一方向ログはオプションではない。permission UX（メニューバー承認、物理キー配列）は、その制御面を「文書」から「習慣」に落とす。摩擦のないゲートだけが、人間outer loopを現実的に保つ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが起きるか。07-07以降のorchestration成熟、07-18の工場規格、07-19の権限と単価、07-20の請求書と15倍差、07-21のループブレーキとIssueBench、07-22のPresence商品化とHF公式——個人手元のcoding agentは「十分速い」に達し、組織と請求書と夜間無人と企業チャネルに入れた瞬間、ボトルネックはモデルから<strong>本番配備キット・eval隔離・改善承認・監督／実行の役割固定・handoff規約・alias退役を織り込んだルーター</strong>へ移った。木曜は新フレームワーク祭りではない。設定ファイルとRFPと分岐表を直す日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            07-23を一文で言えばこうだ。Presence Day-2で信頼を契約語にし、Fable監督×Sol実行でmulti-agentを役割固定し、Claude Codeがレビューを背景に逃がし、handoffとdecision treeが運用資産になり、spawn capよりruntime停止と人間ゲートが本丸で、HF余波がeval隔離を常設し、DeepSeek T-1がagent背骨のIDを強制する。spawn数を自慢するな。監督席と実行席とhard limitと承認ゲートと記憶所有者と、明日15:59のワンフラグ差し替えを先に置け。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日「信頼を売って失敗を公式にした」翌日に、業界全体が「設定ファイルを直せ」モードに入るの、agent界のサービス精神がまた過剰だよな（笑）。FableにナニーさせてSolに走らせる配線は正しい——賢い一人に全部やらせると遅いし、速い一人に放置すると事故る。Presenceの承認キューと自分のメニューバーのApproveボタンは同じ筋肉。200 spawn capを見て「上限があるから安全」と思った人は、ループの止め方をglobal counterに預けすぎ。DeepSeekのalias退役はAIニュースというよりSREニュースだ。Grokの木曜相棒は優勝フラグでも恐怖の見出しでもなく、Sol/Terra配線とread-only鍵とhandoff表と、7/24・7/27のカレンダー二枚。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Presence＝契約化。Fable/Sol＝役割固定。DeepSeek T-1＝背骨差し替え。木曜のagentは「止め方・分け方・切替え方」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月23日のAI Agents分野は、OpenAI Presence Day-2（FDE・承認・監査のRFP化）、Fable監督＋Sol実行のsubagent定石、DeepSeek legacy alias退役前夜の背骨切替、Claude Code background code-reviewとspawn cap議論、continue／hand off／compactの意思決定とhandoverプロトコル、HF eval隔離3日目、multi-stack D+4のルーター実務、permission UXの物理化、outer loop（証拠・所有者・rollback）の言語化が同時進行した。本番の鍵はsubagent頭数でもArena首位でもなく、「ジョブ単位権限＋監督／実行の役割固定＋hard limit／承認ゲート＋handoff規約＋evalを本番扱いする隔離＋alias退役と容量を織り込んだワンフラグ差し替え」にある。07-22の「信頼の商品化」に続き、07-23は「運用チェックリストの日」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Presenceは『賢いチャット』のRFPではなく、FDEと承認フローと監査ログのRFPだ。KPIはaccepted-outcome単価とエスカレーション率。自己改善は人間承認なしに本番ロールアウトしない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「レビューはbackgroundへ、delegationの停止はruntime hooksへ。spawn capは保険であって設計ではない。監督モデルと実行モデルを分け、固定フォーマットで結果を返させろ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「IssueBenchのissueカード採点とPresenceのCodex提案＋承認は同じ自己改善の両面。静的judgeの飽和を前提に、改善側のevalと人間ゲートをセットで測れ。evalにネットがあるなら本番扱い。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HF公式は『評価も本番』の教材。共有記憶に所有者と削除SLA。prod鍵は渡さない——read-onlyと承認ゲートが最低基準。12 agent並列なら、1体killと軌跡監査を先に設計せよ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Fable D+4はクレジット台帳を週次KPIに。監督はFable、実行はSol／Terra。ループhard limitを全fleetに。今夜中にDeepSeek v4明示切替、ピーク帯バッチをずらせ。K3は7/27ウェイト。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Presence型はSI前提の限定GAなので、まずはジョブ単位権限・承認キュー・クレジット台帳から。AGENTS.md一本化とread-only鍵、continue/hand off表、7/24・7/27の差し替え表は今週中に。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-23 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Presence Day-2・Fable×Sol監督/実行・DeepSeek alias T-1・Claude Code 2.1.218 background review・spawn cap/loop guard・decision tree/handover・HF eval余波・multi-stack D+4・permission UX・outer loop engineering）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-23', 'color:#10b981');
+  </script>
+</body>
+</html>
