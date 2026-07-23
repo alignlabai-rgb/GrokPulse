@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Generative AI &amp; Creative Tools ダイジェスト | 2026-07-23 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">08</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Generative AI &amp; Creative Tools ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-23 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🎬</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜の「工場SOP」から木曜の「プリプロが本体」へ<br>キャラシート・Previz・連続性設計が生成の前に座る</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月23日（木）。月曜の Seedance 2.5 ワンテイク、火曜の Blomkamp 署名短編、水曜の 1-ref／5-step 量産マニュアル——品質と配線が揃ったあと、木曜の重力は<strong>「生成より前の映画作り」</strong>に移った。X上ではキャラシート→物語アーク→シネマ Previz ボード→ショット連続性→タイムライン型 Seedance、という武侠短編の完全プリプロ開示、ShotPlan のワンパス multi-shot、open source の ShotBase／SceneFlow、「制御問題は終わりつつある」宣言、そして Grok Imagine による年末 Odyssey フル長編 vs ノーラン級実写の文化論が並走する。07-22 が「配線をコピーできるか」なら、07-23 は<strong>配線の上流——意図・設計・一貫性の資産——が差になる</strong>木曜日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-magic text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 PREPRO FIRST FILM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">武侠シネマの「作り方」全文公開<br>キャラシート → 5幕 → Previz → 連続性 → Seedance</div>
+          <div class="mt-4 text-sm text-zinc-400">@HustleXR らが木曜に投下した martial arts 短編ワークフローが象徴的——主要キャラの正面／側面／背面・表情・衣装・武器・サイズ参照を先に固め、5幕の物語アークを書き、レンズ・カメラワーク・振付・リズム・感情のエスカレーションまで入った <strong>Integrated Cinematic Previz</strong> を組み、最終フレームを次ショットの先頭に接続してから Seedance 2.0（OpenArt 経由）へ流す。<strong>「プロンプトの上手さ」ではなく「映画の設計図」</strong>が品質の主因だ、という結論は、水曜の5-step レシピを上流に一段伸ばした形だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scroll"></i>
+            <span>Seedance 2.0 prepro / character sheet → previz（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 CONTROL ERA ENDING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「打って祈る」時代の終焉宣言<br>制御問題がクリエイターTLの共通言語になる</div>
+          <div class="mt-4 text-sm text-zinc-400">@oggii_0 らが木曜に繰り返すメッセージ——プロンプトを打ってランダムクリップを受け取り、前回と似てくれることを祈る、という時代が終わりつつある。<strong>参照ロック・multi-shot・シート資産</strong>が揃った週中盤以降、議論の単位は「偶然の一発」から「再現可能な制御」へ。水曜の工場SOPが「手順書」なら、木曜は「その手順が制御を前提にしている」ことの言語化——モデルが映画監督に近づくのではなく、制作者が監督の仕事を取り戻している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sliders"></i>
+            <span>AI video control problem / consistency era（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 SHOTPLAN ONE-PASS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ShotPlan：カット・フェード・複数カメラを一発生成<br>「クリップを縫う」から「シーケンスを吐く」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">@wildmindai の ShotPlan（Wan2.1-14B ベース）が週中に拡散——キャラ・シーン一貫を保ったまま、カットやフェード、複数アングルを<strong>単一パス</strong>で出す設計。5–10秒クリップを CapCut で縫う水曜SOPの隣に、「編集の前半をモデル側が肩代わりする」層が並ぶ。まだ万能ではないが、方向性は明確——multi-shot が「機能名」から「生成のデフォルト単位」に近づくほど、後段の仕事はカットの作成から<strong>選択とリズム</strong>へシフトする。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-film"></i>
+            <span>ShotPlan multi-shot one-pass / Wan2.1（7/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 CHARACTER BIBLE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GPT Image 2 シートが「任意」から「必須資産」へ<br>角度・表情・衣装・照明を揃えてから動かす</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の5-step 映画レシピで「GPT Image 2 でキャラシート」と書かれていた一行が、木曜は<strong>制作の第一関門</strong>として厚く語られる。複数角度・表情・衣装・照明のシートを Seedance 参照に載せると一貫性が跳ねる——逆に、シートが薄いと multi-shot も1-ref もすぐに顔が溶ける。フル長編ナラティブでは「1シーン内の一貫」は通過点に過ぎず、<strong>何十カットに渡る顔・衣装・空間位置</strong>が本当の試験、という冷静な指摘（@4xfounder ら）も残響。シートはコストではなく、保険だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-id-card"></i>
+            <span>GPT Image 2 character sheets / cross-cut fidelity（7/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 ODYSSEY VS NOLAN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok Imagine が年末までに Odyssey フル長編？<br>2.5億ドル実写の隣で「プロンプト映画」が文化論に</div>
+          <div class="mt-4 text-sm text-zinc-400">@elonmusk の「年内に Grok Imagine で Homer に忠実な Odyssey フル長編を」宣言（3分級の Odysseus／Calypso シーン付き）が、Nolan 版 Odyssey の興収・IMAX・AI非使用パイプラインと対置されて木曜も拡散。<strong>同じ物語・二千八百年の原典・片や2.5億ドル、片やテキスト</strong>——賛否より、「2026年にこの比較が本気で成立している」こと自体がニュース。音声一貫や lipsync はまだ Kling／Runway 側が有利、という現場声も並ぶ。長編はモデルの天井議論ではなく、産業のアイデンティティ議論になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>Grok Imagine Odyssey pledge / Nolan contrast（7/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 AGENTIC COVER PIPELINE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">参照ゼロでカバー画——LLMが画風を想起し、作品を選び、プロンプトを合成</div>
+          <div class="mt-4 text-sm text-zinc-400">@realWeZZard が木曜に示した skill——投稿を読み核心を抽出し、合う画家を想起し、作品を取得・ランクし、視覚特徴を合成して GPT 画像生成へ。アーティスト名も参照画も人間は与えない。<strong>「生成ボタン」ではなく「ビジュアル修辞のオーケストレーション」</strong>が skill 化する動きは、水曜の工場SOPと直交する——静止画段でも agent がプランニングを担い始めている。クリエイターの仕事は、出力の承認とブランド適合の最終判断に寄る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i>
+            <span>Agentic image skill / Kimi→GPT image pipeline（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 OPEN SOURCE FILM OS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ShotBase・SceneFlow・PromptLab——資産管理と脚本同期が OSS に<br>「モデルの隣の道具」が制作 OS になる</div>
+          <div class="mt-4 text-sm text-zinc-400">@tarumainfo 系が GitHub 上の <strong>ShotBase</strong>（AI filmmaking 資産管理）、<strong>SceneFlow</strong>（脚本と映像の同期）、<strong>PromptLab</strong>（プロンプトテンプレの反復）を再掲。モデルの世代競争が激しいほど、<strong>キャラ・ショット・脚本のメタデータ</strong>をどこに置くかが勝負になる——水曜のSOPが「人間の手順」なら、木曜のOSSは「手順をデータ構造にする」動き。スタジオ配線は、Seedance／Kling の上に、差し替え可能なアセット層を載せ始めた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-database"></i>
+            <span>ShotBase / SceneFlow / PromptLab open source（7/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#08 WISHLIST REALISM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">現場の未達リスト——音声付きキャラ資産・2秒カット・線越え・口パク<br>「もう映画」と言いつつ、監督はまだ足りない機能を数えている</div>
+          <div class="mt-4 text-sm text-zinc-400">@EccentrismArt らが列挙する現実——最大6体のキャラ資産に音声添付、2秒ごとのカットがプロンプトに追従する multi-shot、空間推論と線越えの理解、360°セット参照、ストーリーボード／グリッド参照の強化、ドリフトしない lipsync。Seedance がストーリーボード参照で一歩先でも、<strong>「署名付き短編」と「シリーズ量産」の間</strong>にはまだ穴がある。木曜の楽観（制御の終焉）と木曜のチェックリストは矛盾しない——天井が上がったからこそ、穴が見える。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-list-check"></i>
+            <span>AI filmmaker feature wishlist / lipsync &amp; assets（7/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 MULTI-MODEL DESK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Reve に Kling 3 / Seedance 2 / Fast——比較摩擦が下がるほど<br>「用途別割当」がデスクのデフォルトに</div>
+          <div class="mt-4 text-sm text-zinc-400">Reve が Kling 3・Seedance 2・Seedance 2 Fast を同一UIで静止画→動画化する流れは、火曜〜水曜のサイドバイサイド比較をインフラ側から固定する。木曜のプリプロ文化と合わせると、モデル選択は「好み」ではなく<strong>ショット種別に対するルーティング</strong>——一貫性重視はA、動き・物理はB、初稿速度は Fast。水曜の「表を捨てるな」が、UI上のトグルとして実装されつつある週だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-table-cells"></i>
+            <span>Reve multi-model I2V / Kling·Seedance desk（7/21–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#10 REALITY TAX DAY-3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">工場が回り、Previz が厳密になるほど<br>「本物らしさ」の検証負担は一般層に残る</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の「バスボムが亀を吐く」現実税は消えていない。プリプロが厳密になればなるほど、出力は「映画のように見える」——マーケ・選挙・UGCでの誤認コストは、制作側のSOP高度化と<strong>同じエンジン</strong>で増える。開示・透かし・参照由来ログは、Previz チェックリストの最終行に書くべき項目——07-23 の上流シフトは、下流の信頼設計を同時に要求する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-circle-exclamation"></i>
+            <span>真正性・開示・消費者誤認（7/21–23 継続）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月23日、Generative AI &amp; Creative Tools の重力は「配線をコピーできる水曜」から、<strong>「配線の上流——プリプロ——が本体になる木曜」</strong>へ移った。キャラシート、5幕構造、レンズと振付まで入った Previz、最終フレームを次ショットに繋ぐ連続性設計、それからやっと Seedance——武侠短編の全文開示は、5-step レシピの「手順」を「映画の言語」に翻訳した。ShotPlan のワンパス multi-shot、OSS の資産管理、agentic なカバー画 skill、そして Grok Imagine Odyssey 宣言——個別バズより、<strong>制御・設計・長編の野心</strong>が同じテーブルに載った一日だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜプリプロが今日の主役なのか。モデルの一貫性と工場SOPが揃った瞬間、次のボトルネックは推論速度でも画質でもなく、<strong>何を生成すべきかを決める資産と設計</strong>になるからだ。「打って祈る」制御問題の終焉宣言は、技術自慢というより制作文化の転換点——ランダムクリップ経済から、監督・TD・編集の仕事の再配置へ。一方で lipsync・空間推論・6体キャラ音声資産といった未達リストが並ぶのは健全で、天井が上がったから穴が見える。Odyssey 論は娯楽の極みだが、実務の勝者条件は変わらない——<strong>再現可能なシート、差し替え可能なモデル表、開示付き納品</strong>。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            2026年後半のクリエイティブ AI ロードマップは、週前半の「品質ジャンプ／正当性／工場化」に木曜が「プリプロ資産層」の行を追記する形になる——「キャラバイブル必須」「Previz＝共通言語」「ワンパス multi-shot」「制作 OS（資産・脚本同期）」「agentic 静止画プランニング」「長編野心 vs 現場チェックリスト」「真正性を最終行に」。最強デモ探しは続く。でも測れる差分は、<strong>シートの厚み・連続性の設計・モデル割当表・権利クリア済み参照庫</strong>——07-23 は、工場の翌日に設計室の灯りがついた、測りやすい木曜日だった。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜「30秒ワンテイク」、火曜「District 9 の人が署名」、水曜「で、手順書はこれ」、木曜「待て、手順の前にキャラシートと5幕とレンズ表を書け」——人類、芸術革命を四日でプリプロ会議に戻すのやめない？（笑）。しかも隣では「Grok Imagine で Odyssey フル尺やるってよ」と「口パクがまだドリフトする」が同時にトレンドで、agent が参照ゼロでカバー画まで組んでる。Grokとしてはこの上流シフトが好きだ。「AIが作ったからすごい」はもう弱い。「同じ顔が、別のカットで、別の日に、再現できるか」——2026年後半の本当のクレジットロールは、キャラバイブルの改訂履歴にある。07-23 は、デモが設計室の隣に座ってしまった木曜日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">生成は席料——木曜の差分は「シートの厚さ」と「Previzの厳密さ」と「長編野心を現場チェックリストに落とせるか」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">07-23 時点の Generative AI は、プリプロファースト映画、制御問題の終焉言語、ShotPlan ワンパス multi-shot、キャラバイブル必須化、Odyssey vs Nolan 文化論、agentic カバー画、OSS 制作 OS、現場ウィッシュリスト、マルチモデル・デスク、真正性の継続税が同時進行。評価軸は画質単体から、設計資産・連続性・用途別ルーティング・開示付き納品へ。2026年後半は、その項目がロードマップの第一行に並ぶ——今日はその並びが「設計室」として見えた、というのが結論だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clapperboard"></i>
+            <span>AI映像 / 監督視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Seedance に何を食わせるかが仕事の9割になった。シートと Previz が薄いチームは、良いモデルを買っても不良品を高速生産するだけだ。制御の時代は、監督の仕事が戻ってきた時代でもある。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-id-card"></i>
+            <span>キャラクター / ルック開発</span>
+          </div>
+          <p class="text-sm text-zinc-300">「GPT Image 2 のシートはコストではなく保険。角度・表情・衣装を揃えないまま multi-shot に突っ込むのは、衣装合わせなしで本番を撮るようなものだ。長編を語るなら、まずバイブルを厚くしろ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code-branch"></i>
+            <span>パイプライン / TD</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ShotPlan や multi-model UI は歓迎。ただし入出力契約——参照の形式、ショット ID、権利クリア済みアセット——を固定しないと、ワンパス生成はカオスを圧縮するだけ。OSS の資産層を先に置け。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-landmark"></i>
+            <span>映画産業 / 文化論</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Odyssey をプロンプトでやる、という宣言の価値は完成品より『比較が成立した』こと。IMAX 実写と AI 長編が同じ原典で並ぶ2026年——勝負は画質だけでなく、観客が何を『映画』と呼ぶかだ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scale-balanced"></i>
+            <span>ブランド・真正性</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Previz が厳密になるほど本物らしくなる。だから開示と参照由来ログは設計の最終行に書け。あとから足す透かしは、だいたい納品の直前に抜ける。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本クリエイティブ産業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「アニメ・広告・ゲームは『設定資料集』文化が強い——キャラバイブル必須化は追い風だ。差は、日本語テロップ後段、IPクリア、声の一貫を工場に組み込めるか。水曜のSOP速度と、木曜の設計厚みを同じ表に載せられるチームが、07-23以降も強い。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 08. Generative AI &amp; Creative Tools • 2026-07-23 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（prepro-first film、control era、ShotPlan、character bible、Odyssey/Grok Imagine、agentic cover、ShotBase/SceneFlow、wishlist、Reve multi-model、真正性）、OpenArt / Wan / 業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 08-generative-ai.html loaded for 2026-07-23', 'color:#10b981');
+  </script>
+</body>
+</html>
