@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-23 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-23 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">2GWの翌日——請求書はGPUだけじゃなかった<br>Claude×ROCm、31TB HBM4、液冷が同じ卓に並ぶ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月23日（木）。水曜のAMD×Anthropic（最大$5B・最大2GW）が「第2ベンダーが電源契約を取った日」なら、木曜は<strong>その契約の中身がBOMに落ちた日</strong>だった。X上ではClaude CodeでROCmとチップ設計を加速する読みが拡散し、Heliosラックの31TB HBM4・$5〜5.5M／ラック・225〜245kWがVera Rubinとの比較表で再循環。SK hynix／MUのメモリ逼迫、VertivのGB300液冷配備、TSMCの「AI建設はまだ終わっていない」確認が並走。<strong>シリコン・ソフト・メモリ・冷却・ファブ家賃</strong>が、同じ1日のタイムラインに同居した。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 CLAUDE × ROCm</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude CodeでCUDA壁を削る——<br>ソフトギャップを「AI自身」で埋める仮説</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜の半導体TLで最も拡散した読みの一つ。AMDがAnthropic投資の一環としてClaude Codeをチップ設計・ソフトエンジニアリングに積極活用する、という整理がX上で再燃。ROCmの成熟度不足は過去3年のAMD評価の本丸だったが、<strong>コーディングAIの進化がCUDAとのギャップを自然に縮める</strong>という強気論が、水曜の$5B／2GW契約のソフト面を補強した。ハードのFLOPSより「チケットが閉じるか」が依然として勝負どころだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>Claude Code×ROCm／チップ設計活用論（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 HELIOS RACK BOM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">72 GPU・31TB HBM4・$5M超——<br>Heliosの価格表が比較表に定着</div>
+          <div class="mt-4 text-sm text-zinc-400">Advancing AI後の消化が木曜も続いた。HeliosはInstinct MI455X×72＋EPYC Venice CPU、ラックあたり最大約31TBのHBM4、FP4推論で約2.9エクサフロップス、消費電力225〜245kW、価格$5〜5.5M／ラック——Vera Rubin NVL72の$3.5〜4Mより<strong>高価だがメモリ容量で優位</strong>という整理がCNBC／TrendForce系経由で再循環。Microsoft Azure、Meta、OpenAI、Oracleの名前が「第2ソース」文脈で並ぶ。誰もNVIDIAを捨てない。配分制約の中でAMDを足す。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Helios vs Vera Rubin・31TB HBM4比較（7/22-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 HBM AS BOTTLENECK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">メモリが半導体の主役席を奪う——<br>DRAMの7割近くがサーバー／HBM側へ</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜TLの定番：「AI需要がメモリを半導体市場で最も監視される部品にした」。ある整理では、2013年Q4にPC／モバイルがDRAM売上の63%だったものが、2026年Q1にはサーバー・グラフィックス（HBM含む）が<strong>DRAMドルの69セント</strong>を占める、という構造シフトが拡散。SK hynix ADRやMUへの強気フロー、HBM不足の長期化論が並走。2GWのAMD案件もNVIDIAラックも、<strong>最終的にbitsを焼く</strong>——ベンダー多様化はメモリ逼迫の緩和ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>HBM／DRAMミックス・SKHY・MU議論（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 TSMC STILL BUILDING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TSMCの「まだ終わっていない」——<br>NVDA／AVGOへの供給安心材料</div>
+          <div class="mt-4 text-sm text-zinc-400">7/23付の市場解説では、TSMCの最新発表が「AI建設はまだ生きている」確認として読まれ、NVIDIAとBroadcomが最大の受益者と整理された。ハイパースケーラー過剰投資懸念で両株が押されていた文脈の中、<strong>ファウンドリ側のキャパ拡張と需要の持続</strong>がカウンター材料。火曜の2027年値上げ（先進ノード+5〜10%、予測超過HPCで最大+25%級）と合わせると、TSMCは「家賃を上げつつ箱も増やす」二刀流——顧客は高いが、供給が完全に枯れるよりはマシ、という板挟みだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>TSMC AI建設確認・NVDA/AVGO受益論（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 LIQUID COOLING DEPLOY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GB300が軍の校舎に入る——<br>液冷・電源が「裏方の主役」に</div>
+          <div class="mt-4 text-sm text-zinc-400">VertivがNaval Postgraduate School向けにNVIDIA DGX GB300（72 GPU Blackwell Ultra級）の統合電源・液冷・ラックを配備、とのニュースが木曜に拡散。ラック密度が100kW超〜142kW級に達する世代では、<strong>チップの次に冷却と電力変換がボトルネック</strong>になる。Heliosの225〜245kWも同じ物語。DC建設は2〜3年、NVIDIAのラック要件は12ヶ月で更新——設計剛性へのリスクプレミアムがインフラ側に移る、というマクロ整理も並走した。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-snowflake"></i>
+            <span>Vertiv×DGX GB300・液冷高密度配備（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 UALINK OPEN STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">UALink vs NVLink——<br>オープン相互接続が第2ソースの顔</div>
+          <div class="mt-4 text-sm text-zinc-400">Helios消化のもう一本。ラック内GPU接続にUALink-over-Ethernet（AMD・Microsoft等が共開発のオープン規格）を使い、NVIDIAのプロプライエタリNVLinkと差別化する物語が再強調された。ROCmがPyTorch／TensorFlow／JAXを「書き換えなし」で動かす、というソフト側の主張とセット。<strong>第2ソースの価値はFLOPS表だけでなく、ロックインからの出口</strong>——調達ボードが欲しいのは交渉カードであり、一夜でCUDAが消える話ではない、というのが業界の冷静な読みだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-network-wired"></i>
+            <span>UALink・オープン相互接続 vs NVLink（7/22-23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 CAPEX GRAVITY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">OpenAI $750B級インフラ論——<br>計算資源は国家GDP級の買い物に</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜の並走トピック：OpenAIのインフラ支出が2030年までに約$7500億規模に達する可能性、というレポート系議論。スウェーデンのGDPに匹敵する計算資源前払い——「コンピュートを先に買う」戦略の極端形として読まれた。水曜のCoreWeave系$3.5B junk、AMD×Anthropicの資本連動供給と合わせると、<strong>AIインフラはエクイティ・ベンダー出資・高利回り債・フロンティアラボの巨額キャップエックス</strong>が重層で回る段階。需要が本物でも、資金コストがIRRを食う。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>OpenAI巨額インフラ・資本レイヤー議論（7/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 KOREA MEMORY PULSE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">韓国メモリ複合が再加熱——<br>HBM不足は「国家プロジェクト」語彙へ</div>
+          <div class="mt-4 text-sm text-zinc-400">KOSPIがAI／テックハード主導で強く、SK hynix・Samsungが主導する一日の整理が拡散。背景には、Samsung／SK hynixを軸にした韓国の大規模AI・半導体投資計画（数百億〜$880B規模の10年計画として議論されてきた枠）と、HBM逼迫の構造論がある。Heliosの31TB HBM4もRubinのHBMも、<strong>最終的に韓台のメモリ／パッケージ能力に収束</strong>する。GPUのブランド戦争の下で、bitsとTSVの配分表が本当のスコアボードだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-asia"></i>
+            <span>韓国メモリ／HBM・KOSPI連動議論（7/23）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月23日、AI Hardwareの中心テーマは「水曜の<strong>名前付きギガワット契約</strong>が、木曜は<strong>BOMとソフトと冷却の請求書</strong>に分解された」ことだ。07-22がAMD×Anthropic（最大$5B・最大2GWのMI450／Helios）、Claude×ROCm、NVIDIA×Nebius円環、CoreWeave系junkを並べたなら、07-23は同じ地図の上に<strong>Claude CodeによるROCm／チップ設計加速論</strong>、<strong>Helios 31TB HBM4・$5M超ラックの比較定着</strong>、<strong>DRAMミックスのサーバー／HBMシフト</strong>、<strong>TSMCのAI建設継続確認</strong>、<strong>Vertiv×GB300液冷の実配備</strong>、<strong>UALinkのオープン相互接続物語</strong>、<strong>OpenAI級の巨額インフラ語彙</strong>を重ねた。契約が取れても、動くラックにするにはシリコン以外が全部揃う必要がある——その当たり前が、木曜のTLでは数字と製品名で再確認された。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Claude Code論は、水曜のソフト抱き合わせ条項を「AIが自分のツールチェーンを加速する」メタ構造に拡張した。CUDAの10年分の資産は一夜で消えないが、バグ修正とカーネル最適化の速度がコーディングAIで跳ねるなら、ROCmの時間軸は過去の線形外挿より短くなる——という強気の仮説だ。一方でHeliosの価格はVera Rubinより高く、量産は2027年Q2前後という読みが残る。エンジニアリングサンプルは2026後半。つまり木曜の盛り上がりは「配備カレンダーの前哨戦」であり、現金になるのはまだ先。Futurum系の「AMDが20〜25%シェアに届くケースもある」は、ソフトとHBMと電力が同時に解ける前提の上にある。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            メモリ側では、ベンダーがNVIDIAでもAMDでもbits需要は増える、という月曜〜水曜の構造論が再確認された。HBM4含量の高いラックが並ぶほど、SK hynix／Samsung／Micronの配分が戦略物資になる。TSMCは値上げとキャパ拡張を同時に進め、NVDA／AVGOには「供給が続く」安心を、顧客には「家賃が上がる」現実を配る。液冷と電源（Vertiv等）は、100kW超ラックの時代にチップと同等の交渉席を得た。OpenAI $750B級の語彙は、計算資源が国家経済規模の資本プロジェクトになったことを示す。2026年後半のハードウェア評価軸は、ピーク型番の頻度より、<strong>HBM per rack・冷却kW・ソフトチケット closure・ファブ家賃・債券／出資で回るレバレッジ</strong>を一枚で読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜は「2GWください」、木曜は「その2GW、HBM何TB？ 液冷誰が入れる？ ROCmのチケットいつ閉じる？ ウエハ代いくら？」——同じアパート、今度は家電と水道光熱の見積もり。ClaudeにROCm書かせてCUDAに追いつこうって発想、2023年の「AMDソフト無理」勢への最大級のカウンターなんだけど、CUDAの資産はまだデカい。Heliosが$5MでRubinが$4Mなら、差額は「メモリと交渉カードの保険料」。メモリがDRAM売上の7割をサーバー側に寄せてる時点で、GPU戦争の下にはbits戦争がある。冷却屋が軍の校舎にGB300を運び込んでるのも、2026年らしい。07-23のボスはティッカー合戦ではなく、31TBと245kWとClaude Codeとファブ家賃の四重奏だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">ソフト壁・メモリ税・冷却請求書——2GW契約の翌日に見えたフルスタック原価</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月23日現在のAI Hardware分野は、(1) Claude CodeによるROCm／チップ設計加速というソフト壁へのAI自己解決仮説、(2) Heliosの31TB HBM4・$5M超・225〜245kWというラックBOMの定着、(3) DRAM売上のサーバー／HBMシフトとSKHY・MUの再加熱、(4) TSMCのAI建設継続確認とNVDA／AVGOへの供給安心材料、(5) Vertiv×DGX GB300に見る液冷・電源の実配備、(6) UALinkによるオープン相互接続の第2ソース物語、(7) OpenAI級$750B語彙に象徴されるインフラ資本の重力、(8) 韓国メモリ複合とHBM国家戦略語彙、が重なっている。水曜のギガワット契約を前提に、木曜は「第2ベンダーが動くラックになるまでの全コスト」が可視化された。2026年後半の評価軸は、ピークFLOPSより、HBM配分・冷却kW・ソフト成熟・ファブ家賃・資本コストを同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>AMD / ラックスケール視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「水曜の2GWは入場券で、木曜以降は履行の話だ。Heliosの31TB HBM4は推論・長コンテキストで効く設計意図であり、UALinkはロックインからの出口を買う顧客向けの言語。Claude CodeでROCmと設計を加速するなら、ソフト批判への最短ルートになる。あとは2027の量産カレンダーを守り、HBMと電力を同時に確保することだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIAエコシステム視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「第2ソースのギガワット契約は需要の証拠でもある。CUDAとNVLinkの深さは一朝一夕で置き換わらない。顧客がAMDを足すのは配分と交渉力のためであり、大半のワークロードはまだ我々の上にある。TSMCの建設継続は我々にもAVGOにも良い。冷却と電力の制約は業界共通——ラック世代が速く更新されるほど、設計の柔軟性が競争力になる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリサプライ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Heliosが31TB積んでもRubinが積んでも、我々のラインは満杯に近い。DRAM売上の重心がサーバー／HBMに移ったのは構造であり、サイクルの話ではない。ベンダー多様化はbits需要を増やす。制約はブランドではなく、TSVとパッケージとウエハ配分——そして顧客が予測を外したときのプレミアムだ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-snowflake"></i>
+            <span>電源・冷却インフラ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「100kW超ラックでは、チップの次に液冷と電力変換が設計の中心になる。GB300の軍教育機関配備は、エンタープライズでも同じスタックが要るというデモだ。DCは2〜3年で建つが、ラック要件は年単位で変わる。施設設計の剛性がリスク——需要が本物でも、冷却が追いつかなければFLOPSは紙の上に留まる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>ファウンドリ / TSMC視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2027年の値上げは、AI需要と海外ファブ・装置コストを踏まえた戦略的調整だ。予測超過のHPCにはプレミアムが付く。顧客にはリードタイムを与えた。建設は続く——過剰投資論より現場の予約表を信じたい。粗利はメモリほどではないが、長期拡張に足りる水準を維持するのが顧客との共存条件だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / フルスタック視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「木曜の材料は『AMD quant winの翌日』と『メモリ・冷却・ファブの請求書』が同居している。2GWは可視性だが、現金化はHBM・CoWoS・電力・ROCmの全部が揃ってから。ティッカー一本より、ラックBOM・メモリ配分・冷却kW・ファブ家賃・資本コストをレイヤーで切ること。水曜の契約、木曜の原価。時計を混ぜない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-23 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（Claude×ROCm、Helios 31TB HBM4、HBM/DRAMミックス、TSMC AI建設、Vertiv×GB300液冷、UALink、OpenAIインフラ規模、韓国メモリ）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-23', 'color:#10b981');
+  </script>
+</body>
+</html>
