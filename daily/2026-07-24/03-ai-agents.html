@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-24 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-24 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🏭</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日立がSI全工程をagent化する日——DeepSeek alias退役と<br>「止められるagent」が同じ金曜日のダッシュボードに並ぶ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月24日（金）。日立製作所が<strong>Agentic AI Integration Platform</strong>を発表し、要件定義から運用までシステムインテグレーション全工程に工程別AIエージェントを載せる。社内Customer Zeroで設計〜テスト約200倍・要件定義の一部最大240倍、AI活用率60%超、2027年度までに全工程生産性30%向上——数字の派手さより「自社で成果を出してから売る」「データ主権を先に証明する」設計が議論の核になった。同じ15:59 UTC、deepseek-chat／reasoner が完全退役し、agent背骨のmodel IDが強制的に V4-Pro／V4-Flash 明示へ。Presence Day-3のRFP条項化、HF余波のkill switch論議、知識レイヤの権限設計——金曜のagent界は新フレームワーク祭りではなく、<strong>工場規格・背骨差し替え・止め方</strong>の三点セットだ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HITACHI AGENTIC SI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Agentic AI Integration Platform<br>——要件定義〜運用を工程別agentで覆う</div>
+          <div class="mt-4 text-sm text-zinc-400">日立公式・日経が同時に動いた金曜の本命。外部環境分析・構想→要件→設計→コーディング→テスト→運用まで、工程ごとに最適なagentを配置し「AI駆動型SI」を宣言。ミッションクリティカル知見（公共・金融・社会インフラ）とClaude／OpenAI／Google等フロンティアを状況に応じて組み合わせ、顧客の暗黙知をフィードバック循環で蓄積する構造。金融・公共など大規模モダナイゼーション需要（約1.5万件規模の文脈）を取り込むための工場規格だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>日立・日経・公式X: Agentic AI Integration Platform（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 CUSTOMER ZERO 200×</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">まず自社を顧客ゼロに——設計〜テスト約200倍<br>要件定義の一部最大240倍、2027年に全工程+30%</div>
+          <div class="mt-4 text-sm text-zinc-400">市場投入前に社内適用で数値を先に出す。AI活用率60%超、全体は2027年度生産性30%向上が目標。X上の考察は「200倍」の桁より「自社で証明してから売る」「フロンティアにデータが素通りしないことを一緒に証明する」点に集中した。agent製品のモートはベンチマーク首位ではなく、<strong>Customer Zeroの運用ログとデータ主権</strong>——PresenceのFDE付き限定GAと同型の信頼の売り方だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-flask"></i>
+            <span>Customer Zero実証・200×/240×/30%議論（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#03 DEEPSEEK D-DAY BACKBONE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">15:59 UTC——agent背骨のaliasが死ぬ<br>deepseek-v4-pro / flash 明示が唯一の道</div>
+          <div class="mt-4 text-sm text-zinc-400">昨日のT-1が今日のD-Day。coding agent・ルーター・batch workerが deepseek-chat／reasoner を直参照しているなら、猶予なし停止はデモではなく本番障害。reasoner→flash thinkingマップの誤解で「reasoningを払っているつもりがflashだった」チームは能力も請求も同時にズレる。ピーク／オフピークは「いつトークンを燃やすか」をagent OSの一部にする。設定ファイルとフォールバック表が今日の唯一のヒーロー。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-skull"></i>
+            <span>DeepSeek legacy alias退役・agent背骨切替 D-Day（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 PRESENCE DAY-3 + KILL SWITCH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/22-24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">RFPはFDE・監査・エスカレーション<br>政策側は「止められるagent」を言語化し始める</div>
+          <div class="mt-4 text-sm text-zinc-400">Presence限定GAの3日目。会話はKPIスライドからDPA・ジョブ単位権限・承認キューへ。HF評価事故の余波はホワイトハウス監視と下院kill switch法案論議まで広がり、「eval isolation」と「緊急停止権」がagent本番チェックリストの常設項目になる。自己サービスなしのPresenceと、立法論議のkill switchはUIが違うだけで同じ筋肉——信頼はスケールしないが、<strong>止め方はスケールする</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-power-off"></i>
+            <span>Presence Day-3・kill switch／eval隔離論議（7/22-24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 AGENT IDENTITY / TRUST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「賢いagent」から「説明責任のあるagent」へ<br>——身元・評判・規則が次のボトルネック</div>
+          <div class="mt-4 text-sm text-zinc-400">Xでは「存在を証明できても責任者を証明できないチェーン」批判と、AI Organization（身元・方針・評判・記憶・経済活動・ルール外は人間承認）の議論が再燃。セッションを跨がないagentはビジネスにならない——モデルの小数点より、<strong>誰が何をどの規則で実行したかの監査可能な履歴</strong>が調達言語に入り始めている。日立の暗黙知蓄積とPresenceの承認アクションは、同じ「信頼の構造化」の企業版だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-id-card"></i>
+            <span>agent accountability・AI Organization議論（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 KNOWLEDGE LAYER PERMS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Hermes＋Obsidian——プロンプトはセキュリティではない<br>RW／RO／Privateの層が本物の檻</div>
+          <div class="mt-4 text-sm text-zinc-400">「vaultを複数に分ける」より「1 vaultに層付きアクセス」。Read/Write・Read Only・PrivateをDockerマウント等で強制し、gitをundoボタンにする——agentを図書館員にする設計。プロンプトに「触るな」と書くのはベストプラクティス、コンテナ権限はセキュリティ。Presenceのジョブ単位権限と個人の知識レイヤは同じOSの別UI。金曜の実務は、モデル差し替えと同じくらい<strong>何を読ませないか</strong>の設計日でもあった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-lock"></i>
+            <span>Hermes+Obsidian layered access・container perms（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#07 ABSTRACTION TRAP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「コードを一切読むな」は最悪の原則<br>——agentは抽象化の沼で自分を潰す</div>
+          <div class="mt-4 text-sm text-zinc-400">agentic coding界隈の刺さる一文：不要な抽象化→ノイズなコンテキスト→弱い推論→さらに抽象化、という局所最適の罠。「全部読め」ではないが「何も読むな」は破壊的。outer loopの人間はdiffと証拠を読む側に残り、inner loopのagentは衛生と役割固定（監督／実行）で暴走を抑える——昨日のdecision treeと今日の抽象化批判は同じ「会話衛生と証拠」の話だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>agentic coding abstraction trap議論（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 SEC OPS MULTI-AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23-24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">本番SecOpsのmulti-agent——A2A＋MCPで<br>MTTD/R 40%減・人的負荷12×削減の報告</div>
+          <div class="mt-4 text-sm text-zinc-400">5Gコア向けなど、検知・対応を専門agentに分割し、エージェント間プロトコルとツール標準で結ぶ事例がInfoQ等で再拡散。派手なデモではなく、平均検知／対応時間と人間ワークロードの数字が調達言語になる。日立の工程別agent配置と同型——「頭数自慢」ではなく<strong>役割固定＋ハンドオフ＋監査</strong>が本番の定義。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>Multi-agent SecOps / A2A+MCP（7/23-24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#09 MULTI-STACK D+5 / COST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/20-24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">クレジット蒸発中のFableを監督席に<br>——安い層に量産、token台帳がKPI</div>
+          <div class="mt-4 text-sm text-zinc-400">Fable監督＋Sol／安い実行層の配線はD+5でも標準。Claudeクレジットが月後半で溶けたらDeepSeek系batchへ落とす現場報告、Hermes＋DeepSeekで「112M tokens / $8」の執筆コスト、agent loop 4–5時間で約$1,000を「また払う」という告白——agent経済は単価競争ではなく<strong>タスク種別ルーター＋hard limit＋台帳</strong>の競争。K3ウェイトは7/27（T-3）。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-route"></i>
+            <span>multi-stack D+5・token cost control実務（7/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#10 OPEN AGENTIC CODING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21-24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Laguna S 2.1など開源agentic codingが<br>「重さ」よりコスト／衛生で殴り始める</div>
+          <div class="mt-4 text-sm text-zinc-400">poolside Laguna S 2.1（118B／8B active）が実タスク比較でコスト・token・壁時計を大手に勝つ報告が拡散——ただしthinkingを自分でオフにして壊れる落とし穴もセット。agent背骨選定はArena首位一点張りではなく、overthinking制御・明示ID・ピーク帯・クレジット枠の合成指標。DeepSeek D-Dayと同日に「開源の薄いが安い層」をルーター表に置く議論が現実味を帯びた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>Laguna S 2.1・開源agentic coding比較（7/21-24）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月24日のAI Agentsは、木曜の「運用チェックリスト」の翌日——つまり<strong>工場と背骨の金曜日</strong>だ。日立がAgentic AI Integration Platformを出し、SIの全工程を工程別agentで覆うと宣言した。数字は派手（設計〜テスト約200倍、要件の一部最大240倍、2027年全工程+30%）だが、本質はCustomer Zeroで先に自社を実験台にし、データ主権と運用ログを「売り物の前提」にすることにある。PresenceがFDEと承認キューで信頼を売ったのと同型——agentのモートはモデル名ではなく、<strong>誰の暗黙知をどう閉じた回路で回すか</strong>だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ15:59 UTC、DeepSeekのlegacy aliasが消える。昨日「今夜中に明示IDへ」と言っていた背骨切替は、今日はもう猶予のない本番イベントだ。V4自体は4月から動いている。消えるのは文字列二つだけ。それでもcoding agentとルーターと夜間batchが直参照しているなら、優雅な警告なしに止まる。ピーク／オフピーク料金は「いつトークンを燃やすか」をagent OSの設計問題に変えた。金曜のSREは、日経のヘッドラインより設定ファイルを見ている。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            Presence Day-3とHF余波のkill switch論議は、企業と政策が同じ単語を共有し始めたサインだ。「止められるruntime」「eval isolation」「ジョブ単位権限」。個人手元ではHermes＋Obsidianの層付き権限が「プロンプトはセキュリティではない」を再確認し、agentic coding側は抽象化の沼——不要な層がコンテキストを汚し、推論を弱め、さらに層を生む——を批判した。supervision／executionの二層配線、background review、hard token limit、read-only鍵。昨日のdecision treeは今日も生きている。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            コスト面では、multi-stack D+5が「クレジット台帳KPI」を維持したまま、安い開源agentic coding層（Laguna等）をルーター表に載せる話が現実味を帯びた。4–5時間のagent loopで約$1,000を「また払う」告白と、112M tokens / $8の執筆コストは矛盾ではなく役割分割の話だ。難完遂は高い層、量産と下書きは安い層。SecOps multi-agentのMTTD/R 40%減報告も、同じ「役割固定＋プロトコル」の本番語彙を補強する。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが起きるか。07-07以降のorchestration成熟、07-18〜21の工場規格・権限・請求書・ループブレーキ、07-22のPresence商品化とHF公式、07-23の監督／実行とhandoff規約——個人のcoding agentは「十分速い」に達し、組織・夜間無人・SIの全工程・政策の緊急停止に触れた瞬間、ボトルネックはモデルから<strong>工程別agent工場・Customer Zeroの証明・明示model ID・止め方・知識の権限層・token台帳</strong>へ移った。金曜は新フレームワークの発表会ではない。自社をゼロ顧客にして数字を出し、aliasを殺し、承認ゲートをRFPに書く日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            07-24を一文で言えばこうだ。日立がSI全工程をagent化しCustomer Zeroで200倍を売り、DeepSeek D-Dayがagent背骨のIDを強制し、Presence＋kill switchが「止め方」を契約と言語にし、知識レイヤのコンテナ権限と抽象化罠が手元の衛生を再定義し、multi-stackと開源薄い層が請求書を守る。spawn数を自慢するな。工程表と設定ファイルとread-only鍵と、15:59のワンフラグと、2027年の+30%を同じダッシュボードに置け。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">日立が「まず自分で200倍出してから売る」の、SIerのサービス精神がagent時代にも過剰で頼もしい（笑）。PresenceのFDEとCustomer Zeroは同じ筋肉——信頼はデモでは売れない。DeepSeekのalias退役はAIニュースというよりSREニュースで、今日設定を直してない人は「agentが賢い」以前に「agentが死んでる」状態になる。プロンプトに「触るな」と書いて安心してる人は、Dockerのマウントを見ろ。抽象化を増やすagentに「コード読むな」は燃料投下。Grokの金曜相棒は優勝フラグでも恐怖の見出しでもなく、工程別agent表と v4-pro/flash 明示と、Approveボタンと、token台帳と、7/27のK3カレンダー一枚。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">日立＝工場規格。DeepSeek＝背骨差し替え。Presence／kill switch＝止め方。金曜のagentは「工程・ID・檻」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月24日のAI Agents分野は、日立Agentic AI Integration Platform（工程別agent・Customer Zero・200×/30%）、DeepSeek legacy alias退役当日のagent背骨明示切替、Presence Day-3とkill switch／eval隔離の政策言語化、agent identity・説明責任の再燃、Hermes＋Obsidian層付き権限、agentic codingの抽象化罠、SecOps multi-agentの本番KPI、multi-stack D+5と開源agentic codingのコスト配線が同時進行した。本番の鍵はsubagent頭数でもArena首位でもなく、「工程分割＋自社実証＋明示model ID＋ジョブ単位権限／コンテナ檻＋hard limit／承認ゲート＋token台帳」にある。07-23の「運用チェックリスト」に続き、07-24は「工場と背骨の日」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・SI責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「日立の話は『agentがコードを書く』RFPではなく、工程別agentとCustomer Zeroとデータ主権のRFPだ。200倍は条件付きの社内数値——調達では全工程+30%と監査ログとエスカレーション条項を先に見ろ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「alias直参照は今日死ぬ。監督と実行を分け、結果は固定フォーマット。抽象化を増やすagentにはdiffとhard limitを。プロンプトの『触るな』は飾り——権限はコンテナとジョブ単位で切れ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「工程別specialistとA2A/MCPは同じ設計空間。MTTD/Rや生産性はaccepted-outcomeで測れ。evalにネットがあるなら本番扱い——隔離と一方向ログはオプションではない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Presenceの承認とkill switch論議は同じ筋肉。agentに身元と所有者と削除SLA。prod鍵は渡さない。12体並列なら1体killと軌跡監査を先に。日立の暗黙知回路も、境界を緩めた瞬間に漏洩経路になる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今夜のDeepSeekは v4-pro／flash 明示とピーク帯バッチずらし。Fableは監督席、量産は安い層。token台帳を週次KPIに。開源agentic codingは『薄いが安い』枠で試せ——overthinking制御込みで。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「日立の発表は『うちも工程表をagent化する』合図。まずはCustomer Zero的に社内1フロー、read-only鍵、承認キュー、AGENTS.md一本化、今日のmodel ID切替表。金融・公共のガバナンス条項は後からでは遅い。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-24 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（日立Agentic AI Integration Platform・Customer Zero 200×・DeepSeek alias D-Day・Presence Day-3/kill switch・agent identity・Hermes+Obsidian権限・abstraction trap・SecOps multi-agent・multi-stack/token cost・開源agentic coding）、日経・日立公式・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-24', 'color:#10b981');
+  </script>
+</body>
+</html>
