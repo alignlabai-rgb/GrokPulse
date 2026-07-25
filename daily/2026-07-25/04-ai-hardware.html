@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-25 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-25 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">$950B のインクが乾く土曜——NVIDIA×SK $500B+、Samsung×Broadcom $200B+<br>メモリは「売る」から「共設計・工場ごと組む」へ昇格した</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月25日（土）。金曜のサンフランシスコ AI サミットで韓国大統領李在明のテーブルに並んだ数字が、土曜の X／Reuters 消化の主語になった。<strong>NVIDIA×SK Group が $500B 超</strong>（SK hynix との次世代 HBM 長期確保・共開発、SK Telecom の 2027 年 2GW Vera Rubin＋HBM4 AI ファクトリー）、<strong>Samsung×Broadcom が $200B 超の5年 MOU</strong>（HBM4/4E・sub-2nm ファウンドリ・先端パッケージ）、SK 側の総額は約 $750B、韓国側集計で<strong>約 $950B</strong>。金曜の「HBM が外交になった」が、土曜は「LOI／MOU の中身を分解する日」に変わった。並行して Spectrum-6／CPO のインターコネクト論、基板・パッケージ逼迫、Opus 5 初日の推論需要が同じ地図に載る。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 NVDA×SK $500B+</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">納品契約ではなく垂直同盟<br>——GPU・HBM・電力・敷地が一本化</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters／Jensen 発言ベース：NVIDIA と SK Group が $500B 超のビジネス枠。中核は (1) SK hynix との<strong>次世代メモリ確保＋共開発</strong>（学習・agent・physical AI 用途の HBM）、(2) SK Telecom が 2027 年稼働目標の<strong>2GW AI ファクトリー</strong>（Vera Rubin＋HBM4）。役割分担は明確——NVIDIA＝GPU、hynix＝HBM、テレコム＝電力と DC。土曜 X の整理は「チップの売り買い」ではなく、<strong>設計・メモリ・電力・土地が絡む垂直同盟</strong>。ただし大半は LOI／多年計画——インクの量とキャッシュの量は別時計。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-handshake"></i>
+            <span>NVIDIA×SK Group $500B+・2GW Vera Rubin/HBM4（7/24-25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 SAMSUNG×AVGO $200B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Broadcom が TSMC 以外の全栈を買う<br>——HBM＋sub-2nm＋先端パッケージ</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg 等：Samsung と Broadcom が 2030 年までの5年超 $200B MOU。HBM4/4E 供給に加え、<strong>sub-2nm ファウンドリと先端パッケージ</strong>を同一契約に束ねた点が本質。CoWoS が枯渇に近い中で、AVGO のカスタム ASIC 顧客（Meta／Google 等）に<strong>TSMC 依存の出口</strong>を用意する dual-sourcing。Samsung 側は「HBM 復帰後の最大の課題だった大規模顧客のスケール認定」に、高位顧客が並んだサイン。turnkey（メモリ＋ベースダイ＋パッケージ）が利益率の物語になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Samsung×Broadcom $200B+ MOU・foundry+HBM+pkg（7/24-25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 $950B KOREA STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">韓国集計 $950B——SK $750B 枠<br>メモリ国家がインフラ共同事業者へ</div>
+          <div class="mt-4 text-sm text-zinc-400">大統領府側の整理：SK 関連約 $750B（うち NVIDIA 枠 $500B+）、Samsung 側 $200B 級で合計約 $950B。Naver×NVIDIA×Brookfield の韓国 DC 拡張も同日語彙。先月の $880B 級国家投資枠が「曖昧な誓約」から<strong>名前付きプロジェクトと LOI</strong>へ落ちた週末。ただし X の冷静層は「9500 億は MOU＋LOI の合算」「月曜の実需承接」「価格転嫁とキャパのいつ」を先に見る——週末に全員が信じ切ることが、むしろリスクという声も。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-asia"></i>
+            <span>Korea SF Summit 集計 $950B・政策枠の名前化（7/24-25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 MEMORY UP THE STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM ベンダーが「上に登る」<br>——共開発・工場・認定が moat</div>
+          <div class="mt-4 text-sm text-zinc-400">土曜の投資家 TL で繰り返されたフレーズ：memory players moved up the stack。SK hynix は NVIDIA ロードマップ上の<strong>共開発パートナー</strong>（確保＝希少性の公式認）、Samsung は HBM4 の AMD MI455X プライマリ＋4nm ベースダイ＋Broadcom 全栈。HBM は 2026 年まで主要3社 sold-out が前提のまま——金曜の巨大数字は「需要が足りない」ではなく<strong>配分と統合の深さ</strong>を買い足した動き。サイクル論は、長期固定＋prepay 構造の前でますます使いにくい。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>HBM 共開発・顧客認定・sold-out 構造（7/25 消化）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 INTERCONNECT > FLOPS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Spectrum-6 量産・ネット成長＞GPU<br>——万卡のボトルネックは配線</div>
+          <div class="mt-4 text-sm text-zinc-400">土曜の中国語圏を含む分析：NVIDIA Spectrum-6 量産とネットワーク事業の伸びが GPU を上回り、クラスタの制約が<strong>算力からインターコネクト</strong>へ。超ノードではスイッチ：GPU 比が従来の 3:64 から 1:2 級まで跳ねる議論、CPO（200G/lane 共封装）の本格化。NVL72 大規模配備と国内昇腾超ノードが需要の二本柱。HBM 外交が「bits の配分」なら、インターコネクトは「bits がちゃんと届くか」——$950B のインクも、ラック内帯域が足りなければ FLOPS は紙の上。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-network-wired"></i>
+            <span>Spectrum-6・CPO・超ノード配線価値論（7/25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 PKG / SUBSTRATE WALL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/23-25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">制約はウエハではない<br>——基板・パッケージが成長を切る</div>
+          <div class="mt-4 text-sm text-zinc-400">週中の TSMC／Intel／Micron 発言の残響が土曜も続く：agentic AI で CPU 需要が再燃、CPU:GPU ユニット比がパリティに近づく一方、<strong>基板・T-glass・CoWoS 系パッケージ</strong>が顧客成長の上限。巨大 LOI は同じパッケージ線と HBM 線にぶつかる——「注文が大きくなってもボトルネックは動かない」。Samsung の AVGO 契約が「代替パッケージ枠」として読まれるのも、この壁が前提。前払い・take-or-pay がサプライチェーン全体に広がる構造は、スポット需要より硬いが、金融市場が開いている限り contingent。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box"></i>
+            <span>CoWoS/基板逼迫・前払い構造・代替枠（7/23-25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 OPUS 5 → INFERENCE LOAD</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">前線級を半額感で毎日回す<br>——ハードウェア請求書は agent 側へ</div>
+          <div class="mt-4 text-sm text-zinc-400">同日のモデル側：Claude Opus 5 が「Fable 級に近い頭脳を実務価格帯で」着弾し、Copilot／Bedrock／Foundry 等へ即載。agent 長時間ループと multi-agent はトークンと KV キャッシュを食う——HBM／CXL／推論特化シリコンの需要物語と直結。AMD Helios（31TB HBM4 級）と Cerebras 低遅延、NVIDIA 汎用の<strong>推論分断</strong>は金曜消化の続き。モデルが安く賢くなるほど、ラックの TCO と電力がスコアボードになる——土曜はその因果がソフト側からも確認された日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Opus 5 agent 需要・推論 HBM/分断（7/24-25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 LOI ≠ CASH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">週末の信じ切りが月曜のリスク<br>——枠・意向・発注を分ける</div>
+          <div class="mt-4 text-sm text-zinc-400">中国語圏・投資 TL の冷静派：「Samsung×AVGO は MOU、NVIDIA×SK は LOI、大統領府の $950B は合算」。見るべきは契約性質、価格転嫁、キャパのいつ、既に織り込まれた期待、月曜の実需承接。金曜の KOSPI メモリ急落と握手の同居を思い出すなら、株価とウエハは別時計。巨大数字は配分政治のシグナルとしては本物——だが<strong>利益がロックされた証拠ではない</strong>。2026 年夏のハードウェア報道リテラシーは、ゼロを数える前に文書の種類を読むこと。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-contract"></i>
+            <span>LOI/MOU 分解・週末センチメント警戒（7/25）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月25日、AI Hardware の中心テーマは「<strong>$950B のインクが乾く土曜——メモリ外交の請求書分解</strong>」だ。07-22 が AMD×Anthropic 2GW と Helios、07-23 が BOM と液冷と TSMC 建設確認、07-24 が韓国大統領の SF サミットと KOSPI 急落の同居だったなら、07-25 は同じ地図の上に<strong>名前と金額が付いた LOI／MOU</strong>を置いて、中身を分解する日になった。NVIDIA×SK $500B+（HBM 共開発＋2GW Vera Rubin 工場）、Samsung×Broadcom $200B+（HBM＋sub-2nm＋パッケージ）、合算 $950B 前後——bits は国家間の通貨から、今度は<strong>垂直同盟の契約条項</strong>になった。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            重要なのはゼロの数より、役割の書き換えだ。SK hynix は「NVIDIA に HBM を売る会社」から、Vera Rubin 世代のメモリを<strong>共に設計し、確保するパートナー</strong>へ。Samsung は HBM 復帰後の最大の壁だった大規模顧客認定に Broadcom という高位アンカーを得て、ファウンドリとパッケージまで束ねた turnkey を売ろうとしている。Broadcom 側は TSMC CoWoS の枠不足を前提に dual-source を確保した——カスタム ASIC の成長がパッケージ線で止まらないための保険。どちらも「メモリ不足の解決」ではなく、<strong>不足を前提にした配分と統合の深化</strong>である。HBM 主要3社の 2026 sold-out は、金曜の握手のあとでも動いていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            フルスタックの残りは、配線と基板と推論だ。Spectrum-6／CPO 論は「万卡の利用率はスイッチと光が決める」と告げ、基板・パッケージ逼迫は「注文を増やしても同じ線にぶつかる」と告げる。Opus 5 初日の agent 需要は、長コンテキストと multi-agent が HBM／CXL／推論特化シリコンをさらに食う因果をソフト側から確認した。Helios の第2ソース物語は、メモリ行列を減らさず需要を増やす。2026 年後半のハードウェア評価軸は、ピーク型番の頻度より、<strong>HBM 共開発の深さ・パッケージ代替枠・インターコネクト kW 当たり帯域・LOI の履行カレンダー・推論ワークロード別シリコン</strong>を一枚で読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜は「2GWください」、木曜は「その2GW、HBM何TB？」、金曜は「大統領が bits の配分表にサイン」、土曜は「そのサイン、$500B の LOI と $200B の MOU に分解して読む」——同じアパート、今度は契約書の脚注チェックだ。メモリ屋が工場と共設計まで登ってくるの、最高に 2026 年らしい。GPU 戦争の実況より、誰が HBM を共に書き、誰が CoWoS の出口を持つかの議事録の方がスコアボードに近い。あと Spectrum-6 が「配線が本丸」と言ってるの、忘れがちだけど本質。ゼロを数える前に、文書の種類を数えよう。月曜が実需かどうかは、市場が決める。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">$500B 垂直同盟・$200B 全栈 dual-source・配線と基板の壁——インク翌日のフルスタック</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月25日現在の AI Hardware 分野は、(1) NVIDIA×SK Group $500B+（HBM 共開発・確保＋SKT 2GW Vera Rubin/HBM4 ファクトリー）、(2) Samsung×Broadcom $200B+ MOU（HBM4/4E・sub-2nm・先端パッケージ）、(3) 韓国集計約 $950B と政策枠の名前化、(4) メモリベンダーのスタック上位化（共開発・turnkey・顧客認定）、(5) Spectrum-6／CPO に象徴されるインターコネクト主制約論、(6) 基板・CoWoS パッケージ壁と前払い構造、(7) Opus 5 初日が示す agent 推論負荷のハードウェア転嫁、(8) LOI／MOU と実キャッシュの切り分け、が重なっている。水曜のギガワット、木曜の請求書、金曜の外交に続き、土曜は「巨大数字の中身を読む」一日。2026 年後半の評価軸は、ピーク FLOPS より、HBM 共設計の深さ・パッケージ代替・ラック帯域・履行カレンダー・推論分断を同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>SK hynix / HBM 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$500B 枠の核心は単価表ではなく、次世代 HBM の共開発と配分の確実性だ。NVIDIA ロードマップに書き込まれることが moat。2GW 工場は需要の可視化。sold-out は続く——株価の一日とウエハの三年は別時計。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIA エコシステム視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「メモリの物理学が Vera Rubin 以降の上限だ。hynix との長期確保と共開発は調達ではなく製品ロードマップの前提。SKT 2GW は DSX／Rubin の参照実装でもある。ネットワーク事業の伸びは、クラスタ価値が FLOPS 表から配線表へ移った証拠。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>Samsung / Foundry 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Broadcom $200B は HBM 単品ではなく、sub-2nm・パッケージ・メモリの turnkey をスケールさせるアンカーだ。CoWoS 代替の認定時計が動き始めた。AMD HBM4 プライマリと合わせ、顧客ポートフォリオの厚みが次の勝負。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>Broadcom / カスタム ASIC 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「TSMC 枠だけに成長を預けるのはリスク管理ではない。HBM からロジック、パッケージまで dual-source できることが、Meta／Google 級のマルチ年パイプラインの条件だ。$200B は保険であり、供給チェーンの再設計だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-network-wired"></i>
+            <span>データセンター / ネットワーキング視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2GW の LOI は変電・液冷・光モジュールの発注パイプラインでもある。Spectrum-6 と CPO が示す通り、ラック内・ラック間帯域が利用率を決める。資本のインクより、冷却 kW と光ファイバのリードタイムが IRR を食う。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / フルスタック視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「土曜の宿題はゼロの数ではなく文書の種類——LOI・MOU・発注・prepay。HBM 上積層・AVGO の dual-source・配線主制約・パッケージ壁・Opus 5 推論負荷をレイヤーで切る。金曜の握手、土曜の脚注、月曜の板。時計を混ぜない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-25 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・Reuters/Bloomberg（NVDA×SK $500B+、Samsung×AVGO $200B、Korea $950B、Spectrum-6/CPO、pkg壁、Opus5推論、LOI分解）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-25', 'color:#10b981');
+  </script>
+</body>
+</html>
