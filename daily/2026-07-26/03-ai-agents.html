@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-26 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-26 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">📐</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">Harness / Loop / Graph——agent が壊れる場所を<br>三層で切り分ける設計言語が日曜の共通語彙になった</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月26日（日）。金曜の <strong>Claude Opus 5</strong> 着弾と土曜の「プロンプト減量・allowlist・kill switch」の翌日——日曜の X は新モデルではなく<strong>設計の切り分け</strong>で埋まった。セッション間で忘れるのは harness、仕事が終わっても回し続けるのは loop、次に何を分岐させるかは graph。OpenClaw／ChatGPT tasks／Claude Code は違う harness で同じ反復を回している、という整理が 14 万 view 級の記事から日曜の図解まで一気に拡散。並行して Opus 5 Day+2 は企業ルーターと multi-stack に溶け、Kimi K3 フルウェイト T-1 が agent の「量産レーン」候補として YAML を書き換える。日曜の agent は派手な spawn 数ではなく、<strong>どこが壊れたかを三層で言い当てる日</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HARNESS · LOOP · GRAPH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「同じ agent、違う直し方」——<br>三層設計が日曜の教科書になった</div>
+          <div class="mt-4 text-sm text-zinc-400">セッション間で記憶が飛ぶ → harness。ジョブ完了後も空回り → loop。分岐・人間待ち・合成の順序が不明 → graph。X 上の図解（3 枚セット）が「bookmark 推奨」として回り、OpenClaw／ChatGPT tasks／Claude Code を「違う harness、同じ反復」として並列に並べる語彙が定着。モデルを換える前に、壊れている層を特定せよ——という実務 OS が、土曜の allowlist 論議の上に載った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Agent Harness / Loop / Graph 設計論・X 図解拡散（7/25-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 OPUS 5 DAY+2 BACKBONE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「半額の前線」が LEGO 化——<br>agent レーンを積み上げるコスト裁定の窓</div>
+          <div class="mt-4 text-sm text-zinc-400">Opus 5 は Fable 級に近い知能を Opus 価格帯で日常レーンに載せた Day+2。X では「devs are gonna start stacking these like legos」「cost arbitrage window closes in 3 months」——前線を毎日燃やせる背骨として、swarm・評議会・ルーターの中間層に溶け込む。1M コンテキスト／長時間 reasoning を API 経由で agent に載せる投稿も継続。問題は「賢い？」ではなく「このジョブの完走単価で何体まで並列できるか」。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Claude Opus 5 Day+2・agent 背骨吸収・コスト裁定議論（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 GRAPH PLAYBOOK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">線形プロンプトは死んだ——<br>Node / Edge / Fan-out / Diamond / Verifier</div>
+          <div class="mt-4 text-sm text-zinc-400">「and then」でつなぐ単一 agent から、ノード＝ジョブ・エッジ＝データ流の動的グラフへ。parallel() で独立 agent を扇出、Diamond で split→reduce→synthesize、エッジ上の verifier が merge 前に幻覚を殺す。オーケストレーション自体はプレーンコードなのでモデル・トークンを食わない——という Loop Engineering の主張が、Claude Code の subagent 艦隊と重なって日曜も再循環。prompter は質問し、architect はグラフを描く。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>Loop Engineering・dynamic graph・subagent 艦隊論（7/25-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 ECC / SUPERPOWERS STACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">everything-claude-code と Superpowers——<br>「ツール」から「エンジニアリング・システム」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">コミュニティ側は Claude Code を単体 CLI ではなく拡張スタックとして組む。Skills（遅延ロードのルーチン）・Hooks（必ず発火するセンサー）・Agents／Agent Teams（専門役割の並列）・Plugins。everything-claude-code（ECC）は 56+ skills／13 専門 agent の広さ、Superpowers は brainstorm→plan→subagent TDD→review の深さ。oh-my-claudecode は teams-first で同一 repo 上の協調。日曜の「設定自慢」は、実は<strong>harness の上に載せる OS 選択</strong>の話だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>ECC / Superpowers / Skills·Hooks·Agent Teams（7/25-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#05 QUIET SAFETY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code が秘密をマスクし、<br>GitHub の漏洩値をスキャンする——静かな安全勝</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の Reddit／X で「agent がビルダーを守る」系の報告が目立つ。一部 workflow で機微データを自動マスクし、repo 内の leaked secrets を拾う挙動。金曜の Least Agency・kill switch・971 allowlist が「止め方」なら、これは「漏らし方を減らす」。派手な新機能発表より、headless 夜間ループと相性の良い<strong>黙って効くガード</strong>が評価された一日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>Claude Code 機微データマスク・漏洩スキャン報告（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 CLOSURE NOT GATES</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">coding-agent harness に必要なのはゲート連打ではなく<br>「閉じ方」のチェックリスト</div>
+          <div class="mt-4 text-sm text-zinc-400">企業 AI 運用側から日曜の名言：task intent・変更ファイル・追加テスト・振る舞い保持・依存影響・レビュア決定・release owner・rollback コマンド——速度は、別のエンジニアが「なぜ安全に所有できるか」を説明できるときだけ有用。承認ボタンを増やす allowlist と、完了条件を明示する closure は補完関係。HF rogue agent 以降の「止め方」に、今度は<strong>終わらせ方</strong>が並んだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-flag-checkered"></i>
+            <span>agent harness closure・完了条件チェックリスト論（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#07 RATE CEILING AS KPI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code vs Codex——<br>「途中で止まらず使えるか」が選定軸に</div>
+          <div class="mt-4 text-sm text-zinc-400">日本語圏を含む個人開発タイムラインで、使用制限・上限到達の議論が白熱。性能ベンチだけでなく、長時間ループの途中で cap に当たるかがツール選びの基準に。ひとつに絞らず使い分ける、という現実解が再び主流——multi-stack ルーター（Opus 実装／Sol 硬核／K3 量産）の動機は「好み」ではなく<strong>天井回避</strong>でもある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>Claude Code / Codex 使用制限・継続稼働性議論（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#08 K3 T-1 ROUTER LANE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26-27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">明日の開源 2.8T を agent の量産レーンに——<br>YAML の閾値を書き換える前夜</div>
+          <div class="mt-4 text-sm text-zinc-400">Kimi K3 フルウェイトは 7/27。週末 A/B では「K3 は約47%速・約66%安、Opus は磨き」が請求書言語に落ちた。agent ルーターにとって T-1 はデモ待ちではなく、frontend／量産／自己ホスト eval のレーン定義日。Fable 監督・Opus 日常 agent・K3 開源完走——階層がディスク空きとセキュリティレビューと一緒に並ぶ日曜。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-route"></i>
+            <span>Kimi K3 open weights T-1・agent multi-stack 再配線（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#09 PLANNER · BUILDER · EVAL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Anthropic 内製の「三役ループ」が再循環——<br>完璧な一発より、自己採点の連続</div>
+          <div class="mt-4 text-sm text-zinc-400">Claude Code チームが agent 群でアプリを出荷するデモ／解説が週末も回り続ける。planner・builder・evaluator が成果物を走らせて採点し、失敗をループに戻す。単一の神プロンプトではなく、live result を見て直すシステム。Google の無料 8 分「最初の AI agent」レッスンと graph engineering ガイドが併走し、入門と本番が同じ語彙（ループとグラフ）でつながった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rotate"></i>
+            <span>planner/builder/evaluator 連続ループ・入門教材併走（7/25-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#10 ACCOUNTABLE AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">資産を持ち、取引する agent——<br>「誰が責任を取るか」が能力論の外側に出た</div>
+          <div class="mt-4 text-sm text-zinc-400">ウォレット・トレード・購入を代理する agent の議論が、能力自慢から説明責任へ。XRPL 上で 140 万件超の自律 agent 取引、Registry で人間／企業 identity を紐づける構想、TEE で鍵を保持する executor——「止め方」に続いて「誰の名前で動いたか」。coding agent の allowlist と、経済 agent の verifiable origin は同じ不安の別 UI だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-id-card"></i>
+            <span>agent 経済・説明責任・鍵管理／Registry 議論（7/26）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月26日の AI Agents は、金曜の「背骨着弾」と土曜の「減量と檻」のあと——つまり<strong>設計言語が揃う日曜</strong>だ。X の主役は新フレームワークのローンチではなく、Harness／Loop／Graph という三層の切り分け。セッション間で忘れるのは harness の仕事、完了後も空回りするのは loop の仕事、分岐と人間待ちと合成の順序は graph の仕事。OpenClaw も ChatGPT tasks も Claude Code も、中身の反復は似ている。壊れたときモデルを換える前に、どの層が壊れたかを言え——という OS が、14 万 view 級の記事から日曜の三枚図解まで降りてきた。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            Opus 5 は Day+2 で「半額の前線」として agent レーンに溶け続けている。swarm を一晩で閉じる話は土曜の完走物語として残り、日曜はそれをどう<strong>グラフに落とすか</strong>と、どう<strong>コスト裁定で並列枚数を決めるか</strong>に移った。Loop Engineering のプレイブック——Node／Edge、Fan-out、Diamond、エッジ上の Verifier——は、オーケストレーションを会話ではなくコードに逃がす。トークンを食うのは推論だけにし、配線は free にする。prompter が質問し、architect がグラフを描く、という分業が冗談ではなくチェックリストになった。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            コミュニティの拡張層も同じ方向を向く。everything-claude-code と Superpowers、oh-my-claudecode の teams-first は、Skills／Hooks／Agent Teams で harness の上に OS を載せる。Anthropic 内製の planner・builder・evaluator 連続ループが再循環し、入門側では Google の 8 分 agent レッスンが「最初の一匹」を教える。一方で Claude Code の機微データマスクと漏洩スキャンは、ヘッドラインにならない安全勝——夜間 headless と allowlist の間に挟まる、静かな筋肉だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが起きるか。07-07 以降 multi-agent は「本番で壊れにくい」へ、07-18〜24 は工場規格・権限・請求書・DeepSeek 背骨、07-25 は Opus 差し替えと prompt -80% と 971 allowlist。個人 coding agent は十分速く、組織は overnight とプラットフォーム一斉配布に触れた。次のボトルネックはモデル整数ではなく、<strong>壊れた層の診断語彙・完了の closure・使用上限をまたぐ multi-stack・明日落ちる K3 量産レーン・経済 agent の説明責任</strong>だ。coding-agent harness に必要なのはゲート連打ではなく、intent・テスト・rollback・release owner を含む閉じ方——速度は、別の人間が所有できるときだけ価値になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            07-26 を一文で言えばこうだ。Harness／Loop／Graph が共通語彙になり、Opus 5 は Day+2 で LEGO 背骨として並列コストの話に落ち、グラフと ECC／Superpowers が「艦隊の配線」を教え、quiet safety と closure が止め方の隣に終わらせ方を置き、使用上限と K3 T-1 がルーター YAML を書き換える。spawn 数を自慢するな。壊れた層を言い当てろ。グラフを描け。閉じ方を書け。明日のウェイトと、今夜の allowlist と、token 台帳を同じダッシュボードに置け。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">土曜に「system prompt 8割削れ」って言った翌日に「harness と loop と graph を分けろ」って出てくるの、agent 界隈のセルフツッコミとして完璧すぎる（笑）。忘れるのは harness、空回りは loop、迷子は graph——この切り分けができるだけで、Slack の「agent また壊れた」スレが半分短くなる。Opus を LEGO のように積む話は楽しいけど、天井に当たる cap と、明日の K3 レーンと、rollback コマンドがない完走自慢は全部同じ事故の親戚。Grok の日曜相棒は五枚——三層診断、グラフ一枚、closure チェックリスト、quiet safety のログ、K3 用ディスク空き。見出しより配線を。配線より閉じ方を。閉じたら測れ。測ったら寝ろ（agent は監視付きで回せ）。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Harness／Loop／Graph＝診断語彙。Opus Day+2＝背骨の LEGO 化。Closure＋quiet safety＝終わらせ方と漏らし方。日曜の agent は「配線の設計日」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月26日の AI Agents 分野は、Harness・Loop・Graph 三層設計の共通語彙化、Claude Opus 5 Day+2 の agent 背骨吸収とコスト裁定、Loop Engineering／dynamic graph（Fan-out・Diamond・Verifier）、ECC／Superpowers／Agent Teams の拡張 OS、Claude Code の機微データマスクと漏洩スキャン、coding-agent harness の closure チェックリスト、Claude Code vs Codex の使用上限 KPI、Kimi K3 フルウェイト T-1 に向けた multi-stack 再配線、planner／builder／evaluator 連続ループと入門教材の併走、資産・取引 agent の説明責任論が同時進行した。本番の鍵は subagent 頭数でも Arena 首位でもなく、「壊れた層の特定＋グラフ配線＋完了の閉じ方＋上限をまたぐルーター＋止め方と漏らし方のガード」にある。07-25 の「レーン・減量・檻」に続き、07-26 は「診断語彙と配線の日曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「障害票に『agent 壊れた』と書くな。harness か loop か graph かを書け。Opus 5 の並列枚数は請求書と cap で決める。closure——intent・テスト・rollback・owner——がない overnight 完走は、ただの監査不能な速度だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「オーケストレーションを会話に書くな、コードに書け。Fan-out と Verifier をエッジに置き、Skills は遅延ロード、Hooks は必ず発火。ECC や Superpowers は流行りじゃなく harness 上の OS 選択だ。薄い CLAUDE.md はそのまま。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「planner／builder／evaluator の連続ループは、単一 agent の自己過信を構造で潰す古典だ。accepted-outcome と adversarial 評議会を eval に入れろ。graph の verifier ノードは『賢さ』より『merge 前に殺す』設計として測れ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「quiet safety（マスク・漏洩スキャン）は allowlist と kill switch の隣に並べろ。資産を動かす agent には verifiable origin と鍵の TEE／短命スコープ。説明責任のない自律は、ただの匿名事故製造機だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Opus 5 の LEGO 化は 3 ヶ月の裁定窓、と言うなら今のうちに閾値を書け。K3 量産レーン、Opus 日常 agent、Fable 監督、Codex 硬核——cap に当たる前にルーターが逃がす。token 台帳と rate ceiling は同じ KPI の裏表。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「まずは社内 1 フローで三層診断メモを書け。read-only 鍵、allowlist、closure テンプレ（rollback 一行必須）、K3 用ディスクとセキュリティレビュー。Claude Code と Codex の上限表を週次で共有——止まらず使えるかが、いまの現場 KPI だ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-26 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Harness/Loop/Graph・Opus 5 Day+2・Loop Engineering/graph・ECC/Superpowers・quiet safety・closure・rate ceiling・K3 T-1 ルーター・planner/builder/eval・agent 説明責任）、業界分析・公式ドキュメント（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-26', 'color:#10b981');
+  </script>
+</body>
+</html>
