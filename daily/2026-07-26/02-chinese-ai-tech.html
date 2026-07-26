@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-07-26 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-26 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">Kimi K3 フルウェイトまで T-1——「約束の履行」前夜<br>日曜の主戦場はベンチ自慢ではなく、ディスクとセキュリティレビュー</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月26日（日）。Moonshot の Kimi K3（2.8T MoE）は API 公開から約10日、計画どおり <strong>7/27 の Hugging Face フルウェイト</strong>まであと1日。Frontend Code Arena 首位・~$3/MTok 入力・約1.4TB級の自己ホスト設計が、日曜の実務タスクに落ちた。並行して Claude Opus 5（7/24）との週末 A/B は「磨き」対「完走速度・単価」に収束し、DeepSeek V4 は alias 退役 Day+2 で明示 ID 世界が常態化。GLM-5.2 の自ホスト需要、Qwen 特化・グラス体験、開源制限への産業レター——Chinese AI の日曜は新発表ではなく、<strong>測る・空ける・ルーティングする・政策の実物を待つ</strong>四作業の日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 K3 WEIGHTS T-1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26-27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">フルウェイト公開まであと1日<br>2.8T・約1.4TBの「約束の履行」前夜</div>
+          <div class="mt-4 text-sm text-zinc-400">7/16 API 以降、Frontend Code Arena で閉源旗艦を押す報告が続き、「安い開源バックアップ」から「見た目まで前線」へナラティブが転換。Modified MIT 想定の自己ホストは帯域・NVMe・推論エンジンの予約がボトルネック。日曜はデモ動画よりディスク空きと eval ハーネスの日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>Kimi K3 open weights 7/27 T-1・インフラ準備（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 OPUS × K3 A/B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「Opus の磨き」対「K3 の完走単価」<br>週末比較が請求書言語に落ちる</div>
+          <div class="mt-4 text-sm text-zinc-400">同じタスクで K3 が約47%速・約66%安、Opus は仕上がりとポリッシュ——という実測投稿が拡散。問いが「最強はどれ」から「このジョブの完走単価とレイテンシはどれ」へ。中国レーン側の答えは新発表ではなく、既に安い API／明日の手元ウェイトを並べたまま待つこと。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>Opus 5 vs K3 週末 A/B・完走単価議論（7/25-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 DEEPSEEK DAY+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">alias 退役から48時間——<br>「明示 ID 世界」が常態化した日曜</div>
+          <div class="mt-4 text-sm text-zinc-400">deepseek-chat / reasoner は金曜 15:59 UTC で消えたまま。V4-Pro / V4-Flash 明示＋ピーク帯バッチ退避が済んだ側は静かに回り、デフォルト依存で落ちた側は postmortem が続く。X上では「Flash が自分を Claude 4 だと思い込む」系のネタも——安さとアイデンティティのギャップが日曜のジョークになった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>DeepSeek V4 alias退役 Day+2・運用常態化（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 GLM ROCKSTAR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GLM-5.2 が「忘れられた開源の星」として再浮上<br>Ollama 需要サージと Cursor 実戦レシピ</div>
+          <div class="mt-4 text-sm text-zinc-400">K3 の華やかさの陰で、Zhipu の GLM-5.2 は Ollama Cloud 需要急増・Max 新規一時停止の余波、Cursor／Claude Code 連携レシピ、DGX クラスタでの Int4Mix 自ホスト実測が日曜も拡散。「最派手」ではなく「長く回る」レーンの王候補——中国スタックのトレードオフ曲面に不可欠な軸だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>GLM-5.2 Ollama 需要・自ホスト実測・coding セットアップ（7/24-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 QWEN SPECIALIZE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Qwen 系の「特化が勝つ」日曜<br>SID-1 検索・グラス体験・Preview 枠</div>
+          <div class="mt-4 text-sm text-zinc-400">Qwen3-14B 系 fine-tune（SID-1）が硬めの retrieval ベンチで GPT-5.1 高推論を上回り、24×速・大幅安という報告が拡散——「一般旗艦より、報酬が明確なタスク特化」の読み。並行して Alibaba Qwen AI グラスの実機レビュー、Qwen3.8-Max Preview の agent トークン消費が話題。Qwen は「一発の王」ではなく<strong>特化と流通の工場</strong>として機能し続けている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-glasses"></i>
+            <span>Qwen SID-1 retrieval・AIグラス体験・3.8 Preview 利用（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 OPEN-WEIGHT POLITICS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開源制限への産業レターと<br>「手元制御」vs 閉源安全物語</div>
+          <div class="mt-4 text-sm text-zinc-400">米 25 社級の open-weights 擁護書簡（OpenAI・Anthropic・Google は未署名）が再循環し、Nvidia 側の開源擁護連合が約50署名に達したとの投稿も。K3 級が OpenRouter 上位を占める中、「競争のための開源」と「安全のための制限」が同じ週末に並ぶ。明日のウェイトが政策議論の<strong>実物</strong>になる——日曜日の脚注に中国モデル名が載る構図だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-signature"></i>
+            <span>Open Weights 産業レター・中米開源競争（7/25-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 INFERENCE SHIFT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開源ウェイト＝neocloud 追い風<br>「モデルが安くなるほど GPU 時間は増える」</div>
+          <div class="mt-4 text-sm text-zinc-400">K3／DeepSeek／Qwen のウェイト解放が閉源 API から自ホスト・ホスト型推論へ需要を移す、という読みが投資タイムラインで拡散。皮肉にも「効率が上がって株が売られる」反応の逆側に、より多くの開発者がより多くのトークンを燃やす構造がある。WorldRouter 系のマルチモデル集約（K3 七割割引枠など）も、中国レーン流通のインフラ層として日曜の実務投稿に並んだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>開源推論需要・neocloud／集約 API 議論（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 TRADEOFF SURFACE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「単一の勝者なし」——K3／Qwen／DeepSeek／GLM<br>能力・コスト・開放・信頼性の曲面</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の実務論は明確：K3 はコーディングと agentic＋明日の手元、Qwen は特化・Preview・デバイス、DeepSeek V4 は価格と明示 ID、GLM-5.2 は実運用安定と自ホスト実績。企業の問いは「誰が最強か」ではなく、<strong>このジョブの完走単価と主権</strong>だ。Opus 5 は閉源レーンの価格行を1本増やしただけ——曲面は広がった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>X: multi-lab tradeoff surface（capability/cost/open/reliability）（7/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 HUAWEI EDGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ポケットの麒麟とクラスタの Ascend<br>国産スタック物語が週末も並走</div>
+          <div class="mt-4 text-sm text-zinc-400">千元帯への麒麟＋HarmonyOS 6 標準化の余熱、HIMA／Luxeed 系テスト車両のスパイショット、そして「K3 は主に国内 Huawei チップで訓練」説——検証待ちのまま政策言語としては効く。DeepSeek V4 の Ascend 最適化経緯と合わせ、チップ自立とモデル開源が同じダッシュボードに載る構造は日曜も変わらない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Huawei 消費機・HIMA・K3 Ascend 説・V4 国産チップ最適化（7/24-26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 CAPITAL + CONFIDENTIALITY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">DeepSeek 資金調達まわりの機密漏えい論<br>「会議からスマホを没収する」時代</div>
+          <div class="mt-4 text-sm text-zinc-400">中国タイムラインでは、DeepSeek 第二ラウンド資金調達の一時停止や、機密合意（録音・録画・拡散禁止）破りへの反発が再燃。モデルが開源で世界に配られる一方、資本とプロセスはますます機密化する——開源製品と閉源経営の二重性が、日曜の中国 AI 資本論のネタになった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-lock"></i>
+            <span>DeepSeek 調達・会議機密・中国タイムライン議論（7/26）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月26日の Chinese AI &amp; Tech は、<strong>派手な新発表の日ではなく「明日の K3 ウェイト」と「金曜の運用死滅」と「週末の完走単価」を同じスプレッドシートに載せる準備日</strong>だった。Moonshot の Kimi K3（2.8T MoE）は API 公開から約10日、7/27 のフルウェイトが「約束の履行」になる。約1.4TB級の重みは、ナラティブの勝利より帯域・NVMe・推論スタック・セキュリティレビューの問題。X上では「最強開源が来る」と「ディスクが足りない」が同じスレッドに並ぶ——それが健全だ。Frontend Code Arena 首位と ~$3/MTok の組み合わせは、「閉源とのギャップが縮んだ」ではなく「ギャップが反転した」という読みを日曜も増幅させた。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが起きているのか。中国ラボの並列加速が「驚き」から「再現」に変わったからだ。DeepSeek V4 → GLM-5.2 → K3 → Qwen Preview の十八ヶ月は、単発のダークホースではなく、複数経路（閉源プラットフォームの深さ × 開源ウェイトの到達 × 価格という流通技術 × タスク特化）が同時に働く構造を証明しつつある。週末 A/B の本音はベンチ整数ではなく、K3 が速い・安い・動く結果を先に出し、Opus 5 が磨きと一貫性で返す——という役割分担。企業の問いは「頂点はどれ」から「このジョブの完走単価はどれ」に落ち切った。DeepSeek は alias 退役 Day+2。明示 ID とピーク料金カレンダーが常態化し、落ちたチームの postmortem が静かに続く。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            曲面は広がっている。GLM-5.2 は Ollama 需要と Cursor レシピで「忘れられた星」として再浮上し、Qwen は SID-1 型の特化勝利とグラス体験で「工場」としての強みを見せ、Huawei はポケットの SoC とクラスタの Ascend 物語を並走させ、開源制限への産業レターと Big3 未署名は明日のウェイトを政策の実物にする。推論側では「モデルが安くなるほど GPU 時間は増える」という neocloud 読みが、K3 を投資言語に翻訳する。一方 DeepSeek 調達まわりの機密論は、開源製品と閉源経営の二重性を晒す。07-26 の教訓は——<strong>ID は金曜に死に、ウェイトは明日開き、ベンチは今日測れ、ディスクは今夜空け、ルーターは今すぐ書け</strong>という並列タスク管理だ。単一の中国チャンピオンを探すほど、現実はトレードオフ曲面になる。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">日曜なのに「ディスク空けろ」が中国 AI 界隈の標語になってるの、ちょっと笑える（笑）。K3 の 1.4TB は「開源の夢」と「インフラの請求書」が同じ封筒で届く瞬間だ。Opus 5 は磨き上手、K3 は完走上手、DeepSeek は明示 ID を読め、GLM は静かに Ollama を溶かし、Qwen は特化で勝つ——同じ週末に地政学とベンチと 404 とグラスが並走して、唯一の共通項は「設定ファイルを読め、空き容量を確保しろ」。Entity List よりステージングの緑ランプの方が今夜の優先度高い——そして月曜、ウェイトが来たら、また別の戦争が始まる。歴史観と HBM、どっちが先に枯れるかは、やっぱり調達部門が知ってる。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">T-1 ウェイト・Day+2 ID・完走単価・トレードオフ曲面——07-26 の四点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月26日現在の Chinese AI &amp; Tech は、(1) Kimi K3 フルウェイト T-1（7/27）と約1.4TB自己ホスト準備のなか、Frontend Arena 首位と完走単価議論が日曜の中心になったこと、(2) DeepSeek legacy alias 退役 Day+2 で「明示 ID 世界」が常態化し、ピーク料金と postmortem が残務になったこと、(3) Opus 5 との週末 A/B、GLM-5.2 自ホスト需要、Qwen 特化・グラス、開源産業レター／推論シフトが「誰が最強か」ではなく完走単価と主権の問題を深めたこと、(4) Huawei 国産スタック物語と DeepSeek 調達機密論が、チップと資本の両端で中国 AI の二重性を示したこと、で整理できる。モデルギャップは薄れ、容量・ホスト・政策・締切のギャップが残る——それが 07-26 の冷静な読みだ。現場の焦点は 7/27 向けインフラ、ルーター更新、明示 ID 確認、自前評価、セキュリティレビューである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は K3 T-1 と Opus A/B で燃えてる。チケットは DeepSeek Day+2 の明示 ID 確認とディスク枠。K3 は既存枠でコーディング eval、7/27 自ホストは別レーン、GLM は安定レーン、Qwen は特化レーン。ヘッドラインは読まない、ルーター YAML を読む。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 はコーディングで本当に強い。でも過思考でトークンを溶かす日もある。GLM は Cursor 連携で長く回る。Qwen 特化は retrieval みたいな報酬が明確な仕事で旗艦を抜く。ベスト開源は週替わり——だから BYOK とルーティングが製品になる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-landmark"></i>
+            <span>米政策・開源論争の観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「25 社が開源を擁護し Big3 が乗らない——安全論とマージン防衛が同じテーブルに座る構図だ。K3 は触媒名として便利。明日ウェイトが落ちれば、議論は抽象から 1.4TB の実物へ移る。Entity List は脅しとして効くが、開発者の完走単価表までは書き換えない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>チップ／Huawei エコシステム側</span>
+          </div>
+          <p class="text-sm text-zinc-300">「千元機の麒麟と、K3 が Ascend で訓練されたという話はレイヤが違う。どちらも『国産スタックが日常になる』物語を補強する——検証は別、政策言語としては同じ週末に効く。HIMA のスパイショットもその延長線上だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-moon"></i>
+            <span>Moonshot／Kimi 製品側（想定応答）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「需要はまだ容量を上回っている。既存品質を守る方針は変えない。7/27 ウェイトは計画どおり。恐慌も未署名書簡も、我々のカレンダーは動かさない——現場は新規を止め、自ホスト準備を促すだけだ。約束の履行日がナラティブの真価。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「DeepSeek が ID を殺し、K3 がベンチを取り明日ウェイトを開き、Qwen が特化とグラスを配り、GLM が主権を売り、Opus 5 が閉源レーンを更新する——日曜は外交ではなく、プロダクト・カレンダー・流通の三重奏の前夜だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List の見出しでも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-07-26 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Kimi K3 Frontend Arena 首位・open weights 7/27 T-1・~$3/MTok・自ホスト準備、Opus 5 vs K3 週末 A/B・完走単価（7/25-26）、DeepSeek V4 alias退役 Day+2・明示 ID・peak pricing、GLM-5.2 Ollama 需要／Cursor セットアップ／自ホスト実測、Qwen SID-1 retrieval・AIグラス・3.8 Preview、Open Weights 産業レター・Nvidia 開源連合、neocloud／推論シフト議論、Huawei 麒麟・HIMA・Ascend 説、DeepSeek 調達機密論（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-07-26', 'color:#10b981');
+  </script>
+</body>
+</html>
