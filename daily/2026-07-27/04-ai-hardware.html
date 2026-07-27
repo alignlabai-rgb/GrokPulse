@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-27 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-27 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">SSI×NVIDIA——「研究がスケールに値する」日に<br>Vera Rubin が TPU 顧客を奪い、月曜の板が三重壁を採点する</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月27日（月）。Ilya Sutskever の <strong>Safe Superintelligence（SSI）</strong> が NVIDIA との長期戦略提携を発表——substantial 投資＋次世代 <strong>Vera Rubin</strong> アクセスで、12ヶ月以内に算力を <strong>10×</strong>。「We have research that is worth scaling」はモデル発表ゼロのまま2年沈黙したラボが、初めて大規模コンピュートを正当化した瞬間だ。報道では SSI が従来 Google TPU 依存だった点も焦点——NVIDIA はフロンティア研究の「非 NVIDIA 顧客」を Rubin エコ系に引き込み、次世代のメモリ・インターコネクト・システム要求をロードマップへ直結させる。並行して週末の <strong>$500B+／$200B+／$950B</strong> 脚注は月曜の板と出荷物語で検証され、HBM・CoWoS は 2026 末まで sold-out、Amkor 決算は前払い物語の P&amp;L テスト、Azure への Helios 配線が第2ソースを実機化する。月曜の AI Hardware は「誰が FLOPS を語るか」ではなく、<strong>誰がフロンティアを Rubin に縛り、どの層が先に切れるか</strong>を同時に読む日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 SSI × RUBIN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Ilya が「scale してよい」と言った日<br>——NVIDIA が substantial 投資＋Vera Rubin</div>
+          <div class="mt-4 text-sm text-zinc-400">SSI 公式：長期戦略パートナーシップ、substantial 投資、12ヶ月で compute 10×。Ilya の「Time to scale that SSI」と「research worth scaling」は、製品ゼロ・デモゼロのまま $30B 級評価を保ったラボが、初めて大規模訓練フェーズに入る宣言。NVIDIA は秘密研究を見たうえで投資——次世代モデルが要求するチップ・インターコネクト・メモリ・システム設計への早期可視性を買う。フロンティア研究の「算力解放イベント」が、そのままハードウェア需要の先行指標になる構造だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rocket"></i>
+            <span>SSI×NVIDIA 提携・Vera Rubin 10× compute（7/27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 TPU → RUBIN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Google TPU の稀少な顧客を奪還<br>——投資＝次世代需要の先買い</div>
+          <div class="mt-4 text-sm text-zinc-400">WSJ 系報道と X 分析が強調する細部：SSI はこれまで Google Cloud TPU 中心の「非 NVIDIA フロンティア」だった。Rubin への大転換は、OpenAI／Anthropic 系に続く「投資で顧客をロック」戦略の延長線。CUDA モートの話ではなく、<strong>研究洞察のフィードバックループ</strong>——未公開の新方向がチップ・HBM・CPO・800VDC ラック設計にどう落ちるかを先に知る権利。TPU vs GPU の二項対立より、「どのラボの秘密がどのシリコンの BOM を書くか」の争奪だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-exchange-alt"></i>
+            <span>SSI TPU→Rubin 転換・研究可視性の先買い（7/27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 HBM / CoWoS SOLD OUT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">2026 末まで sold-out——リードは 2027 深部<br>月曜の宿題は「需要の穴」ではなく供給天井</div>
+          <div class="mt-4 text-sm text-zinc-400">週末〜月曜の半導体系 TL：TSMC／SK hynix 側シグナルとして、先進パッケージ（CoWoS）と HBM は実質 2026 末まで売り切れ、リードタイムは 2027 深部へ。GPU 過剰論は却下され、制約はシリコン調達から<strong>メモリ密度・後工程・電力接続</strong>へ移動した、という読みが主流。金曜 $500B+ SK 枠も「不足を前提にした優先権」——月曜の板はゼロの数ではなく、配分と履行カレンダーを採点する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>HBM/CoWoS sold-out 2026・2027 リード（7/25-27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 AMKOR EARNINGS NIGHT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Amkor 決算の本当の行——ビートか、<br>先端パッケージのマージン転換か</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜夜（米市場）の Amkor 決算が OSAT 物語の試金石。NVIDIA の約 $1.5B 前払い・Arizona Peoria 枠は「キャパ予約」として周知——問いは<strong>先進パッケージ mix が粗利を押し上げるか、それとも AI は数量だけで価値が残らないか</strong>。CoWoS 級後工程が台湾集中のままなら、オンショアの空白を埋めるのはロジックではなく異種集積。決算は前払いレトリックを P&amp;L に翻訳する最初の公開採点。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box"></i>
+            <span>Amkor 決算・先進パッケージ P&amp;L テスト（7/27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 RUBIN BOM TRIPLE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/25-27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Vera Rubin が BOM を三つ変える<br>——HBM 密度・CPO・800VDC</div>
+          <div class="mt-4 text-sm text-zinc-400">週中から月曜に再流通するサプライチェーン分解：Rubin 世代はラック当たり HBM 増、プラガブル光から <strong>CPO（co-packaged optics）</strong> へ、電力は <strong>800VDC</strong> アーキテクチャへ。受益はメモリ（MU／SK／Samsung）、パッケージ装置・テスト（AMAT／TER 等）、光モジュール・シリコンフォトニクス、ワイドバンドギャップ電源（SiC/GaN 周辺）。コンピュートシリコン単体の物語は終わり——ラック BOM の同時書き換えが 2026 後半の評価軸。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>Vera Rubin BOM・HBM/CPO/800VDC（7/25-27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 HELIOS ON AZURE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Azure に AMD Helios が落ちる<br>——第2ソースが VM カタログに実体化</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜の報道：Microsoft Azure AI が AMD Helios プラットフォームを本格採用、500 EPYC コア・4TB メモリ級 HDv2 VM など AI データ処理向け SKU が並ぶ。Advancing AI 以降の「ラック級第2ソース」物語が、顧客名簿から<strong>クラウド商品ページ</strong>へ進んだ。hyperscaler が求めるのは打倒 NVIDIA ではなく供給・価格のレバー——Helios がカタログに載るほど、交渉力と容量分散のオプション価値が実効化する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Azure×AMD Helios・HDv2 VM（7/27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 GRID &gt; SILICON</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26-27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">変圧器 36–48 ヶ月——主ボトルネックは<br>ウエハではなく接続と電力</div>
+          <div class="mt-4 text-sm text-zinc-400">インフラ系分析が月曜も再掲：サブステーション変圧器・スイッチギアのリードが 3–4 年、世界で 1,650GW 級が utility queue に滞留。HBM／CoWoS が sold-out でも、ラックを埋める電力とインターコネクトがなければ FLOPS は紙の上。behind-the-meter 発電や on-site 電源が hyperscaler のバイパス手段として語られる。シリコン制約は消えていない——下へ、そしてグリッド側へスライドしただけ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>電力・グリッド接続リード・シリコン下移（7/26-27）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 CXMT / DRAM SHADOW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM ブームの隣で DRAM 影が動く<br>——長鑫拡張が従来型メモリの価格を先読み</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜のストレージ TL：HBM 優先で従来 DRAM が手薄になった隙に、中国・長鑫（CXMT）の拡張がシェアと価格期待を揺さぶる、という読み。HBM スーパーサイクルと「隣接市場の挑戦者」は同時に起きうる——AI メモリの本命は韓国三社＋Micron でも、汎用 DRAM の IRR は別方程式。bits 不足の本編と、周辺メモリの地政学的供給増は、同じ週の二段構えとして読む必要がある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>CXMT／従来 DRAM 影と HBM 優先構造（7/27）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月27日、AI Hardware の中心テーマは「<strong>SSI×NVIDIA——研究がスケールに値すると言った月曜に、Vera Rubin が TPU 顧客を奪い、三重壁を板が採点する</strong>」だ。07-24 が韓国大統領サミットと $500B+／$200B+ の握手、07-25 が $950B 脚注分解、07-26 が Jensen の「bits が足りない」と Amkor 前払い・テスト時間の三重壁だったなら、07-27 は同じ地図の上に <strong>フロンティア研究の算力解放イベント</strong>を重ねた。派手なゼロの数は背景。前景は「誰の秘密研究がどのシリコンのロードマップを書くか」と「どの層が先に切れるか」の同時進行である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            SSI 提携の本質は、モデルリリースではない。<strong>2 年間沈黙したラボが「worth scaling」と宣言し、NVIDIA がその秘密を見て substantial 投資と Rubin 枠を渡した</strong>ことだ。TPU 依存だった顧客の奪還は、CUDA 信仰の勝利スピーチではなく、次世代の HBM 密度・CPO・800VDC ラックが「どんなワークロードを想定すべきか」の先行情報を買う行為。OpenAI／Anthropic 系に続く「投資＝エコシステム先買い」が、製品ゼロの研究会社にまで届いた——つまりハードウェア需要のパイプラインは、公開ベンチマークより<strong>非公開研究のスケール判断</strong>で先に動く。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            供給側の月曜採点は変わらない。HBM／CoWoS は 2026 末まで sold-out、リードは 2027。Amkor 決算は $1.5B 前払いが粗利物語になるかの P&amp;L テスト。Azure の Helios 配線は第2ソースをカタログ商品にする。グリッドの 36–48 ヶ月リードは、シリコンを買ってもラックが灯らないリスクを残す。CXMT 拡張は HBM 本編の影で従来 DRAM の期待値を動かす。2026 年後半のハードウェア評価は、ピーク型番の発表頻度より、<strong>フロンティア提携の深さ・HBM/CoWoS 配分・OSAT マージン・第2ラックソース・電力接続・周辺メモリの地政学</strong>を一枚で読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜「$500Bください」、土曜「それ LOI ですか」、日曜「bits 足りてますか？足りてません」、月曜「Ilya です、研究がスケールに値するので Rubin を10倍ください」。2026 年夏の四段落ち、完成度が高すぎる。製品ゼロ・デモゼロの会社に substantial 投資できるのは、NVIDIA が「次に何が必要か」を先に知りたいから——チップ屋が研究の覗き穴を買う時代だ。TPU から Rubin への鞍替えは、信仰戦争じゃなくて BOM の先読み戦争。Helios が Azure に載り、Amkor が今夜数字を出し、変圧器はまだ 4 年待ち。ゼロを数える前に、誰がフロンティアを縛り、どの層が詰まってるかを数えよう。月曜の板は、脚注と秘密研究の両方を採点しに来る。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">SSI×Rubin・HBM sold-out・Amkor 採点・Helios on Azure——月曜の同時更新</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月27日現在の AI Hardware 分野は、(1) SSI×NVIDIA の長期提携と substantial 投資・Vera Rubin による 12 ヶ月 10× compute、(2) 従来 TPU 依存フロンティアの Rubin エコ系への引き込みと研究可視性の先買い、(3) HBM／CoWoS の 2026 末 sold-out と 2027 リードの供給天井確認、(4) Amkor 決算による先進パッケージ・前払い物語の P&amp;L テスト、(5) Vera Rubin 世代の BOM 三重書き換え（HBM 密度・CPO・800VDC）、(6) Azure への AMD Helios 配線と第2ソースの商品化、(7) 変圧器・グリッド接続 36–48 ヶ月の電力ボトルネック、(8) CXMT 拡張など従来 DRAM 側の影、が重なっている。週末の握手と三重壁に続き、月曜はフロンティア研究のスケール宣言と供給鎖の公開採点が同時に走る一日。2026 年後半の評価軸は、ピーク FLOPS より、提携の深さ・bits／パッケージ／電力・第2ソース・履行カレンダーを同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-rocket"></i>
+            <span>NVIDIA / フロンティア投資視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「substantial 投資は GPU の値引きではない。秘密研究を見て Rubin を渡す——次世代のメモリ・配線・電力が何を要求するかを先に知る権利だ。SSI の 10× は需要の先行指標であり、TPU 顧客の奪還はエコシステムの防衛線。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-brain"></i>
+            <span>SSI / 研究スケール視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2 年は方向を探す時間だった。worth scaling と言えるまで小規模で検証し、その後に大規模算力を入れる——順序を守った。Rubin は『チップを買う』話ではなく、研究を本番のスケールで殴る話だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリサプライ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2026 末まで sold-out はドラマではなく物理。巨大 LOI も一晩でウエハは増えない。配分と共開発が商品そのもの。CXMT が従来 DRAM を揺さぶっても、HBM の壁は別レイヤ——bits 不足はまだ解けない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-box"></i>
+            <span>Amkor / OSAT 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「前払いはレトリックではなくキャパの先買い。決算で見るべきはビートの有無より、先進パッケージ mix が粗利を押し上げたか。AI が数量だけなら価値は薄い——異種集積が P&amp;L に染まるかが今夜の本題。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>AMD / Azure 第2ソース視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Helios が Azure カタログに載るのはマーケティングではない。hyperscaler に供給と価格のレバーを渡すことだ。ラック級第2ソースは『NVIDIA を倒す』より『同じ壁の前に列を二本にする』。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / 月曜採点視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「月曜の宿題は $950B の再カウントでも Ilya のファンレターでもない。LOI と prepay と実質投資を分け、HBM・CoWoS・テスト・グリッドのどれが先に切れるか、Helios が本当に出荷に効くかを見る。金曜の握手、日曜の壁、月曜の板と秘密研究。時計を混ぜない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-27 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（SSI×NVIDIA・Vera Rubin 10×、TPU→Rubin、HBM/CoWoS sold-out、Amkor決算前分析、Rubin BOM HBM/CPO/800VDC、Azure Helios、グリッド制約、CXMT/DRAM影）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-27', 'color:#10b981');
+  </script>
+</body>
+</html>
