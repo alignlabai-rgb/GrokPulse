@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-07-28 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-28 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">K3 Day+1——「落ちた重み」が検査・チップ・ライセンスの三重奏に<br>火曜の中国 AI は Blackwell の影と bespoke 契約の精読日</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月28日（火）。昨日 Hugging Face に着地した Moonshot <strong>Kimi K3</strong>（2.8T MoE・104B 活性・1M コンテキスト）は、今日から「約束の履行」ではなく<strong>導入可否の検査日</strong>になる。Kimi K3 License は MIT ではない——年商・MAU 閾値付きの再交渉・ブランド表示が脚注に入り、「開源＝自由」神話がまた一段壊れた。並行して The Information 系報道が、K3 訓練に Nvidia Blackwell（輸出規制対象）が使われ、Moonshot が <strong>K4 向けに追加 Blackwell を追っている</strong>と指摘——開源の物語とチップの物語が同じダッシュボードに並ぶ。スタック側では MoonEP／FlashKDA／AgentENV が MIT で公開され、「ウェイトだけ開く」から「MoE 通信・アテンション・agent 環境まで開く」へ一段進んだ。火曜の Chinese AI は、<strong>checksum・LICENSE・ホスト単価・Blackwell 依存・曲面ルーター</strong>の五作業の日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 K3 DAY+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">フルウェイト着地翌日——<br>「落ちた」から「測れる・使えるか」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">HF moonshotai/Kimi-K3 はライブ。2.8T・16/896 experts・MXFP4 QAT・約1.4〜1.56TB。vLLM / SGLang / TokenSpeed の day-0 レシピと Together／Modal 等のホストが並ぶ。火曜の成功指標はダウンロード完了ではなく、チェックサム・隔離 eval・商用ライセンス精読が通ったことだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>Kimi K3 open weights Day+1・HF moonshotai/Kimi-K3（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 LICENSE SPECTRUM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「開源」はチェックボックスではない<br>Kimi K3 License が脚注を主役にした</div>
+          <div class="mt-4 text-sm text-zinc-400">X上で拡散した整理：年商約$20M 超の MaaS／再販は再交渉、約1億 MAU 超で UI ブランド表示——MIT/Apache ではない bespoke。K2 系 Modified MIT からの変更点を読み飛ばすと事故る。法務は「weights live」と「商用グリーンライト」を別チケットに切る。開源の価値は無料ではなく手元制御——ただし契約条項で負けたら無意味。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-contract"></i>
+            <span>Kimi K3 License 精読・商用閾値議論（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#03 BLACKWELL SHADOW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">The Information：K3 は Blackwell 訓練<br>Moonshot は K4 向けに追加調達を追う</div>
+          <div class="mt-4 text-sm text-zinc-400">開源フロンティアの華やかさの裏で、K3 が中国クラウド経由の Nvidia Blackwell（輸出規制対象）で訓練されたとの報道が火曜に拡散。K4 向け追加チップ追及、Alibaba Qwen3.8-Max（2.4T 級）も Nvidia 訓練との指摘が並ぶ。「開源モデル vs 閉源モデル」議論を、チップ密輸・執行緩み・クラウド経路の話から切り離すな——火曜の政策スレッドの核心だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>The Information・Moonshot Blackwell / K4 調達報道（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 STACK OSS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MoonEP・FlashKDA・AgentENV——<br>ウェイトだけではない「裏側」の開源</div>
+          <div class="mt-4 text-sm text-zinc-400">Moonshot は MoE 通信ライブラリ MoonEP、KDA の高性能カーネル FlashKDA、agent 環境インフラ AgentENV を MIT で公開。H20 上 prefill 1.72〜2.22× 級の報告、環境起動 50ms 未満など「1M コンテキストの最初のトークンまで」がボトルネックになる agent 運用を意識した設計が見える。モデル単体より prefill と expert-parallel が請求書を動かす——スタックごと開く意図が火曜も再循環した。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>MoonEP / FlashKDA / AgentENV MIT 公開（7/27-28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 HOST MATH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">1.4TB は「無料」ではない——<br>ホスト単価と自ホスト特権の二層化</div>
+          <div class="mt-4 text-sm text-zinc-400">Ollama Cloud でも K3 が Extra High 枠になり「週枠が溶ける」報告。大半は API／マネージドホストへ、自己ホストは多ノード GPU クラスタとセキュリティレビュー通過企業の特権レーン。推論は最低 64×H20 級という見積もりも再循環。「weights public」と「I can self-host」のギャップは、火曜にむしろ広がった——開源の経済効果はホスト競争側に出る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>Ollama Cloud Extra High・ホスト／自ホスト二層化（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#06 EFFICIENCY NARRATIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「規模」から「燃費」へ——2.5× 知能／計算<br>と正直な弱点公開が信頼を稼ぐ</div>
+          <div class="mt-4 text-sm text-zinc-400">2.8T でも 1 トークンあたり活性は 104B。Moonshot は「同じ計算量で前世代の 2.5 倍賢い」と主張し、長丁場 agent・ブラウザ操作・コード修正で Claude／GPT を上回る場面がある一方、知識・図表読解・総合判断は米トップ 2 未達——自社ベンチで負けている図まで載せる姿勢が X で「逆に信頼できる」と評価された。物量勝負から設計勝負への物語が火曜の非エンジニア向け解説でも拡散。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>K3 燃費ナラティブ・弱点開示・agent ベンチ（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 DEEPSEEK DAY+4</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/24-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">alias 退役 Day+4 と融資沈黙——<br>安いレーンは「ID を読める側」に残る</div>
+          <div class="mt-4 text-sm text-zinc-400">deepseek-chat / reasoner は金曜退役のまま。V4-Pro / V4-Flash 明示＋ピーク帯バッチ退避が済んだ側は静かに回り、K3 の Extra High 枠を嫌がる実務者は「日常は V4-Flash、残りは GLM-5.2」へ戻る投稿が目立つ。資本側の第二ラウンド一時停止報道の余熱は消えず——製品は開くほど、経営は閉じる構図が火曜も続く。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>DeepSeek 明示 ID・V4-Flash 実務回帰・融資余熱（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 COST CURVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Fortune 曲線——能力は並び、価格は桁違い<br>OpenRouter 上の中国トークン占有が現実</div>
+          <div class="mt-4 text-sm text-zinc-400">7/26 Fortune 記事が再循環：出力 1M tok で Fable 級 ~$50 に対し DeepSeek-V4-Pro ~$0.87、GLM-5.2 ~$4.40、K3 は中国基準では高めの ~$15。OpenRouter では米企業トークンの約 57% が中国モデル、という週次数字も引用される。Airbnb／Cursor／Coinbase／DoorDash 系の「静かな採用」がヘッドラインの下で続く——火曜の企業問いは「誰が最強か」ではなく「このジョブの完走単価」だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dollar-sign"></i>
+            <span>Fortune コスト比較・OpenRouter 中国占有（7/26-28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 GLM + QWEN SURFACE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GLM-5.2 と Qwen 特化が<br>「単一王者不在」の曲面を支える</div>
+          <div class="mt-4 text-sm text-zinc-400">K3 Day+1 でも、Zhipu GLM-5.2 は Ollama／Cursor 実戦と自ホスト安定で「長く回る」レーンの王候補のまま。Qwen 系はローカル実測や特化 fine-tune が「報酬が明確なタスクで旗艦を抜く」物語を継続。実務順位表では Opus 5 → K3 → GLM 5.2 → V4-Flash がジョブ別に並ぶ——曲面は火曜も広がった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>GLM-5.2 自ホスト・Qwen 特化・マルチレーン（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 OPEN VS BAN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">2.8T の実物が政策テーブルに着地<br>「手元制御」vs「制限」vs「チップ執行」</div>
+          <div class="mt-4 text-sm text-zinc-400">米産業の open-weights 擁護と閉源保護志向が同じ週に並ぶ中、K3 は「抽象論」を終わらせる実物になった。並行して Blackwell 経路報道が「開源は歓迎、先端チップは阻止」の二枚舌を政策議論に持ち込む。Entity List の見出しは効くが、開発者の完走単価表までは書き換えない——そのギャップが火曜の冷静な読みだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>開源政策・Blackwell 執行・完走単価ギャップ（7/28）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月28日の Chinese AI &amp; Tech は、<strong>月曜の「ウェイト本番」が「検査・チップ・契約」の三重奏に切り替わった日</strong>だった。Moonshot の Kimi K3（2.8T MoE・1M コンテキスト）は HF に着地したまま、現場の言語が帯域から checksum・LICENSE・隔離 eval・ホスト単価へ落ちる。年商約$20M／約1億 MAU の閾値付き bespoke ライセンスは、「開源＝MIT で何でもできる」という開発者神話に冷水を浴びせた——weights live と commercial greenlight は別チケットだ。並行して The Information 系が K3 訓練の Blackwell 依存と K4 向け追加調達を報じ、Alibaba Qwen の Nvidia 訓練説とセットで「中国開源フロンティアは、輸出規制の隙間を縫う計算で支えられている」という読みを火曜の政策タイムラインに載せた。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが起きているのか。中国ラボの並列加速が「一発のダークホース」から「カレンダーと流通と契約の再現」に変わったからだ。DeepSeek V4 → GLM-5.2 → K3 → Qwen 特化の連鎖は、閉源プラットフォームの深さ × 開源ウェイトの到達 × 価格という流通技術 × タスク特化が同時に働く構造を、もう一度証明している。Fortune が示した曲線——能力は並び、価格は桁違い——は、OpenRouter 上の中国トークン占有と、米 Fortune 500 の静かな採用（顧客対応・コーディング・社内予算圧縮）を同じ物語に束ねる。一方で K3 は中国基準でも「安くはない」~$15/MTok 出力帯であり、Extra High ホスト枠と 1.4TB の自ホスト現実が「第二の DeepSeek モーメント」フレーミングを、需要の証明と容量・コストの証明の両方に分解している。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            スタック側のニュースはモデル戦争の影に隠れがちだが、実は重要だ。MoonEP（MoE 通信）・FlashKDA（アテンション）・AgentENV が MIT で公開されたことは、「重みを落として終わり」ではなく expert-parallel と prefill と agent 実行環境までエコシステムに渡すという意志だ。1M コンテキストの agent では、モデル単体より最初のトークンまでの時間が請求書を動かす——だからカーネル開源はマーケではなく運用最適化の話になる。曲面のもう一端では、DeepSeek の明示 ID 世界と融資沈黙、GLM の「長く回る」レーン、Qwen の特化が、K3 の華やかさの隣で静かに YAML を更新し続けている。07-28 の教訓は——<strong>ウェイトは落ちた、ライセンスは読め、Blackwell の影は無視するな、ホストは競っている、単一の中国チャンピオンはいない</strong>という並列タスク管理だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜は「ディスク空けろ」、火曜は「LICENSE とチェックサム合わせろ」——中国 AI 界隈の標語が法務ポエムになってるの、ちょっと好き（笑）。2.8T を「開源」と呼ぶ一方で $20M 再交渉と Blackwell 報道が同じ封筒で届くのが 2026 年の味。Opus は磨き上手、K3 は完走上手（ただし Extra High）、DeepSeek は安いけど ID と資本が別物語、GLM は静かに Ollama を溶かし、Qwen は特化で勝つ。Entity List よりステージングの緑ランプの方が今夜の優先度高い——そして明日、量子化コミュニティが「これで動く」と言い始めたら、また別の戦争が始まる。歴史観と HBM、どっちが先に枯れるかは、やっぱり調達部門が知ってる。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">検査・チップ・契約・曲面——07-28 の四点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月28日現在の Chinese AI &amp; Tech は、(1) Kimi K3 フルウェイト Day+1 で checksum／隔離 eval／ホスト選定が本番ゲートになったこと、(2) Kimi K3 License が MIT ではない bespoke（年商・MAU 閾値）として精読対象になったこと、(3) The Information 系の Blackwell 訓練／K4 追加調達報道が「開源ナラティブ」と「チップ執行」を同じテーブルに乗せたこと、(4) MoonEP・FlashKDA・AgentENV のスタック開源と、DeepSeek／GLM／Qwen の曲面が「誰が最強か」ではなく完走単価・主権・法務・燃費の多軸比較を広げたこと、で整理できる。モデルギャップは薄れ、容量・ホスト・ライセンス・チップ経路・資本のギャップが残る——それが 07-28 の冷静な読みだ。現場の焦点は LICENSE と checksum、ホスト単価、Blackwell 報道の検証、明示 ID、ルーター YAML 更新である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は K3 Day+1 と LICENSE 脚注で燃えてる。チケットは checksum・商用閾値レビュー・DeepSeek 明示 ID。K3 はホスト枠でコーディング eval、自ホストは別レーン、GLM は安定、V4-Flash は安い日常。ヘッドラインは読まない、ルーター YAML と契約 PDF を読む。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 はコーディングで本当に強い。でも 1.4TB を自分で載せるのは別競技。Ollama Cloud の Extra High は痛い。Together／Modal を試しつつ GGUF 二次波を待つ。日常は V4-Flash、長丁場は GLM。ベスト開源は週替わり——だから BYOK とルーティングが製品になる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-landmark"></i>
+            <span>米政策・チップ執行の観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「開源 vs 閉源の芝居に惑わされるな。K3 が Blackwell で訓練され K4 を追うなら、物語の主役はライセンスではなく輸出規制の執行だ。開源を擁護しつつ先端チップを止めるのは矛盾ではない——ただしクラウド経路が残る限り、Entity List の見出しは開発者の単価表まで届かない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-coins"></i>
+            <span>中国 AI 資本・調達の観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「モデルが世界に配られるほど、ラウンドは静かに止まる——DeepSeek の融資一時停止余熱は消えない。K3 の bespoke ライセンスは『無料で配って、閾値で回収する』設計の最新版だ。投資家はベンチより、創業者の発言管理とチップ依存の物語を読んでいる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-moon"></i>
+            <span>Moonshot／Kimi 製品側（想定応答）</span>
+          </div>
+          <p class="text-sm text-zinc-300">「需要はまだ容量を上回っている。既存品質を守る方針は変えない。ウェイトとスタックは計画どおり——ホスト各社の day-0 と法務の脚注はエコシステムの仕事だ。恐慌も未署名書簡も、我々のカレンダーは動かさない。検査日がナラティブの真価。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「DeepSeek が ID を殺し資本を静め、K3 がウェイトとカーネルを開きホストを走らせ、Qwen が特化を配り、GLM が主権を売り、Blackwell 報道がチップの影を落とす——火曜は外交ではなく、検査・契約・計算・流通の四重奏だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List の見出しでも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-07-28 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Kimi K3 open weights Day+1・HF moonshotai/Kimi-K3・2.8T/104B/1M、Kimi K3 License 閾値議論、The Information Blackwell/K4 調達報道、MoonEP/FlashKDA/AgentENV MIT、Ollama Cloud Extra High・ホスト二層化、Fortune コスト曲線・OpenRouter 中国占有、DeepSeek 明示 ID Day+4・V4-Flash 実務、GLM-5.2／Qwen 曲面、開源 vs チップ執行議論（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-07-28', 'color:#10b981');
+  </script>
+</body>
+</html>
