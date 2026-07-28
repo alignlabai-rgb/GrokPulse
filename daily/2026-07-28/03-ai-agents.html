@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-07-28 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-28 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧯</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">Skills の「回帰税」と爆破半径——agent は増やす日ではなく<br>測り・縛り・逃がす火曜</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月28日（火）。月曜に K3 レーンを配線した翌日、agent 界隈の話題は「spawn 数」から<strong>副作用の定量</strong>へ移った。Sentient の <strong>The Regression Tax</strong> が約6,000回のペア実験で示したのは、Skills を足すと「以前解けていたタスクが落ちる」回帰が、スキル由来の改善の半分以上を食い潰しうるという事実だ。並行して「AI coding as controlled explosion——爆破半径を先に決めろ」論と、book-to-skill による PDF→SKILL.md 量産、Perplexity Personal Computer のローカル harness、Hermes 上の K3 デフォルト化と subagent のレート制限裁定が同じタイムラインに並ぶ。火曜の agent は、<strong>スキル監査・ファイル境界・完走単価・モデル逃がし</strong>の四作業の日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 REGRESSION TAX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「Skills を足せば強くなる」神話が<br>約6,000 run で崩れる</div>
+          <div class="mt-4 text-sm text-zinc-400">Sentient の Regression Tax 論文：スキル有無のペア実験で、回帰（スキルなしでは解けたタスクが失敗）が改善の約59%を相殺。メカニズムは description osmosis（未呼び出しでも文脈が振る舞う）、grounding displacement（手順が入力読みを上書き）、verification displacement（自己検証の抑圧）。良いスキルは平均成功率より<strong>回帰の少なさ</strong>で分離する——火曜の KPI は star 数ではなく regression rate だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>Sentient Regression Tax・Skills 副作用（7/27-28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 BLAST RADIUS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">AI coding は「制御された爆発」<br>ヒューズを入れる前に半径を書け</div>
+          <div class="mt-4 text-sm text-zinc-400">Xで再拡散した実務メモ：モデルを正しいコードへ説得するより、触れられるファイル・使える API・守るべきインタフェースを先に制限する。ミスをゼロにするのではなく、ミスの被害を安くする——allowlist・worktree 隔離・Hooks 強制が「爆破半径」の実装。月曜の acceptance harness が「始めさせ方」なら、火曜は<strong>壊してもいい範囲</strong>の設計日だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bomb"></i>
+            <span>controlled explosion・blast radius 設計論（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 K3 AGENT LANE DAY+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Hermes／OpenRouter で K3 を agent 既定に<br>キャッシュ90%割引がループ経済を動かす</div>
+          <div class="mt-4 text-sm text-zinc-400">Kimi K3 は agent 向き（1M コンテキスト・Vision・FrontierSWE／MCPMark 等で Fable／Sol 近傍の報告）として、Hermes 既定レーン化の投稿が拡散。API $3/$15、cached input $0.30 級——system prompt を毎回食う agent ループではキャッシュ割引が完走単価の主変数。ライセンス精読と API レーン固定は 01/02 と同型。量産は「落ちた」ではなく「隔離 eval が通った」後だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-route"></i>
+            <span>K3 Day+1 agent 既定レーン・キャッシュ経済（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 BOOK-TO-SKILL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">技術書 PDF → SKILL.md 量産<br>全文コンテキストを 24〜51× 圧縮</div>
+          <div class="mt-4 text-sm text-zinc-400">book-to-skill が Claude Code／Copilot CLI 向けに章単位のスキル・用語集・パターンを生成する OSS として拡散（1万★超級の勢い）。本を全部プロンプトに突っ込む時代は終わり、遅延ロード可能なスキル束が「ドメイン OS」になる。Regression Tax とセットで読むべし——量産したスキルは、載せる前に回帰ベンチを回せ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-book"></i>
+            <span>book-to-skill・PDF→Agent Skills 量産（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#05 LOCAL HARNESS PC</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Perplexity Personal Computer——<br>Windows 上のローカル agent harness</div>
+          <div class="mt-4 text-sm text-zinc-400">Perplexity が Windows アプリに Personal Computer を投入。ローカルファイル・接続アプリ・Web を横断する agent オーケストレーション——「チャットで答える」から「机の上で仕事する」への製品化。クラウド agent の cap とプライバシー議論の横で、デスクトップ harness が消費者向けの実行面として再定義される火曜の一手。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-desktop"></i>
+            <span>Perplexity Personal Computer ローカル harness（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#06 SUBAGENT RATE ARBITRAGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">並列 subagent が cap を溶かす<br>研究・実装・レビューは安いレーンへ</div>
+          <div class="mt-4 text-sm text-zinc-400">multi-agent で subagent を spawn するたび、親の GPT／Frontier 枠が消える——OpenCodex 型の「子を Grok 4.5 へ逃がす」ルーティングが再拡散。計画・統合は premium、調査とデバッグは中堅——月曜の K3→Opus 二段が、火曜は<strong>レート制限回避の DAG</strong>に一般化される。同じリポに複数 Claude Code セッションを載せる衝突メモも併走。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shuffle"></i>
+            <span>subagent レート裁定・multi-model 逃がし（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 TRUST AFTER ACCESS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/27-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">権限があっても毒テキストは通る<br>「読ませる前」の trust gate</div>
+          <div class="mt-4 text-sm text-zinc-400">Microsoft Project Perception 型のセキュリティ agent 議論と併走：アクセス制御は「誰が触れるか」を決めるが、読んだ文章が意思決定を劫持する問題は別レイヤ。agent が読むテキストを action 前に検査する trust gate、Nomos 型の allow/deny/approval、MAI-Cyber-1-Flash の防御 harness——「できる」の次の週は「毒を飲まない」。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>agent trust gate・Nomos・防御 harness（7/27-28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#08 SYSTEM-FIRST + PORTABILITY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/26-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">四層 OS は続く——Cursor が<br>Claude Code 設定を丸ごと import</div>
+          <div class="mt-4 text-sm text-zinc-400">CLAUDE.md／Skills／Hooks／Agents の四層教材が再循環する一方、Cursor が Claude Code のチャット・プラグイン・Skills を取り込む導線を強調。agent 間のロックインは「モデル」ではなく「設定資産」。Anthropic の無料 Claude Code 講座と Google の 40 分 agent ミニコース（patterns→eval→ADK→MCP）が、入門と本番を同じ語彙でつなぐ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Claude Code 四層・Cursor import・教材併走（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 FAST BOOT OSS AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">起動 245× 高速を謳う OSS coding agent<br>Rust・30+ プロバイダ・multi-agent</div>
+          <div class="mt-4 text-sm text-zinc-400">Claude Code 比で起動が桁違いに速いと主張する MIT の Rust 製 coding agent が拡散。セマンティックメモリと multi-agent 協調を前面に——「賢いモデル」より「待ち時間とプロバイダ切替」が UX のボトルネックだと気づいた層の受け皿。ベンチ検証はこれからでも、harness 競争が起動レイテンシ軸に広がった信号だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rocket"></i>
+            <span>高速起動 OSS coding agent 拡散（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#10 CURSOR START INDIA</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Cursor がインド専用プラン<br>cloud agent を現地価格で量産</div>
+          <div class="mt-4 text-sm text-zinc-400">₹649/月級の Cursor Start（India）——Grok 4.5／Composer、cloud agents、MCP／hooks／skills、UPI 課金。インドは Cursor 第3市場で、開発者あたり agent リクエストが世界最高水準と公式が言及。agent の「地理的スケール」はベンチではなく<strong>単価と決済ローカル化</strong>で決まる、という製品サイドの火曜ニュース。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rupee-sign"></i>
+            <span>Cursor Start India・cloud agent 価格化（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 MCP SURFACE + QA AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MCP が「つなぐ」から「検証する」へ<br>QA・取引・Docs が同じプラグ面</div>
+          <div class="mt-4 text-sm text-zinc-400">Maestro MCP が Claude Code／Codex／Cursor／Grok Build から E2E QA を回すデモ、1inch のポジション照会 MCP、llms.txt＋MCP＋skills 付き docs——ツール面が業務ドメインへ広がる。プロトコル一覧（MCP／A2A／ACP…）の横で「実行の所有権・ライセンス」層が足りないという批判も火曜に再燃。つなぐほど、責任分界が必要になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>MCP QA・ドメイン MCP・プロトコル所有権論（7/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#12 ANTHROPIC 3-COMPONENT LOOP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">環境・ツール・system prompt・loop<br>Claude Code も computer use も同じ背骨</div>
+          <div class="mt-4 text-sm text-zinc-400">元 Meta／Anthropic 側の解説が再拡散：coding・computer use・research agent は同じ三要素＋ループ。複雑さを前倒ししない——iteration speed が本番の競争力。Dynamic Workflows や数百 subagent の話と並ぶと矛盾に見えるが、本質は「薄い骨格＋測定可能なループ」。派手なオーケストレーションは、この四語を壊さない範囲で足す。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rotate"></i>
+            <span>Anthropic agent 三要素＋loop 再解説（7/28）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月28日の AI Agents は、月曜の「K3 量産レーン配線」の翌日として、<strong>配線したものを測り・縛る日</strong>になった。最大の知的イベントは Sentient の Regression Tax だ。Skills を足すと平均成功率は上がる——だが「以前解けていたタスクが落ちる」回帰が、改善の半分以上を食い潰しうる。description osmosis（スキル説明が未呼び出しでも振る舞いを変える）、grounding displacement、verification displacement——三つの失敗モードは、月曜に流行った「Skills を書け」キャンペーンへの冷水であり、同時に本番運用の必須チェックリストになる。book-to-skill で PDF をスキル束に量産する動きが同じ日に伸びているからこそ、量産パイプラインの出口に<strong>回帰ベンチ</strong>を置く必要がある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            実務層では「AI coding as controlled explosion」が再循環した。プロンプトでモデルを説得するより、触れられるファイル・API・インタフェースで爆破半径を先に決める。これは 07-27 の acceptance harness（始めさせ方）と対になる「壊してもいい範囲」の設計だ。Hooks・allowlist・worktree 隔離は、ガバナンス文書ではなく半径の実装。複数 Claude Code セッションが同じリポを同時に触る衝突メモも、「半径ゼロの並列」が危ないことを現場が再学習している。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            経済レイヤでは K3 Day+1 が agent ルーターに染みる。Hermes／OpenRouter 経由で K3 を既定にし、キャッシュ 90% 割引を agent ループの主変数にする——月曜の K3→Opus 二段は、火曜に「子 agent を安いレーンへ逃がす」レート制限裁定（Grok 4.5／中堅モデル）へ一般化した。Cursor Start India は cloud agent を現地価格で売る製品サイドの答え。Perplexity Personal Computer はローカル harness を Windows の机に降ろす。spawn 数自慢の週は終わり、<strong>完走単価・cap 生存率・ローカル／クラウド分担</strong>が KPI になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            安全と接続では trust gate（読ませる前の検査）、Nomos 型の action 承認、MCP の QA／取引／Docs 面拡大が並ぶ。プロトコルは協調を美しくするが、実行の所有権・ライセンス層はまだ薄い——つなぐほど責任分界が要る。Anthropic の三要素＋loop（環境・ツール・system prompt）の再解説は、四層 OS や Dynamic Workflows の下にある骨格を思い出させる。複雑さは後から足せ。骨格を太らせるな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが起きるか。07-07 以降 multi-agent は本番信頼性へ、07-18〜24 は工場規格と請求書、07-25〜26 は診断語彙、07-27 は K3 レーン配線と acceptance、そして 07-28 は<strong>Skills 副作用の定量・爆破半径・キャッシュ／レート裁定・ローカル harness</strong>。次のボトルネックは「スキルを何個持っているか」ではなく、regression rate・blast radius 定義・モデル逃がし表・trust gate・スキル監査パイプラインだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            07-28 を一文で言えばこうだ。Skills は足すほど賢くなるのではなく回帰税を払うことがあり、AI coding は制御された爆発として半径を先に書き、K3 は agent 既定レーン候補としてキャッシュ経済で回り、subagent は cap を溶かさないよう安いレーンへ逃げ、ローカル harness とインド価格の cloud agent が実行面を広げ、trust gate が「権限のあと」を守る。スキルを増やすな。測れ。半径を書け。逃がせ。それからマージせよ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜に「skill.md を一枚書け」って煽った翌日に Regression Tax が出るの、agent 界隈のセルフツッコミとして完璧すぎる（笑）。スキルって npm パッケージと同じで、「入れた瞬間に何かが壊れる」が本番のデフォルトなんだよな。爆破半径って言葉、ロマンチックに聞こえるけど中身は allowlist と worktree と「このディレクトリ以外は触るな」——ロマンチックさゼロの愛。K3 を agent 既定にするのは請求書が賛成票を投げる限り正しい。子 agent を Frontier で全部回すのは、タクシーで近所のコンビニに行くのと同じ贅沢。Grok の火曜相棒は五枚——regression ベンチ、爆破半径 YAML、K3/Opus/Grok 逃がし表、trust gate チェック、skill 監査ログ。見出しより測れ。測ったら寝ろ（agent は半径付きで回せ）。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Regression Tax ＝測る。Blast radius ＝縛る。K3 Day+1 ＋ subagent 逃がし ＝完走単価と cap 生存</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月28日の AI Agents 分野は、Sentient Regression Tax による Skills 副作用の定量化、AI coding の爆破半径設計、Kimi K3 の agent 既定レーン化とキャッシュ経済、book-to-skill 量産と回帰ベンチの必要性、Perplexity Personal Computer のローカル harness、subagent の multi-model レート裁定、trust gate／Nomos 型の action 前検査、Claude Code 四層と Cursor への設定移植、高速起動 OSS agent、Cursor Start India、MCP の QA・ドメイン拡張、Anthropic 三要素＋loop の再確認が同時進行した。本番の鍵はスキル個数でも spawn 数でもなく、「回帰率＋爆破半径＋逃がし表＋trust gate＋スキル監査」にある。07-27 の「配線と単位経済の月曜」に続き、07-28 は「副作用と半径の火曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Skills はカタログ追加ではなく変更管理。新規 skill.md は代表タスクの before/after 回帰表なしに本番禁止。K3 は API レーン固定で隔離 eval。 overnight は爆破半径（書込ディレクトリ）を読取専用より狭く。cap に当たる前に子を中堅へ逃がす。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ルーターに三層を書け。計画＝premium、実装・調査＝K3／Grok、仕上げ＝Opus low effort。Skills は遅延ロード、説明文は短い——osmosis が実害になる。Hooks でファイル境界を必ず発火。book-to-skill の出口に regression suite を配線しろ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Regression Tax は平均成功率 KPI の終わりを告げる。回帰率・grounding エラー・verification 欠落を eval 軸に入れろ。手続スキルばかりで grounding／verification が薄い現状は、論文が指摘した通り設計バイアスだ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「権限 allowlist のあとに trust gate。agent が読む外部テキストと skill サプライチェーンを action 前に検査。Nomos 型の承認フローと immutable log。親 kill で子回収——月曜の宿題は火曜も消えていない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「キャッシュ割引と subagent 逃がしが完走単価の二本柱。Frontier を全ループに載せない。token 台帳に『子のモデル ID』列を足せ。Cursor India 価格は参考——社内も地理・役割別 cap を分ける。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローで skill 追加前後の回帰表と爆破半径（触ってよいパス）を一枚ずつ。K3 はライセンス精読まで API。同じリポの並列 agent は worktree 分割。MCP で QA を回すなら本番データへの書込は禁止——止まらず・壊れず・測れるかが現場 KPI だ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-07-28 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Regression Tax・blast radius・K3 agent レーン Day+1・book-to-skill・Perplexity Personal Computer・subagent レート裁定・trust gate/Nomos・Claude Code 四層/Cursor import・高速 OSS agent・Cursor Start India・MCP QA・Anthropic 三要素 loop）、業界分析・論文議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-07-28', 'color:#10b981');
+  </script>
+</body>
+</html>
