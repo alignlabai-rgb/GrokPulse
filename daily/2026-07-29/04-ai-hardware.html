@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-29 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-29 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">Nadella が二重ラックを公式化——Helios＋Vera Rubin<br>「板は売って、現場はまだ積む」水曜</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月29日（水）。Microsoft 決算まわりで Satya Nadella が「次世代 <strong>rack-scale AI インフラの先行導入先</strong>の一つになる」と明言し、基盤技術として <strong>AMD Helios</strong> と <strong>NVIDIA Vera Rubin</strong> を並記した。火曜の SSI×Rubin Day+1・Helios カタログ化の延長線上で、hyperscaler の「第2ソース」がスライド資料から<strong>CEO の口頭契約</strong>に格上げされた一日だ。並行して半導体板は KLA 決算後の 10% 級下落・AMD／TSM／Micron の連鎖売りで「AI 過剰投資」を再採点——だが Amphenol の IT datacom は有機 +63%・book-to-bill 1.23、HBM4 の出荷タイミングと Rubin 量産移行、K3 1-bit 量子化によるホスト BOM の再計算が同じダッシュボードに並ぶ。水曜の AI Hardware は<strong>需要の物語が板で売られ、現場の接続・メモリ・ラックはまだ加速している</strong>という二層構造を、最もはっきり見せた。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 NADELLA DUAL RACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Azure が Helios と Vera Rubin を<br>「先行導入」として公式並記</div>
+          <div class="mt-4 text-sm text-zinc-400">MSFT 決算後の X／IR 系で拡散：Nadella は next-gen rack-scale の早期導入を約束し、AMD Helios と NVIDIA Vera Rubin を同じ文で並べた。意味は「NVIDIA 打倒」ではなく<strong>供給・価格・容量の二本柱</strong>——火曜まで「カタログに載った第2ソース」だった Helios が、CEO 口頭で Rubin と対等に扱われた。クラウド顧客の調達仕様書に「rack-scale dual vendor」が載るなら、BOM・冷却・インターコネクトの設計自由度が一段上がる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>MSFT / Nadella Helios＋Vera Rubin rack-scale（7/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 HELIOS VS RUBIN BOM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28-29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM4 の「広い遅い」対「狭い速い」<br>——メモリ戦略がラックの顔になる</div>
+          <div class="mt-4 text-sm text-zinc-400">半導体系 TL の水曜消化：AMD MI455X／Helios は HBM スタックを増やし容量優先（報道では 432GB/GPU 級・12 スタック、Samsung 主供給）、NVIDIA Vera Rubin は pin 速度と帯域密度を優先する設計差が再分析の焦点。Hynix 側コメントでは HBM4 出荷タイミングのスリップが Q2 ASP を押し下げ、Rubin 初期遅延と連動——現在は full production 移行との読み。水曜の KPI は FLOPS 比較表ではなく、<strong>誰がどの HBM4 ビット成長を先に取るか</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>HBM4 wide-slow vs high-pin・出荷タイミング（7/28-29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 KLA BEAT &amp; DROP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/28-29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">プロセス制御は数字で勝ち<br>板は「AI 過剰論」で売った</div>
+          <div class="mt-4 text-sm text-zinc-400">KLA が FY2026 Q4 で売上約 $3.66B・non-GAAP EPS 上限付近を確保した一方、ガイダンスと地政学・金利ムードが重なり水曜の板で 10% 級の下落。AI インフラが process control・advanced packaging を押し上げるストーリー自体は CEO コメントでも継続——問題は<strong>需要の有無ではなく、バリュエーションが何四半期分の成長を先食いしているか</strong>。装置株の「ビート・アンド・ドロップ」は、シリコンサイクルより株式サイクルの話に近い。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>KLA FY26 Q4 ビート後の板・AI装置需要（7/28-29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 SEMI SELLOFF DIVERGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">AMD・TSM・Micron 連鎖売り<br>——「過剰投資」と現場のズレ</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の米国市場：リスクオフ（米イラン懸念・原油・FOMC 据え置き＋9 月利上げ観測）の上に、中国 AI／半導体台頭と米側 AI 過剰投資懸念が重なり $AMD 数％、$TSM 数％、$MU さらに深い下落が流通。一方で Vera Rubin NVL72 の稼働報告（MSFT／GOOG／ORCL 等）や SK 枠 $500B+ 級の物語は「需要が消えた」とは読めない。板が売っているのはシリコン不足ではなく<strong>ROI までの時間割引</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-arrow-trend-down"></i>
+            <span>半導体連鎖売り・AI 過剰投資再採点（7/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 AMPHENOL READ-THROUGH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">接続が語る「まだ加速」——<br>IT datacom 有機 +63%、B/B 1.23</div>
+          <div class="mt-4 text-sm text-zinc-400">Amphenol Q2 コールの水曜解析が厚い：IT datacom は有機 +63%・前四半期比 +22%、ほぼすべて AI 関連。book-to-bill 1.23、Q3 も mid-teens の順増見込み。メッセージは「銅も光も電力も全部もっと」——液冷・高電圧配電・センサー付きコネクタが量産フェーズ。チップ株が売られる同じ週に、接続部品は<strong>出荷直前の需要シグナル</strong>として AI ビルドアウトが減速していないことを示している。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>Amphenol IT datacom・AI 接続／電力 read-through（7/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 RUBIN RACKS LIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVL72 が「紙の仕様」から<br>稼働ラックのリストへ</div>
+          <div class="mt-4 text-sm text-zinc-400">投資家スレで再確認：Vera Rubin NVL72 が NBIS／CRWV／MSFT／GOOG／ORCL などで稼働開始との報告。Blackwell 比で効率・コストの桁違い主張は検証待ちだが、「まだ誰も立てていない」フェーズは終わった。AMD 側も Helios／MI455X を full production・初期出荷 Q3 前半と語る。水曜の比較軸はベンチマーク PDF ではなく、<strong>どのキャンパスに何ラックが配線されたか</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Vera Rubin NVL72 稼働報告・Helios 出荷（7/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 K3 1-BIT HOST BOM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">1.56TB→594GB——開源圧縮が<br>ホストの HBM 予算を書き換える</div>
+          <div class="mt-4 text-sm text-zinc-400">Unsloth の Dynamic 1-bit で Kimi K3 が 1.56TB→594GB（−62%）、Mac Studio 級でも動く、とのデモが AI 側で拡散。ハードウェア屋への含意は二面：フルウェイト serving の TB 級ラック需要は残る一方、<strong>量子化レーンは HBM 密度と GPU 枚数の下限を押し下げる</strong>。クラウドホストの価格表は「フル／2-bit／1-bit」で別 SKU になり、CoWoS 枠の争奪は「全部同じ精度」ではなく「どの品質帯に何 bits を割り当てるか」へ分岐する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-compress"></i>
+            <span>K3 1-bit 量子化と serving BOM 再計算（7/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 POWER &gt; PAPER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">800VDC・液冷・接続——<br>物理層はまだスーパーサイクル</div>
+          <div class="mt-4 text-sm text-zinc-400">Amphenol コールと Vera Rubin 系統の分析が一致：performance per watt はチップ単体ではなくラック電力アーキテクチャの問題。高電圧配電、液冷ループ、高速銅＋光の同時増量が「今のエンジニアリング課題」。変圧器 36–48 ヶ月のグリッド制約は火曜から消えていない。水曜の皮肉は明快——<strong>株式は AI 過剰を織り込み、現場はまだ電子をトークンに変換する配線を増やしている</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>800VDC／液冷／グリッド制約の継続（7/29）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月29日、AI Hardware の中心テーマは「<strong>Nadella が二重ラックを公式化し、板は AI 過剰論で売り、現場の接続はまだ加速している</strong>」だ。07-28 が SSI×Rubin Day+1 と Helios カタログ・HBM 枠の「履行カレンダー」検査日だったなら、07-29 はそのカレンダーを hyperscaler の口頭で追認しつつ、<strong>株式市場が同じ需要を逆方向に値付けした</strong>日である。トップストーリーは新チップ発表ではない。Azure が Helios と Vera Rubin を同じ「next-gen rack-scale」文に並べたこと——第2ソースがオプションからポリシーに昇格した瞬間だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            メモリと量産の層では、HBM4 の設計哲学の分岐が水曜の分析を厚くする。AMD 側の「広くて容量優先」と NVIDIA 側の「pin 速度・帯域密度優先」は、同じ HBM4 という商品名の下で<strong>全く違うサプライ契約と後工程負荷</strong>を生む。Hynix の ASP コメントが示した出荷タイミングのスリップは、Rubin 初期遅延とセットで読むと「需要消滅」ではなく「世代移行の位相ズレ」。full production に入った今、制約は再び配分と CoWoS／OSAT に戻る。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            そして水曜の最大の皮肉は、KLA のビート後下落・AMD／TSM／Micron の連鎖売りと、Amphenol の IT datacom 有機 +63%・book-to-bill 1.23 が<strong>同じ 24 時間に共存</strong>していることだ。前者はバリュエーションと金利・地政学の割引率の話。後者はラックの中に銅と光と電力コネクタをまだ詰め込んでいる話。K3 の 1-bit 量子化は、そのあいだで「ホスト BOM の下限」を書き換え——フルウェイトの TB 級需要を消しはしないが、品質帯ごとの bits 配分を変える。2026 年夏のハードウェア評価は、ピーク型番の発表頻度より、<strong>二重ソースの契約深度・HBM4 ビット成長の帰属・接続／電力の出荷シグナル・量子化後の serving 階層</strong>を一枚で読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜「Rubin を 10 倍ください」。火曜「で、枠とサイトは？」。水曜「Helios も Rubin も、Azure は両方先に立てます」——と Satya が言い切った同じ日に、板は「AI やりすぎでしょ」と半導体を売った。2026 年夏の三段落ち、完成度が高すぎる。需要が消えたんじゃなくて、株式が先に疲れただけ、という読みが Amphenol の book-to-bill 1.23 からにじみ出る。接続部品が「まだ足りない」と言ってるのに、装置株と GPU 株だけが「もう十分」と叫ぶのは、同じ映画の別のスクリーンを見てる感じ。1-bit で 594GB になった K3 は「Mac でも動く！」と盛り上がる一方、フル精度のフロンティアはまだ HBM と液冷と 800V を食う。無料なのは量子化ウェイトで、ラックと変圧器は有料——この公理は水曜も揺るがなかった。板のストーリーと現場の配線を混ぜないこと。それが 7/29 のハードウェア読解の第一ルールだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">二重ラック公式化・板の過剰論・接続の加速——水曜の二層構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月29日現在の AI Hardware 分野は、(1) Nadella による Azure 上の Helios＋Vera Rubin next-gen rack-scale 先行導入の公式並記、(2) HBM4 の wide-slow（AMD／Samsung）対 high-pin（NVIDIA／Hynix 系）設計分岐と出荷タイミング消化、(3) KLA FY26 Q4 ビート後の板下落（装置需要ストーリーとバリュエーションの乖離）、(4) AMD／TSM／Micron 連鎖売りに象徴される「AI 過剰投資」再採点、(5) Amphenol IT datacom 有機 +63%・B/B 1.23 が示す接続・電力・液冷の実需加速、(6) Vera Rubin NVL72 の主要クラウド／neocloud 稼働報告と Helios 出荷カレンダー、(7) K3 1-bit 量子化による serving BOM の階層化、(8) 800VDC・グリッド接続 36–48 ヶ月制約の継続、が重なっている。月曜の握手・火曜の枠検査に続き、水曜は hyperscaler の口頭追認と株式の逆方向値付けが同時に走る一日。2026 年後半の評価軸は、ピーク FLOPS より、二重ソース契約・HBM4 帰属・接続／電力シグナル・量子化後ホスト階層を同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cloud"></i>
+            <span>Hyperscaler / Azure 調達視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Helios と Rubin を同じ文で言ったのはマーケティングではない。rack-scale の供給と価格交渉力を二本にする宣言だ。顧客はベンダー忠誠ではなく、容量と TCO のレバーを買う。水曜の公式化は、火曜のカタログを CEO が追認しただけ——だが契約書の重みが違う。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリ設計視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「同じ HBM4 でも『スタックを増やして容量』と『pin を上げて帯域』は別物だ。出荷スリップは需要消滅ではなく世代移行の位相。full production に入った今、誰がどのビット成長を取るかが H2 の本当の配分戦争になる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>半導体装置 / KLA 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「売上と EPS は AI インフラのプロセス制御需要を裏付けた。板が売ったのはガイダンスと割引率——foundry／memory／advanced packaging の成長ベクトル自体が消えたわけではない。装置のスーパーサイクルと株式のスーパーサイクルは、しばしば位相がずれる。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-plug"></i>
+            <span>接続・電力インフラ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「IT datacom が有機で六割伸び、book-to-bill が 1.2 を超えている。銅も光も電力も『もっと』が現状だ。チップ株の見出しと、ラック内のコネクタ出荷は別のタイムラインを走っている。減速論を語るなら、まず接続の受注残を説明してほしい。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>クラウドホスト / 量子化視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「1-bit で 594GB になったからといって TB 級フルウェイト需要が消えるわけではない。品質帯ごとに SKU が増えるだけだ。ホストの勝負は tokens/s と $/1M tokens と隔離——ビット幅はメニューの列が増えたにすぎない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / 水曜採点視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「水曜の宿題は『AI が終わったか』ではない。二重ラック契約の深さ、HBM4 の帰属、Amphenol 型の出荷シグナル、量子化後の serving 階層、グリッド接続のリード——この五枚を一枚の絵にする。板の物語と現場の配線を混ぜた瞬間に、読みが壊れる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-29 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（Nadella Helios＋Vera Rubin rack-scale、HBM4 wide-slow vs high-pin、KLA ビート後下落、AMD/TSM/MU 連鎖売り、Amphenol IT datacom read-through、NVL72 稼働、K3 1-bit ホスト BOM、800VDC/液冷）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-29', 'color:#10b981');
+  </script>
+</body>
+</html>
