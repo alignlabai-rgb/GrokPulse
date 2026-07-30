@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-30 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-30 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">パッケージング戦争が表舞台へ——TSMC が EMIB 対抗の<br>シリコンブリッジ開発、CoWoS の外で次のボトルネックを奪い合う木曜</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月30日（木）。The Information 経由で拡散した報道の核心は、<strong>TSMC が基板メーカー Kinsus と組み、Intel EMIB に対抗するシリコンブリッジ型パッケージング</strong>を開発中であることだ。目的は二つ——大型 multi-die AI チップのスケールと、逼迫する <strong>CoWoS 以外の出口</strong>。NVIDIA は将来の 4-GPU 構成で Intel EMIB を評価中、Google は 2028 年向けに 300 万個超のカスタム AI プロセッサを Intel パッケージに発注したとの読みが並ぶ。同じ木曜、Samsung は HBM4 が Q3 で前四半期比 3 倍超・下半期 HBM 売上の 60% 超を見込むと語り、Meta は CapEx $125–145B 帯と Meta Compute 外販をハードウェア需要の「請求書側」で再確認した。一方で韓国メモリ株は過去最悪級の月間崩壊の余波にあり、米国板は MSFT 主導で半導体が反発——<strong>現場はパッケージと HBM を奪い合い、株式は国ごとに別の映画を再生している</strong>一日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 TSMC VS EMIB</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TSMC が EMIB 対抗シリコンブリッジ<br>——CoWoS 以外の出口を自ら掘る</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information：TSMC は Kinsus とシリコンブリッジ技術を共同開発し、大型 multi-die AI と CoWoS 容量制約の両方に備える。初期段階で商用時期は未定——だがメッセージは明確で、<strong>パッケージングが次の主戦場であり、foundry 王者も Intel の顧客関係深化を警戒している</strong>。木曜の論点は「TSMC が遅い」ではなく、「CoWoS 単一依存が顧客に第2ソースを強制している」ことだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>TSMC EMIB 対抗パッケージ・The Information（7/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 INTEL PACKAGING WEDGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA 4-GPU と Google 300 万個——<br>EMIB が「逃げ道」から「選択肢」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">流通分析：NVIDIA は 4 基 GPU をまとめる将来プロセッサで EMIB を評価、Google は 2028 向け 300 万個超のカスタム AI を Intel パッケージに寄せるとの報告。MediaTek など dual-packaging 支持の流れと合わせ、Intel Foundry の楔は<strong>ウエハ奪取ではなく後工程の顧客接点</strong>。パッケージを握ると、次世代のロジック受注会話に入れる——TSMC が警戒する本当の理由はそこだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Intel EMIB 顧客接点・NVIDIA/Google 評価（7/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 SAMSUNG HBM4 RAMP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29-30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM4 売上 Q3 で 3 倍超——下半期は<br>HBM 売上の 60% 超を HBM4 が占める</div>
+          <div class="mt-4 text-sm text-zinc-400">Samsung Q2 コール消化：HBM4 の顧客認定は順調、1c キャパと歩留まり改善で供給拡大。Q3 HBM4 売上は前四半期比 3 倍超、下半期は HBM 売上の 60% 超を HBM4 が占める見通し。業界初の HBM4E サンプルも主要顧客へ。DS 部門の記録的利益の裏で、木曜の市場は「数字の強さ」と「株価の弱さ」を同時に処理している——<strong>供給逼迫は消えていない、割引率だけが動いた</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>Samsung HBM4 ランプ・HBM4E サンプル（7/29-30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 META CAPEX HARDWARE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Meta $125–145B と Compute 外販——<br>「過剰」ではなく「売れる容量」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">AI 側の 01 ダイジェストと連動：Meta は 2026 CapEx を $125–145B 帯で維持・再確認し、Meta Compute を外販線として正式化。ハードウェア屋への含意は単純で、<strong>GPU／ラック／HBM／電力の発注カレンダーは「内製訓練」だけでなく「第三者向けトークン」</strong>まで拡張された。Nadella の二重ラック（Helios＋Vera Rubin）と並ぶと、hyperscaler の需要は板の過剰論と逆方向に積み上がっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Meta CapEx・Meta Compute 外販のハード含意（7/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 KOREA CRASH / US BOUNCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">KOSPI メモリ崩壊の余波 vs<br>Nasdaq 半導体反発——二層の値付け</div>
+          <div class="mt-4 text-sm text-zinc-400">韓国側：Samsung・SK Hynix 急落、Kioxia も深押し、個人投資家の含み損が構造問題化。米国側：水曜の半導体売りからの戻りで Nasdaq 約 +2%、MSFT がセミを押し上げ。同じ AI インフラ物語が、<strong>ソウルではバリュエーション清算、ニューヨークでは CapEx 未削減の追認</strong>として読まれる。現場の HBM4 ランプとパッケージ奪い合いは、どちらのスクリーンとも完全には一致しない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>韓国メモリ急落・米半導体反発の二層構造（7/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 KIOXIA CM10 DLC</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">PCIe 6.0・直接液冷・最大 61TB——<br>AI の「コンテキストキャッシュ」戦争</div>
+          <div class="mt-4 text-sm text-zinc-400">キオクシア CM10：第10世代 BiCS FLASH（332 層）、PCIe 6.0、シーケンシャルリード約 +92%／ランダム約 +85%（前世代比）、容量 1.6–61.44TB。NVIDIA CMX アーキテクチャ対応とコールドプレート直接液冷（DLC）がポイント——GPU の熱暴走の横で、<strong>数百万トークン級のコンテキストをフラッシュ側に逃がす</strong>需要を正面から取る。FMS（サンタクララ）お披露目前のサンプル出荷段階。ストレージが AI ラックの「第3のメモリ階層」として再定義されている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hdd"></i>
+            <span>Kioxia CM10・PCIe 6.0／DLC／コンテキストキャッシュ（7/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 ACTIVE PARAMS BOM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">118B／8B active が単一 DGX Spark——<br>ホスト BOM の下限がまた下がる</div>
+          <div class="mt-4 text-sm text-zinc-400">Poolside Laguna S 2.1 が単一 DGX Spark で稼働、DeepSeek 1.6T 級をコーディングで逆転との主張。水曜の K3 1-bit（594GB）に続き、木曜は<strong>活性パラメータと量子化が「必要な HBM 枚数」を再計算させる</strong>日。フルウェイトの TB 級ラック需要は消えない——だが企業 RFP の列は「総パラメータ」から「active params・$/完走・単機ホスト可否」へ移る。CoWoS 枠の争奪は品質帯ごとに分岐する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-compress"></i>
+            <span>Laguna／DGX Spark・活性パラメータと serving BOM（7/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 DUAL RACK + NVDA DATE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29-30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Helios＋Rubin は消えない——<br>次の採点日は 8/26 NVIDIA 決算</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の Nadella 二重ラック公式化（AMD Helios と NVIDIA Vera Rubin 並記）は木曜も消化中。NVL72 稼働報告と Helios 出荷カレンダーは「紙の仕様」段階を既に通過。NVIDIA は FY2027 Q2 決算コールを <strong>8月26日 14:00 PT</strong> と告知——スーパー財報週の次の本丸だ。木曜の宿題は新チップ発表ではなく、<strong>パッケージ第2ソース・HBM4 ビット帰属・外販容量・8/26 までの需給物語</strong>を一枚で読むこと。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar"></i>
+            <span>二重ラック継続・NVIDIA 8/26 決算日程（7/29-30）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月30日、AI Hardware の中心テーマは「<strong>パッケージングが表舞台に出て、メモリは数字で勝ち板で負け、hyperscaler はまだ積む</strong>」だ。07-29 が Nadella の二重ラック公式化と「板は過剰論・現場は接続加速」の二層構造だったなら、07-30 はその構造の<strong>製造側の核心</strong>——後工程——が The Information 経由で可視化された日である。TSMC が Kinsus と EMIB 対抗のシリコンブリッジを開発中という報道は、技術自慢というより<strong>顧客流出防止の防衛線</strong>に近い。CoWoS が足りないから顧客が Intel を見る。Intel を見ると関係が深まる。関係が深まると次のロジック会話が始まる——foundry 戦争の次の章は、ウエハではなくパッケージの顧客接点だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            メモリ層では Samsung の HBM4 ランプが木曜の実務カレンダーを厚くする。Q3 売上 3 倍超・下半期 HBM の 60% 超が HBM4、さらに HBM4E の初サンプル。水曜に語られた「wide-slow（容量優先）対 high-pin（帯域優先）」の設計分岐は、供給側の言語に翻訳され始めた。SK Hynix 側も 2027 年 HBM 価格・数量交渉が進行中と語り、HBM の「長期契約＋複雑さプレミアム」は消えていない。皮肉なのは、その同じ 24 時間に韓国メモリ株が歴史的な調整の余波で沈み、米国板は MSFT 主導で半導体が戻したことだ。<strong>供給逼迫と株式清算は両立する</strong>——水曜日の Amphenol book-to-bill 1.23 が示した「接続はまだ足りない」公理は、木曜も揺らいでいない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            需要側では Meta の CapEx 帯と Meta Compute 外販が、GPU／ラックを「内製のコスト」から「売れる容量」へ再定義する。Poolside の 118B／8B active が単一 DGX Spark で動く話と、K3 1-bit の 594GB は、ホスト BOM の下限を押し下げる——だがフルウェイトのフロンティアと agentic 本番は、依然として HBM4・液冷・800V 級配電・（そして今や）PCIe 6.0 フラッシュのコンテキストキャッシュを食う。キオクシア CM10 の直接液冷対応は、その「第3のメモリ階層」がラック設計の必須行になったサインだ。2026 年夏のハードウェア評価は、ピーク FLOPS の発表頻度より、<strong>パッケージ第2ソース・HBM4 ビット帰属・外販容量の発注・量子化後 serving 階層・8/26 NVIDIA 決算までの物語の一貫性</strong>を一枚で読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜「Rubin を 10 倍ください」。火曜「枠とサイトは？」。水曜「Helios も Rubin も Azure は両方先に立てます」——で板は AI やりすぎと売った。木曜の新作は「パッケージ足りないから TSMC が EMIB もどきを自分で作ります」だ。2026 年夏の四段落ち、完成度が上がりすぎている。需要が消えたんじゃなくて、ボトルネックの住所がウエハから後工程に引っ越しただけ、という読みが一番しっくりくる。韓国ではメモリの数字が過去最高級なのに株が沈み、米国では CapEx が減らないのに「過剰論」がまだ残響する。同じ映画の別スクリーン問題、水曜から解決していない。1-bit で Mac 級、8B active で DGX Spark 級——「安く動くレーン」は増えた。でも 2.8T フルや agent 本番のラックは、まだ HBM と液冷とコネクタと（今日から）61TB の水冷 SSD を食う。無料なのは量子化ウェイトで、シリコンブリッジと変圧器は有料——この公理は 7/30 も揺るがなかった。板の物語と現場の配線（と今度はパッケージ）を混ぜないこと。それが木曜のハードウェア読解の第一ルールだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">パッケージ第2ソース・HBM4 ランプ・二層の板——木曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月30日現在の AI Hardware 分野は、(1) TSMC による EMIB 対抗シリコンブリッジ（Kinsus 協業）開発報道と CoWoS 外出口の模索、(2) NVIDIA／Google が Intel パッケージを評価・発注する「顧客接点の楔」、(3) Samsung HBM4 の Q3 3 倍超ランプと HBM4E 初サンプル、(4) Meta CapEx $125–145B 帯と Meta Compute 外販が示す発注カレンダーの拡張、(5) 韓国メモリ株の歴史的調整余波と米半導体反発の二層値付け、(6) キオクシア CM10 の PCIe 6.0／DLC／大容量コンテキストキャッシュ、(7) 活性パラメータ・1-bit 量子化による serving BOM の階層化継続、(8) Helios＋Vera Rubin 二重ラックの消化と 8/26 NVIDIA 決算日程の確定、が重なっている。月曜の握手・火曜の枠検査・水曜の口頭追認に続き、木曜は後工程とメモリの「供給側カレンダー」が表に出た一日。2026 年後半の評価軸は、ピーク型番より、パッケージ第2ソース・HBM4 帰属・外販容量・量子化後ホスト階層・次の本丸決算までの一貫性を同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>Foundry / 後工程視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「シリコンブリッジは『Intel が怖い』の告白に近い。CoWoS が足りない限り顧客は第2ソースを探す。パッケージを握られると次のロジック会話に入られる——だから自分でも EMIB 系を用意する。商用時期より、顧客に見せる選択肢の幅が今の勝負だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリ供給視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBM4 が下半期の売上の主戦場になるのはスケジュール通りだ。3 倍ランプは需要消滅の反証。株が沈むのはバリュエーションとマクロの話——ウエハと TSV と顧客認定の現場は、まだ『足りない』側にいる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cloud"></i>
+            <span>Hyperscaler / CapEx 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「二重ラックと Meta Compute 外販は同じメッセージだ。容量は内製だけのために積まない。第三者に売れるなら CapEx は資産に近づく。調達仕様はベンダー忠誠ではなく、供給・価格・パッケージのレバーで書く。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-hdd"></i>
+            <span>ストレージ / ラック設計視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「コンテキストが百万トークンを超えると、HBM だけでは足りない。PCIe 6.0 と直接液冷のエンタープライズ SSD は『遅いディスク』ではなく第3のメモリ階層だ。GPU の横で水を流すのは贅沢ではなく、熱と帯域の必須条件になっている。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-compress"></i>
+            <span>クラウドホスト / 量子化視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「8B active が DGX Spark で動くからといって TB 級フルウェイトが消えるわけではない。SKU が増えるだけだ。ホストの勝負は tokens/s と $/1M と隔離——ビット幅と活性パラメータはメニューの列が増えたにすぎない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / 木曜採点視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「木曜の宿題は『AI が終わったか』ではない。TSMC のパッケージ防衛、Intel の顧客楔、HBM4 ビット成長の帰属、Meta 外販の発注、韓国と米国の板のズレ、8/26 までの需給物語——この六枚を一枚の絵にする。板と現場と後工程を混ぜた瞬間に、読みが壊れる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-30 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（TSMC EMIB対抗シリコンブリッジ、Intelパッケージ顧客接点、Samsung HBM4ランプ、Meta CapEx/Compute、韓国メモリ急落vs米半導体反発、Kioxia CM10 DLC、活性パラメータ/DGX Spark BOM、二重ラック・NVIDIA 8/26）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-30', 'color:#10b981');
+  </script>
+</body>
+</html>
