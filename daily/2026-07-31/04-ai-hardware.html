@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-07-31 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-07-31 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">メモリが一日で物語を反転——KOSPI 史上級リバウンド、<br>HBM が「ボトルネック」として再値付けされた金曜</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年7月31日（金）。木曜は韓国メモリが歴史的調整の余波で沈み、米国板だけが CapEx 未削減を追認する<strong>二層の値付け</strong>だった。金曜はそのソウル側が暴力的に反転する——X 上で拡散した数字では <strong>KOSPI が約 +15〜18%、SK Hynix 約 +29〜30%、Samsung 約 +26〜27%</strong>（いずれも 1990 年代末期以来の日次規模と報じられる）。トリガーは MSFT／AMZN など hyperscaler の AI 投資・需要自信の再確認と、グローバル半導体の連動買い。同じ 48h では TSMC の EMIB 対抗シリコンブリッジ報道と CoWoS 逼迫（NVIDIA が 2026 年枠の約 60% を確保との読み）が後工程の構造制約として残り、01／03 側の価格戦争・Flash 完走レーンは「安い推論」が serving 階層を増やす一方で、フロンティアと agent 本番の HBM／液冷需要を消さない。金曜のハードウェアは、<strong>板がメモリを再値付けし、現場はまだパッケージと HBM4 を奪い合っている</strong>一日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 KOREA MEMORY REVERSAL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">KOSPI 史上級リバウンド——Hynix／Samsung が<br>「清算の翌日」に最大級の日次騰落</div>
+          <div class="mt-4 text-sm text-zinc-400">週前半のメモリ崩壊の直後に、ソウル板が反転。Kobeissi Letter 経由で KOSPI 約 +15% が拡散し、後続報道では +17.9%、SK Hynix +29%、Samsung +26% と「1990 年代末以来」の規模が並ぶ。Barron's 系は<strong>極端なボラティリティの反射</strong>と警告しつつ、X の読みは一貫して「KOSPI＝HBM 供給チェーンの代理指標」。木曜の「数字は強いのに株が沈む」は、金曜に「株が跳ねても現場の HBM 不足は消えていない」へ裏返った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>KOSPI／SK Hynix／Samsung 史上級反転（7/31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 CAPEX RECONFIDENCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30-31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MSFT／AMZN が自信を返し——メモリは<br>hyperscaler CapEx の 30% 超帯へ</div>
+          <div class="mt-4 text-sm text-zinc-400">X 上の解釈：売りの4日後に Microsoft／Amazon が AI 需要自信を戻し、セミ全体（TSM 約 +10%、SOXX 約 +8%、Advantest 約 +16% など）が連動。論点は「AI が終わった」ではなく、<strong>メモリが hyperscaler 支出に占める比率が約 8%→30% 超へ跳ねた</strong>という構造再値付け。HBM／DRAM 価格と長期契約プレミアムを見よ——指数の日次％より、ビット単価と枠の帰属が現場の採点軸だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>Hyperscaler 自信再確認・メモリ CapEx 比重（7/30-31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 PACKAGE WAR DIGEST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30-31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TSMC シリコンブリッジ vs Intel EMIB——<br>後工程の防衛線は金曜も消化中</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜 The Information 系：TSMC が Kinsus と EMIB 対抗のシリコンブリッジを開発、大型 multi-die と CoWoS 逼迫の両方に備える。NVIDIA 4-GPU 構成での EMIB 評価、Google の 2028 向けカスタム AI の Intel パッケージ発注読みが並ぶ。金曜のメモリ狂騒は<strong>後工程の物語を上書きしない</strong>——foundry 戦争の次章は依然としてパッケージ顧客接点だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>TSMC EMIB 対抗・Intel パッケージ楔の消化（7/30-31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 COWOS 60% MOAT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA が CoWoS の約 6 割——Google が<br>TPU 目標を削った「枠の力学」が再共有</div>
+          <div class="mt-4 text-sm text-zinc-400">流通分析の再拡散：NVIDIA は 2025–26 にわたり TSMC CoWoS の過半（概ね 60% 前後）を確保、Blackwell／Rubin 世代向け。Google は 2026 AI アクセラレータ出荷目標を 400 万→300 万に削った主因が需要減ではなく <strong>CoWoS 枠の取り合い</strong>だった、という読みが再び X に載る。TSMC は月末換算で CoWoS を急拡大中でも需要が先行——ウエハがあってもパッケージが無い、という公理は金曜も健在。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>CoWoS 割当・NVIDIA モート／Google 目標修正の再議論（7/31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 HBM4 RAMP VS TAPE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/29-31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM4 は Q3 3 倍超ランプのまま——<br>板だけが一週間で二回映画を変えた</div>
+          <div class="mt-4 text-sm text-zinc-400">Samsung コール消化分：HBM4 売上 Q3 前四半期比 3 倍超、下半期 HBM の 60% 超が HBM4、HBM4E 初サンプル。SK Hynix は NVIDIA 向け HBM の主戦場（約 50% 市場シェアの読み）で 2027 年価格・数量交渉も進行。現場カレンダーは<strong>逼迫側</strong>にあり、週前半の株安も金曜の株高も「ビットが足りない」事実を書き換えない。割引率とレバレッジ個人が動いただけ——HBM4 の顧客認定と歩留まりは別スクリーンだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>Samsung HBM4 ランプ vs 週次株価二転（7/29-31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 PRICE WAR → BOM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Luna −80%・V4-Flash 完走——安いレーンは増えるが<br>フロンティアの HBM 請求書は残る</div>
+          <div class="mt-4 text-sm text-zinc-400">01／03 連動：OpenAI Luna 大幅値下げ、DeepSeek V4-Flash の agent ベンチ、1-bit／8B active の単機ホスト論は serving BOM の下限を押し下げる。だが agent 本番・長コンテキスト・フルウェイト訓練は依然 HBM4・CoWoS・液冷・（木曜の）PCIe 6.0 フラッシュ階層を食う。<strong>トークン単価が下がるほど、推論回数が増えてラック需要が残る</strong>——価格戦争は「GPU 不要」ではなく「SKU 分岐」だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tags"></i>
+            <span>価格戦争・Flash／量子化のハード含意（7/31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 US SEMI WHIPSAW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">朝の SOX 急騰→一部逆転——米国板も<br>「一日二回」の値付けに巻き込まれた</div>
+          <div class="mt-4 text-sm text-zinc-400">Philadelphia Semiconductor Index が朝に約 +5% 付近まで上げた後、マイナス圏へ反転する動きが報じられ、SNDK・MU などが押し戻される局面も。韓国の歴史的リバウンドと米国の日内ウィップソーが同時進行——<strong>同じ AI インフラ物語が、タイムゾーンごとに別の終値を持つ</strong>。現場の CoWoS／HBM カレンダーは、どちらの終値とも完全には一致しない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-exchange-alt"></i>
+            <span>SOX 朝高後押し戻し・米韓二層の継続（7/31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 NEXT SCORE 8/26</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Helios＋Rubin は消えず——次の本丸は<br>8/26 NVIDIA 決算までの需給物語</div>
+          <div class="mt-4 text-sm text-zinc-400">Nadella の二重ラック（AMD Helios と NVIDIA Vera Rubin 並記）と Meta CapEx $125–145B／Compute 外販は木曜までの消化が続く。NVIDIA FY2027 Q2 は <strong>8月26日 14:00 PT</strong>。金曜の宿題は新チップ発表ではなく、<strong>メモリ再値付け・パッケージ第2ソース・CoWoS 60% モート・価格戦争後の serving 階層・8/26 までの一貫性</strong>を一枚で読むことだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar"></i>
+            <span>二重ラック継続・NVIDIA 8/26 決算日程（7/31）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年7月31日、AI Hardware の中心テーマは「<strong>メモリが板の上で物語を反転させ、後工程と HBM の現場カレンダーは変わらない</strong>」だ。07-30 が TSMC の EMIB 対抗シリコンブリッジ、Samsung HBM4 ランプ、韓国崩壊 vs 米反発の二層構造だったなら、07-31 はその二層のうち<strong>ソウル側が一日で裏返る</strong>日である。KOSPI が約 15〜18%、SK Hynix が約 30%、Samsung が約 26%——数字の精度はソースごとに揺れるが、X の合意は「メモリが AI の本当のボトルネックとして再値付けされた」ことだ。hyperscaler CapEx に占めるメモリ比重が数年で一桁％台から 30% 超へ移った、という読みは、株価の日次％より重要な構造話である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            製造側の公理は木曜から続いている。CoWoS は売切れに近く、NVIDIA が枠の過半（約 60%）を握るとの分析が再共有され、Google の TPU 出荷目標切り下げが「需要ではなく枠」だったというストーリーもまた浮上する。TSMC が Kinsus とシリコンブリッジを掘るのは技術自慢ではなく顧客流出防止——パッケージを握られると次のロジック会話に入られる。Samsung の HBM4 は Q3 で 3 倍超、下半期 HBM 売上の主戦場になるスケジュール通り。現場は「足りない」、板だけが一週間で清算→歴史的リバウンドと二回転した。米国 SOX も朝高後に一部押し戻され、タイムゾーンごとに別の終値を持つ状態は解消していない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            ソフトウェア側の価格戦争はハードウェアを「不要」にしない。Luna の 80% 値下げと V4-Flash の agent 完走、1-bit／低 active パラメータの単機ホストは serving 階層を増やす——安いレーンが増えるほど推論回数が増え、フロンティアと長コンテキストと agent 艦隊は依然 HBM4・液冷・CoWoS・コンテキストキャッシュ SSD を食う。Meta の外販容量と Azure の Helios＋Rubin 二重ラックは、CapEx が「内製コスト」から「売れるトークン容量」へ再定義されているサインだ。2026 年夏の評価軸は、ピーク FLOPS の発表頻度より、<strong>メモリ再値付けの持続性・パッケージ第2ソース・CoWoS 割当・価格戦争後の BOM 階層・8/26 NVIDIA 決算までの物語の一貫性</strong>を同時に読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜「Rubin を 10 倍ください」。火曜「枠とサイトは？」。水曜「Helios も Rubin も両方立てます」——板はやりすぎと売った。木曜「パッケージ足りないから TSMC が EMIB もどきを自作」。金曜の新作は「メモリ株が一日で 1990 年代級の上げ」。週次で脚本家が変わっているのに、現場の台本は同じだ——HBM 足りない、CoWoS 足りない、電力と液冷は有料。ソウルが沈んでも跳ねても、TSV とシリコンブリッジの歩留まりは感情では動かない。一方で Luna が 80% 安くなって Flash が agent ベンチを抜くと、「じゃあ GPU いらない？」と言う人が必ず出る。答えは「いらないレーンが増えた。でも 2.8T と agent 本番と百万トークンのキャッシュは、まだ水冷ラックを食う」。無料なのはナラティブで、HBM4 と CoWoS 枠は有料——この公理は 7/31 も揺るがなかった。板の物語と現場の配線を混ぜないこと。それが金曜のハードウェア読解の第一ルールだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">メモリ再値付け・CoWoS モート・価格戦争後の BOM——金曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年7月31日現在の AI Hardware 分野は、(1) 韓国メモリ株の史上級リバウンド（KOSPI／SK Hynix／Samsung）による「HBM ボトルネック」再値付け、(2) MSFT／AMZN 等の AI 投資自信再確認とグローバルセミ連動買い、(3) 木曜の TSMC シリコンブリッジ vs Intel EMIB パッケージ戦争の消化継続、(4) NVIDIA による CoWoS 約 60% 割当と Google 目標修正ストーリーの再共有、(5) Samsung HBM4 の Q3 3 倍超ランプと板の週次二転の乖離、(6) OpenAI／DeepSeek 価格・完走戦争が示す serving BOM 階層化（安いレーン増・フロンティア需要残存）、(7) 米国 SOX の日内ウィップソーと米韓二層値付けの継続、(8) Helios＋Vera Rubin 二重ラックと 8/26 NVIDIA 決算までの需給物語、が重なっている。月曜の握手から金曜のメモリ反転まで、板は毎日別の映画を再生するが、後工程と HBM の現場カレンダーは一貫して逼迫側。2026 年後半の評価軸は、ピーク型番より、メモリ再値付けの持続・パッケージ第2ソース・CoWoS 帰属・価格戦争後ホスト階層・次の本丸決算までの一貫性を同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリ供給視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「金曜の上げは需要消滅の反証というより、過剰清算の巻き戻しだ。HBM4 の顧客認定と 2027 年契約は止まっていない。指数が 15% 動いても、TSV と base die の歩留まりは同じ速度では動かない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>Foundry / 後工程視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「メモリが跳ねても CoWoS の行列は短くならない。シリコンブリッジは選択肢の幅を見せるための防衛線。NVIDIA が枠の過半を握る限り、他社は第2ソースと dual-packaging を探し続ける。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cloud"></i>
+            <span>Hyperscaler / CapEx 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「自信を戻したのは『まだ積む』というメッセージだ。メモリが CapEx の 30% 超になるなら、調達仕様は GPU 名より HBM ビットとパッケージ枠で書く。外販できる容量なら、CapEx はコストではなく在庫に近づく。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-tags"></i>
+            <span>クラウドホスト / 価格戦争視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Luna と Flash で中層が安くなるほど、完走回数は増える。安いレーン用の BOM と、フロンティア／agent 本番用の HBM ラックは別 SKU だ。tokens/$ が下がっても、ラック台数の合計が自動では消えない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>データセンター電力・冷却視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「株がメモリを再評価しても、変圧器と液冷のリードタイムは短くならない。agent 艦隊が安いトークンで回るほど、サイトの kW と水がボトルネックの住所になる。シリコンと電力を別チームで買う時代は終わりつつある。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / 金曜採点視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「金曜の宿題は『AI が復活したか』ではない。メモリ再値付けの持続性、CoWoS 60% モート、パッケージ第2ソース、価格戦争後の serving 階層、8/26 までの需給——この五枚を一枚の絵にする。板と現場と後工程を混ぜた瞬間に、読みが壊れる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-07-31 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（KOSPI／SK Hynix／Samsung 史上級リバウンド、MSFT・AMZN 自信再確認、CoWoS 60% モート、TSMC シリコンブリッジ消化、HBM4 ランプ vs 板、価格戦争の BOM 含意、SOX ウィップソー、8/26 NVDA）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-07-31', 'color:#10b981');
+  </script>
+</body>
+</html>
