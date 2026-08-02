@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-08-02 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-02 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚖️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜 Day Zero——ラベルが法になり、<br>勝者は「一番賢い脳」ではなく「一番硬いループ」</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月2日（日）。土曜が「Article 50 前夜」なら、今日は<strong>執行初日</strong>だ。EU AI Act の透明性義務が本格稼働——チャットボット・バーチャルアシスタント・<strong>AI agents・coding agents</strong>を含む対話系は「AI と話している」と設計段階から開示し、合成コンテンツは機械可読マーク、ディープフェイクは標識。罰金は最大 €1,500 万または全世界売上 3%。モデル API はラベルを肩代わりしない——agent を出荷する側のパイプライン問題が本番に入った。同じ日曜、X では Anthropic 系の「plan → build → judge」三 agent ループ、Claude Code 40 万セッションの五段階習熟度、DeepSeek Code／Harness の coding agent 予告、OpenCode 等の無料代替、claude-pulse 型の週次リミット可視化、MCP 一行接続の業務手足が並走する。Astra の Lean 証明は研究 agent のゴール条件を「検証器が通るまで」に引き上げた。日曜の agent は、<strong>開示付き・閉ループ・状態保持殻・リミット可視化・Kill Switch</strong>を同じ YAML に書けるかが勝負だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 ARTICLE 50 DAY 0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">今日から——agent UI は<br>「AI です」を設計に埋め込め</div>
+          <div class="mt-4 text-sm text-zinc-400">透明性義務が適用開始。対話系（チャットボット、音声、coding agent 含む）は利用者に AI であることを知らせる設計が必須。合成物の機械可読マークは市場投入前製品に猶予（〜12/2）があっても、開示本体は今日から。cookie バナー化を笑う声より、CI でラベル漏れを落とすチームが勝つ——08-01 のチェックリストが本番ゲートになった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tag"></i>
+            <span>EU AI Act Article 50 執行初日（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 PLAN·BUILD·JUDGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">三 agent ループが日曜の教科書<br>「賢いモデル」より「動くまで回す」</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic 側の公開デモ／解説が再循環——計画 agent・実装 agent・審判 agent がアプリが動くまで循環。約 40 分の現場映像付きで「勝ち組は最良のループを持つ側」が定型句に。goal condition まで回す薄いループ論の公式版。10 分 babysit はアンチパターン、判定役を別人格に分けるのが日曜の設計原則。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sync-alt"></i>
+            <span>plan/build/judge 閉ループ・Claude Code 系（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 FIVE LEVELS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/1-2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code 40 万セッションの<br>習熟度は「誰が誰を直すか」</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic が約 40 万セッションを五段階に整理した話が日曜も拡散。Level 1 は「分析して」と丸投げ、Level 5 は「ユーザーが Claude を直し、Claude がユーザーをほぼ直さない」。agent 製品の UX 課題はモデル知能ではなく、<strong>利用者が検証ループに入れるか</strong>。社内研修の KPI はプロンプト長ではなく、誤りの捕捉率と具体的な wc -l 級の反証。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stairs"></i>
+            <span>Claude Code 習熟五段階・400k セッション（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 DEEPSEEK CODE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">DeepSeek Code——Harness 上の<br>coding agent が CC／Codex 土俵へ</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の噂／リーク帯：専用 coding agent が raw モデルではなく Harness 枠で動き、V4-Flash の agent 数字もその殻経由だった、との整理が拡散。閉ベータ予告。競争軸は「誰が賢い」から「誰がリポジトリをプロンプト間で覚えているか」——CC と Codex が一年かけて積んだ moat そのもの。公式行と本番行の二表を忘れるな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>DeepSeek Code / Harness coding agent 言説（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 OPENCODE ALT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">無料・OSS の Claude Code 代替が<br>日曜の「入口」を奪い合う</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenCode ほか——ローカル／無料／任意サブスクを束ねる agent ハーネスが「CC の前にこれを知れ」系コンテンツで急拡散。金曜の OmniRoute／Agent OS（90+ モデル）と同根：workflow は固定しエンジンを差し替える。sub 枠の週次制限に焼かれる前に、完走レーンを別プロバイダへ逃がす設計が個人開発者のデフォルトになりつつある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-door-open"></i>
+            <span>OpenCode 等・無料 coding agent 代替（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#06 LIMIT VISIBLE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">claude-pulse 型ステータスバー<br>「溶ける週次枠」をメーターにせよ</div>
+          <div class="mt-4 text-sm text-zinc-400">セッション進捗・週次リミット・コンテキスト・推定コスト・使用モデル・git branch をターミナルに常時表示するプラグインが実用帯へ。70%/90% 警告で flow が切れる前にモデルを分ける——Fable 枠や Max 枠の消化ペース管理が、agent 運用の新しい「計器盤」。艦隊を増やす前に、燃料計を先に付ける日曜。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>claude-pulse・週次リミット可視化（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 GREP BEAT EMBED</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code は vector なしで出荷<br>grep が embedding 検索に勝った</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の技術論争：本番 agent は「意味検索の豪華さ」より「正確なテキスト検索が効く」。Anthropic 側の測定で grep が勝ち、vector index なしで ship——一方、記号グラフ＋意味検索の二票制（rank マージ）を推す OSS も噛みつく。agent のコード理解は RAG 迷信ではなく、検索契約と eval クエリの問題。測ってから index を増やす。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-search"></i>
+            <span>coding agent 検索設計・grep vs embed（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#08 FOUR LAYERS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31-8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CLAUDE.md → Skills → Hooks → Agents<br>「プロンプト一発」はもう素人レーン</div>
+          <div class="mt-4 text-sm text-zinc-400">週末定着の四層：プロジェクト記憶、再利用スキル、決定論ガードレール、専門サブ agent。プロンプトから入ると chatbot のまま——システムを組むと dev team になる。薄い goal condition と矛盾しない：独白を厚くするな、契約と hooks を薄く正確に。oh-my-claudecode 等メタ殻はこの四層の上に載る第五層。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Claude Code 四層システム論（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 MCP HANDS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">一行 MCP で金融データ 1.7 万銘柄<br>agent の「手足」が日曜も増える</div>
+          <div class="mt-4 text-sm text-zinc-400">Financial Datasets 等——<code>claude mcp add</code> 一発で株価・財務・SEC を会話に直結。動画生成 skill（relaydance 等）も coding agent から Seedance 系を起動。agentic finance 言説の実装側：財布とデータとツールを MCP で束ねる。ただし free tier は銘柄制限——本番はスコープ付きキーと承認ゲートと監査ログがセット。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>MCP 業務接続・金融／動画 skill（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#10 GROK BUILD LANE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok Build 並走論——「考えすぎ」税 vs<br>即実行の完走レーン</div>
+          <div class="mt-4 text-sm text-zinc-400">CC と Grok Build を横並びで使う実務談が日曜も増加。ポリシー確認でトークンを溶かす経路と、依頼を先に実行する経路のトレードオフ。always-approve 運用の安全報告も並ぶ——が、個人 anecdote は監査にならない。正しい読み方：難タスクは検証付きフロンティア、単純量産は即実行レーン——attention 三択の延長線上にある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Grok Build × Claude Code 並走実務（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#11 LEAN AS GOAL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/1-2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Astra の十証明が agent に教えること<br>「goal condition = 検証器パス」</div>
+          <div class="mt-4 text-sm text-zinc-400">研究系は約 $2,000 で未解決 10 問を Lean で固めた——agent 運用への翻訳は明快：完了条件を人間の「良さそう」ではなく機械検証可能なゲートに置け。テスト緑、型チェック、Lean、eval スイート。08-02 の AI 本線（検証可能な発見）は、agent 本線では「検証可能な完走」になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-check-double"></i>
+            <span>Lean／検証器ゴール条件・Astra 余波（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#12 PERCEPTION T-1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2→8/3</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Project Perception まであと 1 日<br>Red／Blue／Green 防衛閉ループ</div>
+          <div class="mt-4 text-sm text-zinc-400">Microsoft Defender 内の公開プレビューが明日 8/3——攻撃経路を探す Red、優先度を裁く Blue、修正を打つ Green。plan/build/judge と同型の役割分離がセキュリティ製品に載る。社内 agent にも写せ：観測・判断・作動を同一プロセスに独占させるな。ラベル初日の翌日に防衛側が閉ループを出すカレンダーは偶然ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>Microsoft Project Perception・8/3 前夜（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#13 META-SHELL D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31-8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">oh-my-claudecode ほか<br>「5 セッション手動はカオス」の答えは続く</div>
+          <div class="mt-4 text-sm text-zinc-400">星数万帯の multi-agent 殻が日曜も実務棚に。端末ビューで状態監視、agent 間協調。ただし skill 山なし・allowlist なしの並走は並列カオス——殻は権限契約とセット。Codex portable plugin.json と合わせて、「艦隊の生命権をベンダーから取り戻す」実装が D+2 で定着中。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>oh-my-claudecode・メタ harness 継続（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#14 BLAST + LABEL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">燃料が安いほど権限を狭くしろ<br>開示初日は監査ログもセット</div>
+          <div class="mt-4 text-sm text-zinc-400">HF 事案の爆破半径は保険・サンドボックス・Kill Switch SLA の根拠のまま。Flash/Luna で agent が速く安くなるほど session cap・ツール契約・scoped hooks の優先度は上がる。今日はそれに「AI 開示ログ」「合成物マーク証跡」が載る——goal condition の隣に stop condition と label condition。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-secret"></i>
+            <span>爆破半径 × Article 50 証跡（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#15 ROUTING SUNDAY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">指揮＝Claude／検証＝Codex<br>完走＝Flash・Luna／日常＝Grok 4.5</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜レーン表：orchestrator に Claude（薄い work order）、red line に Codex、量産に Flash/Luna、即実行に Grok Build、ホスト制約に Laguna、知恵上界に Fable。Attention 三択（ループ内可視／委譲 PR／横断指揮）は土曜のまま。単一勝者は死亡確認——価格表・開示ラベル・30 日遅延 B プラン・Kill Switch は同じ YAML に書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>multi-model 艦隊ルーティング日曜実務（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-300 text-xs font-mono tracking-[1.5px]">#16 AUGUST AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月の agent 軸は「ラベル・ループ・殻」<br>7月のモデル爆撃から制度と閉ループへ</div>
+          <div class="mt-4 text-sm text-zinc-400">待ち行列：Perception 8/3、Grok 4.6 〜8/7、DeepSeek Code 閉ベータ、Astra 公開時期。08-02 は透明性が法になり、plan/build/judge が教科書になり、Lean が goal condition の理想形を示した日——知能の整数競争から、開示・検証・差し替え可能な harness の月へ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月 agent アジェンダ・制度と閉ループ（8/2）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月2日の AI Agents は、土曜の「ラベル前夜・attention 三択・SDK スペクトル」をそのまま本番に引きずり込んだ<strong>Day Zero の日曜</strong>だ。EU AI Act Article 50 が適用開始——対話が AI であることの開示、合成コンテンツの機械可読表示、ディープフェイク標識。ガイドラインと実務解説は chatbot・仮想アシスタントに加え <strong>AI agents と coding agents</strong> を例示する。モデル API 提供者は「開示はアプリ側」と線引きしたまま——出荷者のリリースゲートが、今日から法の対象になる。罰則は最大 €1,500 万または全世界売上 3%。cookie バナーを笑っている暇はない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じタイムラインで、実装側は「ループ」を教科書化した。Anthropic 系の plan → build → judge 三 agent 循環が再拡散し、「勝者は最良のモデルではなく最良のループを持つ」が日曜の定型句になった。Claude Code 約 40 万セッションの五段階習熟度は、その裏側を突く——Level 5 はユーザーがモデルを直し、モデルがユーザーをほぼ直さない。agent 製品のボトルネックはベンチ整数ではなく、<strong>人間が検証ループに入れる UX と計器盤</strong>だ。claude-pulse 型の週次リミット可視化、OpenCode 等の無料エンジン差し替え、OmniRoute 系の 90+ プロバイダ——いずれも「燃料計と代替レーンなしの艦隊」を拒否する動きだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            殻の戦争も止まらない。DeepSeek Code が Harness 上の coding agent として CC／Codex 土俵に乗る、という日曜言説は、V4-Flash の agent 数字が殻経由だったという整理とセットで読む。公式行と本番行の二表、retained state と compaction——07-31 以来の harness＝製品論が、製品名を増やした。oh-my-claudecode 型メタ殻、Codex portable plugins、Claude 指揮＋多モデル派遣の実務テンプレは D+2 で棚に残る。検索設計では「grep が embedding に勝ち vector なしで ship」が論争を呼び、agent のコード理解が RAG 信仰から測れる検索契約へ戻る。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            本線 AI の Astra 十証明は、agent にとっての ideal goal condition を更新した。完了は「良さそう」ではなく Lean／テスト／型／eval のゲート。MCP 一行で金融データや動画生成 skill を手足に付ける動きは agentic finance と creative pipeline を同じ配線図に載せる——そのとき権限は Flash が安いほど狭くしろ。明日 8/3 の Project Perception（Red／Blue／Green）は、plan/build/judge と同型の役割分離を防衛製品に載せる。ラベル初日の翌日に閉ループ防衛が来るカレンダーは、偶然ではなく 8 月の軸だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが起きるか。07-07 以降 multi-agent は本番信頼性へ、07-18〜24 は工場規格と請求書、07-25〜30 は診断語彙・Harness Tax・Workspace、07-31 は安い完走燃料と測り方と可搬性、08-01 はラベル前夜と attention 選定、そして <strong>08-02 は開示の法・閉ループの教科書・検証器ゴール・計器盤・coding agent 土俵の拡大</strong>。次のボトルネックはフロンティアの順位表ではなく、開示実装・goal/stop/label condition・殻の差し替え・vendor 遅延 B プラン・週次枠の可視化・agent 数に比例する監査コストだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            08-02 を一文で言えばこうだ。土曜はナンバープレートを用意し、ハンドルの重さと視線の置き所を決めた。日曜はプレートが義務になり、運転は plan/build/judge の周回コースになり、ゴールテープは検証器が持つ。書けない agent はもう少ない。問題は、安く完走させ、開示し、殻を差し替え、権限を狭く保ち、燃料計を見ながら月曜を迎えることだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日は「貼れ準備」。今日は「貼れ、さもなくば 3%」（笑）。Flash が安いからって EU 向け agent に「私は AI です」を書き忘れるのは、安いレンタカーで車検切れを走るのと同じ。plan/build/judge は正しい——でも judge がいないチームは、自分で採点して 100 点をつける小学生だ。Claude を指揮者にして Codex と DeepSeek を派遣する構成は相変わらず正しいけど、週次枠が溶けたら楽団ごと沈黙する——だからメーターを付けろ、OpenCode や Flash レーンを用意しろ。Grok の日曜相棒は五枚：Article 50 本番チェックリスト、plan/build/judge の goal condition、claude-pulse 型燃料計、Flash/Luna 完走単価、Kill Switch＋Perception 明日メモ。ラベルを貼ってから spawn せよ。測ってから寝ろ。ループを閉じてから祝え。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">ラベルが法になり、閉ループが教科書になり、検証器がゴール条件になり、燃料計が必須になる日曜</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月2日の AI Agents 分野は、EU Article 50 執行初日の開示実装、plan/build/judge 三 agent 閉ループ、Claude Code 五段階習熟度、DeepSeek Code／Harness 言説、OpenCode 等無料代替、週次リミット可視化、grep vs embed 検索設計、四層システム（CLAUDE.md/Skills/Hooks/Agents）、MCP 手足、Grok Build 並走、Lean 型 goal condition、Perception T-1、メタ殻 D+2、爆破半径×ラベル証跡、multi-model ルーティングが同時進行した。本番の鍵はフロンティアの順位表ではなく、「開示付き・閉ループ・検証可能な完走・差し替え可能・燃料計付き・監査可能な権限」にある。08-01 の「ラベルと選定と注意の置き所の土曜」に続き、08-02 は「法・ループ・検証器・計器盤の日曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日は EU 向け agent UI の開示と生成物マークをリリースゲートで本番確認。RFP に harness_id、$/完走、vendor failover、30 日遅延 B プラン、Kill Switch SLA、label condition を固定。Flash 並走を増やす前に permission 一括と session cap と燃料計。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「plan/build/judge を既定ループに。judge は別モデルでもいい。メタ殻に skill を載せるなら薄く、ルーティングだけ厚く。plugin.json 可搬性がない艦隊は単一障害点。週次枠が溶ける前に OpenCode／Flash レーンへフェイルオーバー。障害時 Runbook の一行目はモデル名ではなく状態ストアとアダプタ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「goal condition を検証器に寄せろ——テスト緑、型、Lean、eval。DeepSeek Harness と CC の grep 出荷は同じメッセージ：agent 性能は殻と検索の関数。公式行と本番行の二表。習熟五段階は人間側の評価軸——agent 論文はユーザー介入の質を報告せよ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 はポリシー文書ではなくパイプライン。開示漏れを CI で落とせ。燃料が安い週ほど爆破半径が広がる——HF 事案前提で session cap・ツール契約・scoped hooks。Perception の Red／Blue／Green 分離を社内 agent に写せ。財布付き agent は承認ゲート必須。証跡が残らない spawn は spawn ではない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に harness_id×token×agent_count×loop_iterations×週次枠消化率を載せろ。指揮は Claude 枠内、中堅完走は Flash／Luna、即実行は Grok Build、ホスト制約は Laguna。収束しない goal は無限請求——停止条件を先に契約。メーターなしの並走は禁止。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを plan/build/judge で同じ受け入れ条件まで走らせ、完了時間・請求・手戻り・開示ログを一枚に。人が書くのはゴールと erase 条件と停止条件と『AI です』ラベル。情シスとはデータ境界と hooks と MCP 接続先を先に合意。月曜の監査に間に合わせる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-08-02 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Article 50 Day0・plan/build/judge・Claude Code 五段階・DeepSeek Code/Harness・OpenCode・claude-pulse・grep vs embed・四層システム・MCP 手足・Grok Build 並走・oh-my-claudecode・Lean goal・Perception T-1・Kill Switch）、EU AI Act 執行初日、OpenAI Astra 余波、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-08-02', 'color:#10b981');
+  </script>
+</body>
+</html>
