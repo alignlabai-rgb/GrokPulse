@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-02 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-02 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜——次世代 GPU の仕様が「供給」に書かれる日<br>Rubin Ultra の HBM が揺れ、制約の住所は後工程へ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月2日（日）。板は休みでも、X 上のハードウェア議論は<strong>「スペックは需要ではなく供給が書く」</strong>という公理に収束した。TrendForce（7/31）が NVIDIA の <strong>Rubin Ultra</strong> HBM 構成がいまだ流動的で、DRAM 逼迫下では HBM4e 8-hi など下位スペックを検討しうると報じ、Trade Whisperer 系の「構造的 DRAM 不足で計画より少ないメモリになるかも」読みが日曜に 20 万超 view 級で拡散。一方で R100 級は Blackwell Ultra と同じ 288GB でも、HBM4 のバス幅拡大で<strong>帯域は約 2.75 倍・ビット当たりのシリコン消費は増える</strong>——GB が同じでもウエハは足りない。並行して「足りないのは GPU ではなくパッケージとテスト」論が再合成され、CoWoS は 2026 年ほぼ満枠・新規リード 52–78 週、HBM 2026 供給は SK Hynix／Micron とも売り切れ、と整理される。Wistron テキサスが digital twin から GB300 量産へ移り Vera Rubin が次、という現場ニュースも並ぶ。01 の Astra が $2,000 で未解決問題を解く横で、04 の現実は<strong>計算は安くなっても、ラックを組む物理は高く・遅く・足りない</strong>。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 RUBIN ULTRA HBM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31-8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Rubin Ultra の HBM が流動的——<br>「性能目標」より「出荷台数」</div>
+          <div class="mt-4 text-sm text-zinc-400">TrendForce：NVIDIA は Rubin Ultra 向け HBM 構成をなお検討中。DRAM 供給の逼迫が、ピーク容量より<strong>I/O と出荷ボリュームを守る下位オプション（HBM4e 8-hi 含む）</strong>へ押し返す。最終仕様は 2H26 検証に紐づく。構造的不足と 2027 年までの値上げ継続見込みがセットで語られ、「次世代のカタログ数値」が供給現実に書き換えられる瞬間が日曜の主軸になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>TrendForce Rubin Ultra HBM 流動・下位スペック論（7/31–8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 DRAM DEFICIT NARRATIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「計画より少ないメモリ」が日曜バズ——<br>構造赤字の物語が再点火</div>
+          <div class="mt-4 text-sm text-zinc-400">@TradexWhisperer 系：「構造的 DRAM 不足で Rubin Ultra（2027）が計画より少ないメモリで出荷されうる」——日曜早朝から数時間で<strong>20 万 view 超・数百いいね</strong>級に到達。現場 IT からも「ノート PC ですらバックオーダー」との共鳴。噂の半焼け情報から「絵が固まりつつある」段階へ。週末に板がなくても、メモリ投資ナラティブは終値より物語の粘度で動く。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire"></i>
+            <span>構造的 DRAM 不足・Rubin Ultra メモリ削減論（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 HBM4 WAFER TAX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">288GB が同じでも足りない——<br>帯域 2.75× が食うシリコン</div>
+          <div class="mt-4 text-sm text-zinc-400">Rubin R100 級は Blackwell Ultra と同じ <strong>288GB HBM4</strong> でも、スタック当たりバス幅が倍近くになり帯域は約 <strong>2.75 倍</strong>。GB 表示がフラットでも、1GB あたりのウエハ消費は増える——2026 年逼迫の一因がここに落ちる、という整理が日曜に循環。ラックの「容量スペック表」だけでは、ファブの請求書は読めない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-expand-arrows-alt"></i>
+            <span>HBM4 帯域／ウエハ税・R100 288GB 論（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 PACKAGING NOT GPU</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">足りないのは GPU ではない——<br>CoWoS・後工程・テストの満枠</div>
+          <div class="mt-4 text-sm text-zinc-400">Semiconsight 系日曜整理：TSMC 株主総会（6月）で CoWoS は 2026 年ほぼフルブック、新規リード <strong>52–78 週</strong>。SK Hynix CFO・Micron CEO とも 2026 HBM は売り切れ、Samsung は 2027 需要の先行確保を示唆。パッケージ増強は 1–2 年——緩和時期は H1 2027 楽観と GS 系 2028 保守が並立。<strong>次章はファブではなく OSAT／後工程</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>CoWoS 満枠・後工程ボトルネック再合成（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 COWoS RAMP 2.31M</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CoWoS 出力 675K→1.275M→2.31M——<br>増えても「余裕」にはならない</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜に再共有：TSMC CoWoS 出力見通しが 2025 年 67.5 万枚 → 2026 年 127.5 万枚 → 2027 年 <strong>231 万枚</strong>（以前の 174 万枚見通しから上方）。数字は増える。だが需要曲線も一緒に上がる——「増産＝緩和」ではない。NVIDIA の枠取り（CoWoS 過半論）と dual-packaging／EMIB 評価は、このランプの内側で続いている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>CoWoS 出力ランプ上方修正の再共有（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 EMIB vs BRIDGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/31-8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">EMIB 歩留まり 98% 説——<br>TSMC が対抗ブリッジを掘る</div>
+          <div class="mt-4 text-sm text-zinc-400">週末〜日曜の日系・英語圏まとめ：Intel EMIB-T が 98% 級歩留まりで CoWoS に並ぶ、という読み。TSMC は Kinsus と EMIB 対抗のシリコンブリッジを開発。基板歩留まりは 50% 帯で動かない、という指摘も並び、<strong>ダイ間配線より基板が量産の鍵</strong>という二層構造。foundry 戦争の次章は依然パッケージ顧客接点——Google 2028 向け Intel パッケージ、NVIDIA multi-die 評価の文脈は消えていない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-project-diagram"></i>
+            <span>EMIB 98%／TSMC ブリッジ・基板歩留まり論（7/31–8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 WISTRON TEXAS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Wistron テキサス——digital twin から<br>GB300 量産、次は Vera Rubin</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA 側の言及として日曜循環：Wistron のテキサス工場は digital twin で立ち上げ、いま GB300 システムを生産中、次が Vera Rubin。AI CapEx ですら<strong>組立ライン前にドレスリハーサル</strong>が要る——シリコン不足だけでなく、システム統合・テスト・物流の工業力がボトルネックの一部だと示す現場ニュース。前工程の物語の隣に、後工程とシステム組立の物語が並ぶ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Wistron TX digital twin → GB300／Rubin（8/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 ASTRA $2K vs RACKS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">証明は $2,000、ラックは有料——<br>安い知能と高い物理の日曜対比</div>
+          <div class="mt-4 text-sm text-zinc-400">01 の Astra が未解決 10 問を約 $2,000 の compute で解いた話と、03 の agent 閉ループ本番は「推論回数が増える」側の話。04 側では HBM／CoWoS／液冷／光が構造赤字のまま。tokens/$ が下がるほど完走は増え、フロンティアと agent 艦隊の BOM は分岐するだけ——<strong>ソフトウェアが安くなるほど、ハードウェアの不足感は消えない</strong>。次の本丸は 8/26 NVIDIA 決算までの需給一貫性。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>Astra 安価証明 vs HBM/CoWoS 構造赤字・8/26 前（8/2）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月2日、AI Hardware の中心テーマは「<strong>次世代 GPU の仕様を書くのはマーケティング資料ではなく、DRAM と後工程の在庫表である</strong>」だ。金曜の韓国メモリ再値付け、土曜の後工程・CHIPS $874M 消化を経て、日曜は TrendForce の Rubin Ultra HBM 流動報道と「構造的 DRAM 不足で計画より少ないメモリ」ナラティブが X で合流した。下位スタックを選ぶ動機は性能放棄ではなく、<strong>I/O と出荷台数を守るための供給適応</strong>——ピーク GB を削ってでも、ラックが届かないよりマシ、という現実主義が表に出た。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ日曜、「足りないのは GPU ではなくパッケージ」論が定量で再合成される。CoWoS は 2026 年ほぼ満枠、新規は 52–78 週、HBM 2026 は売り切れ——緩和は H1 2027 楽観と 2028 保守が並立し、合意は「すぐには解けない」だけ。CoWoS 出力が 2027 年 231 万枚へ上方修正されても、需要も一緒に上がるので「余裕」は生まれにくい。EMIB 98% 歩留まり説と TSMC 対抗ブリッジは、顧客接点の多極化を示し、基板歩留まり 50% 帯の指摘は「ダイが良くても板がダメなら量産できない」という地味な真理を再確認させる。Wistron テキサスが digital twin から GB300 量産へ移った話は、シリコン以外——組立・テスト・物流——も AI CapEx の拘束条件であることを示す。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            皮肉は 01／03 との対比にある。Astra の $2,000 証明と agent の plan→build→judge は、トークン単価とループ設計の勝利だ。だがループが増えるほど HBM4 の帯域税、CoWoS 枠、液冷、光モジュールが食われる。HBM4 は同じ 288GB でも HBM3E よりウエハを食う——スペック表の GB がフラットでも、ファブの請求書は膨らむ。CHIPS R&amp;D $874M（光・新メモリ・後工程・基板）は、政策がまさにこの「痛い層」に追いついたサインとして週末から続いている。2026 年夏の評価軸は、型番のピーク FLOPS より、<strong>Rubin Ultra の HBM 適応・後工程満枠の持続・帯域税・パッケージ戦争・システム組立・8/26 までの一貫性</strong>を一枚で読めるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">日曜の名言候補：「次の GPU は何 GB？」——答え「供給が決める」。マーケ資料に 1TB と書いてあっても、DRAM が足りなければ 8-hi で出荷して「帯域は確保しました」と言う世界線が、いきなりリアルに見える。同じ 288GB でも HBM4 の方がウエハを食う、という話は最高に 2026 年らしい——スペック表は同じなのに、請求書だけ太る。一方で OpenAI は $2,000 で未解決問題を解いてる。数学は安くなって、メモリは高い。agent は安く回るほど、ラックは高くなる。Wistron が digital twin で工場をリハーサルしてから本物を回すのも味がある——AI が工場を真似して、工場が AI ラックを作る。板は休みでも、配線と噂は休まない。無料なのは週末のナラティブで、CoWoS 枠と HBM4 は有料——この公理は 8/2 も揺るがなかった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Rubin Ultra の供給適応・後工程満枠・帯域税——日曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月2日現在の AI Hardware 分野は、(1) TrendForce に基づく Rubin Ultra HBM 構成の流動性と下位スペック検討、(2) 構造的 DRAM 不足で計画より少ないメモリ出荷になりうる、という日曜バズ、(3) HBM4 が同容量でも帯域・ウエハ消費を増やす「帯域税」、(4) CoWoS／後工程・テストが真の拘束で 2026 年満枠・リード 52–78 週、(5) CoWoS 出力ランプ上方修正でも需要追随で緩和しにくい構図、(6) Intel EMIB 高歩留まり説と TSMC 対抗ブリッジ・基板歩留まり問題、(7) Wistron テキサス digital twin→GB300 量産・次 Vera Rubin、(8) Astra／agent 側の安価 compute と HBM／CoWoS 構造赤字の対比と 8/26 NVIDIA 決算までの需給物語、が重なっている。板が閉じていても、次世代仕様と後工程カレンダーは動いている。2026 年後半の評価軸は、ピーク型番より、供給が書く仕様・後工程満枠・帯域税・パッケージ接点・システム組立・次の本丸決算までの一貫性を同時に読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリ供給視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「下位スタックは敗北宣言ではない。出荷台数と I/O を守るための適応だ。2026 年分は売り切れ、2027 の先行確保が始まっているなら、カタログのピーク GB より契約のビット総量が本音だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>Foundry / 後工程視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoWoS が満枠で 52–78 週なら、ウエハを増やしてもパッケージ口が開かない。EMIB とシリコンブリッジは選択肢の保険。基板歩留まりが 50% 帯なら、そこが量産の本当のゲートだ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>GPU アーキテクチャ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「同じ 288GB でも HBM4 の帯域は別物だ。ただしバスが広いほどシリコンを食う。スペック表の GB を見て『不足は終わった』と言うのは、請求書を見ていない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-tags"></i>
+            <span>クラウド / 推論コスト視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Astra が $2,000 で証明を出すほど、tokens/$ の感覚は狂う。でも agent ループが増えればラック需要は残る。安いレーンとフロンティア BOM は別 SKU——価格戦争は GPU 不要論ではない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cogs"></i>
+            <span>システム組立 / ODM 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「digital twin で工場を先に回すのは贅沢ではなく必須だ。GB300 から Vera Rubin へ移るとき、シリコン以外——ケーブル・冷却・テスト手順——が日程を決める。工場がボトルネックになる日はもう来ている。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>半導体投資家 / 日曜採点視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「日曜の宿題は『次の型番は何か』ではない。Rubin Ultra の HBM 適応、後工程満枠、帯域税、EMIB／ブリッジ、システム組立、8/26 までの需給——この六枚を混ぜずに一枚にする。板が休みでも、混ぜた瞬間に読みは壊れる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-02 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（Rubin Ultra HBM 流動・構造的 DRAM 不足バズ、HBM4 帯域税、CoWoS 満枠・後工程、EMIB／ブリッジ、Wistron TX、Astra vs ラック、8/26 NVDA）、TrendForce 7/31、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-02', 'color:#10b981');
+  </script>
+</body>
+</html>
