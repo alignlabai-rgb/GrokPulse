@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-04 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-04 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜——Helios 初報の夜と「割当経済」の定着<br>HBM は 60–70%、CoWoS は 52–78 週、電力は第三の請求書</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月4日（火）。月曜が「容量がトポロジを書く」日なら、火曜は<strong>その容量と後工程と電子を、契約でどう割るか</strong>が本丸になる。夜は AMD の Q2 決算——Helios（MI455X + EPYC Venice + Pensando）量産後の初の本格報告で、市場は収益の $11.2B 枠より Data Center 成長率・粗利率・CoWoS 確保・Meta 1GW／Anthropic 2GW のスケジュール言語を読む。並行して X 上ではメモリ割当論が再燃：三大メーカーは 2026–27 容量ほぼ売切れ、依頼量の 60–70% しか届かない「allocation story」、DRAM 逼迫は 2028 までという読み。CoWoS はリードタイム 52–78 週、NVIDIA が 70% 超を食う。Caterpillar が AI データセンター需要で四半期売上過去最高、On Semi は AI DC 売上の倍増見通し——<strong>チップの次に建機と電源が語られる火曜</strong>だ。01／02 の Qwen3.8-Max 流通拡大は推論トークンを増やす側。安い旗艦が広がるほど、割当表の行は太る。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 AMD HELIOS NIGHT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Q2 決算の夜——Helios 量産後<br>初の「執行チェック」</div>
+          <div class="mt-4 text-sm text-zinc-400">AMD は市場クローズ後に Q2 を公表。経営側は売上 ~$11.2B（+46% YoY ガイド帯）を既に枠取り済み。火曜の本物の論点は<strong>数値そのものより言語</strong>：Data Center 成長の加速／減速、粗利率が mid-50s を維持できるか（Helios 立ち上がりの GPU ミックス圧）、MI450／Helios の 9 月出荷〜Q4 ランプ、Meta 最初の 1GW・Anthropic 2GW のタイムライン。株価は ATH から約 19% 下、バリュエーションは執行証明を要求する帯——<strong>ロードマップではなく、CoWoS と HBM4 が何枚載るか</strong>が採点表だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>AMD Q2／Helios 初報前夜の監視項目（8/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 RACK-SCALE #2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Helios = チップではなく<br>「オープンな AI 工場の型紙」</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の事前消化で繰り返される構図：AMD は GPU で NVIDIA を倒す必要はない。Meta 最大 6GW、Anthropic 最大 2GW、Core Scientific 最大 2.5GW 級の容量アクセス——勝負は <strong>MI450 + EPYC Venice + Pensando + ROCm + Helios ラック</strong>の一体供給。72-GPU ラックで HBM4 約 31TB、ピーク MXFP4 2.9 EFLOPS 級のカタログは、月曜の「容量＝トポロジ」論と接続する。CUDA 対 ROCm がソフトウェアの堀なら、火曜のハードウェアの堀は<strong>ラック丸ごと届くか</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Helios ラックスケール・GW 級コミット消化（8/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 ALLOCATION 60–70%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/3-4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">需要物語は終わり、<br>「割当物語」が本体</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の再循環：三大メモリ（SK Hynix / Samsung / Micron）の 2026–27 容量は実質売切れ。契約があっても<strong>依頼量の 60–70% しか届かない</strong>、という allocation ループ——AI 需要 → 予約 → 割当締め → 価格上昇 → インフラコスト上昇。HBM・DRAM・NAND が GPU コストの 50% 超を占めるという読みも並走。スマホ・PC・中小エンタープライズが行列の後ろ——<strong>足りない側が仕様を書き、優先顧客リストが BOM を決める</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-percentage"></i>
+            <span>メモリ割当 60–70%・売切れ 2027 論（8/3–8/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 CoWoS 52–78W</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">後工程が次章を書く——<br>TSMC CoWoS 満枠と 1–2 年リード</div>
+          <div class="mt-4 text-sm text-zinc-400">半導体の希少物語は GPU と HBM だけでは足りない。TSMC の CoWoS は 2026 年内ほぼ満枠、新規リードタイム <strong>52–78 週</strong>。NVIDIA が 70% 超を占め、AMD は残り枠の争奪。MI450 系は MI300X 比でインターポーザ面積が大きく、同じ wafer 数でもスループットが落ちる——「2.5GW の Helios を半年で」系の強気シナリオは、後工程の物理で冷やされる。火曜の決算コールで<strong>確保済み CoWoS の言語</strong>が出るかが、需要ヘッドラインより重い。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>CoWoS 満枠・後工程ボトルネック論（8/2–8/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 MEMORY TO 2028</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">DRAM 逼迫は 2028 まで——<br>在庫 3 週が AI の体温計</div>
+          <div class="mt-4 text-sm text-zinc-400">一般 DRAM も AI 優先で枯渇。データセンターが出力の ~70% を吸い、在庫は約 3 週まで短縮した、という整理が火曜も生きている。HBM は wafer を 3–4 倍食うため、同じ工場の DRAM が削られる。新 fab の量産は 2027 以降——Intel 系の「2028 まで緩和なし」と、SK Hynix 系の「最悪は 2027」が並立。月曜の B300 6 倍ギャップは、この供給制約下で<strong>ビット当たり単価とノード分割税</strong>が同時に上がる世界線を予告していた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>DRAM/HBM 逼迫 2027–28・在庫信号（8/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 POWER + STEEL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Caterpillar 過去最高売上——<br>建機が AI の供給曲線を語る</div>
+          <div class="mt-4 text-sm text-zinc-400">Quartz 系：Caterpillar の四半期売上 $20.5B が過去最高、利益はほぼ倍——駆動力は AI データセンター向け建設・電源機器。On Semiconductor も AI DC 売上の 2026 年倍増見通しで見送り。PJM の DC 電力制限議論、ガスタービン逼迫、核＋ハイパースケール共同案件——火曜の供給ボードは「ビットの隣に電子、電子の隣に建機」。GPU を発注できても、<strong>掘って・配線して・燃やす</strong>側が詰まればキャンパスは灯らない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Caterpillar 決算・AI DC 電力／建機ブーム（8/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 AVGO / CUSTOM ASIC</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Broadcom AI 半導体 $10.8B——<br>カスタム ASIC と網が第三極</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の X 消化：Broadcom の AI 関連半導体収益 $10.8B、総売上 $22.2B（+48% YoY）帯の数字が再掲。カスタム AI ASIC とデータセンター・ネットワーキングが「GPU 一強以外のインフラ収益」を可視化する。CoWoS 争奪では NVIDIA の次に Broadcom と AMD が残り枠を分け合う構図——<strong>汎用 GPU・カスタム加速器・スイッチ／光</strong>の三枚を同時に読まないと、火曜の半導体は片手落ちになる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-network-wired"></i>
+            <span>Broadcom AI ASIC／ネット収益の火曜再共有より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 QWEN DEMAND LOAD</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/3-4</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">安い旗艦 D+1——推論が増えると<br>HBM と割当表が太る</div>
+          <div class="mt-4 text-sm text-zinc-400">01／02 の接続：Qwen3.8-Max が OpenRouter／Gateway に着地し、世界向け「触れる 2.4T」が 2 日目。コスト曲線が下がるほど、agent と長文の再測が増え、トークンが燃える。月曜の Kimi K3 容量トポロジと合わせると、火曜のハードウェア宿題は単純だ——<strong>安い知能 × 高いラック</strong>。8/26 NVIDIA 本丸決算までの週は、Helios 言語とメモリ契約と電力キューを一枚の TCO に落とせるかが勝負。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire"></i>
+            <span>Qwen 流通拡大と推論需要のハードウェア接続（8/4）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月4日、AI Hardware の中心テーマは「<strong>割当経済（allocation economy）の定着</strong>」と、その夜に開く <strong>AMD Helios 初報</strong>の交差点だ。月曜は B300 と B200 の約 6 倍ギャップで「容量がトポロジを書く」を実証した。火曜はそのビットが、契約上どれだけ届くかを問う。三大メモリは 2026–27 をほぼ売切れとし、依頼量の 60–70% しか満たさないという allocation ループが X で再燃する。HBM と一般 DRAM が同じ wafer を食い、在庫は約 3 週——AI データセンターが出力の約 7 割を吸う世界で、スマホと PC は行列の後ろに並ぶ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            後工程はさらに冷酷だ。TSMC CoWoS は 2026 満枠、新規は 52–78 週。NVIDIA が 70% 超を占め、AMD の Helios ランプは「需要が強い」だけでは語れない——インターポーザ面積の大きい MI450 系は、同じ packaging 枠でスループットが落ちる。だから夜の決算コールで市場が聞きたいのは $11.2B の再確認ではなく、<strong>Data Center の加速度・粗利率の耐性・確保済み CoWoS／HBM4 の言語・Meta 1GW と Anthropic 2GW のカレンダー</strong>である。Helios をラックスケールの「オープンな #2」として売る戦略は筋が通っている。だが 2.5GW を半年で、という楽観は後工程の物理にぶつかる。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            電力と建機は、もはや「別カテゴリの余談」ではない。Caterpillar が AI DC ブームで四半期売上過去最高、On Semi が AI DC 売上倍増見通し——ビットの隣に電子、電子の隣に掘削機が並ぶ。Broadcom の AI 半導体 $10.8B は、カスタム ASIC とネットが第三極として収益を実体化している証拠だ。皮肉は 01／02 との接続にある。Qwen3.8-Max が OpenRouter に着地し、安い旗艦が世界に触れるほど、推論は増える。推論が増えるほど、HBM 割当と CoWoS キューと電力契約が食われる。08-03 が「容量がトポロジを書く」なら、08-04 は「<strong>割当が出荷を書く</strong>」——そして夜の Lisa Su は、その割当表のどこに Helios の行があるかを、数値と同時に説明しなければならない。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">火曜の名言候補：「GPU は買えた。メモリは 65%。後工程は来年の春。電気は PJM に聞け。」——AI 調達が RFP じゃなくて宝くじの抽選会になってるの、最高に 2026 年らしい。月曜は 192GB と 288GB で 6 倍差を見て絶望したのに、火曜は「その 288GB 自体が 7 割しか来ない」と聞いて二度目の絶望。AMD は Helios で「オープンな #2 工場」を売ろうとしてる。筋はいい。でも CoWoS の残り枠で NVIDIA と Broadcom と相撲取ってるのに、2.5GW を半年で、って数字を見ると「それは希望的観測という名のファンフィクションでは」とツッコミたくなる。その横で Caterpillar が過去最高売上。AI のボトルネックがシリコンを超えて建機になった日——もう半導体アナリストだけじゃ足りない、重機のカタログも読め。安い Qwen が広まるほど、ラックの請求書は太る。無料なのは決算前の強気スレッドで、HBM4 と CoWoS とガスタービンは有料だ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Helios 初報・割当 60–70%・CoWoS 満枠・電力と建機——火曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月4日現在の AI Hardware 分野は、(1) AMD Q2／Helios 量産後初報と Data Center・粗利・供給言語の採点、(2) ラックスケール #2 戦略（Meta 6GW／Anthropic 2GW／ROCm 対 CUDA）、(3) メモリ割当 60–70% と 2027–28 逼迫の allocation 経済、(4) TSMC CoWoS 満枠・52–78 週リードと NVIDIA 70%+ 占有、(5) DRAM／HBM の wafer 競合と在庫 3 週の体温計、(6) Caterpillar・On Semi が示す電力・建機の第三請求書、(7) Broadcom カスタム ASIC／ネットの第三極収益、(8) Qwen 等安い旗艦流通による推論需要の押し上げ、が重なっている。月曜の容量トポロジは火曜、契約と後工程と電子の三重拘束に翻訳された。2026 年夏の評価軸は、ピーク FLOPS より、<strong>割当充足率・CoWoS ビット・Helios 執行言語・電力キュー・ASIC 対 GPU の比率・8/26 NVIDIA までの一貫性</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>AMD / Helios 執行視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「需要は内製予想を超えている。問題は需要の有無ではなく、CoWoS と HBM4 をどれだけ確保し、9 月出荷から Q4 ランプを粗利を壊さずに乗せられるかだ。Meta の最初の 1GW と Anthropic のカレンダーが、言葉ではなく数字になるかどうかが今夜の本題だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリ割当視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「契約書に書いた GB と、工場から出る GB はもう別物だ。60–70% 充足が常態化し、ハイパースケーラーが前に並ぶ。顧客が欲しいのはカタログのピーク容量ではなく、四半期ごとの割当確定通知——それが 2026–28 の仕様書だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>先進パッケージング視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoWoS が 52–78 週なら、2026 年内の『急な増産』は物語にすぎない。NVIDIA が 7 割を食う残り枠で AMD と Broadcom が競う。チップ設計より、インターポーザの面積と OSAT のテストラインが出荷上限を決めている。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>電力・建機インフラ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Caterpillar が過去最高を出す日は、AI が重工業になった証拠だ。タービンも許認可も、ビットよりリードタイムが長い。ラックが届いても変電所が無ければ倉庫の置物——電子と鋼が、シリコンの次のゲートキーパーだ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-network-wired"></i>
+            <span>カスタム ASIC / ネット視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Broadcom の AI $10.8B は、汎用 GPU だけではインフラが回らないことを示す。推論が特化するほどカスタムとスイッチが稼ぐ。調達は『NVIDIA 一択』ではなく、加速器・ASIC・光の三列比較に移っている。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-pie"></i>
+            <span>クラウド調達 / TCO 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Qwen が安く燃えるほど、我々のキューは長くなる。B300 で載るか、Helios で割るか、ASIC で特化するかは TCO の話だ。火曜の宿題は決算の見出しではなく、割当充足率と電力契約と 8/26 までの一貫性を一枚の表にすることだ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-04 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論（AMD Helios Q2 前夜、メモリ割当 60–70%、CoWoS 満枠、DRAM/HBM 2027–28、Caterpillar AI DC、Broadcom AI $10.8B、Qwen 需要連動）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-04', 'color:#10b981');
+  </script>
+</body>
+</html>
