@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-05 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-05 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜——TSMC が CoW を外に出す日<br>「内製の堀」が OSAT 連合に開く × Helios 数字は褒められて株は殴られる</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月5日（水）。火曜が「割当経済」の定着と AMD Helios 初報の夜なら、水曜の本丸は<strong>後工程の境界線が動いたこと</strong>だ。TrendForce／ETNews 系：TSMC が CoWoS の心臓部である <strong>CoW（Chip-on-Wafer）</strong>——これまで社内中心だった前工程ステップ——を ASE など OSAT へ本格外注拡大。従来は WoS（Wafer-on-Substrate）が主で CoW は限定的だった。NVIDIA は 2026 年 CoWoS の <strong>50%超（約 80–85 万枚）</strong>を確保、月次能力は 2025 の ~7 万枚から年末 13–14 万枚へ——それでも需給ギャップは約 20% 残る、という読み。並行して AMD Q2 は売上 $11.5B・Data Center $6.7B（+107% YoY）でビートも、期待の天井が高く<strong>数字は褒められ株は殴られる</strong>消化日。メモリ側は 2027 年枠売切れ・充足 60–70% が再確認され、日本の半導体装置株（Advantest・TEL）が米国 AI 連動で跳ねる。<strong>チップが足りないのではなく、パッケージとメモリと期待値が足りない水曜</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 CoW OUTSOURCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TSMC、CoW を OSAT へ本格開放<br>「全部うちで」の時代が終わる</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の最大ヘッドライン。CoWoS は CoW（チップをインターポーザへ）と WoS（インターポーザを基板へ）の二段。従来 WoS は ASE／Amkor／SPIL へ委託済み、CoW は社内中心だった——その<strong>CoW 外注を大幅拡大</strong>する、と ETNews 系ソースが報じ、TrendForce が整理。OSAT はダイシング・ボンディング装置の発注と韓国サプライヤとの PO 交渉に動く。意味は単純で重い：AI 需要が TSMC 内製の後工程能力を超え、<strong>堀の一部をエコシステムに開放しないと出荷が回らない</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>TrendForce／ETNews：CoW 外注拡大報道（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 NVIDIA 50%+</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA が CoWoS の半分超<br>80–85 万枚と 20% ギャップ</div>
+          <div class="mt-4 text-sm text-zinc-400">同日の数字の骨格：NVIDIA の 2026 CoWoS 確保は約 <strong>80–85 万枚・全体の 50%超</strong>。TSMC の月次 CoWoS は 2025 の約 7 万枚から 2026 年末 13–14 万枚へ倍増ペースでも、<strong>需給ギャップは約 20% 残る</strong>という推計が並ぶ。火曜の「NVIDIA 70% 超」論と並走しつつ、水曜は「外注で枠を増やす側」の物語——ただし外注はリードタイムと歩留まりの別問題を連れてくる。残枠で AMD・Broadcom・ハイパースケーラー ASIC が相撲を取る構図は変わらない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-percentage"></i>
+            <span>NVIDIA CoWoS 占有・能力ランプ・ギャップ論（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 AMD DIGEST DAY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Helios 初報 D+1——数字は勝った<br>期待の天井に殴られた</div>
+          <div class="mt-4 text-sm text-zinc-400">AMD Q2：$11.5B（+50% YoY）、Adj. EPS $1.66、Data Center <strong>$6.7B・+107% YoY</strong>、粗利 non-GAAP 56%、Q3 ガイド ~$13.0B。経営側は「Data Center が H2 加速」と明言。それでも水曜のテープは<strong>ビートでも売られる</strong>——ATH からの調整帯で、市場が採点するのは収益の絶対値ではなく Helios ランプ・CoWoS／HBM4 充足・GW 級コミットのカレンダー。火曜の「執行チェック」は水曜、<strong>執行は合格、バリュエーションは不合格</strong>という二段評価に割れた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>AMD Q2 消化・DC +107%・期待リセット（8/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 MEMORY 2027 SOLD</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">2027 年メモリ枠はもう無い<br>60–70% 充足が「仕様」になる</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜も allocation 物語は生きている。Samsung／SK Hynix／Micron が 2027 の DRAM・HBM 出力をほぼ売り切り、買い手は依頼量の <strong>60–70% しか受け取れない</strong>——take-or-pay と価格フロアが ~$100B 規模で下支え、という整理が X で再循環。Micron は「景気循環コモディティ」フレームが壊れつつあるという強気読みと、7 月末の強制売り後の買い戻し議論が並走。カスタムシリコンで NVIDIA マージンは迂回できても、<strong>HBM は迂回できない</strong>——水曜の冷静な一文。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>2027 メモリ売切れ・60–70% 割当・Micron 論（8/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 OSAT ARMS RACE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ASE／Amkor／SPIL が装置を発注<br>「CoW を自分でやる」動き</div>
+          <div class="mt-4 text-sm text-zinc-400">外注拡大の裏側：主要 OSAT が新ライン向け装置を発注し、ダイシング・ボンディングで韓国材料・装置サプライヤと PO 交渉。6 月時点の Mirror Daily 系では、AMD など顧客の後押しで ASE／SPIL が 2026 の先進パッケージ CapEx の一部を<strong>自前 CoW ライン</strong>に振り向け、TSMC で焼いた wafer を OSAT で end-to-end CoWoS するルートも浮上——ボトルネック緩和は「TSMC が許した」だけでなく、<strong>チップメーカーが第二のパッケージ工場を買う</strong>動きでもある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cogs"></i>
+            <span>OSAT 装置発注・自前 CoW ライン論（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 JAPAN SEMI RALLY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">日経 +3% 帯——Advantest・TEL<br>装置株が米国 AI に連動</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の東京：Nikkei が AI／半導体連動で上昇（報道ベースで約 +3% 前後）、Advantest が約 +8%、Tokyo Electron が約 +4% など装置・テスタが先導。NVIDIA 関連の米国上げがアジアに波及する古典的パターンが再演。AI チップのボトルネックが後工程とテストに移るほど、<strong>テスタと露光周辺の需要曲線は GPU カタログより長く見える</strong>——日本勢は「シリコンの隣の工具箱」として再び相場の顔になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-yen-sign"></i>
+            <span>日本半導体装置株の AI 連動上昇（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 GRID 90d vs 48mo</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GPU は 90 日、送電は 48 ヶ月<br>密度が上がるほど配線が勝つ</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜 X のインフラ再掲：ハイパースケーラーは数千 GPU を 90 日以内にラックできるが、GW 級キャンパスを高圧系統に繋ぐには最大 <strong>48 ヶ月</strong>。Quanta Services 系のバックログ記録（報道で $50B 超帯）は、AI の第三請求書が「ビットと電子の次の鋼と変圧器」であることを再確認させる。火曜の Caterpillar 過去最高と一本の線——<strong>シリコン調達が速くても、許可と送電が遅ければ倉庫の美術品</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>DC 系統接続 vs GPU 調達リードタイム論（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 MARGIN vs MEMORY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">カスタムで GPU は迂回できても<br>HBM は設計では倒せない</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の構造コメント：NVIDIA データセンター粗利は 75% 超帯という議論と、「カスタム ASIC でコストを削る」物語が並ぶ一方、すべての加速器は Samsung／SK Hynix 系 HBM に依存する——メモリ側の契約価格上昇見通し（数十 % 帯）が続くなら、<strong>マージン物語は速度物語ではなく制約物語</strong>。Midjourney が GPU から降ろして推論費を 1/3 にした逸話は「ソフトウェア最適化の勝利」だが、訓練と大規模 agent 本番は依然 HBM 付きラックの世界。01 の安い旗艦消化は、そのラックの待ち行列を長くする。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>GPU マージン vs HBM 制約の構造議論（8/5）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月5日、AI Hardware の中心は「<strong>後工程の主権が分散し始めたこと</strong>」だ。火曜まで CoWoS は「TSMC 満枠・52–78 週・NVIDIA が大半」という<strong>閉塞の物語</strong>だった。水曜の TrendForce 整理は、その閉塞の出口を——完全な解消ではなく——OSAT への CoW 外注拡大として描く。CoW はインターポーザにチップを載せる工程で、歩留まりとノウハウの核心に近い。それを ASE などへ広げるのは、TSMC にとってブランド上の妥協ではなく、<strong>出荷カレンダーを守るための物理的な譲歩</strong>だ。NVIDIA が 80–85 万枚・50%超を押さえてもギャップ 20% が残るなら、外注は「余裕」ではなく「最低限の酸素」である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ水曜に、AMD の Helios 初報が市場の消化に入る。Data Center 売上倍増超、粗利 56%、H2 加速ガイド——執行の言語としては合格点に近い。それでも株が殴られるのは、AI テープが「良い数字」ではなく「さらに良い数字＋供給証明」を要求するフェーズに入っているからだ。Helios をラックスケールの #2 として売る戦略は、CoWoS 残枠と HBM4 割当と Meta／Anthropic の GW カレンダーに依存する。外注拡大はその残枠の絶対量を少し増やすかもしれない。だが<strong>誰のキューが先に動くか</strong>は、依然として NVIDIA とハイパースケーラーの契約表が決める。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            メモリと電力は、水曜も同じ重力を持つ。2027 売切れと 60–70% 充足は「ニュース」ではなく仕様書。カスタム ASIC で GPU の粗利は迂回できても HBM は迂回できない。GPU を 90 日で積んでも送電に 48 ヶ月かかる——火曜の建機ブームと水曜の系統リードタイムは、シリコンの外側がボトルネックであることの二枚看板だ。日本の装置株が跳ねるのは、テストと製造装置が AI の長い尾だから。08-03 が容量トポロジ、08-04 が割当経済なら、08-05 は「<strong>パッケージの主権を分け与えてでも出荷を守る</strong>」——そしてその分け与えが、エコシステム全体の装置・材料・OSAT の投資を再点火する日として記録される。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜の名言候補：「CoWoS は内製の聖域だった。需要が聖域を崩した。」——TSMC が CoW を OSAT に渡すの、技術的プライドより出荷の物理が勝った瞬間で、最高に 2026 年らしい。火曜は「メモリ 65% しか来ない」で絶望したのに、水曜は「パッケージも外注しないと回らない」で三段目の絶望。でも絶望の隣に希望もある：ASE が装置を発注するなら、ボトルネックは少なくとも「増産可能な種類の不足」になった。AMD は DC を倍増させて殴られる。NVIDIA は枠の半分を握ってまだ足りない。Micron は循環株の仮面を剥がされそう。その横で Advantest が跳ねて、Quanta が送電のバックログを抱える。AI ハードウェアの主役が GPU のカタログから「誰がボンディングして、誰がビットを割り当てて、誰が変圧器を運ぶか」に移った日——もう半導体アナリストだけじゃ足りない、OSAT のクリーンルーム図面と電力会社の接続キューも読め。無料なのは期待値の天井で、CoW と HBM と 48 ヶ月の送電は有料だ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">CoW 外注・NVIDIA 50%+・Helios 消化・2027 メモリ・系統 48 ヶ月——水曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月5日現在の AI Hardware 分野は、(1) TSMC による CoWoS 前工程 CoW の OSAT 外注拡大と「内製完結」神話の修正、(2) NVIDIA の CoWoS 50%超（80–85 万枚）確保と能力倍増後も残る約 20% ギャップ、(3) AMD Helios 初報 D+1——DC +107% でも期待天井に売られる消化、(4) 2027 メモリ売切れと 60–70% 割当の仕様化、HBM 非迂回性、(5) ASE／Amkor／SPIL の装置発注と自前 CoW ライン競争、(6) 日本半導体装置株（Advantest・TEL）の AI 連動上昇、(7) GPU 90 日 vs 系統接続 48 ヶ月のインフラ非対称、(8) カスタム ASIC で GPU は迂回できてもメモリは倒せないという制約認識、が重なっている。火曜の割当経済は水曜、後工程の主権分散と市場の期待リセットに翻訳された。2026 年夏の評価軸は、ピーク FLOPS より、<strong>CoW 外注の実行速度・割当充足率・Helios ランプの供給言語・HBM 契約・系統キュー・8/26 NVIDIA 本丸までの一貫性</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>TSMC / 先進パッケージ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoW は品質と歩留まりの核心だった。それでも AI と ASIC の同時急増で内製だけでは足りない。OSAT への拡大は技術の放棄ではなく、出荷を守るための能力のネットワーク化だ。問題は委託後の歩留まりと、誰の wafer が先にボンディングされるかだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIA / GPU 供給視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2026 の CoWoS 需要の半分超を確保してもギャップは残る。外注拡大は歓迎だが、最終的な品質ゲートと優先順位は変わらない。顧客が見るのはカタログの EFLOPS ではなく、四半期ごとの実出荷とラック統合の完了率だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>AMD / Helios 執行視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Data Center が倍増した事実は残る。市場が欲しがるのは次の証明——Helios ランプが粗利を壊さず、CoWoS と HBM4 が予定枚数で載るかだ。ビートしても売られる日は、期待が需要を上回っている証拠であって、需要が消えた証拠ではない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / メモリ割当視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2027 はもう『増産すれば足りる』年ではない。60–70% 充足が常態で、take-or-pay が価格の床になる。ASIC でも GPU でも、HBM の割当表に名前が無ければ設計図は絵だ。カスタムは NVIDIA のマージンを削れても、メモリ工場のカレンダーは削れない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cogs"></i>
+            <span>OSAT / 装置サプライ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoW が外に出るなら、我々の装置とクリーンルームが次のボトルネックになる。ダイシングとボンディングのリードタイムが、GPU のロードマップより出荷を決める局面だ。TSMC の許可と顧客の CapEx が同時に動いた——OSAT はようやく『本丸の隣』から『本丸の一部』になる。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>クラウド調達 / インフラ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「GPU は 90 日で来る。電気は 48 ヶ月だ。CoW 外注でチップが少し早くなっても、変電所が無ければラックは倉庫に眠る。水曜の TCO 表は、CoWoS キュー・HBM 充足・系統接続・Helios 対 CUDA の四列——安い旗艦が増えるほど、その四列の待ちが長くなる。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-05 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・TrendForce/ETNews（TSMC CoW 外注、NVIDIA CoWoS 50%+、AMD Q2 消化、2027 メモリ売切れ、OSAT 装置、日本装置株、系統 48 ヶ月、HBM 制約）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-05', 'color:#10b981');
+  </script>
+</body>
+</html>
