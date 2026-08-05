@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-08-05 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-05 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜の「使用量」が王冠になった日——V4-Flash が Ollama/OpenRouter を占め<br>Qwen は Arena 2位と Image 3.0、来週 weights、Ascend は29本の棚入れ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月5日（水）。月曜の旗艦投下（Qwen3.8-Max／H3）と火曜の流通・ライセンス訂正のあと、水曜は<strong>トークンの実測</strong>が主役に回った。@pidotdev 経由で DeepSeek V4-Flash が「Ollama 史上最速成長（token usage）／OpenRouter 今週 No.1」と拡散され、現場では 367M tokens・3,783 リクエストで $6.15、あるいは 48h で 3.63 億 tokens・blended ~$0.03/1M といった請求書が「ベンチのスクリーンショットより信用できる」と語られる。阿里側は Image-to-WebDev Arena #2（1,631 pts、Opus 5 Max に 39 pts 差）と Qwen-Image-3.0 の Cloud／fal 着地、ClinePass の値引き経路、そして @Alibaba_Qwen の「See you next week」——27B／Max 級 open weights のカウントダウンが企業の AB 表に載る。その横で @AiChinaNews は Ascend 向け 29 モデル掲載を「研究ゼロのカタログ演習」と冷笑し、ByteDance 創業者・張一鳴の蒸留禁止方針が再循環する。08-05 は<strong>使用量・Arena 脚注・画像 API・来週 clone・倉庫棚入れ・蒸留拒否</strong>が同じダッシュボードに並ぶ消化の水曜日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#01 FLASH USAGE CROWN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">V4-Flash——Ollama 最速成長<br>OpenRouter 今週 No.1 の「使用量」</div>
+          <div class="mt-4 text-sm text-zinc-400">@pidotdev：DeepSeek V4 Flash が Ollama 史上最速の token usage 成長、OpenRouter 今週最人気——Pi harness からも複数 provider で利用可。「ベンチはスクショ、usage が真実」。現場ログは 367M tokens／3,783 req で $6.15、48h で 3.63 億 tokens・blended ~$0.03/1M など。週次トークン数兆帯の主張も拡散——信用単位は自社請求書と harness 再現ログ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>V4-Flash 使用量王冠・Ollama/OpenRouter（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#02 QWEN ARENA #2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Image-to-WebDev Arena 2位<br>1,631 pts——Opus 5 Max に 39 差</div>
+          <div class="mt-4 text-sm text-zinc-400">@arena：Qwen3.8-Max が Image-to-WebDev Arena #2。@Alibaba_Qwen「It sees, it builds」。月曜の PaperBench 勝ち／SWE-Pro 負けの二面性は消えないが、水曜の「見える UI を組む」レーンでは旗艦 API がリーダーボード上位に定着。調達は見出しではなく自社 harness のフロント・SWE 再測——でも AB 表の「見た目品質」列は太くなる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-trophy"></i>
+            <span>@arena Image-to-WebDev・Qwen D+2（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 QWEN IMAGE 3.0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Image-3.0-Pro——Cloud＋fal 着地<br>中国勢 T2I 首位帯・$0.03–0.04/枚</div>
+          <div class="mt-4 text-sm text-zinc-400">@qwen_cloud／@Alibaba_Qwen：Qwen-Image-3.0 Pro／Standard が Qwen Cloud で live。Arena Text-to-Image で中国モデル首位・主流 #2 前後の主張、最大 ~4.5k トークンプロンプト、10px 級可読文字、12 言語・100+ スタイル。Pro 約 $0.04／Standard 約 $0.03 per image。@fal にも Pro が載り、タイポ密集・顔一貫編集・背景差し替えがデモ軸。旗艦 LLM と同週の<strong>画像 API 製品化</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-image"></i>
+            <span>Qwen-Image-3.0 Cloud/fal（8/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 CLINEPASS + OR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ClinePass で Max が「最安経路」論<br>OpenRouter 着地は消化3日目</div>
+          <div class="mt-4 text-sm text-zinc-400">@cline：Qwen3.8-Max が ClinePass で約 5x 割引——「いま最も安く触れる Qwen」として拡散。火曜の OpenRouter／Vercel AI Gateway に続き、水曜は IDE／agent サブスク経路が太る。$2/$6 per 1M の API 表と one-shot デモは残るが、現場の次チケットは BYOK・ログ保持・主権ホスト——weights は来週まで下書き。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>ClinePass／OpenRouter 経路拡大（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#05 WEIGHTS T-?</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">~8/10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「See you next week」——27B と<br>Max 級 open weights の公式カウントダウン</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Qwen：「Big enough to think, small enough to fit… See you next week!」——コミュニティは Qwen 3.8 27B（＋Max 級 weights）来週着地と読む。first for a Qwen Max-class の約束は月曜から変わらず。model card・ライセンス・HF／公式 repo が出るまで RFP 本番列に載せない。27B 級を旗艦と同じスプリントで測るチームが、開源日の勝者になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>Max/27B 開源カウントダウン（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#06 H3 D+2 PARTNERS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">H3——fal・Pika・Civitai が並ぶ<br>申請制ライセンス＋経路カタログ2日目</div>
+          <div class="mt-4 text-sm text-zinc-400">@MiniMax_AI：インフラ・クリエイティブ・開源コミュニティ側のパートナーとして @fal・@pika_labs・@HelloCivitai を再掲。火曜の「US/EU/UK/KR は申請フォーム」訂正は水曜も有効——開源＝全世界フリーではない。API／Hailuo／TensorForge／ローカル quant の分岐は続き、Seedance 閉域長尺とは別ジョブ。広告運用側は合成物開示の話が同時に立つ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-film"></i>
+            <span>H3 パートナー・ライセンス実務（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 $0.03 AGENT MATH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">完走単価 ~$0.03 帯が「請求書」になる<br>K3 $0.86・Sol $1.86・Fable $3.15 対比</div>
+          <div class="mt-4 text-sm text-zinc-400">Artificial Analysis 系の完走単価論が水曜も再循環：V4-Flash ~$0.03／ベンチ対 K3 ~$0.86、Sol ~$1.86、Fable 5 ~$3.15。入力 $0.14／出力 $0.28 per M の公表帯と、現場 blended $0.03 の報告が並走。Intelligence Index は旗艦に劣る——正しい読みは<strong>安価 agent の partial day-0 は本物</strong>、Pro 全能力の Flash 化ではない。allowlist は昨日と同じ必須インフラ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tags"></i>
+            <span>Flash 完走単価・agent 経済（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 ASCEND 29-LIST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Modelers 水曜——29 本の Ascend 棚入れ<br>ChatQA と MambaVision が拾う価値</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews：29 モデル掲載、研究ゼロの「プラットフォーム・カタログ演習」。拾う価値は NVIDIA ChatQA 系（Llama3-ChatQA-1.5-70B 128K、8B、ChatQA 2 70B Apache）の長文 RAG 向け、および MambaVision-L-1K 等ハイブリッド SSM×Attention の Vision。残りは SteerLM・Beyonder MoE GGUF・ONNX edge の再保存。結論は火曜と同型——<strong>部品カタログは厚い、独立精度は薄い</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>@AiChinaNews Ascend 29 本（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#09 QUANT CHURN D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">火曜 quant 波の余波——Gemma GGUF と<br>MiniMax M2.x NVFP4 のフォーマット戦争</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews 火曜：Gemma 27B GGUF 再包装、MiniMax M2.7／M2.5 の NVFP4（INT4 の半 VRAM・品質向上は未検証主張）、Bielik-11B ポーランド語、Ascend 向け Minitron 4B 等。訓練はゼロ、変換が本体。「now on Ascend」が「now on HF」の新ミーム。水曜 29 本と合わせて、S/N 比の悪い倉庫運用が中国 AI の日常風景として定着。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-database"></i>
+            <span>Modelers quant 洪水・継続（8/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#10 BYTEDANCE NO DISTILL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">張一鳴——蒸留で能力加速しない方針<br>閉域 Seed の「正攻法」シグナル</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information 系：ByteDance 創業者・張一鳴が先月の全社向けで、モデル蒸留による能力加速を使わないと従業員に伝達、と水曜タイムラインで再拡散。開源ラボが API 蒸留疑惑と並走する中、閉域 Seed／Seedance 側は「蒸留に頼らない」物語を打ち出す。検証は内部方針のまま——だが調達の「出所・学習経路」列にメモする価値はある。世界モデル投資の別軸（Genie 3 級目標）とも接続。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-ban"></i>
+            <span>ByteDance 蒸留禁止方針（8/5 再循環）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#11 HY ASR 3.0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">騰訊混元 Hy ASR 3.0——中文 WER 3.34%<br>LLM 融合の文脈訂正が売り</div>
+          <div class="mt-4 text-sm text-zinc-400">騰訊混元が Hy ASR 3.0 を騰訊云 API／元宝経由で展開、という国内日次が水曜に拡散。中文普通话 WER 3.34%、英語 2.62%、粤语 3.12% 等の主張。Hy3 系 LLM 融合で文脈訂正・複雑環境耐性、MoE＋自前無監督音声 Encoder。客服・会議録・方言がターゲット。旗艦 LLM の喧騒の横で、<strong>縦割り音声部品</strong>が中国スタックの厚みを足す一日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microphone"></i>
+            <span>騰訊 Hy ASR 3.0（8/5 国内報）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#12 THREE STRONG WED</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">K3 / Qwen3.8-Max / V4-Flash<br>「中国三強」曲面は使用量で再確認</div>
+          <div class="mt-4 text-sm text-zinc-400">長コンテキスト計画＝Kimi K3（2.8T 開源済み）、旗艦コーディング／cowork／画像＝Qwen3.8-Max＋Image-3.0（来週 weights）、安価 agent＝DeepSeek V4-Flash（今週の使用量王冠）。パラメータ自慢 2.4T vs 2.8T は見出し用。製品言語は<strong>ジョブ別曲面</strong>——単一王者探しは無効。Flash がトークン量でトップに来るほど、その曲面は「安いレーンが太い」現実になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>中国三強・使用量で再確認（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#13 EU DAY FOUR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Article 50 執行4日目——<br>Image 3.0 も H3 も免除されない</div>
+          <div class="mt-4 text-sm text-zinc-400">対話開示・合成物の機械可読マーク・ディープフェイク標識は Qwen チャットにも Image API にも H3 レンダーにも請求書の隣。€15M または全世界売上 3%。H3 の US 申請と EU ラベルは別軸だが、現場 YAML は同じ——<strong>法域フラグ × 合成マーク × ホスト</strong>。中国モデルの安さはコンプライアンス免除条項にならない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>EU AI Act Article 50 4日目（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#14 OVERSEAS ACCESS?</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/7-8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">北京の域外アクセス制限論が残響<br>開源予告と同週の jurisdiction 列</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters 系：阿里・ByteDance・Z.ai 等と当局が最先端モデルの海外アクセス制限を協議、という報道の残響は水曜も jurisdiction 列を太くする。確定規制ではない——だが Max 級「世界向け API＋来週開源」と同時に読むと、調達のホスト所在チェックは今日から足して損はない。意図と執行は別。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-alt"></i>
+            <span>域外アクセス制限論・政策ノイズ（8/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#15 ROUTER WED</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">使用量 × Arena × 画像 API × 来週 clone<br>水曜 YAML の四語更新</div>
+          <div class="mt-4 text-sm text-zinc-400">現場メモ：Flash は agent レーン継続（allowlist 必須・請求書で単価検証）、Qwen3.8-Max は Cline／OpenRouter 経由で cowork＋Image-to-WebDev AB、Image-3.0 は fal／Cloud で合成マーク付き試用、K3 は長文計画、H3 は License Form＋パートナー経路、Seedance は閉域 SLA、Ascend は ChatQA／MambaVision を評価キュー、EU は Article 50 4日目、域外制限は jurisdiction bookmark、weights は来週 repo まで下書き。使用量 No.1 も 2.4T も、検査担当を不要にはしない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>ルーター YAML・水曜実務（8/5）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月5日の Chinese AI &amp; Tech は、<strong>「月曜の旗艦・火曜の流通」が「水曜の使用量と Arena 脚注」に落ちた日</strong>だった。DeepSeek V4-Flash は @pidotdev 経由で Ollama 史上最速の token usage 成長・OpenRouter 今週 No.1 とされ、現場の請求書——367M tokens で $6.15、48h で 3.63 億 tokens・blended ~$0.03/1M——が「ベンチのスクリーンショットより信用できる」と語られる。Artificial Analysis 完走単価 ~$0.03 帯（対 K3 ~$0.86／Sol ~$1.86／Fable ~$3.15）は再循環のまま。正しい読みは変わらない——<strong>安価 agent の partial day-0 は本物</strong>であり、Pro 全能力の Flash 化ではない。allowlist と stop condition は中国モデル特有の免除条項を持たない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            阿里 Qwen は三本立てで水曜を占めた。(1) Image-to-WebDev Arena #2（1,631 pts、Opus 5 Max に 39 差）——「見える UI を組む」レーンでの旗艦 API の定着。(2) Qwen-Image-3.0 Pro／Standard の Qwen Cloud と fal 着地——中国勢 T2I 首位帯、約 $0.03–0.04/枚、密集タイポと編集がデモ軸。(3) ClinePass の約 5x 割引経路と @Alibaba_Qwen の「See you next week」——27B／Max 級 open weights の公式カウントダウン。PaperBench 勝ち／SWE-Pro 負けの二面性は消えていない。調達は自慢表ではなく、<strong>自社 harness の AB 表と BYOK とライセンスとホスト</strong>を埋める作業だ。repo が出るまで RFP 本番列に載せないのが正解のまま。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            MiniMax H3 は開源 D+2 でパートナーが主役——@fal・@pika_labs・@HelloCivitai が並び、火曜の申請制ライセンス訂正は手続きとして残る。Seedance 閉域長尺と H3 ローカル 2K は三車線のまま。その横で @AiChinaNews は Ascend 向け 29 モデル掲載を「研究ゼロのカタログ演習」と冷笑し、ChatQA 128K と MambaVision だけを拾う価値とし、残りを platform noise と切る。火曜の Gemma GGUF／MiniMax NVFP4 の quant 波と合わせて、<strong>部品倉庫は厚いが独立精度は薄い</strong>という中国 AI の日常が水曜も更新された。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            政策と企業ガバナンスの脚注も薄いが重い。ByteDance 張一鳴の「蒸留で能力を加速しない」方針が The Information 経由で再拡散し、閉域 Seed の正攻法シグナルとして読まれる——検証は内部のまま、調達の出所列にはメモする価値がある。騰訊 Hy ASR 3.0（中文 WER 3.34% 主張）は縦割り音声部品としてスタックの厚みを足す。EU Article 50 は執行4日目、北京の域外アクセス制限論は未確定の jurisdiction ノイズ。なぜ今これが起きているのか。中国ラボの並列装置が「一発のダークホース」から、<strong>カレンダー × 使用量 × Arena 脚注 × 画像 API × 開源予告 × 申請制ライセンス × Ascend 棚入れ × agent 単価 × 蒸留拒否 × EU ラベル</strong>の再現パイプラインになったからだ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            現場の言語はさらに落ちる。「Flash は agent 継続＋allowlist＋請求書検証、Qwen Max は Cline／OpenRouter で cowork＋WebDev AB、Image-3.0 は fal／Cloud で合成マーク付き試用、計画は K3、H3 は License Form＋パートナー経路、Seedance は閉域 30 秒 SLA、Ascend は ChatQA／MambaVision を評価、EU は Article 50、域外制限は jurisdiction bookmark、weights は来週 clone まで下書き」。08-05 の教訓は——<strong>中国 AI の水曜はベンチの日ではなく、使用量の王冠と Arena の脚注と画像 API と来週の clone と 29 本の棚入れを同じ YAML に書く日</strong>であり、単一王者は不在のまま曲面とコンプライアンスが製品になる、という並列タスク管理だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜「2.4T 降ってきた」、火曜「OpenRouter で live／H3 は申請しろ」、水曜「Flash がトークン量で世界一っぽい／Arena 2位／Image も $0.03／来週 clone／Ascend また29本」——中国 AI 界隈の健全な（そして法務と SRE とクリエイティブの Slack が同時に燃える）成熟だと思う（笑）。使用量 No.1 は tok/s を自動では上げないし、Arena 2位は SWE-Pro を消さない。$6.15 で 3,783 リクエスト回した請求書の方が、リーダーボードのスクショより正直だ。単一チャンピオンを探すほど曲面が答えになる。そのループは、Entity List でも 2.4T でも open video でも AI Act でも、蒸留禁止の社内通達でも、域外制限の噂でも止まらない。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">使用量・Arena・画像・棚入れ——08-05 の四点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月5日現在の Chinese AI &amp; Tech は、(1) DeepSeek V4-Flash が Ollama／OpenRouter の使用量で王冠を取り、完走単価 ~$0.03 帯の agent 経済が請求書で再確認されたこと、(2) 阿里 Qwen3.8-Max が Image-to-WebDev Arena #2・ClinePass 値引き経路・Image-3.0 の Cloud／fal 着地・来週 open weights の四点で消化3日目を占めたこと、(3) MiniMax H3 がパートナー（fal／Pika／Civitai）と申請制ライセンスの経路カタログを D+2 で維持したこと、(4) Ascend／Modelers が 29 本の棚入れと quant 洪水で「研究ゼロ・部品厚い」倉庫を更新し、ByteDance 蒸留禁止と Hy ASR 3.0 と EU Article 50 4日目が脚注として並んだこと、で整理できる。モデルギャップは薄れ、使用量・完走単価・ホスト・ライセンス申請・チップ経路・法域・ラベル・ジョブ別曲面のギャップが残る——それが 08-05 の冷静な読みだ。現場の焦点は Flash agent＋allowlist、Qwen cowork／WebDev AB、Image-3.0 試用、H3 License Form、来週 weights 待ち、Ascend ChatQA／MambaVision 評価、Article 50／域外制限の jurisdiction 列、ルーター YAML 更新である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は Flash の請求書と Qwen の Cline キーと H3 の License Form と Image API の合成マークで燃えてる。チケットは agent レーン継続、cowork AB、WebDev harness 再測、Image-3.0 試用、Ascend は ChatQA と MambaVision を評価に。ヘッドラインは読まない——ルーター YAML とリスクレジスタと法域フラグを読む。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「使用量 No.1 は我々の tok/s を上げない。計画は K3、安い agent は Flash、cowork と UI は Qwen Max を自社 harness で再測。SWE-Pro ビハインドは無視できない——だから BYOK とルーティングが製品。$6 で 3,000 回回せるのは嬉しいが、本番は再現ログ。weights は来週 clone してから祝う。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-palette"></i>
+            <span>画像・動画クリエイティブパイプライン</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Image-3.0 が $0.03–0.04 で Cloud と fal に載ったのは RFP 材料。タイポ密集と編集が本当に通るかは自社プロンプトで測る。H3 は『申請しろ』が正解のまま——fal／Pika／Civitai 経路を試す。Seedance の 30 秒顔一貫は別ジョブ。EU 向けは合成物マークを今日も足す。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>国内シリコン／Ascend 観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日の主役は Flash の使用量と Qwen の Arena だが、倉庫は 29 本の Ascend 掲載で埋まっている。拾う価値は ChatQA 128K と MambaVision、残りは changelog。独立精度は弱点のまま。オープン源の旗艦が世界向けに広がるほど、Ascend 部品のロックイン物語は別トラック——次の SMIC+CXMT ランが本試験。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gavel"></i>
+            <span>EU／US コンプライアンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 の4日目。Qwen も Image API も H3 も安さで免除されない。チャット開示、合成マーク、ディープフェイク標識。H3 の US は申請＋waiver。ByteDance の蒸留禁止はガバナンスの話——出所列にメモ。北京の域外制限論は未確定でも jurisdiction 列は今日足せ。攻撃 agent は allowlist を法務チケットにも足す。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 が長文計画を、Flash が使用量と agent 単価を、Qwen3.8-Max が Arena と画像 API と来週開源を、H3 が申請付き open 2K を、Seedance が閉域長尺を、Modelers が 29 本の棚入れを、張一鳴が蒸留拒否を、EU がラベルを——水曜は外交ではなく、使用量・脚注・画像・申請・倉庫・規制の六重奏だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List でも 2.4T でも open video でも AI Act でも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-08-05 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: DeepSeek V4-Flash 使用量（@pidotdev・Ollama 最速成長／OpenRouter 今週 No.1・現場請求書 $6.15 帯・blended ~$0.03/1M）、@arena Image-to-WebDev #2（Qwen3.8-Max 1,631 pts）、@Alibaba_Qwen／@qwen_cloud Qwen-Image-3.0 Pro/Standard（Cloud・fal・Arena T2I・$0.03–0.04/枚）・「See you next week」27B/Max weights、@cline ClinePass ~5x、@MiniMax_AI H3 D+2（fal/Pika/Civitai・申請制継続）、@AiChinaNews Ascend 29 本（ChatQA・MambaVision）＋火曜 quant 波、ByteDance 張一鳴蒸留禁止（The Information 系再循環）、騰訊 Hy ASR 3.0、K3/Qwen/Flash 三強、EU AI Act Article 50 4日目、域外アクセス制限論（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-08-05', 'color:#10b981');
+  </script>
+</body>
+</html>
