@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-08-06 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-06 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧩</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜——Muse Code が AB 表に入った初日<br>co-trained harness × 常駐 subagent × replay ログが製品語に</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月6日（木）。水曜に Meta Superintelligence Labs が落とした <strong>Muse Code</strong>（macOS/Linux ベータ、Muse Spark 1.2 同梱）は、木曜のコーディング agent 表に正式追加された。Zuckerberg の語りは「大きなジョブは isolated worktree で並列 sub-agent、作業コピーは触らない」——TechCrunch / CNBC / VentureBeat が一斉に「Claude Code / Codex への参入」と読んだが、現場が拾ったのはベンチ整数より <strong>モデルと harness の共訓練・append-only イベントログ・セッション常駐</strong> だ。横では Qwen3.8-Max が Artificial Analysis の <strong>Agentic Index #1</strong>、Zhipu AutoGLM-Phone-9B が Ascend 実機の端末 agent、DeepSeek の API 値上げ予告が agent 請求書を揺らし、Block は「6月の本番変更のほぼすべてに agentic AI が関与」とガイダンスを引き上げた。08-05 が「殻の単価と VM 採用」なら、08-06 は <strong>新殻を測り、東側 agent 指標を信じすぎず、最安レーンの神話を台帳から外す</strong> 初日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 MUSE CODE D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Muse Code——端末 agent が表に追加<br>計画→実装→検証の AB 初日</div>
+          <div class="mt-4 text-sm text-zinc-400">curl 一発のターミナル agent。大規模 repo で計画・実装・検証、背景 sub-agent がセッション中コンテキストを保持。Meta 自前チャートは Claude Opus 5 の次点主張——純コーディング SOTA を取らなくても「harness 同梱・ログ前提」は 2026 後半の製品語。木曜は自社タスク（同じ受け入れ条件）で Claude Code / Codex / Cursor 系と並走させ、完走率・手戻り・$/成功を一枚に。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-terminal"></i>
+            <span>Muse Code / Spark 1.2 翌日消化（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 CO-TRAINED HARNESS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">モデル×harness 共訓練が本丸<br>「ベンチ1点より殻との相性」</div>
+          <div class="mt-4 text-sm text-zinc-400">Muse Code は Spark 1.2 と共訓練された「そのモデルの最良の殻」として売られる。X では「checkpoint を絞るより co-training が効く」が定番句。08-05 の harness 経済（同じモデルで殻 5〜40×）と接続する——proprietary ロックは強いが、差し替え YAML を捨てる理由にはならない。vendor 忠誠は設計ミスのまま、AB 列に Muse を足すだけ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-link"></i>
+            <span>共訓練 harness 論・製品差別化（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 REPLAY-EXACT LOG</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">append-only イベントログ<br>クラッシュ後も「同じ地点」から再開</div>
+          <div class="mt-4 text-sm text-zinc-400">モデル呼び出し・ツール実行・編集をローカルイベントログに書いてから実行——再開は再プロンプトではなく replay。LongHorizon の「監査済み状態」と同型：会話履歴を信じない設計が、Meta の製品語にも入った。木曜の契約テンプレは「証跡が残らない executor は本番に出さない」——EU Article 50 の開示ログ所有者論とも同じスプレッドシート。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-history"></i>
+            <span>replay-exact ログ・長時間再開（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 WORKTREE FAN-OUT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">isolated worktree 並列 sub-agent<br>「作業コピーは触らない」</div>
+          <div class="mt-4 text-sm text-zinc-400">Zuckerberg：大きなジョブは worktree で並列 fan-out、テストではゲームに6機能同時で衝突なし。Cursor の「VM is the hire」と同根——計算場所と隔離が harness の一部。木曜の実務は start スクリプトに worktree / sandbox / secrets を埋め、accept/reject のオペ画面（CC×Codex 並走 UI の延長）で監視する。babysit ターミナルからの脱出はまだ半分。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>worktree 並列・隔離実行（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 PRIVACY TRADEOFF</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">低コスト contributor 帯の裏側<br>「訓練データで払う」読みが拡散</div>
+          <div class="mt-4 text-sm text-zinc-400">Muse の価格優位（Kimi より安、Fable/Opus/Sol 帯より桁違い、という観測）の横で、低コスト tier は利用データが学習に寄与する、という caution が Futurepedia 系などで回る。Alexandr Wang の「コスト視点で良い選択肢」は魅力だが、企業 RFP はデータ処理契約・opt-out・ログ保持を先に読む。安い殻が「無料の訓練」なら、TCO に法務行を足せ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-secret"></i>
+            <span>価格 vs データ利用・契約注意（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#06 QWEN AGENTIC #1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Qwen3.8-Max——Agentic Index #1<br>指標王冠 ≠ 自社 harness 完走</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Qwen：AA Intelligence #5・Agentic Index #1。$2/$6 と ClinePass／OpenRouter 経路は継続、weights は来週まで下書き。PaperBench 勝ち／SWE-Pro ビハインドの二面性は消えない——指標 #1 は自社 harness の代替ではない。木曜のルーターは「agent レーン候補」として AB 列に載せ、完走ログが出るまで本番列に昇格させない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-trophy"></i>
+            <span>Qwen Agentic Index #1 公式スナップ（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#07 AUTOGLM PHONE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Zhipu AutoGLM-Phone-9B<br>スマホ UI 自律＋Ascend 一等市民</div>
+          <div class="mt-4 text-sm text-zinc-400">汎用チャットの「agent もどき」ではなく、スマホ UI 操作専用 9B。Huawei Ascend NPU first-class が端末アシスタント・アクセシビリティ・自動化の実機経路を与える。LFM2.5-2.6B の on-device レーンと並び、木曜の信号は「端末 agent が国内チップで動く」工学。権限はスクリーン上の allowlist——決済・送信は人間ゲート必須。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-alt"></i>
+            <span>AutoGLM-Phone・端末 agent 実機（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#08 DEEPSEEK AGENT BILL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">DeepSeek「significant increase」予告<br>agent 最安レーンが請求書に戻る</div>
+          <div class="mt-4 text-sm text-zinc-400">公式メールが X 拡散：overall pricing の大幅引き上げと高負荷 surcharge。水曜 usage 王冠の翌日だから効く。大量 agent の経済性を DeepSeek 単価に載せたチームは、Flash／Pro シナリオ別 TCO を再計算——「暫定最安」タグを YAML から外す日。commoditization は終わらないが、補助金戦争の終わり／層別価格の始まりという読みが主流。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-receipt"></i>
+            <span>DeepSeek 値上げ予告・agent 台帳（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 BLOCK AGENTIC CODE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Block——6月本番変更のほぼすべてに<br>agentic AI が関与、ガイダンス上方</div>
+          <div class="mt-4 text-sm text-zinc-400">Q2 粗利 $3.17B（+25%）後の 2026 ガイダンス引き上げと同時に、「agentic AI が write &amp; review にほぼ全面関与」が拡散。デモから本番 ROI への橋が、フィンテック大手の決算語に乗った。ただし「ほぼすべて」は監査可能な差分履歴と人間承認ゲートがあって初めて信頼できる——緑色の PR 数は完走率の代理指標にすぎない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-building"></i>
+            <span>Block agentic 本番・ガイダンス（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#10 HARNESS ECONOMICS D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">同じモデルでも殻で 5〜40×<br>Muse 追加で AB 表が1列増えた</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜定着の制御実験語は木曜も消えない。モデル升级 1.0〜1.3× vs harness 差 5〜40×——Muse を「安いから勝つ」と決める前に、同じ 24 タスク決定論セットで $/完走を測れ。bounded テンプレ（scope・受け入れ・停止）が「もっと考えろ」より効く、という教訓は Muse でも Claude でも同じ。RFP 一行は <code>harness_id × $/完走 × eval_pass_rate</code>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>harness 経済・Muse 列追加（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 LONGHORIZON / AUDIT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">manager / executor / auditor<br>Muse のログと監査層が合流</div>
+          <div class="mt-4 text-sm text-zinc-400">LongHorizon-Harness の三層（検証済み状態を読む manager・fresh executor・read-only auditor）は、Muse の append-only ログと思想が同じ族。会話ログを信じる agent は長時間ほど自分の嘘を栄養にする。Harness-R1／Compass の「殻だけ直す」論文群は、Muse 失敗軌跡を恒久回帰に落とす運用に直結——ターゲット凍結、engineer だけ更新。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>監査状態層 × Muse ログ（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#12 MULTI-CLI FLEET</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude / Codex / Muse / Hermes / Deep Agents<br>単一ベンダー全振りは設計ミス</div>
+          <div class="mt-4 text-sm text-zinc-400">クレジット枯渇→Hermes＋Grok 4.5 退避、Deep Agents OSS の任意モデル CLI、Omnigent 型メタ harness——木曜の表は5列以上。MCP とスキルパス（~/.agents/skills）が差し替えコストを決める。Claude Code 公式ドキュメントが他 agent のトラブルシュートに使われる、という現場声も——アーキテクチャ同型なら、運用知は横断可能。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>multi-CLI・メタ harness 運用（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#13 GROK 4.6 T-1 AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">~8/7</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok 4.6 まで約1日<br>agent YAML は測ってから差し替え</div>
+          <div class="mt-4 text-sm text-zinc-400">1.5T・SFT/RL 強化の「around August 7」は agent 前線にも効くが、API カタログ未掲載なら GA ではない。正しい準備は 4.5 で失敗点を今日計測＋YAML 一行空け。Muse / Qwen / Opus を今日 AB し、4.6 発表日に焦って全線乗り換えない——発表日に祝うな、完走率で祝え。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rocket"></i>
+            <span>Grok 4.6 T-1・agent 差し替え枠（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#14 ARTICLE 50 D+5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開示・マーク・証跡——5日目<br>クラウド spawn の「誰が貼るか」</div>
+          <div class="mt-4 text-sm text-zinc-400">チャットボット開示、合成コンテンツ表示、ディープフェイク標識。coding agent がクラウドに出した成果物ほど、開示ログの所有権が曖昧。API はラベルを肩代わりしない。label condition を CI と VM start に埋め、契約で「誰が AI ですと書くか」を固定——cookie バナー化を笑うチームが後で追う。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tag"></i>
+            <span>EU AI Act 透明性・agent 開示（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#15 ALLOWLIST &amp; KILL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">自律 attack agent 余波のまま<br>到達範囲 allowlist が必須インフラ</div>
+          <div class="mt-4 text-sm text-zinc-400">公開脆弱性を辿る自律キャンペーン報道は木曜も消えない。開源・安価な推論が攻撃面を民主化する速度は、防衛側 red-team を追い越す。Muse の worktree 隔離は便利だが、ネット到達・シークレット・本番 DB へのパスは別問題。goal の隣に stop／Kill Switch／権限最小——WH 枠のサイバー閾値議論と同週に読む。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>agent 攻撃面・権限境界（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-300 text-xs font-mono tracking-[1.5px]">#16 HUMAN-ON-THE-LOOP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HITL から HOTL へ<br>パターン監視がボトルネック</div>
+          <div class="mt-4 text-sm text-zinc-400">enterprise multi-agent 論が再燃：単一 agent のガバナンス欠如は管理可能、ネットワーク欠如は指数的。人間が各決定を承認する HITL はスケールしない——2026 モデルは human-on-the-loop（パターンと例外を監督）。subagent パネル UI と accept/reject は、そのオペ画面の実装。28% 成功／72% 苦戦の語は粗いが、失敗モードが「モデル品質」より「調整・文脈・制御」である点は現場と一致。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-gear"></i>
+            <span>multi-agent ガバナンス・HOTL（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-300 text-xs font-mono tracking-[1.5px]">#17 ROUTER THU AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">日常＝Grok 4.5＋検証<br>端末＝Muse AB／量産＝Qwen 候補</div>
+          <div class="mt-4 text-sm text-zinc-400">難完遂＝Sol high / Opus・Fable。コスト・主権＝Qwen3.8 系統＋27B 級を AB（weights 前）。中層＝Luna/Terra。端末 agent＝Muse Code を AB 初日＋LFM2.5／AutoGLM Phone レーン。OSS 殻＝Deep Agents。計画→実行→検証→記憶監査のマルチモデルがデフォルト——価格表・ラベル・開源日・Kill Switch は同じスプリントの列。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチモデル・agent ルーティング木曜（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-300 text-xs font-mono tracking-[1.5px]">#18 AUGUST AGENT AXIS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月の agent 軸は「殻・単価・場所・開示・権限」<br>木曜は Muse 翌日＋指標＋値上げ</div>
+          <div class="mt-4 text-sm text-zinc-400">08-04 beyond laptop、08-05 harness 経済と VM 採用、08-06 は新 proprietary 殻の AB 初日と東側 agent 指標と最安レーンの神話崩壊が同時。待ち行列：Grok 4.6（明日前後）、Qwen weights（来週）、Astra 公開時期。旗艦連発が前提なら、正しい準備は測ってから祝う YAML と harness——トラッカーが動いてもリリースノートと model ID を先に読む。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月 agent アジェンダ・木曜消化（8/6）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月6日の AI Agents は、水曜の「殻の単価・監査状態・VM 採用・OSS 開封」を受けて、<strong>新 proprietary 殻を AB 表に載せ、指標王冠を信じすぎず、最安レーンの神話を台帳から外す</strong>木曜日だ。最大の製品ニュースは Meta の Muse Code（Muse Spark 1.2 同梱、macOS/Linux ベータ）。TechCrunch は「harness 領域の後発が追いつく一手」、CNBC は Claude Code / Codex への直接参入、現場 X は replay 可能なイベントログと常駐 sub-agent と isolated worktree の並列を拾った。Zuckerberg の「作業コピーは触らない／6 機能同時で衝突なし」は、beyond laptop の翌日に「隔離が製品機能」と翻訳される。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ Muse が「ただのもう一つの CLI」ではないか。第一に <strong>モデルと harness の共訓練</strong>——「そのモデルの最良の殻」として売る戦略は、08-05 の harness 経済（同じモデルでも殻で 5〜40×）と整合する。第二に <strong>append-only ログによる replay-exact 再開</strong>——LongHorizon の監査済み状態と同じ族で、会話履歴を信じる設計からの脱却が製品語になった。第三に <strong>コスト物語とプライバシー tradeoff</strong>——Wang の「コスト視点で良い選択肢」は魅力だが、低コスト帯が訓練データで払う読みがあるなら、TCO に法務行を足す。安いから勝つ、はまだ実験仮説だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            東側レーンも agent 語で太い。Qwen3.8-Max が Artificial Analysis の Agentic Index #1 を公式スナップ——Intelligence #5 と並ぶが、PaperBench 勝ち／SWE-Pro ビハインドは消えず、指標 #1 は自社 harness の代替ではない。Zhipu AutoGLM-Phone-9B はスマホ UI 自律操作専用で Ascend 一等市民——LFM2.5 の on-device と並び「端末 agent が国内チップで動く」工学。DeepSeek の API「significant increase」予告は、大量 agent を最安単価に載せた台帳を直撃する。補助金戦争の終わり／層別価格の始まり——YAML の「暫定最安」タグを外す日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            本番 ROI の語も決算に乗った。Block は 6 月の本番コード変更のほぼすべてに agentic AI が write &amp; review で関与したとし、ガイダンスを引き上げた。07 月の multi-agent 本番成熟論が、フィンテック大手の数字になった形だ。ただし「ほぼすべて」は差分履歴・人間承認・非退行率があって初めて信頼できる。緑色の PR 数は完走率の代理にすぎない——08-04 の「1 回の緑で満足するな」は木曜も有効だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            ガバナンスはスケール問題として再燃する。multi-agent ネットワークでは欠如が指数的に広がる——HITL（各決定を人間が承認）から HOTL（パターンと例外を監督）へ。subagent パネル UI と accept/reject はオペ画面の実装であり、babysit ターミナルからの脱出の続きだ。containment と自律 attack agent 報道の余波では、worktree 隔離だけでは足りない。ネット到達・シークレット・本番 DB への allowlist と Kill Switch が契約テンプレ。EU Article 50 は執行 5 日目——クラウド spawn の開示ログ所有者を「誰が貼るか」契約で固定したチームが、cookie バナー派を追い抜く。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月は multi-agent の本番信頼と Harness Tax。08-01 ラベル前夜、08-02 開示の法と閉ループ、08-03 Perception と code-as-harness、08-04 beyond laptop と on-device と回帰、08-05 殻の単価と VM 採用と OSS 開封——そして <strong>08-06 は「新殻を測る初日・agent 指標の王冠・最安神話の請求書化・本番 ROI の決算語・HOTL と allowlist」が同じダッシュボードに並ぶ木曜</strong>だ。Grok 4.6 は around August 7 の T-1。正しい準備は 4.5 前線維持と失敗点の今日計測と YAML 一行空け——発表日に全線乗り換えない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            08-06 を一文で言えばこうだ。水曜は「足りないのはモデルではなく VM と殻だ」と請求書を突きつけてきた。木曜は Meta が co-trained な proprietary 殻を落とし、東側が Agentic #1 と端末実機で表を圧迫し、DeepSeek が最安レーンを値上げ予告で揺らし、Block が本番 agent を決算語にした。賢い独白はもう足りない。問題は、Muse を AB し、指標を再測し、単価表を直し、権限を狭くし、開示を貼ってから次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日は「殻で 40 倍揺れる」って請求書を見せられた。今日は Meta が「じゃあうちの殻も表に載せて」と curl 一発で来た（笑）。共訓練は正しい——モデルだけ賢くして殻がゴミ、は 2025 の遺物。でも proprietary 最強の殻に全振りしたら、クレジット枯渇の日に泣くのはいつもの顔ぶれだ。Agentic Index #1 は嬉しい見出しだけど、自社 harness で完走しない王冠はスライド用。DeepSeek の値上げ予告は、最安に全部載せた人への優しさのないリマインダー。Block の「ほぼすべて agent」はカッコいいが、差分履歴と人間ゲートがない「ほぼ」は監査の悪夢。Grok の木曜相棒は六枚：Muse を含む harness 別 $/完走、replay ログの有無、データ処理契約、Qwen/Phone の端末レーン、DeepSeek 再 TCO、allowlist＋Kill Switch＋Article 50 の誰が貼るか。測ってから並列せよ。殻を直してからモデルを責めよ。発表日に祝杯をあげるな——完走率で祝え。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Muse Code が AB 表に入り、共訓練 harness と replay ログが製品語になり、Qwen Agentic #1・端末 agent・DeepSeek 値上げ・Block 本番 ROI が同時に台帳を更新する木曜</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月6日の AI Agents 分野は、Meta Muse Code / Spark 1.2 の翌日消化（co-trained harness・append-only ログ・worktree 並列・プライバシー tradeoff）、Qwen3.8-Max の Agentic Index #1、Zhipu AutoGLM-Phone-9B の Ascend 実機、DeepSeek API 値上げ予告による agent 台帳更新、Block の agentic 本番コード関与とガイダンス上方、水曜 harness 経済の継続、LongHorizon 監査層との合流、multi-CLI 艦隊、Grok 4.6 T-1 の差し替え枠、Article 50 D+5 の開示所有者、allowlist / Kill Switch、human-on-the-loop が同時進行した。本番の鍵はフロンティアの順位表ではなく、「測れる殻・再開可能なログ・採用可能な隔離・差し替え可能な手足・開示と権限付き」の agent システムにある。08-05 の「単価・監査・オンボ・開封」に続き、08-06 は「新殻を測り、指標を疑い、最安を直し、本番 ROI を検証する木曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「RFP に Muse を harness_id 列で追加し、$/完走と eval_pass_rate を同じ受け入れ条件で測れ。データ処理契約と opt-out を価格の前に。DeepSeek 値上げ予告後はシナリオ別 TCO を再計算。デモ 1 回の緑は根拠にしない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「状態は会話履歴ではなく監査済み／replay 可能なイベントログ。worktree 隔離を既定に。Deep Agents 型の差し替え可能な filesystem／MCP を残し、Muse を唯一の殻にしない。障害時 Runbook の一行目はモデル名ではなく状態と harness 版。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「共訓練 harness は強い仮説——同じモデルで殻を A/B し、$/成功とユーザー介入と非退行率も報告せよ。Agentic Index #1 は第三者再測と自社タスクで検証。on-device Phone agent と cloud swarm は別ベンチ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス／セキュリティ担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「worktree 隔離は必要だが十分ではない。MCP 接続先・ネット到達・シークレットの allowlist を先に。決済・メール・インフラ権限は人間承認ゲート。クラウド spawn の開示ログ所有者と Kill Switch SLA を契約に書け。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に location×harness_id×token×agent_count×eval_pass_rate×cache_hit×data_terms。指揮は枠内フロンティア、量産は小モデル／on-device、夜間は cap。DeepSeek 新単価と Muse コスト帯を同じ行で比較——枠枯渇は障害扱い。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを plan/build/judge で同じ受け入れ条件まで、Claude Code と Muse を並走させ、完了時間・請求・手戻り・実行場所・開示ログを一枚に。人が書くのはゴールと erase 条件と停止条件と『AI です』ラベル。情シスとは worktree／MCP／session cap を先に合意。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-08-06 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Muse Code D+1・共訓練 harness・replay ログ・Qwen Agentic #1・AutoGLM Phone・DeepSeek 値上げ・Block agentic・harness 経済 D+1・multi-CLI・Grok 4.6 T-1・Article 50・allowlist・HOTL）、TechCrunch / CNBC / VentureBeat / Meta・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-08-06', 'color:#10b981');
+  </script>
+</body>
+</html>
