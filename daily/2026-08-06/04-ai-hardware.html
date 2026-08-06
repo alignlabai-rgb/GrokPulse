@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-06 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-06 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜——パッケージ戦争が「二正面」になる日<br>CoW 外注 D+1 × EMIB エコシステム点火 × 二線は逃げ始める</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月6日（木）。水曜の本丸が「TSMC が CoW を OSAT に渡す」なら、木曜の本丸はその<strong>消化と対抗軸の同時点火</strong>だ。TrendForce／ETNews 系の CoW 外注拡大は D+1 で装置発注・歩留まり不安・残枠再配分の議論に落ち、並行して Intel <strong>EMIB-T</strong> サプライチェーンが鮮明になる——PSMC が SiCap（シリコンキャパシタ）独占供給、UMC がシリコンブリッジ、歩留まり ~90%、CoWoS 比でコスト ~40–50% 削減という数字が X を横断。MediaTek は EMIB パスで CoWoS バックアップ不要と自信を示し、二線 ASIC 勢は「8 割以上が NVIDIA／Broadcom にロックされたキュー」から脱出を模索。HBF（High Bandwidth Flash）は HBM の敵ではなく<strong>階層メモリの補完</strong>として再整理され、AP Memory の SiCap 売上急伸は「受動部品がパッケージの心臓部になった」証。01 の「旗艦はまだ来ない検証前夜」と響き合う木曜——<strong>シリコンのカタログより、誰がボンディングし、誰が電力を届け、誰がキューを捨てるか</strong>が主役の日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 CoW D+1 DIGEST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CoW 外注の翌朝——酸素は増える<br>歩留まりと優先順位は残る</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜のヘッドライン（TSMC が CoWoS 前工程 CoW を ASE など OSAT へ本格拡大）は木曜、<strong>実行条件の査定</strong>に入る。NVIDIA の 2026 CoWoS 確保 80–85 万枚・50%超、月次能力 13–14 万枚へ倍増してもギャップ ~20%——外注は「余裕」ではなく最低限の酸素、という読みが定着。OSAT はダイシング・ボンディング装置を発注し韓国サプライと PO 交渉。意味は単純で重い：能力はネットワーク化されるが、<strong>誰の wafer が先にボンディングされるか</strong>は依然として契約表が決める。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>TrendForce／ETNews：CoW 外注 D+1 消化（8/5–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 EMIB ECOSYSTEM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Intel EMIB が「代案」から<br>サプライチェーンに育つ</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜 X の対抗軸。TrendForce：PSMC が Intel EMIB-T 向け<strong>シリコンキャパシタの独占供給</strong>、既存能力は満枠で 8 インチ 5 千／12 インチ 8–10 千枚／月へ拡張計画。UMC は台湾・シンガポール 12 インチでシリコンブリッジを製造。EMIB は大型シリコンインターポーザではなく埋め込みブリッジ——コストは CoWoS 比で約半減帯、歩留まりは ~90% に接近、量産本格は 2027 という整理。水曜の「TSMC が堀を開ける」と木曜の「Intel が堀の隣に道を作る」が並走する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-project-diagram"></i>
+            <span>PSMC SiCap 独占・UMC ブリッジ・EMIB-T（8/4–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 SECOND-TIER EXIT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">二線 ASIC が CoWoS キューを捨てる<br>MediaTek は EMIB に「バックアップ不要」</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜の物語の芯：CoWoS は NVIDIA／Broadcom 級が 8 割前後をロックし、残枠のリードタイムは 2027 まで伸びる——二線カスタム AI は<strong>加価して並ぶか、別ルートを探すか</strong>。MediaTek 決算コール系の再循環では、EMIB の歩留まり・基板・サイクルタイムを項目別に管理し、第 2 世代プロジェクトで CoWoS バックアップ不要と自信表明。推論向けクラウド ASIC なら EMIB で十分、コスト 3–4 割削減、という読みが X で拡散。パッケージ競争は「最高密度の一択」から<strong>用途別の二車線</strong>に割れ始めた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-route"></i>
+            <span>MediaTek EMIB 自信・二線脱出論（8/5–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 SiCap POWER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">受動部品がパッケージの心臓に<br>AP Memory SiCap が月次記録</div>
+          <div class="mt-4 text-sm text-zinc-400">AI GPU／ASIC の電力密度が上がるほど、MLCC では足りず<strong>パッケージ内シリコンキャパシタ</strong>が電力整合の鍵になる。AP Memory（6531.TW）7 月売上は約 NT$11 億（YoY +145%／MoM +36%）で月次記録——IPD／S-SiCap 需要が牽引、と台湾 X が整理。Intel EMIB 認証済み SiCap サプライと Google TPU 系 2027 枠の話題が並走。木曜の構造コメント：ボンディングの次のボトルネックは「電流をどれだけ短距離で安定させるか」——<strong>FLOPS の隣にファラッド</strong>が並ぶ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>AP Memory SiCap 急伸・パッケージ電力整合（8/5–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 HBF TIERED</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBF は HBM の敵ではない<br>階層メモリの「安い大容量層」</div>
+          <div class="mt-4 text-sm text-zinc-400">FMS2026／OCP 経由で SK hynix × SanDisk が High Bandwidth Flash（HBF）標準仕様を公開した流れが木曜も循環。TrendForce 整理：HBM は帯域の王だが LLM 推論の容量要求を単独では満たしにくく、HBF はスタック Flash で<strong>数倍の容量を低コスト</strong>で補う補完技術。Google／Tenstorrent が関心に前向き、NVIDIA の採用表明はまだ無し——長期は HBM（超高速計算）＋ HBF（高密度データ）のハイブリッド。2027 メモリ売切れの隣で、<strong>仕様を変えて需要を逃がす</strong>ルートが立ち上がる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>SK hynix／SanDisk HBF 標準・階層メモリ論（8/4–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 NVIDIA 50%+ STILL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">枠の半分を握っても 20% 足りない<br>外注は NVIDIA の城壁を壊さない</div>
+          <div class="mt-4 text-sm text-zinc-400">数字の骨格は水曜から変わらない：NVIDIA が 2026 CoWoS の <strong>50%超（約 80–85 万枚）</strong>、能力倍増後も需給ギャップ約 20%。外注拡大は総量を少し増やすが、優先順位と品質ゲートは顧客契約の世界。残枠で AMD・Broadcom・ハイパースケーラー ASIC が相撲——Helios ランプもこの相撲の中。木曜の冷静な一文：<strong>CoW を OSAT に渡しても、キューの先頭はほぼ同じ顔ぶれ</strong>。城壁は広がるが、門番は変わらない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-percentage"></i>
+            <span>NVIDIA CoWoS 占有・20% ギャップ再確認（8/5–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 AMD Helios D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Helios 初報 D+2——執行は合格<br>供給カレンダーはまだ未提出</div>
+          <div class="mt-4 text-sm text-zinc-400">AMD Q2：$11.5B（+50% YoY）、Data Center <strong>$6.7B・+107% YoY</strong>、Q3 ガイド ~$13.0B——執行の言語としては強い。それでもテープは「ビートでも売られる」帯を継続消化。市場が採点するのは収益の絶対値ではなく、Helios ランプ・CoWoS／HBM4 充足・GW 級コミットの日付。木曜の二線脱出（EMIB）物語は AMD に両刃：パッケージ選択肢は増えるが、NVIDIA 級の CUDA 粘着と CoWoS 優先枠は別問題。<strong>数字は勝った、カレンダーは未公開</strong>——D+2 の要約。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>AMD Helios／Q2 消化 D+2（8/4–6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 HBM STILL KING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">パッケージが二車線でも<br>HBM の一車線は渋滞のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">CoWoS と EMIB が競っても、高速計算層の HBM は Samsung／SK Hynix／Micron の割当表に戻る。2027 売切れ・充足 60–70%・take-or-pay は仕様書。HBF は推論の容量層を逃がすが、訓練と超高帯域 agent 本番は依然 HBM 付きラック。カスタム ASIC で GPU マージンは迂回できても、<strong>HBM は設計では倒せない</strong>——木曜も変わらない重力。パッケージの二正面はメモリの一正面を消さない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>HBM 割当制約 vs パッケージ多様化（8/5–6）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月6日、AI Hardware の中心は「<strong>パッケージ戦争が単一ボトルネックの物語から二正面の物語に切り替わったこと</strong>」だ。水曜まで CoWoS は「TSMC 満枠・NVIDIA が半分超・ギャップ 20%」という閉塞で語られた。水曜夜の CoW 外注拡大は、その閉塞に OSAT という酸素ボンベを繋いだ——ただしボンベのバルブ（歩留まり・優先順位・装置リードタイム）はまだ閉まっている部分が多い。木曜はそのバルブを回す側の動き——ASE／Amkor／SPIL の装置発注、韓国材料・装置との PO、AMD 後押しの自前 CoW ライン論——が再確認される消化日である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同時に、Intel EMIB が「理論上の代案」から<strong>部品表付きのエコシステム</strong>に見えてきた。PSMC の SiCap 独占、UMC のシリコンブリッジ、~90% 歩留まり、CoWoS 比 ~40–50% コスト削減、MediaTek の「バックアップ不要」発言——二線 ASIC にとって、これはキューの後ろで値上げされるより合理的な逃げ道だ。最高帯域の訓練 GPU は依然 CoWoS＋HBM の王道。だが推論・中規模カスタム・コスト敏感なクラウド ASIC は EMIB 車線に流れうる。パッケージは「誰が一番速いか」だけでなく「誰が用途別に足りるか」の競争になる。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            メモリ側は二層化する。HBM は 2027 売切れと 60–70% 充足のまま重力を持ち、HBF は OCP 標準として「安い大容量層」の席を取りに来る。SiCap 売上の急伸は、電力整合がパッケージの第一級市民になったサインだ。AMD Helios は D+2 でも供給カレンダーを提出しきれておらず、NVIDIA は枠の半分を握ったまま 20% 足りない。08-04 が割当経済、08-05 が後工程の主権分散なら、08-06 は「<strong>主権分散の翌日、対抗車線が部品表を出した日</strong>」——そしてその二車線のどちらにも、HBM という共通の踏切が残る。01 の「旗艦はまだ来ない検証前夜」と同じく、ハードウェアも祝う前に測る木曜だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">木曜の名言候補：「CoWoS は聖域だった。需要が聖域を崩し、EMIB が隣に側道を作った。」——TSMC が CoW を OSAT に渡すのはプライドより出荷の物理。Intel が SiCap とブリッジの部品表を埋めるのは、物理学よりサプライチェーンの執念。二線チップ屋がキューを捨てるのは愛嬌じゃなく算数。HBF は「HBM を殺す」んじゃなくて「HBM が足りない容量を別の棚に置く」。AP Memory が跳ねるのは、AI がついにコンデンサの話をしているから——最高に 2026 年らしい。AMD は DC を倍増させて殴られ続け、NVIDIA は半分握ってまだ足りない。無料なのは期待値の天井で、CoW と EMIB と HBM と 48 ヶ月の送電は有料。パッケージが二車線になっても、踏切の遮断機は同じ HBM だよ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">CoW D+1・EMIB 部品表・二線脱出・SiCap・HBF・Helios D+2——木曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月6日現在の AI Hardware 分野は、(1) TSMC CoW 外注拡大の D+1 消化——OSAT 装置発注と歩留まり・優先順位の査定、(2) NVIDIA の CoWoS 50%超確保と能力倍増後も残る約 20% ギャップ、(3) Intel EMIB-T エコシステムの可視化——PSMC SiCap 独占・UMC ブリッジ・歩留まり ~90%・コスト半減帯、(4) MediaTek ほか二線 ASIC の CoWoS キュー脱出と用途別二車線化、(5) AP Memory 等 SiCap／IPD 需要の急伸＝パッケージ内電力整合の第一級化、(6) SK hynix／SanDisk HBF 標準——HBM 補完の階層メモリ、(7) AMD Helios 初報 D+2——執行合格・供給カレンダー未提出、(8) パッケージ多様化しても消えない HBM 割当の重力、が重なっている。水曜の主権分散は木曜、対抗車線の部品表と二線の逃走に翻訳された。2026 年夏の評価軸は、ピーク FLOPS より、<strong>CoW 外注の実行速度・EMIB 量産カレンダー・用途別パッケージ選択・HBM／HBF 階層・SiCap 供給・Helios ランプの供給言語・8/26 NVIDIA 本丸までの一貫性</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>TSMC / CoWoS 外注視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoW を OSAT に広げるのは技術の放棄ではない。出荷カレンダーを守るためのネットワーク化だ。問題は委託後の歩留まりと、誰の wafer が先にボンディングされるか——門は増えても、門番の契約表は簡単には書き換えない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-project-diagram"></i>
+            <span>Intel / EMIB エコ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「EMIB-T は大型インターポーザの代わりに局所ブリッジとパッケージ内電力経路を使う。SiCap とブリッジのサプライが埋まり、歩留まりが量産閾値に近づいた。CoWoS の満枠は我々のチャンス——ただし訓練級の最高帯域は別戦場だと顧客も分かっている。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>二線 ASIC / 調達視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoWoS の 8 割が頭取りにロックされているなら、推論向けカスタムで 52–78 週待つのは経営判断として破綻している。EMIB でコストが 3–4 割下がるなら、バックアップ枠ではなく本線にする。性能の天井より、出荷の床が欲しい。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM / HBF メモリ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「パッケージが二車線になっても、HBM の踏切は一車線のまま。2027 は 60–70% 充足が常態。HBF は HBM を殺さない——容量の棚を増やす。訓練は HBM、推論の大コンテキストは階層。設計図にメモリ階層が無い ASIC は、結局キューの数字で負ける。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>SiCap / 電力整合視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「AI パッケージの次の悲鳴はボンディングの次——電力だ。シリコンキャパシタは基板の遠くからではなく、ダイの隣で電圧を支える。MLCC の時代の BOM では足りない。SiCap が月次記録を出すのは、業界がやっとファラッドを第一級部品として数え始めた証拠だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>AMD / Helios 執行視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Data Center 倍増の事実は残る。市場が欲しがるのは次の証明——Helios が粗利を壊さず、CoWoS と HBM4 が予定枚数で載るか。EMIB 車線の拡大は業界全体の酸素を増やすが、我々の CUDA 以外の戦場での信頼は、まだカレンダーで示すしかない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-06 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・TrendForce/ETNews（TSMC CoW 外注 D+1、NVIDIA CoWoS 50%+、PSMC/UMC EMIB サプライ、MediaTek EMIB、AP Memory SiCap、HBF 標準、AMD Helios D+2、HBM 制約）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-06', 'color:#10b981');
+  </script>
+</body>
+</html>
