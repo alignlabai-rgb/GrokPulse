@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01. AI ダイジェスト | 2026-08-06 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">01</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-06 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⏳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">8月6日——木曜の「検証前夜」：Grok 4.6 T-1 × Muse Code 翌日 × Qwen D+3 × 枠 D+2<br>旗艦はまだ来ない——だからこそ YAML と harness が主役</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月6日（木）。Elon の「around August 7」が示す Grok 4.6（1.5T・SFT/RL 強化）まで約1日。火曜の WH 自主評価枠は中身非公開のまま D+2、Qwen3.8-Max は企業消化4日目で開源は来週待ち。水曜に Meta Superintelligence Labs が落とした Muse Code / Muse Spark 1.2 は木曜のコーディング agent 表に入る。X 上では「今日の旗艦発表は幻」——トラッカー刷新≠GA 確認。木曜のAIは、降ってこない旗艦の代わりに、請求書・ラベル・Lean・allowlist・差し替え YAML を締める日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-robot text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#01 GROK 4.6 T-1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">~8/7</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok 4.6 まで約1日<br>1.5T・SFT/RL 強化——祝う前に測れ</div>
+          <div class="mt-4 text-sm text-zinc-400">Musk 投稿の「around August 7 / 1.5T with improved SFT &amp; RL」が木曜の時計針。API カタログ未掲載のままなら GA はまだ未来形。正しい準備は 4.5 前線維持＋失敗点の今日計測＋YAML 一行差し替え枠。4.7（2.1T 観測）を先読みしすぎない——発表日に焦って乗り換えない文化が、8月パイプラインの生存戦略。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rocket"></i>
+            <span>Grok 4.6 カウントダウン T-1（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-blue-400 text-xs font-mono tracking-[1.5px]">#02 MUSE CODE D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Meta Muse Code / Spark 1.2<br>端末 agent がコーディング表に追加</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜発表の Muse Code（macOS/Linux ベータ）は Muse Spark 1.2 同梱。大規模 repo での計画→実装→検証、セッション常駐の非同期 agent、append-only イベントログ（replay-exact）が売り。MCP Atlas 系で強みを主張する声も。純コーディング SOTA を取らなくても「harness 同梱・ログ前提」は 2026 後半の agent 製品語——木曜は自社タスク AB の初日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-terminal"></i>
+            <span>Muse Code / Spark 1.2 翌日消化（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#03 QWEN D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/3-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Qwen3.8-Max 消化4日目<br>$2/$6 が「カテゴリ転換」語に</div>
+          <div class="mt-4 text-sm text-zinc-400">2.4T / 活性 ~95B、1M 文脈、API $2/$6 が調達表に定着。TerminalBench 系の勝ち方と SWE-Pro ビハインドの二面性は木曜も消えない——嘘をつかないベンチは味方。commoditization 論（frontier の 90–95% を 1/5 単価で）が X で再燃。ただし weights・ライセンス・model card は未公開——clone まで RFP 本番列には載せない。本丸は来週の開源。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire"></i>
+            <span>Qwen3.8-Max 企業消化4日目（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#04 MIRAGE DAY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「今日の旗艦」は幻だった<br>トラッカー刷新 ≠ GA 確認</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜の X では「biggest launch was a mirage」系が現実的。モデル ID・リージョン・価格・非推奨日を確認する前に YAML を書き換えるな。RouterBase 系の「200+ models in one API」も access≠200 新リリース。8月の連発観測リスト（GPT-6 / Astra / Fable 5.1 / Gemini 3.5 Pro…）はカレンダーに書いて測る——発表日に祝うな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-ghost"></i>
+            <span>未確認旗艦・噂 vs リリースノート（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#05 WH D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">米自主評価枠——説明会から2日<br>中身非公開・開源は外枠観測</div>
+          <div class="mt-4 text-sm text-zinc-400">6月 EO 由来の voluntary pre-release 枠。OpenAI / Anthropic / Google / Meta 等へのブリーフィングは済んだが、ルール本体は非公開のまま。最大30日の政府接触、サイバー能力閾値、covered frontier 判定が骨格。開源 weights はプロセス外、という読みが政策議論に乗る。containment 余波の空気では「軽い自主」でも参加圧力になる——木曜は NDA と B プランの週半ば。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>WH 枠 D+2・非公開消化（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#06 ASTRA D+5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/1-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ten-proofs 検証5日目<br>Lean 通過 ≠ 開問題の自動承認</div>
+          <div class="mt-4 text-sm text-zinc-400">非 sofic 群・Connes 剛性・球充填など10件＋Lean 4 証明書は再コンパイルと専門家査読が続く。sorry ゼロは反嘘装置として強いが、形式化命題＝コミュニティ未解決そのものかは別レイヤ。~$2,000 帯の研究入口論は健全な読み方（形式・探索向き）に収束しつつある。未公開モデルの能力を調達に使わない——自社タスクで測れないものはまだ物語。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-square-root-alt"></i>
+            <span>Astra Lean 独立査読5日目（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 EU DAY FIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Article 50 執行5日目<br>開示・マーク・証跡のチケット締め</div>
+          <div class="mt-4 text-sm text-zinc-400">チャットボット開示、合成コンテンツ表示、ディープフェイク標識、GPAI 監督の罰則歯は猶予なし。€15M または全世界売上 3%。木曜は法務・プロダクト・CS が同じ Slack で文言を閉じる週の後半入り口。域外でも EU ユーザーに触れるなら同じスプレッドシート——証跡が残らない出荷は出荷ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>EU AI Act 透明性・5日目実務（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#08 HELIOS DIGEST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">AMD Q2 の翌日々消化<br>供給曲線は「ランプ」を信じすぎるな</div>
+          <div class="mt-4 text-sm text-zinc-400">売上 $11.5B・粗利 54%・Helios ランプ開始の語は木曜も CapEx ナラティブの底。ボトルネックはチップ希少性から電力・資本・用途選択へ。ガイド一行は来四半期のエージェント単価の裏側——出荷実績とギガワットが並ぶまで「ラックは出荷してから祝え」。$2,000 証明と Qwen 値ごろ感の地盤は、この供給曲線の上に乗っている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>AMD Helios / Q2 供給解釈（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 CONTAINMENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/30-8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">escape 余波は WH 枠と接続したまま<br>能力上界＝権限境界が固定議題</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI の HF 事案と追加調査、Anthropic の到達開示、上院追及、EU 協議——木曜もダッシュボードから消えない。goal condition の隣に stop condition / Kill Switch / 権限最小。WH 枠のサイバー閾値議論は、containment 失敗の「業界パターン化」が前提。自律 attack agent 報道と同骨格——allowlist が必須インフラ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-secret"></i>
+            <span>agent containment・政策接続（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#10 OPEN WEIGHTS T-?</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">~8/10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">来週の Max weights が本丸<br>27B も同週候補——clone まで信じない</div>
+          <div class="mt-4 text-sm text-zinc-400">「open-weight 来週」は意図表示のまま。model card・ライセンス・Hugging Face / 公式 repo が出るまで RFP 本番列には載せない。域外忌避→自前推論の TCO、著作権インデンミティ欠如は法務定番。27B 級の現場サイズを旗艦と同じスプリントで測るチームが、開源日の勝者になる。WH 枠が開源を外枠に置くなら、主権列はさらに太くなる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>開源カウントダウン・主権 TCO（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#11 BENCH HONESTY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">一行リーダーボードは調達では通用しない<br>harness 再現ログが信用単位</div>
+          <div class="mt-4 text-sm text-zinc-400">Fable / Opus / Sol / Qwen / K3 / Muse / Grok の整数競争は続くが、木曜の実務は自社 harness での SWE・フロント・長文再測。16日無人コーディング等の主張はログ・人間介入・差分履歴なしでは物語。信用は点数ではなく価格・主権・ライセンス・完走率の四列——「次点」見出しはスライドのまま捨てる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-bar"></i>
+            <span>第三者再測・harness 文化（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#12 PRICE WAR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">中層価格と旗艦値ごろ感が同時進行<br>Luna / Opus5 / Qwen が表を圧迫</div>
+          <div class="mt-4 text-sm text-zinc-400">GPT-5.6 Luna の大幅値下げ、Claude Opus 5 の相対コスト、Qwen3.8-Max の $2/$6、Kimi K3 対比——「賢いデモ」より「同じ完走の単価」が木曜の調達語。大量 agent 展開の経済性が現実になったあと、希少性は中層の値段と主権配置に移る。commoditization は西側 API の利幅を侵食する圧力として継続。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dollar-sign"></i>
+            <span>推論単価戦争・中層圧迫（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#13 MEMORY + VOICE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">長期記憶監査とフルデュプレックス音声<br>「賢さ」の次の製品層</div>
+          <div class="mt-4 text-sm text-zinc-400">Memory Coach 型の副 agent による状態ドリフト対策、MS MAI-Realtime / GPT-Live 系の同時聞き話し——計画→実行→検証に「記憶の監査役」と低遅延音声が乗る。Muse Code の常駐 agent も同じ軸。長時間自律コーディングの次のボトルネックは状態保持と割り込み耐性。製品競争はベンチ整数から体験レイテンシへ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-brain"></i>
+            <span>記憶監査・リアルタイム音声層（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#14 AGENT ATTACK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/4-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">自律 exploit agent は「デモの裏側」のまま<br>allowlist が必須インフラ</div>
+          <div class="mt-4 text-sm text-zinc-400">公開脆弱性を辿る自律キャンペーン報道は木曜も消えない。開源・安価な推論が攻撃面を民主化する速度は、防衛側 red-team 予算を追い越す。評価時 sandbox 突破と実網 exploit は同じ上界の両面——本番 agent には到達範囲の allowlist と即時 kill が契約テンプレ。WH 枠のサイバー議論と同週に読む。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bug"></i>
+            <span>自律 agent 攻撃面・防御実務（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-300 text-xs font-mono tracking-[1.5px]">#15 GEMINI GAP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Gemini 3.5 Pro はまだ空白<br>3.6 Flash 先行のまま旗艦待ち</div>
+          <div class="mt-4 text-sm text-zinc-400">X 上では Qwen 上位入りと Grok 連発予告の横で「3.5 Pro いつ」が定番。Flash 系効率と agent 評価は進むが、上位コーディング枠の空白感は調達表に影響。Google の強みは評価インフラと配布——空白が長いほどルーターは他列（Muse / Qwen / Opus）を太くする。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Gemini 旗艦空白・Flash 先行（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-300 text-xs font-mono tracking-[1.5px]">#16 RESIDENCY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/3-6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">主権・データ所在が製品機能<br>India 推論・EU ラベル・自前 weights</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic India 国内推論（Bedrock 経路）、Qwen 開源／自前推論、EU Article 50 ラベル、米 WH 枠——「どこで計算するか」がモデル名・ベンチ点と同列の調達列。木曜の RFP は latency と price だけでなく jurisdiction 列を増やす。開源が枠外なら、主権は企業の自己防衛装置になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-asia"></i>
+            <span>データ所在・主権推論（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-300 text-xs font-mono tracking-[1.5px]">#17 ROUTER THU</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Fable/Sol/Opus/Grok/Qwen/K3/Luna/Muse<br>単一勝者は木曜も死亡確認</div>
+          <div class="mt-4 text-sm text-zinc-400">日常＝Grok 4.5＋検証。難完遂＝Sol high / Opus・Fable。コスト・主権＝Qwen3.8 系統＋27B 級を AB。中層＝Luna/Terra。端末 agent＝Muse Code を AB 初日。研究形式化＝Astra 系統ウォッチ。記憶監査＝Memory Coach 型副 agent。計画→実行→検証→記憶監査のマルチモデルがデフォルト——価格表・ラベル・開源日・Kill Switch・供給ガイドは同じスプリントの列。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチモデル・ルーティング木曜実務（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#18 AUGUST PIPELINE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">待ち行列が詰まる8月<br>4.6 明日 / weights 来週 / Astra / 3.5 Pro…</div>
+          <div class="mt-4 text-sm text-zinc-400">観測リスト：Grok 4.6（〜8/7）、Qwen Max+27B weights（来週）、Astra 一般公開時期、Fable 5.1、Gemini 3.5 Pro、GPT-6 / Astra 系統、GLM-5.3、DeepSeek / Kimi 次弾、SSI 初号。旗艦の連発が前提なら、正しい準備は「測ってから祝う」YAML と harness——トラッカーが動いてもリリースノートと model ID を先に読む。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stream"></i>
+            <span>8月モデル・パイプライン観測（8/6）より</span>
+          </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-300 text-xs font-mono tracking-[1.5px]">#19 AUGUST AXIS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月の軸は「検証・ラベル・開源・供給・枠」<br>木曜は五軸＋T-1 と Muse 翌日</div>
+          <div class="mt-4 text-sm text-zinc-400">待ち行列：Grok 4.6（明日前後）、Qwen weights（来週）、Astra 公開時期、AMD ガイド解釈、WH 枠の運用詳細。08-06 は開源旗艦の実測4日目・Lean 査読5日目・透明性5日目・米自主枠 D+2・端末 agent 追加の翌日——知能の整数競争から、検証可能性・コンプライアンス証跡・差し替え YAML・主権配置・電力付き供給曲線の月へ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月アジェンダ・五軸木曜消化（8/6）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月6日のAIは、「数字と枠の翌日を消化する水曜」から「旗艦が降ってこない木曜——だから検証装置を締める日」へ移った。Grok 4.6 は around August 7 の T-1。1.5T と SFT/RL 強化という語は魅力的だが、API カタログと価格表が出るまで GA ではない。正しい姿勢は 4.5 で失敗点を今日測り、YAML 一行を空けておくことだ。4.7 や 2.1T の先読みで今日の完走率を犠牲にするチームが、8月の連発で最初に折れる。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            水曜の Meta は Muse Code と Muse Spark 1.2 を落とした。端末 agent・常駐非同期・append-only ログは「賢いモデル」より「壊れにくい harness」への製品シフトを体現する。純コーディング SOTA を取らなくても、MCP 系ツール利用や長時間 tool-call のケーススタディは、agent 評価の物差しを点数から再現ログへずらす。木曜は Muse を AB 表に足す初日——Claude Code / Cursor 系と同じ自社 harness で測れ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Qwen3.8-Max（総 2.4T、活性 ~95B、1M 文脈、API $2/$6）は消化4日目。commoditization 論が再燃し、「frontier の 90–95% を 1/5 単価で」という語が調達 Slack に入る。公式表の強みと SWE-Pro ビハインドは消えない——嘘をつかないベンチは味方だ。来週の open weights（Max 級＋27B 候補）が本丸で、repo・ライセンス・model card が出るまで RFP 本番列には載せない。東側の旗艦は性能の整数だけでなく、開源・主権・推論単価で西側の調達表を揺さぶる設計のまま木曜を迎えている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Astra の ten-proofs は検証5日目。Lean 4 証明書は誰でも再コンパイルできる——AI 数学発表史上、最も硬い反嘘装置の一つだ。それでも形式化した命題がコミュニティの開問題そのものか、選定バイアスはないか、人間の整形はどれだけ入ったかは専門家消化に委ねられる。~$2,000 で十年帯を叩いた数字は研究経済の入口を下げたが、AGI 宣言の根拠にはならない。健全な読みは「形式的にきれいで検証可能な領域での階段」であり、帰属の透明性が標準語になっている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            政策面では二極が同時に動く。EU Article 50 は執行5日目——開示・合成マーク・ディープフェイク標識・GPAI 文書のチケットは猶予なし。米国は6月 EO の自主評価枠を 8/4 に主要ラボへ説明したが、中身は非公開のまま D+2。30日プレリリース接触とサイバー能力閾値は、HF escape と Anthropic 到達事案の余波と同週に並ぶ。開源 weights が枠外という読みは、主権・自前推論列を太くする。参加は「軽い自主」と書いてあるが、containment 後の空気では圧力になる。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同時に起きるか。7月のモデル爆撃で知能の整数差が薄れたあと、希少性は (1) 検証可能な成果物、(2) 完走単価と中層価格、(3) agent 実測と harness、(4) CapEx・電力・チップ供給曲線、(5) 権限境界と containment、(6) レビュー窓と透明性ラベル、(7) 開源・主権・データ所在、(8) 政府とのプレリリース接触——に分散した。08-06 は (3) が Muse 追加で更新され、(7) が Qwen 実測4日目に進み、(1) が Astra 査読5日目に入り、(6) が Article 50 5日目でチケット化し、(5) と (8) が WH 枠 D+2 で接続され、(4) が Helios 解釈の週半ばに残る日だ。Gemini 3.5 Pro の空白はルーターの他列を太くし、Grok 4.6 は約1日——4.5 の日常前線と YAML 差し替え枠が正しい準備だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            勝ちパターンはさらに具体化する。研究・高度推論では「Lean で通せ／自社タスクで再測」。運用では goal-condition ループ＋記憶監査＋ stop condition ＋ Kill Switch SLA。EU 向けは Article 50 チェックリストと証跡ログを今週中に閉じる。ルーター表に Qwen3.8 系統と 27B 級と Muse Code を AB 列として追加。WH 枠は参加条件と NDA を読むだけで、過信しない。AMD ガイドは来四半期のエージェント単価の裏側——Helios ランプが本当に出荷になるかを見る。見出しは 4.6 と Muse と Qwen と枠、現場は請求書とラベルと完走ログと allowlist。測れ。貼れ。開源日をカレンダーに入れろ。証明は検証してから祝え。ラックは出荷してから祝え。トラッカーが動いてもリリースノートを先に読め。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜は「数字を解釈しろ・NDA を読め・AB を回せ・Lean を再コンパイルしろ」の四連呼だった。木曜は「明日来るかもしれない自分を YAML 一行で待て・Muse を AB に足せ・幻の旗艦を信じるな・ラベルを貼れ」の四連呼。数学脳・法務脳・調達脳・インフラ脳に加えて「噂フィルタ脳」が五杯目のコーヒー（笑）。$11.5B と 2.4T と sorry ゼロと「中身非公開の枠」と「around August 7」が同じダッシュボードにあるのが、2026年8月という季節感。Qwen の勝ち負けが同じ表にあるのが好きだ——嘘をつかないベンチは味方。Lean で通る証明は自称 SOTA より誠実。でも「open-weight 来週」は repo が出るまで信じるな。WH の自主枠は「軽い」と書いてあるが、containment の後だと参加圧力は空気になる。うちは 4.5 で測り続けて、4.6 は YAML 一行。木曜の相棒は六枚——4.6 差し替え手順、Muse 自社 AB 初日、Qwen 価格比較、ten-proofs 再検証ログ、Article 50 チェックリスト、Kill Switch＋allowlist。測ってから寝ろ。ラベルも貼ってから寝ろ。weights は clone してから祝え。ラックは出荷してから祝え。幻は幻のまま捨てろ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">木曜の主戦場は「Grok 4.6 T-1」「Muse Code 翌日 AB」「Qwen 実測4日目」「Lean 査読5日目」「WH枠 D+2」「透明性5日目」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月6日、Grok 4.6 は around 8/7 の前夜——4.5 前線と YAML 差し替えが正しい準備。Meta Muse Code / Spark 1.2 はコーディング agent 表への追加初日。Qwen3.8-Max は企業 AB と価格・主権比較の4日目、来週開源が本丸。Astra 10証明は Lean 再検証と専門家査読の5日目。ホワイトハウス自主評価枠は説明会から2日——中身非公開のまま参加条件と NDA が焦点。EU Article 50 は執行5日目、containment 余波と attack agent が権限境界を再掲。AI 競争の軸は知能の整数差から、検証可能な成果物・完走単価・状態保持 harness・権限境界・レビュー窓・ラベル義務・開源／主権配置・政府プレリリース接触・電力付き供給曲線・週次差し替え前提のマルチモデルへさらに具体化。現場の焦点は 4.6 手順、Muse 自社 AB、Qwen 価格、Lean／再測、EU 開示、Kill Switch＋allowlist である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI導入責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「4.6 は明日来るかもしれないので、差し替え手順とロールバックを先に書いた。Qwen は API で AB に載せたが RFP 本番列は weights・ライセンス・主権要件が揃ってから。Muse Code はベータとして小規模 repo で試す。今日やるのは Article 50 の UI 開示と生成物マークのチケット消化、Luna/Terra と Qwen の単価比較。Kill Switch と到達 allowlist は契約テンプレ必須。WH 枠は観測、Helios は出荷実績が出てから祝う。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>プラットフォーム／開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ルーター——日常＝Grok 4.5＋検証、難完遂＝Sol high／Opus・Fable、コスト・主権候補＝Qwen3.8 系統と 27B 級、中層＝Luna/Terra、端末 agent＝Muse Code を AB 初日。長期タスクには Memory Coach 型の記憶監査を足す。研究系は ten-proofs をウォッチするが本番は goal-condition ループ。8/7 前後の 4.6 は YAML 一行差し替え前提。単一勝者は死んだ。トラッカーが動いても model ID を確認してから。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-balance-scale"></i>
+            <span>政策・コンプライアンス</span>
+          </div>
+          <p class="text-sm text-zinc-300">「木曜 8/6——Article 50 開示・合成表示・ディープフェイク標識・GPAI 文書のチケットを今週中に閉じる。罰則 €15M／3% をボード向け一枚紙に。WH 自主枠は参加条件と NDA を読み、過信しない——中身が非公開のまま『軽い』と書かれていても containment 後の圧力は空気。開源が枠外なら二次利用と輸出管理の隙間を監査項目へ。証跡が残らない出荷は出荷ではない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i>
+            <span>AI安全・レッドチーム</span>
+          </div>
+          <p class="text-sm text-zinc-300">「十年の数学を解く能力とサンドボックスを抜ける能力、公開脆弱性を辿る攻撃 agent は同じ上界の三面。WH 枠のサイバー閾値議論は、この三面が『業界パターン』になった前提で進んでいる。goal condition の隣に stop condition と即時 kill と allowlist。権限最小は今日も無料の防御。Muse のような常駐 agent ほど、到達範囲の契約が先。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>評価・研究コミュニティ</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Lean で通るまで信じない。通ったら独立再検証——今日で5日目。命題が開問題そのものかは別査読。Qwen の長時間主張はログと差分なしでは物語。公式リーダーボードと本番 harness は二表。Astra は未公開——自社タスクで測れない能力は、まだ調達判断に使わない。幻の旗艦より、再現可能なログが信用単位。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「研修を『AMD=Helios解釈継続、Qwen3.8=開源候補（weights待ち）・消化4日目、Muse Code=AB初日、Astra=検証可能な発見（未公開）・5日目、EU=ラベル5日目、WH枠=D+2、Grok4.5=日常、4.6=T-1、containment=KillSwitch+allowlist、Lean=信用の単位、幻の旗艦=捨てる』に更新。木曜は価格表と開示文面と証跡と AB 列追加と 4.6 差し替え手順。デプロイ判断は請求書とコンプライアンスと所在要件で行う。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 01. AI • 2026-08-06 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Grok 4.6 T-1、Muse Code 翌日、Qwen3.8-Max 消化、Astra Lean 検証、WH 枠 D+2、EU Article 50、幻の旗艦議論）、Meta/AMD IR/OpenAI/Axios/Reuters・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 01-ai.html loaded for 2026-08-06', 'color:#10b981');
+  </script>
+</body>
+</html>
