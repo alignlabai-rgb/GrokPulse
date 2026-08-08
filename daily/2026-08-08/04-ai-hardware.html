@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-08 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-08 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">土曜——重みが HBM を離れ、メガワットが製品になる日<br>AMD×Taalas 硬化推論 × Firebird Armenia DSX 工場 × HBM 重力 D+1</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月8日（土）。金曜の本丸が「仕様書が供給表に負ける」（SK Hynix 54 兆 × Rubin Ultra HBM 再設計）なら、土曜の本丸は<strong>二本の分岐路が同時に開いた</strong>ことだ。一本目：AMD が 8/6 発表の <strong>Taalas 買収</strong>を X と業界が消化——モデル重みをシリコンに焼き込む model-specific 推論チップ。HBM・先進パッケージ・液冷を「必要としない」デモが、メモリ割当経済へのカウンターとして読み直される。二本目：NVIDIA 公式ブログが <strong>Firebird のアルメニア AI 工場</strong>を正式ローンチ——CIS 最大規模、DSX で compute／電源／冷却を一体設計、将来 7 万基超の Rubin／Blackwell と 300MW 級を見据える。08-07 が「誰が HBM を何スタック載せるか」なら、08-08 は<strong>HBM を載せない路と、メガワットを収益に変える工場 OS が並走する土曜</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 AMD × TAALAS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">重みをシリコンに焼く<br>HBM を「使わない」推論路</div>
+          <div class="mt-4 text-sm text-zinc-400">AMD がトロント発 Taalas（2023 設立・累計約 $219M）を買収合意——条件非開示。技術の核心は<strong>モデル重みを工場で配線にハードワイヤ</strong>し、GPU が毎トークン行う汎用 MAC をスキップする model-specific ASIC。デモ HC1 は TSMC N6・815mm²・約 530 億 Tr・Llama 3.1 8B 専用。自社測定で 17K tokens/s/user・サーバ 2.5kW、HBM／先進パッケージ不要を主張。Instinct＋Helios の横に decode／高頻度推論の第二路——NVIDIA の Groq 系 $20B 物語への、AMD 版「推論プレミアム」回答として土曜も X を横断。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>AMD Taalas 買収消化（8/6–8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 HARDWIRE LIMITS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8B は焼ける、70B は比例しない<br>硬化の損益は「モデル寿命」</div>
+          <div class="mt-4 text-sm text-zinc-400">土曜の分析派が強調する境界線：HC1 は 8B 級。815mm² は露光フィールド上限近く——70B は 8.75 倍、405B は約 50 倍で、単純スケール不可。activation と KV cache は硬化できず、frontier／長文脈／MoE／高速改版は依然 GPU＋HBM。成功条件は「モデルが十分長く生き、トークン量が NRE・マスク・陳腐化在庫を回収できるか」。韓国メディアは「HBM 不要チップ」をメモリ銘柄への構造リスクとして再拡散——だが Jevons 効果で総量が増えるかは別問題。<strong>単位当たり HBM が減っても、総トークンが 10 倍になれば不足は残る</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scale-balanced"></i>
+            <span>Taalas 硬化限界・損益分析（8/7–8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 FIREBIRD DSX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">アルメニア——CIS 最大 AI 工場<br>NVIDIA は GPU 以上を売る</div>
+          <div class="mt-4 text-sm text-zinc-400">8/8 NVIDIA 公式ブログ：Firebird がアルメニアで CIS 地域最大の AI 工場をローンチ。Dell 製高密度インフラ、Spectrum-X、そして <strong>NVIDIA DSX</strong>——加速計算・ネット・電源・冷却を一体設計した工場 OS。同一フットプリントで最大約 40% 多い GPU、メガワット当たりトークン収益を前面に。将来計画は Rubin／Blackwell 7 万基超・300MW 級。カザフスタン側 125MW と BIS 輸出認可も並走し、フロンティア市場へ 2028 年 2GW 目標。<strong>希少資源はモデル API ではなく、MW を安定した AI 容量に変える運用設計</strong>——という土曜のメッセージ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Firebird Armenia DSX 工場ローンチ（8/8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 HBM GRAVITY D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">54 兆と充足 60–70% は消えない<br>土曜もメモリが旗艦の床</div>
+          <div class="mt-4 text-sm text-zinc-400">金曜の骨格は週末も有効。SK Hynix の Yongin Y2／Cheongju M17 へ約 <strong>54 兆ウォン</strong>（約 $38B）承認——AI メモリ中長期基地。Micron 系 HBM4 充足は注文の <strong>60–70%</strong>、CoWoS 52 週超、ABF は 2028 延伸論。Rubin Ultra は 12-Hi HBM4E 一択から 8-Hi／HBM4 混在評価へ広がった話が再循環。Taalas が「HBM 不要」を語っても、訓練・長文脈・汎用推論の本丸は依然 HBM 割当。<strong>分岐路が開いても、高速道路の渋滞は残る</strong>——それが D+1 の正しい読み。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>SK Hynix 54 兆・HBM4 充足 D+1（8/7–8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#05 PREFILL / DECODE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Helios が prefill、硬化が decode？<br>システム解としての Taalas</div>
+          <div class="mt-4 text-sm text-zinc-400">X 分析（特に中華圏・台湾系の深いスレ）が結ぶ線：7 月の AMD–Cerebras 的 prefill／decode 分割の延長で、Taalas は <strong>decode の第二ハード</strong>、Instinct は長文脈・高スループット prefill。さらに speculative decoding の draft エンジン——HC1 が hard-wired Llama 3.1 8B なら、70B／405B 検証の前段として accepted tokens/s が真の KPI。デモの 17K tok/s より <strong>joules per accepted token</strong> とシステム粗利。Helios ラック 31TB HBM4 は消えない——硬化されるのは「何度も同じ重みを運ぶ税金」だけ、という整理が土曜の通説に近い。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-diagram-project"></i>
+            <span>prefill／decode 分割・draft 仮説（8/6–8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 CoW / EMIB D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">パッケージ二車線は続報待ち<br>門番は契約表のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">TSMC CoW（Chip-on-Wafer）の OSAT 外注拡大と Intel EMIB 車線——木曜・金曜の「パッケージ二正面」は土曜、新規ヘッドラインより実行査定フェーズ。NVIDIA の 2026 CoWoS 確保 80–85 万枚・能力ギャップ約 20% の骨格は不変。EMIB は二線 ASIC の出荷の床、最高帯域訓練は CoWoS＋HBM 王道。Taalas が先進パッケージをスキップするなら、それは第三の「並ばない」路——ただし成熟・高ボリューム・固定モデルに限定。<strong>酸素は増えても、誰の wafer が先かは週末も同じ表</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-boxes-stacked"></i>
+            <span>CoW 外注・EMIB 二車線 D+3（8/5–8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 CXMT / MEMORY GAP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CXMT が DDR5-8800 に到達<br>HBM 本丸とは別の「追いつき」</div>
+          <div class="mt-4 text-sm text-zinc-400">Tom&apos;s Hardware 系：中国 CXMT が AMD プラットフォーム上で DDR5-8800 を達成し、SK Hynix 級の速度帯に接近——という話題が土曜循環。HBM4／HBM4E の AI 本丸とはレイヤが違うが、意味は二つ。(1) 汎用 DRAM で中国勢のキャッチアップが数値で見える、(2) AI メモリ逼迫の影で、非 HBM 領域の競争も止まらない。HBM 割当経済が緩むのは Y2／M17 と装置リードタイム次第——DDR5 の新記録は<strong>別トラックのスコア</strong>だが、地政学的サプライチェーンの地図を更新する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sd-card"></i>
+            <span>CXMT DDR5-8800／AMD プラットフォーム（8/8）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 8/26 −18d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA 本丸まで 18 日<br>工場 OS と硬化 ASIC を同じ表で</div>
+          <div class="mt-4 text-sm text-zinc-400">8/26 NVIDIA 決算まで 18 日。土曜の材料は「製品カタログ」より「ビジネスモデルの二面」——DSX で MW をトークン収益に変える工場 OS と、競合側の model-specific 硬化で HBM 税を削る路。聴くべきはピーク FLOPS ではなく、<strong>Rubin／HBM 最終構成の言語、CoWoS 外注の実行、中国・エージェント推論ミックス、そして「届くラック数」</strong>。01 の「旗艦は測ってから」と同型：ハードウェアも、祝う前に割当と MW を測る 18 日間。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 18 日（8/8）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月8日、AI Hardware の中心は「<strong>重みが HBM を離れる路と、メガワットが製品になる路が同時に開いた</strong>」ことだ。金曜まで物語はメモリとパッケージ——SK Hynix の 54 兆、Rubin Ultra のスタック再評価、Micron 充足 60–70%、CoW 外注と EMIB 二車線——に固定されていた。土曜はその上に、二つの対照的な回答が載る。AMD は Taalas を買い、「固定モデルの decode なら重みをシリコンに焼いて HBM を運ばない」と言い、NVIDIA は Firebird のアルメニア工場で「GPU の個数より、同じ MW から何トークン稼げるか」を DSX で製品化した。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Taalas の魅力と罠は同じ場所にある。魅力：成熟・高ボリューム・改版の遅い推論で、トークン当たりの電力と BOM を桁で削れる可能性。罠：8B 級デモは 70B／405B に比例せず、activation／KV は硬化できず、モデルが半年で死ねば NRE は在庫になる。X の深い読みは、Instinct の置き換えより <strong>draft エンジン／decode 専用路</strong>——accepted tokens と joules で測れ、というものだ。韓国側が「HBM 不要＝メモリ悪材料」と反応したのは自然だが、Helios の 31TB HBM4 は消えず、訓練と長文脈は依然メモリ重力の下にある。分岐は「HBM の終わり」ではなく、<strong>どのトークンに HBM 税を払うかの仕分け</strong>である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            一方 Firebird×DSX は、NVIDIA がチップ屋から<strong>AI 工場の OS ベンダー</strong>へ半歩踏み出した姿を、CIS の新規ハブで可視化した。同一フットプリント 40% 増 GPU、電源と冷却の共設計、BIS 認可付きのカザフ拡張——希少資産は CUDA カーネルではなく、MW を SLA 付き容量に変える手順書だ。CXMT の DDR5-8800 は HBM 本丸とは別トラックだが、汎用メモリのキャッチアップ地図を更新する。08-04 が割当経済、08-05–06 がパッケージ主権、08-07 がメモリによる旗艦書き換えなら、08-08 は「<strong>HBM 渋滞の横に、硬化バイパスと工場 OS が並んだ土曜</strong>」。無料なのはデモの tok/s で、量産顧客・第二モデル・8/26 の割当言語は有料である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">土曜の名言候補：「HBM を運ばないチップと、MW を稼ぐ工場——どっちも『GPU を並べる』より一段深い話。」——Taalas は「同じ重みを毎トークンメモリから運ぶの、バカらしくない？」という工学的皮肉を、シリコンに焼き込んだ。Firebird は「チップ持ってても電気と冷却の設計図がないとただの暖房」という運用的皮肉を、DSX という商品名にした。54 兆ウォンの fab 承認は昨日も今日も有効で、充足 60–70% も消えてない。硬化 ASIC で一部の HBM 税が消えても、エージェントがトークンを 10 倍吐けばまた足りなくなる——Jevons は呪文じゃなく算数。8B は焼けても 405B は比例しないし、モデルがすぐ死んだら高速な陳腐化在庫になる。NVIDIA 決算まで 18 日。測る対象はカタログの太字じゃなく、届くラックと焼けるモデルの寿命と、メガワット当たりの粗利。最高に 2026 年らしい土曜だ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Taalas 硬化・Firebird DSX・HBM D+1・prefill/decode・CoW D+3・CXMT・8/26——土曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月8日現在の AI Hardware 分野は、(1) AMD の Taalas 買収消化——model-specific 重み硬化・HC1（N6／Llama 3.1 8B）デモ・Instinct 横の推論第二路、(2) 硬化の限界——スケール非線形・KV 非硬化・モデル寿命＝損益、(3) Firebird アルメニア AI 工場の正式ローンチ——NVIDIA DSX で compute／電源／冷却一体・将来 7 万 GPU／300MW 級、(4) 金曜継承の HBM 重力——SK Hynix 54 兆・充足 60–70%・Rubin Ultra スタック再評価、(5) prefill／decode 分割と draft エンジン仮説、(6) CoW／EMIB パッケージ二車線の D+3 実行査定、(7) CXMT DDR5-8800 による汎用メモリ・キャッチアップ、(8) 8/26 NVIDIA 決算まで 18 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>硬化 ASIC の量産顧客と第二モデル、DSX 工場の MW→トークン収益、HBM スタック最終仕様と fab 着工、CoW 外注速度、EMIB 出荷カレンダー、充足率推移、8/26 までの一貫した割当言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>AMD / Taalas 統合視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Taalas は Instinct の敵ではなく、system-level 推論のピースだ。成熟した高頻度ワークロードでは重みを焼いて電力と BOM を削り、長文脈と汎用は Helios に残す。顧客が欲しいのはデモの tok/s ではなく、accepted token 当たりのコストと、ROCm 上で一本化した請求書である。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>NVIDIA / DSX・AI 工場視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「フロンティア市場に必要なのはチップの箱売りではなく、メガワットを信頼できる AI 容量に変える設計図だ。DSX は compute・ネット・電源・冷却を一体で渡し、同一フットプリントからより多くの GPU とトークンを出す。アルメニアは CIS のハブであり、製品は工場そのものの OS である。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM サプライヤ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「model-specific 硬化が一部の推論から HBM を外しても、訓練・長文脈・汎用エージェントの本丸は残る。54 兆は野心ではなく、2027 以降の基地への最低限の答えだ。充足 60–70% は需要崩壊ではなく割当の常態——バイパスが増えても、高速道路の車線はまだ一本だ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code-branch"></i>
+            <span>ハイパースケーラー / 推論アーキ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「我々はすべてのトークンに GPU のプログラマブル税を払いたくない。固定で回る decode は硬化や専用エンジンへ、prefill と探索は汎用加速器へ——仕分けが TCO だ。ただしモデルが四半期で死ぬなら、硬化は高速な在庫製造になる。量産顧客と第二モデルが出るまで、オプション価格でしか買わない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-boxes-stacked"></i>
+            <span>パッケージ / 後工程視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「CoW 外注と EMIB は『並ばずに出す』ための酸素だ。Taalas 系が先進パッケージをスキップするなら、それは第三の車線——ただしレーン幅は狭い。最高帯域の訓練級は依然 CoWoS＋HBM。門が増えても、契約表の先頭顔ぶれは簡単には変わらない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>データセンター / 電力・TCO 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのはカタログ上の Ultra でも、デモの 17K tok/s でもない。届くラック、動く電力、トークン当たりの joule とドルだ。DSX が同一 MW から 40% 多い GPU を約束するなら設計を書き換える。硬化が 2.5kW で回るなら、液冷枠を別ワークロードに回す。8/26 までに欲しいのはピーク FLOPS の約束より、2027 の割当と MW 稼働カレンダーだ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-08 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・NVIDIA Blog（Firebird Armenia DSX 8/8）、CNBC/Reuters/The Register（AMD Taalas 8/6–8）、TrendForce/CNBC 系（SK Hynix 54兆・Rubin Ultra HBM・Micron 充足）、Tom&apos;s Hardware（CXMT DDR5-8800）、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-08', 'color:#10b981');
+  </script>
+</body>
+</html>
