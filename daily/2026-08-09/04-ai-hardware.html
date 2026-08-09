@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-09 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-09 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜——2027 完売が常識になり、電力と装置が「製品」になる<br>Big3 メモリ × Lancium $3B × Source Foundry $500M × Agentic スタック再設計</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月9日（日）。08-08 が「HBM を載せない硬化路と、MW を稼ぐ工場 OS」の二本線なら、08-09 は<strong>その横に電力株と装置ベットが並び、メモリ逼迫が消費財まで染みる消化日曜</strong>だ。DigiTimes 系が再循環する骨格——Samsung／SK Hynix／Micron の <strong>2027 DRAM・HBM 能力が実質完売</strong>、顧客充足は注文の 60–70%。NVIDIA は Stargate テキサス側の電源インフラ <strong>Lancium へ最大 $3B</strong>（初回 $2B で約 20%、グリッド接続マイルストーンで追加）——接続権そのものがオプション価値、という読みが X で定着。並行して Leopold Aschenbrenner 系 Situational Awareness が <strong>Source Foundry に累計 $500M</strong>（今週 +$400M、評価額約 $5B 報道）——リソ含む製造装置のボトルネックへ資本が直接刺さる。Agentic 需要は GPU 単体ではなく CPU ソケットとホスト DRAM を膨らませ、Apple は Big3 以外のメモリ調達を探る。日曜の評価軸はカタログ FLOPS ではなく、<code>2027 割当 × MW 接続 × 装置リードタイム × エージェント BOM</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#01 2027 SOLD-OUT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Big3 の 2027 が「表にない」<br>充足 60–70% が常態化した日曜</div>
+          <div class="mt-4 text-sm text-zinc-400">DigiTimes／業界筋経由で、Samsung・SK Hynix・Micron が <strong>2027 年分の DRAM／HBM 生産能力を実質完売</strong>したという話が週末も死なない。顧客は当初要求の 60–70% しか取れない——金曜の Micron 系充足ストーリーと同型。NAND も SanDisk／Samsung／Micron 年産が埋まり、Kioxia・SK Hynix は 8 月中に割当確定の見方。SK Hynix の Yongin Y2／Cheongju M17 へ約 <strong>54 兆ウォン（約 $38B）</strong>は「足りないから建てる」宣言であり、2028–29 クリーンルーム前の緩和は期待しにくい。<strong>2027 最悪年説は煽りではなく、契約表の読み方</strong>——という合意が日曜の床。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>DigiTimes 系 2027 完売・充足 60–70%（8/7–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 LANCIUM $3B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA が電源に出資する<br>接続権＝次の CoWoS</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information／Reuters 系：NVIDIA が Stargate テキサス拠点の電源インフラ開発 <strong>Lancium へ最大 $3B</strong>——初回 $2B で約 20% 持分、グリッド接続などマイルストーンで追加 $1B。Blackstone 系バック、Lancium＋土地／電力接続の EV 約 $10B。Abilene キャンパスは ERCOT 承認の <strong>1.2GW 級 interconnect</strong> を抱え、X 分析は「energized interconnection がオプション価値を帯び始めた」と整理。土曜の Firebird×DSX が「MW を工場 OS で売る」なら、日曜の Lancium は<strong>その MW の入口そのものをバランスシートに載せる</strong>動き。チップ屋が電力屋の株主になる——2026 年らしい垂直統合。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA × Lancium Stargate 電源出資（8/7–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 SOURCE FOUNDRY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">装置に $500M——ボトルネックは<br>ウェハの前工程へ遡る</div>
+          <div class="mt-4 text-sm text-zinc-400">WSJ：Situational Awareness（Leopold Aschenbrenner 系）がステルス半導体装置スタートアップ <strong>Source Foundry に累計約 $500M</strong>（今週の追加 $400M 含む）、評価額は約 <strong>$5B</strong> 報道。焦点は AI 向け製造ツール——リソ／装置リードタイムが HBM・CoWoS と並ぶ制約である、という資本市場の答え。公開株で焼けた AI ファンドが、プライベートで「作り方そのもの」に振り直す構図。量産タイムラインは不透明でも、メッセージは明確：<strong>GPU を買う金より、GPU を増やす機械に金が回り始めた</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Source Foundry／Situational Awareness $500M（8/7–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 AGENTIC BOM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CPU:GPU が 1:4 から 1:1 へ<br>ホスト DRAM が本丸の一部に</div>
+          <div class="mt-4 text-sm text-zinc-400">Gartner／UBS 系分析が週末に再拡散：単発推論は GPU 偏重（CPU:GPU ≒1:4、GPU 当たりホストメモリ &lt;512GB）だったが、agentic は計画・ツール呼び出し・状態管理で <strong>CPU 負荷と DDR 需要が跳ねる</strong>。比は 1:1〜1:2、ホスト 4–8 ソケット、GPU 当たり 1–2TB DRAM、従来 DRAM:HBM 比も 2:1 未満から 3:1 超へ、という試算。03 カテゴリの NOOA／Claude auto と直結——harness が製品化すればするほど、<strong>「GPU だけ積めばいい」ラック設計は負債</strong>になる。HBM 逼迫の影で、汎用 DRAM と高コア CPU が第二の希少資源。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-diagram-project"></i>
+            <span>Agentic スタック再設計・CPU/DRAM 需要（8/8–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#05 CONSUMER SPILL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">iPhone 税と EV の DRAM 代<br>AI が家電 BOM を食い始めた</div>
+          <div class="mt-4 text-sm text-zinc-400">日曜の生活感ある副作用：AI データセンターが DRAM／HBM を吸い上げ、消費エレクトロニクスが逼迫。Apple は Samsung／SK Hynix／Micron 以外の調達を模索——長期的には <strong>CXMT がグローバル鎖に入る道</strong>という地政学読みが循環（昨日の DDR5-8800 話題の延長）。Gartner 系はプレミアム EV の DRAM 不足コストを 2026 年で <strong>$880–1,470／台</strong>と試算。iPhone 17 の BOM 上昇・値上げ観測も X を横断。<strong>HBM 完売の隣で、スマホと車が同じメモリ戦争に引きずり込まれている</strong>——それが日曜の「分かりやすい」痛み。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>Apple 調達多様化・EV DRAM コスト・iPhone BOM（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#06 TAALAS / DSX D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">硬化バイパスと工場 OS は残る<br>日曜は「誰が量産顧客か」</div>
+          <div class="mt-4 text-sm text-zinc-400">AMD の <strong>Taalas 買収</strong>（model-specific 重み硬化・HC1／Llama 3.1 8B デモ・HBM 不要主張）と NVIDIA <strong>Firebird アルメニア＋DSX</strong>（compute／電源／冷却一体、将来 7 万 GPU／300MW 級）は D+1。日曜の追加ヘッドラインは少なく、査定フェーズ：硬化は 8B から 70B に比例せず、KV は焼けない、モデル寿命＝NRE 回収。DSX は MW→トークン収益の手順書——Lancium 出資と合わせて、<strong>NVIDIA の商品カタログが「チップ→工場 OS→電力接続」へ三段伸びた</strong>と読める。分岐路は開いたまま、有料なのは量産契約と第二モデル。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>Taalas／Firebird DSX 週末消化 D+1（8/8–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 RUBIN / CoWoS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">スタック再設計は消えない<br>パッケージ門番は週末も同じ表</div>
+          <div class="mt-4 text-sm text-zinc-400">Rubin Ultra の HBM 構成——12-Hi HBM4E 一択から 8-Hi／HBM4 混在評価へ、という仕様柔軟化は依然有効。CoWoS 2026 確保・能力ギャップ約 20%、CoW の OSAT 外注と Intel EMIB 二車線は実行査定継続。Intel の Lip-Bu Tan 系発言も再引用され、<strong>多くの国はクラスタ電力を支えられず、近場のボトルネックはメモリ</strong>、と。電力（Lancium）と装置（Source Foundry）が資本で埋めに来ても、旗艦 GPU の出荷カレンダーは依然 HBM スタックと CoWoS 枚数で決まる。<strong>高速道路の渋滞は、側道ができても消えない</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-boxes-stacked"></i>
+            <span>Rubin Ultra HBM・CoWoS／EMIB 骨格（8/5–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 8/26 −17d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA 本丸まで 17 日<br>聴くべきは FLOPS より割当と MW</div>
+          <div class="mt-4 text-sm text-zinc-400">8/26 NVIDIA 決算まで 17 日。日曜の材料セットは「製品カタログ」を超えた：2027 メモリ完売の常態、Lancium で電源接続を内製化する資本構造、Source Foundry で装置リードタイムに賭ける市場、agentic による CPU／DRAM 再設計、Taalas 硬化と DSX 工場 OS の並走。聴くべき言語はピーク FLOPS ではなく、<strong>Rubin／HBM 最終構成、CoWoS 外注の実行、中国・エージェント推論ミックス、届くラック数、そして MW 接続カレンダー</strong>。01 の「旗艦は測ってから」と同型——ハードウェアも、祝う前に割当と電力を測る 17 日間。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 17 日（8/9）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月9日、AI Hardware の中心は「<strong>2027 のメモリ表が閉じ、電力と装置が資本市場の本丸に昇格した</strong>」ことだ。金曜〜土曜の骨格——SK Hynix 54 兆、充足 60–70%、Rubin Ultra のスタック再評価、AMD Taalas の硬化推論、Firebird×DSX の工場 OS——は消えていない。日曜が足したのは、その骨格を<strong>生活とバランスシートの両側から可視化したこと</strong>である。DigiTimes 系の「Big3 が 2027 DRAM／HBM を完売」は、週末も否定されない。顧客は 6〜7 割しか取れない。fab は 2028–29 まで効かない。これはサイクル論の FUD ではなく、LTA と割当表の話だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            NVIDIA の Lancium 出資は、土曜の DSX メッセージを資本構造に翻訳する。DSX が「同じ MW から何トークン稼ぐか」なら、Lancium は「その MW を誰がグリッドから引っ張るか」——初回 $2B で約 20%、接続マイルストーンで最大 $3B、EV 約 $10B。1.2GW 級 interconnect は、CoWoS 枚数と同じく<strong>並べる前に足りなくなる資源</strong>だ。並行する Source Foundry（Situational Awareness 累計 $500M／約 $5B 評価）は、ボトルネックが後工程（HBM・パッケージ）だけでなく前工程装置にもある、という市場の答え。公開 AI 株で焼けた資金が、ステルスの「作り方」に振り直す——皮肉でもあり、合理でもある。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            もう一本の線は agentic 需要の形状変化だ。Gartner／UBS 系が描く CPU:GPU 比の圧縮とホスト DRAM の膨張は、03 の harness 製品化（NOOA、Claude auto 既定）と同じ物理を語る。計画ループとツール呼び出しは GPU だけでは回らない。その結果、汎用 DRAM が AI 本丸の一部になり、Apple の調達多様化や EV の DRAM コスト（$880–1,470／台）が「AI の副作用」として日曜のタイムラインに乗る。CXMT がグローバル鎖に触れるかは規制と品質の話だが、地図の更新は始まっている。08-07 がメモリによる旗艦書き換え、08-08 が硬化バイパスと工場 OS、08-09 は「<strong>割当・電力・装置・エージェント BOM が同じダッシュボードに並んだ日曜</strong>」。無料なのは完売の見出しで、有料なのは 2027 の実出荷と 8/26 の一貫した割当言語である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">日曜の名言候補：「GPU を買う前に、電気の接続権と 2027 のメモリ枠を買え。」——Lancium は NVIDIA が「暖房器具の電源ケーブル」まで自前で押さえる宣言で、Source Foundry は「ケーブルの向こうの工場機械」に $500M 投げた話。Taalas は「同じ重みを毎トークン運ぶのバカくない？」という工学的皮肉、Firebird DSX は「チップあっても設計図ないとただのヒーター」という運用的皮肉。で、日曜は iPhone と EV が同じメモリ戦争に巻き込まれて、家電コーナーまで AI ブームの請求書が届いた。Agentic が CPU と DDR を食うなら、HBM 完売の横で汎用 DRAM も戦場——Jevons はまた算数で勝つ。8/26 まで 17 日。測るのはカタログの太字じゃなく、届くラックと繋がる MW と、焼けるモデルの寿命。最高に 2026 年らしい、静かな日曜だ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">2027 完売・Lancium・Source Foundry・Agentic BOM・消費財 spillover・Taalas/DSX D+1・Rubin/CoWoS・8/26——日曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月9日現在の AI Hardware 分野は、(1) Samsung／SK Hynix／Micron の 2027 DRAM・HBM 実質完売と充足 60–70% の常態化、(2) NVIDIA の Lancium 最大 $3B 電源インフラ出資——Stargate テキサス・接続権のオプション価値、(3) Situational Awareness の Source Foundry 累計 $500M——装置／リソ・ボトルネックへの資本、(4) agentic ワークロードによる CPU:GPU 比とホスト DRAM の再設計、(5) Apple 調達多様化・iPhone BOM・EV DRAM コストという消費財 spillover、(6) Taalas 硬化と Firebird DSX の D+1 査定、(7) Rubin Ultra HBM スタック柔軟化と CoWoS／EMIB パッケージ門番、(8) 8/26 NVIDIA 決算まで 17 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>2027 割当の実効、MW 接続カレンダー、装置リードタイム、agentic ラックの CPU/DRAM BOM、硬化の量産顧客、DSX 工場のトークン収益、HBM 最終仕様、8/26 までの一貫した供給言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／DRAM サプライヤ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2027 の表はほぼ閉じている。54 兆は野心ではなく、2028 以降の基地への最低限の答えだ。充足 60–70% は需要崩壊ではなく割当の常態——agentic が汎用 DRAM を食えば、HBM 以外の線も同じ戦場になる。バイパス ASIC が増えても、高速道路の車線はまだ足りない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA／電力・工場 OS 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「フロンティア市場に必要なのはチップの箱売りだけではない。DSX で MW を AI 容量に変え、Lancium でその MW の入口を確保する。アルメニアの工場 OS とテキサスの接続権は同じ商品カタログの異なる章だ——届くラックは、繋がる電力の関数である。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>装置・Source Foundry 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBM と CoWoS がボトルネックなら、その上流の装置リードタイムもボトルネックだ。$500M は『もう一段深い供給制約』へのベットであり、量産カレンダーはまだ見えない。だが市場はすでに、ウェハとパッケージの前に機械を数えている。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-diagram-project"></i>
+            <span>ハイパースケーラー／Agentic 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エージェントを本番で回すと、GPU だけ積んだラックはすぐ詰む。ホスト CPU と TB 級 DRAM、状態とツール呼び出しの帯域が TCO を決める。硬化 decode はオプションとして残すが、モデルが四半期で死ぬなら在庫製造だ。欲しいのはデモ tok/s ではなく、accepted token 当たりの joule とドル、そして 2027 のメモリ枠だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-mobile-screen"></i>
+            <span>消費 OEM／自動車視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「AI データセンターがメモリを吸い上げた結果、スマホと車の BOM が先に痛む。Big3 以外の調達は地政学と品質の賭けだが、単一サプライヤー依存はもう選択肢ではない。DRAM が $1,000／台のオーダーで効くなら、製品計画そのものを書き換える。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>データセンター／TCO・日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのはカタログ上の Ultra でも、デモの 17K tok/s でもない。届くラック、動く電力、2027 まで続く割当、エージェント用の CPU/DRAM 余裕だ。DSX と Lancium が MW を商品化するなら設計を書き換える。8/26 までに欲しいのはピーク FLOPS の約束より、供給と接続のカレンダーである。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-09 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・DigiTimes/IGN/Seeking Alpha 系（2027 DRAM/HBM 完売・充足60–70%）、The Information/Reuters（NVIDIA Lancium 最大$3B）、WSJ（Source Foundry $500M）、Gartner/UBS 系（agentic CPU/DRAM）、Gartner/EE Times（EV DRAM コスト）、NVIDIA Blog/業界（Firebird DSX・Taalas D+1）、SK Hynix 54兆・Rubin Ultra HBM、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-09', 'color:#10b981');
+  </script>
+</body>
+</html>
