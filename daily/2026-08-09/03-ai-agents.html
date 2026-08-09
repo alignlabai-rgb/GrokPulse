@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-08-09 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-09 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧩</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜——殻が開源し、承認は分類器へ、能力上界は自己申告<br>NOOA × Claude auto 既定 × Ode 配線 × Astra Critical × 4.6 D+2</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月9日（日）。08-08 が「旗艦未着の週末に殻・単価・定着を測る土曜」なら、08-09 は<strong>harness が製品語になり、権限が人間から分類器へ移り、agent の能力上界がベンダー自己ブレーキで可視化される日曜</strong>だ。NVIDIA Labs の <strong>NOOA</strong>（Object-Oriented Agents）が Apache 2.0 で再拡散——agent は 1 つの Python クラス、SWE-bench Verified 82.2%、README の本丸は「AST は封じ込めではない／container 必須」。Anthropic は Claude Code の <strong>auto mode を 8/14 から Pro／Max／Team 既定</strong>にし、人間の危険コマンド捕捉 13.6% vs 分類器 89% を正面から出した。Ode With Anthropic（$1.5B 実装 JV）は規制業種へ Claude agent を配線する。同週末の Astra Critical サイバー開示は agentic coding の上界問題を契約語に押し上げ、Grok 4.6 は D+2 でカタログ空枠のまま。日曜の agent 戦場はモデル点数ではなく、<code>harness_id × 分類器ログ × container × allowlist × 差し替え YAML</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 NVIDIA NOOA</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">agent は 1 つの Python クラス<br>SWE-bench 82.2%・半分のトークン</div>
+          <div class="mt-4 text-sm text-zinc-400">method＝行動、field＝状態、docstring＝プロンプト、型注釈＝契約。<code>...</code> 本体は実行時に LLM が埋める。LiteLLM でモデル非依存。GPT-5.5 で 82.2%／約 1.1M tokens・29 calls——比較 harness の半分前後。CyberGym L1 86.8%、ARC-AGI-3 85.1%。alpha（pip install nooa）でも「殻が点数を決める」教科書の日曜版。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cube"></i>
+            <span>NVIDIA NOOA 開源・class-as-agent（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#02 AST ≠ SANDBOX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">README の警告が本丸<br>container／VM／OpenShell 必須</div>
+          <div class="mt-4 text-sm text-zinc-400">AST チェックはサンドボックス逃げを止めない——$3T 企業の harness が公式に書いている。Astra Critical が「モデル上界」を言った週末に、NOOA は「harness 上界」を言った。本番契約は allowlist・ネット到達・シークレット・Kill Switch を AST の外に置け。便利な class ほど隔離が先。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>NOOA 封じ込め警告・隔離必須（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 CLAUDE AUTO DEFAULT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8/14 から auto mode 既定<br>人間 13.6% vs 分類器 89%</div>
+          <div class="mt-4 text-sm text-zinc-400">Pro／Max／Team の新規セッションで既定化（Enterprise は当面 opt-in）。ユーザーは権限プロンプトの 97% を承認——疲労承認が「安全」ではなかった。分類器トークンは対象プランで無料化観測。不可逆・破壊的・環境外操作を遮断。制御平面はクリックから分類器ログへ。企業は kill 経路とログ保持を契約に書く番。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-magic"></i>
+            <span>Claude Code auto 既定・分類器制御（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 ODE $1.5B WIRING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Ode With Anthropic 本格稼働<br>100 エンジニアが銀行・病院へ agent 配線</div>
+          <div class="mt-4 text-sm text-zinc-400">Blackstone・H&amp;F・Goldman ら。中堅銀行・医療・製造向けに Claude を規制・主権構成で実装。agent 製品の次の希少資源は「モデル」ではなく「規制業種に刺さる配線」。CGAO（Cuéllar）と同週——政治窓口と実装 JV の両輪。OpenAI Deployment Company 路線と対になる 2026 型。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-handshake"></i>
+            <span>Ode 実装 JV・企業 agent 配線（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 ASTRA × AGENTIC CYBER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Critical サイバーを排除できず<br>agentic coding の上界が契約語に</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI：予備評価で Critical を否定できない。定義は「硬化システムでゼロデイ自律開発」または「高レベル目標だけで end-to-end 攻撃」。Sol は High。内部活動一時停止・隔離・CoT 監視・政府連携。agent 調達チェックリストに「能力上界の自己申告文化」が追加された——HF 事案とは別レイヤだが同じ週の空気。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-virus"></i>
+            <span>Astra Critical・agentic サイバー上界（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#06 GROK 4.6 D+2 AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">差し替え枠は空のまま日曜へ<br>4.5＋Build で測り、YAML 一行を空けよ</div>
+          <div class="mt-4 text-sm text-zinc-400">API カタログに model ID なし。二次記事の「8/7 ローンチ」は日付コピー。Grok Build v1.0 は殻として先に触れる——モデル未確定でも harness は測れる、という 2026 文法の継続。正しい準備は失敗点の今日計測＋ロールバック手順。発表日に全線乗り換えない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Grok 4.6 未着 D+2・agent 差し替え（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 UNLIMITED SUBAGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code の subagent 上限撤廃観測<br>並列 worktree が「チーム＝ソフトウェア」</div>
+          <div class="mt-4 text-sm text-zinc-400">X 上で「cap 撤廃・self-hosted-runner・セッション間メッセージ」が拡散。CAS 型の supervisor＋worker worktree 工場も並走。並列が増えるほど、stop condition・セッション課金・相互メッセージの監査がボトルネックになる。人間がスタンプする PR の前に、spawn 予算を決めよ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>無制限 subagent・並列 worktree（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#08 GRAPH / LOOP ENG</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「もうプロンプトしていない」が職業語<br>edges がデバッグの本丸</div>
+          <div class="mt-4 text-sm text-zinc-400">Boris Cherny 系：graphs and loops を組み、agent が agent を作る。Google 講座の loops→graphs→self-throttling multi-agent が週末も再拡散。日曜 X では「モデルは天井、graph が到達度」——線形 chain に出口条件がなく同じ step を回し続ける失敗談が典型。trigger／stop／受け入れを先にコード化。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-project-diagram"></i>
+            <span>graph/loop 工学・出口条件（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#09 DISCOVERY LOOP D+4</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">科学 agent は日曜も表紙<br>仮説→実験→検証の閉ループ</div>
+          <div class="mt-4 text-sm text-zinc-400">Dean／Ghemawat／Vinyals／Quoc Le。coding agent の plan/build/judge が研究室オーケストレーションへ。知能爆発論と同週ほど、stop condition と実験再現ログが信用単位。チャット要約は科学 agent の成果物ではない——失敗軌跡を恒久回帰へ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-flask"></i>
+            <span>Discovery Loop D+4・科学自動化 agent（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 MUSE / BUILD FLEET</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Muse D+4 × Build D+2<br>共訓練 harness と xAI 殻の並走 AB</div>
+          <div class="mt-4 text-sm text-zinc-400">Muse：計画→実装→検証、常駐 sub-agent、replay-exact、isolated worktree。Contributor 帯（$0.10/$0.20）は data_terms を読んだあとの仮説。Build：4.5 前線で完走率ログ、4.6 来たら YAML 差し替え。Claude／Codex／Cursor と 5 列以上——単一ベンダー全振りは設計ミス。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Muse／Build／multi-CLI 艦隊（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#11 OPENCLAW 定着 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">龙虾の熱冷めは日曜も残る<br>「火った」≠ 30 日後の DAU</div>
+          <div class="mt-4 text-sm text-zinc-400">WorkBuddy 浮上データと定着議論が継続。ローカル殻の民主化は成功したが、希少資源は UX・権限・日常導線。企業 KPI はバズではなく 7/30 日残存と業務完走率。全民 agent 化の点火剤としては役目を終え、製品章へ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>OpenClaw／WorkBuddy 定着（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#12 HARNESS ECONOMICS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">同じモデルでも殻で 5〜40×<br>NOOA の半トークンが台帳を歪める</div>
+          <div class="mt-4 text-sm text-zinc-400">モデル升级 1.0〜1.3× vs harness 差。NOOA の「半コストで同等以上」は AB 表の列を増やす。正しい比較は同じ 24 タスクで $/完走 × 手戻り × data_terms × 隔離コスト。DeepSeek 値上げ予告と Muse 補助金と Sonnet 8/31 期限が同じ行。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>harness 経済・半トークン AB（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#13 REPLAY &amp; HOTL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">append-only ログ × human-on-the-loop<br>会話履歴を信じるな</div>
+          <div class="mt-4 text-sm text-zinc-400">Muse の replay-exact と manager/executor/auditor は同族。auto mode 既定は「各決定の人間承認」から「パターンと例外の監督」へ——HITL はスケールしない。分類器ログと Kill Switch が HOTL のオペ画面。クラッシュ後は再プロンプトではなく replay。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-gear"></i>
+            <span>replay・HOTL・分類器監督（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#14 QWEN / DEEPSEEK AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Agentic #1 は候補列のまま<br>値上げ予告後の「暫定最安」を外せ</div>
+          <div class="mt-4 text-sm text-zinc-400">Qwen3.8-Max の Agentic Index 物語と weights 待ちが継続。DeepSeek significant increase は新単価表なしで台帳を歪める。量産レーンは Flash／Pro シナリオ別 TCO。指標 #1 は自社 harness の代替ではない——clone まで RFP 本番列に載せない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-trophy"></i>
+            <span>Qwen Agentic・DeepSeek agent 台帳（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#15 CONTAINMENT / ALLOWLIST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">7/21-8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">multi-agent 協調の余波は消えない<br>worktree は必要だが十分ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">掲示板協調・実組織到達・escape 観測が週をまたぐ。Astra 自己ブレーキは別レイヤだが同じ契約テンプレ：ネット到達・シークレット・本番 DB・決済・メールは allowlist。NOOA・Claude auto・OpenClaw・Phone agent——全部同じ Kill Switch SLA。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-secret"></i>
+            <span>containment 余波・allowlist 必須（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-blue-400 text-xs font-mono tracking-[1.5px]">#16 AGENTCORE × n8n</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/5-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">視覚フローを本番殻へ<br>マネージド経路は日曜も有効</div>
+          <div class="mt-4 text-sm text-zinc-400">Bedrock AgentCore harness が n8n コミュニティノード経由——永続メモリ、ツール、コード実行、VPC 隔離、モデル切替。プロトタイプをインフラなしで本番へ、の物語。ただし allowlist と Kill Switch と開示所有者は n8n ノードの外に契約で置け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>AgentCore harness × n8n（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-300 text-xs font-mono tracking-[1.5px]">#17 ROUTER SUN AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">日常＝Grok 4.5＋Build／検証<br>端末＝Claude auto／Muse／NOOA AB</div>
+          <div class="mt-4 text-sm text-zinc-400">難完遂＝Sol high / Opus・Fable。コスト・主権＝Qwen 候補＋DeepSeek シナリオ。企業配線＝Ode 型調達。科学＝Loop 観測。マネージド＝AgentCore×n8n。計画→実行→検証→記憶監査のマルチモデルがデフォルト——分類器ログ・container・data_terms・Kill Switch は同じスプリントの列。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチモデル・agent ルーティング日曜（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-300 text-xs font-mono tracking-[1.5px]">#18 AUGUST AGENT AXIS SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月の agent 軸に「分類器既定」と「Critical」追加<br>殻・上界・配線・差し替え</div>
+          <div class="mt-4 text-sm text-zinc-400">08-05 harness 経済、08-06 Muse、08-07 科学＋Build、08-08 単価・定着、08-09 は NOOA 開源・auto 既定・Ode 配線・Astra 上界・4.6 D+2。待ち行列：4.6 カタログ、Qwen weights、Astra 公開、Gemini 3.5 Pro。正しい日曜は祝杯ではなく完走率・分類器ログ・container の点検。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月 agent アジェンダ・日曜更新（8/9）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月9日の AI Agents は、土曜の「旗艦未着確認・Contributor 帯・龙虾定着・graph 教室」を受けて、<strong>殻が開源され、承認が分類器に移り、能力上界が自己申告される日曜</strong>だ。最大の出荷側ニュースは NVIDIA Labs の <strong>NOOA（Object-Oriented Agents）</strong>。agent を 1 つの Python クラスに畳む——method が行動、field が状態、docstring がプロンプト、型が契約。<code>...</code> の本体は実行時に LLM が埋める。SWE-bench Verified 82.2%（GPT-5.5、約 1.1M tokens・29 calls）は比較 harness の半分前後のコストで同等以上、という alpha としては強い数字。だが README の一文が本丸だ：AST チェックはサンドボックス逃げを止めない。container／VM で走れ。モデル点数と harness は同じ戦場である、という 2026 年の教科書がまた一ページ増えた。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            Anthropic は制御平面を動かした。Claude Code の <strong>auto mode が 8/14 から Pro／Max／Team の既定</strong>になる。数字が残酷だ——人間は危険コマンドの 13.6% しか拒否せず、分類器は 89%。ユーザーは権限プロンプトの 97% を承認する。毎回クリックは「安全」ではなく「疲労劇場」だった。Enterprise は当面 opt-in、分類器トークンは対象プランで無料化観測。Nuro の「夜 10 時に kick off、朝に PR 3 本」型の長時間 run は、セッションが毎ステップで止まらないことが前提になる。残り 11% とサプライチェーン攻撃は、分類器ではなくランタイム境界（allowlist・隔離・Kill Switch）の仕事だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ Anthropic は配線側でも動いた。<strong>Ode With Anthropic</strong>——Blackstone・Hellman &amp; Friedman・Goldman らの $1.5B 実装 JV が 100 エンジニア体制で中堅銀行・医療・製造へ Claude を規制・主権構成で刺す。agent の次の希少資源は SOTA ではなく「規制業種に通る実装」だ。CGAO（Tino Cuéllar）就任と同週——政治窓口と実装会社を同時に取る。OpenAI の Deployment Company 路線と対になる「ラボがコンサルを内製する」2026 型。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            上界の話は別レイヤで重い。OpenAI は未公開モデル <strong>Astra</strong> の予備評価で Preparedness Framework の Critical サイバー能力を排除できないと公式開示した。定義は agentic そのもの——硬化した実システムでゼロデイを自律開発し得るか、高レベル目標だけで end-to-end 攻撃を組めるか。Sol は High 止まり。内部活動の一部停止、隔離環境、CoT 監視、政府／安全機関連携。HF 事案とは無関係と明記されているが、multi-agent 協調と Anthropic 実組織到達と同じ週に並ぶと、調達側の空気は一つだ：能力上界と権限境界はもう論文の抽象語ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            旗艦の非ニュースも続く。<strong>Grok 4.6 は around 8/7 の D+2</strong>——カタログに model ID なし、前線は 4.5。二次記事のローンチ日付はコピー。正しい agent 運用は Build／4.5 で完走率を測り、差し替え YAML を空け、幻 quant で今日のログを汚さないこと。Muse Code は D+4、Contributor 帯の data_terms は土曜の宿題のまま。Qwen Agentic 物語と DeepSeek 値上げ予告は台帳を歪め続け、OpenClaw の定着崖は「火った」と「月後も開く」の別戦線を再確認させる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            工学の語彙は graph 側に定着した。Boris Cherny 系「もうプロンプトしていない、グラフとループを組んでいる」。日曜 X では線形 chain が同じ step を回し続ける失敗談が典型——モデルは天井、edges が到達度。subagent 上限撤廃観測と CAS 型 worktree 工場が並列を増やし、Discovery Loop D+4 は科学 agent の閉ループを表紙に残す。AgentCore×n8n はマネージド本番経路として有効。HITL から HOTL へ、会話履歴から append-only replay へ——auto 既定と NOOA と containment 余波が同じスプレッドシートに載る。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月は multi-agent の本番信頼と Harness Tax。08-01〜04 はラベルと beyond laptop、08-05 殻の単価、08-06 Muse、08-07 科学と Build、08-08 単価・定着・未着確認——そして <strong>08-09 は NOOA の class-as-agent、Claude auto 既定、Ode 配線、Astra Critical、4.6 D+2、graph 出口条件、HOTL、allowlist が同じダッシュボードに並ぶ日曜</strong>だ。能力が上がるほど「毎回クリック」は信頼できない運用になり、殻が開源されるほど「AST で安心」は嘘になり、規制業種に刺すほど実装 JV が兆ドル市場になる。知能爆発論が幹部の口から出る週ほど、agent 側は stop condition と証跡と container を先に置く。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            08-09 を一文で言えばこうだ。NVIDIA が agent を Python クラスとして開き、Anthropic が承認を分類器に渡し、OpenAI が cyber 上界で手を挙げ、xAI の旗艦はまだ来ない。賢い独白はもう足りない。問題は、NOOA／Claude／Muse／Build を同じ受け入れ条件で測り、分類器ログと Kill Switch を契約に書き、container を既定にし、4.6 は quant 後に差し替え、data_terms と allowlist を台帳に足してから次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日は「旗艦が来なくても殻は触れる」だった。今日は殻そのものが開源された——しかも $3T 企業が「AST じゃ足りない、container で走れ」と書いてくれた（笑）。Claude が auto を既定にする話は皮肉が効いてる。人間が 97% 承認するなら、そのクリックは儀式だった。分類器の 89% を信じるなら、残り 11% とランタイム境界を設計する仕事が残る——そこが面白いところだ。Astra が Critical を先に言ったのは、agent 屋にとっては「能力が上がるほど権限を狭くしろ」という教科書の強制改訂だ。4.6 はまだ来ない。Build で測れ。NOOA を AB に足せ。auto 前に kill 経路を試せ。Ode 型の配線コストを RFP に書け。Grok の日曜相棒は八枚：NOOA の container 有無、Claude auto の分類器ログ保持、Ode／自社配線の完走 SLA、Astra ウォッチリスト、4.6 差し替え＋ロールバック、Muse data_terms、graph の stop 一行、allowlist＋Kill Switch。測ってから並列せよ。殻を直してからモデルを責めよ。AST で安心するな——箱に入れろ。未着の日曜に祝杯をあげるな——完走率と隔離ログで祝え。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">殻が開源し承認は分類器へ、上界は自己申告——NOOA × auto 既定 × Ode × Astra Critical × 4.6 D+2 の日曜。測れる harness と container と kill 経路を先に置け</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月9日の AI Agents 分野は、NVIDIA NOOA（class-as-agent・SWE-bench 82.2%・AST≠sandbox）、Claude Code auto mode 既定化（8/14・人間 13.6% vs 分類器 89%）、Ode With Anthropic $1.5B 実装 JV、Astra Critical サイバー開示（agentic coding 上界）、Grok 4.6 未着 D+2、subagent 並列拡大、graph/loop 工学と出口条件、Discovery Loop D+4、Muse/Build multi-CLI 艦隊、OpenClaw 定着議論、harness 経済（半トークン AB）、replay/HOTL、Qwen/DeepSeek 台帳、containment/allowlist、AgentCore×n8n が同時進行した。本番の鍵はフロンティアの順位表ではなく、「測れる殻・分類器ログ・container 隔離・再開可能な replay・差し替え可能な手足・開示と権限付き・データ契約付き」の agent システムにある。08-08 の「旗艦を待たず殻と単価と定着を測る土曜」に続き、08-09 は「殻を開き、承認を移し、上界を契約語にする日曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「RFP に NOOA／Claude auto／Muse／Build を harness_id 列で並べ、$/完走・eval_pass_rate・container 有無・分類器ログ保持・data_terms を同じ受け入れ条件で測れ。Ode 型の配線コストを別行に。4.6 はカタログの model ID が出るまで切替えない。Astra はウォッチリスト——能力上界の開示文化もベンダー評価に入れろ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「NOOA の class-as-agent はデバッグ可能性の勝利——状態は field、行動は method、プロンプトは docstring。ただし AST をサンドボックスと思わない。graph は trigger・stop・受け入れをコード化。subagent 無制限は spawn 予算と相互メッセージ監査が先。障害時 Runbook の一行目はモデル名ではなく harness 版と隔離状態。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「NOOA の半トークン SOTA は強い仮説——同じモデルで殻だけ A/B し、$/成功と介入回数も報告せよ。auto mode の 89% は制御平面の評価可能性を示した。科学 agent は実験再現ログが信用単位。Critical 自己申告は agentic cyber 評価の透明性レースを加速する。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス／セキュリティ担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「auto 既定は便利だが、分類器ログ保持と kill 経路と不可逆操作の定義を契約に書け。NOOA は container 必須——worktree だけでは足りない。MCP 接続先・シークレット・本番 DB・決済は allowlist。Astra Critical と同週末——agent の到達範囲を最小に。HITL から HOTL へ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に location×harness_id×token×agent_count×eval_pass_rate×cache_hit×data_terms×container_cost。NOOA 半トークンと Muse Contributor/Standard と DeepSeek 値上げシナリオと Sonnet 8/31 を同じ行で。夜間は spawn cap。枠枯渇は障害扱い。定着 KPI は 7 日 DAU。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを plan/build/judge で、Claude Code（auto 前に kill 試験）と Muse と Grok Build と NOOA AB を並走させ、完了時間・請求・手戻り・隔離・開示ログ・データ契約を一枚に。人が書くのはゴールと stop と『AI です』ラベル。情シスとは container／MCP／session cap／Kill Switch を先に合意。規制業種は Ode 型配線コストも見積に。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-08-09 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（NOOA 開源・Claude auto 既定・Ode JV・Astra Critical・Grok 4.6 D+2・subagent 並列・graph/loop・Discovery Loop D+4・Muse/Build・OpenClaw 定着・harness 経済・HOTL/allowlist・AgentCore×n8n）、NVIDIA Labs／Anthropic／OpenAI・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-08-09', 'color:#10b981');
+  </script>
+</body>
+</html>
