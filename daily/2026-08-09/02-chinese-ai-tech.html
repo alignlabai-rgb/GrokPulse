@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-08-09 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-09 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜は「推論 30% と 2D/3D」——MindIE-SD3 が針を動かし、<br>Pangea が空間 AI を 7B に、Phi カタログは壁紙のまま</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月9日（日）。旗艦前線は静かなのに、Huawei Ascend 側の Modelers は週末フル稼働だった。朝窓の @AiChinaNews は MindIE が Stable Diffusion 3 に<strong>約 30% の推論高速化</strong>を載せたことを本丸とし、Molmo-7B（画素級 grounding）と Mistral Large 123B（Apache-2.0・Ascend パッケージ）を拾い、残りを LoRA と changelog に降格。午後窓は「Modelers の一括データダンプ」——本物に近いのは <strong>Pangea-7B／Pangea-7B-hf</strong>（Qwen2.5-7B／Mistral バックボーンの 2D＋3D 空間推論）で、Phi-3.5 系の全カタログ移植は「研究ではなく障壁除去」、Ornith 35B／397B 級は透明フィルム並みの薄い model card。旗艦側は Qwen3.8-Max が D+7・来週 open weights（Max 級＋27B 期待）、DeepSeek 値上げ予告は D+3 で新単価表なし、智谱は土曜の ZCode 98.6% キャッシュ物語を継承しつつ GLM-5.3 は噂帯、MiniMax H3 は単枚 3090／Comfy の現場デモが日曜も続く。08-09 は<strong>推論エンジンの 1 割改善 × 空間マルチモーダルの芽 × 壁紙の洪水 × 旗艦未着のカウントダウン</strong>が同じ YAML に並ぶ、成熟週末の日曜日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#01 MINDIE SD3 +30%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MindIE——SD3 推論を約 3 割短縮<br>「静かな日曜」の本丸はエンジン</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews 朝窓（8/9）：Huawei 推論エンジン MindIE が Stable Diffusion 3（2B／8B 両系統）で約 30% の速度向上、画質を犠牲にしないと主張。DiT バックボーンが重い SD3 をリアルタイム／近リアルタイム帯に寄せる——本番で針が動くのは旗艦のパラメータ数より、この種の配管。Ascend 開発者が「今日ブックマークすべきは MindIE と Mistral Large」と切った一日の根拠がここ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>@AiChinaNews MindIE-SD3 +30%（8/9 朝）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#02 PANGEA 2D/3D</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Pangea-7B——点群と深度を 7B で<br>ロボ／AR の「高額 VLM 回避」仮説</div>
+          <div class="mt-4 text-sm text-zinc-400">午後窓の本物候補：Pangea-7B（Qwen2.5-7B 系・2D 画像＋3D 点群）と Pangea-7B-hf（2D から 3D シーン理解）。両方 open-weight・Ascend 対応。model card のベンチは薄い——過大広告の前に触る価値がある、という編集判断。ロボットと AR が大型プロプライエタリに払ってきた空間推論を、7B 帯に落とせるかが四半期の問い。壁紙の中で「アーキ意図」がある例外。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cube"></i>
+            <span>@AiChinaNews Pangea-7B／hf（8/9 午後）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 MOLMO GROUNDING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Molmo-7B-D／O——画素を指差す<br>7B 帯の空間 grounding が Ascend に</div>
+          <div class="mt-4 text-sm text-zinc-400">Allen Institute 系 Molmo-7B-D-0924 と open-data 版 O。キャプション止まりではなく「どの画素について推論しているか」を指差す——文書解析・UI 理解・OCR 重いワークフロー向け。7B でこの能力は希少。D は性能寄り、O はデータ透明性。朝窓では MindIE-SD3 に次ぐ「評価パイプラインに足す価値」カードとして位置づけられた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-crosshairs"></i>
+            <span>Molmo-7B Ascend 移植（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#04 MISTRAL LARGE 123B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Mistral Large Instruct——123B を<br>Apache-2.0 で Ascend に落とす</div>
+          <div class="mt-4 text-sm text-zinc-400">Mistral-Large-Instruct-2411 が Ascend NPU 向けにパッケージ。この規模での Apache-2.0 は会話の起点——クラウド API 税なしで enterprise 級の reasoning／coding をホストしたい側のメニュー。新モデルではなく移植だが、土曜の Llama Omni／Vision と同型の「制裁下ショップの bridge」。agentic／複雑推論レーンで黒箱 API の代替候補として評価キューに入る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>Mistral Large Ascend パッケージ（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 PHI カタログ移植</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Phi-3.5 全家——「壁紙」ではなく<br>Huawei の庭の障壁除去</div>
+          <div class="mt-4 text-sm text-zinc-400">午後：Phi-3.5 MoE（42B／活性 6.6B）、3.8B mini（128K）、vision 4.2B、Medium 14B GGUF、Mini 追加ポート——「Phi カタログを丸ごとやった」がスコアカード。新研究ではない。だが walled garden 内の開発者にとって CUDA 依存を一枚ずつ剥がす実務。移植マラソンの本質は精度レースではなく、供給鎖のメニュー完備。独立ベンチは未検証のまま——カタログ厚さ≠本番 TCO。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Phi-3.5 Ascend 一括移植（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#06 実務ツール群</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">PhotoMaker・PixArt・PaddleOCR 漫画<br>Qwen3.6-27B w4a8 は serving 資産</div>
+          <div class="mt-4 text-sm text-zinc-400">Tencent PhotoMaker（SDXL 上の identity 保持生成）、PixArt-alpha（0.6B DiT・1024px を低コスト）、Baidu PaddleOCR-VL-For-Manga（縦書き密レイアウト——ローカライズのニッチだが実問題）。Qwen3.6-27B の w4a8 事前量子化は Ascend 向け drop-in serving——量子化ツールチェーンとの格闘を省略するオペ資産。PE-Lang／PE-Spatial 埋め込みは初期段階。日曜の「使えるが革命ではない」帯。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-toolbox"></i>
+            <span>PhotoMaker／PixArt／OCR 漫画／w4a8（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#07 壁紙の底</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Ornith 35B〜397B・PixelWave・<br>品質床が抜けた午後の残渣</div>
+          <div class="mt-4 text-sm text-zinc-400">Ornith ブランドの FP8／GGUF／vanilla 35B と 397B——model card が透明フィルム級。PixelWave 二重掲載、PISCES／PULSE／Paragon／PEG／トルコ NER はプレースホルダ Apache。PickScore_v1 は目的定義があるがカスケード隣では街騒音。朝窓の GLM-4-32B「2025年4月カットオフ更新」や Qwen3-32B 無ベンチ主張もノイズ帯。結論は金・土と同型——<strong>部品は厚い、独立精度は未検証、本数で CUDA を倒した気になるな</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-trash-can"></i>
+            <span>@AiChinaNews 壁紙／filler 仕分け（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#08 QWEN D+7 WEIGHTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/3-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Qwen3.8-Max——旗艦消化 7 日目<br>「weights を落とす週」は週明け本体</div>
+          <div class="mt-4 text-sm text-zinc-400">2.4T／活性 ~95B／1M 文脈／$2/$6。X では「Qwen3.8-27B がローカルで本当に走るカード」「Max 級初の open weights」が来週（~8/10 帯）の本命としてカウントダウン継続。geo 制限ライセンス下書きは jurisdiction 列に残す。Agentic Index も 16 日ソロ開発も、clone・model card・ライセンスが出るまで RFP 本番列に載せない。無料 weights は永遠の無料ではない——K3 型 revenue share 観測は継続。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Qwen3.8-Max D+7・weights 週明け（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#09 DEEPSEEK D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">値上げ予告 D+3——新単価表は未着<br>Flash 床は「クライアント実装」曲面</div>
+          <div class="mt-4 text-sm text-zinc-400">significant increase／高負荷 surcharge 予告は日曜も有効、official notice の新プランは未着。V4-Flash の usage 王冠と ~$0.03–0.14 帯の完走単価は消えない——消えるのは永遠の最安仮定。土曜の ZCode キャッシュ命中物語と同週に読むと、DeepSeek の床価格は API 表だけでなく<strong>どのクライアントがキャッシュを当てるか</strong>まで含めた曲面。Flash 量産レーンは allowlist・stop condition・再現ログを維持。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-arrow-trend-up"></i>
+            <span>DeepSeek 値上げ予告 D+3（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#10 ZHIPU 四層＋5.3 噂</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ZCode 98.6% は土曜から継続<br>GLM-5.3 は噂帯——「soon」≠ clone</div>
+          <div class="mt-4 text-sm text-zinc-400">智谱の日曜ストーリーは土曜の延長：ZCode キャッシュ命中 98.6%・Claude Code 比 ~27% 原価、Databricks efficiency frontier 上の GLM-5.2、CogAgent／Phone／MindSpeed。X 上では GLM-5.3（@jietang「soon」・SDK 断片）が 8 月中下旬期待として流通——サイズ・日付・ベンチは未公式。正しい姿勢は<strong>5.2 本番レーンを維持し、5.3 は噂列</strong>。朝窓の「GLM-4-32B カットオフ更新」はノイズ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Zhipu ZCode／GLM-5.2／5.3 噂（8/8–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#11 H3 3090 現場</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MiniMax H3——単枚 3090／Comfy<br>開源 ROI が日曜もローカルで回る</div>
+          <div class="mt-4 text-sm text-zinc-400">X 上（8/9）：単枚 RTX 3090 で H3 を ComfyUI 経由、5s 映像＋音声、SE／音楽も「single 3090 で走る最良帯」という現場報告。金曜の Turbo LoRA（20→4–8 steps・約 5×）と合わせて、開源 4 日＋のコミュニティ加速度が継続。申請制ライセンス（US/EU/UK/KR）と E&amp;O で最終マスターを避ける声は変わらず——速さは調達を免除しない。クリエイティブ YAML は Turbo 試用 × License Form × 合成マーク。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-video"></i>
+            <span>MiniMax H3 3090／Comfy 現場（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#12 MOONSHOT IPO 別列</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">月之暗面——盤前情緒と 8/15 入金<br>K3 本番レーンはチャートで動かない</div>
+          <div class="mt-4 text-sm text-zinc-400">Bitget MOONSHOTUSDT 盤前＋46% 級の話と港股 IPO・機関 8/15 入金締切は週末も流通。国有資本を巻き込んだコーポ再編・HK 上場承認待ちという読み（FT 系）も併走。製品側は Kimi K3（2.8T）長文計画レーンが本体——上場期待は API 単価も harness も書き換えない。<strong>情緒と本番 YAML を別列</strong>が正しい姿勢。智谱・MiniMax に続く中国 AI 上場波の一部として読む。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>Moonshot／Kimi IPO 情緒（8/7–9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#13 THREE STRONG SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">K3 / Qwen3.8-Max / V4-Flash<br>曲面は「推論・空間・開源日・値上げ」</div>
+          <div class="mt-4 text-sm text-zinc-400">長コンテキスト計画＝Kimi K3、旗艦 agent／MM＝Qwen3.8-Max（D+7・weights 週明け）、量産 agent＝DeepSeek V4-Flash（usage 王冠・値上げ D+3）。日曜の新変数は MindIE 推論 30% と Pangea／Molmo の空間レーンと H3 の 3090 現場。パラメータ比較は見出し用。製品言語は<strong>ジョブ別曲面 × 推論エンジン × クライアント実装 × 時限付き単価 × 自前 weights オプション</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-diagram-project"></i>
+            <span>中国三強・日曜再描画（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#14 EU DAY EIGHT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Article 50 執行 8 日目——<br>30% も 7B も免除条項にならない</div>
+          <div class="mt-4 text-sm text-zinc-400">対話開示・合成物の機械可読マーク・ディープフェイク標識は Qwen チャットにも Image／H3 レンダーにも ZCode セッションにも請求書の隣。€15M または全世界売上 3%。MindIE の速さも Pangea の空間も H3 の 3090 もコンプライアンス免除条項にならない。現場 YAML は<strong>法域フラグ × 合成マーク × ホスト × 値上げ待ち単価 × キャッシュ列 × Ascend 評価キュー</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>EU AI Act Article 50 8日目（8/9）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#15 ROUTER SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MindIE × Pangea × weights 週明け<br>日曜 YAML の三語更新</div>
+          <div class="mt-4 text-sm text-zinc-400">現場メモ：Ascend 評価キューに MindIE-SD3・Pangea-7B・Molmo-7B・Mistral Large 123B・Qwen3.6 w4a8・PhotoMaker／PixArt を足す、Phi 全家はメニュー確認のみ、Ornith 系はスキップ。コーディングは ZCode／GLM-5.2 AB 継続、Flash は新単価待ち＋キャッシュログ、Qwen3.8-Max は harness 再測＋来週 weights 下書き、H3 は 3090／Turbo＋License Form＋E&amp;O、K3 は長文計画＋IPO 別列、EU は Article 50 8日目。使用量 No.1 も 30% も 7B も、検査担当を不要にはしない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>ルーター YAML・日曜実務（8/9）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月9日の Chinese AI &amp; Tech は、<strong>「土曜の壁紙倉庫とキャッシュ原価」が「日曜の推論エンジンと空間 7B」に引き継がれた日</strong>だった。旗艦前線（Qwen3.8-Max・DeepSeek 新単価・GLM-5.3）は静かなのに、@AiChinaNews の朝窓と午後窓は Ascend／Modelers で埋まった。朝の本丸は MindIE による Stable Diffusion 3 の約 30% 推論高速化——画質を落とさず DiT の高コストを削る、本番で針が動く種の配管。同時に Molmo-7B の画素級 grounding と Mistral Large 123B の Apache-2.0 Ascend パッケージが「評価キューに足す価値」側へ、LoRA 群と GLM-4 カットオフ更新は changelog 側へ振り分けられた。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            午後は「一括データダンプ」の再来。本物に近いのは <strong>Pangea-7B／Pangea-7B-hf</strong>——7B 帯で 2D と 3D（点群・深度）を跨ぐ空間推論を狙う。ロボと AR が大型プロプライエタリに払ってきた請求書を、オープンな小型で置き換えられるかという仮説は、ベンチが薄い今でも四半期の問いとして残る。Phi-3.5 全家の移植は研究ではないが、Huawei の庭の障壁除去としては一貫したインフラ作業。Ornith 35B〜397B と薄い model card の洪水は、土曜の「壁紙論」が日曜も有効であることの証明——カタログの厚さは CUDA 代替の必要条件であって十分条件ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            旗艦側のカウントダウンは日付だけ進む。Qwen3.8-Max は D+7、来週の open weights（Max 級初配布＋現場が本当に欲しがる 27B）が本体。DeepSeek 値上げ予告は D+3、新単価表はまだ未来形——V4-Flash の usage 王冠は消えず、「永遠の最安」仮定だけが木曜に死んだまま。智谱は ZCode 98.6% と GLM-5.2 frontier の実務物語を維持し、GLM-5.3 は「soon」と SDK 断片の噂帯。月之暗面の盤前情緒と 8/15 入金話は K3 の長文計画レーンとは別列。MiniMax H3 は単枚 3090 と Comfy の現場デモで、開源 ROI がローカル GPU に落ち続けている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同じ日曜日に並ぶのか。中国ラボの並列装置は、一発のダークホースではなく、<strong>推論スタックの 1 割改善 × 空間・embodied の芽 × 国内チップへのカタログ充填 × クライアント実装の原価競争 × 旗艦の週次消化 × 層別価格への移行 × 資本市場の情緒</strong>を同時に回すパイプラインになったからだ。グローバル開源（H3 の 3090）と国内チップ開源（MindIE・Pangea・Phi 移植）は両方「オープン」だが、片方はコミュニティ加速度、片方は供給鎖の自立。08-09 の教訓は——<strong>中国 AI の日曜は新旗艦の日ではなく、推論 30% と 7B 空間と壁紙の仕分けと未着の weights と未着の単価表を同じ YAML に書く日</strong>であり、検査担当を不要にはしない、という並列タスク管理だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">土曜「24 本は壁紙、でも ZCode が 98.6%」、日曜「旗艦は静か、でも MindIE が 30%・Pangea が 2D/3D」——中国 AI 界隈の（SRE と 3D 屋と CFO が同時に燃える）健全な週末だと思う（笑）。Modelers の本数で CUDA を倒した気になるのは危険だけど、MindIE と Pangea と Mistral Large を評価キューに入れないのも危険。Phi 全家は「移植完了」であって「精度勝利」ではない。weights は clone してから祝い、単価は notice が出てから書き換え、壁紙は薄い card をスキップ。そのループは、Entity List でも 2.4T でも IPO でも AI Act でも止まらない。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">推論 30%・空間 7B・壁紙洪水・weights 週明け——08-09 の四点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月9日現在の Chinese AI &amp; Tech は、(1) @AiChinaNews が朝窓で MindIE-SD3 約 30%・Molmo-7B grounding・Mistral Large 123B Apache を拾い、午後窓で Pangea-7B／hf の 2D/3D を本物候補とし Phi 全家移植を障壁除去、Ornith 系を filler と切ったこと、(2) Qwen3.8-Max D+7 の来週 open weights（Max＋27B）カウントダウンと DeepSeek 値上げ予告 D+3（新単価未着）が旗艦曲面を動かしたこと、(3) 智谱 ZCode／GLM-5.2 実務物語の継続と GLM-5.3 噂帯、MiniMax H3 の 3090／Comfy 現場、Moonshot IPO 情緒の別列維持、(4) EU Article 50 8日目とルーター YAML 更新（Ascend 評価キュー＋キャッシュログ＋weights 下書き）が、K3／Max／Flash 三強を「推論・空間・開源日・時限単価」で再描画したこと、で整理できる。モデルギャップは薄れ、推論配管・空間マルチモーダル・カタログの本物仕分け・クライアント実装・チップ経路・ホスト・ライセンス・時限付き単価・法域・ラベル・ジョブ別曲面・資本情緒のギャップが残る——それが 08-09 の冷静な読みだ。現場の焦点は MindIE／Pangea／Molmo／Mistral Large 評価、ZCode／GLM AB、Flash 新単価待ち、Qwen harness 再測と weights 下書き、H3 Turbo＋License Form、Article 50／jurisdiction 列、ルーター YAML 更新である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は MindIE の 30% と Pangea の 7B 空間と Qwen weights カウントダウンと DeepSeek 値上げ待ちで燃えてる。チケットは Ascend 評価キュー更新、Flash『暫定最安』タグ削除継続、キャッシュ命中ログ、H3 の License Form＋E&amp;O、Phi 全家はメニュー確認のみ。ヘッドラインは読まない——ルーター YAML とリスクレジスタと法域フラグを読む。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「コーディング原価は土曜からキャッシュ命中率。ZCode と GLM-5.2 を AB に足し、Flash は単価改定前にログを取る。計画は K3、cowork と UI は Qwen Max を自社 harness で再測。Mistral Large 123B は Ascend 上の重たい reasoning 候補。weights は clone してから祝う。5.3 噂はチケットにしない。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-palette"></i>
+            <span>画像・動画クリエイティブパイプライン</span>
+          </div>
+          <p class="text-sm text-zinc-300">「MindIE-SD3 の 30% はスケジュールを変える。H3 は 3090 でも回る報告が出て、Turbo と合わせて試用を続ける。PhotoMaker／PixArt は identity と低コスト 1024 の下書きに。でも最終マスターは E&amp;O と申請制を見てから。EU 向けは合成物マークを今日も足す。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>国内シリコン／Ascend 観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日の本丸は MindIE と Pangea と Mistral Large。Phi 全家は移植完了の証拠であって精度勝利ではない。Ornith 397B はスキップ。独立精度と推論経済は弱点のまま——だから 30% のエンジン改善の方が 24 本の壁紙より戦略的。グローバル開源と国内チップ開源が並走するほど、ホストとチップとライセンスを同じ表で見ろ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gavel"></i>
+            <span>EU／US コンプライアンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 の 8 日目。Qwen も Image API も H3 も ZCode も、30% や 7B や 98.6% で免除されない。チャット開示、合成マーク、ディープフェイク標識。H3 の US は申請＋waiver。27B の geo 制限下書きは未確定でも jurisdiction 列は今日足せ。IPO 情緒は法務チケットに載せない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 が長文計画と IPO 情緒を、Flash が使用量と値上げ D+3 を、Qwen3.8-Max が Agentic 物語と来週開源を、H3 が 3090 現場を、Modelers が MindIE／Pangea／Phi 壁紙を、Zhipu が ZCode キャッシュを、EU がラベルを——日曜は外交ではなく、推論配管・空間の芽・倉庫仕分け・時限付き単価の四重奏だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List でも 2.4T でも open video でも AI Act でも盤前チャートでも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-08-09 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @AiChinaNews 朝窓 MindIE-SD3 +30%・Molmo-7B-D/O・Mistral-Large-Instruct-2411 Apache Ascend・LoRA群／ノイズ仕分け（8/9）、@AiChinaNews 午後窓 Pangea-7B／Pangea-7B-hf 2D/3D・Phi-3.5 全家移植・PhotoMaker／PixArt-alpha／PaddleOCR-VL-For-Manga・Qwen3.6-27B w4a8・Ornith/PixelWave filler（8/9）、Qwen3.8-Max D+7・来週 open weights（Max＋27B）カウントダウン、DeepSeek API 値上げ予告 D+3・V4-Flash 価格床、智谱 ZCode キャッシュ 98.6%／GLM-5.2 frontier／GLM-5.3 噂帯（8/8–9）、MiniMax H3 3090/Comfy 現場デモ・Turbo LoRA 残響、Moonshot／Kimi 港股 IPO 盤前情緒・8/15 入金話、K3/Qwen/Flash 三強、EU AI Act Article 50 8日目、H3 E&amp;O／申請制ライセンス実務（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-08-09', 'color:#10b981');
+  </script>
+</body>
+</html>
