@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-10 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-10 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">月曜——メモリ完売の横で、foundry・カスタム ASIC・パッケージが本丸に<br>TSMC +45% × Maia 300（30万基＋）× EMIB-T 二車線 × HBF／光</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月10日（月）。08-09 が「2027 完売が常識になり、電力と装置が製品になる日曜」なら、08-10 は<strong>その上流の工場と下流の代替経路が同時に数字で語られた月曜</strong>だ。TSMC の 7 月売上は約 <strong>NT$4,676 億（約 $14.5B）・前年同月比 +44.7%</strong>——AI 需要が「チップ需要」から「最先端製造能力の希少性」へ広がったことの最明瞭な証明。同日 The Information／Reuters 系：Microsoft が次世代 <strong>Maia 300</strong> を早くて 9 月公開予定、TSMC と 2027 向け <strong>30 万基超</strong>の製造枠を交渉、最終的には 100 万基規模の野心——Azure 上で tokens/$ 約 30% 改善を狙う、という読みが X で拡散。並行して Intel <strong>EMIB-T</strong> 上の Google TPU ランプ議論が再燃し、CoWoS 一択ではないパッケージ二車線が基板メーカー（Ibiden／Shinko 等）の価値に結びつく。JPMorgan 系は agentic のメモリ壁に <strong>High Bandwidth Flash（HBF）</strong> と NAND 階層を重ね、週末のフォトニクス回転も消化継続。月曜の評価軸はカタログ FLOPS ではなく、<code>foundry 売上 × カスタム枠 × パッケージ車線 × メモリ階層 × MW リース × 8/26 まで 16 日</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 TSMC +44.7%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">7 月売上 NT$4,676 億<br>「減速論」を数字が殴った月曜</div>
+          <div class="mt-4 text-sm text-zinc-400">TSMC が月曜に報告した 7 月売上は約 <strong>NT$467.58B（$14.5B）・前年同月比 +44.7%</strong>。AI 関連需要が牽引——X 分析の合意は「ブームが終わったなら説明できない数字」。次の論点は成長の有無ではなく、<strong>最先端能力がいつまで希少か、その希少性の経済を誰が取るか</strong>。CapEx が $60B 超へ向かう観測と合わせ、メモリ完売（2027 表）の横に「ウェハと CoWoS の表」が並ぶ。08-09 の Lancium／Source Foundry が電力と装置なら、月曜の TSMC は<strong>工場そのものの稼働証明</strong>である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>TSMC 7 月売上 +44.7% YoY（8/10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 MAIA 300</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MS が 30 万基＋を TSMC に交渉<br>カスタム ASIC が 2027 の本線に</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information（Reuters 経由）：Microsoft が次世代 AI チップ <strong>Maia 300</strong> を秋——早くて 9 月——に公開予定。TSMC と 2027 納入向け <strong>30 万基超</strong>の製造能力を協議、最終目標は 100 万基規模という観測。社内加速器パイプラインは NVIDIA の価格と供給ボトルネックを構造的に迂回する動き。Maia 200（3nm・216GB HBM3e）の延長線上で、tokens/$ 改善が Azure のマージン防衛になる——という読みが月曜のタイムラインを占拠。<strong>hyperscaler が「買う側」から「枠を奪い合う製造側」に立つ</strong>のが 2026 年夏の定常状態だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Microsoft Maia 300／The Information（8/10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 EMIB-T 二車線</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9-10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TPU が CoWoS 以外でランプ？<br>基板がインターポーザの仕事を奪う</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜の X 深掘り：Google TPU が Intel <strong>EMIB-T</strong> 上でランプできれば、巨大 AI パッケージの CoWoS 代替になり得る——ただし制約は基板。CoWoS ではシリコンインターポーザが配線を担い基板は比較的単純だが、EMIB-T では大きな ABF 有機基板にブリッジを埋め込み、<strong>基板がインターポーザ役と kW 級給電を同時にこなす</strong>。価値の一部は Ibiden／Shinko／AT&amp;S／Unimicron など基板サプライへ移る、という読み。INTC のランプはサプライヤ歩留まり次第。08-09 の CoWoS 門番物語は消えず、<strong>二車線化の現実味が月曜に一段上がった</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>EMIB-T vs CoWoS・基板価値議論（8/9–10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 HBF / NAND 階層</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9-10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">メモリ壁の隣に Flash が座る<br>HBM と SSD のあいだを埋める</div>
+          <div class="mt-4 text-sm text-zinc-400">JPMorgan の Global Memory ノートが月曜も循環：AI の「メモリ壁」は主制約のまま——長いコンテキスト、巨大 KV、agentic、DRAM/HBM コスト上昇が<strong>低コスト階層</strong>を要求。特にエンタープライズ SSD と <strong>High Bandwidth Flash（HBF）</strong>——積層 NAND で最大約 512GB、帯域 0.4–3 TB/s 級——が HBM と通常 SSD の間に座る設計思想。CXL メモリプールや prefill／decode 分離も DRAM 側の緩和策。NVIDIA の SCADA／CMX 系が GPU→企業 SSD 経路を最適化する話とセット。Flash Memory Summit の余韻も含め、<strong>HBM 完売の横で NAND が「過小評価されていた」</strong>という再評価が月曜の床。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hard-drive"></i>
+            <span>JPMorgan 系 HBF／NAND・メモリ壁（8/9–10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 2027 完売 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Big3 の表は月曜も閉じたまま<br>充足 60–70% が常態</div>
+          <div class="mt-4 text-sm text-zinc-400">DigiTimes／IGN／Seeking Alpha 系が週末から持ち越す骨格——Samsung／SK Hynix／Micron の <strong>2027 DRAM・HBM 能力が実質完売</strong>、顧客は注文の 60–70%。NAND も年産が埋まりつつある。SK Hynix の Yongin Y2／Cheongju M17 へ約 <strong>54 兆ウォン（約 $38B）</strong>は 2028–29 クリーンルーム前の緩和を約束しない。月曜の新味は「完売見出し」ではなく、その上に TSMC 売上と Maia 枠が<strong>同じ希少性の地図</strong>に載ったこと。メモリ株の短期調整論（フォトニクスへの回転）はあっても、LTA と割当表の物理は動かない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>DigiTimes 系 2027 完売・充足 60–70% D+1（8/7–10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 PHOTONICS / RUBIN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM を減らし、光でラックを繋ぐ<br>クラスタ帯域が次の希少資源</div>
+          <div class="mt-4 text-sm text-zinc-400">週末から続く回転：メモリ株の急騰後、注目がシリコンフォトニクス／光インターコネクトへ。NVIDIA は HBM 逼迫下で <strong>Rubin Ultra</strong> の構成を柔軟化（12-Hi HBM4E 一択から 8-Hi／低容量評価）——ラック内の最大 HBM より、<strong>ラック横断の高速光リンク</strong>でクラスタ性能を稼ぐ設計思想。Spectrum-X と co-packaged optics が銅の熱・損失・距離の限界を越える。短期ポジションの話と構造トレンドは別だが、メッセージは一貫：<strong>1 GPU に積む GB を減らしても、光で「見える」メモリ空間を広げる</strong>——HBM 完売への工学的答えの一つ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-lightbulb"></i>
+            <span>フォトニクス回転・Rubin Ultra HBM 柔軟化（8/8–10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#07 MW リース / 電力 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Bitdeer $4.7B・16 年／121 IT MW<br>Lancium 出資の延長線上</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜のインフラ側ヘッドライン：Bitdeer がノルウェー Tydal キャンパスで Volta 子会社と <strong>$4.7B・16 年の AI/HPC データセンターリース</strong>——121 IT MW を NVIDIA GPU 向けに。08-09 の NVIDIA×Lancium 最大 $3B（Stargate テキサス電源、約 20% 持分＋接続マイルストーン）と並べると、物語は同じ：<strong>チップの箱売りではなく、MW と接続権が商品カタログに載る</strong>。Firebird アルメニア×DSX（工場 OS）と Source Foundry（装置 $500M）は D+1 査定継続。届くラックは、繋がる電力と取れたメモリ枠の関数である——という日曜の命題が、月曜もリース契約で再確認された。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Bitdeer Tydal $4.7B／Lancium・DSX D+1（8/7–10）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 8/26 −16d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA 本丸まで 16 日<br>聴くべきは FLOPS より枠と MW</div>
+          <div class="mt-4 text-sm text-zinc-400">8/26 NVIDIA 決算まで 16 日。月曜の材料セットはさらに広がった：TSMC が需要の持続を数字で証明し、Maia 300 が 2027 の foundry 枠を巡る競争を可視化し、EMIB がパッケージ二車線を現実化し、HBF がメモリ階層を拡張し、光がクラスタ帯域を商品化する。聴くべき言語はピーク FLOPS ではなく、<strong>Rubin／HBM 最終構成、CoWoS 外注と EMIB の実行、中国・エージェント推論ミックス、届くラック数、カスタム ASIC の食い込み、MW 接続カレンダー</strong>。01 の「旗艦は測ってから」と同型——ハードウェアも、祝う前に割当と電力と製造枠を測る 16 日間。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 16 日（8/10）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月10日、AI Hardware の中心は「<strong>2027 のメモリ表が閉じたまま、その上流の foundry と下流の代替経路が月曜の本丸に昇格した</strong>」ことだ。日曜の骨格——Big3 完売と充足 60–70%、NVIDIA の Lancium 最大 $3B、Source Foundry 累計 $500M、agentic による CPU/DRAM 再設計、Taalas 硬化と Firebird DSX——は消えていない。月曜が足したのは、<strong>工場の売上証明と、カスタムシリコンの 2027 枠争奪と、パッケージとメモリ階層の二車線化</strong>である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            TSMC の 7 月 +44.7% は、「AI インフラは減速している」という週次の噂を、規模の大きな売上で押し返す。市場の次の問いが「需要はあるか」から「最先端能力はいつまで足りないか」へ移った、という読みが X で定着した。その同じ製造能力のテーブルに、Microsoft の <strong>Maia 300</strong> が座る——30 万基超の 2027 枠交渉、100 万基野心、9 月前後の公開。Maia 200 で推論経済を触った MS が、次世代で tokens/$ と供給独立性を同時に取りに行く。hyperscaler のカスタム ASIC は「実験」ではなく、<strong>TSMC のカレンダーと HBM の割当と同じ戦場で NVIDIA と席を奪い合う本線</strong>になった。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            パッケージ側では EMIB-T が CoWoS の対案として再び脚光を浴びる。インターポーザを基板に埋め込む設計は、歩留まりと基板サプライの能力に依存するが、成功すれば巨大 AI パッケージのボトルネックが一本道でなくなる。メモリ側では JPMorgan 系が HBF と NAND 階層を「過小評価されていた AI サイクルの一部」と再定位——HBM 完売の隣で、帯域とコストの中間層が設計言語に入る。フォトニクスは短期の株ローテーションでもあり、Rubin Ultra の HBM 柔軟化と光リンク拡大という構造応答でもある。Bitdeer の 121 MW・16 年リースは、Lancium が出資で示した「接続権＝商品」を、契約書の言葉で繰り返す。08-08 が硬化バイパスと工場 OS、08-09 が割当・電力・装置のダッシュボード、08-10 は「<strong>foundry 数字 × カスタム枠 × パッケージ二車線 × メモリ階層 × MW 契約が同じ画面に並んだ月曜</strong>」。無料なのは +45% の見出しで、有料なのは 2027 の実出荷と 8/26 の一貫した供給言語である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜の名言候補：「GPU を買う前に、TSMC の枠と 2027 のメモリと、できれば電気の接続権を買え。余力があれば基板と光ケーブルも。」——TSMC が +45% で「まだ減速してません」と答えた横で、Microsoft が Maia 300 で 30 万基の席を取りに行く。NVIDIA の顧客が工場で隣のラインを争う構図、最高に 2026 年らしい。EMIB は「CoWoS 満席なら別のレストラン」で、HBF は「HBM が満席なら真ん中の席」で、フォトニクスは「席が足りないならテーブル同士を光で繋げ」だ。Lancium が電源ケーブルをバランスシートに載せ、Bitdeer が 16 年分の MW を契約書に書いた。Taalas は「同じ重みを毎トークン運ぶのバカくない？」という工学的皮肉、DSX は「チップあっても設計図ないとヒーター」という運用的皮肉。で、8/26 まで 16 日。測るのはカタログの太字じゃなく、届くラックと繋がる MW と、焼けるモデルの寿命と、カスタムがどれだけ NVIDIA の席を削るか。静かな日曜のあとの、にぎやかな月曜だ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">TSMC +45%・Maia 300・EMIB 二車線・HBF 階層・2027 完売 D+1・光／Rubin・MW リース・8/26——月曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月10日現在の AI Hardware 分野は、(1) TSMC 7 月売上 +44.7% による AI 製造需要の持続証明と最先端能力の希少性、(2) Microsoft Maia 300 の 9 月前後公開観測と TSMC 2027 向け 30 万基超枠交渉——カスタム ASIC の本線化、(3) Intel EMIB-T 上の TPU ランプ議論と CoWoS 以外のパッケージ二車線——基板サプライへの価値移動、(4) JPMorgan 系の HBF／NAND 階層と agentic メモリ壁への応答、(5) Big3 の 2027 DRAM・HBM 実質完売と充足 60–70% の常態（D+1）、(6) フォトニクス／光インターコネクトと Rubin Ultra HBM 構成柔軟化、(7) Bitdeer $4.7B・121 IT MW リースと Lancium／DSX／Source Foundry の電力・工場・装置 D+1、(8) 8/26 NVIDIA 決算まで 16 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>foundry 稼働と枠、カスタム ASIC の食い込み、パッケージ車線の実行、メモリ階層（HBM＋DRAM＋HBF）、光クラスタ帯域、MW 接続カレンダー、8/26 までの一貫した供給言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>Foundry／TSMC 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「+45% は需要の証明であり、能力の希少性の証明でもある。Maia も GPU も同じ最先端ラインとパッケージ枠を奪い合う。次の会話は成長率ではなく、誰が 2027 のウェハと CoWoS／代替パッケージの席を押さえるかだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cloud"></i>
+            <span>Microsoft／カスタム ASIC 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Maia 300 は自慢の FLOPS ではなく、Azure の tokens/$ と供給独立性の話だ。30 万基は実験ロットではない。NVIDIA を捨てるわけではないが、2027 の枠を全部外注に任せるのはもう戦略ではない。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-layer-group"></i>
+            <span>パッケージ／基板視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「EMIB-T がインターポーザ役を基板に押し付けるなら、歩留まりと T-glass コアの供給が次の CoWoS になる。二車線は保険であり、成功すれば価値の一部は基板メーカーに移る。満席の高速道路に側道ができる話だ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／DRAM／NAND 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2027 の表はほぼ閉じている。HBF は HBM の代替ではなく、コストと帯域の中間層——agentic が KV とホスト DRAM を食うほど、階層設計が必要になる。完売の横で NAND が再評価されるのは、サイクル論ではなく BOM の話だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA／電力・クラスタ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「HBM を全スタック載せられないなら、光でラックを繋ぎ、DSX で MW をトークンに変え、Lancium で入口を押さえる。Rubin の最終構成はカタログの最大値ではなく、届くメモリと繋がる電力の関数だ。8/26 で語るべきはその関数である。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>データセンター／TCO・日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは Ultra の見出しでも、Maia の 30 万基でもない。届くラック、動く電力、2027 まで続く割当、エージェント用の CPU/DRAM、必要なら HBF 階層だ。TSMC が忙しいほどリードタイムは伸びる。8/26 までに欲しいのはピーク FLOPS の約束より、供給と接続と製造枠のカレンダーである。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-10 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・TSMC 7月売上（+44.7% YoY）、The Information/Reuters（Microsoft Maia 300・30万基超/2027）、EMIB-T vs CoWoS 基板議論、JPMorgan 系（HBF/NAND・メモリ壁）、DigiTimes/IGN（2027 DRAM/HBM 完売 D+1）、フォトニクス/Rubin Ultra HBM、Bitdeer Tydal $4.7B、Lancium/Source Foundry/DSX D+1、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-10', 'color:#10b981');
+  </script>
+</body>
+</html>
