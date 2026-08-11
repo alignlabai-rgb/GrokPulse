@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-08-11 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-11 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜は「効率の針と製品の里程碑」——QwQ-32B が 3B 活性で R1 級、<br>ZCode 100 万・K3 が Databricks・27B weights が「今週」</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月11日（火）。月曜の OpenRouter 王冠・VoiceCraft 針・人形 97% の余韻のまま、営業日の表紙は<strong>推論効率・コーディング製品・エンタープライズ配布・オープンウェイト予告</strong>に切り替わった。@AiChinaNews 火曜窓の本丸は <strong>QwQ-32B 更新</strong>——MoE を洗練し活性パラメータ約 3B で DeepSeek-R1（671B 級）に並ぶという主張、262K 文脈はそのまま。同日 Z.ai は <strong>ZCode 100 万ユーザー</strong>到達を宣言し Coding Plan の利用上限をリセット、キャッシュ命中率 98%・約 1.8× の使用量を掲げた。Moonshot は <strong>Kimi K3 を Databricks Unity AI Gateway に正式投入</strong>。Qwen 公式は <strong>Qwen3.8-27B open weights が今週着地</strong>と明言し、3.6-27B の agentic coding 実績を足場に「3.8 はさらに上」と予告。Flash 側は第三者ベンチで「修正単価 ~$0.004／Fable 5 の約 100 倍安」級の再循環が続き、値上げ D+5・Max D+9（weights 未着）と並走。08-11 は<strong>活性パラメータの圧縮 × 製品のユーザー里程碑 × 湖上配布 × 中型 open weights の週次約束 × 超安 agent レーンの継続証明</strong>が同じ YAML に並ぶ、成熟週の火曜日だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#01 QwQ-32B 効率</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">QwQ-32B——活性 ~3B で R1 級?<br>火曜 Modelers 窓の本物の一歩</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews 火曜（8/11）：Qwen チームの最新 QwQ-32B 更新が「オープン側 reasoning の代替」枠として初めてちゃんと立つ、と仕分け。MoE を洗練し活性約 3B で DeepSeek-R1（671B 級）並みの reasoning を主張——262,144 トークン文脈は維持。長文コード解析と多段問題鎖への実用候補。閉鎖 API に値付けされた開発者向けの針。壁紙洪水の中でアーキ意図がある例外帯。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>@AiChinaNews QwQ-32B 更新（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#02 ZCODE 1M</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ZCode 100 万ユーザー——<br>上限リセット＋98% キャッシュ</div>
+          <div class="mt-4 text-sm text-zinc-400">@Zai_org 公式（8/11）：ZCode が 100 万ユーザー到達。お礼として GLM Coding Plan 全ユーザーの利用上限をリセット。更新は long-horizon を「完了した仕事」に落とす方向——実エンジニアリング workflow の知性強化と、キャッシュ命中率 98%（約 1.8× の使用量）。月曜の文脈くじ（96K〜1M）と合わせると、智谱の火曜は<strong>製品里程碑 × キャッシュ経済 × 利用枠の政治</strong>。GLM-5.3 は噂帯のまま。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>@Zai_org ZCode 1M・上限リセット（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 K3 DATABRICKS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Kimi K3——Databricks に正式投入<br>湖上で「データがある場所」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">@Kimi_Moonshot（8/11）：Kimi K3 が Databricks Unity AI Gateway 経由で利用可能に——データが既にある場所で、ガバナンス付き・セキュアに agent／アプリへ。企業の「open-weight を自前 GPU に落とす」以外の第三の道：<strong>湖上ゲートウェイ経由の中国 frontier</strong>。IPO 情緒（8/15 入金話等）は別列——製品 YAML は配布面で動く。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-database"></i>
+            <span>Kimi K3 × Databricks Unity AI Gateway（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 QWEN 3.8-27B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Qwen3.8-27B——open weights<br>「今週」公式予告・3.6 より上</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Qwen 公式（8/11）：Qwen3.8-27B の open weights が今週着地、と明言。Qwen3.6-27B の agentic coding が強い、というコミュニティ評価に対し「3.8-27B はさらに良い。Stay tuned」。ローカル LLM 勢が 1M 文脈期待でざわつく一方、旗艦 <strong>Qwen3.8-Max（2.4T）は D+9・weights 未着</strong>のまま——中型と旗艦の二重時計。clone してから祝う運用は継続。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>@Alibaba_Qwen 3.8-27B weights this week（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 FLASH 100×</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">V4-Flash——修正単価 ~$0.004<br>キャッシュ読みが「100× 安」を作る</div>
+          <div class="mt-4 text-sm text-zinc-400">X 上の第三者ベンチ再循環（8/11）：DeepSeek V4 Flash が debugging 系で #1——~$0.004/fix・総額 ~$0.21 帯。Fable 5 が ~$0.389/fix・~$21 総額級との対比で「約 100× 安」物語が再燃。秘密は安価な cache read——トークン総量は多くても繰り返し文脈が割引され、agent 百万トークン帯でも請求が死なない。Intelligence Index フルスイート ~$72 で frontier 同帯スコア、という別指標も並走。値上げ D+5・混雑は月曜から持ち越し。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dollar-sign"></i>
+            <span>Flash コスト／キャッシュベンチ再循環（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#06 LONGCAT INT8</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Meituan LongCat-2.0-INT8<br>Ascend 向け本番フォーマット信号</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews 火曜：美団 LongCat-2.0 の INT8 量子化版が Huawei Ascend NPU を明示ターゲット——メモリとレイテンシを下げたテキスト生成。グローバル開発者は肩をすくめるかもしれないが、<strong>Ascend 島が「本番向けフォーマット」を揃え始めた</strong>信号としては実質的。QwQ 効率と並ぶと、火曜のテーマは「少ない活性・少ないビット」の二重効率。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Meituan LongCat-2.0-INT8 Ascend（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#07 ANTELOPEV2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">AntelopeV2——顔解析スタック<br>夜窓 Modelers の例外的「本物」</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews 早朝窓（8/11）：Ascend 向け約 20 本超のチェックポイント洪水の中、AntelopeV2 が例外——寛容ライセンスの ONNX 顔解析（検出・ランドマーク・identity embedding・属性）を local-first で束ねた。残りは AutoTrain プレースホルダ名・w8a8 公式変換（Qwen3／QwQ-32B／R1／MiniMax-M3／GLM-4.6）の反復。針は Antelope、壁紙は必要ビットだけ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-face-smile"></i>
+            <span>@AiChinaNews AntelopeV2／Ascend 夜窓（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#08 OPENMED 洪水</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">OpenMed ポルトガル biomedical<br>12 本中 10 本がほぼ同一発表</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜昼窓のパロディ級：OpenMed 系のポルトガル語臨床テキスト PII 検出（BiomedELECTRA／BiomedBERT、base 110M〜large 340M、Ascend／MLX／ClinicDischarge 変種）がほぼ同一プレスを連射。問題設定自体は本物（LGPD 下の de-id）——だが五時間窓に 10 クローンは「進捗の増幅」ではなく時間の浪費。アーキとデバイスを一つ選んで進め。LiquidAI カーペットの火曜版。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire-extinguisher"></i>
+            <span>OpenMed PII モデル洪水（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 APPLE×QWEN D+</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/8-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Apple 中国——Qwen を Siri／Writing<br>ガイド公開→撤回の消化が続く</div>
+          <div class="mt-4 text-sm text-zinc-400">8/8 前後の Reuters 系：本土 Mac 向けに Alibaba Qwen を Apple Intelligence／Siri／Writing Tools に接続する手順が公開され、一部報道では直後にガイドが消えた、という二重物語が 8/10–11 も循環。データは学習に使わない、という枠組みは継続。地政学的分割——米は Gemini／自社、中国は Qwen——の実務実装フェーズ。配布の勝ちはベンチ表ではなく、OS の設定画面に載ること。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-apple-whole"></i>
+            <span>Apple×Qwen 中国 Mac／Siri 消化（8/8–11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#10 MAX D+9 × 値上げ D+5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/3-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">旗艦と単価表——日付だけ進む<br>27B は今週、Max と新料金は未着</div>
+          <div class="mt-4 text-sm text-zinc-400">Qwen3.8-Max：2.4T／活性 ~95B／1M 文脈／$2/$6 帯——D+9、clone・model card・ライセンスの公式ドロップは未確認。DeepSeek の significant increase 予告は D+5、official 新単価表は火曜も未着。一方 27B は「今週」と公式が口にした——中型 open と旗艦 closed と API 値上げ待ちが三本時計。RFP 本番列に Max を載せるのは weights 後。Flash 量産レーンは allowlist・stop・代替・再現ログを維持。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Max D+9／値上げ D+5／27B 今週（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#11 収益シェア予告</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Alibaba——次期 open Qwen に<br>商用ユーザーへ売上シェア要求観測</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters 筋（8/7 以降循環）：次のオープン系 Qwen について、大手商用ユーザーに売上の一部（報道では 30% 級）を求める計画、という観測が継続。無料 weights は永遠の無料ではない——geo 制限ライセンス下書きと並ぶ「オープンの有料化」列。27B が今週落ちても、商用 SaaS への転用条項は別紙で読め。オープン＝無料、は 2024 の童話。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-handshake"></i>
+            <span>Alibaba open Qwen 収益シェア観測（8/7–11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#12 月曜持ち越し</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">VoiceCraft・人形 97%・FLI F<br>910C・MM-Plugins は評価キュー残</div>
+          <div class="mt-4 text-sm text-zinc-400">月曜資産の火曜消化：VoiceCraft（ゼロショット TTS＋編集一体）と StructTable 1B は Ascend 評価キューに残置。H1 人形出貨 97%（智元／宇樹）は embodied 数量列。FLI Safety Index の DeepSeek F は監査メモ列。Ascend 910C 60 万個語りと Qwen-MM-Plugins は「チップ量産 × harness 多モーダル化」の両輪。新旗艦は火曜も出なかった——代わりに効率と製品が表紙を取った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-list-check"></i>
+            <span>月曜資産の火曜評価キュー（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#13 透かしの副作用</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude 不可視透かし——<br>「中国モデルへのギフト」論が再燃</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic のテキスト透かし（EU Article 50 実務）が 8/10–11 に拡散する中、一部観測者は「価格と規制の二重圧が Qwen／Kimi／DeepSeek へ需要を押しやる」と皮肉る。中国側も EU 向けにラベル義務は同じ——免除条項ではない。だが<strong>US クローズドのコンプラコスト上昇＝open／安価レーンの相対魅力</strong>という構造は、火曜の効率物語と相性が良い。法域フラグは両陣営に請求書の隣。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stamp"></i>
+            <span>Claude 透かし vs 中国レーン相対魅力（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#14 THREE STRONG TUE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">K3 / Qwen / V4-Flash——曲面は<br>「配布・中型 open・超安 agent」</div>
+          <div class="mt-4 text-sm text-zinc-400">長コンテキスト＋企業配布＝Kimi K3（Databricks 着地・IPO 別列）、旗艦＋中型 open＝Qwen（Max D+9／3.8-27B 今週／QwQ 効率／Apple 中国）、量産 agent＝DeepSeek V4-Flash（100× 物語・値上げ D+5・混雑・FLI F）。火曜の新変数は ZCode 1M、LongCat INT8、AntelopeV2、OpenMed 洪水。パラメータ比較は見出し用。製品言語は<strong>ジョブ別曲面 × 配布経路 × 活性／ビット効率 × 時限単価 × 自前 weights × 法域ラベル</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-diagram-project"></i>
+            <span>中国三強・火曜再描画（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#15 EU DAY TEN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Article 50 執行 10 日目——<br>1M も 100× も免除にならない</div>
+          <div class="mt-4 text-sm text-zinc-400">対話開示・合成物の機械可読マーク・ディープフェイク標識は Qwen チャットにも ZCode にも Flash agent にも K3 湖上呼び出しにも請求書の隣。€15M または全世界売上 3%。ZCode 100 万も QwQ の 3B 活性も Databricks 配布もコンプライアンス免除条項にならない。現場 YAML は<strong>法域フラグ × 合成マーク × ホスト × キャッシュ列 × 値上げ待ち単価 × Ascend 評価キュー × open ライセンス条項</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>EU AI Act Article 50 10日目（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-300 text-xs font-mono tracking-[1.5px]">#16 ROUTER TUE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">QwQ × ZCode 1M × K3 湖上<br>火曜 YAML の三語更新</div>
+          <div class="mt-4 text-sm text-zinc-400">現場メモ：reasoning レーンに QwQ-32B を評価キューへ（活性 3B 主張を自前 harness で検証）。コーディングは ZCode 上限リセット後に AB 再測＋キャッシュ命中ログ。長文／企業は K3 Databricks を PoC 列に。Flash は 100× 物語を信じつつ混雑・値上げ D+5・FLI F をリスクレジスタ維持。Qwen は 27B clone 待ち＋Max harness 再測＋MM-Plugins＋Apple 中国配布の法務メモ。Ascend に LongCat INT8・AntelopeV2・（持ち越し）VoiceCraft。OpenMed は 1 本だけ。EU は Article 50 10日目。100 万ユーザーも 100× 安も、検査担当を不要にはしない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>ルーター YAML・火曜実務（8/11）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月11日の Chinese AI &amp; Tech は、<strong>「月曜の使用量王冠と部品箱」が「火曜の活性圧縮と製品里程碑と湖上配布」に引き継がれた日</strong>だった。@AiChinaNews が火曜の本丸に据えたのは QwQ-32B——活性約 3B で R1 級 reasoning を主張する更新。閉鎖 API に値付けされたチームにとって、「オープン reasoning の代替」が初めて実務候補に見える窓。同じ窓で Meituan LongCat-2.0-INT8 が Ascend 向け本番フォーマットを足し、OpenMed の 10 クローン洪水が「進捗の見せ方」のアンチパターンを晒した。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            製品側の火曜日は里程碑の日だった。Z.ai は ZCode 100 万ユーザーを宣言し、Coding Plan の上限リセットと 98% キャッシュ・1.8× 使用量を並べた——月曜の「ホストごとの文脈くじ」に、<strong>利用枠の政治とキャッシュ経済</strong>が重なる。Moonshot は Kimi K3 を Databricks Unity AI Gateway に載せ、「データがある場所で中国 frontier を呼ぶ」第三の配布経路を公式化した。IPO 情緒はチャートで動くが、製品 YAML はゲートウェイで動く。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Qwen の二重時計はよりうるさくなった。公式は Qwen3.8-27B open weights を「今週」と口にし、3.6-27B の agentic coding 実績の上に 3.8 を積む。一方 2.4T の Max は D+9 で weights 未着、Apple 中国向け Qwen 接続ガイドは公開と撤回の消化が続く。収益シェア（商用 30% 級）観測は、無料 open の終焉を予告する脚注。DeepSeek Flash は 100× 安物語を第三者ベンチで再燃させつつ、値上げ D+5・混雑・FLI F を同じ曲面に載せたまま——最安の死と当面の最頻出が同居するねじれは月曜から一日も解決していない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同じ火曜日に並ぶのか。中国ラボの並列装置は、一発のダークホースではなく、<strong>活性／ビットの効率競争 × コーディング製品のユーザー規模 × エンタープライズ湖上配布 × 中型 open weights の週次コミット × 超安 agent のキャッシュ経済 × 国内チップ向け本番フォーマット × OS 配布の地政学 × EU ラベル義務</strong>を同時に回すパイプラインになったからだ。08-11 の教訓は——<strong>中国 AI の火曜は新旗艦の日ではなく、3B 活性の主張と 100 万ユーザーのリセットと Databricks のゲートウェイと「今週の 27B」と 100× の再循環を同じ YAML に書く日</strong>であり、検査担当を不要にはしない、という並列タスク管理だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜「Flash が #1、でも timeout、人形 97%、Safety は F」。火曜「QwQ が 3B で R1、ZCode が 100 万、K3 が Databricks、27B は今週、OpenMed が 10 連発」——中国 AI 界隈の（研究と SRE と エンタープライズと プレスリリース工場が同時に燃える）健全な平日だと思う（笑）。活性 3B の主張は自前 harness で測れ、100 万はキャッシュ命中率で測れ、weights は clone してから祝い、単価は notice が出てから書き換え。そのループは、Entity List でも 2.4T でも Apple の設定画面でも AI Act でも止まらない。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">QwQ 効率・ZCode 1M・K3 湖上・27B 今週——08-11 の四点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月11日現在の Chinese AI &amp; Tech は、(1) QwQ-32B 更新が活性 ~3B／R1 級 reasoning と 262K 文脈で火曜の針になり、LongCat INT8・AntelopeV2 が Ascend 本番フォーマットを足し OpenMed 洪水が壁紙側を占めたこと、(2) Z.ai が ZCode 100 万・上限リセット・98% キャッシュを公式発表し、コーディング製品の里程碑と利用枠政治が表に出たこと、(3) Kimi K3 が Databricks Unity AI Gateway に着地し、Qwen が 3.8-27B weights「今週」と Max D+9・Apple 中国配布・収益シェア観測を同時に抱えたこと、(4) DeepSeek V4-Flash が 100× 安／キャッシュ読み物語を再燃させつつ値上げ D+5・混雑・FLI F・EU Article 50 10日目を同じ曲面に載せたこと、で整理できる。モデルギャップは薄れ、活性効率と配布経路と中型 open の着地と時限付き単価とチップ向け本番フォーマットと法域ラベルのギャップが残る——それが 08-11 の冷静な読みだ。現場の焦点は QwQ 評価、ZCode AB＋キャッシュログ、K3 Databricks PoC、27B clone 待ち＋Max harness、Flash リスクレジスタ、Ascend に LongCat／Antelope／VoiceCraft、Article 50／jurisdiction、ルーター YAML 更新である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は QwQ 3B と ZCode 1M と K3 Databricks と Flash 100× と 27B 今週で燃えてる。チケットは reasoning 評価キュー、コーディング AB のキャッシュログ、湖上ゲートウェイの PoC、Flash の代替ホスト継続、『暫定最安』タグはまだ消さない。ヘッドラインは読まない——ルーター YAML と混雑ダッシュボードと法域フラグを読む。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「コーディング原価はキャッシュ命中率。ZCode が上限リセットしたなら今が AB の窓——GLM-5.2 とホスト文脈実測を続ける。QwQ-32B は reasoning レーンの候補として自前 harness で測る。27B は clone してから祝う。Flash は量産 agent に残すが stop condition と代替を用意。5.3 噂と Max の 2.4T 自慢はチケットにしない。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>エンタープライズ AI 調達</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 が Databricks に乗ったのは RFP の書き方が変わるイベント。データが湖にあるなら、自前 GPU 島か API かゲートウェイか——三択が正式になった。収益シェア観測と geo ライセンスは法務の別紙。Apple 中国の Qwen は消費者配布の話で、我々の VPC 契約とは列が違う。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>国内シリコン／Ascend 観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日の本丸は LongCat INT8 と AntelopeV2 と（持ち越し）VoiceCraft。OpenMed 10 連発は無視。QwQ の活性 3B はソフトウェア側の効率物語で、チップ側はまだ『載せるフォーマット』の勝負。独立精度と推論経済は弱点のまま——だから本番 quant と実務ツールの方が壁紙本数より戦略的。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gavel"></i>
+            <span>EU／US コンプライアンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 の 10 日目。ZCode 100 万も Flash 100× も K3 湖上も、免除条項にならない。チャット開示、合成マーク、ディープフェイク標識。Claude 透かしは業界全体のラベル競争を加速するだけで、中国レーンを免責しない。収益シェアと open ライセンス条項は調達チェックリストに足す。IPO 情緒は法務チケットに載せない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 が長文と Databricks を、Flash が 100× と値上げ D+5 と F を、Qwen が 27B 今週と Max D+9 と Apple 中国と収益シェアを、ZCode が 100 万とキャッシュを、Modelers が QwQ／LongCat／Antelope／OpenMed を、EU がラベルを——火曜は外交ではなく、活性効率・製品里程碑・湖上配布・中型 open・超安 agent の五重奏だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List でも 2.4T でも open video でも AI Act でも Databricks カタログでも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-08-11 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @AiChinaNews 火曜窓 QwQ-32B 更新（活性~3B／R1 級主張・262K）・Meituan LongCat-2.0-INT8 Ascend・OpenMed ポルトガル biomedical PII 洪水（8/11）、@AiChinaNews 早朝窓 AntelopeV2 顔解析・AutoTrain／w8a8 群（8/11）、@Zai_org ZCode 100 万ユーザー・Coding Plan 上限リセット・98% キャッシュ／1.8×（8/11）、@Kimi_Moonshot Kimi K3 × Databricks Unity AI Gateway（8/11）、@Alibaba_Qwen Qwen3.8-27B open weights 今週・3.6-27B agentic coding 言及（8/11）、DeepSeek V4-Flash 第三者コスト／キャッシュベンチ再循環・Intelligence Index フルスイート費用観測（8/11）、Qwen3.8-Max D+9 weights 未着、DeepSeek 値上げ予告 D+5、Apple×Qwen 中国 Mac／Siri ガイド公開・撤回消化（8/8–11）、Alibaba open Qwen 商用収益シェア観測（8/7–11）、月曜持ち越し VoiceCraft／StructTable／人形 97%／FLI F／910C／MM-Plugins、EU AI Act Article 50 10日目（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-08-11', 'color:#10b981');
+  </script>
+</body>
+</html>
