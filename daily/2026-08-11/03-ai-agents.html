@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-08-11 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-11 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚡</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜——実行層が安くなり、ローカルが常駐し、<br>防御 agent が配られる。auto まで 3 日</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月11日（火）。08-10 が「手足の規格（Agent Plugins 1.0）と感覚のプラグイン（Qwen-MM）」の月曜なら、08-11 は<strong>実行トークンの経済学・端末常駐・サイバー用 agent 配布・承認の既定移行</strong>が同じ営業日に並ぶ火曜だ。NVIDIA は <strong>Nemotron 3.5 Lightning</strong>（30B／活性 ~3B MoE）と <strong>NeMo Switchyard</strong>（agentic ルータ）を出し、always-on agent の「計画は frontier、研磨は安い実行モデル」分割を公式化した。Meta <strong>Muse Glimmer 30B</strong>（Apache 2.0・一枚の消費者 GPU）は D+1 でローカル agent の本命枠として消化され、OpenAI は <strong>Daybreak Blue／Red＋GPT-5.6-Cyber</strong> を防御実務向けに配る。Claude Code の <strong>auto 既定は 8/14（T-3）</strong>——sandbox 既定 OFF や auto 時の一時解除観測が X で再燃。下院の rogue agent 追及と Astra Critical D+4 が同じ表紙に載る。火曜の agent 戦場は model 点数ではなく、<code>plan/execute 分割 × ローカル常駐 × 防御配布 × 分類器既定 × plugin 互換 × container</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#01 NEMOTRON LIGHTNING</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Nemotron 3.5 Lightning<br>実行層専用 30B／活性 ~3B</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA 火曜発表。128 expert の MoE でトークンごとに少数 expert のみ活性——agent が 90% の時間を費やす tool call・結果検証・subagent 委譲を frontier 価格で回すな、という公式化。PinchBench 86%、1 万 agent タスクで同帯 Qwen 比 ~30% 速い主張、最大 4× 出力速度の語り。OpenMDW 系で weights／data／recipes 公開。NeMo で domain post-train 想定。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA Nemotron 3.5 Lightning（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#02 NEMO SWITCHYARD</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NeMo Switchyard——<br>ステップごとに努力をルーティング</div>
+          <div class="mt-4 text-sm text-zinc-400">Lightning と同日の agentic model router。物語は「1 呼び出し＝最大努力」から「ステップ単位の effort 割当」へ。高ボリューム agent では specialized small-active MoE が frontier 単価に勝つ——X 実務論がそのまま製品名になった火曜。社内 AB は plan_model × execute_model × router_policy の三列で測れ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>NeMo Switchyard agentic router（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 MUSE GLIMMER D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Muse Glimmer 30B 消化<br>一枚 GPU の always-on 物語</div>
+          <div class="mt-4 text-sm text-zinc-400">Apache 2.0・Muse Spark 蒸留・4-bit で &lt;20GB。計画・tool use・失敗リカバリ・多模态を agent 前提で設計。Ollama／LM Studio／MLX／llama.cpp 経路。@rasbt らが KV 効率（~52 KiB/token 級）と SWA:GQA を解剖——独立 Intelligence Index では Qwen3.6 にやや劣る観測もあり、火曜は「所有権と固定費」対「クラウド SOTA」の AB。data_terms 三列に local を足せ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-laptop"></i>
+            <span>Meta Muse Glimmer ローカル agent D+1（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#04 DAYBREAK CYBER AGENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GPT-5.6-Cyber を「守備 agent」に<br>Blue／Red 二層の配電</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI Daybreak 拡張。Blue＝Sol のシステム級ガードを外した防御実務、Red＝GPT-5.6-Cyber を厳格審査の先。内部 Advanced Cybersecurity Completion 95%（前世代 57.3%）、Chrome V8 未知脆弱性 2 件→Google CVE-2026-15903。Accenture・IBM・CrowdStrike 等。agent 文脈では「攻撃面を広げる Plugins／MM と同週に、防御用 tool-using agent が契約商品になる」ねじれが本番。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-shield"></i>
+            <span>Daybreak・GPT-5.6-Cyber 防御 agent（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 ASTRA × ROGUE D+4</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Critical 自己ブレーキ D+4<br>下院 rogue agent が調達語に</div>
+          <div class="mt-4 text-sm text-zinc-400">Astra は「硬化ゼロデイ自律／高レベル目標だけの e2e 攻撃」を排除できず内部活動停止。下院民主党は Anthropic・OpenAI に rogue agent／containment 質問（Reuters）。ジム侵入バズ・sandbox 抜け・Felony Bench と同月空気。火曜の企業翻訳：Kill Switch・allowlist・container・独立評価を RFP 必須列。Critical 未満 High はパートナーに、Critical はまだ誰にも。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-virus"></i>
+            <span>Astra D+4・下院 rogue agent（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-300 text-xs font-mono tracking-[1.5px]">#06 CLAUDE AUTO T-3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">auto 既定まで 3 日<br>sandbox 既定 OFF の不安</div>
+          <div class="mt-4 text-sm text-zinc-400">Pro／Max／Team 新規セッションで 8/14 既定化（Enterprise は opt-in）。人間 13.6% vs 分類器 89%、権限プロンプト 97% 承認疲労。火曜 X：sandbox は設定で ON、auto 時に agent が一部 shell の sandbox を一時解除できる、という観測が火種。契約語は classifier 1 枚ではなく injection スキャン→transcript 分類→隔離の三層＋kill 経路＋ログ保持。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-magic"></i>
+            <span>Claude Code auto mode T-3（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#07 PLUGINS 1.0 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Agent Plugins 消化日<br>Anthropic 沈黙は継続観測</div>
+          <div class="mt-4 text-sm text-zinc-400">plugin.json＋skills/＋mcp.json。Copilot／VS Code／Cursor／ChatGPT・Codex／Kiro 対応表明、Claude Code は未対応のまま。月曜の日本圏拡散の翌日は「社内 skill を共通形式に移すか」「Claude 専用を二重管理するか」の実装日。権限・署名はクライアント側——allowlist が契約本体という読みは火曜も有効。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Agent Plugins 1.0 D+1 消化（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#08 QWEN-MM + CHEAP LANE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">MM 層 D+1 × Flash／QwQ<br>安い感覚と安い実行が並走</div>
+          <div class="mt-4 text-sm text-zinc-400">Qwen-MM-Plugins は Skill＋MCP で画像・OCR・CAD を既存 harness に刺す。火曜の中国レーンは QwQ-32B（活性 ~3B で R1 級主張）と V4-Flash の「修正 ~$0.004／約 100× 安」再循環——agent 百万トークン帯の請求死をキャッシュが救う。感覚を増やすことと許可は別レイヤ。CAD 操作に Policy→Receipt→Audit が無ければ unsupervised hands。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-eye"></i>
+            <span>Qwen-MM・Flash／QwQ 安い agent レーン（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#09 PLAN / EXECUTE SPLIT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">計画＝frontier、研磨＝Lightning／Glimmer<br>二段スタックが火曜の定石</div>
+          <div class="mt-4 text-sm text-zinc-400">X 実務の収束：難完遂・設計は Sol high／Opus・Fable、tool ループと検証は Lightning／Flash／Glimmer／QwQ。Switchyard と「1 max-effort model per call は死」論が同日。失敗パターンは安い実行層に計画を丸投げし、出口条件なしで spawn すること。正しいのは stop condition と受け入れテストを計画側に残すこと。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>plan/execute 分割・火曜定石（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#10 WATERMARK × AGENT OUT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude テキスト透かしが<br>agent 出力の provenance に</div>
+          <div class="mt-4 text-sm text-zinc-400">TechCrunch：EU 向け新規 Claude に機械可読透かし＋署名 provenance。Claude Code／Cowork 含む——agent が書いた PR 説明・ドキュメントも対象になり得る。検出は「Claude が書いた」の証明ではなく、短文・大幅編集で消える。企業は agent 生成物のラベル方針と顧客向け開示を同じスプリントで。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stamp"></i>
+            <span>Claude 透かし × agent 出力（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 SELF-IMPROVE LOOPS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">会話で workflow を自己改善<br>held-out 34%→44% 級の実験談</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜 X：Claude Code に業務サーバからタスクを引かせ、「良くなれ」と会話ループ——held-out 成功が 34%→44%。記憶を動的に更新できる経路（files・subagents・web）が自己改善のレール。本番への翻訳は危険も同じ：改善ループに評価セットと回帰ゲートが無ければ、agent は自分の錯覚を強化する。eval harness を先に置け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-recycle"></i>
+            <span>Claude Code 自己改善ループ実験（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#12 LOCAL HARNESS BRIDGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code × Ollama 等<br>殻はクラウド、脳は手元の橋</div>
+          <div class="mt-4 text-sm text-zinc-400">docs.ollama 系の Claude Code 連携が再循環。Glimmer／Lightning ローカル実行と、クラウド harness の skills／hooks を混ぜるハイブリッドが現実解。Plugins 未対応 Anthropic 陣営でも「ローカルモデル＋Claude 殻」がプライバシー枠になる。ただし tool 権限とデータ経路は二系統——監査はどちらの transcript が真実かを決めろ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-link"></i>
+            <span>Ollama×Claude Code・ローカル橋（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-300 text-xs font-mono tracking-[1.5px]">#13 BUDGET 四天井 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">実行が安くなっても<br>無制限ループは請求書事故</div>
+          <div class="mt-4 text-sm text-zinc-400">money・time・tool calls・side effects。Lightning／Flash で単価が落ちるほど「回し放題」が誘惑になる——だから天井は厳しくする。Managed Deep Agents／Google Managed の budget hooks 議論は月曜から継続。spawn cap と incomplete 再開が同じスプリント。安い実行層ほど、副作用天井（本番書込・外部メール）を先に切れ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>agent 四天井・火曜再確認（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-300 text-xs font-mono tracking-[1.5px]">#14 NOOA D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/9-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">class-as-agent の D+2<br>container 必須は変わらない</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA Labs・Apache 2.0。method＝行動、field＝状態。Lightning 実行層と同社の別製品面——殻の型と実行の MoE が同じエコシステム語彙に並ぶ。AST ≠ sandbox。Plugins／MM／ローカルで能力面が増えるほど「箱に入れろ」は同じ契約テンプレ。harness_id=nooa を AB 表に残し、半トークン仮説は自社 24 タスクで。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cube"></i>
+            <span>NVIDIA NOOA D+2（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#15 DELEGATION NARRATIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「プロンプト」から「委譲」へ<br>end-to-end 完了の語りが定着</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜 X の定番：単発チャットではなく問題ごと渡し、ファイルを読み・直し・テストして戻る。完了率・所要時間の自慢数字が並ぶ一方、レビュー負債と sandbox 境界は別問題。KPI は「人が戻ってこない率」ではなく「受け入れ通過率 × 手戻り × 副作用ゼロ」。委譲の成熟は、監視の成熟とセット。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-handshake"></i>
+            <span>委譲ナラティブ・e2e agent（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#16 GROK 4.6 D+4</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">旗艦未着でも殻は測れる<br>Build ＋ 4.5、差し替え YAML</div>
+          <div class="mt-4 text-sm text-zinc-400">API カタログに 4.6 なし。Polymarket は 8/14 窓を価格——信じるのは model ID。実行層（Lightning／Glimmer）が「手足」を安くする週ほど、計画モデル差し替え一行を空ける運用が正攻法。幻 quant で完走率を汚すな。Build 前線で今日の失敗点を残せ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Grok 4.6 未着 D+4・agent 差し替え（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#17 FRAMEWORK MATRIX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">LangGraph／CrewAI／ADK／Agents SDK…<br>全部 agent、用途が違う</div>
+          <div class="mt-4 text-sm text-zinc-400">状態機械＝LangGraph、役割チーム＝CrewAI、クラウド密＝ADK／Bedrock、軽量 multi＝OpenAI Agents SDK、端末＝Claude Code／Codex／Cursor。Plugins で skill が可搬になってもオーケストレーション語彙はバラバラ。火曜の失敗は「流行一本」——正しいのは 24 タスク AB と stop condition。実行層モデルはどの枠にも刺さる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-sitemap"></i>
+            <span>framework 役割分担・火曜（8/11）より</span>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#18 AUGUST AGENT AXIS TUE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月軸に「実行層」と「防御配布」追加<br>規格・常駐・auto・上界</div>
+          <div class="mt-4 text-sm text-zinc-400">08-09 NOOA・auto・Ode・Astra、08-10 Plugins・Qwen-MM・managed・四天井、08-11 は Lightning／Switchyard・Glimmer 消化・Daybreak Cyber・auto T-3・rogue 議会・透かし provenance。待ち行列：4.6 カタログ、Claude Plugins 対応、Astra 公開、auto 既定 8/14、Qwen 3.8-27B weights。正しい火曜は祝杯ではなく plan/execute 表と allowlist と kill 試験。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月 agent アジェンダ・火曜更新（8/11）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月11日の AI Agents は、月曜の「手足の規格と感覚のプラグイン」を受けて、<strong>実行トークンを安くし、端末に常駐させ、防御用 agent を契約商品にし、承認の既定を分類器へ移す火曜</strong>だ。表紙の一枚目は NVIDIA の <strong>Nemotron 3.5 Lightning</strong>。30B パラメータの MoE で活性は約 3B——agent が大半の時間を費やす tool ループと検証を、frontier 価格で回すな、というメッセージを公式製品にした。同日の <strong>NeMo Switchyard</strong> はステップ単位で努力をルーティングする agentic ルータ。「1 呼び出し＝最大努力」の死を、ハードウェア屋がソフトウェア語で言い切った形だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            ローカル側では <strong>Meta Muse Glimmer 30B</strong> が D+1 で消化される。Apache 2.0、単一消費者 GPU、4-bit で 20GB 未満、計画・tool・失敗リカバリを agent 前提で設計した dense モデル。X では「API 請求書ゼロの always-on」物語が強く、一方で独立ベンチでは同帯 Qwen にやや負ける観測も出た——火曜の正しい読みは「SOTA 宣言」ではなく<strong>固定費・データ主権・クラウド退避</strong>の列を RFP に足すことだ。Lightning（安いクラウド／自前推論の実行層）と Glimmer（手元常駐）は競合というより、plan/execute 分割の両翼になりつつある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            制御と上界は同じダッシュボードに載る。OpenAI は Astra Critical（D+4）で「まだ出せない」を開示した週に、<strong>Daybreak Blue／Red と GPT-5.6-Cyber</strong> を防御実務向けに配る——攻撃面が Plugins／MM で広がるほど、守備の tool-using agent が商品になる皮肉。下院の rogue agent 質問状は、ジム侵入や sandbox 抜けの空気を調達チェックリストに落とす合図だ。Claude Code は <strong>auto 既定まで 3 日</strong>。分類器 89% vs 人間 13.6% の数字は再循環し、sandbox 既定 OFF や auto 時の一時解除観測が「既定化の前に設定を固めろ」と煽る。EU 向け Claude 透かしは、agent が吐いたテキストの provenance を製品機能にした——検出の限界付きで。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            拡張と安さの宿題も消えていない。Agent Plugins 1.0 は D+1 で実装フェーズ——Anthropic 沈黙は続き、Claude 専用 skill と共通 plugin の二重管理コストが RFP 語になる。Qwen-MM は感覚を殻に刺し、Flash／QwQ の安いレーンは百万トークン agent の請求を殺さない。だが感覚と許可は別レイヤ、安い実行と無制限ループは別問題。四天井（金・時間・tool・副作用）は単価が落ちるほど厳しくせよ、というのが月曜から火曜への連続した実務論だ。NOOA の container 必須、自己改善ループ実験の eval ゲート、framework 役割分担——部品は揃った。つなぎと停止条件が製品になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月は multi-agent の本番信頼と Harness Tax。8 月前半は殻の単価、auto 既定、Critical 開示、plugin 規格——そして <strong>08-11 は「実行を専門化し、常駐を所有し、防御を配布し、承認を移す」が同じ営業日に並ぶ</strong>。能力が上がるほど毎回クリックは信頼できず、触れる面が増えるほど allowlist と四天井が先になり、実行が安くなるほどルータと stop condition が希少資源になる。委譲ナラティブが X を埋め尽くすほど、監視と受け入れ通過率が本物の KPI になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            08-11 を一文で言えばこうだ。Lightning と Switchyard が plan/execute を公式化し、Glimmer が手元に常駐し、Daybreak Cyber が守備 agent を配り、auto は 3 日後に既定になり、Astra と下院が上界を契約語に残し、Plugins と MM と安いレーンは手足を広げ続ける。賢い独白はもう足りない。問題は、plan_model と execute_model を分けて測り、local／cloud／managed を data_terms に三列で書き、plugin 互換と Claude 専用の二重管理を設計し、四天井と Kill Switch を契約に落とし、auto 前に sandbox とログ保持を固め、差し替え一行を空けてから次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日は「USB の形が揃った（plugin.json）」だった。今日は「研磨用の安い手」と「手元に住む脳」が同時に来た——Lightning と Glimmer。frontier を毎回 tool ループに使うのは、タクシーで近所のコンビニに行くようなもの（笑）。計画は高い脳、実行は安い手、箱は NOOA／container、権限は allowlist。Claude は auto まで 3 日なのに Plugins 席はまだ空席——制御は内製、手足は囲い込み、に見えるねじれは月曜から継続。sandbox 既定 OFF の話を読んで、「既定化の前に設定を読め」は人生訓になった。Daybreak Cyber を配りながら Astra Critical で止める OpenAI は一貫してる：High まではパートナーに、Critical はまだ誰にも。Grok の火曜相棒は八枚：plan/execute 表、Lightning／Glimmer AB、Plugins 二重管理、auto T-3 kill 試験、四天井、Daybreak アクセス監査、rogue／Astra ウォッチ、4.6 差し替え＋ロールバック。測ってから並列せよ。安くなったら回し放題にするな——安くなったら天井を下げろ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">実行層が安くなり、ローカルが常駐し、防御 agent が配られる——Lightning × Switchyard × Glimmer × Daybreak Cyber × auto T-3 × Astra D+4 の火曜。plan/execute と allowlist と四天井を先に置け</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月11日の AI Agents 分野は、Nemotron 3.5 Lightning（実行層 30B／活性 ~3B）と NeMo Switchyard（ステップ単位 effort ルーティング）、Muse Glimmer 30B のローカル always-on 消化、OpenAI Daybreak／GPT-5.6-Cyber の防御 agent 配布、Astra Critical D+4 と下院 rogue agent 追及、Claude Code auto 既定 T-3（sandbox 設定不安付き）、Agent Plugins 1.0 D+1（Anthropic 沈黙継続）、Qwen-MM と Flash／QwQ の安い感覚・実行レーン、plan/execute 二段スタック定石化、Claude 透かしによる agent 出力 provenance、自己改善ループ実験、Ollama×Claude Code 橋、四天井予算、NOOA D+2、委譲ナラティブ、Grok 4.6 未着 D+4、framework 役割分担が同時進行した。本番の鍵はフロンティア順位表ではなく、「測れる殻・安い実行層・手元常駐・可搬プラグイン・分類器ログ・container 隔離・予算天井・防御 agent のアクセス監査・差し替え可能な計画モデル」の agent システムにある。08-10 の「手足の規格と感覚の層」に続き、08-11 は「実行を専門化し、常駐を所有し、防御を配り、承認を移す火曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「RFP に plan_model・execute_model・local_runtime・plugin_compat・claude_skill_dual・budget_ceilings・container・classifier_logs・cyber_agent_access・data_terms を列で。Lightning／Glimmer を同じ 24 タスクで AB。auto T-3 前に kill と sandbox 設定を契約化。4.6 は model ID まで切替えない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ルータをコードにしろ——難所だけ frontier、tool ループは Lightning／Flash。plugin.json を社内標準に。Glimmer は Ollama 経路で常駐 PoC。graph は trigger・stop・受け入れを計画側に残す。Runbook の一行目は harness 版・plugin 版・execute_model・隔離状態。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「実行層 MoE の評価はベンチ一点ではなく $/成功・latency・副作用。Glimmer の独立 agentic 完走率を自前 24 タスクで。自己改善ループは held-out と回帰ゲート必須。Critical 自己申告と防御 agent 配布は同週の透明性レース——能力上界の報告文化を測れ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス／セキュリティ担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「auto 既定前に sandbox ON・分類器ログ保持・kill を。Daybreak Cyber はアクセス監査と用途限定。Astra／下院——到達範囲を最小に。MM／CAD は allowlist。透かしは開示方針の一部であり完全証明ではない。HITL から HOTL へ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に location×harness_id×plan_model×execute_model×plugin_set×token×tool_calls×side_effect_cap×eval_pass_rate。Lightning で単価が落ちても四天井は厳格化。local は電力と GPU 償却を TCO に。夜間 spawn cap。定着 KPI は 7 日業務完走率。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを plan/build/judge で、Cursor／Codex（Plugins）と Claude Code（auto 前 kill・sandbox）と Grok Build と Glimmer ローカルと Lightning 実行層を並走させ、完了時間・請求・手戻り・隔離・開示ログを一枚に。人が書くのはゴールと stop と allowlist。情シスとは local データの境界を先に合意。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-08-11 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（Nemotron 3.5 Lightning・NeMo Switchyard・Muse Glimmer D+1・Daybreak Cyber・Astra D+4・rogue agent・Claude auto T-3・Plugins 1.0 D+1・Qwen-MM／Flash・plan/execute・透かし・自己改善ループ・四天井・NOOA D+2・4.6 D+4）、NVIDIA／SiliconANGLE・Meta・OpenAI Daybreak・TechCrunch・Reuters・agent-plugins.org・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-08-11', 'color:#10b981');
+  </script>
+</body>
+</html>
