@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-12 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-12 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚡</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜——ボトルネックが「チップ」から「配電」へ格上げ<br>NVIDIA×Google×Microsoft 800V DC × 38GW 試算 × $500B D+2</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月12日（水）。08-11 が「$500B 資本 OS × DRAM 拘束 × Maia 枠争奪」の火曜なら、08-12 は<strong>AI ファクトリーの物理層——電圧・変換損失・MW 密度——が GPU カタログの上に載った水曜</strong>だ。NVIDIA は Google・Microsoft と共同で、AI データセンター向け<strong>800V DC 配電アーキテクチャ</strong>を公開（OCP 経由）。変換段を削りグリッドから GPU までのロスを減らし、80 社超がすでに製品化に動く。MGX 互換 800V DC ラックは 2026 年後半、2MW/行クラスは 2027 目標。並行して Morgan Stanley 系の試算が循環：2027 CoWoS 供給が含意する AI GPU/ASIC は約 1,900 万個・平均 2kW TDP で<strong>チップ電力だけで約 38GW</strong>（NVIDIA 推定 16GW／Google 9GW／AMD 7GW）——供給チェーンのストレステストであり、接続済み DC 消費そのものではない。火曜の $500B 融資 OS と DRAM 未充足は D+2 で消えておらず、Foxconn は Vera Rubin を Q3 量産準備・Q4 出荷、SK hynix は米インディアナで HBM 工場着工（$3.87B・量産 2028）。水曜の評価軸は FLOPS ではなく、<code>800V 配電 × MW/行密度 × 38GW 供給含意 × DRAM/HBM 割当 × $500B 実デプロイ × 8/26 −14d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 800V DC 標準</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA×Google×Microsoft<br>AI ファクトリーの配電を書き換える</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA ブログと OCP 経由で、800V DC 配電仕様が水曜の本丸になった。ポイントは電圧の数字そのものではなく、<strong>グリッド→GPU 間の AC-DC 変換段を削ること</strong>——各ホップで 5–10% が熱になる計算が、MW 級ラックでは電気代と冷却の「小規模な財産」になる。80 社超がすでに仕様に沿った製品を開発中。MGX 互換 800V DC ラックは 2026 年 H2 出荷、行あたり 2MW 級は 2027。SiC/GaN などワイドバンドギャップが前提になり、Navitas 等が名指しでサプライヤ議論に入る。火曜の「資本 OS」に続く、水曜の「物理 OS」だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA 800V DC ブログ・OCP／80+ ベンダー（8/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 38GW 試算</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CoWoS 供給が含意する<br>チップ電力 38GW（2027）</div>
+          <div class="mt-4 text-sm text-zinc-400">Morgan Stanley 系の読みが X で再循環：2027 年の CoWoS 供給が支える AI GPU/ASIC はおおよそ 1,900 万個、平均 TDP 2kW 換算で<strong>チップ電力容量だけで約 38GW</strong>。内訳の目安は NVIDIA 16GW・Google 9GW・AMD 7GW——これは「接続済みデータセンター消費」でも「確定キャパシティ」でもなく、<strong>供給チェーンが物理的に届け得るチップ発熱の上限ストレス</strong>だ。ラック・冷却・グリッド接続・用地が同じ表に乗らない限り、38GW は天井ではなく詰まりの証明。800V が効くのは、この「届くチップ」を「回る MW」に変える変換ロスを削る側である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Morgan Stanley 系 38GW／CoWoS 2027 試算（8/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 $500B D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Wall Street 融資 OS は消えない<br>資本→チップ→配電の三段積み</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA×Apollo／BlackRock／Blackstone／Brookfield／Goldman／KKR の第三者資本 <strong>$500B 超</strong> AI コンピュート融資は D+2 でもテープの前提。水曜の新しい読みは「お金が付いても、電圧とメモリが無いラックはヒーターのまま」——資本 OS（火曜）の上に配電 OS（水曜）が載り、<strong>誰が払うか × 何 V で届けるか × 何 GB が載るか</strong>が同時に評価軸になった。ネオクラウド（CoreWeave／Nebius 等）需要ロックの物語は、800V と 38GW の横で「融資が通っても接続と変換が足りない」リスクを帯びる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>$500B 融資プラットフォーム D+2 × 配電制約（8/10–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 DRAM/HBM 拘束 D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">拘束条件はなおメモリ<br>電力神話の訂正は続く</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の Micron 系信号——需要は前回決算以降さらに強化、2027 は 2026 よりタイト、多くの AI DC 顧客で<strong>メモリ需要の半分超が未充足、拘束は DRAM（電力やサイトではない）</strong>——は水曜も床として残る。HBM フル能力は 2028 以前に期待しにくく、2026–27 出力は複数年 LTA でほぼ割当済み。800V が変換ロスを削っても、HBM が無い GPU は起動できない。水曜の皮肉：配電標準が「次の壁」を宣言する一方で、現場の未充足リストの一行目はまだ DRAM/HBM だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>Micron 系 DRAM 拘束・HBM 2028 満席 D+2（8/10–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 SK hynix Indiana</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">米 HBM 工場着工 $3.87B<br>量産目標 2028・補助金の地図</div>
+          <div class="mt-4 text-sm text-zinc-400">SK hynix がインディアナで新施設の着工フェーズに入る、という動きが水曜の X で広がる。投資規模約 <strong>$3.87B</strong>、HBM の米国内生産が目的、量産ターゲット 2028。米側は最大約 $450M のグラントと $500M 級ローン支援の話が付く。GPU のオンショア議論の隣にメモリを置く——「AI チップを国内で作るなら、HBM も近くに無いとラックは完成しない」。2028 は HBM フル能力の業界合意と重なり、<strong>地政学レジリエンスと供給カレンダーが同じ年に並ぶ</strong>読みになる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>SK hynix インディアナ HBM $3.87B・2028 量産（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 Foxconn × Rubin</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Q3 量産準備・Q4 出荷<br>2027 は「主要製品」見通し</div>
+          <div class="mt-4 text-sm text-zinc-400">Foxconn（鴻海）Q2 決算周辺の読み：純利益 YoY +35%、クラウド／ネットワークが売上の約 51%。ハードウェア地図で効くのは Vera Rubin スケジュール——<strong>Q3 量産準備、Q4 出荷開始、2027 年に主要製品化</strong>という製造側のタイムラインだ。需要不足より CoWoS 等の供給が成長速度を決める、という注意書き付き。火曜の $500B・水曜の 800V・38GW と並べると、「お金と配電とカレンダーは揃いつつあるが、パッケージ枠は依然ゼロサムに近い」構図がはっきりする。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Foxconn Q2／Vera Rubin Q3–Q4 製造カレンダー（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 軽い実行層 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Nemotron Lightning 出荷<br>「足りない HBM」の外の答え</div>
+          <div class="mt-4 text-sm text-zinc-400">01 カテゴリと同週：NVIDIA <strong>Nemotron 3.5 Lightning</strong>（30B MoE・~3B アクティブ）と NeMo Switchyard 開源ルーティング。半導体側の読みは火曜と同じだが、水曜の 38GW／800V と並べると輪郭が鋭い——<strong>MW 級ラックと 800V バスが要らない実行トークン</strong>を、ホスト DRAM と単一 GPU に逃がす分流。HBM 割当表と配電標準の外側で agent スループットを稼ぐルートが増えるほど、需要は「全部が DC の HBM」から多様化する。効率はソフトウェアの顔をして、ハードウェア BOM を書き換えている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-laptop"></i>
+            <span>Nemotron Lightning／Switchyard 推論分流（8/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 8/26 −14d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA 本丸まで 14 日<br>聴くべきは配電・割当・接続</div>
+          <div class="mt-4 text-sm text-zinc-400">8/26 NVIDIA 決算まで 14 日。月曜の TSMC 証明、火曜の $500B と DRAM、水曜の 800V と 38GW と Rubin 製造カレンダーが積み上がった。聴くべき言語はピーク FLOPS ではなく、<strong>800V/MGX の実出荷、融資プラットフォームの案件化、$500B のキャッシュフロー床、HBM/DRAM LTA 充足、CoWoS 枠、Rubin Q4 出荷、MW 接続と変換効率</strong>。01 の「旗艦は測ってから」と同型——ハードウェアも、祝う前に電圧とメモリと製造枠を測る 14 日間。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 14 日（8/12）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月12日、AI Hardware の中心は「<strong>GPU とメモリの希少性の上に、配電アーキテクチャという物理 OS が公式に載った</strong>」ことだ。火曜の骨格——$500B 第三者資本、DRAM 拘束（未充足半分超）、Maia 300 の 30 万基超枠、HBM 2028 満席、TSMC +45% の需要証明——は消えていない。水曜が足したのは、<strong>そのコンピュートを何ボルトで、何段の変換を経て、何 MW/行で GPU まで届けるか</strong>という、90 年代ラボ机の配線を AI ファクトリー規模に書き換える話である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            NVIDIA×Google×Microsoft の 800V DC は、派手な新チップ発表ではない。だからこそ重い。変換ホップごとに 5–10% が熱になる世界で、MW 級ラックは「コード最適化の次の壁」が銅と SiC だと宣言している。80 社超がすでに乗っているという数字は、標準化レースがカタログ戦争から<strong>エコシステム囲い込み</strong>に移ったサインでもある。MGX H2 2026、2MW/行 2027——カレンダーは Rubin 製造（Foxconn Q3 準備・Q4 出荷）と意図的に並ぶ。資本（$500B）が顧客 CAPEX を外に出し、配電（800V）が損失を内から削る。両方とも「届く FLOPS あたりの TCO」を守るための、同じ戦争の別戦線だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            38GW 試算は興奮材料にも警戒材料にも読める。CoWoS が支え得るチップ電力の上限ストレスであり、グリッド接続・冷却・用地・メモリが揃わない限り「夢の 38GW」は机上の発熱になる。Micron 系の「拘束は DRAM」は、800V の見出しの下でも訂正されない。SK hynix のインディアナ $3.87B は、その訂正への地政学的な答え——2028 量産は HBM フル能力の業界合意と重なり、遅いが方向は明確だ。Nemotron Lightning はもう一本の逃げ道：DC の HBM と 800V バスが要らない実行層を、単一 GPU に逃がす。08-11 が資本の火曜なら、08-12 は「<strong>800V 配電 × 38GW 供給含意 × $500B D+2 × DRAM 拘束 × 米 HBM 着工 × Rubin 製造カレンダー × 軽い実行層 × 8/26 −14d が同じ画面に並んだ水曜</strong>」。無料なのは電圧の見出しで、有料なのは届く SiC と HBM と、繋がる MW である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜の名言候補：「GPU を買う前に、2027 の DRAM と、できれば $500B の融資枠と、余力があれば 800V のラックと SiC を買え。電気は大事——でも変換で熱にしてる時点で、その半分はただのヒーター代だ。」——NVIDIA が Google と Microsoft と「配電の標準」を取りに行き、Wall Street 6 社と「資本の標準」を取りに行き、工場はまだ CoWoS と HBM の席争いで息が上がってる。コードとモデルは何年も最適化してきたのに、電力パスが 90 年代のまま、って自虐が公式ブログになるの、最高に 2026 年らしい。38GW は「すごい」と「繋がらない」の両方。SK hynix がインディアナで HBM を掘り始めても量産は 2028。Lightning は「じゃあ家の GPU で agent 回せ」と別ルートを開ける。で、8/26 まで 14 日。測るのはカタログの太字じゃなく、何 V で届いて、何 GB が載って、何 MW が繋がるか。お金くさい火曜のあとの、銅とボルトがくさい水曜だ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">800V 配電・38GW・$500B D+2・DRAM 拘束・米 HBM・Rubin 製造・軽い実行層・8/26——水曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月12日現在の AI Hardware 分野は、(1) NVIDIA×Google×Microsoft による AI DC 向け 800V DC 配電アーキテクチャ（OCP・80 社超・MGX H2 2026・2MW/行 2027・SiC/GaN 前提）、(2) Morgan Stanley 系の 2027 CoWoS 含意チップ電力約 38GW（NVDA 16／Google 9／AMD 7 の目安・供給ストレス）、(3) $500B 第三者資本融資 OS の D+2——資本→チップ→配電の三段積み、(4) Micron 系 DRAM 拘束・HBM 2028 満席・未充足半分超の継続、(5) SK hynix インディアナ HBM $3.87B 着工・量産 2028・米補助金マップ、(6) Foxconn 経由の Vera Rubin Q3 準備／Q4 出荷／2027 主要製品化見通し、(7) Nemotron Lightning 等による一枚カード／ローカル推論への分流、(8) 8/26 NVIDIA 決算まで 14 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>800V/MGX の実出荷、変換効率と MW/行、コンピュート融資の案件化、DRAM/HBM の LTA 充足、CoWoS 枠と Rubin カレンダー、エッジ推論 BOM、8/26 までの一貫した供給・配電・資本言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>配電／電力アーキテクチャ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「800V の本質は電圧自慢ではない。変換段を削り、MW ラックで熱になっていた 5–10% を GPU に返す話だ。標準が 80 社を巻き込むほど、次の競争はケーブルと SiC とラック PDU の供給になる。チップが届いても、バスが無い工場はまだ工場ではない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIA／GPU エコシステム視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$500B で顧客 CAPEX を外に出し、800V で損失を内から削る——両方とも『届くトークンあたりの TCO』を守るための設計だ。Rubin の Q4 出荷と MGX の H2 は同じ物語の章。8/26 で語るのはカタログ FLOPS より、配電と融資とパッケージが同じカレンダーに乗っているかどうかだ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／DRAM サプライ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「配電が次の見出しになっても、現場の未充足はメモリだ。38GW 分のチップが理論上あっても、HBM が半分しか載らなければ半分のラックだ。インディアナの 2028 は正しい方向だが、2026–27 の LTA はすでに閉じている。take-or-pay の質が、ボルトの話より先に企業の生死を決める。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>foundry／パッケージ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「38GW は CoWoS 供給の含意であり、約束ではない。Foxconn が Rubin を Q4 に載せても、枠が無い月は空のスロットだ。資本と 800V が需要を正当化するほど、先進パッケージのゼロサムは強まる。 quant はチップ TDP の合計より、月次のパッケージスループットを見ろ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i>
+            <span>エッジ／ローカル推論視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「DC が 800V と 38GW で戦争しているなら、実行トークンの一部は家の GPU に逃がせ。Lightning はモデルの話に見えるが、BOM と熱と配電の話でもある。割当表とバスバーの外で agent を常駐させるルートが増えるほど、半導体需要は『全部が MW ラック』から多様化する。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>データセンター／TCO・日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは 800V の見出しでも、$500B のゼロの数でもない。届くラック、契約できる LTA、動く電力、変換効率、エージェント用の CPU/DRAM、必要ならローカル GPU だ。資本が潤沢でもメモリが無く、電圧が古いままのラックはヒーターになる。8/26 までに欲しいのはピーク FLOPS の約束より、配電と供給と接続のカレンダーである。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-12 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X議論・NVIDIA 800V DC 配電（Google/Microsoft・OCP・80+ ベンダー・MGX H2 2026・2MW/行 2027・NVIDIA Blog 8/11–12）、Morgan Stanley 系 38GW／CoWoS 2027 試算、NVIDIA×Wall Street $500B AI compute 融資 D+2、Micron 系 DRAM 拘束・HBM 2028、SK hynix インディアナ HBM $3.87B（2028 量産）、Foxconn Q2／Vera Rubin Q3–Q4、Nemotron Lightning 推論分流、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-12', 'color:#10b981');
+  </script>
+</body>
+</html>
