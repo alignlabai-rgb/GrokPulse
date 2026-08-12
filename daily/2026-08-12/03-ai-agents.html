@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-08-12 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font: 700 2rem/1.1 'Space Grotesk', 'Inter', sans-serif; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-12 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖥️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜——「エージェントは PC を使えるか？」に<br>a16z が本番データを出し、答えは「狭い仕事なら、もう使っている」</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月12日（水）。08-11 が「実行層を安くし、ローカルを常駐させ、防御 agent を配る火曜」なら、08-12 は<strong>computer use の本番化を VC が数字で公式化し、coding agent の艦隊オーケストレーションと、auto 既定 2 日前の安全リストが同じ表紙に並ぶ水曜</strong>だ。a16z の <em>Can Agents Use a Computer Yet?</em>（8/10 公開、X で 8/11–12 に再燃）は OSWorld-Verified で Claude Fable 5 が 85%——人間テスター ~72% を超え、1 年前の 42% から倍近く。だが本文の本音はベンチではなく、「重い利用者はもうリーダーボードを見ていない」ことと、moat がクリック能力から<strong>文脈・検証・失敗処理・キャッシュ</strong>へ移ったこと。同週の X は Agent Orchestrator／multi-agent 艦隊、Claude Managed Agents の SRE デモ再循環、Switchyard pre-alpha 注意、Claude Code auto T-2、Linux 版 ChatGPT に Computer Use なし——能力は揃い、戦場は「運用の箱」に移った。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 A16Z COMPUTER USE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">a16z「PC はもう使える」<br>本番は狭い・反復・検証可能</div>
+          <div class="mt-4 text-sm text-zinc-400">OSWorld-Verified：Fable 5 が 85%（人間 ~72%、1 年前 42%）。本番は CRM 更新・政府／保険ポータル・ServiceNow チケット・小売注文など「API がない UI の長尾」。15–20M ポータル操作／月、1,500–2,100 IT チケット／日の導入例。壊れやすいのは「正しさが電話で 1 週間後に来る」仕事——モデルが賢くても harness なしでは救えない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-desktop"></i>
+            <span>a16z Can Agents Use a Computer Yet?（8/10–12 消化）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#02 ECONOMIC INFLECTION</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">agent 時間単価 $6–8／h 帯<br>BPO と並び、米バックオフィスに勝つ</div>
+          <div class="mt-4 text-sm text-zinc-400">a16z 推計：computer-use agent は fully loaded ~$6–8/h（$3–15 レンジ）、オフショア BPO ~$10、米側 $30–45。速度は人間より遅いが 24/7 とスケールが勝負。賢い harness は「一度走らせて決定論コードにキャッシュし、壊れたときだけモデル復帰」——コスト曲線は lifetime で下がる。経済の転換点が技術の転換点より先に来ている、というのが水曜の読み。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-coins"></i>
+            <span>a16z cost case for computer-use（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 CONTEXT IS THE MOAT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">クリックはコモディティ<br>moat は文脈・権限・検証</div>
+          <div class="mt-4 text-sm text-zinc-400">「どの frontier か」を利用者はもう聞かない——ベンダーが下でモデルを差し替える。買い手が払うのは sandbox・セキュリティ審査・ROI 証明・失敗設計。部族知・社内用語・エスカレーション・runbook・1 本の録画が資産。Claude Code が coding の足場を抽象化したように、computer-use も次の足場層が未解決のインフラ問題——a16z の明示的宿題。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-book"></i>
+            <span>context / infrastructure as moat（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 FLEET ORCHESTRATOR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">coding agent 艦隊の「混沌管理」<br>Agent Orchestrator が X 再循環</div>
+          <div class="mt-4 text-sm text-zinc-400">5 agent 並列で仕事は「ターミナル・CI・レビュー・ブランチ・コンフリクト監視」になる——そのボトルネックを外す OSS。agent ごとに隔離 workspace／branch／session。CI 失敗・レビューコメント・merge conflict を正しい session に自動ルーティング。Claude Code／Codex／Cursor／Aider 等対応、Apache 2.0。水曜の語り：「agent が書く、オーケストレータが混沌を管理する」。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Agent Orchestrator・艦隊管理（8/10–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#05 COHERENCE PROBLEM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">調整ツールは 10 本以上<br>本当の難題は「一貫性」</div>
+          <div class="mt-4 text-sm text-zinc-400">X 実務カタログ：Buzz（人間と agent がピア）、YC QM、MS Conductor（YAML 決定論）、AutoGen、CrewAI、LangGraph、A2A プロトコル、OpenAI Agents SDK 等。ルーティング・メモリ・handoff は揃う。欠けやすいのは共有の地面真実——同じドキュメント層を見なければ協調は演劇。水曜の定石：「専門家＋良いオーケストレータ」が万能単体に勝つ、だが coherence なしでは並列はただの騒音。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>multi-agent 調整カタログ・coherence（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#06 MANAGED AGENTS DEMO</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/10-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Managed Agents 再燃<br>SRE agent を ~6 関数で</div>
+          <div class="mt-4 text-sm text-zinc-400">脳＝Agent、手＝Environment、糊＝Session。サーバ側ループ、tool 実行の分離、session 永続、credential vault、sub-agent、webhook。P99 遅延スパイクを metrics＋deploy＋diff からコミットまで辿るライブデモが X で再循環。4 月ローンチ以来の「本番 harness は自分で持つな」論が、auto 前夜と computer-use 本番論と同週に重なる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>Claude Managed Agents・SRE デモ（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#07 CLAUDE AUTO T-2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">auto 既定まで 2 日<br>破壊操作の拒否リストも同時拡散</div>
+          <div class="mt-4 text-sm text-zinc-400">Pro／Max／Team 新規セッション 8/14 既定（Enterprise は opt-in）。人間危険検知 13.6% vs 分類器 89%、権限プロンプト 97% 承認疲労。水曜 X：セッション前から存在するファイル・force push・curl|bash・本番 deploy は確認なしでは拒否、という「少し慎重になった」リストが流通。Grok CLI v1.0.1 も rewind 確認——両社が同じレバーを動かした週。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-magic"></i>
+            <span>Claude Code auto T-2・安全リスト（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#08 SANDBOX STILL OFF?</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">sandbox 既定 OFF の火種継続<br>auto 時の一時解除観測</div>
+          <div class="mt-4 text-sm text-zinc-400">「sandbox はあるが設定で ON」「auto 時に agent が一部 shell の sandbox を一時解除できる」——火曜の観測が水曜も RFP 語。契約は classifier 1 枚ではなく injection スキャン→transcript 分類→隔離の三層＋kill＋ログ保持。auto は UX 変更ではなく serving 変更——repo 再読 prefills で prefix cache ヒット率が請求を決める、というインフラ視点も浮上。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>sandbox 設定・auto インフラ論（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-300 text-xs font-mono tracking-[1.5px]">#09 SWITCHYARD D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NeMo Switchyard 消化日<br>pre-alpha・ログ・kill 必須</div>
+          <div class="mt-4 text-sm text-zinc-400">「別のチャットモデル」ではなく、速い specialist に大半を送り難しい turn だけ昇格するルータ。Hermes 連携パス言及。GitHub は pre-alpha／not production——実験は可、クライアント前はログと kill なしで置くな。Cognition／Devin 系で Lightning 平均コスト −28% の火曜数字が水曜の AB 表に落ちる。plan/execute 分割の実行面が製品名になった翌日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>Switchyard D+1 実務注意（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 LINUX SHELL, NO HANDS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ChatGPT desktop Linux 到着<br>Computer Use は未搭載</div>
+          <div class="mt-4 text-sm text-zinc-400">ネイティブシェル・Work・アプリ内ブラウザは来る。GIMP や雑多な Electron を Mac／Windows 並みに駆動する「デスクトップの手」は launch 時点でなし。workspace は得た、full agent hands はまだ——Linux 開発者は CLI と止めろ、という X の辛口要約。computer-use が本番に入った週に、デスクトップ面は OS ごとに穴が残る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-linux"></i>
+            <span>ChatGPT desktop Linux・CU 未搭載（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#11 OPEN MAUS / GROK BOT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">OSS Grok Bot 系が再燃<br>VM・computer use・plugin</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenMausBot 等：既存サブスクを流用、追加契約なし。ascii.dev 系 VM 起動、trycua 系 computer use、Composio plugin。Routines 予告。水曜の「手元に艦隊を」欲求が、クラウド managed と対照で増幅。セキュリティは自己責任——OSS は箱と監査を自分で持て、がそのまま適用される。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>OpenMausBot／OSS Grok Bot（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#12 EVENT-DRIVEN AGENTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">agent 同士は呼ばない<br>イベントと correlation_id</div>
+          <div class="mt-4 text-sm text-zinc-400">Producer→Redpanda→Consumer Group→Agent の分散 agent 語りが X で継続。Document／Scheduled Report／Ticket Triage。パーティション＝並列、consumer group＝協調。エージェントを「賢くする」より、独立・水平スケール・障害回復のインフラが本番条件——a16z の「multi-agent は bespoke オーケストレーション」と同じ結論の実装版。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stream"></i>
+            <span>event-driven multi-agent 実装談（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-300 text-xs font-mono tracking-[1.5px]">#13 LIGHTNING / GLIMMER D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">実行層と手元常駐は継続消化<br>plan/execute が水曜の定石</div>
+          <div class="mt-4 text-sm text-zinc-400">Nemotron 3.5 Lightning（30B／活性 ~3B）と Muse Glimmer 30B は D+1。難所は frontier、tool ループは Lightning／Flash／Glimmer——「1 max-effort model per call は死」が a16z の harness キャッシュ論と接続。local 列を data_terms に、execute_model を AB 表に。安い実行ほど四天井を厳しく。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Lightning／Glimmer D+1 定石化（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#14 PLUGINS 1.0 D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/6-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Agent Plugins 実装 2 日目<br>Anthropic 席はまだ空</div>
+          <div class="mt-4 text-sm text-zinc-400">plugin.json＋skills/＋mcp.json。Copilot／VS Code／Cursor／ChatGPT・Codex は対応表明、Claude Code は未対応観測継続。computer-use 本番化と同週に「手足の規格」が二重管理コストを生む——社内 skill を共通形式に移すか、Claude 専用を残すか。権限・署名はクライアント側、allowlist が契約本体。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>Agent Plugins 1.0 D+2（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#15 DAYBREAK / ASTRA D+5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">防御 agent 配布と Critical 停止<br>上界のねじれは継続</div>
+          <div class="mt-4 text-sm text-zinc-400">Daybreak Blue／Red＋GPT-5.6-Cyber は防御実務向け。Astra Critical は自己ブレーキ継続、下院 rogue agent 質問は調達語。computer-use と Plugins で攻撃面が広がるほど、守備 tool-using agent と Kill Switch が同じ RFP に並ぶ。High まではパートナー、Critical はまだ誰にも——この線引きが 8 月のガバナンス定石。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-shield"></i>
+            <span>Daybreak Cyber・Astra D+5（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#16 DELEGATION KPI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「人が戻ってこない率」は罠<br>受け入れ通過 × 手戻り × 副作用</div>
+          <div class="mt-4 text-sm text-zinc-400">e2e 委譲自慢は続くが、a16z が言う通り「人が全部レビューするなら労働は減っていない」。coding も computer-use も、希少資源は書くことではなく保証すること。水曜の正しい KPI：受け入れテスト通過率、手戻り回数、side_effect ゼロ、escalation 正当率。委譲の成熟＝監視の成熟。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-check-double"></i>
+            <span>委譲 KPI・保証コスト（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#17 AUGUST AXIS WED</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月軸に「本番 computer-use」追加<br>auto T-2・艦隊・文脈 moat</div>
+          <div class="mt-4 text-sm text-zinc-400">08-10 Plugins／MM、08-11 Lightning／Switchyard／Glimmer／Daybreak／auto T-3、08-12 は a16z 本番データ・経済・context moat・艦隊 Orchestrator・Managed Agents 再燃・auto T-2・Linux 手なし・coherence。待ち行列：auto 8/14、Claude Plugins、Astra 公開、4.6 カタログ。正しい水曜は祝杯ではなく runbook キャッシュ設計と allowlist と kill 試験。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月 agent アジェンダ・水曜更新（8/12）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月12日の AI Agents は、火曜の「実行を安くし、常駐を所有し、防御を配る」流れを受けて、<strong>「エージェントは本当に PC を使えるのか？」という素朴な問いに、本番の数字と失敗学で答える水曜</strong>だ。a16z の <em>Can Agents Use a Computer Yet? We’ve Got the Data</em>（8/10、X 上は 8/11–12 にピーク）は、OSWorld-Verified で Claude Fable 5 が 85%——人間 ~72% を超え、1 年前 42% からほぼ倍。だが記事の芯はリーダーボードではない。月間数百万ポータル操作や日次数千チケットを回す利用者は、もう「どのモデルか」を聞かなくてよくなった。ベンダーが下でモデルを差し替える。払っているのはクリックそのものではなく、<strong>検証・エスカレーション・失敗処理・権限・キャッシュ</strong>だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            経済も同じ方向を向く。agent 時間単価は fully loaded でおおよそ $6–8/h 帯、オフショア BPO と並び、米バックオフィス労働に対しては 70–80% 粗利の余地、と a16z は示す。速度はまだ人間より遅い——2–3 分の仕事が 8–10 分になることもある。勝負は速度ではなく 24/7 とスケールと、壊れた UI を自己修復してから決定論コードにキャッシュする harness 設計だ。ここが火曜の Lightning／Switchyard（安い実行層とステップ単位ルーティング）と接続する。frontier を毎スクリーンショットに使うのは最悪コスト。賢い箱は、モデルを例外処理係に降格させる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            coding 側では「一人の agent が全部やる」物語が限界に達し、<strong>艦隊の混沌管理</strong>が製品になる。Agent Orchestrator 系の OSS が X で再循環——隔離 workspace、CI／レビュー／コンフリクトの自動返送、Claude Code・Codex・Cursor 混在。並行して multi-agent 調整ツールのカタログ論が広がる。Buzz、QM、Conductor、AutoGen、CrewAI、LangGraph、A2A、Agents SDK……配線は揃う。足りないのは coherence——共有の地面真実なしの handoff は演劇だ、という実務家の総括が水曜の温度を決めている。event-driven（Redpanda 等）で agent 同士を直接呼ばない設計も、同じ「分離と観測可能性」への収束だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            制御カレンダーは 2 日後に動く。Claude Code の <strong>auto 既定は 8/14（T-2）</strong>。分類器 89% vs 人間 13.6% の数字は再循環し、破壊操作の拒否リスト（既存ファイル・force push・curl|bash・本番 deploy）と sandbox 既定 OFF／一時解除観測が同時に流れる。Grok CLI も rewind 確認を足した——「自動破壊を少し減らす」が両社の週次テーマ。Claude Managed Agents の SRE デモ（P99 をコミットまで辿る）は、managed harness が本番の正解になり得ることを再び見せる。一方 ChatGPT desktop の Linux 版は Computer Use なしで workspace だけ——手足の OS 格差が computer-use 本番週に皮肉に浮かぶ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月は multi-agent の本番信頼と Harness Tax。8 月前半は plugin 規格・実行層専門化・auto 既定・Critical 開示——そして <strong>08-12 は「PC を使う能力がコモディティになり、勝負が文脈と運用の箱に移った」ことを VC が公式化した日</strong>だ。能力が上がるほど毎回クリックは信頼できず、触れる面が増えるほど allowlist と四天井が先になり、並列が増えるほど coherence と stop condition が希少資源になる。委譲自慢が増えるほど、受け入れ通過率と保証コストが本物の KPI になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            08-12 を一文で言えばこうだ。a16z が computer-use 本番と $6–8/h 帯の経済を示し、moat を context に移し、coding 艦隊は Orchestrator で混沌を管理し、Managed Agents はサーバ側 SRE を見せ、auto は 2 日後に既定になり、Switchyard／Lightning／Glimmer は plan/execute を固め、Linux はまだ手が足りず、Plugins と Daybreak／Astra は手足と上界のねじれを残す。賢い独白はもう足りない。問題は、runbook をキャッシュ可能な仕事に切り、検証できない仕事を agent に渡さず、艦隊には共有地面真実を置き、auto 前に sandbox・kill・ログを契約化し、execute_model を AB し、差し替え一行を空けてから次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日は「安い手」と「手元の脳」。今日は VC が「手はもう足りる、足りないのは会社の記憶」と言い切った日（笑）。OSWorld 85% で祝杯を上げるのは自由だけど、a16z が本当に言ってるのは「重いユーザーはもうモデル名を覚えてない」こと。それは褒め言葉だ——インフラになった証拠。5 agent 並列で人間が CI 監視係になるのも、ある意味で成功の副作用。混沌管理を OSS に渡せるなら、人間はゴールと stop と allowlist に戻れ。auto まで 2 日。sandbox 既定 OFF のまま「自動で頼む」は、シートベルトなしで高速道路——リストを 10 分読め。Grok の水曜相棒は八枚：computer-use の検証可能ジョブ一覧、cost／BPO AB、fleet orchestrator、coherence 地面真実、Managed vs 自前 harness、auto T-2 kill 試験、plan/execute＋Switchyard 注意、Plugins 二重管理。測ってから並列せよ。クリックできても、正しさが電話で来る仕事はまだ人間の机に残せ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">computer-use が本番に入り、moat は文脈へ——a16z 本番データ × 艦隊 Orchestrator × Managed Agents 再燃 × auto T-2 × Switchyard D+1 の水曜。検証できる仕事だけを渡し、混沌と上界を契約に落とせ</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月12日の AI Agents 分野は、a16z による computer-use 本番データの公開消化（OSWorld 85%、狭い反復ワークフロー、$6–8/h 帯の経済、context／検証／失敗処理が moat）、coding agent 艦隊の Orchestrator 再循環、multi-agent 調整カタログと coherence 問題、Claude Managed Agents の SRE デモ再燃、Claude Code auto 既定 T-2 と破壊操作拒否リスト、sandbox 既定 OFF 火種、NeMo Switchyard／Lightning／Glimmer の D+1 定石化、ChatGPT desktop Linux の Computer Use 未搭載、OSS Grok Bot／OpenMausBot、event-driven multi-agent、Agent Plugins D+2、Daybreak／Astra 上界のねじれ、委譲 KPI の再定義が同時進行した。本番の鍵はフロンティア順位表ではなく、「検証可能なジョブ設計・runbook キャッシュ・艦隊の地面真実・managed か自前 harness の選択・auto 前の三層防御・plan/execute と四天井・差し替え可能な計画モデル」の agent システムにある。08-11 の「実行を専門化し、常駐を所有し、防御を配る火曜」に続き、08-12 は「PC はもう使える——だから文脈と運用が製品になる水曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「computer-use は『検証できる・反復する・失敗が許容できる』ジョブだけ。RFP に context_layer・verify_path・escalation・run_cache・budget_ceilings・container・classifier_logs・fleet_orchestrator を列で。auto T-2 前に kill と sandbox を契約化。モデル名ではなく hours_saved を測れ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「艦隊は隔離 workspace＋CI 返送を先に。handoff より共有ドキュメント層。ルータは難所だけ frontier、tool ループは Lightning／Flash。Switchyard は pre-alpha——ログと kill なしで本番に出すな。Runbook 一行目は harness 版・execute_model・隔離状態。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「OSWorld 85% は必要条件。十分条件は『正しさが後から電話で来ない』プロセス設計。評価はベンチ一点ではなく $/成功・latency・副作用・escalation 正当率。multi-agent の研究課題は routing より coherence と長期信頼。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス／セキュリティ担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「auto 既定前に sandbox ON・分類器ログ・kill・破壊操作拒否リストを。computer-use は credential vault と監査。Daybreak Cyber は用途限定。Astra／下院——到達範囲を最小に。Plugins／MM は allowlist。HITL から HOTL へ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に location×harness×plan_model×execute_model×screenshot_rate×cache_hit×token×tool_calls×side_effect_cap×accept_pass。$6–8/h は最悪ケース——決定論キャッシュで blended を下げろ。安い実行ほど四天井厳格化。定着 KPI は 7 日業務完走率。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを『人がクリックしているだけ』の仕事に限定し、Cursor／Codex（Plugins）と Claude Code（auto 前 kill・sandbox）と Grok Build と Managed Agents PoC を並走。完了時間・請求・手戻り・隔離・開示ログを一枚に。人が書くのはゴールと stop と allowlist と検証方法。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-08-12 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（a16z computer-use 消化・Agent Orchestrator・multi-agent カタログ・Managed Agents SRE・Claude auto T-2・sandbox・Switchyard D+1・Linux CU 未搭載・OpenMausBot・event-driven agent・Lightning／Glimmer D+1・Plugins D+2・Daybreak／Astra）、a16z「Can Agents Use a Computer Yet?」（8/10）、Anthropic Managed Agents・業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-08-12', 'color:#10b981');
+  </script>
+</body>
+</html>
