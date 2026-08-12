@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Physical Tech &amp; Energy ダイジェスト | 2026-08-12 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">05</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Physical Tech &amp; Energy ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-12 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚙️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜——電圧が製品になり、地理が価格になり、既通電 MW の中身が解剖される<br>800V DC × テキサス凍結の州外逃げ × Riot 8-K 深掘り × 燃料電池・IPP への回転 × 8/20 まで8日</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月12日（水）。08-10 が「Amazon が自前 7.65GW ガスで time-to-power を買う月曜」、08-11 が「Batch Zero が数ヶ月監査文書になり Riot が 191 MW を $9.1B に値付けした火曜」なら、08-12 は<strong>AI ファクトリーの内側（配電）と外側（立地・既通電契約の資金構造・代替 baseload）が同じ板に載った水曜</strong>だ。04 が NVIDIA×Google×Microsoft の <strong>800V DC</strong> と CoWoS 含意 <strong>38GW</strong> を数えるなら、05 は——変換ロスを削る電圧標準が「電子のカレンダー」を何日前倒しできるか——を物理層で読む。並行して X は Texas 凍結を「需要弱さではない」と再解釈：Oncor 系の系統逼迫が <strong>$50B+ の capex を Arizona／Tennessee／Wyoming へ</strong>押し、通電可能地域が立地交渉の価格決定権を握る。Riot の 8-K 解剖（BTC 売却資金・2 フェーズ通電・80–90% 負債）と Bloom／CoreWeave 型燃料電池、IPP（$TLN／$CEG／$SMR）への資本回転が、火曜の「三経路」に厚みを足す。水曜の評価軸は <code>800V 変換効率 × 州外逃げの $/MW × 既通電契約の資金構造 × BTM 燃料電池／ガスタービンスロット × 監査月数 × 8/20 −8d × 8/26 −14d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-cogs text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 800V DC 物理 OS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">グリッド→GPU の変換段を削る<br>電圧が time-to-power の味方になる</div>
+          <div class="mt-4 text-sm text-zinc-400">04 連動の物理本丸：NVIDIA が Google・Microsoft と AI データセンター向け <strong>800V DC 配電</strong>を公開（OCP 経由）。各 AC-DC ホップで 5–10% が熱になる計算は、MW 級ラックでは電気代と冷却の「小さな財産」になる。80 社超が製品化に動き、MGX 互換 800V ラックは 2026 年 H2、行あたり 2MW 級は 2027 目標。SiC/GaN が前提。水曜 05 の読みは単純——<strong>同じ電子を、より少ないロスで、より高い密度でラックに届ける</strong>。接続が凍った州では「届く電子」そのものが希少資源だから、電圧標準はただの電気工学ではなく、通電カレンダーの最適化レイヤだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA×Google×Microsoft 800V DC／OCP（8/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 38GW 含意 × 冷却</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CoWoS が届けるチップ発熱 38GW<br>それは「接続済み消費」ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">Morgan Stanley 系の試算が水曜も循環：2027 CoWoS 供給が含意する AI GPU/ASIC 約 1,900 万個・平均 TDP 2kW で<strong>チップ電力だけで約 38GW</strong>（NVIDIA 16／Google 9／AMD 7 の目安）。これは接続済み DC 消費でも確定キャパシティでもなく、<strong>供給チェーンが物理的に届け得る発熱の上限ストレス</strong>。ラック・液冷・変圧器・用地・水が同じ表に乗らない限り、38GW は天井ではなく詰まりの証明。Uptime 2026 報告が「AI ブームで 5 年続いた障害率改善が終わるか」を問い、停電原因の首位が依然 power である事実と重なる——性能が耐性を食う季節だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-temperature-high"></i>
+            <span>38GW 試算 × Uptime 電力障害首位（8/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 地理が価格になる</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">テキサス凍結 ≠ 需要弱さ<br>通電可能州が交渉力を握る</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の立地板：Supply Side AI 等が循環する読み——Texas のデータセンター「freeze」は需要崩壊ではなく、<strong>Oncor 等ユーティリティが系統逼迫を理由に投資を再配分</strong>する話。$50B+ 級の capex が Arizona・Tennessee・Wyoming など power-ready 地域へ流れ、立地選定で「電子がいつ来る州か」が hyperscaler の価格決定権を逆転させる。474 GW 級の紙キューと Abbott 監査・Batch Zero 数ヶ月手続き（D+5）が続くあいだ、<strong>すでに energize できる州とキャンパスがプレミアムを取る</strong>。地理は規制と変圧器の代理変数になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-map-location-dot"></i>
+            <span>Texas 凍結・州外 capex 再配分（X 8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 RIOT 8-K 解剖 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">191 MW・20 年・$9.1B の中身<br>BTC を売って AI の landlord になる</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜契約の水曜解剖：Riot Platforms の 8-K——Rockdale で leading frontier AI lab と 191 MW critical IT、初期 20 年で期待売上 <strong>$9.1B</strong>（延長込み最大 $16.1B）。CNBC 系はテナントを <strong>Anthropic</strong> と報道。建設費 $2.1–2.3B、負債 80–90%、残余は <strong>BTC 在庫売却が主資金源</strong>（保有 11,380 BTC 規模の議論が循環）。通電は 2 フェーズ：96 MW（2027/12）＋95 MW（2028/6）。今日の DC 事業は 25 MW・四半期売上 $23M——つまり<strong>マイニングの接続と運用を、frontier の家賃に段階的に書き換える</strong>実験の初期段階だ。既通電 MW のオプション価値が、監査凍結下で可視化された D+1。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bitcoin-sign"></i>
+            <span>Riot 8-K／$9.1B・BTC 資金・2 フェーズ通電（8/11–12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#05 燃料電池・BTM 厚み</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CoreWeave 1.85GW 級と Bloom<br>ガスタービン以外の baseload も動く</div>
+          <div class="mt-4 text-sm text-zinc-400">代替 baseload 板の水曜：$BE（Bloom Energy）が CoreWeave の稼働電力容量拡大（<strong>1.85 GW 超</strong>）に連動して語られる——固体酸化物燃料電池を AI DC インフラの即席 baseload として積む経路。Pecos 型の大型ガスタービン＋BESS が「工場スロットと許可」を食う一方、燃料電池は<strong>より小さな塊で、より速く、behind-the-meter に寄せられる</strong>可能性がある。完璧な答えではない（燃料供給・コスト・寿命）が、キューが凍りタービンが数年待ちのとき、「Goldilocks な 10–50 MW 単位」で baseload を足す需要は消えない。火曜の三経路に、<strong>燃料電池という第四の脚注</strong>が太字になった日だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire-flame-simple"></i>
+            <span>Bloom×CoreWeave／BTM 燃料電池議論（X 8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#06 IPP・電力株へ回転</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ソフトと GPU から電子の売り手へ<br>$TLN／$CEG／$SMR が同じセッション</div>
+          <div class="mt-4 text-sm text-zinc-400">市場板の水曜：拡張したソフトウェア／AI ハードから、Independent Power Producer と refining・diversified industrials へ資金が回転するナラティブが X のトレード机を占拠。Talen（$TLN）のリバウンド、Constellation（$CEG）、SMR 関連、Ameresco（$AMRC）の AI DC 受注 <strong>$1.2B・バックログ $6.73B</strong>——「AI に投資したい人は多い。誰が電気を売るかは少ない」が再掲。04 の $500B 資本 OS（D+2）がチップと DC を払いやすくするなら、水曜 05 が示すのはその裏側——<strong>長期 offtake と通電 MW を持つ側が、モデル企業より先にキャッシュフローの形を取る</strong>ことだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>IPP 回転・Ameresco AI DC 受注（X 8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 BATCH ZERO D+5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">監査は「数ヶ月」のまま<br>紙の 474GW はまだ電子にならない</div>
+          <div class="mt-4 text-sm text-zinc-400">規制板の水曜更新：ERCOT／PUCT の Batch Zero とデータセンター監査は、火曜の「数ヶ月・期限停止請求・9 月広域研究見送り」から公式に前倒しされていない。キュー推計 <strong>~474 GW</strong>（ピーク需要の数倍、約 90% が DC 系）と EIA の 2027 Texas 需要成長下方修正（14%→6%）は、依然として背景音。次の公式の山は <strong>8/20 PUCT</strong>（あと 8 日）の good cause exception。監査が続くほど、(1) 州外逃げ、(2) BTM 発電、(3) 既通電マイナー MW、(4) 燃料電池／ガス peaker の相対価格が上がる——<strong>手続きの長さそのものが商品価格</strong>になる構造は D+5 でも壊れない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i>
+            <span>Batch Zero D+5・PUCT 8/20 −8d（8/12）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 二重時計 −1d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8/20 まで8日、8/26 まで14日<br>州規制と NVIDIA が同じ 2 週間</div>
+          <div class="mt-4 text-sm text-zinc-400">カレンダー板の水曜：Physical Tech は <strong>8/20 PUCT</strong>（−8d）を待ち、04 は <strong>8/26 NVIDIA 決算</strong>（−14d）を待つ。前者は監査設計・Batch Zero 再起動条件、後者は Rubin／HBM／通電 MW の語り方。EPRI の SAFERai.power（系統への AI 適用を安全に評価する枠組み、PJM・NVIDIA 連動の議論）は長期の「AI がグリッドを制御する」話だが、短期の通電カレンダーはまだガス・燃料電池・既通電・資本の話。長期は SMR・再稼働・新設炉——<strong>時計はまだ揃わない</strong>。08-11 が 9 日と 15 日なら、08-12 は 8 日と 14 日の二重カウントダウンだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>PUCT 8/20 −8d × NVIDIA 8/26 −14d（8/12）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月12日、Physical Tech &amp; Energy の中心は「<strong>電圧が製品になり、地理が価格になり、既通電 MW の契約中身が解剖される</strong>」ことだ。08-10 が Pecos 7.65 GW で「接続を要らない発電所」を mainstream の表紙にし、08-11 が Batch Zero を数ヶ月監査文書にし Riot に $9.1B の値札を付けたなら、08-12 はその両翼の<strong>内側と外側を同時に拡大鏡で見た水曜</strong>だ——内側が 800V DC（グリッド→GPU のロス削減）、外側が Texas 凍結を背景にした州外 capex 逃げと、Riot 8-K の BTC 資金・2 フェーズ通電・高レバレッジ建設だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            04 が数える 38GW は「2027 にチップが発熱しうる理論上の塊」であって、接続済み消費ではない。Uptime が示すように、障害原因の首位は依然 power——性能が耐性を食う季節に、電圧標準と冷却と変圧器が同じ表に座る。Texas の freeze を需要弱さと読むのは誤りで、系統が「紙の GW」を電子に変えられない州から、通電可能な州へ金が逃げる話だ。地理は規制と変圧器リードタイムの代理変数になり、<strong>power-ready 地域が hyperscaler に対して価格決定権を持つ</strong>。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            Riot の解剖が示すのはロマンではない。191 MW を 20 年で $9.1B に換えるには、$2B 超の建設と 80–90% の負債と、BTC 在庫を「AI の landlord になるための運転資金」に変える覚悟が要る。通電は 2027 末と 2028 半ば——今日の 25 MW 事業から見れば、まだ長い坂だ。それでもキューが数ヶ月凍る世界では、<strong>すでに接続のあるキャンパスのオプション価値</strong>が、未監査の 474 GW 紙より高く売れる。Bloom×CoreWeave 型の燃料電池と IPP 株への回転は、その命題の市場版だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが重なるか。800V という「物理 OS」、38GW という供給ストレス、Texas 監査 D+5、州外逃げの地理プレミアム、Riot 資金構造の可視化、燃料電池／ガスの即席 baseload、IPP への資本回転、$500B 資本 OS の D+2、8/20 と 8/26 の二重時計——同じ 72 時間に「どう配電するか」「どこに建つか」「誰が電子を持つか」「どう払うか」が同時に可視化されたからだ。hyperscaler がユーティリティ機能を吸収し、マイナーが AI の landlord になり、電圧が製品カタログに載るとき、次の問いは変わらない。「誰が最も賢いモデルを持つか」ではなく「誰が 2027–28 に何 MW を、何ボルトで、どの州で、どの契約年数で、何日で通電できるか」。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜だ。800V でロスを削ると言ってる横で、Texas はまだ「数ヶ月監査します」と言ってる。Riot は BTC を売って AI の家賃屋になり、Bloom は燃料電池で 1.85GW 級の話に乗っかり、トレーダーは GPU より $TLN を見てる。01 がモデルの賢さを数え、04 が配電と 38GW と $500B を数え、05 は——あと 8 日の PUCT と、州をまたぐ capex の逃げ道と、「すでに通電している部屋の中身」を数える。約束は安く、電子は高い。接続が凍った州では、電圧も地理も BTC も、次の CoWoS になる。それだけだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">「電圧・地理・既通電の中身」——水曜の物理層が固定した八つの座標</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月12日現在の Physical Tech &amp; Energy は、(1) NVIDIA×Google×Microsoft の 800V DC 配電が AI ファクトリーの物理 OS として定着し始めたこと、(2) CoWoS 含意 38GW が「届くチップ発熱」であって接続済み消費ではないという冷却・耐性の警告、(3) Texas 凍結を背景に power-ready 州が立地の価格決定権を握る地理プレミアム、(4) Riot $9.1B／191 MW の 8-K 解剖（BTC 資金・2 フェーズ・高負債）による既通電 MW 再値付けの D+1、(5) Bloom×CoreWeave 型燃料電池などガスタービン以外の BTM baseload の厚み、(6) IPP・電力インフラ株への資本回転と Ameresco 級の AI DC 受注、(7) Batch Zero D+5 と 474 GW 紙キューが依然電子にならない規制現実、(8) 8/20 PUCT（−8d）と 8/26 NVIDIA（−14d）の二重カウントダウン、が同時に動いている。08-10 が「空白の上に発電所が建つ月曜」、08-11 が「空白が監査文書になり既通電に $9.1B が付く火曜」なら、08-12 は<strong>電圧と地理と契約中身が、同じ電子の値段を決める水曜</strong>だ。2026年後半の勝負どころは、見出しの GW でもスローガンでもなく、配電効率・監査通過・州をまたぐ立地・既存 offtaker・発電セット／燃料電池納期・排出許可・マイナー MW 再契約・水戦略・通電日の統合スケジュールにある。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>データセンター電力アーキテクト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「800V DC は『かっこいい電圧』の話ではない。変換段を削り、MW/行を上げ、冷却と電気代の両方を減らす工学だ。キューが凍った世界では、同じ接続契約から引き出せる実効 IT 負荷が勝負——ロスを削る側が time-to-power を買う。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bitcoin-sign"></i>
+            <span>マイニング→AI インフラ転換</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$9.1B の見出しより 8-K の資金構造が本質だ。BTC を売って建設し、2027–28 に段階通電する——既通電接続のオプションを、frontier の 20 年家賃に書き換える実験。監査が長いほど、このオプションの相対価格は上がる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-map-location-dot"></i>
+            <span>系統・立地／ユーティリティ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Texas freeze は需要が消えたサインではない。系統と監査が『紙の GW』を電子に変えられないとき、capex は power-ready 州へ逃げる。地理が価格になる——それが 2026 年夏の立地の本音だ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-fire-flame-simple"></i>
+            <span>BTM 発電・燃料電池／重電</span>
+          </div>
+          <p class="text-sm text-zinc-300">「大型ガスタービンの工場スロットは詰まっている。燃料電池や 10–50 MW 単位のモジュール baseload は、完璧ではなくても『今すぐ』に近い。Pecos 型と Bloom 型は敵ではなく、同じ time-to-power 市場の違う SKU だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-landmark"></i>
+            <span>インフラ金融／IPP・クレジット</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ソフトから IPP への回転はノイズに見えるが、キャッシュフローの形を先に取る側への逃避でもある。$500B はチップを買わず、長期 offtake と通電 MW を融資可能にする。借り手の信用はベンチマークではなく、MW・許可・納期・州の四点セットだ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本・アジアエネルギー／製造戦略視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「米側水曜が示したのは、800V 配電・38GW 含意・地理プレミアム・Riot 資金解剖・燃料電池 BTM・IPP 回転・Batch Zero D+5・8/20×8/26 だ。SiC/GaN・液冷・変圧器・BESS・銅で取れる一方、立地合意と系統データの遅さは同じボトルネック。技術・金融・time-to-power・排出許可・水・年産・社会的ライセンスの七点で設計しないと、ワットも fab も紙の上に残る。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 05. Physical Tech &amp; Energy • 2026-08-12 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: NVIDIA×Google×Microsoft 800V DC／OCP（8/11–12）、Morgan Stanley 系 38GW 試算、Texas 凍結・州外 capex 再配分（X 8/12）、Riot 8-K $9.1B／191MW・BTC 資金・Anthropic 報道（8/10–12）、Bloom×CoreWeave 1.85GW、IPP 回転・Ameresco AI DC 受注、ERCOT Batch Zero D+5・PUCT 8/20、Uptime 2026 障害報告、EPRI SAFERai.power、NVIDIA $500B D+2、X投稿（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 05-physical-tech.html loaded for 2026-08-12', 'color:#10b981');
+  </script>
+</body>
+</html>
