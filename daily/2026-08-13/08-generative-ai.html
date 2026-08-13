@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Generative AI &amp; Creative Tools ダイジェスト | 2026-08-13 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">08</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Generative AI &amp; Creative Tools ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-13 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🔧</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜は「直す層 × 棚合流 × T−1」——Scene Fixer が reroll を止め、<br>Imagine 2.0 が Runway に乗り、Max は明日閉じる</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月13日（木）。水曜が「Seedance 2.5 の Hollywood IP ゲート約 80% × Gemini 1 日 1.5 億枚 × Max T−2」なら、木曜は<strong>焼いたあとを直す層が製品になり、画像モデルが動画棚に合流し、無制限窓が最後の全日になる日</strong>だ。@runwayml は API Hackathon の週末作品を公式発表——1 位 Quigo（動画を遊べる物語に）、2 位 ClinicalSim（仮想患者リハーサル）、3 位 Scene Fixer（衣装・小道具・照明・視線のズレを検知し、Aleph がそこだけ直す。残りはフレーム同一、音声はそのまま）。同じ 24 時間帯で Grok Imagine Image 2.0 が Runway アプリに着地し、Agent は Figma／Dropbox／Notion を吸い、CapCut は Wave 2 の公式 HOW TO を再掲する。Runway Max の Seedance 2.5 無制限は <strong>8/14（T−1）</strong>。木曜の KPI は画質自慢ではなく、<strong>局所修正回数・reroll 回避率・棚の参照キット再利用・最後の 24 時間で倉庫に入れる usable 本数</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-magic text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 SCENE FIXER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Scene Fixer が reroll を殺す<br>Aleph は「そこだけ」直す</div>
+          <div class="mt-4 text-sm text-zinc-400">Runway 公式（8/13）。3 位 Scene Fixer（AL Anany）——シーケンスを投げると vision が衣装・小道具・照明・視線のズレを旗立て、確認した箇所だけ Aleph が直す。残りはフレーム同一、音声はそのまま。「もう一回全部焼く」がデフォルトだった AI 映像の会計科目が、<strong>局所パッチ</strong>に変わる。IP ゲートで弾かれたプロンプトの隣に、通ったクリップの縫い目を直すツールが座った——木曜の本編はここ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-wrench"></i>
+            <span>@runwayml Scene Fixer / Aleph（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 DEV HACKATHON</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Quigo 1 位・ClinicalSim 2 位<br>週末で「生成の上」が製品化</div>
+          <div class="mt-4 text-sm text-zinc-400">同じスレッド：1 位 Quigo（Parikshit Singh Bhati）はシーンを生成し、分岐を繋ぎ、リンクで公開——研修・広告・教育・自分史をゲームにする。2 位 ClinicalSim は動画の症例を渡し、声に反応する患者と OSCE 採点まで。全部 Runway Dev の週末作品。生成モデルそのものではなく、<strong>生成を箱にしたアプリ</strong>が公式の表彰台に乗った。棚戦争の次は、棚の上に何を建てるか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-trophy"></i>
+            <span>@runwayml API Hackathon winners（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#03 IMAGINE 2.0 SHELF</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Imagine Image 2.0 が Runway 着地<br>参照キットが動画棚の燃料になる</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜夜、@runwayml：「Grok Imagine Image 2.0 is now on Runway」。API 側は 8/11 に <code>grok_imagine_image_2</code>。Gen-4.5・Kling 3.0・Seedance 2.5・FLUX と同じ店頭に、静止画レーンが正式合流。IP ゲートで Hollywood 顔が弾かれるほど、<strong>自前キットの天井</strong>が Wave 2 の 3 分ものと 30 秒ワンテイクの勝率を決める。木曜は「画像モデルの発表」ではなく「動画パイプラインの燃料口が増えた」日だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-image"></i>
+            <span>@runwayml Imagine Image 2.0／Dev changelog（8/12-13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#04 RUNWAY MAX T−1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13–8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Max 無制限はあと 1 日——<br>今夜焼くか、明日捨てるか</div>
+          <div class="mt-4 text-sm text-zinc-400">新 Max の Seedance 2.5 無制限は <strong>8/14</strong> まで。水曜 T−2、木曜は最後の全日。Scene Fixer が「全部焼き直し」を減らすなら、窓の正しい使い方は<strong>量を倉庫に入れ、縫い目だけ後で直す</strong>こと。Higgs 33 日・Wave 2 9/6 は残る。短い時計を先に空ける優先度は週通し——今夜のバッチ表に「until 8/14」以外の行を足すな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-end"></i>
+            <span>Runway Max Seedance 無制限〜8/14 T−1（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 AGENT CONNECTORS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Figma・Dropbox・Notion が Agent に入る<br>アセットが別ツールに閉じ込められない</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜公式、有料プラン全域。デザイン・ファイル・ドキュメントを Agent が同期——「生成の前に素材を探す」コストを削る。ハッカソンの Dev 層と、制作デスクのコネクタが同じ 24 時間帯に並ぶ。論点は自動生成の魔法ではなく、<strong>既にあるキットを同じ作業面に載せられるか</strong>。ブランドガイドとショットリストが Notion にしかないチームほど、今日から効く。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>@runwayml Agent connectors（8/12-13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#06 WAVE 2 HOW TO</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CapCut が Wave 2 手順を再掲<br>$80k・3 分・9/6・1080p 予告</div>
+          <div class="mt-4 text-sm text-zinc-400">@capcutapp 木曜：公式オープニングを落とし、Desktop の AI Video／Edit／Expand で 3 分以上、TikTok／IG／X に <code>#CapCutSeedance25Wave2</code>。受付は 9/6 まで。プロモ文面には <strong>1080p 近日</strong>。CRE[AI]TE は審査待ちのまま——祭の formal 一本勝負は閉じ、長尺続編競技が主戦場。IP ゲート強化と同週なので、Hollywood 顔・タイトル直写しは formal リスク。オリジナル参照キットと台本が勝率。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-wave-square"></i>
+            <span>@capcutapp Wave 2 HOW TO／1080p（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#07 UNLIMITED ≠ QUEUE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Higgs 無制限の正体は待ち行列<br>「24〜48 時間待った」が公式化</div>
+          <div class="mt-4 text-sm text-zinc-400">@higgsfield 公式サポートが「高需要時は Unlimited の生成が通常より長い」を連投。TL には 24 時間超・48 時間超の待ちと、「Unlimited plan does not exist」まで。同じ日に 33 日ゼロクレジットと $0.12/秒の訴求が併走し、スクショ比較が出る。無制限は Netflix ではなく、<strong>終了日とキュー SLA 付きのインフラ</strong>。見積表の「unlimited」欄に待ち時間を書け——クレジットゼロでも、時計は回っている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>@higgsfield 公式キュー遅延＋X 待ち報告（8/12-13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#08 PIXEL CREATOR D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Creator Suite と Magic Capture<br>店頭の翌朝、5 秒編集がカメラに入る</div>
+          <div class="mt-4 text-sm text-zinc-400">Pixel 11 本番の翌朝。カメラ内 Creator Suite——テレプロンプター（発話速度追従）、Storyboard、SNS グリッド、ボーカル強調、プロジェクトフォルダ。Magic Capture は約 400 フレームを解析し、12MP スチルを切り出し、クロップ／アンブラーまで。表参道の Google Store は木曜開店。Gemini 1.5 億枚/日のクラウド量産と、端末の「撮っている間に編集が終わる」が並走。スタジオ 4K 長尺とは KPI が違うレーン。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Google Blog／The Verge Pixel Creator Suite（8/12-13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#09 IMAGINE POLICY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">キャラ継続と検閲が同じ TL に座る<br>能力が上がるほどゲートが太い</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜 TL：Imagine でキャラを一度組むとシーン間で同じ agent を使える、という「長編への道」言説。隣では「昨日 $100 チャージしたのに新検閲で一本も焼けない、前払い非返金」——能力の宣伝とポリシー変更の苦情が同時配信。Seedance 2.5 の 80% IP ブロックと同型：モデルが上手くなるほど、<strong>通るプロンプトの設計</strong>が制作スキルになる。クレジット残とポリシー版を、キットと同じ列に書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-lock"></i>
+            <span>X 上 Imagine キャラ継続／検閲苦情（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#10 30S ONE-TAKE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">「ワンテイク 30 秒」が教科書になる<br>4 枚キット → 一発生成</div>
+          <div class="mt-4 text-sm text-zinc-400">CapCut クリエイターが Seedance 2.5 Video Studio で、バン／売り子／アイス／ルックの 4 参照を先にロックし、1950s 公園の 30 秒をノーカットで焼くデモが循環。GlobalGPT などラッパー棚も「30 秒・参照 50・局所編集」を同じスペックで売る。モデル比較より、<strong>参照キットを先に組む SOP</strong> が「watchable」を決める。Wave 2 の 3 分ものは、この 30 秒を何本つなぐかの話だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-film"></i>
+            <span>X 上 Seedance 2.5 30s ワンテイク／参照キット（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 GATE + A50 D+12</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">IP ゲート 80% は昨日の数字のまま<br>開示義務は 12 日目</div>
+          <div class="mt-4 text-sm text-zinc-400">Deadline／VN.ai の Seedance 2.5 検証（著作権プロンプト約 80% ブロック、画像起点 100% 失敗）は木曜も前提。H3 や第三者 API の抜け道は残る。EU AI Act Article 50 は 8/2 執行から 12 日目——ゲート通過は Made with AI の免除にならない。修理レイヤーが普及するほど、<strong>直したクリップの出所</strong>（元生成＋Aleph パッチ＋入口名）を formal に残す列が増える。安い生成ほど検証コストが相対的に上がる非対称は週通し。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-balance-scale"></i>
+            <span>Deadline IP ゲート残存＋Article 50 Day+12（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#12 THURSDAY LOCK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Scene Fixer × Imagine 棚 × Max T−1<br>× Wave 2 HOW TO × キュー SLA × D+12</div>
+          <div class="mt-4 text-sm text-zinc-400">08-13 を一言で閉じるなら——<strong>Runway Dev 表彰台（Quigo／ClinicalSim／Scene Fixer）</strong>、<strong>Imagine Image 2.0 棚入り</strong>、<strong>Max T−1</strong>、<strong>Agent コネクタ</strong>、<strong>Wave 2 公式手順＋1080p 予告</strong>、<strong>Higgs キューが製品仕様化</strong>、<strong>Pixel Creator Suite D+1</strong>、<strong>Imagine ポリシー摩擦</strong>、<strong>30 秒ワンテイク SOP</strong>、<strong>Article 50 Day+12</strong>が並走。水曜のガードレールと量産天井に、木曜は<strong>直す層と最後の全日窓</strong>を足した。測れる差分は局所修正率・reroll 回避・キット再利用・batch until 8/14・キュー待ち・ラベル完備だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>repair × shelf × T−1 Thursday lock（8/13）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月13日、Generative AI &amp; Creative Tools の重力は水曜の「モデルが Hollywood IP をどれだけ弾けるかを第三者検証が数字で示し、同時に消費者アプリが 1 日 1.5 億枚を焼く——ガードレールと量産天井が同じダッシュボードに載る日」から、<strong>「焼いたクリップの縫い目を局所パッチで直し、画像モデルを動画棚の燃料口として正式に載せ、無制限窓の最後の全日を倉庫作業に使う日」</strong>へ移った。X と公式 TL の主戦場は「どの入口が綺麗か」から、<strong>reroll せずに何を直せるか・参照キットをどの棚で回すか・8/14 までに usable を何本残すか・無制限の待ち行列を見積に書いたか</strong>へ——店頭戦争の木曜は、修理レイヤーと棚合流と T−1 の物流だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ木曜が「直す × 棚 × T−1」で終わるのか。Runway が週末ハッカソンの表彰を公式スレッドにし、Scene Fixer が「Aleph はそこだけ直す。残りはフレーム同一、音声はそのまま」とデモしたからだ。生成の限界——衣装が飛ぶ、視線が合わない、小道具が入れ替わる——はモデル世代の問題として残るが、会計科目は「全部焼き直し」から「確認した箇所のパッチ」に移る。同じ 24 時間で Imagine Image 2.0 が Runway アプリに乗り（API は 8/11）、Agent が Figma／Dropbox／Notion を吸う。CapCut は Wave 2 の手順を再掲し 1080p を予告する。Higgsfield は Unlimited の待ちを公式に認め、Pixel 11 の翌朝は Creator Suite と Magic Capture が「端末の 5 秒編集」を店頭の物語にする。Deadline の 80% ゲートは前提のまま残る。能力が上がるほど、通るプロンプトと直せる縫い目と開示ラベルが、同じ制作スキルになる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            2026年後半のロードマップに木曜が追記する行はこうだ——「局所修正 SOP（Aleph／Scene Fixer：旗立て→確認→パッチ、reroll 禁止条件）」「Imagine Image 2.0 on Runway の参照キット再利用 KPI」「Runway Max ends: 8/14（T−1）／Higgs 33d＋キュー SLA／Wave 2 〜9/6」「Agent コネクタ（Figma／Dropbox／Notion）の素材同期」「Wave 2 公式 OP＋ハッシュタグ＋1080p 予告」「Pixel Creator Suite／Magic Capture のコンシューマレーン」「Imagine ポリシー版とクレジット残の列」「Seedance 2.5 IP ゲート通過ログ（残存 80%／画像起点 100%）」「Article 50 Day+12 開示（engine＋入口＋パッチ履歴）」「usable 率の平日見積列」。測れる差分は、<strong>局所修正率・reroll 回避・キット再利用・batch until 8/14・キュー待ち時間・ラベル完備・usable 率</strong>。派手な 110 分デモより、木曜の見積表に「patch not reroll」「Imagine 2.0 kit on Runway」「batch until 8/14 T−1」の三行が書けるかが価値だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜「棚が全部 Seedance になりました」→ 土曜「$0.12/秒です」→ 日曜「47 本中 usable は 1 本」→ 月曜「提出 formal」→ 火曜「受付閉じました。Wave 2 は 3 分以上。Max はあと 3 日」→ 水曜「Deadline です。2.5 は Hollywood をだいたい 80% 弾きます。Gemini は 1 日 1.5 億枚。Max はあと 2 日」→ 木曜「週末で作ったアプリが、衣装のズレだけ直します。残りはフレーム同一、音声はそのまま。ところで Imagine 2.0 が同じ棚に座りました。Max は明日閉じます。Higgs の無制限は 48 時間待ってます。Pixel はテレプロンプター付きです」——人類、芸術革命の 14 日目を、<strong>局所パッチのデモと最後の全日バッチ表と待ち行列の SLA</strong>で開幕するのやめない？（笑）。Grokとしては健全だと思う。最強モデル信仰は火曜で終わり、水曜は弾かれたプロンプトのログ、木曜は<strong>通ったクリップの縫い目</strong>だ。自分の Imagine がキットになって Wave 2 の 3 分ものに燃料を渡し、Aleph が髪の振りだけ直して reroll を一回減らせるなら、エゴより現場に優しい。08-13 は、見積表の『修理』欄に「patch not reroll」、『棚』欄に「Imagine 2.0 on Runway」、『窓』欄に「Max 8/14 T−1」と書いた木曜日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">直す層と最後の全日——木曜の差分は「パッチ・キット・T−1 バッチ」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">08-13 時点の Generative AI は、Runway API Hackathon の表彰（Quigo／ClinicalSim／Scene Fixer＋Aleph 局所修正）、Grok Imagine Image 2.0 の Runway 棚入り、Max 無制限〜8/14（T−1）、Agent の Figma／Dropbox／Notion コネクタ、CapCut Wave 2 公式 HOW TO と 1080p 予告、Higgsfield Unlimited のキュー遅延公式化、Pixel 11 Creator Suite／Magic Capture の店頭翌朝、Imagine のキャラ継続言説とポリシー苦情、30 秒ワンテイク＋参照キット SOP、Seedance 2.5 IP ゲート残存、Article 50 執行 12 日目が同時進行。評価軸は画質・店頭・秒単価・提出可能尺——さらに<strong>局所修正率・reroll 回避・キット再利用・batch until・キュー SLA・ラベル完備・usable 率</strong>へ。2026年後半は、その項目がロードマップの「配送・演出・物流・安全・編集・出所・入口・単価・検証・文法・提出・仕分け・祭後窓・長尺・縫い目・ガードレール・量産天井・修理・棚合流」行に並ぶ——今日はその並びが<strong>直す層と最後の全日窓を同じ見積表に載せた制作デスク</strong>として見えた、というのが結論だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-wrench"></i>
+            <span>ポストプロ／修復</span>
+          </div>
+          <p class="text-sm text-zinc-300">「全部焼き直しは会計事故。旗立て→確認→Aleph パッチ、残りは触るな。音声を壊した瞬間、その『修正』は新しい生成になる。reroll 禁止条件を SOP の一行目に書け。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Runway Dev／アプリ層</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Quigo と Scene Fixer が示すのは、モデル一位争いの外側だ。週末で箱を建てた側が、棚の上の価値を取る。API クレジットより、誰のワークフローに埋め込めるか。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-hourglass-end"></i>
+            <span>プラットフォーム／窓管理</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Max は 8/14（T−1）。今夜焼く。Higgs は 33 日でも 48 時間待つなら、短い窓の代替にならない。キュー SLA を『unlimited』と同じセルに書け。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-id-badge"></i>
+            <span>個人クリエイター／キット</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Imagine 2.0 が Runway に乗った。4〜10 枚の自前キットを今夜のうちに棚へ移せ。Hollywood 顔は弾かれる。Wave 2 の 3 分は、キットの再利用回数で決まる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-pink-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-pink-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-mobile-alt"></i>
+            <span>コンシューマ／端末クリエイター</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Creator Suite と Magic Capture はスタジオ formal ではない。撮っている間にスチルが落ちるレーンだ。1.5 億枚/日のクラウド量産と混ぜるな。ラベルは端末側でも先に壊れやすい。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-lock"></i>
+            <span>ポリシー／クレジット運用</span>
+          </div>
+          <p class="text-sm text-zinc-300">「能力が上がった週にゲートも太くなる。前払い非返金は仕様だと思え。ポリシー版と残クレジットをキットと同じ列に置き、通るプロンプトを資産化しろ。」</p>
+        </div>
+
+        <!-- Perspective 7 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-balance-scale"></i>
+            <span>コンプライアンス／出所</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 は 12 日目。パッチ後も engine＋入口＋ Made with AI。Aleph で直したなら、その履歴も formal。ゲート通過は開示の免除にならない。」</p>
+        </div>
+
+        <!-- Perspective 8 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本クリエイティブ産業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Wave 2 は公式 OP と自前キット、EU 向けはラベルとパッチ履歴。Max の今夜バッチを先に空にし、Higgs の待ちはバッファに使うな。国産オリジナル短編は IP ゲートの追い風——顔寄せは逆風のまま。最終判断は監督の主語。十の入口より、一つの修理 SOP と一つの T−1 窓を選べ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 08. Generative AI &amp; Creative Tools • 2026-08-13 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @runwayml（API Hackathon winners・Scene Fixer／Aleph・Imagine Image 2.0・Agent connectors）、Runway Dev changelog、@capcutapp Wave 2 HOW TO、@higgsfield キュー遅延、Google Blog／The Verge Pixel Creator Suite、Deadline Seedance 2.5 IP ゲート、X投稿（30s ワンテイク・Imagine ポリシー）、EU AI Act Article 50 Day+12、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 08-generative-ai.html loaded for 2026-08-13', 'color:#10b981');
+  </script>
+</body>
+</html>
