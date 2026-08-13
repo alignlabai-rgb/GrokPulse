@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-13 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-13 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🏭</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜——「届いた MW」がカタログの上に載った<br>IREN×MSFT 50MW 検収 × HBM が Rubin Ultra を折る × チェンナイ 1 万枚</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月13日（木）。08-11 が資本 OS、08-12 が配電 OS なら、08-13 は<strong>検収されたラック</strong>の木曜だ。IREN は Childress（テキサス）の Horizon 1 を Microsoft に引き渡し、NVIDIA が GB300 NVL72 をテストしたうえで Exemplar Cloud を付けた。5 年 $97 億契約の先頭 50MW（IT 負荷・ダイレクト液冷）、続く 3 棟も年内。目標は 2026 年 480MW／2027 年 1.2GW（グロス）。同じ営業日、L&amp;T／Vyoma.AI は Together AI 向けにチェンナイへ NVIDIA B300 1 万枚の AI ファクトリーを受注（インド最大シングルクラスタ、最大約 $16 億、Phase 1 は 250MW）。裏側では The Information／Tom's Hardware が Rubin Ultra のメモリ縮小試作（192／256GB、HBM4 への後退）を伝え、NVIDIA は「計算・ネットワーク・メモリを横断最適化し、より多くの GPU を作る」と認めた。Pixel 11 の Tensor G6 は端末で Gemini を回し、騰訊は四半期 capex 528 億元で計算を買う。水曜の 800V と 38GW は消えていない。木曜の評価軸は <code>検収 MW × HBM が曲げる仕様 × 1 万枚の地理 × 端末 20W × 528 億元 × 8/26 −13d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HORIZON 1 検収</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">IREN×Microsoft 50MW 引き渡し<br>GB300 NVL72 が Exemplar を取った</div>
+          <div class="mt-4 text-sm text-zinc-400">公式 8/13。Horizon 1 は Childress キャンパスの先頭棟——IT 負荷 50MW、ダイレクト・トゥ・チップ液冷、2025 年 11 月発表の 5 年 $97 億クラウド契約の第一弾。NVIDIA が現地の GB300 NVL72 をテストし、Exemplar Cloud を付与。続く Horizon 2–4 も同年中、合計 200MW を Microsoft に載せる計画。会社目標は 2026 年 480MW／2027 年 1.2GW（グロス）。水曜の「800V で届ける」宣言の翌日に、<strong>実際に顧客が受け入れた MW</strong> がテープに載った。株は朝方 +6% 前後。次の検査項目は売上開始、稼働率、capex/MW、Horizons 2–4 のカレンダー——検収はゴールではなく、融資 OS が現金に変わる最初の領収書だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>IREN 公式 PR／SEC 8-K Horizon 1・Exemplar Cloud（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 RUBIN ULTRA × HBM</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">仕様書がメモリに折れる<br>192／256GB 試作と公式の「最適化」</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information／Tom's Hardware：NVIDIA は Rubin Ultra で GTC 当時の 1TB HBM4E・16 スタックから後退した試作を回している——192GB、256GB、スタック数減、そして HBM4E ではなく HBM4。HBM4E のカスタムベースダイが供給を縛り、Samsung／SK hynix／Micron の HBM は 2027 まで売り切れ、SK 社長は 2027 を「最悪の年」、逼迫は 2030 まで、と既に言っている。NVIDIA 公式コメントは否定ではなく再定義——<strong>「計算・ネットワーク・メモリを横断最適化し、より多くの GPU を作り、より多くの AI システムをデプロイする」</strong>。X では Aletheia 経由で「HBM4 ではなく 8-Hi／12-Hi HBM4E、Kyber は未キャンセル、4 ダイは OSAT 縫合で最大 768GB」も循環するが、768GB／縫合の細部は独立裏取りがまだ薄い。確かなのは、メモリ不足が価格話から<strong>仕様そのものを書き換える段階</strong>に入ったことだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>The Information／Tom's Hardware・NVIDIA 公式コメント（8/12–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#03 CHENNAI 1 万枚</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">L&amp;T×Together AI<br>インド最大シングルクラスタ B300</div>
+          <div class="mt-4 text-sm text-zinc-400">Larsen &amp; Toubro が木曜、Vyoma.AI／LTN Compute 経由で Together AI 向け NVIDIA B300 AI ファクトリーを受注。容量は <strong>B300 1 万枚</strong>、インド最大の単一クラスタ。金額は社内区分で「メガ受注」（1〜1.5 万クローレ、最大約 $16 億）。立地はチェンナイの GW 級キャンパス、Phase 1 は 250MW、受電準備 150MVA。用途は大規模推論・微調整・学習。テキサスの 50MW 検収と南インドの 1 万枚発注が同じ木曜日に並ぶ——<strong>$500B の融資物語が、緯度の違う現場で同時にコンクリートになる</strong>。完了日は未公表。発注書は資産、通電は別のプロジェクトだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-asia"></i>
+            <span>L&amp;T／Vyoma.AI×Together AI B300 1 万枚（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 TENSOR G6 端末</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Pixel 11 は店頭の推論ノード<br>効率 +20%、閲覧 +25%</div>
+          <div class="mt-4 text-sm text-zinc-400">Made by Google の翌朝もハードウェアの話は続く。Pixel 11／Pro／Pro XL／Pro Fold の Tensor G6 は効率 +20%、閲覧 +25%。Gemini Nano を低遅延で端末実行し、Rambler・SL2T・カメラ直結検索を載せる。フル Gemini はクラウド、短いタスクは掌の上——<strong>800V バスが要らない 5 秒 agent</strong> が量産棚に並んだ。Honor の Robot Phone（Qwen 共開発 Agentic OS、8/18 発売）も同じ週の端末列。DC が MW と HBM で戦争している横で、消費者 SoC は「全部をラックに送らない」分流を店頭で始めている。NPU の TOPS 自慢より、オフラインで何秒の仕事が終わるかが木曜の測り方だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>Pixel 11／Tensor G6・Gemini Nano 端末推論（8/12–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#05 騰訊 528 億元</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">中国ビッグテックの計算発注書<br>QoQ +65%、FCF は赤字転落</div>
+          <div class="mt-4 text-sm text-zinc-400">騰訊 Q2 の capex は 528 億元（約 $78 億）——前四半期比 +65%、前年同期比 +176%。フリーキャッシュフローは −138 億元。馬化騰は「計算調達を大幅に積み、利用を売上に変える」と書いた。Hunyuan／WorkBuddy／Weixin AI と外部クラウド需要が名目。H2 は中国設計 ASIC の供給増を前提にした一段の積み上げ観測が残る。DeepSeek が木曜にハーネスと峰谷単価を出した隣で、騰訊は<strong>請求書の側から同じ推論戦争に参加している</strong>。米側の $500B 融資 OS と対になる、人民元建ての実弾だ。株は今年累計で重い——市場は「買う量」より「回収年」を聞いている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-yuan-sign"></i>
+            <span>Tencent Q2 capex 528 億元・計算調達（8/12–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#06 800V / 38GW D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">配電標準は消えない<br>検収 MW が最初の答え合わせ</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の骨格——NVIDIA×Google×Microsoft の 800V DC（OCP、80 社超、MGX H2 2026、2MW/行 2027）、Morgan Stanley 系の 2027 CoWoS 含意チップ電力約 38GW、$500B 第三者資本 D+3——は木曜も床。Horizon 1 のダイレクト液冷 50MW は、その床の上に載った最初の「顧客が YES と言った行」。38GW は供給チェーンの発熱上限ストレスであり、接続済み消費ではない。800V が効くのは変換ロス、液冷が効くのはラック密度、融資が効くのは CAPEX の置き場所。三点が揃っても HBM が半分ならラックは半分——だから #02 の仕様折れは、配電見出しの訂正ではなく<strong>同じ方程式の別変数</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>800V DC・38GW・$500B D+3 × Horizon 1 検収（8/11–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 軽い実行層 D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok 4.6 と Lightning<br>トークンが増えても HBM は増えない</div>
+          <div class="mt-4 text-sm text-zinc-400">01／03 カテゴリと同日：Grok 4.6 が長期 agent としてカタログに着地（AA 61、$2/$6 据え置き）。同じ週の Nemotron 3.5 Lightning（30B MoE・約 3B アクティブ）と NeMo Switchyard は、MW 級ラックの外で実行トークンを稼ぐ分流。ハードウェア読みは単純で辛い——<strong>旗艦が賢くなるほど推論回数は増え、HBM の millibar は増えない</strong>。だから NVIDIA は Rubin Ultra のメモリを削って枚数を守り、同時に小さい MoE を RTX／DGX に載せる。AMD の Gorgon Halo（最大 192GB 統合メモリ）も同じ週のローカル列だが、DRAM 契約価格は 15 年ぶりの高値圏。端末と一枚カードは逃げ道であり、無料の逃げ道ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-feather"></i>
+            <span>Grok 4.6 推論需要 × Nemotron Lightning D+2（8/11–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 8/26 −13d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NVIDIA 本丸まで 13 日<br>聴くべきは検収・HBM・接続</div>
+          <div class="mt-4 text-sm text-zinc-400">8/26 決算（FY2027 Q2、時間外）まで 13 日。月曜 TSMC、火曜 $500B と DRAM、水曜 800V と 38GW と Rubin 製造、木曜は <strong>Horizon 1 検収、Rubin Ultra 仕様のメモリ折れ、チェンナイ 1 万枚、騰訊 528 億元、Pixel の端末分流</strong>。Nebius は水曜時点で Vera Rubin NVL72 の初号機を受領・テスト中、と既に言っている。聴く言語はピーク FLOPS ではなく、融資の案件化、HBM/DRAM LTA 充足、Rubin Q4 出荷、800V/MGX 実出荷、検収 MW、メモリ構成の公式化。Huang の「$1T 累計」更新より、何 GB が載る GPU を何枚、何 V で、何 MW 繋いだかの方が 13 日後の本文になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 13 日（8/13）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月13日、AI Hardware の中心は「<strong>資本とボルトの次に、顧客が受け取った MW と、メモリが曲げた仕様書が同時に現れた</strong>」ことだ。火曜の $500B、水曜の 800V DC と 38GW 試算は消えていない。木曜が足したのは、IREN が Childress の Horizon 1 を Microsoft に引き渡し、NVIDIA が GB300 NVL72 を Exemplar Cloud として認めたという、融資スライドには載らない種類の事実である。50MW は 38GW の隣では小さい。だが「繋がった」「冷えた」「顧客が検収した」の三点を満たす行は、今週初めてテープに出た。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ木曜日、The Information 系の Rubin Ultra 報道はより辛い。GTC の 1TB HBM4E トレイは、供給が許す範囲の GPU に書き換わりつつある。192GB や 256GB、HBM4 への後退は「ダウングレード」に見えるが、NVIDIA の公式文はそれを枚数戦略として再定義した——メモリを削って、作れるチップを増やす。顧客の一人は「1 枚あたりの GB より、NVIDIA との長期関係」とまで言った、と報じられる。X の Aletheia リーク（8-Hi／12-Hi HBM4E、Kyber 存続、OSAT 縫合 4 ダイ、最大 768GB）は方向としては同じだが、数字の独立再現はまだ。測るべきはリークの太字ではなく、<strong>2027 の HBM が何ハイで、何世代で、何枚の GPU を成立させるか</strong>だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            地理は広がっている。テキサスの 50MW 検収の横で、L&amp;T はチェンナイに B300 1 万枚を置く。Together AI のクラウドを、GW 級キャンパスの Phase 1（250MW）に載せる発注であり、完了日はまだ無い。騰訊の 528 億元は、同じ推論戦争を人民元で買っている証拠だ。Pixel 11 の Tensor G6 と Lightning の 3B アクティブは、その戦争の外側——掌と一枚カード——へトークンを逃がす。Grok 4.6 が長期 agent としてカタログに入った日に、ハードウェアは「もっとトークンを」と「メモリが足りない」を同時に言っている。08-12 が配電の水曜なら、08-13 は「<strong>検収 50MW × HBM 仕様折れ × チェンナイ 1 万枚 × 528 億元 × 端末 20W × $500B/800V/38GW の床 × 8/26 −13d が同じ画面に並んだ木曜</strong>」。無料なのは Exemplar の称号で、有料なのは次の 150MW と、載る HBM のハイ数である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">木曜の名言候補：「GPU を買う前に DRAM を買え」はもう古い。「GPU の仕様書を書く前に、2027 の HBM の残り席を数えろ。席が無ければ、1TB の幻を 192GB の実物に書き換えて、その分枚数を増やせ。」——NVIDIA がそれを公式に『最適化』と呼んだ日に、IREN は Microsoft に 50MW を渡して Exemplar をもらった。片方はカタログがメモリに折れて、片方はコンクリートが顧客に折れていない。どっちも 2026 年らしい。チェンナイの 1 万枚は発注書、Horizon 1 は検収書。混同するな。Pixel は 20W で Gemini の短い仕事を家でやって、『じゃあ DC は何のため？』と聞いてくる。答えは長い agent と学習で、その答えがまた HBM を食う。8/26 まで 13 日。祝うのは電圧の見出しじゃなく、何 MW が検収されて、何 GB が載って、何枚が船に乗るかだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Horizon 1 検収・Rubin Ultra の HBM 折れ・チェンナイ 1 万枚・528 億元・端末分流・800V/38GW 床・8/26——木曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月13日現在の AI Hardware 分野は、(1) IREN が Childress の Horizon 1（50MW IT・ダイレクト液冷・GB300 NVL72）を Microsoft に引き渡し、NVIDIA Exemplar Cloud を取得——5 年 $97 億の先頭、続き 3 棟は年内、目標 480MW（2026）／1.2GW（2027）、(2) The Information／Tom's が伝える Rubin Ultra の低容量試作（192／256GB、HBM4 後退）と NVIDIA 公式の「横断最適化で枚数を増やす」コメント——Aletheia の 768GB／OSAT 縫合は未確認、(3) L&amp;T／Vyoma.AI が Together AI 向け B300 1 万枚（インド最大、最大約 $16 億、チェンナイ Phase 1 250MW）を受注、(4) 騰訊 Q2 capex 528 億元（QoQ +65%、FCF −138 億元）の計算調達、(5) Pixel 11 Tensor G6（効率 +20%／閲覧 +25%）と Nemotron Lightning による端末・一枚カードへの推論分流、(6) 800V DC・38GW・$500B 融資 OS の D+1〜D+3 床、(7) Grok 4.6 着地が長期 agent のトークン需要を正式化する一方で HBM は 2027–28 満席、(8) 8/26 NVIDIA 決算まで 13 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>検収された MW、HBM 構成の公式化、地理を跨ぐ発注の通電、中国 capex の回収、端末 BOM、8/26 までの供給・配電・資本言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clipboard-check"></i>
+            <span>ネオクラウド／建設実行視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Exemplar は称号であって、経済性の証明ではない。Horizon 1 の価値は 50MW が顧客に受け入れられたことだ。次は売上開始、稼働率、残る 150MW のカレンダー、1.2GW までの資金と送電。発注書の 1 万枚と検収書の 50MW は、同じ木曜日でも違う成熟度だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>NVIDIA／ロードマップ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「メモリを削って枚数を守るのは、カタログの敗北ではなく供給関数の最適化だ。1TB の幻より 192GB の実出荷の方が、トークン単価を下げる。8/26 で語るべきは Rubin の太字 TB ではなく、何ハイの何世代を、何枚、いつ船に載せるかだ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／DRAM サプライ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「配電が水曜の見出しでも、現場の未充足はメモリのまま。HBM4E のカスタムベースダイがボトルネックなら、HBM4 への後退は合理的だ。インディアナの 2028 は正しい方向だが、2026–27 の LTA は閉じている。768GB のリークより、四半期のスタック出荷を見ろ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>foundry／パッケージ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「4 ダイをやめて 2 ダイに寄せ、足りなければ OSAT で縫合する——どれも CoWoS 枠を増やす話ではなく、枠の中で成立する形状を探す話だ。38GW は供給の含意であり、約束ではない。チェンナイの 1 万枚も、パッケージ月次が空いていなければカレンダーは伸びる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-mobile-screen"></i>
+            <span>エッジ／端末 SoC 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「DC が 50MW と 1TB の幻で戦争しているなら、5 秒タスクは Tensor G6 に置け。Lightning も同じ論理だ。ただし DRAM 契約価格は 15 年ぶりの高値で、192GB のローカル箱はもう『安い逃げ道』ではない。分流は戦略であって、無料の保険ではない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは Exemplar のロゴでも、$97 億の契約額でも、528 億元の見出しでもない。検収された MW、契約できる LTA、載る HBM の世代、動く電圧、端末に逃がせる仕事の切り方だ。8/26 までに欲しいのはピーク FLOPS の更新より、仕様がメモリに折れたあとの出荷カレンダーである。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-13 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: IREN 公式 PR／SEC 8-K（Horizon 1 検収・GB300 NVL72 Exemplar Cloud・$97 億・480MW/1.2GW、8/13）、The Information／Tom's Hardware Rubin Ultra 低容量試作＋NVIDIA 公式コメント（8/12–13）、L&amp;T／Vyoma.AI×Together AI B300 1 万枚（チェンナイ、最大約 $16 億、8/13）、Tencent Q2 capex 528 億元（8/12–13）、Pixel 11／Tensor G6、NVIDIA 800V DC・38GW・$500B D+3、Nemotron Lightning、Grok 4.6、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-13', 'color:#10b981');
+  </script>
+</body>
+</html>
