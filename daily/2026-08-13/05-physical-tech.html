@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Physical Tech &amp; Energy ダイジェスト | 2026-08-13 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">05</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Physical Tech &amp; Energy ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-13 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚙️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜——電子が領収書になった<br>Horizon 1 50MW 検収 × IEA 45GW 紙の炉 × Abbott が同じテナントにサインを求める</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月13日（木）。08-10 が「Amazon が自前 7.65GW ガスで time-to-power を買う月曜」、08-11 が「Batch Zero が数ヶ月監査文書になり Riot が 191 MW を $9.1B に値付けした火曜」、08-12 が「電圧が製品になり地理が価格になった水曜」なら、08-13 は<strong>顧客が 50MW の液冷電子に YES と書いた木曜</strong>だ。IREN は Childress（テキサス）の Horizon 1 を Microsoft に引き渡し、NVIDIA が GB300 NVL72 をテストして Exemplar Cloud を付けた。5 年 $97 億契約の先頭 50MW（IT 負荷・ダイレクト液冷）。同じ営業日、Abbott 州知事は「Microsoft はデータセンター基準に従う」と発表し、IEA の『Key Questions on Energy and AI』は SMR 条件付き offtake が <strong>25GW→45GW</strong>、オンサイトガスは 2030 年に 15–27GW、ただし信頼性には 30–70% の過大建設が要ると数える。フェニックスでは DC の電源障害が実況になり、チェンナイは Phase 1 250MW の発注書を出した。水曜の評価軸が電圧と地理なら、木曜は <code>検収 MW × IEA の紙の GW × 監査に署名したテナント × モンスーンの停電 × 8/20 −7d × 8/26 −13d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-cogs text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 HORIZON 1 検収</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">50MW が領収書になった<br>液冷は動き、テナントは YES と言った</div>
+          <div class="mt-4 text-sm text-zinc-400">公式 8/13。IREN は Childress キャンパスの Horizon 1——IT 負荷 50MW、ダイレクト・トゥ・チップ液冷——を Microsoft に引き渡し、受け入れられた。2025 年 11 月発表の 5 年 $97 億クラウド契約の第一弾。NVIDIA が現地の GB300 NVL72 をテストし、Exemplar Cloud を付与。現場は 3,000 人超。続く Horizon 2–4 も同年中、合計 200MW。会社目標は 2026 年 480MW／2027 年 1.2GW（グロス）。株は朝方 +10% 前後。04 が「検収されたラック」を数えるなら、05 は——<strong>すでに接続のあるキャンパスで、液冷が実物として通った</strong>——を物理層で読む。Riot の火曜は契約の値札、IREN の木曜は検収の領収書。紙の 474GW が電子にならない州で、50MW の YES は希少資源だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>IREN 公式 PR／SEC 8-K Horizon 1・Exemplar Cloud（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 IEA 物理帳簿</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SMR offtake 25→45GW<br>ガスは 15–27GW、ただし 30–70% 過大建設</div>
+          <div class="mt-4 text-sm text-zinc-400">IEA『Key Questions on Energy and AI』が水曜から循環：DC 向け SMR の条件付き offtake は 2024 年末 25GW から<strong>今日 45GW</strong>。オンサイトガスは 2030 年に 15–27GW（大半が米）、ただし変動負荷に耐えるには需要比 30–70% の過大建設が要り、タービン逼迫下では「速い経路」とは限らない。衛星追跡では対象案件の約 5 分の 1 が整地・着工済み。2030 年の DC 内蓄電池は 20–25GW。DC 電力は 2025 年 485TWh→2030 年 950TWh、AI 特化は 2025 年だけで +50%。2027 年のラックピークは「世帯 65 軒分」、電力密度は 2020–25 で 11 倍・2027 までさらに 4 倍。ガスタービン受注は 2025 年に +70%。<strong>45GW の紙の炉と、50MW の検収は同じ木曜日の違う単位</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-book"></i>
+            <span>IEA Key Questions on Energy and AI（8/12–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#03 ABBOTT × MSFT 同日</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">50MW を受け取ったテナントが<br>同じ日に州の基準へ署名する</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜のティッカー：Abbott 州知事は「Microsoft はデータセンター基準に従う」と発表。QTS（8/6）・Meta（8/10）に続く企業単位の宣誓で、Batch Zero 監査 D+6 の政治レイヤがまた一枚厚くなる。皮肉は設計されている——<strong>Horizon 1 を検収した同じテナントが、同じ営業日に「紙の GW を電子に変える条件」へサインする</strong>。474GW のキュー（ピーク需要の数倍、約 90% が DC 系）は依然電子ではない。OpenAI・Google・Meta・Oracle も既に「基準に乗る」と表明済み、と循環する。検収はゴールではなく、監査州で生きるための入場券だ。次の公式の山は 8/20 PUCT（あと 7 日）。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i>
+            <span>Abbott「MSFT は基準に従う」ティッカー（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 PHOENIX 停電</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Uptime の「障害首位は電力」が<br>モンスーン季節の実況になった</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜午後、Namecheap がフェニックス拠点の電源障害を公式に認め、ドメイン／ホスティングが一時停止。現地ではモンスーン季節の嵐が原因として循環する。水曜 05 が引いた Uptime 2026——障害原因の首位は依然 power、AI ブームで 5 年続いた障害率改善が終わるか——が、24 時間後に天気になった。08-12 の「Texas 凍結で capex が Arizona へ逃げる」地理プレミアムは消えないが、逃げ先にも雷がある。<strong>通電可能州はプレミアムを取る。ただし通電は「天候と変圧器とバックアップ」の関数</strong>だ。800V も液冷も、サイトの電源が落ちればカタログの行に戻る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud-bolt"></i>
+            <span>Namecheap Phoenix DC 電源障害（X 8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#05 CHENNAI 250MW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">地理プレミアムが東へ伸びる<br>発注書 1 万枚、通電は別プロジェクト</div>
+          <div class="mt-4 text-sm text-zinc-400">L&amp;T が Vyoma.AI／LTN Compute 経由で Together AI 向け NVIDIA B300 AI ファクトリーを受注。容量は <strong>B300 1 万枚</strong>（インド最大シングルクラスタ）、社内区分「メガ受注」（1〜1.5 万クローレ、最大約 $16 億）。立地はチェンナイの GW 級キャンパス、Phase 1 は 250MW、受電準備 150MVA。04 がチップ枚数を数えるなら、05 は——Texas の監査キューが凍る同じ木曜日に、<strong>南インドの power-ready キャンパスが発注書を受け取った</strong>——を立地板で読む。完了日は未公表。発注書は資産、通電は別のプロジェクト。地理が価格になる命題は、アリゾナやテネシーだけの話ではなくなった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-asia"></i>
+            <span>L&amp;T／Vyoma.AI×Together AI チェンナイ 250MW（8/13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#06 液冷が製品になる</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">800V の翌日、冷却が領収書を書いた<br>nVent は Blaine 2 を足す</div>
+          <div class="mt-4 text-sm text-zinc-400">水曜の 800V DC（NVIDIA×Google×Microsoft、OCP、80 社超）は消えていない。木曜がその上に載せた答え合わせは、Horizon 1 のダイレクト液冷 50MW が hyperscaler の検収を通ったことだ。並行して nVent（$NVT）の Q2 再読が X を回る——DC 売上 2026 年 $20 億超見通し、液冷の Blaine 工場は想定より早く立ち上がり、同規模の Blaine 2 を 2027 年前半に開く。液冷はまだ冷却全体の 10–15%。<strong>電圧がロスを削り、冷却が密度を許し、検収が融資を現金に変える</strong>。三点が揃っても HBM が半分ならラックは半分——04 の Rubin Ultra 仕様折れは、同じ方程式の別変数だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-droplet"></i>
+            <span>Horizon 1 液冷検収 × nVent Blaine 2・$2B DC（8/12–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 電力がより狭い瓶</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GPU は 6 ヶ月、電力は足りない<br>44GW 需要に対し系統は 25GW</div>
+          <div class="mt-4 text-sm text-zinc-400">Wistron CTO が Delta の Sustainable AI Summit で循環する読み：GPU リードタイムは約 6 ヶ月まで縮み、<strong>使える電力の方が AI DC の拘束条件</strong>になった。Delta 試算では米 DC が 2028 年までに追加 44GW を要し、系統の増分は 25GW——約 40% の不足。韓国・龍仁半導体クラスターは 15GW 需要に対し供給計画 9GW、南西クラスターと AI DC でさらに 24.7GW。サムスンは 2027 年に電力子会社を立ち上げ、調達から発電まで内製する観測。IEA も同じ週に「ボトルネックが強気シナリオの確率を下げている」と書く。チップ不足が緩むほど、変圧器・タービン・接続・水が前面に出る。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bottle-water"></i>
+            <span>Wistron／Delta 44GW vs 25GW・龍仁 15 vs 9（8/12–13）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 BATCH ZERO D+6</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8/20 まで7日、8/26 まで13日<br>50MW は通った。474GW はまだ紙</div>
+          <div class="mt-4 text-sm text-zinc-400">規制板の木曜更新：ERCOT／PUCT の Batch Zero とデータセンター監査は、公式に前倒しされていない。キュー推計 ~474GW と EIA の 2027 Texas 需要成長下方修正（14%→6%）は背景音のまま。IEA は「大半の DC は依然グリッド接続を好む」と書く——だから監査の長さは、オンサイトガス・燃料電池・既通電マイナー MW・州外逃げの相対価格を決める。<strong>手続きの長さそのものが商品価格</strong>になる構造は D+6 でも壊れない。Physical Tech は 8/20 PUCT（−7d）を待ち、04 は 8/26 NVIDIA（−13d）を待つ。08-12 が 8 日と 14 日なら、08-13 は 7 日と 13 日の二重カウントダウンだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Batch Zero D+6・PUCT 8/20 −7d × NVIDIA 8/26 −13d（8/13）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月13日、Physical Tech &amp; Energy の中心は「<strong>電子が領収書になった</strong>」ことだ。08-10 が Pecos 7.65GW で「接続を要らない発電所」を mainstream の表紙にし、08-11 が Batch Zero を数ヶ月監査文書にし Riot に $9.1B の値札を付け、08-12 が 800V と地理プレミアムで内側と外側を同時に見たなら、08-13 はその上に<strong>顧客の署名</strong>を置いた木曜だ。IREN の Horizon 1 は、すでに通電できるテキサスのキャンパスで、ダイレクト液冷 50MW を Microsoft に渡し、NVIDIA のテストを通した。Riot の火曜は「契約した」。IREN の木曜は「受け入れられた」。単位は同じ MW でも、市場が払うプレミアムは違う。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ 24 時間に IEA は別の単位を並べた。SMR の条件付き offtake 45GW、オンサイトガス 15–27GW（ただし 30–70% 過大建設）、DC 内蓄電池 20–25GW、2027 年ラック＝世帯 65 軒。45GW の紙の炉は 2030 年前後の話であり、50MW の検収は 2026 年 8 月 13 日の話だ。Abbott が同じテナントに「基準に従え」と言ったのは皮肉ではなく設計だ——監査州で 50MW を受け取る者は、474GW の紙キューを電子に変える手続きの当事者でもある。フェニックスの電源障害は、水曜の Uptime 警告を天気にした。チェンナイの 250MW 発注書は、地理プレミアムがアリゾナやテネシーだけの話ではないことを示した。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが重なるか。GPU リードタイムが約 6 ヶ月まで縮み、電力がより狭い瓶になったからだ。Delta の 44GW vs 25GW、龍仁の 15 vs 9、IEA の「ボトルネックが強気シナリオを削る」は、同じ命題の三つの方言だ。800V はロスを削り、液冷は密度を許し、既通電キャンパスはカレンダーを売り、SMR は 2030 年の物語を売り、オンサイトガスはタービン工場のスロットを食う。hyperscaler がユーティリティ機能を吸収し、マイナーが landlord になり、州知事がテナントに基準を書かせるとき、次の問いは変わらない。「誰が最も賢いモデルを持つか」ではなく「誰が 2026–28 に何 MW を、何ボルトで、何度の冷却水で、どの州で、どの契約年数で、何日で通電し、誰に検収させるか」。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">木曜だ。IREN は 50MW の領収書を出し、IEA は 45GW の紙の炉を数え、Abbott は同じテナントに「ルール守ってね」と言い、フェニックスは電源が落ちた。01 が Grok 4.6 の点数を数え、04 が検収ラックと HBM の折れを数え、05 は——あと 7 日の PUCT と、液冷が本当に通ったという地味な事実と、「すでに通電している部屋に顧客が署名した」ことを数える。約束は安く、電子は高い。検収はもっと高い。接続が凍った州では、領収書が次の CoWoS になる。それだけだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">「検収・紙の炉・署名したテナント」——木曜の物理層が固定した八つの座標</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月13日現在の Physical Tech &amp; Energy は、(1) IREN Horizon 1 の 50MW ダイレクト液冷が Microsoft に検収され、NVIDIA Exemplar Cloud が付いたこと、(2) IEA が SMR offtake 25→45GW・オンサイトガス 15–27GW（30–70% 過大建設）・DC 蓄電池 20–25GW・ラック＝世帯 65 軒を同じ帳簿に載せたこと、(3) Abbott が Horizon 1 のテナントである Microsoft にデータセンター基準への準拠を同日発表したこと、(4) フェニックスの DC 電源障害が Uptime「障害首位は電力」を実況にしたこと、(5) チェンナイ Phase 1 250MW／B300 1 万枚が地理プレミアムを南インドへ伸ばしたこと、(6) 800V D+2 の上に液冷検収と nVent Blaine 2 が載り、冷却が製品カタログになったこと、(7) GPU 6 ヶ月に対し米 DC 44GW vs 系統 25GW・龍仁 15 vs 9 で電力がより狭い瓶になったこと、(8) Batch Zero D+6 と 8/20 PUCT（−7d）× 8/26 NVIDIA（−13d）の二重カウントダウン、が同時に動いている。08-10 が「空白の上に発電所が建つ月曜」、08-11 が「空白が監査文書になり既通電に $9.1B が付く火曜」、08-12 が「電圧と地理が値段を決める水曜」なら、08-13 は<strong>検収された 50MW が、45GW の紙と 474GW のキューのあいだに置かれた木曜</strong>だ。2026年後半の勝負どころは、見出しの GW でもスローガンでもなく、検収 MW・監査通過・州をまたぐ立地・液冷と 800V の実出荷・発電セット／燃料電池納期・排出許可・マイナー MW 再契約・水戦略・通電日の統合スケジュールにある。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clipboard-check"></i>
+            <span>データセンター電力アーキテクト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Horizon 1 の本質は『50MW』という数字ではない。ダイレクト液冷が hyperscaler の検収を通ったことだ。キューが凍った世界では、同じ接続契約から引き出せる実効 IT 負荷が勝負——冷却が通る側が time-to-power を買う。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bitcoin-sign"></i>
+            <span>マイニング→AI インフラ転換</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Riot の火曜は契約の値札、IREN の木曜は検収の領収書。両方とも『すでに通電しているキャンパス』を frontier の家賃に書き換える実験だ。監査が長いほど、この領収書の相対価格は上がる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-landmark"></i>
+            <span>系統・規制／テキサス視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Abbott が Microsoft に基準準拠を言った日に、その Microsoft が 50MW を検収する。矛盾ではない。監査州で生きるテナントは、紙の 474GW を電子に変える手続きの当事者でもある。8/20 まではこの二重性が続く。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-book"></i>
+            <span>IEA／エネルギーシステム分析</span>
+          </div>
+          <p class="text-sm text-zinc-300">「45GW の SMR offtake は 2030 年の物語だ。15–27GW のオンサイトガスは、30–70% 過大建設とタービン逼迫を飲み込めば 2020 年代の物語になる。大半の DC はまだグリッドを好む。だから監査の長さが、代替経路の値段を決める。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-droplet"></i>
+            <span>液冷・配電／重電サプライチェーン</span>
+          </div>
+          <p class="text-sm text-zinc-300">「800V はロスを削る。液冷は密度を許す。nVent が Blaine 2 を足すのは、冷却がまだ 10–15% しか液でないからだ。フェニックスの停電は、その上流——サイトの電源——が落ちればカタログは紙に戻る、という注釈だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本・アジアエネルギー／製造戦略視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「米側木曜が示したのは、50MW 検収・IEA 45GW・Abbott×MSFT 同日・フェニックス停電・チェンナイ 250MW・液冷製品化・44 vs 25GW・8/20×8/26 だ。龍仁 15 vs 9 は同じ瓶の東アジア版。SiC/GaN・液冷・変圧器・BESS・銅で取れる一方、立地合意と系統データの遅さは同じボトルネック。技術・金融・time-to-power・排出許可・水・年産・社会的ライセンスの七点で設計しないと、ワットも fab も紙の上に残る。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 05. Physical Tech &amp; Energy • 2026-08-13 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: IREN Horizon 1／Microsoft 検収・NVIDIA Exemplar Cloud（8/13）、IEA Key Questions on Energy and AI（SMR 25→45GW・オンサイトガス 15–27GW・過大建設 30–70%・BESS 20–25GW）、Abbott「MSFT は基準に従う」（8/13）、Namecheap Phoenix DC 電源障害（8/13）、L&amp;T／Vyoma.AI×Together AI チェンナイ 250MW・B300 1 万枚（8/13）、nVent 液冷 Blaine 2・DC $2B、Wistron／Delta 44GW vs 25GW、ERCOT Batch Zero D+6・PUCT 8/20、NVIDIA 8/26、800V DC D+2、Riot $9.1B D+2、X投稿（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 05-physical-tech.html loaded for 2026-08-13', 'color:#10b981');
+  </script>
+</body>
+</html>
