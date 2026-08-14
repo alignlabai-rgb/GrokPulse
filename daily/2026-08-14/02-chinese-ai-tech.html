@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-08-14 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-14 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">金曜は「ポストトレがスコアボードを開いた日」——GLM-5.3 が Mythos に並び、<br>27B が今夜、Apple は北京で自前の脳を持つ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月14日（金）。木曜の Harness MIT・V4-Pro GA・峰谷表の余韻のまま、営業日の表紙は<strong>同じ 743B ベースのポストトレ刷新 × 中型 open の公式着地窓 × 外国 proprietary の初承認</strong>に切り替わった。@Zai_org は 05:17 UTC に <strong>GLM-5.3</strong> を撃った——ベースは 5.2 と同じ 743B、伸びは全部ポストトレーニング。CyberGym 84.5 は Mythos 5 の 83.8 と GPT-5.6 Sol の 83.6 をわずかに上回り、ExploitBench は 54.4 対 78.0 で負ける。重みは約 2 週間の安全審査後、敏感機能は trusted access。同じ金曜、@Alibaba_Qwen は「あと 2 時間」と <strong>Qwen3.8-27B</strong> の Hugging Face カードを指し、Reuters は <strong>Apple が阿里支援で中国向け独自 LLM を訓練し、北京が外国企業の proprietary モデルを承認した初事例</strong>と報じた。SMIC は売上初の $30 億超えと ASP +5.7% を出し、宇樹は月曜 STAR、Honor は火曜発売。08-14 は<strong>新パラメータの日ではなく、同じ土台を鍛えて閉じた防御旗艦に挑戦状を出し、中型を今夜に予約し、規制の壁の向こうで自前スタックを許された日</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#01 GLM-5.3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">GLM-5.3——743B は据え置き<br>伸びは全部ポストトレ</div>
+          <div class="mt-4 text-sm text-zinc-400">@Zai_org 公式（8/14 05:17 UTC、約 249 万表示）：Built to Code. Ready for Cyber Defense。ベースは 5.2 と同じ 743B。IndexShare／SAO／slime の上で環境とタスク種別と計算を足しただけ、と本人が書く。Terminal-Bench 3.0 は 4.6→28.3、DeepSWE v1.1 は 46.2→66.9、社内 Code Bench は +50%。TB 2.1 は 88.2——昨日の V4-Pro 87.9 を 0.3 点上回る数字を同じ週末に置いた。思考は low／high／max、disabled は廃止。Coding Plan と ZCode は即日、API と重みは段階公開。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>@Zai_org GLM-5.3 公式／Tech Blog（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#02 CYBERGYM 84.5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">見つける側で Mythos に並び、<br>チェーン側ではまだ負ける</div>
+          <div class="mt-4 text-sm text-zinc-400">CyberGym 84.5（5.2 は 77.2、Mythos 5 は 83.8、Sol は 83.6、V4-Pro は 83.3）。ExploitBench は 54.4——5.2 の 24.4 から倍以上だが、Mythos 78.0／Sol 76.5 には届かない。ExploitGym は 2h 105／6h 130 対 Mythos 181／247。Reuters も SCMP も「発見では並び、実攻撃では負ける」と一行に圧縮した。独立再現は重み後。X 上の「TB 首位」は 5.2 比の跳躍と混線しやすい——行を読め。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bug"></i>
+            <span>Z.ai 公式表・Reuters／SCMP（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 WEIGHTS T-14</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">重みは約 2 週間後——8/28 前後<br>2,436 件の開示台帳が先に開く</div>
+          <div class="mt-4 text-sm text-zinc-400">5.2 は数日で Hugging Face に落ちた。5.3 は「想定より速くサイバー能力が伸びた」ため安全審査と hardening を先に置く。敏感機能は verified 向け trusted access。cvd.z.ai の台帳は 269 プロジェクトで 2,436 件、うち Critical/High 1,097、公開 53、禁輸 2,383。最古は 1981 年、平均潜伏 26.6 年。一度落ちた重みはスクリーニングを連れて歩かない——カタログに載ったのは API。開く日はウォッチリスト。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>Z.ai 安全審査・CVD Ledger（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 27B 今夜</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Qwen3.8-27B——公式「あと 2 時間」<br>中型 open の金曜着地窓</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Qwen（8/14 13:08 UTC、約 4.5 万表示）：「Less than 2 hours to say hi」。Hugging Face カードは 8/14 を Expected に固定し、待機は 7,000 超。火曜「今週」、水曜 ModelScope「金曜」、木曜カード先行——公式が時刻を切ったのが金曜午後。16GB 級・単一 GPU 物語は不変。カードが出ても clone と harness 通過まで本番 YAML に載せない。旗艦 Max は D+12 で weights 未着のまま——中型が今夜、旗艦はホストで点を稼ぐ二重時計は鳴り続ける。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>@Alibaba_Qwen 27B カウントダウン（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#05 APPLE × 阿里</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Apple が中国向け独自 LLM を訓練<br>北京が外国 proprietary を初承認</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters 独占（3 筋）。従来は第三者中国モデル依存だった方針からの転換。数ヶ月内に Apple Intelligence を中国投入。7 月 CAC 登録済み、Qwen を iPhone／iPad／Mac／Vision Pro に組み込む枠に自前モデルが乗る。Mac 向け Qwen 接続ガイドは先週公開され、説明なく削除。役割分担は金曜時点で未確定。Huawei が閉じた自前スタックで先行する市場で、Apple は「自前＋阿里」の二層を選んだ——規制の壁の向こうで脳の所有権を取りに行った、というのが報道の読み。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-apple-alt"></i>
+            <span>Reuters Exclusive Apple×Alibaba（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#06 HARNESS D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Harness 翌日——SCMP が「pivot」と書き、<br>Novita が 0813 をホストした</div>
+          <div class="mt-4 text-sm text-zinc-400">SCMP（8/14）：Harness はモデル屋から自律エージェントの足場屋への戦略転換、と整理。Novita は V4-Pro-0813 を本番 agent 向けに載せ、Responses API・1M 文脈・Anthropic 互換を並べた。現場は replay と自己 kill の報告が混在——star 数は進捗ではない、は木曜のまま。HF カードがまだ「preview」のままなのも注意。峰谷はあさって 8/16 16:00 UTC。Zhipu 株が値上げ観測で約 +5% した金曜に、DeepSeek は実行層の消化を続けた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>SCMP Harness／Novita 0813（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#07 SMIC 値上げ</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SMIC——売上初の $30 億超え<br>ASP +5.7%、稼働 93.7%</div>
+          <div class="mt-4 text-sm text-zinc-400">Reuters（決算コール消化）：Q2 売上 $30 億超が初、純利益 $4.792 億（約 3 倍）。ウエハ出荷 290 万枚（+14%）、平均単価 +5.7%。月産 110 万枚、稼働 93.7%。中国売上 90%、米 8%。7nm ロジックを量産できる国内唯一のファウンドリ、と整理される。趙海軍は「業界トップとの価格差はまだ大きい」と Q3 も値上げを予告。H1 設備投資 $34 億。GLM がスコアを開き、DeepSeek が単価を上げる金曜に、基盤層はすでに値札を書き換えている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Reuters SMIC Q2・値上げ（8/13–14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 峰谷 T-2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">DeepSeek 新単価まで 48 時間<br>「異常な安さ」ブランドの最終営業日</div>
+          <div class="mt-4 text-sm text-zinc-400">8/16 16:00 UTC 発効は動かない。オフピークでも Flash 出力は $0.28→$0.66、ピーク $1.32。Pro は $0.87→$1.98／$3.96。金曜の二次読みは、Zhipu 株の +5% が「価格戦争の床が見えた」と解釈したこと。GLM Coding Plan が相対的に香る、という並走は木曜から継続。現場はタスクを割る：要約・客服は Flash、長鎖 agent だけ Pro／5.3。allowlist と代替ホストは外すな。原価物語は戦略メモ。YAML に書くのは 8/16 の数字だけ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tags"></i>
+            <span>DeepSeek 峰谷 T-2／Zhipu 株反応（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 UNITREE T-3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-17</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">宇樹 STAR——月曜の鐘まで 3 日<br>DeepSeek 枠は身体のアンカーのまま</div>
+          <div class="mt-4 text-sm text-zinc-400">8/17 上場まで 3 営業日。個人申込約 5,526 倍、$9B 級、DeepSeek 1.41 億元・3 年ロック・モデル共開発は木曜の数字のまま。金曜は GLM と 27B と Apple が表紙を奪ったので、資本列は相対的に静か——だがカレンダーは動かない。LingBot VLA が操作系の open を足し、Honor が端末 agent を足す同じ週に、四足 70% 物語は月曜に資本市場イベントになる。ルーターには載せない。embodied 調達メモだけ書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dog"></i>
+            <span>Unitree STAR IPO T-3・DeepSeek 枠（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#10 HONOR 8/18</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Honor Robot Phone——発売 4 日前<br>Qwen 共開発の Agentic OS が残件</div>
+          <div class="mt-4 text-sm text-zinc-400">8/12 広州発表、売価 9,999 元、8/18 発売。4 自由度チタン雲台＋Snapdragon 8 Elite Gen 5。本丸は YOYO Pro と Agentic OS——Honor と阿里 Qwen が端末向けに共最適化し、知覚→計画→推論→実行→フィードバックを OS 層で回す、という主張。同じ金曜に Apple が「自前＋阿里」を選んだ報道が乗る。オンデバイス AI の中国レースは、閉じた島（Huawei）と開いた共開発（Honor×Qwen）と、規制承認済みの外国自前（Apple）の三路線に割れた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>Honor Robot Phone × Qwen／8/18（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#11 スペイン洪水</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">OpenMed スペイン臨床 PII——<br>ポルトガル・トルコ・テルグの第四幕</div>
+          <div class="mt-4 text-sm text-zinc-400">@AiChinaNews 金曜窓：Modelers／Ascend 棚が OpenMed-PII-Spanish を十数本連射。BigMed-Large 560M MLX、BiomedELECTRA、ClinicDischarge 110M、ClinicalBGE 568M……パラメータとランタイムの接尾辞が「新製品」を演じる。スペイン語医療 de-id と GDPR は本物。独立ベンチも病院実測も無い。火曜ポルトガル、水曜トルコ、木曜テルグ、金曜スペイン——言語を変えて帯域を消費する週だった。アーキとデバイスを一つ選んで進め。本数は進捗ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire-extinguisher"></i>
+            <span>@AiChinaNews OpenMed Spanish 洪水（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#12 FOUR STRONG FRI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">K3 / Qwen / DeepSeek / GLM——<br>曲面は「湖上・中型今夜・実行層・サイバー」</div>
+          <div class="mt-4 text-sm text-zinc-400">長コンテキスト＋企業配布＝Kimi K3（Databricks 継続）。旗艦＋中型 open＝Qwen（27B 今夜・Max D+12・Honor／Apple 端末）。量産 agent＝DeepSeek（Harness D+1・峰谷 T-2・Flash レーン維持）。サイバー＋ポストトレ＝GLM-5.3（Coding Plan 即日・重み T-14）。パラメータ比較は見出し用。製品言語は<strong>ジョブ別曲面 × ハーネス所有権 × 時限単価 × ポストトレ速度 × 端末 OS × ファウンドリ値札</strong>。単一勝者を探す金曜ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-diagram-project"></i>
+            <span>中国四強・金曜再描画（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#13 EU DAY THIRTEEN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/2-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Article 50 執行 13 日目——<br>サイバー台帳も 27B も免除にならない</div>
+          <div class="mt-4 text-sm text-zinc-400">対話開示・合成物の機械可読マーク・ディープフェイク標識は、GLM-5.3 の Expert／Coding 面にも 27B のローカル配布にも Apple の中国 Intelligence にも Harness の Trajectory にも請求書の隣。€15M または全世界売上 3%。オープンソースだから、安全審査中だから、CAC 承認済みだから、という免除条項は無い。現場 YAML は<strong>法域フラグ × 合成マーク × ホスト × キャッシュ列 × 8/16 峰谷 × 5.3 trusted access × MIT／Apache 条項</strong>。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>EU AI Act Article 50 13日目（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-300 text-xs font-mono tracking-[1.5px]">#14 ROUTER FRI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">5.3 評価 × 27B clone × 8/16 単価<br>金曜 YAML の三語更新</div>
+          <div class="mt-4 text-sm text-zinc-400">現場メモ：GLM-5.3 は Coding Plan／ZCode で AB、thinking disabled は落とす、重みは 8/28 前後ウォッチ。CyberGym 行は祝わず ExploitBench 行を読め。27B は公式着地後に clone＋3.6 ベースライン維持。Max は Legal／Image 継続、weights 待ち。Harness はサンドボックス評価継続。8/16 峰谷をコストモデルに書く。SMIC 値上げは調達メモ。Honor は 8/18 観測、宇樹は 8/17 調達メモ。OpenMed は 1 本だけ。EU は 13 日目。star 数も「TB 首位」も進捗ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>ルーター YAML・金曜実務（8/14）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月14日の Chinese AI &amp; Tech は、<strong>「木曜の実行層開戦」が「金曜のポストトレ開戦」に引き継がれた日</strong>だった。Z.ai は朝に GLM-5.3 を出し、同じ 743B を土台にしたまま環境とタスクと計算だけを足して、閉じた防御旗艦の発見ベンチに並んだ。Qwen は午後に 27B の時刻を切り、Reuters は Apple が阿里支援で中国向け独自 LLM を訓練したと書いた。三本同時は偶然ではない。中国ラボの競争軸は、もう「何兆パラメータか」ではなく、<strong>同じ土台をどれだけ速く鍛え直せるか</strong>に移っている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            数字の側は派手で、行によって意味が違う。CyberGym 84.5 は Mythos 5 の 83.8 を 0.7 点上回る。Terminal-Bench 3.0 の 4.6→28.3 は長ホライズンの跳躍。DeepSWE 66.9 は K3 の 67.5 の隣。だが ExploitBench 54.4 対 78.0、ExploitGym 105 対 181 は、発見と実攻撃のあいだにまだ崖があることを本人の表が示している。GDPval-AA v2 の 1769 は Artificial Analysis が走らせた独立行で、金曜時点では自称表より重い。重みは約 2 週間後。5.2 が数日で落ちたのに対し、5.3 は「想定より速くサイバーが伸びた」と書いて審査を挟む——開源ブランドと vetting のあいだに、初めて明示的な時間差を置いた。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            請求書と基盤の側も、同じ金曜日に動いた。DeepSeek の峰谷はあさって。Zhipu 株が値上げ観測で約 +5% したのは、「価格戦争の床が見えた」と市場が読んだ証拠だ。SMIC は売上初の $30 億超え、ASP +5.7%、稼働 93.7%、Q3 も値上げ。7nm を量産できる国内唯一のファウンドリが、AI 需要を理由に値札を上げる。モデル屋が単価を上げ、ファウンドリがウエハを上げる——「まだ安い」は正しく、「まだあの安さ」は両側から終わりつつある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同じ金曜日に並ぶのか。中国ラボの並列装置は、一発の旗艦ではなく、<strong>ポストトレの速度 × 中型 open の週次コミット × 公式ハーネスの所有権 × 時限付き単価 × 端末 OS の共開発 × 外国 proprietary の規制承認 × ファウンドリ値札 × embodied の資本イベント × プライバシー NLP のフォーマット増殖 × EU ラベル義務</strong>を同時に回すパイプラインになったからだ。Qwen は 27B を今夜に予約し、Max は D+12 で weights を出さずホストで点を稼ぐ。Honor は火曜に Qwen を端末の王にし、Apple は同じ阿里を使って自前の脳を持つ。宇樹は月曜の鐘を待つ。08-14 の教訓は——<strong>中国 AI の金曜は新パラメータの日ではなく、同じ土台を鍛えて閉じた旗艦に挑戦状を出し、中型を今夜に予約し、規制の壁の向こうで自前スタックを許され、11 本のスペイン壁紙の隣でファウンドリ値上げを拾う日</strong>であり、検査担当を不要にはしない、という並列タスク管理だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">火曜「27B は今週」。水曜「27B は金曜、宇樹が $9B」。木曜「Harness が MIT、Pro が GA、単価は峰谷、27B は明日」。金曜「同じ 743B で Mythos に並んだ、27B はあと 2 時間、Apple は北京で自前の脳」——中国 AI 界隈の（ポストトレと中型カウントダウンと規制承認が同じ日に燃える）健全な週末入りだと思う（笑）。CyberGym の 0.7 点は祝辞、ExploitBench の 23 点差は宿題。star 数は進捗じゃない。clone してから祝い、単価は 8/16 に書き換えてから請求し、IPO 熱は embodied 調達メモにだけ書いてルーターには書くな。そのループは、Entity List でも 743B でも CAC 承認でも AI Act でも止まらない。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">5.3・27B 今夜・Apple×阿里・峰谷 T-2——08-14 の四点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月14日現在の Chinese AI &amp; Tech は、(1) GLM-5.3 が同じ 743B ベースのポストトレだけで CyberGym 84.5・TB 3.0 28.3 を出し、発見では Mythos 5 に並び攻撃チェーンでは負け、重みは約 2 週間後の安全審査後としたこと、(2) Qwen3.8-27B が公式「あと 2 時間」の金曜着地窓に入り、Max は D+12 で weights 未着のままホストで点を稼いでいること、(3) Reuters が Apple の中国向け独自 LLM（阿里支援・CAC 承認済み proprietary の外国初）を報じ、Honor 8/18・Huawei 閉じた島と合わせて端末 AI が三路線になったこと、(4) DeepSeek 峰谷 T-2 と SMIC の ASP +5.7%／売上 $30 億超が「異常な安さ」の両側（API とウエハ）を同時に切り、宇樹 T-3・OpenMed スペイン洪水・EU Article 50 13日目が並んだこと、で整理できる。モデルギャップは薄れ、ポストトレ速度とハーネス所有権と時限単価と配布経路とチップ島実務と端末 OS と規制承認と資本イベントと法域ラベルのギャップが残る——それが 08-14 の冷静な読みだ。現場の焦点は 5.3 評価、27B clone、8/16 コストモデル、Article 50／jurisdiction、ルーター YAML 更新である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は 5.3 と 27B 今夜と Apple×阿里と峰谷 T-2 で燃えてる。チケットは Coding Plan の AB、thinking disabled の廃止、8/16 のコストモデル書き換え、27B clone 予約。CyberGym の 0.7 点は読まない——ExploitBench と混雑ダッシュボードと法域フラグを読む。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「コーディング原価はキャッシュ命中率と、8/16 以降は UTC 時刻。5.3 の TB 3.0 28.3 は測ってから。Harness は昨日の宿題のまま——安定しないなら今の Codex／既存ハーネスを外さない。27B は clone して 3.6 ベースラインと比較。スペイン 12 連発は開かない。重み T-14 はチケットに日付だけ書け。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>エンタープライズ AI 調達</span>
+          </div>
+          <p class="text-sm text-zinc-300">「K3 の Databricks は RFP の三択（自前 GPU／API／ゲートウェイ）を正式化したまま。5.3 は Coding Plan の即日レーンとして再評価トリガーだが、重みなし本番列はまだ早い。DeepSeek の峰谷は『最安固定』前提の見積を壊す——オフピーク条項を契約に足せ。Apple×阿里は端末の話で、VPC 契約とは列が違う。SMIC 値上げは国内ファウンドリ調達メモ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>国内シリコン／Ascend 観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日の本丸はポストトレと中型と規制承認であって、棚ではない。スペイン 12 連発は『棚が埋まった』信号。SMIC の ASP +5.7% と稼働 93.7% は、H2 量産物語より先に値札が動いた事実。独立精度と推論経済は弱点のまま——だから 5.3 の本番フォーマットと 27B の単一 GPU 評価の方が壁紙本数より戦略的。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gavel"></i>
+            <span>EU／US コンプライアンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 の 13 日目。5.3 のサイバー台帳も 27B のローカル配布も Apple の中国 Intelligence も、免除条項にならない。チャット開示、合成マーク、ディープフェイク標識。trusted access だから安全、ではない—— vetting と透明義務は別紙。医療 PII モデル洪水は de-id の必要性を思い出させる。帯域の使い方は別問題。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「GLM が同じ土台で Mythos に並び、Qwen が 27B を今夜に切り、DeepSeek が実行層と峰谷を消化し、Apple が阿里で自前の脳を持ち、SMIC がウエハを上げ、宇樹が月曜を待つ——金曜は外交ではなく、ポストトレ速度・中型 open・時限単価・端末三路線・ファウンドリ値札の五重奏だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List でも 743B でも CAC でも AI Act でも STAR 上場でも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-08-14 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @Zai_org GLM-5.3 発表（8/14 05:17 UTC、約 249 万表示）／z.ai/blog/glm-5.3（743B 同一ベース・ポストトレ、CyberGym 84.5・TB 3.0 28.3・DeepSWE 66.9・ExploitBench 54.4・重み約 2 週間後・CVD Ledger 2,436 件）／Reuters・SCMP GLM-5.3（8/14）、@Alibaba_Qwen Qwen3.8-27B「あと 2 時間」（8/14 13:08 UTC）／Hugging Face Qwen/Qwen3.8-27B カード、Reuters Exclusive Apple×Alibaba 中国向け独自 LLM（8/14）、SCMP DeepSeek Harness pivot／Novita V4-Pro-0813（8/14）、DeepSeek 峰谷料金 8/16 16:00 UTC（T-2）、Reuters SMIC Q2 売上 $30 億超・ASP +5.7%・稼働 93.7%・Q3 値上げ（8/13–14）、@AiChinaNews OpenMed Spanish PII 洪水（8/14）、Honor Robot Phone 8/18・YOYO Pro／Agentic OS × 阿里 Qwen、宇樹 Unitree STAR IPO 8/17 T-3・申込約 5,526 倍・DeepSeek 戦略枠、ByteDance AI データ＆安全部門（8/12–14 消化）、Qwen3.8-Max D+12 weights 未着、木曜持ち越し Harness v0.1／V4-Pro GA／LingBot VLA、EU AI Act Article 50 13日目（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-08-14', 'color:#10b981');
+  </script>
+</body>
+</html>
