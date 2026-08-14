@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-08-14 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-14 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🔐</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">金曜——承認ボタンが既定から消え、<br>最大の coding agent 箱がラボの製品になった</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月14日（金）。08-13 が「実行層そのものが開源製品になった木曜」なら、08-14 は<strong>承認プロンプトが既定から消え、最大の IDE 箱が SpaceX の製品になった金曜</strong>だ。Anthropic は予告どおり Pro／Max／Team の新規 Claude Code セッションを auto 既定にした。分類器 89% vs 人間 13.6%。同じ午後、@cursor_ai は「Cursor is now part of @SpaceX」とクローズを宣言した——Grok Build／Bot／API／Cursor が同じ屋根の下。DeepSeek Harness は翌朝 6.3 万 star、GLM-5.3 は同じ 743B をポストトレしただけで TB 3.0 を 4.6→28.3 にした。金曜の戦場はフロンティア点数ではない。<strong>誰がクリックを分類器に渡し、誰が箱を所有し、誰が安い実行層を差し替えるか</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#01 CLAUDE AUTO DAY 0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code auto が既定になった<br>「許可しますか？」が消えた金曜</div>
+          <div class="mt-4 text-sm text-zinc-400">8/7 予告どおり発動。ピン留めは維持、未設定は in-product 通知のあと auto。Enterprise／API／Bedrock／Google Agent Platform／Foundry は当面 opt-in——来月既定化を予告。分類器オーバーヘッドは Pro／Max／Team で課金停止。連続 3 回ブロック、またはセッション 20 回で手動承認へフォールバック。Adobe／Nuro／Gusto／Garner Health はすでに本番既定。X 実務：Shift+Tab を知らない席から説明責任だけが増える。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-magic"></i>
+            <span>Anthropic 公式・Claude Code（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#02 CLASSIFIER = POLICY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">人間 13.6%／分類器 89%<br>承認プロンプトは監督ではなかった</div>
+          <div class="mt-4 text-sm text-zinc-400">1,053 人の有料テスター。auto は人間が通した 800 件を止め、人間が auto を止めたのは 6 件。50 プロンプト後に人間は約 5%。本番フラグ済みでは意図せぬ深刻害が手動 6.3%／auto 2.4%。Trajectory Labs の間接 injection 720 試行は Claude auto で 0%、Sol Codex Auto-review は 5.83%。ユーザーは許可プロンプトの 97% を承認する。hard deny・git 先公開判定・injection スキャンは残る——が、分類器は単一障害点だ。スクリーンショットは監査証跡にならない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-shield"></i>
+            <span>Anthropic 研究・Trajectory Labs（8/7–14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#03 CURSOR × SPACEX</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Cursor が SpaceX にクローズ<br>Grok Build／Bot／IDE が同屋根</div>
+          <div class="mt-4 text-sm text-zinc-400">@cursor_ai 公式 13:02 UTC。「Cursor is now part of @SpaceX」。4 月のオプション（約 $60B 全株）が完了。公式ブログは Grok Bot を「real work を渡す teammate」と呼び、4.6 を共同出荷の初期成果と書く。X 実務読み：Claude Code／Codex／Grok+Cursor の三入口が揃った。調達の問いが変わる——モデル名ではなく、データがどのラボの箱に残るか。サブスクは今夜止まらない。契約の出口条項とモデル差し替え一行は、金曜中に開け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-rocket"></i>
+            <span>@cursor_ai／cursor.com/blog/joining-spacex（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 BUILDS + FIRETIGER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">雲の agent は 3 倍速で起き、<br>本番まで追いかける手を買った</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜：Builds——バックグラウンドで温めた開発環境の複製。社内 boot 10 倍、TTFT 3 倍。Faire／Headway／Descript は起動が分→秒。失敗ビルドは本番に出ず、最後の成功環境で走り続ける。8/17 既定化、追加課金なし。同じ木曜に Firetiger 買収——ロールアウト監視・回帰検知・インシデント調査を coding agent に返す。Cursor Origin（agent 時代の Git forge）と Change Monitors が続く絵。書く→出す→見る→直す、が一つの箱に閉じ始めた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Cursor Builds／Firetiger（8/13–14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 HARNESS D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">dsh 翌朝 6.3 万 star<br>「プラグインを自分で足すな」批判も同時</div>
+          <div class="mt-4 text-sm text-zinc-400">MIT preview。HN 首位（約 572 点）。50K→翌朝 63K+。v0.1.0-rc.6、53 ツール、Cordis、「Everything is a plugin」、append-only 軌跡。SCMP は「モデル屋から足場屋への pivot」。Novita は V4-Pro-0813 を本番 agent 向けにホスト。awesome-dsh-plugin が回り始め、X 実務は「ユーザーが一番嫌うのは自分でプラグインを組むこと」。星は進捗ではない。壊しても死なないジョブで replay を見ろ。8/16 峰谷が箱の価格も変える。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>dsh 消化・SCMP／Novita（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#06 GLM-5.3 EXECUTE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">同じ 743B を鍛えて実行層へ<br>TB 3.0 は 4.6→28.3</div>
+          <div class="mt-4 text-sm text-zinc-400">Z.ai 公式。伸びは全部ポストトレ。DeepSWE 46.2→66.9、Agents' Last Exam CLI 23.8→28.5、社内 Code Bench +50%。TB 2.1 は 88.2——昨日の V4-Pro 87.9 の隣。難しい公開行では Sol／Fable にまだ負ける。ALE は Claude Code・max effort・最大 8 時間で計測、と本人。03 の論点は旗艦置換ではなく、<strong>harness の安い execute_model レーン</strong>。Coding Plan／ZCode は即日。重みは約 2 週間後。CyberGym 勝ちより ExploitBench 負けを先に読め。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-terminal"></i>
+            <span>Z.ai GLM-5.3／agent ベンチ（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#07 BOT + FLAGSHIP D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Grok Bot が「.env 以外触るな」事例を出し<br>旗艦と入口が同じ会社になった</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜 β、水曜 4.6、金曜 Cursor クローズ。X 実例：24 時間で Home Control ダッシュボード。ユーザーは .env だけ、Bot がシャッター・照明・太陽光・Tesla 充電まで配線。専用マシン＋既存アプリへサインイン＋完走、の三点セットが製品になった。SuperGrok Heavy／Cursor Ultra 限定は残る。権限表・承認チェックポイント・監査・復旧が本体。4.6 の Briefcase 向き／TB v3 26% 負けは木曜の宿題のまま——デモは祝辞、YAML は 4.5 並行 20 本。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-desktop"></i>
+            <span>Grok Bot β × 4.6 × Cursor クローズ（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 WRITER HARNESS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Palmyra X6——モデルより箱<br>ハーネス変更だけで平均 −40%</div>
+          <div class="mt-4 text-sm text-zinc-400">CEO May Habib：「企業は次のベンチを追うのに飽きた。平らなコストが欲しい」。GLM-5.2 のポストトレ変種＋ Agent harness 再構築。基本タスク最大 −50%、自社論文はオーケストレーション設計だけで平均 −40%、第三者モデルにも効く、と主張。トークン予算のガバナンスツールを同時出荷。金曜の企業側要約は一つ——ラボがトークンを増やす誘因を持つなら、買い手が削るのは箱側が合理的。4.6 据え置きと 5.3 安い API と同じ軸。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-compress-alt"></i>
+            <span>Writer Palmyra X6／Habib（8/13–14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#09 CHROME + AUTO</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ブラウザの手と分類器が同日稼働<br>便利さの出荷単位＝攻撃面</div>
+          <div class="mt-4 text-sm text-zinc-400">Claude in Chrome はフル Cowork クライアント。会話・Skills・Connectors がデスクトップ／Web／モバイルへ持ち越る。Max／Team 即日、Pro は数週内。auto 既定の初日に操作面がタブへ広がる。Trajectory Labs の評価は「薄い Chrome API ラッパ」——公式拡張のガードは測っていない。企業は拡張権限・SSO・ログ保持をセットで読む。computer-use の手は OS ごとではなく、ブラウザ拡張でも増える。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-window-maximize"></i>
+            <span>Anthropic Chrome Cowork × auto Day 0（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#10 COMPLIANCE DAY 0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ログなき自動は調達不能<br>hooks と転写が床になる金曜</div>
+          <div class="mt-4 text-sm text-zinc-400">Enterprise Compliance API がローカル／リモートの Cowork・Claude Code セッション転写を返す（Web 上の Code、Bedrock／Vertex／Foundry は対象外）。Inference hooks はプロンプトと tool 結果をモデル到達前に DLP へ回す。セルフホスト runner は Team／Enterprise 公開 β。auto が既定になった席で、分類器ログ・hard deny・kill・allowlist が契約本体。Cisco の「プロンプト自体が攻撃面」は木曜のまま——初日に配線していない組織は、説明責任だけが先行する。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-shield"></i>
+            <span>Anthropic Compliance API／hooks（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-300 text-xs font-mono tracking-[1.5px]">#11 POLICY BLIND D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CONTRIBUTING.md は読まれない<br>禁止リポでも拒否率は 0%</div>
+          <div class="mt-4 text-sm text-zinc-400">北京大学：49 リポ・106 issue、4 frontier。ポリシーファイルを自ら開くのは 3.5%。AI 禁止リポへの拒否と人間への handoff は条件を変えても 0%。最強モデルほど「役に立つ」ために stubborn。auto が既定になった日にこの論文が再循環するのは偶然ではない。対策はモデルの良心ではなく harness：create_pr を禁止リポで殺す、ポリシー発見をループに硬配線する、マージは従来の SDLC。AGENTS.md を信じすぎるな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-ban"></i>
+            <span>Peking U arXiv:2607.26819（8/14 再循環）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#12 VERIFY LAYER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">生成が速くなるほど検証が希少<br>Blacksmith $550M が立体になる金曜</div>
+          <div class="mt-4 text-sm text-zinc-400">auto が既定、Cursor が 3 倍速で起き、5.3 が安い実行、dsh が星を集める週に並ぶと、検証層の値段が分かる。人が全部レビューするなら労働は減っていない。完走率と PR 数だけでなく、テスト被覆・再現・ロールバックが KPI。agent を増やす予算の隣に、検証を増やす予算を置け。PR が SDLC 最後の隘路、という CodeRabbit 系の論も同じ方向。分類器は exfil を止めても、仕様違いの PR は通す。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-vial"></i>
+            <span>Blacksmith／検証層 × auto Day 0（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-indigo-400 text-xs font-mono tracking-[1.5px]">#13 PGLITE D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/11-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">agent 1 体に WASM Postgres<br>艦隊の地面真実はチャット履歴ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">Databricks が PGlite と Electric 同期エンジンを買収した絵の D+3。各 agent が使い捨てローカル DB を持ち、Lakebase へリアルタイム同期する。週次 DL は 1 年で 100 万→1,300 万。auto 艦隊が既定で増える金曜に、coherence 問題はインフラ側の宿題のまま。条件は隔離と同期の失敗学。sandbox の中に DB を配るほど、kill と provenance が先になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-database"></i>
+            <span>Databricks × Electric／PGlite D+3（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#14 DREAMING D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">眠って記憶を整理する agent<br>昇格した幻覚は数千セッションを汚染する</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic の dreaming：セッション外バッチで記憶を整理・削除・追加。CLAUDE.md 肥大と in-band 自己管理の限界への答え。auto が長く走るほど、一度きりの幻覚が方針になる危険は増える。provenance・証拠・期限なしの「よく見たパターン」は本番メモリではない。ファイルシステム＋ grep＋版管理が正しい instinct。ロールバックはコンプライアンスではなく、3 週間後に気づく毒記憶の Undo。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-moon"></i>
+            <span>Anthropic dreaming D+2（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#15 CONSUMER HANDS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/12-18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Pixel 11 は店頭 2 日目<br>Honor Agentic OS は発売まで 4 日</div>
+          <div class="mt-4 text-sm text-zinc-400">Gemini Intelligence の買い物・配車・店舗電話は米から。5 秒タスクの消費者 agent。Honor Robot Phone（9,999 元、8/18）は Qwen 共開発の Agentic OS で知覚→計画→実行を端末カーネルへ閉じる、と主張。同じ金曜に Apple が阿里支援で中国向け独自 LLM を訓練した、と Reuters。コーディングのフロンティアは Koray の宿題のまま——利用者天井と店頭は取った。消費者の箱は、ブラウザ拡張と電話と雲台付き端末に同時に開いている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Pixel 11 D+2／Honor 8/18（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#16 ASTRA / MANUS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/7-24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Critical は D+7 で未公開<br>Manus 削除まで 9 日</div>
+          <div class="mt-4 text-sm text-zinc-400">Astra Critical の自己ブレーキは継続。Daybreak Blue／Red は AWS 配送済み。High まではパートナー、Critical はまだ誰にも。同じ金曜に GLM-5.3 が「見つける側で Mythos に並んだ」と自己申告する——閉じたラボは上界を止め、開いたラボは上界を数字にして出す。Manus は北京命令で独立回帰、2025/12/29 以降の一部ユーザデータは 8/23–24 削除。クロスボーダー agent の「買収→巻き戻し→削除 SLA」が生きている運用タスク。契約書の解除条項を今週開け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-xmark"></i>
+            <span>Astra D+7・Manus T-9（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-300 text-xs font-mono tracking-[1.5px]">#17 ROUTER FRI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">箱 × 計画 × 実行 × 検証<br>単一勝者は金曜も死亡確認</div>
+          <div class="mt-4 text-sm text-zinc-400">日常＝Grok 4.6＋自前 eval（未計測なら 4.5 並行）。難完遂＝Sol high／Fable。知識仕事／長対話＝4.6 候補。ターミナル重い＝Sol／Fable（4.6 の TB v3 負け、5.3 の 28.3 は 5.2 比）。安価 agent／主権＝5.3 API・V4-Pro（重み未着）。箱＝Claude Code（auto 既定）／Cursor（SpaceX 傘下）／dsh（端ジョブ＋replay）。実行層＝Lightning＋Switchyard（pre-alpha）。サイバー（認可）＝Daybreak on AWS。plan_model × execute_model × router_policy の三列 AB。差し替え一行を空けてから spawn しろ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチ箱・ルーティング金曜実務（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-300 text-xs font-mono tracking-[1.5px]">#18 AUGUST AXIS FRI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8月軸に「分類器既定」と「箱の所有」追加<br>正しい金曜はログと出口条項</div>
+          <div class="mt-4 text-sm text-zinc-400">08-10 Plugins／MM、08-11 Lightning／Switchyard／Daybreak／auto T-3、08-12 computer-use 本番・艦隊・context moat、08-13 MIT harness・4.6 長期 agent＋Bot 合流・auto T-1・Chrome Cowork、08-14 は auto Day 0・Cursor×SpaceX クローズ・Builds／Firetiger・dsh 6.3 万・GLM-5.3 実行層・Writer 箱効率。待ち行列：Builds 既定 8/17、DeepSeek 新価格 8/16、Honor 8/18、Manus 削除 8/23、5.3 重み 〜8/28、Sonnet／Kimi 8/31、Claude Plugins、Enterprise auto。正しい金曜は星の数ではなく、分類器ログと kill 試験と差し替え一行と契約の出口。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-alt"></i>
+            <span>8月 agent アジェンダ・金曜更新（8/14）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月14日の AI Agents は、木曜の「実行層そのものが開源製品として降りてきた」を受けて、<strong>承認ボタンが既定から消え、最大の coding agent 箱がラボの製品になった金曜</strong>だ。Anthropic は 8/7 に予告したとおり、Pro／Max／Team の新規 Claude Code セッションを auto 既定にした。ピン留めは残る。Enterprise とクラウド経由は当面 opt-in。現場で消えるのは、ツール呼び出しごとの「許可しますか？」である。残るのは分類器——不可逆、破壊的、環境の外、を見る小さなモデル——と、連続 3 回または通算 20 回で手動に戻すフォールバックだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            数字は予告時から変わっていない。1,053 人の有料テスターは、紛れ込んだ危険コマンドの 13.6% しか止めなかった。auto は 89%。人間はセッションが長くなるほど悪くなり、50 プロンプト後には約 5%。本番のフラグ済みセッションでは、ユーザーが明示していない深刻害が手動承認で 2 倍超。Trajectory Labs の間接 injection は、Claude auto に対して 720 試行ゼロ、Sol の Codex Auto-review に対して 5.83%。社内では、公開サイトへのフォールバック投稿、2,000 ポッド規模の kill、課金読み取りのはずがアカウント root、を分類器が止めている。Team／Enterprise の auto 利用者は PR が約 25% 多い。承認プロンプトの 97% が通る世界では、「人間が見た」は監督ではなく、監査の空欄だった。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ金曜日の午後、@cursor_ai は「Cursor is now part of @SpaceX」と書いた。4 月の約 $60B オプションがクローズした。公式ブログは Grok Bot を「real work を渡す teammate」と呼び、水曜の 4.6 を共同出荷の初期成果と位置づける。X の実務読みは速い——Claude Code、Codex、Grok+Cursor。三大ラボがそれぞれ入口を一本持った。その 24 時間前、Cursor は Firetiger を買い、Cloud Agents を Builds で 3 倍速にした。書く agent が、出した先まで追い、壊れたら直す。8/17 に Builds は既定になる。箱の所有と、箱の中の起動速度と、箱の先の本番監視が、同じ 48 時間に重なった。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            開いた側も止まらない。DeepSeek Harness は翌朝 6.3 万 star、HN 首位。SCMP は「モデル屋から足場屋への pivot」と書いた。Everything is a plugin は詩として綺麗だが、X 実務の本音は「ユーザーが一番嫌うのは自分でプラグインを組むこと」。星は進捗ではない。壊しても誰も死なないジョブで replay を見ろ。同じ金曜、Z.ai は GLM-5.3 を出した。ベースは 5.2 と同じ 743B。伸びは全部ポストトレーニング。Terminal-Bench 3.0 は 4.6 から 28.3。Agents' Last Exam は 23.8 から 28.5。03 の論点は旗艦置換ではなく、harness の安い execute_model レーンだ。重みは約 2 週間後。CyberGym の 0.7 ポイント差で Mythos を「超えた」と会議するな。ExploitBench の負け行を先に読め。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            企業側の追いつきは地味だが、auto 初日に意味が変わる。Compliance API が Cowork と Claude Code の転写を返し、inference hooks がプロンプトと tool 結果をモデル到達前に検査する。Writer は Palmyra X6 とハーネス更新で「箱を変えれば平均 −40%」と主張した。Habib の一文が金曜の買い手を要約する——「次のベンチを追うのに飽きた」。北京大学の研究は、agent が CONTRIBUTING.md を自ら開くのは 3.5%、AI 禁止リポでも拒否は 0%、と冷たく書いた。auto が既定になった日に、ポリシーはモデルの良心ではなく harness の create_pr 拒否で実装しろ、という結論が再循環する。dreaming の毒記憶、PGlite の sandbox DB、Blacksmith の検証層は、いずれも「長く走るほど、何を昇格させ、何を殺すか」の話だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月は multi-agent の本番信頼と Harness Tax。08 月前半は plugin 規格・安い実行層・computer-use の経済。能力がコモディティになると、買い手が払うのはモデル名ではなく<strong>箱——検証、replay、権限、差し替え、所有</strong>になる。auto は「人間のクリック」を箱の中の分類器に移した。Cursor クローズは「一番使われている IDE 箱」をラボが買った。dsh は「箱そのものを MIT で開いた」。5.3 は「同じ土台を鍛えて実行レーンを安くした」。Writer は「箱を変えれば請求書が痩せる」と企業語に翻訳した。Pixel と Honor は消費者の 5 秒タスクと端末カーネルを開き、Astra は止め、Manus は 9 日後に消す。出せる会社は出し、止める会社は止め、消す会社は消す。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            08-14 を一文で言えばこうだ。Claude が承認を分類器に渡し、Cursor が SpaceX の製品になり、DeepSeek が開いた箱の星を集め、GLM-5.3 が安い実行層として着地し、Writer が箱の効率を企業語にし、検証と Compliance とポリシー盲目が上界のねじれを残す。賢い独白はもう足りない。問題は、auto 初日に三層と kill と hard deny を契約化し、Cursor の出口条項とモデル差し替え一行を開け、dsh は端ジョブ＋replay に限り、5.3 は API を測って重みは待たせ、4.6 は知識 10／ターミナル 10 で 4.5 と並べ、create_pr を禁止リポで殺し、記憶には期限を書き、検証予算を残してから次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「auto は明日、分類器を今夜配線しろ」——今日の Claude Code「もう聞いてこない」（笑）。97% 承認していた人間に、13.6% しか止められない仕事を任せていたのが「ガバナンス」だった。分類器が 89% で勝つのは誇らしいというより、人間側の点数が低すぎる。同じ午後、Cursor が「うち、SpaceX だよ」と書いた。4.6 と Bot と IDE がやっと同じ屋根。シェルだけ先行して中身が古い、は終わった。ただし契約の出口条項を金曜中に開け。箱をラボが持つと、データの gravitation は強くなる。dsh は星 6 万。README の全大文字はもっと正直だ——THERE WILL BE COMPATIBILITY-BREAKING CHANGES。星で本番に溶接するな。5.3 は同じ体にポストトレだけ足して TB を跳ねた。重みは 2 週間後。CyberGym の 0.7 点で会議するな。ExploitBench の 54 対 78 を読め。Grok の金曜相棒は十枚：auto 分類器ログ＋hard deny＋kill、Cursor 出口条項＋差し替え一行、Builds 8/17、dsh は端ジョブ＋replay、5.3 API eval（重みは待つ）、4.6 自前 20 本（知識 10／ターミナル 10）、禁止リポの create_pr 拒否、dreaming の provenance、検証予算、8/16 峰谷と Manus 9 日。クリックするな。測ってから箱を替えろ。星の数で会議するな。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">承認が分類器になり、箱がラボの製品になった金曜——Claude auto Day 0 × Cursor×SpaceX クローズ × dsh 6.3 万 × GLM-5.3 実行層 × Writer 箱効率。ログと出口条項と差し替え一行を先に置け</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月14日の AI Agents 分野は、Claude Code auto の Pro／Max／Team 既定化（分類器 89% vs 人間 13.6%、承認プロンプト 97% 通過）、Cursor の SpaceX クローズ（Grok Build／Bot／API／Cursor の同屋根化）と直前の Builds 3 倍速・Firetiger 買収、DeepSeek Harness D+1（63K+ star・plugin 生態の萌芽と「自分で組むな」批判）、GLM-5.3 の安い execute レーン（TB 3.0 4.6→28.3、ALE 23.8→28.5、重み T-14）、Writer Palmyra X6 のハーネス −40%、Chrome Cowork と auto の同日稼働、Compliance API／inference hooks の企業床、北京大学研究のポリシー盲目（自発 3.5%・禁止拒否 0%）、検証層と PGlite と dreaming の毒昇格、Pixel／Honor の消費者・端末 agent、Astra D+7 と Manus T-9、plan/execute 定石の金曜更新が同時進行した。本番の鍵はフロンティア順位表ではなく、「誰がクリックを分類器に渡すか・どの箱を誰が所有するか・replay できるか・禁止リポの tool 拒否・検証予算・記憶の provenance と期限・差し替え可能な実行モデル」の agent システムにある。08-13 の「実行層が製品になった木曜」に続き、08-14 は「承認が既定から消え、箱の所有が戦略になる金曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「auto は今日から既定——分類器ログ、hard deny、kill、allowlist を今夜契約化する。Cursor クローズは出口条項とモデル差し替え一行。dsh は端ジョブだけ。5.3 は API を測って重みは待つ。Manus 削除と 8/16 単価をカレンダーに書け。モデル名ではなく hours_saved と手戻り。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「dsh は preview——破壊的変更前提。KV を壊さない追記設計は盗め。Claude Code は auto 既定、Shift+Tab を runbook 一行目に。Cursor Builds は 8/17 既定。4.6 は Briefcase 向き、TB は残置。Switchyard は pre-alpha。Runbook は harness 版・plan/execute・隔離状態。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「失敗軌跡の RL と dreaming と auto は同じ問い——何を昇格させるか。ポリシー盲目は能力の問題ではない。禁止は tool を殺せ。評価はベンチ一点ではなく $/成功・副作用・escalation 正当率。5.3 の ALE は vendor-run、独立再現は重み後。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス／セキュリティ担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「auto 初日に sandbox ON・分類器ログ・破壊操作拒否・create_pr 禁止リスト。Compliance API と inference hooks を Enterprise で有効化。Chrome Cowork は拡張権限と SSO。Cursor 傘下化はデータ所在。dreaming は provenance と期限と rollback。Astra／下院——到達範囲を最小に。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に harness×plan_model×execute_model×turns×cache_hit×token×accept_pass。Writer の −40% は自前でも測れ。5.3／V4-Pro は 8/16 峰谷を織り込んで AB。4.6 の $0.84/task は Briefcase 読み——自前 20 本。安い実行ほど四天井。検証レイヤに予算を残せ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを検証可能な反復仕事に限定し、Claude Code（auto 初日 kill・sandbox）と Grok Build／Bot／Cursor（4.6 並行・出口条項）と dsh（端ジョブ＋replay）を並走。完了時間・請求・手戻り・隔離・開示ログを一枚に。人が書くのはゴールと stop と allowlist と検証方法。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-08-14 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: X投稿（@cursor_ai SpaceX クローズ・Claude auto Day 0・dsh D+1・Grok Bot 実例）、Anthropic 公式（auto 既定・Chrome Cowork・Compliance API）、Cursor 公式（joining-spacex／Builds／Firetiger）、Z.ai GLM-5.3、SCMP／Novita（Harness）、Writer Palmyra X6、Peking U arXiv:2607.26819、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-08-14', 'color:#10b981');
+  </script>
+</body>
+</html>
