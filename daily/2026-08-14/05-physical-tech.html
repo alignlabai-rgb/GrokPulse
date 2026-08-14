@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Physical Tech &amp; Energy ダイジェスト | 2026-08-14 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">05</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Physical Tech &amp; Energy ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-14 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚙️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">金曜——速いタービンが平行化石グリッドを建て、<br>43社が中身のない監査に拍手する</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月14日（金）。08-10 が「Amazon が自前 7.65GW ガスで time-to-power を買う月曜」、08-11 が「Batch Zero が数ヶ月監査文書になった火曜」、08-12 が「電圧と地理が値段になった水曜」、08-13 が「50MW が領収書になった木曜」なら、08-14 は<strong>その領収書の燃料が単純サイクルだと判明し、監査が記者会見になり、発表 GW が認定 GW に潰れた金曜</strong>だ。WIRED（Molly Taft）は、Amazon のテキサス島グリッドが combined cycle ではなく simple cycle だと解剖した。許可排出は年 3,300 万トン。同じ営業日、Texas Tribune は「少なくとも 43 社——OpenAI・Meta・Microsoft・AWS——が Abbott 監査を支持しているが、期間も対象も使い道も不明」と書いた。PUCT は金曜朝 9:30 に 765kV と監査計画を同じ部屋で聞いた。金曜の評価軸は <code>単純サイクル効率 × 許可トン数 × 43社の拍手 × 認定 93GW／発表 295GW × $10/MMBtu リスク × 765kV 反対 × 50MW D+1 × 8/20 −6d × 8/26 −12d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-cogs text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 SIMPLE CYCLE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">7.65GW の燃料が解剖された<br>速いのは電子ではなく、納期と起動</div>
+          <div class="mt-4 text-sm text-zinc-400">金曜 5:00 ET、WIRED。Amazon のテキサス島グリッド（許可排出 <strong>年 3,300 万トン</strong>）は、系統の普通の発電所が使う combined cycle ではなく、<strong>廃熱を蒸気に変えない単純サイクル</strong>で組まれる。半分しか出さなくても、EPA 換算で平均的なガス火力 78 基分。同じ設計は Williams／Meta のオハイオ、Crusoe の Stargate（Microsoft 向け 39 基）、Google Goodnight（20 基）、xAI Colossus 1・2（メンフィス、数十基）。Industrial Info の Burt：「タービン供給網の都合で、手に入るものを積んでいる」。Penn State の Lynch：変動負荷には「巨大な 1 基より、 individually に ON/OFF できる 30 基」。250MW の combined cycle は毎時約 7.5 万ガロンの水を食う。単純サイクルは水を要らない——監査州のチェックリストを、熱効率で買っている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire"></i>
+            <span>WIRED Taft「なぜ DC ガス火力は汚いのか」（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 43社の拍手</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">監査を支持するテナントが<br>期間も対象も使い道も知らない</div>
+          <div class="mt-4 text-sm text-zinc-400">Texas Tribune（金曜 5:00 CT）。8/3 以降、少なくとも <strong>43 社</strong>——Meta・OpenAI・Microsoft・AWS——が Abbott 監査への支持を公表した。Data Center Coalition は火曜に「料金負担・系統信頼性・水」へ署名。だが ERCOT が監査を何ヶ月やるか、接続凍結がいつ終わるか、何件を見るか、集めた情報を立法と規制のどちらが使うかは、<strong>公式に空欄のまま</strong>。ERCOT 月曜提出は「数ヶ月、8/20 直後に開始」。Texas Politics Project の Henson：「双方ともパフォーマティブ」。対抗馬 Hinojosa：「規制される側がルールを応援するとき、ルールは彼らのために書かれた」。08-13 の「同じテナントが基準にサイン」は、金曜に<strong>43 社の合唱</strong>になった。中身はまだ紙だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-handshake"></i>
+            <span>Texas Tribune 43社支持・中身不明（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 認定 93 vs 発表 295</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">名前のある GW だけが電子になる<br>100MW 太陽光は夕刻 14MW</div>
+          <div class="mt-4 text-sm text-zinc-400">金曜の X を占拠した一語：<strong>accredited</strong>。米 DC 発表は 2023 年約 18GW から今約 <strong>295GW</strong>（16 倍）。2030 年までの系統増分は認定ベースで約 <strong>93GW</strong>。2026 年の新設は名目約 86GW——2002 年以来最大——でも、系統が最悪の 8 月夕刻に頼れる量は崩れる。東の 100MW 太陽光はラベル 100、19 時の認定は <strong>14MW</strong>。残る 86MW は発電し、稼ぐ。ただ「その時間に頼れる」側の帳簿には乗らない。IEA 木曜の 45GW 紙の炉、ERCOT の 474GW 紙キュー、BNEF の監査対象 49.8GW は、同じ金曜日にこの単語で再計算される。<strong>発表はスライド、認定はピークの夕方</strong>だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scale-balanced"></i>
+            <span>295GW 発表 vs 93GW 認定・X 循環（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 $10/MMBtu リスク</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">単純サイクルの燃料代が<br>フォワードカーブを追い越す日</div>
+          <div class="mt-4 text-sm text-zinc-400">Noreva の米ガス見通しが金曜に再循環。AI 電力需要・LNG 輸出・供給伸び鈍化が重なれば、<strong>一部ハブは $10/MMBtu 超</strong>がありうる、という高値シナリオ。CEO Gardett：「フォワードカーブは昨日の市場」。埋蔵量補充に 2021 年の約 3 倍を投じても生産を置換できず、2023 年以降の買収は約 $3,000 億。LNG 能力は 2030 年までに約 +160%、需要 +25 Bcf/d——現状生産の約 1/4。EIA は足元を $3 未満と見ている。金曜の読みは単純だ。<strong>単純サイクルは熱効率で負け、燃料価格が跳ねれば負けが複利になる</strong>。08-10 の「安いパーミアンガス」は、島グリッドの固定費としてはまだ安い。変動費としては、フォワードが嘘をつくリスクを抱えた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gas-pump"></i>
+            <span>Noreva ガス見通し・$10 ハブ再循環（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 PUCT 金曜 765kV</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">監査の部屋に送電線が入った<br>最終決定はしない、と予め書いた</div>
+          <div class="mt-4 text-sm text-zinc-400">PUCT は金曜 9:30、Austin で特別オープンミーティング。議題は二本立て——<strong>Permian Basin Reliability Plan の 765kV 輸入経路 3 本</strong>と、Abbott 書簡に対する ERCOT の監査手順。Gleeson 委員長は 8/6 メモで「個別路線の最終決定はしない」と先に書いた。地主と議員は 2027 会期まで凍結を求め、House State Affairs は <strong>8/19</strong> に DC と 765kV を同じ公聴会に載せる。BTM 発電はキューを迂回する。765kV は、いつか系統に戻る島を、系統側から迎えに行く線路だ。<strong>金曜朝は「電子をどこに通すか」と「誰の電子を数えるか」が同じ机に載った</strong>。8/20 の good cause exception はその続きだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tower-broadcast"></i>
+            <span>PUCT 8/14 オープン会合・765kV×監査（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#06 HORIZON 1 D+1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/13-14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">50MW は請求書を出し始めた<br>堀は電力か、組み立てか</div>
+          <div class="mt-4 text-sm text-zinc-400">木曜の検収は金曜も床。IREN は Childress の Horizon 1（IT 50MW・ダイレクト液冷）を Microsoft に渡し、月次請求が動き、NVIDIA Exemplar Cloud が付いた。株は木曜昼ごろ +6% 前後（$46 台）。続く Horizon 2–4 で同年 200MW。金曜の X は別の問いを足した——Nebius が「7 年の電力確保なし」でも規模を出せるなら、<strong>電力ポートフォリオは堀なのか、必要条件なのか</strong>。CV 系の読み：新しい 1 ドルは冷却・電力・コンクリートより、計算とメモリを多く買う。04 の Feynman／SoIC 前倒しは、その命題の工場版だ。検収 50MW は消えない。ただし堀の定義は、金曜に一段階狭くなった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>IREN Horizon 1 検収 D+1・堀論争（8/13–14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 AUTO × FEYNMAN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">承認ボタンが消え、2028 の箱が前倒し<br>ワットは昼休みを知らない</div>
+          <div class="mt-4 text-sm text-zinc-400">01／03 の金曜：Claude Code が Pro／Max／Team の新規セッションで auto 既定。分類器 89%、人間 13.6%。承認クリックが消えると、推論は昼食で止まらない。04 の金曜：NVIDIA は Rubin ランプ中に Feynman（2028 後半、A16／SoIC／CPO、NVLink 1PB/s 圏）へ資源を寄せ、TSMC は嘉義 AP7・南部 AP8 を急ぎ、SoIC 月産を 2027 年末 約 5 万枚へ。Physical Tech の翻訳は一本——<strong>軽い実行層が増えても、長い agent と次世代箱は MW と冷却水と 800V を増やす</strong>。水曜の電圧標準、木曜の液冷検収、金曜の単純サイクルは、同じワットを三つの方言で読んでいる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Claude auto × Feynman／SoIC 電力含意（8/14）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 BATCH ZERO D+7</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8/20 まで6日、監査は「その後数ヶ月」<br>474GW は金曜も紙</div>
+          <div class="mt-4 text-sm text-zinc-400">規制板の金曜更新：ERCOT／PUCT の Batch Zero は公式に前倒しされていない。監査は 8/20 直後に始まり「数ヶ月」。キュー推計 ~474GW（ピークの数倍、約 90% が DC 系）と EIA の 2027 Texas 需要成長下方修正（14%→6%）は背景音のまま。BTM・既通電マイナー MW・州外逃げ・単純サイクル島は、手続きの長さそのものを価格にする。次の公式の山は <strong>8/20 PUCT（−6d）</strong>の good cause exception と、<strong>8/19 House State Affairs</strong>。04 は 8/26 NVIDIA（−12d）を待つ。08-13 が 7 日と 13 日なら、08-14 は 6 日と 12 日の二重カウントダウンだ。紙の GW は、金曜の拍手では電子にならない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Batch Zero D+7・PUCT 8/20 −6d × NVDA 8/26 −12d（8/14）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月14日、Physical Tech &amp; Energy の中心は「<strong>速いタービンの中身が、熱効率の悪い単純サイクルだと判明した</strong>」ことだ。08-10 が Pecos 7.65GW で「接続を要らない発電所」を表紙にし、08-11 が Batch Zero を数ヶ月監査文書にし、08-12 が 800V と地理プレミアムで内側と外側を同時に見、08-13 が 50MW の領収書を置いたなら、08-14 はその領収書の燃料を解剖した金曜だ。WIRED が書いたのは新しい GW ではない。Amazon の島、Williams／Meta のオハイオ、Crusoe の Stargate 39 基、Google Goodnight 20 基、xAI のメンフィス——すでに動いている（または許可されている）経路が、<strong>廃熱を捨てて、水を節約し、納期に間に合わせている</strong>という事実だ。速いのは電子ではない。工場のスロットと、起動時間と、監査チェックリストの「水を使わない」欄だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ金曜日、Texas Tribune は 43 社の拍手を数えた。OpenAI も Meta も Microsoft も AWS も「基準に従う」。期間も対象件数も、集めたデータの使い道も空欄。ERCOT は「数ヶ月、8/20 以降」。Henson はパフォーマティブと言い、Hinojosa は「応援する側のために書かれたルール」と言う。PUCT は今朝 9:30 に、その監査手順と 765kV 3 本を同じ部屋に入れた。Gleeson は「個別路線の最終決定はしない」と先に書いた。地主は 2027 会期まで待てと言う。BTM はキューを迂回し、765kV はいつか系統に戻る島を迎えに行く。発表 295GW と認定 93GW の隙間は、この迂回と線路の値段そのものだ。Noreva の $10/MMBtu シナリオは、単純サイクルの変動費がフォワードカーブを裏切る日の注釈である。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが重なるか。GPU リードタイムが約 6 ヶ月まで縮み、タービンと変圧器と接続がより狭い瓶になったからだ。Claude の auto 既定はトークンの蛇口を外し、Feynman の前倒しは 2028 の箱を先に予約する。ワットは昼休みを知らない。IEA の 45GW 紙の炉は 2030 年の物語、50MW の検収は昨日の物語、単純サイクルの許可トン数は 2026–28 の物語だ。hyperscaler がユーティリティ機能を吸収し、マイナーが landlord になり、州知事がテナントに基準を書かせ、テナントがそれを応援するとき、次の問いは変わらない。「誰が最も賢いモデルを持つか」ではなく「誰が何 MW を、何サイクルのタービンで、何度の冷却水で、どの州で、認定される何 GW の上に、何日で通電し、誰に検収させるか」。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜だ。WIRED が「7.65GW は combined cycle じゃない」と書き、Tribune が「43 社が中身のない監査に拍手している」と書き、X が accredited という一語で 295GW を 93GW に折った。01 が承認ボタンを外し、04 が 2028 の工場を前倒しし、05 は——熱効率の悪いタービンと、水を使わない許可証と、名前のある GW だけを数える。約束は安い。単純サイクルは速い。拍手はもっと速い。電子はまだ高い。検収はもっと高い。接続が凍った州では、廃熱を捨てた領収書が次の CoWoS になる。それだけだ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">「単純サイクル・拍手の監査・認定 GW」——金曜の物理層が固定した八つの座標</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月14日現在の Physical Tech &amp; Energy は、(1) WIRED が Amazon テキサス島グリッド（許可 3,300 万トン／年）を単純サイクルと解剖し、Williams／Meta・Crusoe Stargate 39 基・Google Goodnight 20 基・xAI Colossus も同じ設計だと示したこと、(2) Texas Tribune が 43 社（OpenAI・Meta・Microsoft・AWS 含む）の監査支持を数え、期間・対象・使い道が空欄だと書いたこと、(3) 発表約 295GW 対 認定約 93GW（太陽光 100MW＝夕刻 14MW）が「名前のある GW」だけを電子にしたこと、(4) Noreva の一部ハブ $10/MMBtu シナリオが単純サイクルの燃料リスクとして再循環したこと、(5) PUCT 金曜 9:30 が 765kV 3 本と監査手順を同じ部屋に載せ、個別決定は先送りしたこと、(6) Horizon 1 の 50MW 検収が請求書になり、電力堀 vs 組み立て堀の議論が金曜に乗ったこと、(7) Claude auto 既定と Feynman／SoIC 5 万枚前倒しが、ワットと冷却の需要側を同時に増やしたこと、(8) Batch Zero D+7 と 8/20 PUCT（−6d）× 8/19 House × 8/26 NVIDIA（−12d）の三重カウントダウン、が同時に動いている。08-10 が「空白の上に発電所が建つ月曜」、08-11 が「空白が監査文書になり既通電に値が付く火曜」、08-12 が「電圧と地理が値段を決める水曜」、08-13 が「検収 50MW が紙の 45GW のあいだに置かれた木曜」なら、08-14 は<strong>その 50MW の燃料が単純サイクルで、43 社の拍手が中身のない監査を飾り、認定 93GW だけが電子として残った金曜</strong>だ。2026年後半の勝負どころは、見出しの GW でもスローガンでもなく、単純サイクルか combined cycle か、監査の実手続き、認定容量、765kV の用地、検収 MW、液冷と 800V の実出荷、ガスハブの変動費、通電日の統合スケジュールにある。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-fire"></i>
+            <span>ガスタービン／発電エンジニア</span>
+          </div>
+          <p class="text-sm text-zinc-300">「単純サイクルは汚いというより、納期と起動と水の最適化だ。廃熱を捨てて、工場スロットに間に合わせ、監査の水欄を空にする。熱効率は後から combined cycle に上げられる——ただしその『後から』が、タービン待ちの長さと同じだけ先になる。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-landmark"></i>
+            <span>系統・規制／テキサス視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「43 社が拍手している監査に、期間も対象も使い道もない。金曜の PUCT は 765kV と監査を同じ部屋に入れ、個別決定はしないと先に書いた。8/20 までこの空欄は商品価格だ。BTM はキューを迂回し、線路はいつか系統に戻る島を迎えに行く。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scale-balanced"></i>
+            <span>系統計画／認定容量</span>
+          </div>
+          <p class="text-sm text-zinc-300">「295GW の発表と 93GW の認定は、同じ国の違う単位だ。太陽光 100MW が夕刻 14MW になる世界では、名前のある GW だけがピークを支える。IEA の 45GW 紙の炉も、ERCOT の 474GW も、この単語で割ると小さくなる。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gas-pump"></i>
+            <span>ガス・コモディティ／Noreva 読み</span>
+          </div>
+          <p class="text-sm text-zinc-300">「単純サイクルは熱効率で負けている。燃料が $3 なら許容できる。$10 ハブが現実になると、島グリッドの変動費が契約の中身を食う。フォワードカーブは昨日の市場だ、という一文は、Pecos の許可証の脚注になる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clipboard-check"></i>
+            <span>データセンター電力アーキテクト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Horizon 1 の 50MW は請求書になった。堀が電力なのか組み立てなのかは、金曜の論争だ。800V はロスを削り、液冷は密度を許し、単純サイクルはカレンダーを買う。三点が揃っても、サイトの電源が単純サイクルのままなら、カタログの『効率』は紙に戻る。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本・アジアエネルギー／製造戦略視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「米側金曜が示したのは、単純サイクル解剖・43 社の拍手・認定 93 vs 発表 295・$10 ガス・765kV 金曜朝・50MW 請求書・auto×Feynman のワット・8/20×8/26 だ。龍仁 15 vs 9 は同じ瓶の東アジア版。SiC/GaN・液冷・変圧器・BESS・銅で取れる一方、熱効率と認定容量と用地合意の遅さは同じボトルネック。技術・金融・time-to-power・排出許可・水・年産・社会的ライセンスの七点で設計しないと、ワットも fab も紙の上に残る。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 05. Physical Tech &amp; Energy • 2026-08-14 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: WIRED Taft 単純サイクル解剖・Amazon 3,300 万トン／Stargate 39 基／Goodnight 20 基／xAI Colossus（8/14）、Texas Tribune 43社支持・監査中身不明（8/14）、PUCT 8/14 オープン会合 765kV×監査、ERCOT「数ヶ月・8/20 以降」、発表 295GW vs 認定 93GW、Noreva $10/MMBtu 再循環、IREN Horizon 1 検収 D+1、Claude Code auto、DIGITIMES Feynman／SoIC 5 万枚、IEA 45GW D+1、Batch Zero D+7・PUCT 8/20・House 8/19・NVIDIA 8/26、X投稿（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 05-physical-tech.html loaded for 2026-08-14', 'color:#10b981');
+  </script>
+</body>
+</html>
