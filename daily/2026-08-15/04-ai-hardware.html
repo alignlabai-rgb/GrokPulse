@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-15 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-15 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧾</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">土曜——13F が顧客と光学を株で持ち、<br>27B が 24GB の床に降りた</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月15日（土）。08-11 が資本 OS、08-12 が配電 OS、08-13 が検収 50MW、08-14 が Feynman と嘉義のコンクリートなら、08-15 は<strong>同じ会社が顧客を持ち株で抱え、同じ週末に消費級 GPU が実行層の床になった土曜</strong>だ。金曜提出の NVIDIA 13F（6/30 時点）：SpaceX Class A 1.228 億株・約 $210 億、Intel 約 2.148 億株・四半期末約 $300 億（$50 億出資から約 6 倍）、Arm は完全撤退。CoreWeave 4,721 万株・$47 億、Coherent／Nokia／Synopsys／Nebius が続く。同じ金曜、Cursor は SpaceX 子会社としてクローズし、xAI は地上と軌道で NVIDIA 独占を公言済み。反対側の床は tok/s だ。Qwen3.8-27B は 3090 で初日 25 tok/s、4090 で Q8 KV 190k、5090＋NVFP4 で 206 tok/s。明日 16:00 UTC、DeepSeek は峰谷を始める。土曜の評価軸は <code>13F $21B/$30B × 24GB 190k × 5090 206t/s × Spark 38t/s × NAND 枯渇 × 峰谷 T-1 × 8/26 −11d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 13F $21B / $30B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Intel が $50 億を $300 億にし<br>SpaceX 1.228 億株が二番手</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg／CNBC／Tom's：金曜の 13F は 6/30 時点で SpaceX 約 $209.8 億、Intel 四半期末約 $300 億（現値は約 $220 億まで冷えた、という読みも並走）。Intel は 2025 年 9 月の $50 億出資——x86＋RTX SoC とデータセンター向けカスタム CPU の戦略枠だ。SpaceX は xAI 経由。Musk は地上と軌道の AI データセンターで NVIDIA 独占を既に言っている。同じ金曜 13:02 UTC、Cursor は「now part of SpaceX」と書いた。GPU 屋が、ロケット会社の持ち分を通じて、世界で一番開くコーディング箱の屋根を持った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>SEC 13F／Bloomberg／CNBC／Tom's（8/14-15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 顧客を株で買う</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Arm を全部売り、<br>CPO と雲と EDA を残した</div>
+          <div class="mt-4 text-sm text-zinc-400">Tom's が SEC 表を分解した。Arm は 110 万株（昨年 8 月時点 $1.781 億）を完全売却——Vera は作り続けるが、持ち株はゼロ。CoreWeave は 2,428 万株から 4,721 万株へ増やし、$47.0 億。株価が落ちた側に買い増した顔だ。Coherent は CPO 向け超高出力 CW レーザーの $20 億枠、Nokia は $10 億が $22 億、Synopsys は $20 億が $21.5 億、Nebius は 119 万株が $6,587 万から $3.29 億へ約 5 倍。Intel／SpaceX 以外の顧客・相棒・部材だけで $100 億超。火曜の $500B ファンドが「他人の金でラックを建てる」なら、金曜の 13F は「自分の貸借対照表で需要側を囲う」翻訳である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-link"></i>
+            <span>Tom's Hardware 13F 分解（8/14-15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#03 24GB が床になった</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">3090 は 25t/s の床<br>4090 は 190k、5090 は 206</div>
+          <div class="mt-4 text-sm text-zinc-400">Qwen3.8-27B は稠密（Gated DeltaNet＋Gated Attention）。@sudoingX は RTX 3090 生で初日 25.4 tok/s（3.6 は同カード 40）——ただし 262k 窓が 22.2GB に常駐し、90k でもデコードは 25〜26 で平坦。llama.cpp は MTP テンソルをまだ無視している、と本人。4090 現場は約 65 tok/s／TTFT 約 1 秒。Atomic Chat の AD-Q4_K（15.9GB、Unsloth より約 800MB 薄い）は単一 4090 で Q8 KV 190k・Q4 KV 260k、MTP 時 160k／約 60 tok/s。公式が引用した SGLang は RTX 5090＋NVFP4＋DSpark で 206.1 tok/s。8GB には乗らない。消費級の天井は「動くか」から「何トークン残るか」に移った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>@sudoingX／Atomic Chat／SGLang（8/14-15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 統合メモリの敗北</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Spark は 38t/s の公式<br>現場は 7〜22、稠密は離散を欲する</div>
+          <div class="mt-4 text-sm text-zinc-400">SGLang 二次：DGX Spark 38.28 tok/s。現場は「最適化なし FP8 で 7〜8」「実測 ~22」「二台揃えて初めて使える」。LPDDR 約 273GB/s 対 5090 の帯域差が、稠密 27B ではそのまま tok/s になる。@TheAhmadOsman（約 15 万表示）：「Unified は MoE 向け。このモデルは 3090／5090／RTX PRO 6000 を欲しがる」。同じ土曜、Qwen は @NVIDIARTXSpark と @MediaTek を公式引用した。MediaTek は Dimensity Auto Cockpit C-X1 と旗艦モバイル SoC で Day-0。@NVIDIARobotics は Jetson 上の MTP 推論を推した。三層——離散デスクトップ、統合 NUC、車載／端末 SoC——が同じ 27B を奪い合う。勝つ層は帯域を持つ層だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>SGLang／RTX Spark／MediaTek／Jetson（8/14-15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 ウエハと SSD</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Cerebras が 27B を吸い<br>2.4T は 731GB をディスクから流す</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Qwen 土曜 05:28 UTC：「Open weights meet Cerebras speed」。同じウエハスケールの上で、01 カテゴリどおり OpenAI は GPT-5.6 Sol Ultrafast を限定プレビューしている——最大 750 tok/s、料金も GA 日も無い。速さは新モデルではなく、待ち行列の特権だ。反対側の極端は旗艦重み。Qwen3.8-2.4T-A95B の IQ2_XS は約 731GB。512GB Mac Studio で約 6 tok/s、足りない分は SSD ストリーム、という土曜クリップが回った。8×B300（2,304GB）が FP8 の床に近い、という事前見積はまだ有効だ。27B は 24GB の商品、2.4T はラックかディスクの商品。混ぜるな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-compact-disc"></i>
+            <span>@Alibaba_Qwen × Cerebras／2.4T SSD（8/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 NAND が保証を折る</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SK hynix SSD は代替品が無く<br>返金は「買った日の値段」</div>
+          <div class="mt-4 text-sm text-zinc-400">Tom's（土）：保証交換の代替 SSD が無く、原価返金に落ちる。約款は「修理・交換の代わりに、購入価格か時価の低い方」——値上がり局面では購入価格が必ず負ける。HBM が 2027 の Rubin Ultra を 192／256GB に折った木曜と、AMAT が DRAM＋HBM パッケージ +52% を出した金曜の、消費者側の翻訳だ。ウエハはデータセンター向け高マージンへ流れ、ノートの NVMe は棚から消える。2.4T を SSD から流す土曜クリップの横で、その SSD 自体が保証交換できない。ビットの不足は、もう HBM のカタログだけの話ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hard-drive"></i>
+            <span>Tom's Hardware SK hynix SSD RMA（8/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 峰谷 T-1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/16 16:00 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">安いトークンは空きラックだった<br>明日、時間割がハードウェアになる</div>
+          <div class="mt-4 text-sm text-zinc-400">DeepSeek 新表は明日 16:00 UTC。ピーク 01:00–04:00 と 06:00–10:00 UTC、オフピークは半額。V4-Pro キャッシュヒット $0.003625 → ピーク $0.044（約 +1,114%）。ハードウェア読みは一つ。あの異常な安さは、遊休推論枠の清算価格だった。峰谷はラック稼働率の公開だ。同じ週末、Claude auto は承認ボタンを外してトークンの蛇口を開け、27B は 4090 上でピーク時間を持たない。雲の時間割・手元の定額・ウエハスケールの特権、の三層が日曜に正式に分かれる。バッチを今夜ずらせ。YAML に書くのは明日の数字だけだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>DeepSeek 峰谷 T-1 × ローカル定額（8/15-16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#08 8/26 −11d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">本丸まで 11 日<br>聴くのは席とハイと持ち株</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA 決算（FY2027 Q2、8/26 時間外）まで 11 日。週次の床は消えていない。Feynman 前倒し、TSMC AP7／AP8、SoIC 2027 年末 5 万枚/月、Rubin Ultra の HBM 折れ、AMAT $91.2 億、Horizon 1 検収 50MW、800V／38GW、$500B。土曜が足したのは、13F という資本地図と、24GB という実行の床だ。BofA は売上 $940〜950 億／Q3 $1,070〜1,080 億を維持。聴く言語はピーク FLOPS ではない。HBM ハイ数の公式化、SoIC の予約表、検収 MW、そして「顧客を株で何ドル抱えているか」。Huang の TAM スライドより、何 GB が載る GPU を、誰の貸借対照表の上で、何枚出すかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 11 日（8/15）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月15日、AI Hardware の中心は「<strong>NVIDIA が顧客と光学を株で囲い、同じ週末に 27B が 24GB の床へ降りた</strong>」ことだ。火曜の $500B、水曜の 800V、木曜の Horizon 1（50MW）と Rubin Ultra のメモリ折れ、金曜の Feynman／SoIC 5 万枚／AMAT $91.2 億は消えていない。土曜が足したのは、金曜提出の 13F の消化である。SpaceX 1.228 億株・約 $210 億。Intel $50 億が四半期末 $300 億。Arm はゼロ。CoreWeave を株価下落の中で倍増し、Coherent のレーザーと Nokia の RAN と Synopsys の EDA を残した。同じ金曜に Cursor が SpaceX 子会社になったのは、01／03 カテゴリの話ではない。<strong>GPU 屋の二番手持ち株が、世界で一番開くコーディング箱の親会社になった</strong>話だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            反対側の床は、カタログの次世代ではなく、手元の Ampere／Ada／Blackwell だ。Qwen3.8-27B は稠密で、統合メモリの NUC を拒む。3090 の初日 25.4 tok/s は 3.6 より遅い——MTP がまだ配線されていない床だ。4090 は 800MB 削って Q8 KV 190k を開き、5090 は NVFP4 で 206 tok/s を公式に引用された。MediaTek は車載 C-X1 に Day-0 を載せ、Jetson はエッジの列に並んだ。Cerebras は同じ 27B をウエハで吸い、OpenAI はその上に 750 tok/s の特権プレビューを置いている。2.4T は 731GB を SSD から流す別商品だ。そしてその SSD は、SK hynix の保証棚から消えている。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            明日 16:00 UTC、DeepSeek は峰谷を始める。安いトークンは空きラックの清算だった、とハードウェアは読む。auto 既定で雲の蛇口は開き、4090 の定額はピーク時間を持たない。08-14 が「2028 の箱を先に建てる金曜」なら、08-15 は「<strong>2026 の持ち株と 2024 のゲーミング GPU が、同じ画面の実行層になった土曜</strong>」。無料なのは 13F の見出しで、有料なのは SoIC の予約と、24GB の残りメガバイトと、日曜からの時間割である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜の二枚看板、続き。「2028 の工場を前倒ししろ」の隣に、「顧客の株を $210 億分持っておけ」が来た。Jensen はシャベルを売るのをやめない。鉱山の持分も買う。Arm の株は全部売って、レーザーと雲と EDA は残す。趣味がいい。その横で、三年前の 4090 が 190k 文脈の実行層になって、Cerebras は同じ重みをウエハで飲み、hynix は保証用 SSD を切らしている。明日、DeepSeek が「ピークです」と言い出す。ピークって、空きラックが無くなったってことだよ。手元の 24GB にピークは無い。8/26 まで 11 日。祝うのは SpaceX 持ち株の時価じゃなく、HBM が何ハイで、SoIC が月何枚で、4090 の残りメガバイトが何トークン残すかだ。スライドは安い。13F と VRAM 表は、もう名前が書いてある。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">13F $21B/$30B・24GB 190k・5090 206t/s・Spark 38・NAND 枯渇・峰谷 T-1・8/26——土曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月15日現在の AI Hardware 分野は、(1) NVIDIA 13F（6/30）が SpaceX 1.228 億株・約 $210 億、Intel 四半期末約 $300 億（$50 億→約 6 倍）、Arm 完全撤退を開示し、同じ金曜に Cursor が SpaceX 子会社化したこと、(2) CoreWeave 4,721 万株・$47 億、Coherent／Nokia $22 億／Synopsys $21.5 億／Nebius $3.29 億と、顧客・光学・EDA を株で囲っていること、(3) Qwen3.8-27B 稠密が 3090 で初日 25.4 tok/s（MTP 未配線）、4090 で Q8 KV 190k／MTP 約 60 tok/s、5090＋NVFP4 で 206.1 tok/s を出したこと、(4) DGX Spark は公式 38 tok/s・現場 7〜22、統合メモリは稠密に負け、MediaTek 車載／Jetson／RTX Spark が同じ重みを奪い合うこと、(5) Cerebras が 27B を公式引用し、同じウエハ上に Sol Ultrafast 750 tok/s の特権があり、2.4T は 731GB を SSD から流す別商品であること、(6) SK hynix SSD が代替品切れで原価返金に落ち、HBM／DRAM の食いが消費者 NAND まで届いたこと、(7) 明日 16:00 UTC の DeepSeek 峰谷が空きラックの清算価格を公開すること、(8) Feynman／SoIC 5 万枚／HBM 折れ／Horizon 50MW／800V／$500B の週次床と、8/26 まで 11 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>13F の需要囲い、24GB に残るトークン、離散対統合の帯域差、NAND の棚、峰谷の稼働率、8/26 までの供給・配電・資本言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>NVIDIA／資本配分視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$500B は他人の金でラックを建てる話だ。13F は自分の貸借対照表で需要側を囲う話だ。Intel は工場と x86 の保険、SpaceX は地上と軌道の独占顧客、Coherent は CPO の光、CoreWeave は落ちた株で増やした雲。8/26 で語るべきは時価総額の自慢ではなく、この持ち分が何 MW の確定需要に化けるかだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gauge-high"></i>
+            <span>消費級 GPU／ローカル推論視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「206 tok/s は 5090 の NVFP4 だ。4090 の本文は 190k の Q8 KV と、MTP 60 tok/s の 160k だ。3090 の 25 tok/s は床——カーネルが起きれば上がる。8GB は対象外。測るのは公式ベンチではなく、自分の VRAM 表に何トークン残るかだ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i>
+            <span>統合メモリ／端末 SoC 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Spark の 38 tok/s は帯域の告白だ。稠密は離散 GPU の仕事。Unified が勝つのは MoE が降りてきたときだ。MediaTek の車載 Day-0 と Jetson は、別のワット数の列——ノートの GGUF と混ぜて「オンデバイス」と括るな。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／NAND サプライ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「木曜の HBM 折れは金曜も土曜も有効だ。SSD の保証棚が空なのは、同じウエハ配分の下流だ。原価返金は約款どおりで、時価では買い戻せない。2.4T をディスクから流す人は、そのディスクの次の一本を先に予約しろ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>ハイパースケーラー／稼働率視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「峰谷は値上げではない。空きラックが尽きた公開だ。auto 既定は昼休みでもトークンを流す。Cerebras の 750 tok/s は料金未公開の特権。残る選択肢は、ピークをずらすか、24GB に逃がすか、検収済み MW を自分で持つかだ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは 13F の見出しでも、206 tok/s のクリップでもない。2027 に契約できる HBM の世代、2028 に空いている SoIC 枠、検収された MW、そして 5 秒仕事を 4090 に切る YAML だ。Cursor の屋根が SpaceX になっても、請求書の列は変わらない。8/26 までに欲しいのはピーク FLOPS より、持ち株が示す確定需要と、手元 24GB の残りトークンである。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-15 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: NVIDIA 13F（6/30）／Bloomberg／CNBC／Tom's Hardware（SpaceX 1.228 億株・約 $210 億、Intel 四半期末約 $300 億、Arm 撤退、CoreWeave $47 億、Coherent／Nokia／Synopsys／Nebius）、@cursor_ai SpaceX クローズ、@sudoingX 3090 25.4 tok/s、Atomic Chat 4090 190k、SGLang 5090 206.1 tok/s・Spark 38.28、@Alibaba_Qwen × MediaTek／RTX Spark／Cerebras／@NVIDIARobotics Jetson、Qwen3.8-2.4T SSD 731GB、Tom's SK hynix SSD RMA、DeepSeek 峰谷 8/16 16:00 UTC、DIGITIMES Feynman／SoIC 5 万枚 D+1、AMAT Q3、Horizon 1 50MW、BofA NVDA 8/26、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-15', 'color:#10b981');
+  </script>
+</body>
+</html>
