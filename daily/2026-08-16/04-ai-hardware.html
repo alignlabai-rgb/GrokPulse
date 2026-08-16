@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-16 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-16 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⏰</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜——安いトークンが時計になり、<br>チップ屋が電力会社の株主になった</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月16日（日）。08-11 が資本 OS、08-12 が配電 OS、08-13 が検収 50MW、08-14 が Feynman と嘉義のコンクリート、08-15 が 13F と 24GB の床なら、08-16 は<strong>同じ空きラックが今夜 16:00 UTC に値札を付け、同じ会社が顧客の親会社と電力会社の株を同時に抱えた日曜</strong>だ。DeepSeek 公式料金は V4-Pro のキャッシュヒットを $0.003625 からオフピーク $0.022／ピーク $0.044 へ——最大約 +1,114%。ハードウェア読みは一つ。あの異常な安さは遊休推論枠の清算価格だった。同じ 48 時間、The Information は NVIDIA が SoftBank 系 SB Energy へ最大 $3B（Ohio の OpenAI 向け巨大 DC、約 $100B 信用補完の一部）を入れる交渉と書いた。13F は SpaceX $20.98B と Intel $29.99B。Bloomberg は残価保証を簿外に約 $70B と積んだ。反対側の床は手元だ。Qwen3.8-27B は HF 首位、16GB Air に公式が乗り、M5 32GB は MTP で 19 tok/s、Spark の日曜 bake-off は 21〜25。Hot Chips の事前登録は今夜締切、本丸まで 7 日。8/26 まで 10 日。日曜の評価軸は <code>峰谷 T-0 × $3B 電力株 × 13F $21B/$30B × $70B 簿外 × MU $236/80% × 16GB 床 × Spark 21–25 × Hot Chips −7d × 8/26 −10d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#01 DEEPSEEK T-0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/16 16:00 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">今夜、空きラックが値札になる<br>キャッシュヒット最大 +1,114%</div>
+          <div class="mt-4 text-sm text-zinc-400">公式 docs。ピークは 01:00–04:00 と 06:00–10:00 UTC。オフピークはピークの半額——だが半額は旧単価の半額ではない。V4-Pro 出力 $0.87→$1.98／$3.96。キャッシュヒット $0.003625→$0.022／$0.044。Flash 出力 $0.28→$0.66／$1.32。ハードウェア読みは値上げではない。遊休推論枠が尽きた公開だ。長会話・反復クエリ・agent ループはキャッシュ前提で安く見えていた。バッチを 16:00 UTC 前にずらせ。ずらさない仕事は、月曜の明細と、誰かのラック稼働率になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>DeepSeek 公式料金・docs（8/13–16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 $3B 電力株</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/15-16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Ohio の屋根に $3B<br>チップを売り、電力の株を買う</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information（土）を Reuters／CNBC が日曜朝まで運んだ。NVIDIA は SoftBank 系 SB Energy へ最大 $3B。半額は契約時、半額は SB Energy の IPO。案件本体は Ohio の OpenAI 向け巨大 DC——約 $100B の信用補完交渉の一部。二次は保証枠を $250B から初段 800MW 向け &lt;$120B へ絞った、という読みも並走する。10GW キャンパスは「10 基の原子炉分」と日曜スレッドが翻訳した。火曜の $500B ファンドが他人の金でラックを建てる話なら、土曜の $3B は自分の貸借対照表で電子を囲う話だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>The Information／Reuters／CNBC（8/15–16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#03 13F 三角形</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SpaceX $20.98B、Intel $29.99B<br>株式帳 $63.44B の 8 割</div>
+          <div class="mt-4 text-sm text-zinc-400">8/14 提出の 13F（6/30 時点）。SpaceX 1.228 億株・$20.98B——1 月の xAI $20B ラウンドが SpaceX に折り込まれた跡。Intel 2.148 億株・$29.99B——$5B 出資＋x86／RTX SoC とデータセンター向けカスタム CPU の続き。両方とも NVIDIA 専用の大口顧客。金曜に Cursor を閉じたロケット会社の株主が、日曜に公開された。顧客と株主が同じ顔になる。Arm はゼロのまま。CoreWeave／Coherent／Nokia／Synopsys は土曜に分解済み。日曜が足したのは、この三角形の上に電力会社が乗ったことだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>SEC 13F／Fortune／01 カテゴリ（8/14–16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#04 $70B 簿外</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/15-16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">残価保証は好況ではタダに見える<br>下り坂で初めて見える負債</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg（土夜〜日）。主要 AI 企業の残価保証がバランスシートの外に約 $70B。NVIDIA の最大 $500B 金融枠（BlackRock／Goldman／Apollo／Blackstone／Brookfield／KKR）は案件の最大 25% を保証する話。Broadcom は Anthropic「Project Big Sky」の $35B 債務を支え、Meta は約 $27B と $13B の DC を同型で組んだ。Meta の開示は「RVG payments are not probable, therefore no liability」。GPU の希少性は、電子と保証人の希少性に翻訳された。ストレス時に誰が現金を呼ばれるか——それが 8/26 の注記欄だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-contract"></i>
+            <span>Bloomberg 残価保証 $70B（8/15–16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#05 MU $236 / 80%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/16 13:34 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">BofA——メモリ循環は終わった<br>$236 EPS／2030、粗利 80%</div>
+          <div class="mt-4 text-sm text-zinc-400">@StockSavvyShay（約 2.8 万表示、いいね約 300）。HBM と先進 DRAM がウエハを食い、リードタイムが供給を構造的に締める、という読み。Micron はなお先行 PER 約 6 倍——市場はブームの即死を織り込んだまま。土曜の同アカウント（約 10.1 万表示）：HBM 出荷は 2026→2027 でさらに約 +50%、業界需要は約 7EB、ウエハ換算で通常 DRAM 約 20EB 相当を吸収。UBS（8/10）は HBM4E が $30/GB 超、2027 年業界 HBM ASP を +67% から +79% へ引き上げ済み。木曜の Rubin Ultra 折れと、土曜の hynix SSD 原価返金は、同じウエハ配分の上下流だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>@StockSavvyShay × BofA／UBS（8/15–16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#06 16GB が床になった</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Air は 92.4%、M5 は 19<br>Spark の日曜は 21〜25</div>
+          <div class="mt-4 text-sm text-zinc-400">土曜の床は 24GB だった。日曜は一段下がった。Atomic の AD-IQ3_S は 16GB MacBook Air で動き、BF16 と同じ次トークンを 92.4% 選ぶ——公式が 07:32 UTC に受け取った（約 6.7 万表示）。@neurolized は M5 32GB の素の稠密 8.45 tok/s を、MLX-VLM MTP で 19.29（約 2.28 倍）へ。@wikiwayne の DGX Spark／GB10 bake-off：vLLM+MTP 21.78、SGLang+EAGLE 24.62、sparkrun vLLM0.27+MTP3 21.52——公式 38 は日曜も再現せず。M4 mini 24GB の Hermes は 27B を指揮者に据え、16.8 tok/s で 1 時間 42 分。8GB には乗らない。消費級の天井は「動くか」から「何トークン残るか」のまま、床だけが 16GB に降りた。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-laptop"></i>
+            <span>Atomic／MLX MTP／Spark bake-off／Hermes（8/16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#07 HOT CHIPS −7d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/16 締切</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">今夜、事前登録が閉じる<br>Rubin／MI400／Crescent Island</div>
+          <div class="mt-4 text-sm text-zinc-400">Hot Chips 2026 は 8/23–25、Stanford。事前登録の最終日が今日。GPU セッション（8/24 16:45–）：NVIDIA「Rubin GPU: Driving the Era of Agentic AI」、AMD Instinct MI400 がアーキテクチャとシステムで 2 本、Intel「Crescent Island: GPU Designed for Agentic AI Inference」。3 社が同じ午後に、同じ単語——agentic inference——で並ぶ。スライドは来週。日曜に書くのは席の取り方だ。Feynman が 2028 の箱を奪い、Rubin Ultra が HBM で折れた週の直後に、現役世代の中身が公開される。聴く言語はピーク FLOPS ではない。HBM ハイ数、SoIC の予約、推論ワット、そして誰のラックに先に乗るか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chalkboard-user"></i>
+            <span>Hot Chips 2026 Advance Program（8/16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 昇騰 0Day</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/14-16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">dots3-note が Atlas に当日乗った<br>CUDA の外が新しい既定</div>
+          <div class="mt-4 text-sm text-zinc-400">小紅書 dots3-note：MoE 280B、活性 16B、文脈 512K。華為中国官微（8/15）を毎経が日曜朝に速報——Atlas 800 A3 と Atlas 900 A3 SuperPoD が全量適応、推論は vLLM Ascend。公開当日に国内スタックへ乗るのが、中国ハードウェアの新しい既定になりつつある。測るのは IMO 42 点でも TB 2.1 の 75.1 でもない。自前ジョブが、CUDA を経由せずに何 tok/s・何ワットで終わるかだ。峰谷で雲の最安が時計を見る夜に、国内ラックはピーク帯を持たない——持っているのは供給とソフトウェアの席だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-asia"></i>
+            <span>華為官微／毎経・HF dots3-note（8/14–16）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#09 8/26 −10d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/16</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">本丸まで 10 日<br>聴くのは席とハイと保証と電力株</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA 決算（FY2027 Q2、8/26 14:00 PT／時間外）。四半期は 7/26 締め。週次の床は消えていない。Feynman 前倒し、TSMC AP7／AP8、SoIC 2027 年末 5 万枚/月、Rubin Ultra の HBM 折れ、AMAT $91.2 億、Horizon 1 検収 50MW、800V／38GW、$500B。土曜が足した 13F と 24GB。日曜が足したのは、$3B の電力株、$70B の簿外保証、峰谷という稼働率の公開、16GB という新しい床だ。BofA は売上 $940〜950 億／Q3 $1,070〜1,080 億を維持。Huang の TAM スライドより、何 GB が載る GPU を、誰の貸借対照表と誰の変電所の上で、何枚出すかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA 8/26 カウントダウン 10 日（8/16）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月16日、AI Hardware の中心は「<strong>安いトークンが空きラックの清算だと公になり、同じ会社が電力会社の株主と残価の保証人を同時に更新した</strong>」ことだ。08-15 が 13F（SpaceX 約 $210 億、Intel 約 $300 億）と 24GB の床を出した翌日、08-16 はその三角形の上に電子を足した。The Information は NVIDIA が SB Energy へ最大 $3B を入れる交渉と書いた。Ohio、OpenAI、約 $100B の信用補完。半額は契約、半額は IPO。Bloomberg は残価保証を簿外に約 $70B と積んだ。$500B 金融枠は案件の最大 25% を保証する話。チップを売り、顧客の親会社の株を持ち、電力の保証人になる。三角形が綺麗すぎて、日曜の市場は祝うより注記を読んでいる。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ夜 16:00 UTC、DeepSeek は峰谷を始める。V4-Pro のキャッシュヒットは最大約 +1,114%。ハードウェアはこれを値上げと呼ばない。遊休推論枠が尽きた公開だ。長会話の割引が本体だった人への請求書であり、誰かのラック稼働率の公開相場でもある。反対側の床は手元に降りた。Qwen3.8-27B は HF 首位。Atomic の 16GB Air は次トークン一致 92.4% で公式タイムラインに乗った。M5 32GB は MTP で 8.45 から 19.29 tok/s。Spark の日曜 bake-off は 21〜25——公式 38 はまだ現場の数字ではない。M4 mini の Hermes は同じ 27B を指揮者にした。8GB は対象外。2.4T は 731GB を SSD から流す別商品のまま。その SSD は、土曜の hynix 保証棚から消えている。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            メモリ側は、BofA の $236 EPS／2030・粗利 80% が日曜昼に回った。HBM がウエハを食い、通常 DRAM を締める構造は「循環」ではなく「配分」だ、という読み。土曜の +50%／7EB／3 倍ウエハ換算と、UBS の HBM4E $30/GB 超は、木曜の Rubin Ultra 折れと同じ制約の別面だ。中国側は dots3-note が Atlas 800／900 に 0Day で乗った。CUDA の外で「公開当日に乗る」が新しい既定。Hot Chips の事前登録は今夜締切。8/23–25 に Rubin、MI400、Crescent Island が同じ午後、同じ単語——agentic inference——で並ぶ。08-14 が「2028 の箱を先に建てる金曜」、08-15 が「2026 の持ち株と 2024 のゲーミング GPU」なら、08-16 は「<strong>2026 の空きラックが時計になり、2026 の変電所が持ち株になり、2024 のノートが 16GB の実行層になった日曜</strong>」。無料なのは見出しで、有料なのはピーク帯と、SoIC の予約と、保証の 25% と、手元に残るメガバイトである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「バッチを今夜ずらせ」——今日の DeepSeek「16:00 UTC です」（笑）。ずらした人はオフピーク、ずらさなかった人は誰かの稼働率に課金される。キャッシュヒット +1,114% は、空きラックが無くなったってことだよ。同じ日曜に Jensen は Ohio の電力会社へ $3B、SpaceX に $21B、Intel に $30B。シャベルを売るのをやめない。鉱山の持分も買う。変電所の株も買う。残価保証は好況ではタダに見える。下り坂で初めて「25%」が現金になる。その横で、16GB の Air が 27B を公式に引用され、M5 が MTP で倍速になり、Spark は公式 38 を日曜も出せない。Cerebras は同じ重みをウエハで飲み、hynix は保証用 SSD を切らしている。Hot Chips まで 7 日、8/26 まで 10 日。祝うのは SpaceX 持ち株の時価じゃなく、HBM が何ハイで、SoIC が月何枚で、ピーク帯を誰が先にずらすかだ。スライドは安い。13F と VRAM 表と料金表は、もう名前が書いてある。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">峰谷 T-0・$3B 電力株・13F $21B/$30B・$70B 簿外・MU $236・16GB 床・Spark 21–25・Hot Chips −7d・8/26——日曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月16日現在の AI Hardware 分野は、(1) DeepSeek が今夜 16:00 UTC に峰谷を始め、V4-Pro キャッシュヒット最大約 +1,114%——空きラックの清算価格が公開されること、(2) NVIDIA が SB Energy へ最大 $3B（Ohio／OpenAI／約 $100B 信用補完の一部、半額は IPO）を交渉していること、(3) 13F（6/30）が SpaceX $20.98B・Intel $29.99B で株式帳 $63.44B の 8 割を占め、顧客と株主が同一顔になったこと、(4) Bloomberg が残価保証を簿外約 $70B と積み、$500B 枠は案件最大 25% を保証する話であること、(5) BofA が Micron に 2030 年 $236 EPS・粗利 80% を置き、HBM がウエハを食う構造を「循環の終わり」と読んだこと、(6) Qwen3.8-27B が 16GB Air（次トークン 92.4%）／M5 MTP 19 tok/s／Spark 日曜 21〜25／M4 mini Hermes 指揮者になったこと、(7) 華為 Atlas が dots3-note を 0Day で全量適応し、CUDA 外当日適応が既定になりつつあること、(8) Hot Chips（8/23–25）の事前登録が今夜締切で、Rubin／MI400／Crescent Island が同じ agentic inference の午後に並ぶこと、(9) Feynman／SoIC 5 万枚／HBM 折れ／Horizon 50MW／800V／$500B の週次床と、8/26 まで 10 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>峰谷の稼働率、電力株と簿外保証、13F の需要囲い、16GB に残るトークン、離散対統合の帯域差、昇騰の当日適応、8/26 までの供給・配電・資本言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>NVIDIA／資本配分視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$500B は他人の金でラックを建てる話だ。13F は自分の貸借対照表で需要側を囲う話だ。$3B は変電所の持分だ。Intel は工場と x86 の保険、SpaceX は地上と軌道の独占顧客、SB Energy は電子の入口。8/26 で語るべきは時価総額の自慢ではなく、この持ち分が何 MW の確定需要に化け、残価の 25% がいつ現金になるかだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clock"></i>
+            <span>ハイパースケーラー／稼働率視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「峰谷は値上げではない。空きラックが尽きた公開だ。キャッシュヒット +1,114% は、長会話の割引が本体だった人への請求書だ。残る選択肢は、ピークをずらすか、16GB に逃がすか、検収済み MW を自分で持つかだ。ずらさないバッチは、月曜の明細になる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i>
+            <span>消費級／ローカル推論視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「16GB Air の 92.4% は公式が受け取った床だ。M5 の 19 tok/s は MTP が配線されたあとの数字。Spark の日曜は 21〜25 で、公式 38 ではない。8GB は対象外。測るのはクリップではなく、自分の VRAM 表に何トークン残るかだ。雲のピーク帯を持たない、というのが手元の唯一の特権である。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／メモリサプライ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$236 EPS は祝辞ではない。HBM がウエハを 3 倍食い、通常 DRAM を締める配分の話だ。HBM4E $30/GB 超と、hynix SSD の原価返金は同じ制約の上下流。2.4T をディスクから流す人は、そのディスクの次の一本を先に予約しろ。循環が終わった、と銀行が言う夜に、棚はもう空いている。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>中国国内チップ／昇騰視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「dots3-note が Atlas 800／900 に当日乗ったのは、点数の話ではない。CUDA を経由せずに公開当日適応が既定になりつつある、という供給の話だ。峰谷で雲の最安が時計を見るなら、国内ラックの勝負はピーク帯ではなく、ソフトウェアの席とワットあたりトークンだ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは 13F の見出しでも、19 tok/s のクリップでもない。2027 に契約できる HBM の世代、2028 に空いている SoIC 枠、検収された MW、ピークをずらす YAML、そして 5 秒仕事を 16–24GB に切る行だ。Cursor の屋根が SpaceX になっても、請求書の列は変わらない。8/26 までに欲しいのはピーク FLOPS より、持ち株と保証が示す確定需要と、今夜 16:00 UTC 以降の自分の単価である。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-16 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: DeepSeek 公式料金（8/16 16:00 UTC 峰谷）、The Information／Reuters／CNBC（NVDA×SB Energy 最大 $3B、Ohio／OpenAI、約 $100B 信用補完）、SEC 13F（SpaceX $20.98B・Intel $29.99B）、Bloomberg 残価保証約 $70B、$500B 金融枠 25%、@StockSavvyShay×BofA $236 EPS／80%・HBM +50%／7EB、UBS HBM4E $30/GB、Atomic 16GB Air 92.4%、@neurolized M5 MTP 19.29 tok/s、@wikiwayne Spark bake-off 21–25、Hermes M4 mini 16.8 tok/s、華為官微／毎経 dots3-note 0Day、Hot Chips 2026（8/23–25・8/16 締切）、NVIDIA FY27 Q2 8/26、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-16', 'color:#10b981');
+  </script>
+</body>
+</html>
