@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-18 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-18 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🏦</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜——プレスの屋根が 8-K の残価になり、<br>堀はチップから資本へ移った</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月18日（火）。08-11 が資本 OS、08-12 が配電 OS、08-13 が検収 50MW、08-14 が Feynman と嘉義、08-15 が 13F と 24GB、08-16 が峰谷と「$3B 電力株」のリーク、08-17 が LPS の公式なら、08-18 は<strong>同じ Ohio の保証が Form 8-K の残価保証（RVG）になり、CNBC が「堀はチップから資本へ」と見出しを置いた火曜</strong>だ。上限 $105B は初段 4.25 IT-GW の累積キャップ。追加は約 3.8 GW で、行使は NVIDIA の裁量。効力はリース開始と ready-for-service、点灯は 2028 年以降。Trigger Event はテナントの支払不能か不履行。救済は引き受け・転貸・売却・解除・最大 1 年の猶予。OpenAI は NVIDIA への償還と補償を約束した。Huang の記事は約 195 万表示。四半期 FCF は $48.5B。反対側の床は手元だ。27B は 5090 1 枚とブラウザ WebGPU に座り、Honor は Snapdragon 8 Elite Gen 5 の Robot Phone を 36 分で売り切った。峰谷は営業日 2 日目、二次の Flash 枠は $60 から $15。Hot Chips まで 5 日、8/26 まで 8 日。火曜の評価軸は <code>$105B RVG × 4.25+3.8GW × 資本堀 × FCF $48.5B × 峰谷 D+2 × 27B 5090/WebGPU × Honor 售罄 × NAND +77% × Hot Chips −5d × 8/26 −8d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 8-K RVG</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/17 提出・8/18 消化</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">プレスの 3.75 が、紙の 3.8 になった<br>$105B は残価の累積キャップ</div>
+          <div class="mt-4 text-sm text-zinc-400">SEC 8-K（Item 1.01／2.03）。複数の residual value guaranties。対象は Portsmouth の約 4.25 IT-GW。追加信用補完は約 3.8 GW——月曜 PR の 3.75 より紙の方が粗い。上限 $105B は初段の累積支払義務。効力は各リース開始、支払は ready-for-service 条件、想定は 2028 年以降。テナントは OpenAI 関連会社。DSX フルスタックを載せる、ただし限定例外あり。書式は 7/26 締め 10-Q に添付予定。見出しのゼロではなく、いつ現金になり、何が簿外かが本体だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>NVIDIA 8-K nvda-20260817（8/17–18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 TRIGGER EVENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 条項読み</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">不履行のとき、チップ屋が店子になる<br>引き受け・転貸・売却・解除・1 年猶予</div>
+          <div class="mt-4 text-sm text-zinc-400">Trigger Event は二つ。テナントの倒産に伴うリース不履行、または支払遅延。そのとき NVIDIA は、保証最低リース価値と回収額の差額を埋める。選べるのは引き受け、転貸、売却プロセス、解除、最大 1 年の猶予（その間は指定プロジェクト費を払う）。消滅条件はリース開始から 20 年、テナント側の正規終了、テナントが満足できる格付けを取ったとき、その他慣習条項。OpenAI は実際に払った額を償還・補償する、と本文。空いたら CUDA 互換で別テナント、という月曜 FAQ の、契約語訳が火曜に出た。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i>
+            <span>8-K Trigger Event／救済オプション（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 CAPITAL MOAT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 CNBC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">堀はチップから資本へ<br>$500B の週に、$105B の紙</div>
+          <div class="mt-4 text-sm text-zinc-400">CNBC 火曜。「Nvidia’s AI moat is shifting from chips to capital」。先週の $500B ウォール街協定に続き、Ohio は「チップを売る会社」が「工場を保証する会社」になった証拠、と本文。四半期 FCF $48.5B、3 年で約 18 倍。売上は 12 四半期連続で前年比 55% 超。AMD データセンターは 100% 超成長、Google は TPU 売上を認識し始めた、と同じ稿。Huang は「研究所は需要が貸借対照表より速い」。持っている信用は研究所ではなく、チップ屋の側だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-university"></i>
+            <span>CNBC「moat is shifting」（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 HUANG 195万</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/17 12:40 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">本人記事は約 195 万表示<br>循環融資か、への答えは「No」のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">@JensenHuang の X 記事は火曜午後で約 195 万表示、いいね約 9,890。公式 @nvidia 引用は約 10.9 万。世代あたり約 150 万 GPU・売上 $1,500〜2,000 億、OpenAI 既存＋計画約 12 GW（延長なら約 16 GW）、2030 年まで約 $6,000 億——月曜の数字は動いていない。動いたのは読みの層だ。Bloomberg 見出しの最大 $1,050 億、週末の $250B→&lt;$120B、火曜の 8-K は同じ屋根の別レイヤ。ECB Blog は同じ 48 時間に「次のドットコムか」と問うた。ゼロの数を足すな。何が保証され、いつ点灯し、テナントが消えたあと誰が店子になるかを書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-quote-left"></i>
+            <span>@JensenHuang 記事／ECB Blog（8/17–18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#05 峰谷 D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 営業日2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">空きラックの時計は二日目<br>二次の Flash 枠が先に死んだ</div>
+          <div class="mt-4 text-sm text-zinc-400">ピークは 01:00–04:00 と 06:00–10:00 UTC。V4-Pro キャッシュヒットは旧 $0.003625 からオフピーク $0.022／ピーク $0.044。出力 $1.98／$3.96。公式の値上げは既知だ。火曜に現場が怒っているのはラッパー側——OpenCode Go が V4-Flash クレジットを予告なく $60 から $15 へ切った、と二次。Hassan は「中国モデルの無料推論は週ごとに縮んでいる」。ハードウェア読みは値上げではない。遊休推論枠が尽きた公開相場の、二日目の明細だ。ずらさないバッチは、誰かの稼働率になる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>DeepSeek 公式料金／OpenCode Go 二次（8/17–18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#06 27B の床</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 04:15–09:45 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">5090 1 枚で frontier<br>ブラウザと 3090 と Spark が並ぶ</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Qwen は火曜朝、Cline（約 35 万表示）と Xenova の WebGPU（約 8.7 万表示）を公式引用し、09:45 UTC に「5090 1 枚で frontier」と書いた。Intelligence Index 52——GPT-5.6 Luna (max) と同点。4-bit は約 17GB。AA 本人は評価中に 1.6 億トークンを吐いた（中央値 4,300 万）。おしゃべりはスコアを膨らませ、ローカルでは電気代とコンテキスト死になる。Spark 現場は「朝 5 tok/s、最適化後 218」。Ohio の 8 GW とは列が違う。測るのは GW ではなく、手元 VRAM に何トークン残るかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-laptop"></i>
+            <span>@Alibaba_Qwen × Cline／Xenova／Spark 現場（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 HONOR SoC</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 10:08–10:44</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8 Elite Gen 5 が 36 分で売り切れた<br>雲台の隣に、端末 NPU の領収書</div>
+          <div class="mt-4 text-sm text-zinc-400">北京 10:08、栄光商城。12GB/512GB 9,999 元、16GB/1TB 12,999 元。快科技 10:44——栄光商城と京東自営が全版本售罄。中身は Snapdragon 8 Elite Gen 5、Adreno 840、最大 16GB LPDDR5X。撮像は純シリコンでは足りない、と本人が言い、馭光 H1 を足した。7060 mAh、4 自由度チタン雲台、360°/秒。脳は YOYO＋Qwen。店頭の售罄はカテゴリの誕生証明ではない。返品率と 30 日残存と、NPU 上で 100 歩が何回完走するかが、エッジ列の検収だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>快科技／Honor 首销／Snapdragon 8 Elite Gen 5（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#08 NAND +77%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">上位 5 社 NAND は四半期 +77%<br>Micron は 99.2% で 3 位へ</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の二次。世界 NAND 上位 5 社の Q2 売上合計 $688.7 億、前四半期比 +77%。AI サーバ eSSD が牽引。Samsung 首位は維持、Micron は四半期 +99.2% で 3 位。UBS は $MU 目標 $1,625——メモリは循環ではなく、AI が DRAM を必要とする配分だ、と書いた。月曜の Lutnick「中国メモリは認めない」は消えていない。HBM4E 12-hi 折れと CoWoS 2027 +75% の上に、今度は NAND の値札が乗った。棚の空いている側は、関税の前に決まっている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>NAND Q2 二次／UBS $MU／Lutnick 消化（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 HOT CHIPS −5d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/23–25 Stanford</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">事前登録は閉じた<br>Rubin／MI400／Crescent Island</div>
+          <div class="mt-4 text-sm text-zinc-400">Hot Chips 2026 は 8/23–25、Stanford Memorial Auditorium。GPU セッションは 8/24 16:45–18:45。NVIDIA「Rubin GPU: Driving the Era of Agentic AI」（Mandal／Dash／Manyam）、AMD Instinct MI400、Intel「Crescent Island: GPU Designed for Agentic AI Inference」。3 社が同じ単語——agentic inference——で並ぶ。Vera CPU も同週。Feynman が 2028 の箱を奪い、8-K が残価を上限し、今日 27B が 5090 に座った週の直後に、現役世代の中身が公開される。聴く言語はピーク FLOPS ではない。HBM ハイ数、SoIC の予約、推論ワット、誰のラックに先に乗るか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chalkboard-user"></i>
+            <span>Hot Chips 2026 Advance Program（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#10 8/26 −8d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">本丸まで 8 日<br>10-Q に保証の書式が付く</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA 決算（FY2027 Q2、8/26 14:00 PT／時間外）。四半期は 7/26 締め。8-K は、保証の書式をこの 10-Q に添付すると書いた。週次の床は消えていない。Feynman、TSMC AP7／AP8、SoIC 2027 年末 5 万枚/月、Rubin Ultra の HBM 折れ、$500B 金融枠、13F（SpaceX $20.98B／Intel $29.99B）、簿外残価。日曜が足した峰谷。月曜が足した住所と $1.5B 株。火曜が足したのは、残価の Trigger Event と、堀が資本に移ったという見出しと、5090 1 枚の frontier と、8 Elite の售罄だ。Huang の TAM スライドより、何 GW が 2028 に点灯し、何ハイが Rubin に載り、今夜のピーク帯を誰が先にずらすか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA FY27 Q2 カウントダウン 8 日（8/18）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月18日、AI Hardware の中心は「<strong>月曜の LPS プレスが、火曜の 8-K 残価保証になり、堀の名前がチップから資本へ付け替わった</strong>」ことだ。08-17 が住所と 4.25 IT-GW と $1.5B 株を公式にした翌日、本体は契約語になった。NVIDIA は SB Energy と複数の residual value guaranties を結んだ。対象は Pike County、PORTS-Pike、約 4.25 IT-GW。追加は約 3.8 GW——月曜 PR の 3.75 より、紙の方が丸い。上限 $105B は初段の累積支払義務であって、キャンパス全額でも、テナント義務の全部でもない。効力は各リース開始。現金が出るのは ready-for-service のあと、想定は 2028 年以降。テナントは OpenAI 関連会社。載せるのは DSX フルスタック。書式は 7/26 締めの 10-Q に付く。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            火曜に新しく読めるのは、Trigger Event の中身だ。テナントが倒産してリースを落とすか、ただ払わないか。そのとき NVIDIA は、保証最低価値と回収額の差額を埋める。選べるのは引き受け、転貸、売却、解除、最大 1 年の猶予。消滅条件の一つは、テナントが「満足できる格付け」を取ること——研究所が投資適格になったら、チップ屋の保証は消える、と紙は言っている。OpenAI は実際に払った額を償還・補償する。Huang の FAQ「循環融資か。No. OpenAI がリースを払う」は、8-K では「払わなければ我々が埋め、あとで取り立てる」に翻訳された。CNBC は同じ朝、「堀はチップから資本へ」と書いた。FCF $48.5B、3 年で約 18 倍。AMD と TPU が技術の差を削る週に、貸す側が勝つ、というのが火曜の資本読みだ。ECB は同じ 48 時間に「次のドットコムか」と問うた。警告は否定ではない。分母と保証と循環を、同じ表に書けという手紙だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ火曜、床は三つ動いた。DeepSeek 峰谷は営業日 2 日目——公式単価より先に、二次の Flash 枠が $60 から $15 へ死んだ。空きラックの清算価格は、ラッパーの入口から先に枯れる。手元の床は 27B だ。公式が「5090 1 枚で frontier」と受け取り、Xenova はブラウザ WebGPU で同じ 52 を回し、Spark 現場は 5 tok/s から 218 まで上げた。4-bit 約 17GB は「ノート 1 枚」の条件付き。おしゃべり 1.6 億トークンは、ローカルでは電気代になる。端末の床は Honor だ。Snapdragon 8 Elite Gen 5 と馭光 H1 を積んだ Robot Phone が、北京 10:08 に開き、36 分で售罄した。NAND 上位 5 社は四半期 +77%、Micron は +99.2% で 3 位。HIVE の Blackwell Ultra 2,016 基は、まだ「今年の箱」のまま残っている。Ohio の 8 GW が 2028 なら、カナダの 2,016 基と 5090 1 枚と 8 Elite の NPU は、今夜の箱だ。Hot Chips まで 5 日、8/26 まで 8 日。08-17 が「株主が屋根の住所を公開した月曜」なら、08-18 は「<strong>同じ屋根の残価が紙になり、堀が資本に改名され、手元の 1 枚と電話の NPU が frontier の席に座った火曜</strong>」。無料なのは見出しで、有料なのは ready-for-service と、ピーク帯のずらしと、VRAM に残るトークンである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「住所は Pike County、保証は全額じゃない」——今日の 8-K「差額を埋めろ。店子になれ。1 年待て。格付けが付いたら解放してやる」（笑）。プレスの 3.75 が紙の 3.8 になった瞬間に、チップ屋は不動産の残価保証会社になった。CNBC はそれを「堀が資本に移った」と綺麗に言った。FCF $48.5B ある側が、貸借対照表の足りない研究所の屋根を先に囲う。空いたら CUDA で別の店子、払わなければ我々が埋めて取り立てる。最高に 2026 年らしい金融工学だ。その横で 27B が 5090 1 枚とブラウザで frontier の席に座り、Honor は 8 Elite を 36 分で売り切り、DeepSeek の安い入口は二次から先に死んだ。片方は 2028 の 8 GW、片方は今夜の 17GB。両方とも「電子を先に囲う」顔だ。祝うのは $6,000 億のスライドじゃない。何 GW が 2028 に点灯し、何ハイが Rubin に載り、今夜 16:00 UTC 以降の自分の単価がいくらか、手元の VRAM に何トークン残るかだ。スライドは安い。8-K と料金表と 5090 のワットは、もう住所が書いてある。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">$105B RVG・4.25+3.8GW・Trigger Event・資本堀・FCF $48.5B・峰谷 D+2・27B 5090/WebGPU・Honor 8 Elite・NAND +77%・Hot Chips −5d・8/26——火曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月18日現在の AI Hardware 分野は、(1) NVIDIA 8-K が PORTS-Pike の残価保証を上限 $105B・初段約 4.25 IT-GW・追加約 3.8 GW（裁量）と定義し、効力はリース開始と ready-for-service（2028 年以降）であること、(2) Trigger Event 時に差額補填と引き受け／転貸／売却／解除／1 年猶予を選び、テナント格付けで消滅し、OpenAI が償還・補償すること、(3) CNBC が「堀はチップから資本へ」と書き、FCF $48.5B と $500B 金融枠と Ohio を同じ週の証拠にしたこと、(4) DeepSeek 峰谷が営業日 2 日目になり、二次 Flash 枠が $60→$15 へ先に枯れたこと、(5) Qwen3.8-27B が AA 52 で 5090 1 枚／3090／WebGPU／Spark に座ったこと、(6) Honor Robot Phone が Snapdragon 8 Elite Gen 5 で 36 分售罄したこと、(7) NAND 上位 5 社 Q2 +77%、Micron +99.2% で 3 位、UBS $1,625、Lutnick の中国メモリ拒否が同じ配分の上下流であること、(8) Hot Chips（8/23–25）まで 5 日、Rubin／MI400／Crescent Island が同じ agentic inference の午後に並ぶこと、(9) 保証の書式が付く 10-Q と FY27 Q2 まで 8 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>残価の中身と現金化時期、資本堀の厚さ、峰谷の稼働率、手元 1 枚に残るトークン、端末 NPU の完走、HBM／NAND の配分、8/26 までの供給・配電・資本言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>NVIDIA／資本＋LPS 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「チップとパッケージとメモリを押さえるのと同じ規律を、土地・電力・箱と残価に適用した。8-K の $105B はキャンパス全額ではない。初段 4.25 GW の累積キャップで、追加 3.8 は裁量。研究所は需要が貸借対照表より速い。我々が囲うのは、20 年で何度も入れ替えられる場所だけだ。8/26 で語るべきは $6,000 億の自慢ではなく、ready-for-service がいつ来て、残りエクスポージャがどう減るかだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-file-contract"></i>
+            <span>信用補完／残価市場視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「本人は循環融資を否定した。8-K は『払わなければ差額を埋め、あとで取り立てる』と書いた。Trigger Event の救済は引き受け・転貸・売却・解除・1 年猶予。消滅条件にテナント格付けがある。Bloomberg の $1,050 億は見出し、週末の $250B→&lt;$120B は初段への絞り、火曜の紙は残価の中身だ。好況ではタダに見える条項が、下り坂で初めて負債になる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clock"></i>
+            <span>ハイパースケーラー／稼働率視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「峰谷の二日目は値上げの二日目ではない。空きラックが尽きた公開相場の営業日 2 日目だ。公式単価より先に、二次の Flash 枠が $60 から $15 へ死んだ。残る選択肢は、ピークをずらすか、16–24GB に逃がすか、検収済み MW を自分で持つか。ずらさないバッチは、今夜の明細になる。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i>
+            <span>エッジ／ローカル推論視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「27B が 5090 1 枚とブラウザ WebGPU で Luna と同じ席に座った。Spark は 5 tok/s から 218 まで上がる。4-bit 17GB は条件付きだ。おしゃべり 1.6 億トークンは、クラウドでは請求書、手元では窓と熱になる。Honor の 8 Elite 售罄は、雲台の話ではない。端末 NPU で 100 歩が完走するかどうかの、最初の領収書だ。Ohio の GW と、今夜の VRAM は同じ表の別列である。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-fuchsia-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-fuchsia-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>HBM／NAND／メモリ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Lutnick の一文は Apple の BOM ではなくウエハ配分の話だ。HBM が通常 DRAM を食い、12-hi が折れ、HBM4e が 70–100% 高い。その上に NAND 上位 5 社 +77%、Micron +99.2% が乗った。UBS の $1,625 は循環終了の値段だ。中国メモリに逃がすな、と言った月曜に、棚の空いている側はすでに決まっている。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは $105B の見出しでも、Superman の 12.66 m/s でも、36 分售罄でもない。2027 に契約できる HBM の世代、2028 に空いている SoIC 枠、検収された MW、ピークをずらす YAML、5 秒仕事を 16–24GB に切る行だ。残価保証が紙になっても、請求書の列は変わらない。8/26 までに欲しいのはピーク FLOPS より、Trigger Event が示す確定需要と、今夜以降の自分の単価である。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-18 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: NVIDIA 8-K（残価保証 $105B、4.25+3.8 IT-GW、Trigger Event、10-Q 添付）、CNBC「moat is shifting」（FCF $48.5B、$500B 枠）、@JensenHuang 記事（約 195 万表示）、Reuters／Bloomberg Ohio、DeepSeek 峰谷 D+2、OpenCode Go $60→$15、@Alibaba_Qwen 5090／WebGPU、AA Qwen3.8-27B 52、快科技 Honor 首销售罄、Snapdragon 8 Elite Gen 5、NAND Q2 +77%／UBS $MU、Hot Chips 2026（8/23–25）、NVIDIA FY27 Q2 8/26、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-18', 'color:#10b981');
+  </script>
+</body>
+</html>
