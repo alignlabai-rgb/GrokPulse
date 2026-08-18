@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Physical Tech &amp; Energy ダイジェスト | 2026-08-18 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">05</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Physical Tech &amp; Energy ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-18 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚙️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜——屋根の残価が紙になり、<br>現金は ready-for-service まで待たされる</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月18日（火）。08-10 が「Amazon が自前 7.65GW ガスで time-to-power を買う月曜」、08-11 が「Batch Zero が数ヶ月監査文書になった火曜」、08-12 が「電圧と地理が値段になった水曜」、08-13 が「50MW が領収書になった木曜」、08-14 が「単純サイクルと 43 社の拍手」、08-15 が「250–300 の紙と島と軌道」、08-16 が「$3B 電力株リークと峰谷 T-0」、08-17 が「10GW→8 IT-GW と既存 800MW」なら、08-18 は<strong>同じ Ohio の土地・電力・箱が Form 8-K の残価保証になり、現金は 2028 年の ready-for-service まで動かない、と本人が書いた火曜</strong>だ。上限 $105B は初段 4.25 IT-GW の累積キャップ。追加は約 3.8GW、行使は NVIDIA の裁量。Trigger Event ではチップ屋が店子になる。同じ火曜、FT は「60 件の大型データセンターを抱える電力会社の 75% がガスを足し、一部は石炭の引退を遅らせる」と回り、ERCOT は昨日 BESS を 1 万 MW 超回して予備力を守った。House は明日 8:00、PUCT は木曜。火曜の評価軸は <code>$105B RVG × RFS 2028 × 4.25+3.8 IT-GW × 既存 800MW × 9.2GW ガス／$33B × 765kV House −1d × PUCT −2d × BESS 10GW 昨日 × FT 75% ガス × 変圧器 120–210週 × 峰谷 D+2 × Superman T-1 × ATLAS −8d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-cogs text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#01 RFS 2028</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/17 提出・8/18 消化</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">残価は土地・電力・箱の値段<br>現金は通電してから</div>
+          <div class="mt-4 text-sm text-zinc-400">SEC 8-K（Item 1.01／2.03）。NVIDIA は SB Energy と複数の residual value guaranties を結んだ。対象は Portsmouth の約 <strong>4.25 IT-GW</strong>。追加信用補完は約 <strong>3.8GW</strong>——月曜 PR の 3.75 より紙の方が粗い。上限 <strong>$105B</strong> は初段の累積支払義務。効力は各リース開始。支払条件は lessor が <strong>ready-for-service</strong> を満たしたあと、想定は <strong>2028 年以降</strong>。04 が「堀はチップから資本へ」と書くなら、05 は——<strong>残価の本体は LPS そのもので、通電していない MW はまだ現金にならない</strong>——と書く。スライドの 10GW は演説、8 IT-GW は屋根、4.25 は保証の初段、800MW が最初のスイッチ。請求書は完成容量が貸せるようになってから、という月曜の一文が、火曜は契約語になった。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>NVIDIA 8-K nvda-20260817／ready-for-service（8/17–18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 店子の MW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 条項読み</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">不履行のとき、チップ屋が<br>メガワットの住人になる</div>
+          <div class="mt-4 text-sm text-zinc-400">Trigger Event は二つ。テナントの倒産に伴うリース不履行、または支払遅延。そのとき NVIDIA は、保証最低リース価値と回収額の差額を埋める。選べるのは引き受け、転貸、売却プロセス、解除、最大 1 年の猶予（その間は指定プロジェクト費を払う）。消滅条件はリース開始から 20 年、テナント側の正規終了、テナントが満足できる格付けを取ったとき。OpenAI は実際に払った額を償還・補償する。月曜 FAQ の「空いたら CUDA 互換で別テナント」は、火曜の物理層では——<strong>空いた箱のワットを、誰が先に住むか</strong>——に翻訳された。研究所が落ちても、タービンと 765kV と閉ループは残る。残る側を囲ったのが、火曜の保証だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i>
+            <span>8-K Trigger Event／引き受け・転貸・売却（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#03 既存 800MW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 再読</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">最初の電子はまだ既存系統<br>保証の 4.25 はまだ点いていない</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI 本文のいちばん短い段落は、火曜も動いていない。<strong>最初の 800MW は 2028 年、既存の AEP インフラをほぼ使う</strong>。建設は 2026 年着手。その先は新しい発電所——ガスを含む——と新しい送電線が要る。許可、環境審査、資金が揃うまで開発は進まない、と本人が書いた。portscampus.com は同じ数字を火曜も掲げた。08-13 の Horizon 1 が「検収 50MW」なら、08-18 の 800MW は<strong>まだ点いていないが、系統を新設しなくても届く電子</strong>だ。8-K の 4.25 IT-GW は、そのスイッチが何度も入ったあとの累積キャップ。最初の電子と、保証の初段は、同じ年でも同じ箱ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>OpenAI／portscampus 初段 800MW・2028（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 765kV House −1d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 8:00</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Ohio は線の領収書を出した<br>テキサスは明日、同じ電圧を聴く</div>
+          <div class="mt-4 text-sm text-zinc-400">House State Affairs は <strong>明日 8/19 8:00</strong>、Austin・JHR 140。データセンターと提案中の <strong>765kV</strong> を同じ部屋に座らせる。公開証言は 2 分、登録は当日 10:00 まで。Brad Buckley は火曜未明にリマインドを再掲した。Ohio 側は月曜に AEP Ohio 経由 <strong>$4.2B／765kV</strong>、変電所 4、長納期品は確保済み、負担は事業側 100%、と書いた。電圧は同じだ。違うのは、<strong>誰が先に変圧器を発注し、誰が用地と料金と信頼性を同じ部屋で聴くか</strong>である。手紙が来ない連邦の土地と、手紙が来る ERCOT のキューが、同じカレンダーの前後に並んだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tower-broadcast"></i>
+            <span>Texas House State Affairs 8/19 × AEP $4.2B（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#05 FT 75% ガス</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/17-18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">60 件の屋根の 4 分の 3 が<br>タービンを足す、と FT が数えた</div>
+          <div class="mt-4 text-sm text-zinc-400">Art Berman（月 02:49 UTC、約 2,500 表示）が運んだ FT。調査対象は計画中の大型データセンター約 60 件を抱える電力会社。<strong>75% がガス発電を追加</strong>し、一部は石炭の引退を遅らせる。Big Tech は再エネ証書を買える。データセンターは 24 時間の電子を要る。需要がクリーン追加を追い越すと、化石が隙間を埋める、が地質屋の一文だ。Ohio の少なくとも <strong>9.2GW ガス／日米約 $33B</strong>、所有者は米政府、運用は SB Energy——月曜の公式キャンパスは、火曜の調査のいちばん太い実例になった。濃縮工場の跡地でタービンを回すのが、2026 年の time-to-power だ。紙の炉は 8/26 まで待つ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fire"></i>
+            <span>FT／@aeberman12 × DOE 9.2GW ガス（8/17–18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#06 BESS 10GW 昨日</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/17 運用</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">夏の犬日に、予備力を守ったのは<br>タービンではなく電池だった</div>
+          <div class="mt-4 text-sm text-zinc-400">@RyanNuckolls_（火 14:28 UTC）。ERCOT は昨日、運転予備を維持するために BESS を <strong>1 万 MW 超</strong>回した。Texas Energy Group の現場メモだ。同じ火曜、欧州側スレッドは OCGT の 5–15 分と BESS のミリ秒、CAPEX の $350–600/kW（2h）対ガスピーカーを並べた。08-14 が「単純サイクル島」を解剖した週の終わりに、系統側の夏は<strong>すでに電池がピークを食っている</strong>。明日の下院が 765kV を聴くあいだ、昨日の電子はラックではなく蓄電池から出て、予備力の欄を埋めた。キューの 200GW はまだ手紙待ち。動いている GW は、すでに別の列にある。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-battery-full"></i>
+            <span>@RyanNuckolls_ ERCOT BESS 10k MW（8/17–18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 変圧器 120–210週</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">許可より長いのは銅と鉄<br>通電日がスケジュールリスクだ</div>
+          <div class="mt-4 text-sm text-zinc-400">@SiteSpecs（火 14:15 UTC）。$105B は Ohio の新しい発電をまだ要る。ただし典型的な系統キューには座っていない。SB Energy は専用発電約 10GW——大半が新ガス——と送電 $4.2B。初段 800MW は 2028。DOE は長納期の高圧機器を確保済み、と書いた。Wood Mackenzie の大型変圧器はなお <strong>120–210 週</strong>。価格すべきは建築許可ではなく power-on date、が現場の一文だ。08-17 が「誰が先に変圧器を発注したか」と書いたなら、08-18 はそのリードタイムに週数を付けた。GPU の納期より線の納期の方が長い、という夏の定理は、火曜も条文のまま。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>@SiteSpecs × Wood Mackenzie 変圧器 120–210週（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#08 身体 T-1 × 峰谷 D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18–19</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">キャンパスのワットは 2028<br>身体のワットは明日、鐘を突く</div>
+          <div class="mt-4 text-sm text-zinc-400">宇樹 Superman は明日 8/19、688836。公式予告は約 98 万表示まで伸び、12.66 m/s・2m 跳びが火曜も回り続けた。Honor Robot Phone は北京 10:08 に開き、12GB/512GB 9,999 元、36 分で售罄。エッジの電子は今夜の箱だ。同じ火曜、DeepSeek 峰谷は営業日 2 日目。二次の Flash 枠は $60 から $15。04 が「遊休推論枠の清算」と読むなら、05 は——<strong>遊休ラックは遊休ワットで、身体の NPU は別の変電所を要らない</strong>——と読む。Ohio の 800MW が 2028 に点くあいだ、今夜のピーク帯と明日の鐘は、すでに値札が付いている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i>
+            <span>宇樹 688836 8/19 × Honor 售罄 × 峰谷 D+2（8/18）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#09 PUCT −2d × ATLAS −8d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">木曜は日程、来週は紙の炉<br>50MW の請求書は D+5</div>
+          <div class="mt-4 text-sm text-zinc-400">PUCT は <strong>8/20</strong>（−2d）に good cause exception——監査の「一括か転がしか」「どれだけ落ちるか」。250–300 通／約 200GW は火曜もまだ郵便受けに入っていない。免除三項（既承認・自前発電・非 ERCOT）に、連邦の土地の 9.2GW ガスも入る。IAEA ATLAS（海上・洋上 SMR）は <strong>8/26–27</strong>（−8d）、NVIDIA 決算と同じ朝。Horizon 1 の 50MW は D+5 で請求書を出し続け、HIVE の水力は今年 Q4、Ohio の 800MW は 2028、45GW は条件付きの手紙だ。<strong>発表 GW は演説、認定 GW は臨界、検収 MW は請求書、残価 $ は通電後</strong>。火曜に増えたのは、通電後の値段の方である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>PUCT 8/20 −2d × ATLAS／NVDA 8/26 −8d × IREN D+5（8/18）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月18日、Physical Tech &amp; Energy の中心は「<strong>月曜の屋根が、火曜の 8-K で土地・電力・箱の残価になり、現金は ready-for-service まで動かないと本人が書いた</strong>」ことだ。08-10 が Pecos 7.65GW で接続を要らない発電所を表紙にし、08-11 が Batch Zero を数ヶ月文書にし、08-12 が 800V と地理で内側と外側を同時に見、08-13 が 50MW の領収書を置き、08-14 が単純サイクルと 43 社の拍手を解剖し、08-15 が 250–300 通の宛名と島と軌道を固定し、08-16 が $3B リークと峰谷 T-0 を置き、08-17 が 10GW→8 IT-GW と既存 800MW を本文にしたなら、08-18 はその逃げ道の地上側が、残価保証という金融商品の担保になった火曜だ。上限 $105B は初段 4.25 IT-GW の累積キャップ。追加 3.8GW は裁量。効力はリース開始。支払は通電条件のあと、2028 年以降。テナントが落ちれば、チップ屋が店子になる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが重なるか。系統の列が freeze され、タービンと 765kV の変圧器のリードタイムが GPU より長く、トークンの値段が昨夜から電力の TOU になっており、月曜のプレスだけでは貸し手が動かないからだ。残価保証は「屋根が貸せるようになったあと」にしか現金にならない。最初の電子はいまも既存 AEP の 800MW。その先は 9.2GW のガスと新線だ。FT は同じ 48 時間に、60 件の大型計画を抱える電力会社の 75% がガスを足し、一部は石炭の引退を遅らせると数えた。Ohio の公式キャンパスは、その調査のいちばん太い実例になった。同じ電圧を、テキサス下院は明日聴く。昨日の ERCOT は、演説ではなく BESS 1 万 MW 超で予備力を守った。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            変圧器は 120–210 週。DOE は長納期品を確保済みと書いたが、現場が価格するのは許可ではなく通電日だ。峰谷は営業日 2 日目、二次の安い入口は先に枯れた。宇樹 Superman は明日鐘を突き、Honor の Robot Phone は 36 分で売り切れた。キャンパスのワットは 2028、身体のワットは今夜と明日。Horizon 1 の 50MW は D+5 で請求書を出し続け、HIVE の水力は今年 Q4、IEA の 45GW は条件付きの手紙、ATLAS は 8/26 の海上の紙の炉だ。テキサスの 250–300 通は火曜もまだ郵便受けに入っていない。手紙が来ない箱——既承認、自前発電、非 ERCOT、そして連邦の土地——に、Portsmouth の 9.2GW ガスが入る。勝負どころは、見出しの GW でも拍手でも残価のゼロでもなく、初段 800MW の通電日、765kV の用地と発注、ガスの許可トン数、閉ループが本当に蒸発しないか、RFI の完成度、既通電 MW、峰谷のラック稼働率、BESS が昨日守った予備力、そして系統を要らない住所を誰が残価で持つか、にある。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「発電 10GW は工場 8 IT-GW、最初の電子は既存の 800MW」——今日の 8-K「残価を保証する。ただし通電してから。落ちたら店子になる」（笑）。プレスの屋根が、火曜は土地・電力・箱の値段になった。旧ウラン工場の跡地でタービンを回し、所有者は米政府、金は日米、保証はチップ屋。濃縮の文法で残価を書くのが、2026 年の time-to-power だ。同じ朝、FT は 75% の電力会社がガスを足すと数え、ERCOT は昨日電池で予備力を守り、変圧器は 120–210 週、テキサスは明日 765kV を聴く。スライドは安い。株はもう少し高い。既存系統の 800MW は、スライドより高い。ready-for-service はもっと高い。通電していない MW に残価を付けたのが、火曜の一番高い商品だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">「$105B RVG・RFS 2028・既存 800MW・9.2GW ガス・765kV House −1d・BESS 10GW・変圧器 120–210週」——火曜の物理層が固定した九つの座標</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月18日現在の Physical Tech &amp; Energy は、(1) NVIDIA 8-K が PORTS-Pike の残価保証を上限 $105B・初段約 4.25 IT-GW・追加約 3.8GW（裁量）と定義し、現金化条件を ready-for-service（2028 年以降）としたこと、(2) Trigger Event 時にチップ屋が引き受け・転貸・売却・解除・1 年猶予を選び、メガワットの住人になれること、(3) 最初の 800MW はいまも 2028 年の既存 AEP で、保証の 4.25 とは別のスイッチであること、(4) 同じ 765kV を Ohio が $4.2B の領収書にし、テキサス下院が 8/19 8:00 に聴くこと、(5) FT が大型計画 60 件を抱える電力会社の 75% がガスを足し、一部は石炭引退を遅らせると数え、Ohio 9.2GW ガス／日米 $33B がその実例になったこと、(6) ERCOT が昨日 BESS 1 万 MW 超で運転予備を守ったこと、(7) 大型変圧器が 120–210 週で、現場が価格するのは許可ではなく通電日であること、(8) 峰谷が営業日 2 日目になり、宇樹 Superman が 8/19 に鐘を突き、Honor Robot Phone が 36 分で売り切れ、エッジのワットがキャンパスの 2028 と並んだこと、(9) PUCT 8/20（−2d）× ATLAS／NVDA 8/26（−8d）× Horizon 1 D+5 の三重カウントダウンと、未送の 250–300 通、が同時に動いている。08-10 が「空白の上に発電所が建つ月曜」、08-11 が「空白が監査文書になった火曜」、08-12 が「電圧と地理が値段を決める水曜」、08-13 が「検収 50MW が紙の 45GW のあいだに置かれた木曜」、08-14 が「燃料が単純サイクルで拍手が空欄を飾った金曜」、08-15 が「空欄が 250–300 通の宛名を持ち、島と軌道が部屋の外に立った土曜」、08-16 が「その島の地上側をチップ屋が株で囲い、空きラックがワットの時間割になった日曜」、08-17 が「換算式と初段 800MW と水の条項が本文になった月曜」なら、08-18 は<strong>同じ屋根の残価が紙になり、現金は通電まで待たされ、手紙が来ない住所が保証の担保になった火曜</strong>だ。2026年後半の勝負どころは、見出しの GW でもスローガンでも残価のゼロでもなく、RFI の完成度、BTM と既通電、単純サイクルか combined cycle か、認定容量、765kV の用地と発注、検収 MW、峰谷のラック稼働率、BESS が昨日守った予備力、通電日の統合スケジュール、そして系統を要らない住所を誰が残価で持つか、にある。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scale-balanced"></i>
+            <span>系統・規制／テキサス視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「250–300 通は火曜もまだ予告だ。8/20 の『一括か転がしか』が名簿の値段を決める。Ohio の 9.2GW ガスは連邦の土地で、こちらの郵便受けには入らない。明日の下院は 765kV とデータセンターを同じ部屋に座らせる。昨日の電子は BESS 1 万 MW 超で予備力を守った。手紙より先に、電池が動いている。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-fire"></i>
+            <span>BTM／ガスタービン開発</span>
+          </div>
+          <p class="text-sm text-zinc-300">「残価 $105B は通電してから。最初の電子は既存の 800MW。本音の納期は火曜も本文のまま。燃料はガス、所有者は米政府、金は日米。FT の 75% は、Ohio を例外ではなく標準にした。熱効率の請求書は、燃料が $10 になった日に届く。アンケート回避装置としては、連邦の土地以上の住所はない。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA／資本×電子視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$3B リークは $1.5B の株になり、$105B は残価の累積キャップになった。保証は初段 LPS の一部で、ready-for-service まで現金は出ない。10GW は発電、8 IT-GW は屋根、4.25 は保証、800MW は 2028 のスイッチ。8/26 で語るべきは時価の自慢ではなく、この持ち分が何 MW の確定需要に化け、残価がいつ現金になるかだ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-atom"></i>
+            <span>原子力／既存炉 vs 紙の炉</span>
+          </div>
+          <p class="text-sm text-zinc-300">「IEA の 45GW は条件付き offtake、ATLAS は 8/26 の海上の紙の炉、Portsmouth の 9.2GW はガスのタービンだ。臨界している電子だけが認定側に乗る。新しい GW を建てるより、古い GW を殺さない方が、まだ速い。FT が石炭引退の延期を数えた火曜に、増えたのは演説の方ではない。延期の方だ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-clipboard-check"></i>
+            <span>データセンター電力アーキテクト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Horizon 1 の 50MW は請求書だ。Merritt の水力は今年の箱だ。Ohio の 800MW は 2028 の既存系統だ。4.25 IT-GW は残価だ。10GW はスライドだ。閉ループは許可のリードタイムを買う。変圧器は 120–210 週。峰谷は雲の話に見えるが、遊休ラックの稼働率——つまりワット——の公開だ。ずらさないバッチは、今夜の明細になる。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本・アジアエネルギー／製造戦略視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「米側火曜が示したのは、$105B RVG・RFS 2028・4.25+3.8 IT-GW・既存 800MW・9.2GW ガス／日米 $33B・765kV House −1d・PUCT −2d・BESS 10GW・変圧器 120–210週・峰谷 D+2・Superman T-1・ATLAS −8d だ。東アジアは同じ瓶を、認定容量と用地と年産とタービンのリードタイムで読んでいる。SiC/GaN・液冷・変圧器・BESS・銅で取れる一方、アンケートの遅さと既存炉の延命と系統を要らない住所の残価は、こちらでも同じボトルネック。技術・金融・time-to-power・排出許可・水・社会的ライセンスの六点で設計しないと、ワットも fab も紙の上に残る。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 05. Physical Tech &amp; Energy • 2026-08-18 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: NVIDIA 8-K nvda-20260817（RVG $105B、4.25+3.8 IT-GW、ready-for-service 2028、Trigger Event）、NVIDIA Newsroom／OpenAI／portscampus.com（10GW→8 IT-GW、初段 800MW／既存 AEP、9.2GW ガス、日米約 $33B、765kV $4.2B、閉ループ空冷、建設 35,000／運用 2,500）、CNBC $105B／moat、FT 75% ガス（@aeberman12）、@RyanNuckolls_ ERCOT BESS 10k MW、@SiteSpecs × Wood Mackenzie 変圧器 120–210週、Texas House State Affairs 8/19、PUCT 8/20、IAEA ATLAS 8/26–27、IREN Horizon 1 D+5、HIVE 水力 Q4、DeepSeek 峰谷 D+2、宇樹 688836 8/19、Honor Robot Phone 售罄、X投稿（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 05-physical-tech.html loaded for 2026-08-18', 'color:#10b981');
+  </script>
+</body>
+</html>
