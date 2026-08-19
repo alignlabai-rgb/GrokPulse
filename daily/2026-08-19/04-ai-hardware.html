@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-19 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-19 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">📜</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">水曜——TPU の隣にワラントが座り、<br>HBM の現金は自社株になった</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月19日（水）。08-11 が資本 OS、08-12 が配電 OS、08-13 が検収 50MW、08-14 が Feynman と嘉義、08-15 が 13F と 24GB、08-16 が峰谷と電力株、08-17 が LPS の公式、08-18 が 8-K 残価と「堀は資本へ」なら、08-19 は<strong>同じ週の ASIC が Google のワラントになり、同じ朝に HBM 屋が ₩40 兆を消し、Hopper 世代が香港経由で大陸へ 2 万基入った水曜</strong>だ。Marvell 8-K：7/29 の商業契約、8/18 発行のワラントは最大 5,897 万株・行使価 $206.58（発行済の約 6.7%、名目約 $121.8 億）。残りの権利は FY27 Q3〜FY33 のカスタム売上 $5 億ごとに 1 トランシェ、240 本で上限 $1,200 億。中身は TPU 生態系に付ける推論アクセラレータ、ストレージ／NIC／メモリ I/F、ニアメモリ演算。Broadcom の 2031 年枠は残る。隣の板は SK hynix——₩40 兆（約 $286 億）を買い消却、還元は FCF の「最大 50%」から「50% 超」へ。反対側の箱は H200。FT：ByteDance と Tencent が各約 1 万基。監視税は推論の約 20%。手元は 2×3060 で 27B。Hot Chips まで 4 日、8/26 まで 7 日。水曜の評価軸は <code>MRVL ワラント 6.7%/$120B × AVGO −3% × SK ₩40T/FCF50%超 × H200 1万×2 × 監視税 20% × NAND +11.6% × 2×3060 41t/s × Honor D+1 × Hot Chips −4d × 8/26 −7d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 MRVL WARRANT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 発行・8/19 消化</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">5,897 万株、$206.58<br>発行済の約 6.7% を Google が握る権利</div>
+          <div class="mt-4 text-sm text-zinc-400">Marvell 8-K。7/29 に Google とカスタム半導体の商業契約。8/18 にワラント発行、水曜の市場が読んだ。上限 58,970,907 株、行使価 $206.58、名目約 $121.8 億。初年度は約 136 万株が四半期均等で権利確定。残りはカスタム売上に連動する。Patrick Moorhead：「Marvell がいくら取るかはまだ出ていない」。株はプレ +12%、場中スナップで +7%。ワラントは割引ではなく、発注量に株を付けたリベートだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-signature"></i>
+            <span>Marvell 8-K／@firstadopter／@PatrickMoorhead（8/19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 $120B TRANCHES</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">FY27 Q3〜FY33</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">$5 億ごとに 1 本、240 本<br>満額は $1,200 億のカスタム売上</div>
+          <div class="mt-4 text-sm text-zinc-400">権利確定は Google および関連会社の Custom Products 売上。FY2027 第 3 四半期から FY2033 末まで、240 均等トランシェ。1 本は $5 億。掛け算は $1,200 億——約束された発注ではなく、満額行使の分母だ。対象は TPU 生態系に付ける推論アクセラレータ、ストレージコントローラ、NIC、メモリ I/F、ニアメモリ演算。TPU そのものを奪う話ではない。ラックの隣に座る部品の、七年分の席だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Marvell 8-K トランシェ条項（8/19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 SECOND SOURCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 AVGO −3%</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Broadcom の 2031 年枠は残る<br>Google は工場ごと買い始めた</div>
+          <div class="mt-4 text-sm text-zinc-400">AVGO は下落。TPU 本体の長期契約（〜2031）は生きている、というのが水曜の冷静な読み。動いたのはマルチソースだ。NVIDIA は 3 月に Marvell へ $20 億。Amazon はフォトニックでワラントを持っている。水曜の紙は、同じ会社が Google の TPU 生態系にも株を渡した、という二枚目。半導体売り場で緑だったのは $MRVL だけ、という朝の板は、GPU 独占の話ではなく ASIC 供給の席替えだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>Schwab Network／X 板／8-K 範囲（8/19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#04 SK ₩40T</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 ソウル</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">₩40 兆を買い、消す<br>還元は FCF の「50% 超」へ</div>
+          <div class="mt-4 text-sm text-zinc-400">SK hynix 取締役会。自社株 ₩40 兆（約 $286 億）を 8/20–11/19 に買い、全株消却。約 2,407 万株、発行済の約 3.3%。韓国上場で過去最大の自己株式消却、と二次。Q2 末のネット現金 ₩69 兆のうち約 58% を一回で使う。還元方針は 2025–27 累計 FCF の「最大 50%」から「50% 超」へ——上限を外した。6 月高値から約半値。経営陣の一文は「本源価値が株価に反映されていない」。HBM の現金が、循環株の値札を否定しに来た。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-recycle"></i>
+            <span>SK hynix 公式／Reuters／Bloomberg（8/19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#05 H200 × 2万</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18 夜–8/19 FT</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ByteDance と Tencent が各 1 万基<br>H200 は二世代遅れのまま入った</div>
+          <div class="mt-4 text-sm text-zinc-400">FT（Reuters 経由）。米国の輸出許可が約 8 ヶ月ほぼ動かなかったあと、少量が大陸へ。他社も同規模を取りうる、と関係者。北京側は香港設置を指示した、という読みもある。H200 は現行フラッグシップより少なくとも二世代古い。Blackwell でも Rubin でもない。数は数 GW の Ohio ではない。风向は「国産だけ」から「使えるものは先に使え」へ、少し戻った。許可の天井と実際の 1 万基を混ぜるな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>FT／Reuters「H200 small shipments」（8/18–19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#06 監視税 20%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/18–19 OpenAI</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">最大の RL は止まったまま<br>監視は推論コンピュートの約 20%</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI「Pacing」。展開向け最新モデルの RL を 2 週間停止。最大のフロンティア RL はホールド継続。Astra のツール付き推論は 8/7 以降すべて監視対象。トークンごとに分類器、疑わしい動きは 30 分以内にアラート。コストは「監視対象推論の約 20%」。The Register 見出しは overhead +20%。Ohio のテナントが最大の訓練を止め、残った推論に二割の税を載せた。空いた GPU は安全の領収書になる。8/26 の需要言語は、この税を含む。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>OpenAI 公式／The Register（8/18–19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#07 NAND +11.6%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 メモリ売り</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TLC は 3 週で +11.6%<br>KV が HBM から NAND へ溢れた</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の NAND 上位 5 社 Q2 +77% の翌日、現場は週次の値札を読んだ。TLC は 3 週 +11.6%、1 週 +5%。理由はエージェントの KV キャッシュ。HBM は速くて狭い。NVIDIA の Rubin 側の答えは CMX——BlueField-4 が HBM とネットストレージの間にフラッシュ層を挿す。同じ水曜、純メモリは売られた。$MU −1.5%、$SNDK −2.9%、$STX −4.6%、$WDC −4.4%。値が上がっている週に株が沈むのは、循環の癖だ。棚の空は消えていない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>X メモリ二次／CMX 読み／板（8/18–19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#08 2×3060 の床</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 現場</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">27B が中古 24GB で 41 tok/s<br>Cline ローカル首位は 4 日で確定</div>
+          <div class="mt-4 text-sm text-zinc-400">火曜の「5090 1 枚で frontier」の翌日、床は一段下がった。2×RTX 3060 12GB、合計 24GB、Qwen3.8-27B、92K コンテキスト、平均 41.6 tok/s、ピーク 52.7。Cline は 4 日でローカル首位——前任 7B の 4 ヶ月を終わらせた。Intel Arc iGPU では同モデル 6 tps。B&amp;H は ASUS TUF 5090 を $4,099.99 で再入荷。Ohio の 8 GW と、中古 3060 二枚は同じ表の別列だ。測るのは GW ではなく、手元に何トークン残るか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-laptop"></i>
+            <span>@shipcircuit／@cline／@Alibaba_Qwen（8/18–19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 HONOR D+1 / 峰谷 D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 空欄と時間割</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8 Elite は補貨なし<br>二次はまだ無料の看板を出す</div>
+          <div class="mt-4 text-sm text-zinc-400">栄光 Robot Phone は火曜 36 分で售罄、水曜も栄光商城・京東自営に補貨時刻なし。客服は「通知を待て」。予約 40 万超は予約のまま。NPU の領収書は返品率と 30 日残存で、D+1 の空欄はその証明が始まっていない印。DeepSeek 峰谷は営業日 3 日目。ピーク 01:00–04:00 と 06:00–10:00 UTC。V4-Pro 出力 $1.98／$3.96。二次は V4-Flash 無料 48 時間で「2,200 億トークン」と書いた。公式の時間割と、ラッパーの残り火は別の列だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>快科技／栄光客服／DeepSeek 公式（8/19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#10 ACTUATE D2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/19 Fort Mason</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Cosmos 3 は Jetson Thor で 15 Hz<br>エッジの箱が、雲の隣で動いた</div>
+          <div class="mt-4 text-sm text-zinc-400">Actuate 26 2 日目。NVIDIA：Cosmos 3 は物理推論・世界生成・行動生成を一つの世界モデルに載せ、Thor へ落とす。観測 640×360、1 推論 32 アクション、実時間 15 Hz。水曜 11:40 PT は VLA vs WAM、16:20 は World Models。宇樹の鐘が上海で鳴った同じ水曜に、SF では「展品からボードへ」の言語が出た。カテゴリ 05 の身体と、04 のシリコンはここで交わる。測るのは m/s ではなく、Thor 上で何 Hz が落ちるか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i>
+            <span>NVIDIA Actuate／Cosmos 3 Edge（8/18–19）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#11 HOT CHIPS −4d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/23–25 / 8/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Rubin／MI400／Crescent まで 4 日<br>残価の書式は 7 日後の 10-Q</div>
+          <div class="mt-4 text-sm text-zinc-400">Hot Chips は Stanford、GPU セッション 8/24 16:45–18:45。NVIDIA Rubin、AMD MI400（二本）、Intel Crescent Island。単語は揃っている——agentic inference。NVIDIA FY27 Q2 は 8/26 14:00 PT。8-K は保証の書式をこの 10-Q に付けると書いた。月曜が住所、火曜が残価、水曜が ASIC ワラントと HBM 還元と H200 の少量。Huang の TAM スライドより、何ハイが Rubin に載り、Google が $5 億ごとに何トランシェを消化し、今夜のピーク帯を誰がずらすか。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>Hot Chips 2026 Advance Program／NVIDIA IR（8/19）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月19日、AI Hardware の中心は「<strong>火曜の残価保証の隣に、カスタムシリコンのワラントが座り、HBM の現金が自己株式の消却になった</strong>」ことだ。08-18 が Ohio の $105B RVG と「堀は資本へ」を紙にした翌日、本体は供給の席替えに移った。Marvell は 7/29 に Google とカスタム半導体の商業契約を結び、8/18 にワラントを発行した。上限 5,897 万株、行使価 $206.58、発行済の約 6.7%。初年度の約 136 万株は四半期均等。残りは FY27 Q3 から FY33 まで、$5 億のカスタム売上ごとに 1 トランシェ、240 本。満額の分母は $1,200 億。中身は TPU を奪う話ではない。TPU 生態系に付ける推論アクセラレータ、ストレージ、NIC、メモリ I/F、ニアメモリ演算だ。Patrick Moorhead が書いた通り、Marvell がいくら取るかはまだ出ていない。出てきたのは、発注量に株を付けた七年の席だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ水曜の朝、ソウルは別の現金を動かした。SK hynix は ₩40 兆（約 $286 億）の自社株を買い、消す。8/20–11/19、約 3.3%。ネット現金 ₩69 兆の約 58% を一回で使う。還元は 2025–27 累計 FCF の「最大 50%」から「50% 超」へ——上限を外した。6 月高値から約半値の板に対し、経営陣は「本源価値が反映されていない」と書いた。火曜の NAND Q2 +77% と、水曜の TLC 3 週 +11.6% は需要側だ。₩40 兆は、その需要を循環の値札から外す側だ。純メモリ株は同じセッションで沈んだ。$MU、$SNDK、$STX、$WDC。値が上がっている週に株が沈むのは、メモリの癖であって、HBM の契約が消えた印ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            箱の列は三つ動いた。FT：ByteDance と Tencent が H200 を各約 1 万基。米国許可が約 8 ヶ月ほぼ空振りしたあと、少量が大陸へ。北京は香港設置を指示した、という読みもある。H200 は少なくとも二世代遅れ。Ohio の 8 GW でも Rubin でもない。风向は「国産だけ」から「使えるものは先に使え」へ、少し戻った。OpenAI は最大のフロンティア RL を止めたまま、監視を推論コンピュートの約 20% に載せた。Ohio のテナントが訓練を止め、残った推論に二割の税を付けた。手元の床は一段下がった。27B は 2×3060 12GB で平均 41.6 tok/s、Cline ローカル首位は 4 日。Honor の 8 Elite は D+1 も補貨なし。Actuate 2 日目、Cosmos 3 は Jetson Thor で 15 Hz。Hot Chips まで 4 日、8/26 まで 7 日。08-18 が「残価が紙になり、堀が資本に改名された火曜」なら、08-19 は「<strong>同じ週の ASIC がワラントになり、HBM の現金が自社株を消し、二世代遅れの Hopper が香港経由で 2 万基入った水曜</strong>」。無料なのは見出しで、有料なのは $5 億ごとのトランシェと、消却される株と、監視対象のワットである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「チップ屋が不動産の残価保証会社になった」——今日の 8-K「Google が Marvell の株を、売上 $5 億ごとに少しずつ貰う」（笑）。 Broadcom の 2031 年枠は残したまま、隣の席にワラントを置いた。GPU 独占が崩れた、と書くのは早い。崩れたのは「TPU の隣は一社」という物語の方だ。その横で SK は ₩40 兆を消して「これは循環じゃない」と言い、OpenAI は最大の訓練を止めて推論に 20% の監視税を載せ、H200 は二世代遅れのまま 2 万基だけ入った。片方は 2033 年までの 240 トランシェ、片方は今夜の 2×3060。両方とも「電子を先に囲う」顔だ。祝うのは $1,200 億の掛け算じゃない。Google が今四半期に何億ドル分を発注し、SK が 11/19 までに何株消し、H200 が香港に何基留まり、8/26 の 10-Q に残価の書式が付くかどうかだ。スライドは安い。ワラントと消却と監視税は、もう住所が書いてある。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">MRVL ワラント 6.7%・$120B トランシェ・AVGO −3%・SK ₩40T・H200 1万×2・監視税 20%・NAND +11.6%・2×3060・Honor D+1・Hot Chips −4d・8/26——水曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月19日現在の AI Hardware 分野は、(1) Marvell が Google へ最大 5,897 万株（約 6.7%、行使価 $206.58）のワラントを発行し、対象は TPU 生態系に付ける推論／ストレージ／NIC／メモリ I/F／ニアメモリで、満額は $5 億×240＝$1,200 億のカスタム売上であること、(2) Broadcom の TPU 本体枠（〜2031）は残り、水曜の下落は第二ソースの価格であること、(3) SK hynix が ₩40 兆を買い消却し、還元を FCF の 50% 超へ引き上げ、6 月高値から約半値の板に本源価値を対置したこと、(4) FT が H200 の少量（ByteDance／Tencent 各約 1 万基）を伝え、少なくとも二世代遅れの箱が大陸へ入ったこと、(5) OpenAI が最大 RL をホールドし、監視を推論コンピュートの約 20% に載せたこと、(6) TLC NAND が 3 週 +11.6%、KV キャッシュが HBM からフラッシュへ溢れ、純メモリ株は同じ日に売られたこと、(7) Qwen3.8-27B が 2×3060 で 41 tok/s、Cline ローカル首位、Honor 8 Elite は D+1 補貨なし、(8) Actuate で Cosmos 3 が Jetson Thor 15 Hz に落ち、(9) Hot Chips（8/23–25）まで 4 日、残価の書式が付く 10-Q と FY27 Q2 まで 7 日、が重なっている。2026 年夏の評価軸はピーク FLOPS より、<strong>カスタムの第二ソース、HBM 現金の還元、H200 の実入荷、監視税のワット、NAND の週次、手元 24GB に残るトークン、8/26 までの供給・資本言語</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>カスタム ASIC／TPU 生態系視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「TPU 本体の 2031 年枠は Broadcom に残した。動いたのはラックの隣——推論アクセラレータ、NIC、メモリ I/F、ニアメモリだ。ワラント 6.7% は割引ではない。$5 億ごとに株が少しずつ権利確定する、七年の発注リベートだ。Marvell がいくら取るかは 8-K に無い。あるのは、Google が工場ごと買うときの株の付け方だ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-recycle"></i>
+            <span>HBM／メモリ還元視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「₩40 兆は景気循環の底で出す数字ではない。ネット現金の半分超を消却に回し、還元の上限を外した。6 月高値から約半値の板に対し、経営陣は本源価値を対置した。HBM の契約は生きている。生きていないのは『メモリは必ず循環で売られる』という値札の方だ。ただし同じセッションで $MU も $SNDK も沈んだ。現金と板は、まだ別の時計だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-box-open"></i>
+            <span>輸出管理／H200 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「各 1 万基は数 GW ではない。H200 は二世代遅れで、北京は香港設置を指示したという読みもある。米国許可が 8 ヶ月空振りしたあと、少量が動いた。国産代替の物語は終わっていない。終わったのは『一基も入らない』という極端だ。Blackwell を混ぜるな。数えるのは大陸のラックに何基刺さったかだ。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-halved"></i>
+            <span>ハイパースケーラー／稼働率視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「最大の RL が止まったままなら、訓練ラックは安全の領収書になる。監視は推論の約 20%。Astra のツール付きは 8/7 から全部だ。Ohio のテナントが止めたワットと、監視で増えたワットは、同じ 8/26 の需要言語に入る。峰谷 D+3 の二次無料は残り火だ。ずらさないバッチは、今夜の明細になる。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i>
+            <span>エッジ／ローカル推論視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「27B が 2×3060 で 41 tok/s、Cline は 4 日でローカル首位。5090 の再入荷は $4,099。Honor の 8 Elite は D+1 も空欄。Thor は 15 Hz。Ohio の GW と、中古 24GB と、端末 NPU は同じ表の別列だ。測るのは frontier の席ではなく、手元に何トークン残り、何 Hz が落ちるかだ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは $1,200 億の掛け算でも、₩40 兆の見出しでも、H200 の 2 万基でもない。2027 に契約できる HBM の世代、TPU ラックに付く NIC とメモリ I/F、監視税 20% を織り込んだ推論単価、5 秒仕事を 16–24GB に切る行だ。ワラントが紙になっても、請求書の列は変わらない。8/26 までに欲しいのはピーク FLOPS より、Google が今四半期に消化するトランシェと、今夜以降の自分の単価である。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-19 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Marvell 8-K（Google ワラント 58,970,907 株・$206.58、$5 億×240 トランシェ、TPU 生態系カスタム）、@PatrickMoorhead／@firstadopter、SK hynix ₩40 兆買い消却／FCF 50% 超（Reuters／Bloomberg）、FT／Reuters H200 各約 1 万基（ByteDance／Tencent）、OpenAI「Pacing」監視約 20%／The Register、NAND TLC +11.6%／CMX 読み、@shipcircuit 2×3060、@cline ローカル首位、NVIDIA Actuate Cosmos 3／Jetson Thor 15 Hz、Honor D+1、DeepSeek 峰谷 D+3、Hot Chips 2026（8/23–25）、NVIDIA FY27 Q2 8/26、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-19', 'color:#10b981');
+  </script>
+</body>
+</html>
