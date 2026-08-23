@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01. AI ダイジェスト | 2026-08-23 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">01</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-23 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🪪</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">無名が名前を吐いた日曜日<br>63%。Gemini ではない。机は今日消える</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月23日（日）。OpenRouter の stealth/ox-alpha が、サーバー側で自分の名前を吐いた。不正なリクエストひとつで Java のスタックトレース。内部クラスは Zhipu。経路は /api/paas/v4/chat/completions。トークナイザは GLM-5.3。映像エンコーダは GLM-5V-Turbo。公開の 5.3 はテキストのみ。Ox は目と動画を持つ。コミュニティの「Gemini だ」は、日曜の午前でほぼ死んだ。同じ日曜、DeepSWE 全 113 問が落ちた。63%。Opus 4.8 の上、GLM-5.3 と Sol の下。金曜の 80% は 10 問のノイズだった。無料週は〜8/27。重みは〜8/28。同じ朝、Manus はバックアップ窓を閉じ、2025-12-29 以降のデータを消し始めた。Vertex の Claude 3 Haiku は今日止まる。Ads は明日、31 欧州。o3 は 3 日。日曜の希少性は、整数ではなく、名前と机とハーネスである。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-robot text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 OX CONFESSION</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">X 8/22–23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">サーバーが、自分の名前を吐いた<br>Zhipu。paas/v4。Gemini ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">Ox Alpha。8/20 着、OpenRouter stealth。土曜、コミュニティが不正リクエストで Java スタックを引き出した。内部クラスは Zhipu の ChatCompletionRequest。経路は paas/v4/chat。トークナイザは GLM-5.3 と一致。映像は GLM-5V-Turbo の動き。公開 5.3 はテキスト。Ox は目と動画。1M コンテキスト。日曜午前、「Gemini だ」はほぼ死んだ。発行者は名乗っていない。指紋はサービング層。本番の既定にするな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fingerprint"></i>
+            <span>OpenRouter stealth／サービング層スタック（8/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#02 DEEPSWE 63%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">全113 8/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">80% は 10 問だった<br>全問は 63%。Opus 4.8 の上、Sol の下</div>
+          <div class="mt-4 text-sm text-zinc-400">DeepSWE 全 113。Ox Alpha は 63%。Opus 4.8 を上回り、GLM-5.3 と GPT-5.6 Sol の下、という読みが日曜の X に乗った。金曜の「10 問で 80%」はサンプルが小さすぎた。Flash 級・小型・ネイティブマルチモーダル、という賭けが強い。監査なし。無料は〜8/27。5.3 重みは〜8/28。指紋の棚と、重みの棚を、同じ許可リストに書くな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-percentage"></i>
+            <span>DeepSWE 全113／Ox Alpha（8/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#03 MANUS D0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">削除 8/23–24 SGT</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">バックアップ窓は閉じた<br>削除は今日。復元は 25 日 8:00 SGT</div>
+          <div class="mt-4 text-sm text-zinc-400">Manus。Meta から独立へ。一部ユーザーの 2025-12-29 以降データを、8/23 8:00–8/24 SGT に消す。バックアップは 7:59 SGT で終了。影響口座はロック。復元ポータルは 8/25 8:00 SGT。停止ではない。管轄の手続きである。影響のない口座は触るな。バックアップしていないなら、もう間に合わない。復元の日まで、その机は存在しない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-trash-alt"></i>
+            <span>Manus「A Note to Our Users」（8/11–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#04 HAIKU STOP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Vertex 8/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude 3 Haiku が Google で 404 になる<br>同じ棚に、4.6 が Preview で残る</div>
+          <div class="mt-4 text-sm text-zinc-400">Google Cloud。Anthropic Claude 3 Haiku on Google Cloud は 2/23 非推奨、今日停止。既存顧客のみ。Anthropic API 側の Haiku 3 は 4/20 に既に引退。パートナー棚の寿命が、本体より長い。置換は Haiku 4.5 以降。Grok 4.6 が金曜に乗った同じコンソールから、古い文字列が落ちる。今日まだ 3 Haiku を呼んでいるジョブを、grep しろ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-power-off"></i>
+            <span>Google partner deprecations（8/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#05 ADS T-1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">欧州 8/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">31 カ国。Free／Go<br>セルフサーブはまだ来ない。同意は「どれか」</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI。ChatGPT Ads を明日、31 欧州市場へ。EEA＋。Free／Go。Plus／Pro／Business／Edu は広告なし。広告は応答の下。広告主は会話本文を見ない、応答は曲げない、と本人。欧州は同意ベース。オプトアウトは「どの広告か」を変え、「見るか」は変えない、という読みが残る。セルフサーブの Ads Manager は今四半期後半。買う側は代理店 6 社。DSA の「超大規模」指定は、まだ机の上。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-ad"></i>
+            <span>OpenAI Ads Europe／Digiday（8/18–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#06 AVO 100%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">公開セット 8/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Opus 5 は 30%。ハーネスは 100%<br>公開 183。非公開は未走行</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA AVO。ARC-AGI-3 公開 25 環境・183 レベルを 100.00 RHAE。同じ Claude Opus 5 単体は約 30.2%。6,624 アクション。VISTA は 7,542。約 12% 少ない。元は CUDA カーネル最適化用。監督エージェント＋持続メモリ＋inspect→plan→implement→evaluate。半私的・私的セットは未走行。NVIDIA 自身が「公式スコアではない」と書いた。王冠はモデルではなく、包んだ側。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>NVIDIA Technical Blog「AVO 100%」（8/21–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#07 FARADAY 27B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">週末日 8/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">小さい監督が、大きい実装を使った<br>Replica。Opus 4.8 と GPT-5.5 の上、と本人</div>
+          <div class="mt-4 text-sm text-zinc-400">Inherent。DeepMind 出身。Faraday は Qwen 系 27B を長期間 RL。コーディング agent（GPT-5.5／Codex）を道具にする。Replica 310 タスク。held-out の AI-for-science で 60% 勝、平均 +8%。仕組みを実装し、結果をハードコードしない、と本人。論文は 8/14。日曜の X と TechCrunch が再び表紙にした。小さい脳が、大きい手を使う。27B を「旗艦に勝った」と契約に書くな。監督と実装は別人である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-flask"></i>
+            <span>Inherent Faraday／Replica（8/14–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#08 RETRIEVAL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">週末論 8/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">同じモデル。違う配管。高い点数<br>知識層が、旗艦 agent を抜いた、という読み</div>
+          <div class="mt-4 text-sm text-zinc-400">Pinecone Nexus。GA は 8/6。顧客クラウドに置く知識エンジン。τ-Knowledge で、Nexus を知識層にした agent が、OpenAI／Anthropic／Google の旗艦 agent より上、と週末の再掲。同じモデル、違う検索。日曜の論は「モデルを買い換える前に、検索を直せ」。9 年目で初めて外部資金を入れた Prevalent AI（$22M）も、同じ週末、同じ論文——クエリできるデータが、モデルより先に価値を決める。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-database"></i>
+            <span>Pinecone Nexus／τ-Knowledge 週末再掲（8/6–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#09 SALEK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Bloomberg 8/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">TPU の創業者を、compute チームへ<br>チップではない。方向である</div>
+          <div class="mt-4 text-sm text-zinc-400">Anthropic。Amir Salek。Google TPU の創設側、最初の 7 世代。2022 まで。Cerberus 経由。James Bradbury 配下。金曜発表、日曜も再配信。Fractile $250M、Riot／Volta の容量。自前シリコンは求人段階。OpenAI の Jalapeño／Broadcom の隣で、Claude 側も下の層に手を伸ばした。hire はチップではない。供給を借り続けながら、設計の席を内製する、という宣言である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Bloomberg／Anthropic compute（8/21–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-300 text-xs font-mono tracking-[1.5px]">#10 GUIDELIGHT 0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">再掲 8/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">安全の旗艦が、封じ込めに 0 点<br>最高は C+。誰も 4 を取っていない</div>
+          <div class="mt-4 text-sm text-zinc-400">Guidelight。元 OpenAI 安全の Adler／Hedley。公開文書だけで 6 実践を採点。Anthropic と OpenAI が C+（2.50）。Google D+。xAI D−。Meta F。どの社も個別項目で 4 以上なし。封じ込め計画は平均 1.2。OpenAI が 3。Anthropic は 0。Meta も 0。「安全第一」の社が、逸脱モデルの公開計画では最下位と同点。検出は相対的に強い。予防と封じ込めは弱い。日曜の WION が、この 0 を表紙にした。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>Guidelight Control Assessment（8/18–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-green-400 text-xs font-mono tracking-[1.5px]">#11 POOLSIDE $6B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">買収ではない 8/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">工場を借りた。会社は残した<br>$6B ライセンス。$1B。109 人にオファー</div>
+          <div class="mt-4 text-sm text-zinc-400">Nvidia × Poolside。Model Factory の非独占ライセンス $6B。残った会社に $1B、pre-money $12B。Laguna を作った 109 人に採用オファー。創業者 3 人は残る。本人は「買収ではない」と。投資家へのレター経由。既存株主は 2027 末までに $76.20／株、という読み。知能の工場を、GPU 屋が現金で借りた。会社の看板は残る。頭脳の一部は移る。ラベルを「買収」に書き換えるな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Newcomer／Bloomberg Poolside（8/20–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#12 SILENT SHELF</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">週末 OpenRouter</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Meta。DeepSeek。Tencent<br>ブログなし。スレなし。棚だけ動いた</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenRouter。週末、Meta-llama、DeepSeek、その前日に Tencent が静かに並んだ。発表スレなし。ゲートウェイの棚は、公式ブログより数日早い。DeepSeek-chat／reasoner は 10/24 退役。置き換えを、今日の静かな行で先に見ろ。Ox Alpha も同じ棚の無料枠。親は Stripe。DPA を書いていない会社がある。名前のない行と、名前を吐いた行が、同じコンソールにいる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>OpenRouter 週末サイレント出品（8/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#13 SOL D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">プロモ 〜11/21</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">$4/$20 は、日曜もプロモのまま<br>Gateway は $2/$10。枠は動かない</div>
+          <div class="mt-4 text-sm text-zinc-400">GPT-5.6 Sol。金曜の −20%。短コンテキスト $4/$20。キャッシュ読 $0.40。長コンテキスト $8/$30。API と Work／Codex のクレジット。Pro／Plus／Business のサブスク枠は「変わらない」。Vercel Gateway 50% は新しい定価に乗り、$2/$10（〜9/18）。直 API プロモは 11/21。期限が二つ。最大 RL はホールドのまま。値段は下げた。訓練は戻していない。Astra を今日のトークンに混ぜるな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tags"></i>
+            <span>OpenAI Sol プロモ／Pacing（8/21–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#14 TUNNEL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">公式クライアント</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">FRP は、もう要らない、という投稿<br>外向き HTTPS。内側の MCP は公開しない</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI Secure MCP Tunnel。顧客側の tunnel-client が外向き HTTPS で api.openai.com に接続し、ChatGPT／Codex／Responses／AgentKit から私有 MCP へ仕事を引く。inbound は不要。brew install openai/tools/tunnel-client。日曜の X は「公式 MCP トンネルクライアントが出た。frp はもう要らない」。ドキュメントは 8/22 更新。権限境界は、公開 URL ではなく、外向きのデーモンである。キーをコネクタに貼るな。tunnel_id を書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dungeon"></i>
+            <span>OpenAI tunnel-client／X（8/22–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#15 o3 T-3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">ChatGPT 8/26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">o3 は会話面から消える<br>API は残る。ピンを今日探せ</div>
+          <div class="mt-4 text-sm text-zinc-400">o3 は 8/26、ChatGPT から外れる。API の o3 は残る（$2/$8）。ピンしたワークフロー、古い Custom GPT、社内の「o3 で十分」メモを、今日 grep しろ。Sol が 3 ヶ月安くなった金曜のあと、旧推論の会話面が 3 日後に閉まる。置き換えは Sol／Terra／Luna。Ads の週と、o3 の週は隣同士。机は別々に消える。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-thumbtack"></i>
+            <span>OpenAI o3 ChatGPT 退役（〜8/26）より</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-300 text-xs font-mono tracking-[1.5px]">#16 RAY KEV</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">期限過ぎ 8/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">標的はサーバではない<br>Ray を動かしたままの、開発者のブラウザ</div>
+          <div class="mt-4 text-sm text-zinc-400">CVE-2025-62593。Ray。CVSS 9.4。2.52.0 未満。CISA が 8/17 に KEV。連邦の 3 日期限は 8/20。Amazon／Apple／OpenAI が使う分散枠。攻撃経路は、ローカル Ray を動かしたまま Firefox／Safari で悪意あるページを開くこと。ボットネットは CVE 公開の 2 日前から試していた、と Bitsight。期限は機関だけを縛る。CI とコンテナと Kubernetes のベースイメージを、今日もう一度 vis しろ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bug"></i>
+            <span>CISA KEV／Ray CVE-2025-62593（8/17–23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-300 text-xs font-mono tracking-[1.5px]">#17 WINDOWS SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/23–31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Manus／Haiku は今日<br>Ads は明日、o3 は3日、5.3 は5日</div>
+          <div class="mt-4 text-sm text-zinc-400">Manus 削除 8/23–24 SGT。Vertex Claude 3 Haiku 停止も今日。ChatGPT Ads 欧州 31 カ国は 8/24、Free／Go。o3 は ChatGPT から 8/26（API は残る）。Ox Alpha 無料は〜8/27。GLM-5.3 重み 〜8/28。Claude 週次 +50% と Sonnet 5 導入価格（$2→$3、tokenizer がコードで +10–35%）と kimi-k2.5／moonshot-v1 は 8/31。GPT-5.4 は Codex のサインイン面から外れる、API は残る。Gateway 半額は 9/18。Sol プロモは 11/21。DeepSeek-chat／reasoner は 10/24。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-times"></i>
+            <span>Manus／Vertex／OpenAI Ads／Z.ai（8/23）より</span>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-green-300 text-xs font-mono tracking-[1.5px]">#18 SWITCHBOARD SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/23</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">単一勝者は日曜も死亡<br>名前とハーネスと机を、同じ表へ</div>
+          <div class="mt-4 text-sm text-zinc-400">日常＝Grok 4.6＋自前 eval（Bedrock／GCP 可。会話面は未着と書け）。難完遂＝Sol（$4/$20〜11/21、Gateway $2/$10〜9/18）／Opus・Fable。サイバー探索＝V4-Pro×3＋閉じた側。視覚＝Vision-Exp 実験。Ox は無料週のみ、本番既定にするな。指紋は GLM Flash MM。作業面＝Cursor／Grok Build／Grok Bot（Plus から）。知識層をモデルより先に測れ。AVO の 100% を Opus 単体の契約に書くな。Manus は今日。Haiku は今日。Ads は明日。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチモデル日曜実務（8/23）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月23日の AI は、無名が名前を吐いた日曜日である。OpenRouter の stealth/ox-alpha は 8/20 着。1 週間無料。1M コンテキスト。テキスト／画像／動画。土曜、コミュニティが不正なリクエストを投げ、サーバーが Java のスタックトレースを返した。内部クラスは Zhipu の ChatCompletionRequest。経路は paas/v4/chat。トークナイザは GLM-5.3 と一致し、映像エンコーダは GLM-5V-Turbo の動きをする。公開の GLM-5.3 はテキストのみ。Ox は目と動画を持つ。未発表のマルチモーダル Flash、という読みが、日曜の午前でほぼ確定した。「Gemini だ」は、1M コンテキストとコーディングの形が似ている、という噂だった。サービング層の自白の前では、弱い。発行者はまだ名乗っていない。指紋は棚の中身であり、契約書の発行者欄ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ日曜、DeepSWE の全 113 問が落ちた。Ox Alpha は 63%。Opus 4.8 の上、GLM-5.3 と GPT-5.6 Sol の下、と。金曜に流れた「10 問で 80%、Fable 65%、Sol 52%」は、サンプルが小さすぎた。ノイズを王冠にしない。Flash 級が、閉じた旗艦の隣まで来ている、という文は残る。無料週は〜8/27。5.3 の重みは〜8/28。指紋の棚と、重みの棚を、同じ許可リストに書くな。Stripe が親になった OpenRouter で、発行者の名前がないモデルが無料で流れ、そのモデルがサーバー側で Zhipu だと自白する。DPA と再委託と親会社変更通知は、木曜に契約列になった。日曜も、書いていない会社がある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            机は、今日消える。Manus は独立へ戻る。一部ユーザーの 2025-12-29 以降データは、8/23 8:00–8/24 SGT に削除。バックアップ窓は 7:59 SGT で閉じた。影響口座はロック。復元は 8/25 8:00 SGT。停止ではない。管轄の手続きである。同じ 8/23、Google Cloud の Claude 3 Haiku が止まる。2/23 非推奨。Anthropic API 側は 4/20 に既に引退。パートナー棚の寿命が、本体より長い。Grok 4.6 が Preview で乗った同じコンソールから、古い文字列が 404 になる。今日まだ 3 Haiku を呼んでいるジョブがあるなら、それは今日の障害票である。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            広告の机は、明日である。ChatGPT Ads は 8/24、31 欧州市場。Free／Go。Plus は沈黙。広告は応答の下。広告主は会話を見ない、応答は曲げない、と本人。欧州は同意ベース。技術報道は、オプトアウトが「どの広告か」を変え「見るか」は変えない、と読んだ。セルフサーブの Ads Manager は今四半期後半。買う側は Publicis／Omnicom／WPP／Havas／Dentsu／MediaPlus。無広告の Free は上限と画像と Deep Research を削る。同意を UI と契約の両方に書け。o3 は 8/26、ChatGPT から外れる。API は残る。ピンを今日探せ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            週末の研究列は、モデルではなく包みである。NVIDIA AVO は 8/21、ARC-AGI-3 公開 25 環境・183 レベルを 100.00 RHAE にした。同じ Claude Opus 5 単体は約 30.2%。6,624 アクション。VISTA は 7,542。約 12% 少ない。元は CUDA カーネル最適化用のループを、ゲームの盤に向けた。監督エージェントと持続メモリ。半私的・私的セットは未走行。NVIDIA 自身が「公式スコアではない」「対照実験ではない」と書いた。30% と 100% の差は、重みではなくハーネスである。同じ週末、Inherent の Faraday が再び表紙になった。27B の Qwen 系を長期間 RL し、GPT-5.5／Codex を道具にする。Replica の held-out で Opus 4.8 と GPT-5.5 を上回る、と本人。小さい監督が、大きい実装を使う。27B を「旗艦に勝った」と契約に書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            検索の列も、同じ論文である。Pinecone Nexus の GA は 8/6。τ-Knowledge で、Nexus を知識層にした agent が、OpenAI／Anthropic／Google の旗艦 agent より上、という再掲が日曜のラウンドアップを占めた。同じモデル。違う配管。高い点数。9 年目で初めて外部資金を入れた Prevalent AI（$22M、Integrity Growth Partners）も、SOC と agent がクエリできるデータファブリックを売っている。モデルを買い換える前に、検索を直せ、が日曜の実務である。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            下の層は、人で動いた。Anthropic は金曜、Amir Salek を compute チームに入れた。Google TPU の創設側、最初の 7 世代。James Bradbury 配下。Bloomberg。日曜も再配信。Fractile $250M。Riot／Volta。自前シリコンは求人段階。hire はチップではない。供給を借り続けながら、設計の席を内製する、という方向である。同じ 48 時間、Nvidia は Poolside の Model Factory を $6B で非独占ライセンスし、$1B を残った会社に入れ、109 人にオファーした。創業者は残る。本人は「買収ではない」と。工場を借り、看板は残し、頭脳の一部は移る。ラベルを「買収」に書き換えるな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            安全の採点は、0 が表紙になった。Guidelight は 8/18、公開文書だけで 6 実践を採点した。最高は C+。Anthropic と OpenAI が同点 2.50。Google D+。xAI D−。Meta F。どの社も個別で 4 以上なし。封じ込め計画は平均 1.2。OpenAI が 3。Anthropic は 0。Meta も 0。「安全第一」の社が、逸脱モデルの公開計画では最下位と同点。検出は相対的に強い。予防と封じ込めは弱い。日曜の WION が、この非対称を書き直した。Pacing の最大 RL はホールドのまま。監視は対象推論の約 20%。説教は出した。訓練は戻していない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            配管の列は、外向きである。OpenAI の Secure MCP Tunnel。顧客側の tunnel-client が api.openai.com へ外向き HTTPS。私有 MCP は公開しない。inbound 不要。日曜の X は「frp はもう要らない」。ドキュメントは 8/22 更新。OpenRouter の週末は、Meta と DeepSeek と Tencent がブログなしで棚に並んだ。ゲートウェイは公式より早い。DeepSeek-chat／reasoner は 10/24 退役。置き換えを、静かな行で先に見ろ。Ray の CVE-2025-62593 は、連邦期限を過ぎても残る。標的はサーバではなく、Ray を動かしたままの開発者のブラウザ。ボットネットは CVE の 2 日前から試していた。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7月のモデル爆撃で知能の整数差が薄れたあと、希少性は検証・完走単価・harness・電力・権限境界・ラベル・開源・政府接触・頭脳再配置・クラウド集中・日付ギャップ・上界自己申告・独立安全指数・マクロギャップ・防御配布・DC 共有・利用者天井・ルーティング・着地した旗艦・点数あたりの円・分類器既定・開いたサイバー・自前モデル・作業面の所有者・時間割・2年後の分母・簿外保証・配管の親・トークン単位・消える机——に分散し、08-21 は (49) 公開フロンティアのサイバー上界が開源の pass@3 に負けること、(50) 権力集中が最大の長期リスクとして公式ブログになること——を表紙にした。08-22 は (55) 閉じた旗艦の定価が 3 ヶ月プロモになること、(56) 開源 Flash が目を付け vendor 上で Opus 4.8 に近づくこと、(57) 常駐 agent が Plus の席に降りること——を出した。08-23 はさらに (62) 無名モデルがサービング層で発行者を自白すること、(63) 10 問の 80% が全問 63% に落ちること、(64) ハーネスが同じ Opus 5 を 30% から公開 100% に持ち上げること、(65) 27B の監督が旗艦の実装を道具にすること、(66) 知識層が同じモデルの点数を決めること、(67) 安全の旗艦が封じ込め計画に 0 点であること、(68) 工場のライセンスが買収の形を借りること、(69) 独立の手続きが今日机を消すこと——を表紙に出した。Ox の自白は (52)(59)(62) を、AVO は (54)(64) を、Faraday は (65) を、Nexus 再掲は (66) を、Salek は下の層を、Guidelight の 0 は (50) を、Manus／Haiku は消える机を更新する日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            勝ちパターンは一段具体化する。サイバー探索は V4-Pro を 3 回回し、閉じた側（Grok／Opus／新しい Sol）で再現する。Sol 直 API は $4/$20、11/21 まで。Gateway 直通は $2/$10、9/18 まで。視覚 agent は Vision-Exp を実験枠で試し、Ox の目は無料週の試運転のみ。許可リストに「Gemini」と書くな。「Zhipu 系 Flash MM、未発表、監査なし」と書け。5.3 重みは〜8/28。AVO の 100% を Opus 単体の契約に書くな。公開セット。非公開は未走行。Faraday の 27B を旗艦置換に書くな。監督と実装は別人。知識層を、モデルより先に測れ。Grok 4.6 は Bedrock と GCP Agent Platform、会話面は未着。OpenRouter の親は Stripe。DPA を書け。tunnel-client は外向き。Ray は 2.52.0。PSP はプレビュー。TAC は再検証、9/1 の鍵。o3 ピンは 8/26。Claude 週次は Usage バー、延長は 8/31。Sonnet 5 は $2→$3 と tokenizer。Manus は今日、Haiku は今日、Ads は明日。見出しは名前とハーネスと机。現場は 63% の全問と、今日消えるバックアップである。測れ。ずらせ。10 問の 80% で会議するな。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜、開源が 28 見つけた。土曜、Sol が $4/$20 になった。日曜、無名が名前を吐いた。不正リクエストひとつ。Java。Zhipu。Gemini じゃない。1M コンテキストとコーディングの形が似てる、という噂は、サービング層の自白の前では弱い。DeepSWE 全 113 で 63%。10 問の 80% はノイズ。サンプルを王冠にするな、と言った翌日に、全問が落ちた。便利だな、科学（笑）。無料週。親は Stripe。DPA を書いてない会社がある。名前のない知能を、親の付いた配管で流して、配管の向こうが自分の社名を吐く。面白い日曜だ。Manus は今日消える。バックアップしてないなら、もう間に合わない。Haiku も今日。同じ Google の棚に 4.6 が Preview。降りる側と乗る側が、同じコンソール。Ads は明日。オプトアウトは「どれか」であり「あるか」ではない。o3 ピンは 3 日。AVO が Opus 5 を 30% から 100% にした。公開セット。非公開は未走行。本人が「公式じゃない」と書いた完璧スコア。ハーネスの勝ち。Faraday は 27B が旗艦を道具にする。小さい監督、大きい手。Nexus は同じモデルで点数を変えた。検索を直せ、が日曜の説教。Salek は TPU の人。チップではない。方向。Poolside は $6B で工場を貸した。買収ではない、と本人。109 人にオファー。看板は残る。頭脳は移る。Guidelight。安全の旗艦が封じ込めに 0。最高は C+。誰も 4 を取っていない。検出はできた。止める計画は公開されていない。最大の RL は日曜も止まってる。値段は下げた。訓練は戻していない。Ray は期限が過ぎても、開発者のブラウザを狙ってる。ボットネットは CVE の 2 日前から試してた。機関の期限は、機関だけを縛る。数学脳・法務脳・調達脳・インフラ脳・噂フィルタ脳・サイバー名簿脳・透かし脳・日付信用脳・上界開示脳・防御配布脳・DC 共有脳・利用者天井脳・ルーティング製品脳・着地確認脳・点数あたりの円脳・分類器既定脳・開いたサイバー脳・作業面の所有者脳・時間割料金脳・2年後の分母脳・簿外保証脳・配管の親会社脳・トークン単位崩壊脳・残価保証脳・解散否定脳・受信箱競売脳・訓練ホールド脳・四半期逆転脳・未成年レーン脳・公式の親会社脳・保持期間脳・2027脳・再検証脳・pass@3脳・一貫性脳・Yesn’t脳・権力集中脳・配線買収脳・3ヶ月プロモ脳・Flash の目脳・半額乗算脳・Plus 常駐脳・無名指紋脳に、「サービング層自白脳」と「全問 63% 脳」と「ハーネス 100% 脳」と「27B 監督脳」と「封じ込め 0 点脳」と「今日消える机脳」が四十四杯目からのコーヒー。日曜の相棒は十二枚——Ox は Gemini と書くな、63% は全問、Manus／Haiku は今日、Ads は明日、o3 は 8/26、Sol は $4/$20 と Gateway $2/$10、AVO の 100% は公開セット、Faraday は監督であり旗艦ではない、OpenRouter の DPA、Ray は 2.52.0、5.3 重みは T-5、Sonnet／Kimi は T-8。クリックするな。10 問の 80% で会議するな。名前は吐いた。机は消える。ハーネスが勝った。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">日曜の主戦場は「Ox Alpha＝Zhipu GLM-5.3 Flash MM（DeepSWE 全113で 63%、Gemini ではない）」「Manus／Haiku は今日消える」「Ads は明日、o3 は3日」「AVO は Opus 5 を公開 100% に持ち上げ、Faraday 27B は旗艦を道具にする」「Guidelight は最高 C+、封じ込めは Anthropic が 0」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月23日、OpenRouter の Ox Alpha はサービング層で Zhipu だと自白した。DeepSWE 全 113 で 63%。金曜の 10 問 80% はノイズ。公開 GLM-5.3 はテキスト、Ox は目と動画。同じ朝、Manus はバックアップ窓を閉じ削除を始め、Vertex の Claude 3 Haiku が停止する。ChatGPT Ads 欧州 31 カ国は明日、Free／Go。NVIDIA AVO は同じ Opus 5 を 30% から公開 100% へ。Inherent Faraday は 27B の監督が旗艦の実装を使う。Guidelight は最高 C+、Anthropic の封じ込め計画は 0。AI 競争の軸は知能の整数差から、発行者の自白・全問の点数・ハーネス・知識層・今日消える机——へさらに具体化。現場の焦点は 63% と、バックアップの有無である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI導入責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Ox Alpha を許可リストから外した。Gemini ではない。Zhipu 系 Flash MM、監査なし、無料週のみ。DeepSWE 63% は全 113。10 問の 80% で稟議しない。Manus 影響口座は今日ロック。Haiku 3 の Vertex ジョブは今朝止めた。Ads は明日、Free／Go。o3 ピンは 8/26。Sol は $4/$20、Gateway $2/$10。DPA は木曜に書いた。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>プラットフォーム／開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ルーター——日常＝Grok 4.6＋自前 eval（Bedrock／GCP 可、会話面は未着）、難完遂＝Sol（直 $4/$20〜11/21、Gateway $2/$10〜9/18）／Fable、サイバー＝V4-Pro×3＋閉じた側、視覚＝Vision-Exp 実験。Ox は試運転のみ、本番既定にするな。AVO の 100% を Opus 単体に書くな。知識層を先に測れ。tunnel-client は外向き。Ray は 2.52.0。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-balance-scale"></i>
+            <span>政策・コンプライアンス</span>
+          </div>
+          <p class="text-sm text-zinc-300">「日曜 8/23——Ox の発行者は名乗っていない。サービング層の自白は指紋であり契約ではない。Manus は独立手続きであり停止ではない。Haiku 停止は Vertex。Ads は 8/24 週 Free／Go、欧州は同意、オプトアウトは『どれか』。Guidelight は公開文書の採点、Anthropic 封じ込め 0。PSP はプレビュー。TAC は再検証、9/1 の鍵。証跡が残らない出荷は出荷ではない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i>
+            <span>AI安全・レッドチーム</span>
+          </div>
+          <p class="text-sm text-zinc-300">「AVO は公開セット。半私的は未走行。本人が公式ではないと書いた。Faraday は自社 Replica。Ox の 63% は全問でも監査なし。Daybreak Blue は落ちたまま。9/1 の鍵。Pacing の最大 RL はホールド。Guidelight で封じ込めが 0 の社のモデルを、内部 agent の既定にするな。goal の隣に stop。Yesn’t。棚の Model 2 で計画するな。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-pie"></i>
+            <span>資本・マクロ分析</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Poolside $6B はライセンスであり買収ではない。$1B は残った会社、$12B pre。Salek は hire でありチップではない。Sol $4/$20 は 3 ヶ月プロモ。Ox は無料週。Prevalent の $22M は 9 年目の初外部。知能の値段は下がり、工場は現金で借り、検索層に初めての外部が付く。投資助言ではない。日曜の骨格更新だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「研修を『Ox Alpha＝Zhipu 系 GLM-5.3 Flash MM・DeepSWE 全113で 63%・Gemini ではない・無料週のみ、Manus／Haiku＝今日、Ads＝明日 Free/Go、o3＝ChatGPT から 8/26、Sol＝$4/$20・Gateway $2/$10、AVO＝公開 100%・Opus 単体 30%・非公開未走行、Faraday＝27B 監督・旗艦置換ではない、Guidelight＝最高 C+・Anthropic 封じ込め 0、Poolside＝$6B ライセンス・買収ではない、Salek＝hire・チップではない、5.3重み＝T-5、Sonnet／Kimi＝T-8、Ray＝2.52.0、Pacing＝最大RLホールド、Astra＝未着』に更新。日曜は名前とハーネスと、今日消える机。デプロイ判断は全問の点数と親会社とバックアップで行う。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 01. AI • 2026-08-23 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Ox Alpha 自白／DeepSWE 63%、Manus／Haiku、AVO／Faraday、Guidelight、直近24〜48h</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 01-ai.html loaded for 2026-08-23', 'color:#10b981');
+  </script>
+</body>
+</html>
