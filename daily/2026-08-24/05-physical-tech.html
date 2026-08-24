@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Physical Tech &amp; Energy ダイジェスト | 2026-08-24 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">05</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Physical Tech &amp; Energy ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-24 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">⚙️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">月曜——欠けた線が 65GW のプラスになり、<br>AEMO は 7 倍、議会は燃料電池を買った</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月24日（月）。08-10 が「Amazon が自前 7.65GW ガスで time-to-power を買う月曜」、08-11 が「Batch Zero が数ヶ月監査文書になった火曜」、08-12 が「電圧と地理が値段になった水曜」、08-13 が「50MW が領収書になった木曜」、08-14 が「単純サイクルと 43 社の拍手」、08-15 が「250–300 の紙と島と軌道」、08-16 が「$3B 電力株リークと峰谷 T-0」、08-17 が「10GW→8 IT-GW と既存 800MW」、08-18 が「$105B 残価と ready-for-service」、08-19 が「765kV が公聴会の机に座り、GRID は州の許可条件になった」、08-20 が「例外が PUCT の机に座り、監査は 12 月、身体は millimetre を読んだ」、08-21 が「立法府が五つの書類に拒否を書き、SOAH は Bell–Sand Lake を止め、例外の翌日に線が座った金曜」、08-22 が「決定は机に残り、次の金曜は Howard–Solstice、195MW の紙の炉が表紙に戻った土曜」、08-23 が「カレンダーが商品になり、バンコクの艀は ATLAS の二日前に座った日曜」なら、08-24 は<strong>同じ線の不在を Morgan Stanley が 65GW のプラスと読み、Texas Tribune が停電の警告を朝 5 時に置き、AEMO がデータセンター電力を 7 倍・34 TWh・13% と数え、Pelosi 家が Bloom を最大 $12M 買ったと開示し、宇樹が再開初日で 603（−10.3%）まで落ちた月曜</strong>だ。板が開いた。Industry Day は明日、決算は水曜、IREN は木曜、南の線は金曜、条件分類は七日後。月曜の評価軸は <code>Howard-Solstice −4d × Vegas Dec/April × MS 65GW Base Load × AEMO 7x/34TWh/13% × Pelosi BE $12M × Bloom $194 × IREN $40/−3d × CIFR $15.2 × 宇樹 603 −10.3% × ATLAS −1d × NVDA 17%/$8M/−2d × Starcloud $250M/20GW × $105B RFS 2028</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-cogs text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#01 Howard-Solstice −4d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Tribune 5:00 CT・8/28 金曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">業界は停電を数え、銀行は線の不在を買った<br>同じ 765kV に、二つの値段が付いた</div>
+          <div class="mt-4 text-sm text-zinc-400">Texas Tribune（Paul Cobler、朝 5 時）。ERCOT は西テキサスで線が無ければ輪番停電、COO は 7 月に「来夏の Permian で起こりうる」と証言。West Zone 需要は 2025 年 +12.3%（州全体 +6.1%）、混雑 +27%、平均価格は二年連続で最高。TXOGA の Todd Staples は「世界で最も重要なエネルギー盆地が、携帯発電機の継ぎはぎで回っている」と書いた。産業団体の手紙は水曜、Abbott／Patrick／Burrows へ——遅延は中立ではなく、計画の投資か、停電と混雑の後払いだ、と。同じ朝、Morgan Stanley は金曜の懸念を否定した。765kV が止まっても系統接続の研究は無効にならない。むしろ Base Load（2030–32）の 65GW が小さくなれば、残った箱は通りやすい。CIFR、HUT、GLXY、MARA。RIOT は Batch の外で、ますます高い。欠けた線は、停電の値段と、蒸気の間引きの値段を、同じ月曜に持った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>Texas Tribune 8/24 5:00 CT／@matthew_sigel MS 65GW（8/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 Vegas Dec / April</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">RTO Insider 月曜・監査の長さ</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">検証は 12 月。Batch Zero の本編は 4 月のまま<br>「今年いっぱい」が、公式の幅になった</div>
+          <div class="mt-4 text-sm text-zinc-400">RTO Insider。ERCOT CEO Pablo Vegas と GC Chad Seely が PUC と議員に伝えた——Abbott の監査は 2026 年の大半を要する。検証は 12 月末の見込み。当初 4 月完了だった Batch Zero の日程への影響は、まだ分からない。日曜の Energy News Beat が 12/10 報告・12/17 机を置き、X が残 2.9GW を数えたなら、月曜の公式は「今年いっぱい」を幅にした。5 件の CCN は数ヶ月内の票。30 人の下院は否認を求め、Patrick も拒否側にいる。PUC 議長 Gleeson は 6 月、「何もしない選択肢は無い。Permian に電気を届けねばならない」と書いたまま。監査の長さは、通電日の長さだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-half"></i>
+            <span>RTO Insider 8/24 Vegas/Seely／PUC 5 件 CCN（8/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#03 AEMO 7x / 34 TWh</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">ESOO リーク・火曜正式</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">5 TWh が 34 TWh。3% が 13%<br>高位は 52 TWh、十倍。石炭は 13GW 去る</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg／The Age／AFR。AEMO の Electricity Statement of Opportunities が、火曜の正式発表を前に月曜へ漏れた。データセンター電力は 2035–36 年に 34 TWh、系統の 13%（いま 3%）。約 7 倍。高成長は 52 TWh、十倍。稼働 165、開発 225（昨年 97）。NEM 全体は 176→250 TWh（+40%）。石炭 13GW とガス約 2GW が十年で退役。投資は 2030 年まで最大 A$150B。2025 年に並んだ案件の三分の一超は、すでに消えた。Daniel Westerman は「信頼性の見通しは改善した」と書き、AFR は再エネの遅れが灯を脅かすと書いた。テキサスがキューを凍らせた月曜に、南半球は同じ瓶を十年の表にした。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe-oceania"></i>
+            <span>Bloomberg／The Age／AFR／AEMO ESOO（8/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#04 Pelosi BE $12M</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">STOCK Act 月曜開示・7/24–28 約定</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">最大 $12M の燃料電池を、七月に買っていた<br>月曜の板は、その株を $194 まで下げた</div>
+          <div class="mt-4 text-sm text-zinc-400">@pelositracker／unusual_whales。Nancy Pelosi 家が最大約 $13.5M の新規約定を開示。Bloom Energy は最大 $12M——普通株 15,000 株と、権利行使 $100・2027 年 6 月 17 日期限の LEAP。約定は 7 月 24 日と 28 日。Intel は 10,000 株と最大 $500K の LEAP。時間内の Bloom は約 <strong>$194</strong>（金曜 $201.45、約 −3.6%）。キューの外の SOFC を、議会の開示が月曜の商品にした。Oracle 最大 2.8GW、AEP 最大 1GW のオフグリッド、Equinix 19 拠点は、工程表のまま。監査が今年いっぱいなら、系統を要らない住所の値段は、開示の翌日も下がる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-signature"></i>
+            <span>@pelositracker／unusual_whales／Capitol Markets（8/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#05 ATLAS −1d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/25 Industry Day・8/26–27 閣僚</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">海上の炉は明日の Industry Day<br>閣僚は水曜、NVIDIA の 10-Q と同じ朝</div>
+          <div class="mt-4 text-sm text-zinc-400">IAEA ATLAS。ワシントン、Waldorf Astoria。明日 8/25 は DOE の Industry Day、8/26–27 が閣僚会合。Grossi とエネルギー長官 Wright。民間船舶と洋上 SMR、浮体炉。商用の浮体は Pevek の Akademik Lomonosov（約 70MW）だけだ。日曜のバンコクは GPSC–Seaborg の 100MWe 溶融塩を四年研究すると書いた。Core Power の mPower 浮体は 6/17 の紙、Samsung Heavy の SMART100 は 7 月の AiP。Blu Lacy の説明会は、同じ三日に消えたまま。臨界している電子だけが、認定側に乗る。明日の拍手は、通電ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-ship"></i>
+            <span>State Dept／IAEA／DOE Industry Day 8/25（8/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#06 身体 603 −10.3%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">STAR 再開・688836 終値</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">672 が 603 になった。市値は 2,500 億を割った<br>初値 1,100 からは、もう −45%</div>
+          <div class="mt-4 text-sm text-zinc-400">宇樹科技（688836）。終値 <strong>603.08 元（−10.31%）</strong>。始値 640.26、安値 602.05。金曜 672.41。初値 1,100、初日終値 845、発行価 150.80。総市値約 2,439 億元。PER はなお 400 倍超、換手 27%。22 日の公式は、時間と新機種の数を理由に出場種目を削ると書いた。科沃斯は跌停、人形ロボット板は揃って下げた。02 が雲の HK$80bn を書くなら、05 は——<strong>エッジの NPU は新しい 765kV を要らない。Ohio の 800MW は要る</strong>——を、再開の初日にもう一度書く。 millimetre は木曜のまま歩き、キャンパスのワットは 2028。鐘の −10% は、身体の値段であって、屋根の値段ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i>
+            <span>688836 603.08／証券之星 2,500 億割れ（8/24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#07 Starcloud $250M / 20GW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Payload／DCM 月曜消化</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">隣人のいない土地が、$2.3B になった<br>軌道の 20GW は、まだ 16kW の予約</div>
+          <div class="mt-4 text-sm text-zinc-400">Starcloud。金曜発表の Series A 延長 $250M、$2.3B。累計 $450M。Manhattan West、NVIDIA、Cisco。Payload 月曜：「いま一番高い不動産は、反対する隣人がいない場所かもしれない」。Gallup 春は近隣 DC 反対約 71%。Heatmap は 75%。Starcloud-1 は 2025 年 11 月に H100 を軌道へ。Starcloud-2 は 2027 年の rideshare、約 8kW。Starcloud-3 は 200kW、Starship。目標は 88,000 基・軌道 20GW。NVIDIA Space-1 Vera Rubin は H100 の 25 倍。予約済みは 2027 年の 16kW。FCC の申請は承認ではない。地上の 75% が隣を止めろと言った週に、軌道は紙の GW を売った。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-satellite"></i>
+            <span>Reuters 8/21／Payload 8/24／Data Centre Magazine（8/21–24）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 Bloom $194 / IREN −3d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">時間内・8/27 FY26</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">工場の電子は、$201 の休みを終えて下がった<br>Horizon の次は、木曜の電話</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloom 時間内 約 <strong>$194</strong>（−3.6% 前後）。レンジは $186 近辺まで。IREN は約 <strong>$40</strong>（金曜 $41.88、約 −4.5%）。CIFR は約 <strong>$15.2</strong>（金曜 $15.77、約 −3.5%）。MS が CIFR を「線が無いほど通りやすい」と書いた同じ板で、株は下がった。Cipher の Barber Lake 168MW は今年 9 月、Black Pearl はすでに通電。HIVE の 2,016 基 Blackwell Ultra は今年 Q4、Merritt の水力。IREN は 8/27 17:00 ET に FY26。Horizon 1 は Microsoft に渡し、2–4 は今年の残り。系統の列が 8/31 を待っている月曜に、工場で組んだ SOFC と既通電の水力は、RFI に答えなくても通電する日を、安くなった株で売り続ける。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>BE ~$194／IREN ~$40・8/27／CIFR ~$15.2（8/24 時間内）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#09 17% / $8M / $105B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">TI 月曜・NVDA −2d</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">ラックは $8M。1GW は +$50 億<br>残価 $105B は、なお 2028 の通電待ち</div>
+          <div class="mt-4 text-sm text-zinc-400">04 が書いた The Information——GB300／Vera Rubin 200 を約 17%、ラックは $8M 超、1GW あたり少なくとも +$50 億。05 が書くのは、そのラックが座る屋根の残価が、通電まで現金にならないことだ。Ohio・Pike County、旧 Portsmouth。OpenAI 向け最大 8 IT-GW。初段 4.25、燃料は少なくとも 9.2GW ガス。残価保証の上限 <strong>$105B</strong>。現金は 2028 年以降の ready-for-service。同じ 8/26 の朝に ATLAS の閣僚が開き、決算が開く。Samsung 257,000（−8.70%）はメモリの判決。H100 $2.59、B300 $5.92。Fermi の AP1000 四基は NRC の紙。Ship 40 はクリスマス島。高いラックと、通電していない MW と、海の紙の炉が、同じ週に並んでいる。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>The Information 17%/$8M／NVIDIA 8-K $105B／04 基隆 B300（8/24）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月24日、Physical Tech &amp; Energy の中心は「<strong>欠けた線が 65GW のプラスになり、AEMO は 7 倍を数え、議会は燃料電池を買った</strong>」ことだ。08-10 が Pecos の自前発電を表紙にし、08-11 が Batch Zero を数ヶ月文書にし、08-12 が電圧と地理で内側と外側を同時に見、08-13 が 50MW の領収書を置き、08-14 が単純サイクルを解剖し、08-15 が 250–300 通の宛名を固定し、08-16 が電力株と峰谷を置き、08-17 が 10GW→8 IT-GW と既存 800MW を本文にし、08-18 が残価 $105B を ready-for-service まで待たせ、08-19 が 765kV をデータセンターと同じ机に座らせ、08-20 が例外の幅を Commissioners Hearing Room で測り始め、08-21 が線そのものを口頭弁論に座らせ、08-22 がその線に票を入れず審議に残し、08-23 がカレンダーを商品にしバンコクの艀を ATLAS の二日前に座らせたなら、08-24 は板が開いた月曜だ。Texas Tribune は朝 5 時、停電と経済の警告を置いた。Morgan Stanley は同じ線の不在を、65GW の蒸気が落ちるプラスと読んだ。AEMO は 5 TWh を 34 TWh にし、3% を 13% にした。Pelosi 家は七月の Bloom を最大 $12M と開示し、時間内の株は $194。宇樹は 603（−10.3%）。Industry Day は −1d、決算は −2d、IREN は −3d、南の線は −4d、条件分類は −7d。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが重なるか。系統の列が freeze され、変圧器は 120–210 週、タービンの納期は GPU より長く、トークンの値段は電力の TOU になっており、金曜の口頭弁論だけでは用地の手紙が動かず、日曜の四年紙だけでは炉は臨界せず、月曜の板は、欠けた線と、南半球の七年表と、議会の燃料電池を、同じ始値に並べたからだ。Tribune が切った数字は工学だ——West Zone 需要 +12.3%、混雑 +27%、Uri の $80–130B と 246 人の死、来夏の Permian 輪番。Staples の携帯発電機。産業四団体の水曜の手紙。「遅延は中立ではない」。30 人の下院と Patrick は線を止めろと言い、Gleeson は何もしない選択肢は無いと言い、Mark Bell は 180 日は足りなかったと認めた。HB 5066 の短縮は、用地の手紙を先に満席にした。SOAH は Bell–Sand Lake を止め、五つの CCN は数ヶ月内の票。同じ欠落を、MS は Base Load 65GW の間引きと読んだ。CIFR・HUT・GLXY・MARA は「残った箱」側。RIOT は Batch の外。Vegas と Seely は監査を今年いっぱいに伸ばし、検証は 12 月、4 月の Batch Zero は「分からない」のまま置いた。キューを需要と呼ぶな、は日曜の続きだ。申請の 72% は実現しない。線が無いほど蒸気が落ち、残った MW が高くなる——それが銀行の文法で、停電の文法ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            部屋の外は、同じ瓶を別の半球と別の高度で測り始めた。AEMO は 34 TWh・13%・7 倍。高位 52 TWh は十倍。稼働 165、開発 225、昨年並びの三分の一は消えた。石炭 13GW が去る。Albanese は水曜の全国内閣で州の不満をなだめる。Heatmap の 75% と Gallup の 71% が隣を止めろと言った週に、Starcloud は隣人のいない軌道を $2.3B で売った。20GW の目標に対し、予約は 16kW。Pelosi の $12M は、キューの外の SOFC を七月に買っていた事実だ。Bloom $194、IREN $40、CIFR $15.2。開示の月曜に、工場の電子は安くなった。宇樹 603 は身体のワットで、Ohio の 800MW は 2028。04 の 17% と $8M のラックは、屋根の上の請求書だ。05 の $105B は、その屋根の残価が通電まで現金にならないことだ。ATLAS は −1d。Pevek の 70MW だけが商用の浮体。勝負どころは、見出しの GW でも鐘の −10% でも 7 倍の表紙でも $12M の開示でもなく、8/28 の南の線、8/31 の条件分類、Vegas の 12 月、4 月の Batch Zero が生きるか、30 人の署名、SOAH の勧告、West Zone の混雑、A$150B の列が石炭退役に間に合うか、75% の反対が用地の値段になるか、16kW の予約が 20GW の申請になるか、工場の SOFC が何日で電子を出すか、既通電 MW、そして系統を要らない住所を誰が残価で持つか、にある。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「カレンダーが商品になった。Industry Day は火曜、バンコクは 100MW を四年研究すると書いた。反対は 75%」——今日の部屋「欠けた線が 65GW のプラスになった。AEMO は 7 倍を数えた。議会は七月の燃料電池を最大 $12M と開示し、株は $194 まで下げた。宇樹は再開初日で −10%」（笑）。同じキューを、Ohio は $105B の残価にし、テキサスは審議の公開授業にし、バージニアは試験塔の再放送にし、バンコクは四年の紙にし、シドニーは十年の 34 TWh にし、軌道は隣人のいない 20GW にした。連邦は速くしろと言い、下院 30 人は止めろと言い、ERCOT は今年いっぱいかかると言い、Heatmap は自宅の隣を止めろと言い、Morgan Stanley は線が無いほど蒸気が落ちると言った。Bloom は $201 の休みを終えて $194、Cipher は「通りやすい」と褒められて $15、宇樹は 672 から 603 に座った。スライドは安い。拒否の署名はもう少し高い。答えなかった RFI は、スライドより高い。ready-for-service はもっと高い。2031 年の 195MW は、もっと高い。四年の 100MW 艀は、その隣に座った。7 倍の 34 TWh は、退役する石炭の隣に座った。通電していない MW に残価を付け、通電している MW に例外を付け、歩いている箱に millimetre を付け、線に審議を付け、死んだ炉に表紙を付け、新しい艀に四年を付け、欠けた線に 65GW のプラスを付け、隣人のいない軌道に $2.3B を付けたのが、月曜の一番高い商品だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">「Howard-Solstice −4d・Vegas Dec/April・MS 65GW・AEMO 7x/34TWh・Pelosi BE $12M・Bloom $194・宇樹 603・ATLAS −1d・Starcloud $250M/20GW・$105B RFS 2028」——月曜の物理層が固定した十の座標</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月24日現在の Physical Tech &amp; Energy は、(1) Texas Tribune が朝 5 時、765kV 遅延による西テキサスの輪番停電と産業の停滞を警告し、West Zone 需要 +12.3%／混雑 +27%／来夏の Permian、TXOGA の携帯発電機、産業四団体の水曜手紙、30 人＋Patrick の否認、Gleeson の「何もしない選択肢は無い」、五つの CCN を数ヶ月内の票に載せたこと、(2) Morgan Stanley が金曜の「研究が無効になる」懸念を否定し、765kV 不在なら Base Load（2030–32）65GW が縮小して残りが通りやすく、CIFR／HUT／GLXY／MARA を好意、RIOT は Batch 外と書いたこと、(3) ERCOT の Vegas／Seely が監査を 2026 年の大半、検証を 12 月末、当初 4 月の Batch Zero は影響不明と PUC と議員に伝えたこと、(4) AEMO ESOO が火曜正式の前にリークし、データセンター電力 5→34 TWh（3%→13%、約 7 倍）、高位 52 TWh（十倍）、稼働 165／開発 225、NEM 176→250 TWh、石炭 13GW 退役、最大 A$150B、2025 年並びの三分の一超が消滅と数えたこと、(5) Pelosi 家が 7 月 24–28 日約定の Bloom を最大 $12M（15,000 株＋$100 LEAP、2027-06-17）と月曜開示し、時間内 BE 約 $194（−3.6%）、IREN 約 $40（−4.5%、8/27 FY26 −3d）、CIFR 約 $15.2（−3.5%）であること、(6) IAEA ATLAS が明日 8/25 Industry Day（−1d）、8/26–27 閣僚を Waldorf Astoria で開き、Grossi と Wright が海上 SMR と浮体炉の枠を置くこと、(7) 宇樹 688836 が再開初日 603.08（−10.31%）、市値 2,439 億で 2,500 億割れ、初値 1,100 から −45%、$105B RVG はなお ready-for-service 2028 であること、(8) Starcloud が $250M／$2.3B／累計 $450M、目標 88,000 基・軌道 20GW、予約 16kW、NVIDIA Space-1 は H100 の 25 倍、Payload 月曜が「隣人のいない土地」と書いたこと、(9) The Information の 17%／$8M ラック／1GW +$50 億が、屋根の上の請求書として 04 から降り、残価 $105B は通電まで現金にならないこと、が同時に動いている。08-10 が「空白の上に発電所が建つ月曜」、08-11 が「空白が監査文書になった火曜」、08-12 が「電圧と地理が値段を決める水曜」、08-13 が「検収 50MW が紙の 45GW のあいだに置かれた木曜」、08-14 が「燃料が単純サイクルで拍手が空欄を飾った金曜」、08-15 が「空欄が 250–300 通の宛名を持ち、島と軌道が部屋の外に立った土曜」、08-16 が「その島の地上側をチップ屋が株で囲い、空きラックがワットの時間割になった日曜」、08-17 が「換算式と初段 800MW が本文になった月曜」、08-18 が「同じ屋根の残価が紙になり、現金は通電まで待たされた火曜」、08-19 が「同じ電圧が公開の机に座り、隣の州が許可の前にサインを求め、身体のワットが先に値段を付けた水曜」、08-20 が「同じ例外が規制の机に座り、12 月が期限になり、工場の SOFC がキューの外で通電日を売り、身体が millimetre を読んだ木曜」、08-21 が「同じ線が口頭弁論の机に座り、立法府が拒否を書き、判事が行政承認を止め、条件分類が 8/31 まで転がされた金曜」、08-22 が「同じ線に票が入らず審議に残り、次の金曜は Howard–Solstice、2017 年の炉が表紙に戻り、差止めが憲法の机に座った土曜」、08-23 が「同じカレンダーが商品になり、バンコクの艀が ATLAS の二日前に座り、反対が 75% まで上がった日曜」なら、08-24 は<strong>同じ欠けた線が 65GW のプラスになり、南半球が 7 倍を数え、議会が燃料電池を買い、身体の株が −10% で再開した月曜</strong>だ。2026年後半の勝負どころは、見出しの GW でもスローガンでも鐘のパーセントでも 7 倍の表紙でも $12M の開示でもなく、口頭弁論の幅、30 人の署名、SOAH の勧告、8/28 の南の線、8/31 の条件分類、Vegas の 12 月、4 月の Batch Zero、RFI の完成度、12/10 の報告、12/17 の机、West Zone の混雑と来夏の Permian、A$150B と石炭 13GW の退役、送電費と $1.3B の税、180 日と 200 フィートの外、GRID の同意書、BTM と既通電、765kV の用地と発注スロット、検収 MW、峰谷のラック稼働率、通電日の統合スケジュール、条例が連邦で持つか、75% の反対が用地の値段になるか、16kW の予約が 20GW の申請になるか、そして系統を要らない住所を誰が残価で持つか、にある。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scale-balanced"></i>
+            <span>系統・規制／テキサス視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Tribune は朝 5 時に停電を数えた。West Zone は +12.3%、混雑は +27%、来夏の Permian だ。Vegas は監査を今年いっぱいにし、検証は 12 月、4 月の Batch Zero は分からないと言った。次の金曜は Howard–Solstice。8/31 は条件分類。Ohio の 9.2GW ガスは連邦の土地で、こちらの郵便受けには入らない。昨日の電子はカレンダーの上にあった。今日の電子は、欠けた線の上にある。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>送電・税・用地</span>
+          </div>
+          <p class="text-sm text-zinc-300">「30 人が否認を求め、Patrick も拒否側にいる。Bell は 180 日は足りなかったと認めた。SOAH は Bell–Sand Lake を止め、五つの CCN は数ヶ月内の票だ。産業四団体は水曜、『遅延は中立ではない』と書いた。Staples の盆地は、まだ携帯発電機で回っている。電圧は工学、負担は政治、通電日は銅と鉄の納期と、審議の幅だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>電力株／銀行の文法</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Morgan Stanley は、線が無いほど 65GW の蒸気が落ちると書いた。CIFR は通りやすい側だ。RIOT は Batch の外だ。同じ朝、CIFR は $15、IREN は $40、Bloom は $194。褒められた株が下がるのは、残った箱の通電日がまだ 2028 だからだ。キューを需要と呼ぶな。65GW のプラスは、停電の値段ではない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-atom"></i>
+            <span>原子力／既存炉 vs 紙の炉 vs 軌道</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ATLAS は明日の Industry Day、水曜の閣僚。Pevek の 70MW だけが商用の浮体だ。Seaborg は 100MW の四年研究。mPower は 2031 年頃。Portsmouth の 9.2GW はガスのタービン。Starcloud の 20GW は 16kW の予約だ。新しい GW を建てるより、古い GW を殺さない方が、まだ速い。隣人のいない土地は、認可側にはまだ乗らない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-plug"></i>
+            <span>データセンター電力アーキテクト</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Bloom の $194 は執行の途中だ。Pelosi の $12M は七月の約定だ。Oracle 2.8GW はキューの外の話だ。Cipher の 168MW は今年 9 月の箱だ。2.9GW の Batch Zero は 8/31 の席だ。HIVE の 2,016 基は今年 Q4 だ。Horizon 1 はすでに渡した。Ohio の 800MW は 2028 だ。$105B は残価だ。17% のラックは屋根の上だ。ずらさないバッチは、今夜の明細になる。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本・アジアエネルギー／製造戦略視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「米側月曜が示したのは、Howard-Solstice −4d・Vegas Dec/April・MS 65GW・AEMO 7x/34TWh/13%・Pelosi BE $12M・Bloom $194・IREN $40/8/27・CIFR $15.2・宇樹 603 −10.3%・ATLAS −1d・Starcloud $250M/20GW・NVDA 17%/$8M/−2d・$105B RFS 2028 だ。東アジアは同じ瓶を、認定容量と用地と年産とタービンのリードタイムで読んでいる。シドニーの 7 倍は、東京とソウルと台北の机にも届く。宇樹の −10% は身体のワットで、キャンパスの 800MW は 2028。SiC/GaN・液冷・変圧器・BESS・SOFC・銅で取れる一方、アンケートの遅さと既存炉の延命と系統を要らない住所の残価と、自治体の条例が連邦で持つかと、75% の反対が用地の値段になるかと、16kW の予約が 20GW の申請になるかは、こちらでも同じボトルネック。技術・金融・time-to-power・排出許可・水・社会的ライセンスの六点で設計しないと、ワットも fab も紙の上に残る。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 05. Physical Tech &amp; Energy • 2026-08-24 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Texas Tribune 8/24 5:00 CT（Paul Cobler、West Zone +12.3%/混雑 +27%、来夏 Permian、TXOGA、30 人＋Patrick、五 CCN）、@matthew_sigel Morgan Stanley 65GW Base Load／CIFR HUT GLXY MARA／RIOT Batch 外、RTO Insider 8/24 Vegas/Seely（監査 2026 大半、検証 12 月、Batch Zero 4 月は不明）、Bloomberg／The Age／AFR／AEMO ESOO リーク（5→34 TWh、3%→13%、7x、高位 52 TWh、165+225、A$150B、石炭 13GW）、@pelositracker／unusual_whales Pelosi BE 最大 $12M（7/24–28、$100 LEAP 2027-06-17）、BE ~$194／IREN ~$40／CIFR ~$15.2 時間内、688836 603.08 −10.31%、IAEA ATLAS 8/25–27、Reuters／Payload 8/24 Starcloud $250M/$2.3B/20GW/16kW、The Information 17%/$8M rack、NVIDIA 8-K $105B RFS 2028、Heatmap 75%、X投稿（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 05-physical-tech.html loaded for 2026-08-24', 'color:#10b981');
+  </script>
+</body>
+</html>
