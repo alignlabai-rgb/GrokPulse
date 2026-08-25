@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-08-25 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-25 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🏭</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜——GPU は 100MW の工場になり、<br>宛名のない LPU は量産、257k は同じ終値</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月25日（火）。08-24 が −8.7% の判決と 17% のラックと B300 の起訴状なら、08-25 は<strong>月曜 16:45 の Rubin が 100MW の単位になり、金曜に地図から消した LPU が 3,400 tok/s の量産プレスになり、257,000 が朝 247k まで沈んで同じ終値に戻った火曜</strong>だ。Korea Times：Samsung 257,000（+0.19%）、SK 1,678,000（+0.42%）、KOSPI 6,742.74（+0.68%）。早朝は 6,408。ServeTheHome：Rubin は 100MW 工場で NVFP4 推論 2 ZFLOPS、HBM4 11 PB、800 PB/s。AMD MI455X は 432GB／23.3 TB/s。Intel Crescent Island は 350W 空冷、最大 480GB の LPDDR5x。NVIDIA：Groq 3 LPX 量産。Artificial Analysis 3,400 tok/s。Nebius が先頭。今日 14:15 PDT が LPU のスライド、16:45 が TPU v8 と OpenAI の「You Can Just Build Things」。NVDA 月曜 208.48（−2.91%）、7 連陰。8/26 まで 1 日。火曜の評価軸は <code>Samsung 257k/+0.19% × SK 1.678M/+0.42% × KOSPI +0.68% × Rubin 100MW/2Z/11PB × MI455X 432GB/2.9EF × Crescent 350W/480GB × LPX 3400 tok/s × 775μm/HBM5 × 基隆 +1d × Indiana −2d × 9988 114.20 × H100 $2.59/B300 $5.92 × 8/26 −1d</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 257,000 2d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">KOSPI 終値 8/25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">247k まで沈んで、同じ 257k に戻った<br>+0.19% は、判決の取り消しではない</div>
+          <div class="mt-4 text-sm text-zinc-400">Korea Times。Samsung 257,000（+0.19%）。SK 1,678,000（+0.42%）。KOSPI 6,742.74（+0.68%、+45.78）。早朝は 6,408。Samsung は 249,000 で開き、一時 247,000。SK は 1,598,000 で開き、一時 1,580,000。外国人はまだ売り。₩110 兆の還元は残ったまま、消却は 1 月送りのまま。SK 労組は火曜、賃金の暫定合意を僅差で否決した。同じメモリの風でも、消却のある行と、1 月送りの行は、まだ別の株価だ。257,000 は回復ではない。同じ終値の、二日目である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-won-sign"></i>
+            <span>Korea Times／Reuters（8/25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#02 100MW / 2Z</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Hot Chips GPU 8/24夜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">単位は GPU ではなく、100MW の工場になった<br>2 ZFLOPS。11 PB。45°C の湯</div>
+          <div class="mt-4 text-sm text-zinc-400">ServeTheHome ライブ。Mandal／Dash／Dimitrov。Rubin は 100MW の AI 工場で NVFP4 推論 2 ZFLOPS、学習 1.4 ZFLOPS、HBM4 11 PB、帯域 800 PB/s。SemiAnalysis AgentX で GB300 比、tokens/MW は最大 30 倍。NVLink 6 は GPU あたり 3.6 TB/s。トレイはケーブル無し・ファン無し。液冷入口 45°C——ホットタブより熱い。800 VDC。電力平滑で学習ピーク −13%、供給ワットあたり GPU は最大 +40%。測るのは FLOPS ではない。工場が何枚の請求書を、何ワットで回すかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>ServeTheHome／hotchips.org GPU（8/24–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#03 432GB / 2.9EF</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">AMD Helios 8/24夜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">向かいのラックは、ハイを 12 本積んだ<br>288GB の隣で、432GB が座った</div>
+          <div class="mt-4 text-sm text-zinc-400">Smith／Subramaniam。MI455X は N2 の 8 XCD、N3P のファブリック、HBM4 12 スタック。432GB、23.3 TB/s、MXFP4 40.26 PF。Helios ラックは 72 GPU で 2.9 EF、HBM4 31 TB、1.7 PB/s。トレイは MI455X×4 に EPYC 9006 1 ソケット。UALoE は GPU あたり片方向 1.8 TB/s。Rubin 現行は 288GB。同じ「agentic」の見出しで、積む本数が違う。祝うのはピークではない。何ハイ載せて、何本の光で吸うかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>ServeTheHome AMD MI400（8/24–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#04 350W / 480GB</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Intel Crescent 8/24夜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">HBM を積まない GPU が、同じ枠に座った<br>空冷 350W。ODM は 480GB まで</div>
+          <div class="mt-4 text-sm text-zinc-400">Mohan／Jiang。Crescent Island は Xe-3P、32 Xe コア、256 XMX、L2 32MB。Intel ブランドは LPDDR5x 160GB。ODM は最大 480GB。350W 空冷 PCIe。液冷も 800V も要らない。HBM の請求書を、サーバの表紙に貼った月曜の隣で、LPDDR で逃げるカードが「agentic inference」と書いた。帯域は負け、容量と電力と設置の許可は勝つ、という賭けだ。17% のラックの向かい席である。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-fan"></i>
+            <span>Intel Newsroom／ServeTheHome／TechPowerUp（8/24–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#05 3,400 tok/s</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">LPX 量産 8/24・スライド 14:15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">中国専用は地図に無い<br>全球の LPU は、量産と 3,400 で座った</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA 公式 8/24。Groq 3 LPX 量産。Gemma 4 31B、100k 文脈で 3,400 output tok/s。最速記録。エージェントの応答は最寄り比 4 倍。Nebius Token Factory が先頭。Groq クラウドが続く。ラックは LPU 256 基。金曜の公式は「中国市場の LPU 売上は今日無く、中国専用製品はロードマップに無い」。宛名は消えた。量産は残った。今日 14:15 PDT、Arsovski／Raghavan「Think Fast」。同じ枠に Meta 自社シリコン、Cerebras、MAIA 200。16:45 は TPU v8 と OpenAI「You Can Just Build Things … Chips」。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bolt"></i>
+            <span>NVIDIA Newsroom／hotchips.org AI 1–2（8/24–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#06 775μm</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">SK HBM 教程 8/23・消化</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">天井は 775 ミクロン<br>ハイブリッドは HBM4E に間に合わない</div>
+          <div class="mt-4 text-sm text-zinc-400">Jaesik Lee。HBM キューブは 300mm ロジックウエハと同じ 775μm が天井。12-Hi HBM4 は量産、16-Hi 48GB は顧客認定、コアは約 50μm。熱負担は世代で 2.2 倍。MR-MUF を Rubin まで伸ばす。ハイブリッドボンディングは 20-Hi 以上の研究、HBM5 が最早。Samsung は 4nm base die。今日 9:45 PDT は Hwang の LPDDR5X-PIM——「世界初の LPDDR 上 PIM」。HBM の請求書を転嫁した会社の隣で、同じメモリ屋が LPDDR の上に演算を置こうとしている。積む者と、逃げる者と、中に演算を入れる者が、同じ週に並ぶ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-ruler-vertical"></i>
+            <span>Tom's Hardware／ServeTheHome／hotchips.org Memory（8/23–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#07 VERA 88</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">CPU 1 8/24・SpaceXAI</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">88 コアは 6 ダイの上に座った<br>1.2 TB/s の SOCAMM2。採用の先頭は SpaceXAI</div>
+          <div class="mt-4 text-sm text-zinc-400">Evans／Xekalakis。Olympus 88。空間マルチスレッド。LPDDR5X コントローラ 8×128-bit。SOCAMM2 1.2 TB/s。コンピュートはモノリシック、メモリと I/O はチップレット。NVLink-C2C。PCIe/CXL 96 レーン。公式はタスク 1.8 倍、効率 2 倍。NVL72 は Rubin 72 に Vera 36。NVIDIA は同じ月曜、SpaceXAI が Vera を大規模 agentic に採用すると書いた。ホストが先に開いた順序は、偶然ではない。GPU は午後、LPU は火曜、工場は 100MW だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>ServeTheHome／NVIDIA／Tom's Hardware（8/24–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#08 74 / 56 +1d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">基隆 起訴の翌朝</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">起訴状の型番は、まだ B300 のまま<br>130 台。74 台は出た。会社は起訴されていない</div>
+          <div class="mt-4 text-sm text-zinc-400">Digitimes／Tom's Hardware が火曜に手順を足した。5 段階で税関を避ける。最終用途は「台湾の賃貸施設」。インドネシア 50、日本 8、直送、税関 56。NVIDIA 台湾 1、Super Micro 台湾 2。Super Micro は数名を解雇済み、と先行報道。求刑最大 5 年。会社は起訴されていない。金曜に中国専用 LPU を消し、月曜に量産を全球で書き、同じ型番の箱が起訴状に残る。届かない名前と、届いてしまった箱と、今日 14:15 のスライドは、三つの文法のままである。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i>
+            <span>Tom's Hardware／Digitimes／Reuters（8/24–25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#09 INDIANA −2d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">起工 8/27</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">775μm の隣で、鋤は木曜<br>$38.7 億。稼働は 2028。天井は埋めない</div>
+          <div class="mt-4 text-sm text-zinc-400">SK hynix。West Lafayette。先進パッケージと HBM の R&amp;D。$3.87bn。8/27 起工。稼働は 2028 年末。133.5 エーカー。直接・間接 7,000 人。宮城は「数十兆ウォン、最終決定は無し」。ハイブリッドは HBM5。16-Hi は今ある MR-MUF で認定中。2 日後の鋤は、775μm の天井を上げない。上げるのは今あるハイと、今ある光と、17% の値札だ。労組が暫定合意を否決した火曜の、2 日後に鋤を入れる。株価は今日動く。ウエハは、まだ 2 年先の住所だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Korea Herald／SK hynix West Lafayette／起工 8/27（8/25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 9988 114.20</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">港 鐘 8/25</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">希薄化の翌朝は、114.20 で返した<br>+1.51%。先頭の行は、まだチップ</div>
+          <div class="mt-4 text-sm text-zinc-400">阿里 9988。HK$114.20（+1.70、+1.51%）。高値 115.00、安値 112.20。出来高 1.24 億。月曜は 112.50（−8.54%）、プレイスメント HK$112.70、金曜 123 から 8.4% ディスカウント。純額 800 億港元の 100% はチップ・インフラ・モデル。米証券法未登録。同じ火曜、基隆の起訴状は消化の 2 日目、NVIDIA は中国専用 LPU を地図に置かない。届く箱と、届かない名前と、自分で買うチップは、三つの在庫のまま。114.20 を 123 の勝ちと書くな。希薄化の翌朝だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-coins"></i>
+            <span>MarketWatch／Yahoo／GrokPulse 02（8/25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 GPU-HR 08-25</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">@Architect_Fi 火曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">H100 $2.59、B300 $5.92<br>リストは $8M、時間貸しは動かない</div>
+          <div class="mt-4 text-sm text-zinc-400">@Architect_Fi 08-25。$/GPU-hr。H100 $2.59（1D +0.10%、7D −3.16%、YTD +38.3%）、H200 $3.34（+0.43%／+0.99%）、B200 $4.98、B300 $5.92（−0.01%／+1.73%／+39.9%、30 日ボラ 20.3%）。月曜から H100 は横、B300 も横。2027 年の Vera Rubin ラックは $8M 超。今夜の Hopper は $2.59。起訴された型番は B300。時間貸しで週をまだ高い型番も、B300 だ。二つの値札を、同じセルに書くな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>@Architect_Fi GPU COMPUTE DAILY SNAPSHOT（8/25）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#12 8/26 −1d</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">FY27 Q2 8/26 14:00 PT</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">コンセンサス $920.7 億、EPS $2.09<br>208.48。7 連陰。見るのは粗利とメモリと起訴</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA FY27 Q2。期末は 7/26。Fool：コンセンサス売上 $92.07bn、EPS $2.09。会社ガイド $91.0bn ±2%、粗利率約 75%、データセンター計算の中国はゼロ。月曜終値 208.48（−2.91%）、7 連陰。17% は 2027 年初出荷であって、今四半期の行ではない。H200 の許可済み 1 万基は上振れの候補。基隆は脚注か本文か。LPU の中国はゼロ、全球は量産。4 四半期連続でビートし、4 回とも売られた会社の、5 回目の夜まで 1 日。Jackson Hole は金曜。鋤は木曜。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>NVIDIA IR／Motley Fool／Investing.com（8/25）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月25日、AI Hardware の中心は「<strong>月曜に書いた判決と値札と起訴状が、火曜に 100MW の工場と量産の LPU と同じ 257,000 の終値になった</strong>」ことだ。08-24 が Samsung −8.70% と The Information の 17%／$8M ラックと基隆 9 人起訴なら、08-25 は翻訳である。Korea Times：Samsung 257,000（+0.19%）、SK 1,678,000（+0.42%）、KOSPI 6,742.74（+0.68%）。早朝は 6,408 まで落ち、Samsung は 247,000、SK は 1,580,000。終値は、判決の取り消しではない。同じ数字の、二日目だ。₩110 兆は残っている。消却は 1 月送りのまま。SK 労組は火曜、賃金の暫定合意を僅差で否決した。同じメモリの現金でも、消却のある行だけが株価になり、労組の行は別の文法で残る。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Stanford の月曜夜が、単位を書き換えた。Rubin のスライドは GPU ではない。100MW の AI 工場である。NVFP4 推論 2 ZFLOPS、学習 1.4 ZFLOPS、HBM4 11 PB、帯域 800 PB/s。AgentX で tokens/MW は GB300 比最大 30 倍。NVLink 6 は 3.6 TB/s。トレイからケーブルとファンを消し、液冷入口を 45°C にした——ホットタブより熱い湯で、チラーを外す。800 VDC。電力平滑で学習ピーク −13%、供給ワットあたり GPU は最大 +40%。Jensen の工場は、FLOPS のカタログではなく、請求書の分母だ。向かいの AMD は 12 本の HBM4 で 432GB、Helios は 72 GPU で 2.9 EF／31 TB。Intel は同じ「agentic」で HBM を降り、350W 空冷、最大 480GB の LPDDR5x に逃げた。積む者と、工場で測る者と、空冷で逃げる者が、同じ 2 時間に並んだ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            宛名のない LPU は、量産のプレスになった。NVIDIA は月曜、Groq 3 LPX のフル生産を書いた。Gemma 4 31B、100k 文脈、3,400 output tok/s。最寄り比 4 倍。Nebius が Token Factory の先頭。金曜に「中国専用はロードマップに無い」と消した名前が、全球のラックとして残った。今日 14:15 PDT が Arsovski／Raghavan のスライド。同じ枠に Meta、Cerebras、MAIA 200。16:45 は Jouppi の第 8 世代 TPU と、OpenAI の「You Can Just Build Things … Chips」。届かない名前と、自分で作るチップと、自前シリコンが、同じ午後に座る。基隆の起訴状は消化の 2 日目。130 台の B300、74 台出国、56 台税関。Digitimes は 5 段階の手順を足した。会社は起訴されていない。ガイドの中国はゼロ。上振れの H200 1 万基は、10-Q の行であって、起訴状の行ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            メモリの列は、物理の天井を書いた。Jaesik Lee の日曜教程が、火曜の本文になった。HBM は 775μm。12-Hi は量産、16-Hi 48GB は認定、コアは 50μm。熱は 2.2 倍。ハイブリッドは HBM4E に間に合わず、HBM5 が最早。MR-MUF を Rubin まで伸ばす。今日 9:45 PDT は Samsung の LPDDR5X-PIM。HBM の請求書を 17% にした会社の隣で、同じメモリ屋が LPDDR の上に演算を置く。West Lafayette の鋤は 8/27。$3.87bn。稼働は 2028。天井は埋めない。埋められるのは今あるハイと、今ある光と、値札だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            ホストは 88 コアの Olympus。6 ダイ。SOCAMM2 1.2 TB/s。PCIe/CXL 96 レーン。NVIDIA は同じ月曜、SpaceXAI が Vera を大規模 agentic に採用すると書いた。NVL72 は Rubin 72 に Vera 36。GPU の前にホストが座る順序は、月曜のプログラムであり、火曜の採用発表でもある。阿里は HK$114.20（+1.51%）で希薄化の翌朝を返した。800 億港元の先頭はチップ。米投資家は乗れない。届く箱と、届かない名前と、自分で買うチップは、三つの在庫のままである。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            スポットは動かなかった。@Architect_Fi 08-25。H100 $2.59、B300 $5.92。起訴された型番と、時間貸しで週を高い型番が、まだ同じだ。NVDA 月曜 208.48、7 連陰。コンセンサス $92.07bn、EPS $2.09、ガイド $91.0bn ±2%、中国の計算はゼロ。17% は今四半期の売上ではない。見るのは粗利と、メモリをどう語るかと、H200 の 1 万基をガイドの外に置くかどうかと、起訴状を脚注にするかどうかと、LPU の全球量産を中国ゼロの隣にどう置くか。08-24 が「還元を −8.7% の判決にし、15% を 17% と $8M のラックにした月曜」なら、08-25 は「<strong>257,000 を同じ終値の二日目にし、GPU を 100MW の工場にし、宛名のない LPU を 3,400 tok/s の量産にし、775μm を HBM の天井として本文に書いた火曜</strong>」。無料なのは午前の反発で、有料なのは 14:15 の宛名と、16:45 の自前チップと、明日の粗利である。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">昨日の自分「祝うのは −8.7% でも 17% でもない」——今日の市場「じゃあ 257,000 の二日目も祝わないね」（笑）。朝 247k まで落として、終値は同じ 257k。回復に見える数字が、判決のコピーなのは最高に 2026 年夏らしい。NVIDIA は GPU の単位を捨てて 100MW の工場で語り始めた。2 ZFLOPS。11 PB。45°C の湯。ホットタブより熱い冷却でチラーを外す会社が、金曜には中国専用 LPU を消して、月曜には全球で量産すると書く。3,400 tok/s。宛名は無い。スライドは今日 14:15。基隆の B300 はまだ起訴状の型番。時間貸しの B300 は $5.92 で週を高い。同じ型番の、三つの文法。AMD は 12 本積んで 432GB。Intel は HBM を降りて 480GB の LPDDR で空冷。積む者と逃げる者と工場で測る者が、同じ「agentic」で並ぶ。SK は 775μm が天井だと認めて、ハイブリッドを HBM5 に送った。鋤は木曜。ウエハは 2028。労組は暫定合意を否決した。阿里は 114.20 でチップの現金の翌朝を返した。米国投資家は乗れない。SpaceXAI は Vera を先に採った。88 コアのホストが、GPU より先に採用されるのは、プログラムの順番通りだ。祝うのは +0.19% でも 3,400 でもない。今日 14:15 の LPU がどの宛名で生き、16:45 の OpenAI が本当に「自分で作った」と言い、明日の 10-Q にメモリと起訴状と量産のどれが本文になるかだ。席は売り切れ。終値は、もう日付の方が高い。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">257k 2d・100MW/2Z・432GB/2.9EF・350W/480GB・3400 tok/s・775μm・Vera 88・74/56 +1d・Indiana −2d・9988 114.20・H100 $2.59・8/26 −1d——火曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月25日現在の AI Hardware 分野は、(1) Samsung が早朝 247,000 まで沈んだあと 257,000（+0.19%）で同じ終値の二日目を書き、SK 1,678,000（+0.42%）、KOSPI 6,742.74（+0.68%）、労組は暫定合意を否決したこと、(2) Hot Chips の Rubin が単位を 100MW 工場（NVFP4 推論 2 ZFLOPS、HBM4 11 PB、tokens/MW 最大 30 倍、45°C／800 VDC）に書き換え、MI455X が 432GB／Helios 2.9 EF、Crescent Island が 350W 空冷・最大 480GB LPDDR5x で並んだこと、(3) NVIDIA が Groq 3 LPX の量産を書き、3,400 tok/s、Nebius 先頭、今日 14:15 に LPU、16:45 に TPU v8／OpenAI チップが続くこと、(4) SK が 775μm 天井とハイブリッドの HBM5 送りを教程にし、12-Hi 量産／16-Hi 認定、今日午前は Samsung LPDDR5X-PIM であること、(5) 基隆の B300 起訴が 5 段階の手順として消化され、会社は起訴されていないこと、(6) SK の West Lafayette（$3.87bn、8/27 起工、2028 稼働）が 2 日後に鋤を入れ、2027 の不足も 775μm も埋めないこと、(7) 阿里 9988 が HK$114.20（+1.51%）で希薄化の翌朝を返し、SpaceXAI が Vera を採用したこと、(8) スポットは H100 $2.59／B300 $5.92、NVDA 月曜 208.48 で 7 連陰、FY27 Q2 まで 1 日、コンセンサス $92.07bn／EPS $2.09、ガイド $91.0bn ±2%、中国の計算はゼロ、が重なっている。2026 年夏の火曜の評価軸はピーク FLOPS より、<strong>同じ終値の二日目、100MW の工場、積むハイと逃げる LPDDR、宛名のない量産、775μm の天井、起訴状の型番、2028 の鋤、自前チップの翌朝、今夜の GPU-hr、明日の粗利</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>メモリ／HBM 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「257,000 の二日目は、還元の文法が消却にならなかった事実のコピーだ。775μm が天井で、ハイブリッドは HBM5。16-Hi は今ある MR-MUF で認定する。17% は我々の請求書をサーバの表紙に貼った数字のまま。鋤は木曜。ウエハは 2028。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>NVIDIA／GPU ベンダー視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「単位は 100MW だ。2 ZFLOPS、11 PB、45°C、800V。LPU の宛名は消した。全球の量産は書いた。3,400 tok/s。基隆は個人の起訴。会社は起訴されていない。ガイドの中国はゼロ。明日の 10-Q で語るのは粗利とメモリと、工場の分母だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-fuchsia-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-fuchsia-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chalkboard"></i>
+            <span>Hot Chips／アーキ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「月曜夜は三社の agentic。288GB の HBM4、432GB の HBM4、480GB の LPDDR 空冷。今日は LPU と TPU と『自分で作れる』。測るのはピークではない。何ハイ載せて、何で冷やし、何 MW を工場と呼ぶかだ。ホストは 88。採用の先頭は SpaceXAI。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>ハイパースケーラー／TCO 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「17% と $8M のラックの翌朝に、空冷 350W と LPU 量産が並んだ。1GW は +$50 億のまま。自前シリコンは今日 16:45。高くなるほど、借りる理由が薄くなる。ただし 2027 の HBM は、自前でも三社から買う。ASIC は GPU を代替しても、775μm は代替しない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>輸出規制／中国スタック視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「金曜に消したのは中国専用という宛名だ。月曜に量産を全球で書き、基隆は B300 の最終用途を偽った 9 人を起訴した。74 台は出た。阿里は 114.20 でチップの翌朝を返した。米投資家は乗れない。届く箱と、届かない名前と、自分で買うチップを、同じ在庫表に書くな。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは +0.19% の見出しでも、$8M のラックでもない。2027 に契約できる HBM の世代とハイ、775μm を誰がどう超えるか、インディアナが 2028 に本当に動くか、今夜の H100 $2.59 と来年のリストの差、監視税を織り込んだ推論単価だ。LPU は今日 14:15。OpenAI は 16:45。10-Q は明日。鋤は木曜。火曜に動くのは同じ終値と、工場の単位と、宛名のない量産である。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-08-25 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Korea Times KOSPI 8/25、ServeTheHome Rubin／MI400／Crescent／Vera、NVIDIA Groq 3 LPX 量産、Tom's Hardware 775μm、@Architect_Fi GPU-hr 8/25、NVIDIA FY27 Q2 8/26、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-08-25', 'color:#10b981');
+  </script>
+</body>
+</html>
