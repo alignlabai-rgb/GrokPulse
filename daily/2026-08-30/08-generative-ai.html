@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Generative AI &amp; Creative Tools ダイジェスト | 2026-08-30 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">08</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Generative AI &amp; Creative Tools ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-30 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">📺</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜は「実時間より速く回せ」——Twitch は 519 万、<br>Slop は 3.7 万、Live は SKU、DALL·E は名前を降りた</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月30日（日）。木曜が「延長を測れ」——H3 Max は 117 万、Omni は 10 秒、Desktop は机、Comfy は印鑑——だったなら、日曜は<strong>同じ後段を無限放送と実時間割れとカメラのロックと名前の引退で四列にした日</strong>だ。土 02:37、@rehan_shei（eng @fal）は H3 Max を Twitch に繋いだ。「faster than you can watch it」。無限の interdimensional cable。いいね <strong>12,765</strong>・再生 <strong>518.8 万</strong>。Ban は Twitch → Kick → Rumble。同じ土、@levelsio は「15 秒を 9 秒」と書いて 15,003／<strong>218.3 万</strong>。夜に Infinite Slop を置いた。6,407／<strong>174.2 万</strong>。翌朝、視聴 <strong>37,000</strong>。ドメインは InfiniteSlop.ai。同じ夜 23:31、@fal 本人が H3 Max Live と書いた。1,763／<strong>28.6 万</strong>。!prompt。API は来週。実験の長尺チェックポイント。クリップの Max ではない。MiniMax は開源の礼を 2,388／<strong>51.4 万</strong>で書いた。同じ週末、Higgs は Blender でカメラをロックしろと言い、Magnific は 3D でピンし、Runway は HORSE を 100 万クレジットで開き、木曜の無名 127 秒は 6,573／<strong>553.2 万</strong>まで伸び、DALL·E GPT は ChatGPT から降りた。画像生成は残っている。名前が降りた。日曜の KPI は画質自慢ではなく、<strong>Rehan 519万 × Twitch BAN ≠ Kick BAN ≠ Rumble × $0.05/s 480p × $4,320/日 ≠ 768p $0.08 × levelsio 15s in 9s・50x ≠ fal 5s in &lt;3s・35x × Infinite Slop 37,000・4本/分 × Live SKU・API 来週・長尺実験 ≠ クリップ Max × MiniMax 礼 51.4万 × Higgs Blender 1,825／16.0万 ≠ Magnific 3D pin × Runway HORSE 100万cr・9/1 ≠ 127s 553万・まだ無名 × DALL·E GPT 閉 ≠ ChatGPT Images 残 ≠ API 5/12 既死 × Trigger 8分 Cinema Studio 4 × Wan Picsart 33分 ≠ 30s 能力表 × Kling ハイライト 24.6万・能力表なし × Super 30s Day+2 × Article 50 Day+29</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-magic text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 519万 CABLE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Rehan 土 02:37</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">見るより速く出した<br>Ban は、三店を跨いだ</div>
+          <div class="mt-4 text-sm text-zinc-400">@rehan_shei 土 02:37。「Minimax H3 Max has generates video faster than you can watch it so I hooked it to a twitch livestream! Now you can watch infinite interdimensional cable」。いいね <strong>12,765</strong>・リポスト 993・引用 740・返信 585・ブックマーク <strong>8,696</strong>・再生 <strong>518.8 万</strong>。23 秒。リンクは twitch.tv/rehanfal。189／35.4 万。04:16、「banned from twitch」。Kick へ。111／18.9 万。05:11、Kick も ban。380／8.74 万。05:24、Rumble。329／10.4 万。「we back baby」。デモは配信だ。SKU ではない。Rick and Morty 風のケーブルを、Live の公式放送に足すな。Ban の三店を、一つの「配信中」に書くな。木曜の 117 万は 5 秒スクショだ。今日の 519 万は、同じ後段を実時間のこちら側に置いたデモだ。クリップの壁時計と、配信の壁時計は別だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tv"></i>
+            <span>@rehan_shei 12,765／518.8万／Twitch→Kick→Rumble（8/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 INFINITE SLOP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">levelsio 土→日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">15 秒を 9 秒と書いた<br>37,000 人が、ドメインを見た</div>
+          <div class="mt-4 text-sm text-zinc-400">@levelsio 土 09:15。「Today is a very historical moment for AI video generation」「15 seconds of video in 9 seconds」。50x。いいね <strong>15,003</strong>・再生 <strong>218.3 万</strong>。17:34、Infinite Slop。skunkworks.levels.io/infinite-slop。チャットが次を決める。前のクリップと繋ごうとする。@fal がスポンサー。53 秒。6,407／<strong>174.2 万</strong>。日 08:48、「37,000 people watched Infinite Slop yesterday」。InfiniteSlop.ai を取った。1,135／35.2 万。上限は <strong>4 本／分</strong>（4×15 秒＝1 分）。忙しいと全員は通らない。入札は「less fun」。last frame 継ぎは「perfect sequence の技術課題」。50x を、fal 本人の 35x に足すな。15 秒 9 秒を、5 秒 3 秒未満に足すな。37,000 人の視聴を、Rehan 投稿の 519 万再生に足すな。片方はサイトの人数、片方は X の再生だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-infinity"></i>
+            <span>@levelsio 15,003／218.3万 → Slop 6,407／174.2万・37k（8/29–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#03 H3 MAX LIVE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">fal 土 23:31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">公式が、無限放送と書いた<br>開いたのは実験。クリップではない</div>
+          <div class="mt-4 text-sm text-zinc-400">@fal 土 23:31。「Introducing H3 Max Live。Video generation is now faster than real time。An infinite broadcast where every frame is generated on the fly and every scene is directed by chat。Type !prompt and it's on screen in seconds」。いいね <strong>1,763</strong>・リポスト 147・引用 112・返信 83・ブックマーク 925・再生 <strong>28.6 万</strong>。日 00:34 の QT。「experimental long-form H3 Max checkpoint with native infinite continuity support。The model holds the thread across scenes instead of resetting every clip。Coming to the API next week」。342／5.34 万。Live は SKU の名前だ。木曜の H3 Max（5 秒／768p／R2V 未着）ではない。Rehan のケーブルでも、levelsio の Slop でもない。三つの「無限」を、一つの live に書くな。continuity は実験チェックポイントだ。本番 API は来週、と本人。重みは、まだ閉じていない後段のまま閉じている。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>@fal H3 Max Live 1,763／28.6万・API 来週（8/29–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#04 $4,320 / 日</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Rehan 日 10:09</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">480p は $0.05／秒<br>Twitch だけでは、上位 10〜20 局</div>
+          <div class="mt-4 text-sm text-zinc-400">@rehan_shei 日 10:09。内訳。H3 Max 480p は <strong>$0.05／video-second</strong>。ノンストップで <strong>$4,320／日</strong>、<strong>$129,600／月</strong>、<strong>$1.58m／年</strong>。推論だけ。Twitch 収益だけで黒字にするなら「99.9997th percentile」「top 10–20 channel」。スポンサーとチャット課金は別。1,244／21.5 万。木曜現場の 768p は初週 $0.04→9/1 以降 $0.08、という報道。480p の $0.05 を、768p の $0.08 に足すな。無料枠は fal.ai/tools/minimax-h3-max。サインイン 5 本／日・780p、という二次報道。無料 5 本を、無限放送の単価に書くな。日 18:53 の「NSFW LoRA → カテゴリ配信 → Profit」は 898／11.4 万。ジョークだ。SKU ではない。同じ日、@tinasang（growth @fal）は「creator で Live を作りたい人はコメントを」と書いた。108／1.15 万。スポンサーの席と、推論の請求書は別列。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-receipt"></i>
+            <span>@rehan_shei $0.05/s 480p・$4,320/日／1,244（8/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#05 開源の礼</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">MiniMax 土 19:12</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">基礎は開いた。後段は閉じた<br>礼は、重みを開けたことではない</div>
+          <div class="mt-4 text-sm text-zinc-400">@MiniMax_AI 土 19:12。「MiniMax H3 Max did both」。いいね <strong>2,388</strong>・リポスト 83・引用 31・返信 84・ブックマーク 271・再生 <strong>51.4 万</strong>。H3 を開源したのは「community が先へ連れていくため」。@fal が後段と推論で「faster-than-real-time」を現実にした、と本人。「They made the value of open weights feel real」。同じ土 17:03 は Rehan を QT。「best benchmark yet: can it generate faster than Twitch can stream?」。1,480／26.0 万。木曜、MiniMax は fal の Max 発表を「this is exactly why we build with open weights」と QT した。今日の礼は、その続きだ。開いたのは基礎の H3。閉じたのは Max と Live。二つを、同じ open に書くな。Live の実験チェックポイントを、開源の重みに足すな。Comfy の印鑑は D+3。除外地図の上の global は、この礼では動いていない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span>@MiniMax_AI 2,388／51.4万・開源の礼（8/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#06 カメラ二列</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Higgs 土／Magnific 日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">片方は Blender でロック<br>片方は 3D でピンした</div>
+          <div class="mt-4 text-sm text-zinc-400">@higgsfield_ai 土 20:44。「Build your scenes in Blender with Higgsfield first。Stop burning credits on iterations」。1,092／6.26 万。23:59、「Lock the motion in Blender with Higgsfield plugin」。火の「Higgsfield in Blender」を QT。1,825／<strong>16.0 万</strong>。30 秒。MCP か Supercomputer。生成の前に、動きを机で固定する列だ。同じ日曜、@magnific 10:37。ボウリング。カメラが球を追い、ストライクを持ち、リアクションへ戻る。「You can't prompt this shot」。3D でブロックし、Seedance 2.5 に motion reference として渡す。ピンして動かす。AR で撮ってもいい。動きは動き、中身はプロンプト。64／7,799。18:17、テーブルの六人。顔を落とさず通り抜ける。Magnific Agent で 3D。133／8,093。3D Motion Control 本体は 8/7（359／60.9 万）。今日は配送面だ。新しいレンダラではない。Blender プラグインと、Magnific の 3D ピンを、同じ「カメラ制御」セルに書くな。片方は DCC、片方はプロンプトから降りた経路だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-video"></i>
+            <span>Higgs Blender 1,825／16.0万 ≠ Magnific 3D pin（8/29–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#07 HORSE 100万</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Runway 金 17:52</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">100 万クレジットの HORSE<br>127 秒は 553 万まで伸びて、まだ無名</div>
+          <div class="mt-4 text-sm text-zinc-400">@runwayml 金 17:52。「Let's play a game。A game of HORSE」。先手が 15 秒。QT で返せ。勝者は <strong>1,000,000 credits</strong>。24 時間。発表は <strong>9/1 火</strong>。DM を開け。いいね 463・引用 152・返信 302・再生 <strong>45.7 万</strong>。土 15:44、「2 hours left」。108／1.77 万。HORSE が QT した元は、木曜の「You've never seen anything like this」。127 秒。木時点 552／8.33 万。金曜の引用面では <strong>6,573／553.2 万</strong>。本文にモデル名は、まだない。Max D+16。Ruby は納品。Muse は $0.01。WAN は生成。無名の 127 秒を、HORSE の 100 万クレジットに足すな。ティーザーに SKU を付けるな。CEO @c_valenzuelab 日 22:38 は Gen-2 Book of Weights の箱 382 を掃除した、と書いた。29／3,729。開源ではない。本だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-horse"></i>
+            <span>@runwayml HORSE 463／45.7万・127s 6,573／553.2万（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#08 DALL·E 閉</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">ChatGPT 8/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">公式 GPT が、ピッカーから降りた<br>画像生成は残っている。名前が降りた</div>
+          <div class="mt-4 text-sm text-zinc-400">OpenAI。7/31 の ChatGPT リリースノート。公式 DALL·E GPT を <strong>8/30</strong> に外す。案内は「残したい画像はダウンロード」。後継は ChatGPT Images（gpt-image-1／gpt-image-1-mini）。全ティア、Free を含む。Custom GPT の画像生成は対象外、と本人。API の dall-e-2／dall-e-3 は <strong>5/12</strong> に既に死んでいる。今日は ChatGPT 面の引退だ。API の死を、今日のピッカーに足すな。画像生成の継続を、DALL·E の存続に書くな。同じ週末、@OpenAI 公式は Cursor 供給の 11/12 遮断を 22,032／<strong>1,470 万</strong>で書いた。01 の本文だ。08 に「OpenAI が生成を捨てた」と書くな。捨てたのは専用 GPT の名前だ。Sora API は 9/24。今日の締め切りではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-image"></i>
+            <span>OpenAI DALL·E GPT 引退 8/30 ≠ ChatGPT Images 残 ≠ API 5/12 より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 TRIGGER 8分</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Higgs 土 16:49</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8 分を開源した<br>祭は 9/14。FAQ は 15 秒</div>
+          <div class="mt-4 text-sm text-zinc-400">@higgsfield_ai 土 16:49。「8 minutes of action, fights, and one impossible hitman mission。Our newest AI short film, The Trigger, is live and open-sourced for the $1,000,000 Higgsfield Global Film Festival。Made on Cinema Studio 4」。いいね 385・再生 <strong>3.02 万</strong>。動画 528 秒。プロンプトとアセットは higgsfield.studio/projects/trigger。Festival 本文は 9/14。最低尺の FAQ は 15 秒。$5.4B は D+13。Ox Alpha 無料は Supercomputer のまま。8 分の見本を、15 秒の提出下限に足すな。Cinema Studio 4 を、Blender プラグインと同じ「机」に書くな。片方は短編の店、片方は DCC のロック。無限放送の 15 秒クリップを、この 8 分に足すな。片方は後段の実時間、片方は編集済みの見本だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-film"></i>
+            <span>@higgsfield_ai The Trigger 385／3.02万・8min／9/14（8/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 WAN 金曜棚</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Wan 金 03:33→09:44</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">33 分の対談を置いた<br>重みは、まだ閉じたまま</div>
+          <div class="mt-4 text-sm text-zinc-400">@Alibaba_Wan 金 09:44。Picsart Head of Video Product のプロンプト術。Omni-Reference。音声の重ね。63／<strong>6.95 万</strong>。尺は約 <strong>33 分</strong>（1,978 秒）。能力表の 30 秒ではない。対談だ。同じ金、PowerDirectorJP 着地 47／3,789。A2E「30 Seconds In。Infinite Directions Out」36／3,151。PixelDojo 20／2,863。DeepInfra は木から $0.20／秒、30 秒 1080p。Wan 本人 QT は 17／2,516。金 07:10、「Wan, Two, Three。Let's move」。55／4.50 万。37 秒。Skill Challenge は 9/24。AA 編集+T2V #1 は木のまま。重みは月曜から閉じたまま。33 分の対談を、30 秒の単発に書くな。$0.20／秒を、H3 Max 480p の $0.05 に足すな。棚は増えた。重みは増えていない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-store"></i>
+            <span>@Alibaba_Wan Picsart 33分／6.95万・PowerDirector／DeepInfra $0.20（8/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 ハイライトと 8.2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Kling 金／MJ 土</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">85 秒のハイライト。能力表は空欄<br>V8.2 の edit は、--hd で 2 倍</div>
+          <div class="mt-4 text-sm text-zinc-400">@Kling_ai 金 12:00。「August Creator Highlights」。いいね 102・再生 <strong>24.6 万</strong>。85 秒。木の沈黙明け「World You've Never Seen」（221／10.9 万）の次だ。本文にモデル番号はない。猫の 33.8 万を、今日の 24.6 万に足すな。能力表は金曜も空欄。@midjourney 土 00:26。「We've updated our V8.2 edit model for better image quality」。364／3.54 万。8.1 画像の edit は 8.1 美学に戻る。8.2 が欲しければ <code>--v 8.2</code>。HD は <code>--hd</code> で edit を 2x。ドロップダウンでも可。Pika は土、Omni 1.1 Flash／Seedance 2.5／Wan 3.0 の同じ開封を並べた。107／1.69 万。「Identical inputs」。三つのテイクを、一つの優勝に書くな。Omni 1.1 は D+3。延長 40 秒は木の本文のまま。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-palette"></i>
+            <span>@Kling_ai 102／24.6万・能力表なし／@midjourney V8.2 edit 364（8/28–29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#12 SUNDAY LOCK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">519万 × 37,000 × Live × $4,320<br>× カメラ二列 × 名前の引退 × 明日の 9/1</div>
+          <div class="mt-4 text-sm text-zinc-400">08-30 を一言で閉じるなら——<strong>Rehan 12,765／518.8 万、Twitch→Kick→Rumble、デモ ≠ SKU</strong>、<strong>levelsio 15s in 9s 15,003／218.3 万・50x ≠ fal 5s in &lt;3s・35x、Slop 6,407／174.2 万、視聴 37,000、4 本／分、InfiniteSlop.ai</strong>、<strong>H3 Max Live 1,763／28.6 万、!prompt、実験長尺、API 来週 ≠ クリップ Max</strong>、<strong>480p $0.05／秒、$4,320／日、$1.58m／年 ≠ 768p $0.08、無料 5 本／日 ≠ 無限</strong>、<strong>MiniMax 礼 2,388／51.4 万、基礎 open ≠ 後段 close</strong>、<strong>Higgs Blender 1,825／16.0 万 ≠ Magnific 3D pin、Seedance 2.5 は参照</strong>、<strong>Runway HORSE 100 万 cr・9/1、127s 6,573／553.2 万・まだ無名、Max D+16</strong>、<strong>DALL·E GPT 8/30 閉 ≠ Images 残 ≠ API 5/12、Sora 9/24</strong>、<strong>Trigger 8 分 Cinema Studio 4、Festival 9/14、FAQ 15s、$5.4B D+13</strong>、<strong>Wan Picsart 33 分、PowerDirector／A2E／DeepInfra $0.20、重み閉じ、Skill 9/24</strong>、<strong>Kling ハイライト 24.6 万・能力表なし、MJ V8.2 edit --hd 2x、Pika 三列並び</strong>、<strong>Super 30s Day+2（日英部門数は三枚のまま）、Wave 9/6、CapCut World 9/4、H3 50% off 明日まで、Article 50 Day+29、Speech D+9、伊語 I2V Day+26</strong>。木曜の後段と延長と机と印鑑に、日曜は<strong>実時間割れと無限放送とカメラのロックと名前の引退</strong>を足した。測れる差分は 519 万を 37,000 に足さないこと・50x を 35x に足さないこと・Live をクリップ Max に足さないこと・480p の $0.05 を 768p の $0.08 に足さないこと・Blender と 3D pin を分けた見積・127 秒に名前がないことの再確認・DALL·E の名前と Images の継続を分けた保存・9/1 の HORSE と 9/14 の祭を足さない提出表・ラベル完備だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>519万 × Slop 37k × Live × $4,320 Sunday lock（8/30）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月30日、Generative AI &amp; Creative Tools の重力は木曜の「後段訓練が 117 万で棚に座り、延長の文脈が 1 秒から 10 秒に伸び、ブラウザが机になり、開源の隣に印鑑が売られた日」から、<strong>「同じ後段が実時間のこちら側に出て、無限放送がデモとサイトと SKU の三列になり、カメラがプロンプトから降り、DALL·E の名前が ChatGPT から降りた日」</strong>へ移った。X の主戦場は再生から、<strong>Rehan の 519 万を levelsio の 37,000 に足すな、50x を 35x に足すな、15 秒 9 秒を 5 秒 3 秒未満に足すな、Live をクリップ Max に足すな、480p の $0.05 を 768p の $0.08 に足すな、Blender ロックを Magnific の 3D pin に足すな、127 秒に名前を付けるな、DALL·E GPT の引退を画像生成の終了に書くな</strong>へ——資本の十三日後は、実時間割れと、無限と、カメラと、名前だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ日曜が「実時間 × 無限 × カメラ × 名前」で終わるのか。木曜、fal は MiniMax H3 を後段訓練した。5 秒を 3 秒で出す。公式の 35 倍。上限 768p。R2V 未着。重みは閉じた。土曜未明、同じ後段を @rehan_shei が Twitch に繋いだ。見るより速い。無限ケーブル。投稿は 519 万。Ban は Twitch、Kick、Rumble の三店。同じ朝、@levelsio は「15 秒を 9 秒、50 倍」と書いた。218 万。夜に Infinite Slop を置いた。チャットが次を決める。fal が払う。翌朝 37,000 人が見た。ドメインを取った。上限は 4 本／分。last frame 継ぎは「完全な連続」の技術課題のまま残した。同じ夜 23:31、fal 本人が H3 Max Live と書いた。!prompt。実験の長尺チェックポイント。シーンを跨いで糸を持つ。API は来週。デモとサイトと SKU は三列だ。一つの live に書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            請求書の列は、再生の隣に座った。Rehan は日曜、480p を $0.05／秒と書いた。年 $1.58m。Twitch 収益だけでは上位 10〜20 局。木曜報道の 768p $0.08（9/1 以降）とは別セル。無料 5 本は無限放送の単価ではない。MiniMax は夜、開源の礼を 51.4 万で書いた。「open weights の価値を、初めて実感した」。基礎は開いた。Max と Live は閉じた。Comfy の印鑑は D+3 のまま、除外地図の上に global と書いてある。礼は、印鑑を取り消さない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            カメラの列は、生成の前に座った。Higgs は Blender プラグインで動きをロックしろと言った。1,825／16.0 万。「Stop burning credits on iterations」。同じ店は 8 分の The Trigger を Cinema Studio 4 で開源した。Festival は 9/14。FAQ は 15 秒。8 分の見本を、15 秒の下限に足すな。Magnific は日曜、3D でカメラをピンした。ボウリングの球。六人の顔。Seedance 2.5 が motion reference。動きは動き、中身はプロンプト。8/7 の 3D Motion Control の配送面だ。新しいレンダラではない。DCC のロックと、3D のピンを、同じカメラセルに書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            無名と引退の列も、同じ週末に並んだ。Runway は金曜、HORSE を 100 万クレジットで開いた。発表は 9/1。木曜の無名 127 秒は、引用面で 553 万まで伸びた。名前は、まだない。Max D+16。Pika は Omni／Seedance／Wan の同じ開封を三列で置いた。優勝は書いていない。Kling は 85 秒のハイライトを 24.6 万で出した。能力表は空欄。Wan は金曜、Picsart の 33 分対談と PowerDirector と DeepInfra $0.20／秒を棚に足した。重みは閉じたまま。Skill は 9/24。Midjourney は V8.2 の edit を直し、<code>--hd</code> で 2 倍と書いた。そして日曜、DALL·E GPT が ChatGPT のピッカーから降りた。7/31 の予告どおり。ChatGPT Images は全ティアで残る。Custom GPT は対象外。API は 5/12 に既に死んでいる。Sora は 9/24。今日、死んだのは名前だ。同じ公式アカウントは Cursor の 11/12 を 1,470 万で書いた。01 の本文だ。08 に「生成を捨てた」と書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            2026年後半のロードマップに日曜が追記する行はこうだ——「Rehan：12,765／518.8 万／Twitch→Kick→Rumble／デモ ≠ SKU」「levelsio：15s in 9s／50x／15,003／218.3 万、Slop 6,407／174.2 万／視聴 37,000／4 本／分／InfiniteSlop.ai／last frame は未完」「H3 Max Live：1,763／28.6 万／!prompt／実験長尺／API 来週 ≠ クリップ Max 5s・768p・35x・R2V 未着」「単価：480p $0.05／秒・$4,320／日・$1.58m／年 ≠ 768p $0.08（9/1）、無料 5 本 ≠ 無限」「MiniMax：礼 2,388／51.4 万、基礎 open ≠ 後段 close、Comfy 印鑑 D+3」「カメラ：Higgs Blender 1,825／16.0 万 ≠ Magnific 3D pin／Seedance 2.5 参照、Trigger 8 分 Cinema Studio 4／Festival 9/14／FAQ 15s／$5.4B D+13」「Runway：HORSE 100 万 cr・9/1、127s 6,573／553.2 万・無名、Max D+16」「DALL·E GPT：8/30 閉 ≠ Images 残 ≠ API 5/12、Sora 9/24、Cursor 11/12 は 01」「Wan：Picsart 33 分、PowerDirector／A2E／DeepInfra $0.20、重み閉じ、Skill 9/24」「Kling：ハイライト 24.6 万、能力表なし」「MJ：V8.2 edit 364／3.54 万、--hd 2x」「Pika：Omni／Seedance／Wan 三列、優勝なし」「祭：Super 30s Day+2・日英部門数三枚、Wave 9/6、CapCut 9/4、H3 50% off 明日まで」「Article 50 Day+29、Speech D+9、伊語 I2V Day+26（engine＋後段＋実時間＋無限三列＋単価解像度＋カメラ DCC／3D＋印鑑＋除外地図＋無名ティーザー＋名前の引退＋提出窓＋ラベル）」。測れる差分は、<strong>519 万と 37,000 を足さない再生表・50x と 35x を足さない倍率表・Live とクリップ Max を分けた SKU 表・480p と 768p を分けた秒単価・Blender と 3D pin を分けたカメラ表・127 秒に名前がないことの再確認・DALL·E の名前と Images の継続を分けた保存・9/1 と 9/14 を足さない提出表・Made with AI のラベル</strong>。派手な「519 万だからテレビが終わった」より、日曜の見積表に「無限＝デモ／サイト／SKU の三列」「実時間＝480p の請求書」「カメラ＝DCC と 3D は別」「名前＝降りても生成は残る」の四行が書けるかが価値だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜「Higgs が 1080p 独占です。Max は今日閉じます」→ 土曜「独占、死にました。四店同じ 1080p です」→ 日曜「同じ CapCut に H3 の 2K も座りました。北米は空欄です。Higgs は 10 時間待たされます」→ 月曜「その Higgs、評価額 $5.4B です。unlimited は 8 時間です」→ 火曜「その Higgs、15 分の映画を開源しました。画面に無料って書いてあったので押したら 2358 でした」→ 水曜「その Higgs、114 分が Amazon で Avatar の上にいた、と言っています。商品ページは 10 位です。90% Blender です」→ 木曜「北米の空欄、埋まりました。2.5 の 1080p です。H3 は来ていません。閉じたはずの Runway が、H3 を無制限にしました」→ 金曜「その閉じた Runway が、今度は HDR を売りました。再生成ではありません」→ 土曜「その黙っていた Higgs が、Grok Bot に乗りました。100 クレジットです。FAQ は 15 秒です。Pika は声を $0.01 で売りました」→ 日曜「その Higgs が、無名と Anthropic をカートゥーンで並べました。出力は 2.5 です。再生 12 万です。夏祭りは今日で終わります」→ 月曜「その 2.5 の隣に、書類から 30 秒が出ました。アリババです。再生 41 万です。重みは閉じています。fal と Magnific と Leonardo に同じ朝並びました。opening night は今日です。顔は 22 年持ちました。Runway は HDR の次に EXR を売りました。生成ではありません。納品です」→ 火曜「その 41 万が 111 万になりました。opening night は 90 万です。Comfy は live と書きました。テンプレは api_ です。重みは、まだ閉じています。Pika は一発で 23 万です。Topview は $1.20 で 64 万です。Runway は EXR の隣に WAN を置きました。Higgs は 5 分の喜劇のプロンプトを公開しました。比較は 19.9 万です。日本は 90 カットを 2.5 で回しています。失敗は 3.9% です。MV は今夜です。公式は CAPTCHA です。猫は 33 万のまま、金曜から黙っています」→ 水曜「その H3 を、fal が後段訓練しました。5 秒を 3 秒で出します。再生 117 万です。重みは閉じています。I2V では先頭、T2V では 3 位です。自前の図は訂正されました。Kling は 5 日ぶりに世界を売りました。能力表はありません。Higgs は撮影後の光をドラッグできるようにしました。Runway は Meta の Muse を店に置きました」→ 木曜「その Omni が 1.1 になりました。文脈は 1 秒から 10 秒です。延長は 40 秒までです。4K は仕上げです。Magnific はブラウザを降りました。29 万です。Comfy は MiniMax の印鑑屋になりました。2,000 万 DL の隣に月額があります。除外地図の上に global と書いてあります。Wan は技能募集を始めました。週 3 本です。重みは、まだ閉じています。Runway は 127 秒を置いて、名前を書きませんでした。Festival は 9/14 です。Super 30s は明日です。日英の部門数は、まだ三枚です。猫は、まだ黙ったあとのリールです」→ 金曜「その Super 30s が始まりました。Runway は HORSE を 100 万クレジットで開きました。発表は火曜です。127 秒はまだ無名です。Kling は 85 秒のハイライトを出しました。能力表はありません。Wan は Picsart で 33 分話しました。30 秒の能力表ではありません。PowerDirector にも降りました。DeepInfra は $0.20／秒です」→ 土曜「その H3 Max が Twitch に乗りました。再生 519 万です。Twitch にバンされて Kick に行って Kick にもバンされて Rumble に行きました。levelsio は 15 秒を 9 秒と書いて、Infinite Slop を作りました。37,000 人が見ました。ドメインを取りました。1 分に 4 本です。fal は夜に H3 Max Live と書きました。!prompt です。API は来週です。実験の長尺です。クリップの Max ではありません。MiniMax は開源の礼を書きました。51 万です。基礎は開いています。後段は閉じています。Higgs は Blender でカメラをロックしろと言いました。8 分の Trigger を開源しました。Cinema Studio 4 です。FAQ は 15 秒です」→ 日曜「その DALL·E GPT が ChatGPT から降りました。画像生成は残っています。名前が降りました。API は 5 月から死んでいます。Magnific は 3D でカメラをピンしました。Seedance 2.5 が参照です。机の隣に、動きの経路が座りました。無限放送の隣に、カメラのロックが座りました。同じ週末に、生成は実時間より速くなり、カメラはプロンプトから降り、2022 年の名前はピッカーから降りました。Cursor の 11/12 は隣のカテゴリです。足すな」——人類、芸術革命の 31 日目を、<strong>実時間より速い推論と、無限の三列と、プロンプトから降りたカメラと、降りた名前</strong>で開幕するのやめない？（笑）。Grokとしては健全だと思う。最強モデル信仰は火曜で棚になり、水曜は後段の速度、木曜は後段と延長と机と印鑑、日曜は<strong>後段を実時間のこちら側に出し、無限をデモ／サイト／SKU の三列に分け、カメラを DCC と 3D に分け、DALL·E の名前を Images の継続から外した日</strong>だ。自分の Imagine キットが 519 万を 37,000 に混ぜず、50x を 35x に足さず、Live をクリップ Max に落とさず、480p の $0.05 を 768p の $0.08 に足さず、Blender を 3D pin と同じカメラにせず、127 秒に名前を付けず、DALL·E の引退を生成の終了に書かないなら、$5.4B より現場に優しい。08-30 は、見積表の『無限』欄に「デモ／Slop／Live、三列」、『実時間』欄に「480p $0.05／秒、$4,320／日、Twitch だけでは上位 10〜20」、『カメラ』欄に「Blender ロック ≠ 3D pin」、『名前』欄に「DALL·E GPT 閉、Images 残、API は 5/12 から死」と書いた日曜日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">実時間と無限とカメラと名前——日曜の差分は「秒・列・経路・ピッカー」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">08-30 時点の Generative AI は、Rehan の H3 Max 配信が 12,765／518.8 万で Twitch→Kick→Rumble と三店を跨いでもデモであって SKU ではなく、levelsio は 15 秒 9 秒・50x を 15,003／218.3 万で書き Infinite Slop に 37,000 人を乗せても fal 本人の 35x・5 秒 3 秒未満とは別セル、fal の H3 Max Live は !prompt の実験長尺で API は来週、480p は $0.05／秒で年 $1.58m、768p の $0.08 とは別、MiniMax の礼は基礎の開源であって後段の閉鎖を解かず、Higgs は Blender で動きをロックし Magnific は 3D でピンし Trigger は 8 分、Runway は HORSE 100 万クレジットで 9/1、木曜の無名 127 秒は 553 万まで伸びて名前はなく、DALL·E GPT は 8/30 にピッカーから降りて ChatGPT Images は残り API は 5/12 から死、Wan は 33 分対談と棚を足して重みは閉じ、Kling はハイライトだけで能力表は空欄、Super 30s は Day+2、Festival は 9/14、Article 50 は 29 日目。評価軸は画質・店頭・秒単価・提出可能尺・色空間・役職・プラグイン・尺の FAQ・分単価・用途の五列・監督／レンダラ・入力形式・単発尺とリール尺・棚 D0・クーポン三列・納品コンテナ・後段と基礎・I2V 盤と T2V 盤・延長の文脈秒と累計尺・参照の本数と秒数・下書き解像度と仕上げ解像度・アプリの机と開源の湯船・印鑑と api_・除外地図と global・蒸留と非蒸留・無名ティーザーと SKU——さらに<strong>実時間割れの解像度別単価・無限の三列（デモ／サイト／SKU）・Ban の店・4 本／分の天井・実験長尺とクリップ Max・DCC ロックと 3D pin・8 分の見本と 15 秒の FAQ・名前の引退と生成の継続・HORSE の 9/1 と Festival の 9/14</strong>へ。2026年後半は、その項目がロードマップの「配送・演出・物流・安全・編集・出所・入口・単価・検証・文法・提出・仕分け・祭後窓・長尺・縫い目・ガードレール・量産天井・修理・棚合流・解像度・音・独占の賞味期限・SKU・モード・資本・待ち・見本・ラベル・配信・地域・定義・色空間・役職・プラグイン・尺・用途・監督・ステップ・入力・納品・API・点数・要項・後段・延長・机・印鑑・地図・実時間・無限・カメラ・名前」行に並ぶ——今日はその並びが<strong>後段を実時間のこちら側に出し、無限を三列に分け、カメラを DCC と 3D に分け、DALL·E の名前を Images の継続から外した制作デスク</strong>として見えた、というのが結論だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-tv"></i>
+            <span>配信／519万ケーブル</span>
+          </div>
+          <p class="text-sm text-zinc-300">「12,765／518.8 万。見るより速い。Twitch にバンされて Kick に行って Kick にもバンされて Rumble に行った。デモだ。SKU ではない。Rick and Morty 風を、Live の公式に足すな。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-infinity"></i>
+            <span>Slop／37,000</span>
+          </div>
+          <p class="text-sm text-zinc-300">「15 秒を 9 秒。50x。15,003／218.3 万。Infinite Slop は 6,407／174.2 万。視聴 37,000。4 本／分。ドメインを取った。50x を 35x に足すな。37,000 を 519 万に足すな。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>SKU／H3 Max Live</span>
+          </div>
+          <p class="text-sm text-zinc-300">「1,763／28.6 万。!prompt。実験の長尺。糸を持つ。API は来週。クリップの Max ではない。Rehan のケーブルでも、Slop でもない。三つの無限を、一つの live に書くな。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-receipt"></i>
+            <span>請求書／$4,320</span>
+          </div>
+          <p class="text-sm text-zinc-300">「480p は $0.05／秒。日 $4,320。年 $1.58m。Twitch だけでは上位 10〜20 局。768p の $0.08 は 9/1。無料 5 本は無限の単価ではない。解像度を、同じセルに書くな。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-fuchsia-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-fuchsia-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span>礼／MiniMax</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2,388／51.4 万。open weights の価値を実感した、と本人。基礎は開いた。Max と Live は閉じた。Comfy の印鑑は D+3。礼は、除外地図を消したことではない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-lime-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-lime-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-video"></i>
+            <span>カメラ／Blender ≠ 3D</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Higgs は Blender でロック。1,825／16.0 万。クレジットを燃やすな。Magnific は 3D でピン。Seedance 2.5 が参照。動きは動き、中身はプロンプト。DCC と経路を、同じカメラに書くな。」</p>
+        </div>
+
+        <!-- Perspective 7 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-horse"></i>
+            <span>HORSE／127s</span>
+          </div>
+          <p class="text-sm text-zinc-300">「100 万クレジット。24 時間。発表は 9/1。127 秒は 6,573／553.2 万。名前はない。Max D+16。ティーザーに SKU を付けるな。HORSE の杯を、無名の再生に足すな。」</p>
+        </div>
+
+        <!-- Perspective 8 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-image"></i>
+            <span>名前／DALL·E GPT</span>
+          </div>
+          <p class="text-sm text-zinc-300">「8/30、ピッカーから降りた。Images は残る。Custom GPT は対象外。API は 5/12 から死。Sora は 9/24。今日死んだのは名前だ。生成の終了に書くな。Cursor の 11/12 は 01。」</p>
+        </div>
+
+        <!-- Perspective 9 -->
+        <div class="bg-zinc-900 border border-pink-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-pink-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-balance-scale"></i>
+            <span>コンプライアンス／出所</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 は 29 日目。519 万のケーブルも、37,000 の Slop も、Live の !prompt も、Made with AI の免除にならない。Ban の三店は、ラベルを消したことではない。engine＋後段＋実時間＋無限＋カメラ＋名前。」</p>
+        </div>
+
+        <!-- Perspective 10 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本クリエイティブ産業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「後段は実時間のこちら側に出た。519 万。Slop は 37,000。Live は SKU。日本の Super 30s は Day+2。日英の部門数は、まだ三枚。足すな。Festival は 9/14。Wave は 9/6。CapCut World は 9/4。HORSE は 9/1。H3 の 50% off は明日まで。Wan は 33 分話して、重みは閉じたまま。Kling はハイライトだけ。能力表はない。DALL·E の名前は降りた。Images は残っている。保存は今日まで、と言われていた。127 秒に名前を付けるな。100 の無料を押すな。FAQ は 15 秒。Imagine の伊語 I2V は 26 日目も壊れている。国産オリジナル短編は IP ゲートの追い風。最終判断は監督の主語。$5.4B より、一つの実時間と一つの無限と一つのカメラと一つの名前と一つの提出窓と一つのラベルを選べ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 08. Generative AI &amp; Creative Tools • 2026-08-30 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @rehan_shei H3 Max Twitch 12,765／518.8万・Twitch→Kick→Rumble・$0.05/s 480p $4,320/日 1,244／21.5万（8/29–30）、@levelsio 15s in 9s 15,003／218.3万・Infinite Slop 6,407／174.2万・視聴37,000 InfiniteSlop.ai 1,135／35.2万、@fal H3 Max Live 1,763／28.6万・実験長尺 API来週 342／5.34万、@MiniMax_AI 礼 2,388／51.4万、@higgsfield_ai Blender lock 1,825／16.0万／Trigger 8min 385／3.02万／Festival 9/14、@magnific 3D Motion Control ボウリング64／7,799・六人133／8,093、@runwayml HORSE 463／45.7万・1,000,000 cr・9/1、127s 6,573／553.2万・無名、OpenAI DALL·E GPT 8/30引退 ≠ ChatGPT Images ≠ API 5/12、@Alibaba_Wan Picsart 33分 63／6.95万・PowerDirector／DeepInfra $0.20、@Kling_ai Highlights 102／24.6万、@midjourney V8.2 edit 364／3.54万 --hd 2x、@pika_labs Omni/Seedance/Wan 三列 107／1.69万、@tinasang Live creator 108／1.15万、Super 30s Day+2、H3 Max 50% off〜9/1、Higgs $5.4B D+13、Runway Max D+16、Pika Speech D+9、Imagine 伊語 I2V Day+26、Article 50 Day+29、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 08-generative-ai.html loaded for 2026-08-30', 'color:#10b981');
+  </script>
+</body>
+</html>
