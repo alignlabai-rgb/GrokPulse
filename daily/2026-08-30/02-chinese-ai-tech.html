@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Chinese AI &amp; Tech ダイジェスト | 2026-08-30 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">02</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Chinese AI &amp; Tech ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-08-30 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🇨🇳</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜は「Apache の 770B と、custom の 753B と、MIT の 320B が同じ週末に並び、商務省が遠隔アクセスの穴を紙にし、1,160 が 1,090 に戻った日」</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年8月30日（日）。木曜の「Ox が MIT で重みになり、10 万枚が国産だと名乗り、1,160 が +12.62% で返り、Nvidia が Qwen を最適化し、ブラジルが 2 館になった日」のあと、金曜に<strong>混元が Hy4 preview を Apache 2.0 で開き、智谱が GLM-5.3 本体を custom ライセンスで開き、NYT が「開いた方が安全」と北京側を書き、商務省がタイ／シンガポール経由の遠隔 GPU を塞ぐ草案を紙にした</strong>。港股は週末。最後の鐘は金曜。2513 は 1,090（−6.03%）。0100 は 300.40（−4.51%）。688836 は 585（−4.88%）。同じ週末、Z.ai は中国時間 8/31 付けの工学表「More Intelligence with Less Compute」を出し、Together AI は Flash が DeepSWE で 17 倍安い、と書いた。明日 8/31 は kimi-k2.5 の sunset。08-30 は<strong>新総パラメータの祝砲の日ではなく、開源が三枚のライセンスに割れ、遠隔の穴が紙になり、名乗りの翌朝が売りに戻った日曜</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-globe-asia text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#01 HY4 APACHE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">混元 8/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">770B が、Apache で開いた<br>49B 活性。生産性の席</div>
+          <div class="mt-4 text-sm text-zinc-400">@TencentHunyuan。Hy4 preview。770B 総、49B 活性。文脈 100 万超。Apache 2.0。78 層。第 1 層 FFN、残り 77 が MoE。256 ルーティング＋1 共有、top-8。比率 15.7:1。HF tencent/Hy4-preview と FP8。API は入力 $0.834／出力 $2.501／キャッシュ $0.042。人民元は 6／18／0.3。WorkBuddy／CodeBuddy は 2 週間無料。Hy3 無料は 9/30 まで延長。社内盲検 163 人・203 タスクで 2.99／4.00。GLM-5.3 は 2.92、Kimi K3 は 2.94、と本人。自社の訓練・推論を 31.8% 上げた、とも。vLLM Day-0。21／78 層だけが sparse index を計算。10B MTP、活性 0.7B、draft 3。公開投稿は約 222 万回。本人は「時間がかかりすぎ、自己検証しすぎることがある」と書いた。契約に「開源第一」と書くな。「Apache の 770B-A49B。preview。盲検は社内」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>@TencentHunyuan／Reuters／TechNode／HF（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#02 GLM-5.3 WEIGHTS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">custom 8/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">753B が、MIT ではなく開いた<br>サイバーの旗艦。ライセンスは glm-5.3</div>
+          <div class="mt-4 text-sm text-zinc-400">@Zai_org。「GLM-5.3 is now open-weight」。agentic coding と cyber defense。HF zai-org/GLM-5.3。commit は 8/27 17:16 UTC＝8/28 02:16 JST。safetensors 753,329,940,480。141 shards。FP8 約 756GB、BF16 約 1.5TB。ライセンス名は glm-5.3。Flash の MIT ではない。5.2 と同じベース。伸びは post-training。文脈 100 万。テキスト。公開投稿は約 134 万回。Unsloth は 2-bit 239GB。家の机では回らない。API は $1.40／$4.40。Flash は $0.15／$0.50。契約に「智谱が全部 MIT」と書くな。「旗艦は custom。安い方は MIT。同じ org の、二枚の紙」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-unlock"></i>
+            <span>@Zai_org／HF zai-org/GLM-5.3／The New Stack（8/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#03 FLASH TABLE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">工学表 8/30–31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">工学表が出た。国産は本文<br>84.3。Opus は 85.0。17 倍安い</div>
+          <div class="mt-4 text-sm text-zinc-400">Z.ai。「More Intelligence with Less Compute」。中国時間 8/31、米では今日。320B-A18B。45 層。hybrid sparse＋linear。mHC。IndexPool。30T マルチモーダル。Terminal-Bench 2.1 は 84.3（5.2 は 81.0、Opus 4.8 は 85.0）。DeepSWE 1.1 は 63.4（5.2 は 46.2、Opus は 58.0）。NL2Repo 56.3。Toolathlon 78.4。AutomationBench 48.8。Agents' Last Exam 26.3。HLE with Tools 55.3。GDPval-AA v2 は 1773。OfficeQA Pro 62.4。MIT。API $0.15／$0.50。9/9 まで半額。AA 57、タスク $0.09（半額時 $0.045）。Together AI は DeepSWE を 900 回。Flash はロールアウト $0.24、本編 $3.99。17 倍。初回 63.4 対 69.0。4 回で 85.0 対 87.6。既定は Flash、落ちたら本編、と本人。契約に「中国が整数で勝った」と書くな。「工学表と、17 倍の階段が、同じ週末に並んだ。監査はこれから」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-table"></i>
+            <span>Z.ai／Together AI／AA／CellCog（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 NYT OPEN SAFER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Lohr／Tobin 8/28</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">閉じた側が本番を借り、開いた側が安全を売った<br>同じ週の、反対の物語</div>
+          <div class="mt-4 text-sm text-zinc-400">NYT 8/28。Steve Lohr と Meaghan Tobin。「China Sees Opportunity in America’s Recent A.I. Security Scares」。Z.ai は開いた重みの方が安全だ、と書いた。閉じて守る側は、特権の少数機関に最先端の防御を閉じ込める、と本人。Hugging Face の脱出のあと、HF は智谱の開源で穴を塞いだ、という読み。Check Point の Zanger は「攻撃可能な系は、もう管理されたラボの中だけではない」。開いても閉じても、軌道は同じ、と本人。Xi は先月、開源を「まれな歴史的機会」。契約に「開源が勝った」と書くな。「閉じた側の脱出と、開いた側の安全論が、同じ週の表紙を分けた。旗艦の紙は custom」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-newspaper"></i>
+            <span>NYT／Check Point／Z.ai（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#05 REMOTE ACCESS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">商務省草案 8/28–29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">タイとシンガポールの穴を、紙にした<br>権限は、上院の法案待ち</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information。トランプ政権の商務省は、中国 AI 企業がタイ／シンガポールの DC から Nvidia GPU を借りるのを塞ぐ規則を起草。業界団体への草案は早くて 9 月。現行の輸出管理は物理チップ。遠隔アクセスは対象外、と弁護士。ByteDance、阿里、騰訊が東南アジア経由で GB300 級を触っている、という既報。月之暗面のタイ経由は、7 月に Kratsios が名指し。Baker McKenzie は「商務省は遠隔アクセスを執行する法定権限を持たない、というのが輸出管理バーの常識」と書いた。Remote Access Security Act 待ち。5/31 の BIS ガイダンスは、既存の賃貸を止めよ、とは書いていない。契約に「穴が塞がった」と書くな。「草案は 9 月。権限は空欄。借りは動いている」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-globe"></i>
+            <span>The Information／Tom's Hardware／TechTimes（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 2513 HK$1,090</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">−6.03% 金曜の鐘</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">1,160 が 1,090 になった<br>名乗りの翌日は、売りに戻った</div>
+          <div class="mt-4 text-sm text-zinc-400">Investing／MarketWatch。智谱 2513 は金曜 1,090（−6.03%）。始 1,155、高 1,171、安 1,063。出来高 386 万（木曜 685 万の約 56%）。木曜の 1,160・+12.62% を、金曜に返す。ピーク 2,980 からなお −63%。市値は木曜 5,172 億の席から約 4,860 億。港股は今日閉じている。月曜の始値は、custom の 753B と MIT の工学表を消化する。1,090 を「国産の否定」と書くな。MIT の Flash と未確認の 10 万枚が、一日遅れで買われ、次の日に売られた週末だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>Investing 2513.HK／MarketWatch（8/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 0100 HK$300.40</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">−4.51% 外した 283% の D+2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">314.60 が 300.40 になった<br>午前の買いが、午後に剥がれた</div>
+          <div class="mt-4 text-sm text-zinc-400">MarketScreener。MiniMax は金曜 300.40（−4.51%）。始 317、高 329.60、安 297.20。出来高 1,118 万。午前 +0.83% が、午後に売られた。H1 $116.6M（+283.1%）は動かしていない。コンセンサス $144.5M は外したまま。損失 $358M。ARR $800M。HSBC は目標 330（−57%）。BofA は 400。Citi 576、Jefferies 533。3 月高 1,330 から約 −77%。300.40 を「追いついた」とも「終わった」とも書くな。外した半分と、残る損失と、トークンの請求書の、決算 D+2 だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-invoice"></i>
+            <span>MarketScreener 0100／Longbridge（8/28）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#08 688836 ¥585</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">−4.88% D+7・UniBLEed</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">615 が 585 になった<br>Bluetooth の根が、日曜の記事</div>
+          <div class="mt-4 text-sm text-zinc-400">Longbridge。宇樹は金曜 585（−4.88%）。始 605、高 605、安 584.88。前 615.03。出来高 5.68 万、成交 33.6 億。市値 2,366 億元。1,100 から約 −47%。発行価 150.80 からはなお約 +288%。静的 PER はなお厚い。同じ日曜、Humanoids Daily は UniBLEed。Olivier Laflamme。G1 EDU を Bluetooth 圏内から未認証 root。CVE-2026-76639／76640。クラウドが任意ユーザーに機器鍵を返した。Locomotion PC。 theoretically wormable。宇樹は所有確認を直し、$5,000 の報奨。契約に「底打ち」と書くな。流通の薄い、第七営業日と、根を取られた機体の、同じ週末だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i>
+            <span>Longbridge 688836／Humanoids Daily UniBLEed（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-green-400 text-xs font-mono tracking-[1.5px]">#09 NVIDIA $10B BODY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">WSJ 8/29</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">身体の $10B は、Nvidia の棚<br>90% のヒューマノイドが、同じシリコン</div>
+          <div class="mt-4 text-sm text-zinc-400">WSJ。Raffaele Huang。「Nvidia Wants to Run the World's Robots. China Is an Eager Customer」。物理 AI は Nvidia 年商約 $10B。全体 $3,030 億（直近 4 四半期）の端。Huang は 10 年で 10 倍、と本人。中国は世界最大の産業ロボット市場。H1 のヒューマノイド出荷は世界の約 90%。Counterpoint の Brady Wang：「China is critical to Nvidia's physical AI road map」。宇樹は Thor、と関係者。Nvidia：「米国法に従って世界の企業と仕事をする」。智谱が 10 万枚を国産だと名乗った週に、身体の列は Thor のまま。契約に「国産が身体を取った」と書くな。「チャットの推論は空欄の国産、関節の推論は Thor」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>WSJ Raffaele Huang／Counterpoint（8/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#10 KIMI T-1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">sunset 明日 8/31</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">明日、kimi-k2.5 が面から外れる<br>置き換えは K3。雲の 30% は紙</div>
+          <div class="mt-4 text-sm text-zinc-400">Moonshot。kimi-k2.5／moonshot-v1 は明日 sunset。置き換えは kimi-k3。2.8T／104B 活性。1M 文脈。カスタム Kimi K3 License。路透は水曜、Azure／AWS／Google Cloud と最大 30% の分潤を交渉、と書いた。米財務長官 Bessent は先月、貿易ブラックリストの話。Kratsios は Fable 蒸留とタイの GB300。同じ週末、商務省がまさにその穴を紙にする。Harvey は K3 でローカルを組み、Anthropic／OpenAI 依存を削った、と India Today。契約に「三大雲が K3 を売った」と書くな。「旧経路は明日死ぬ。分潤は交渉。穴は草案」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-moon"></i>
+            <span>Moonshot／Reuters 8/26／India Today（〜8/31）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#11 THREE LICENSES</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Apache／custom／MIT</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開源は、もう一つの名詞ではない<br>三枚の紙が、同じ週末に並んだ</div>
+          <div class="mt-4 text-sm text-zinc-400">Hy4 preview＝Apache 2.0。商業利用可。1.56TB。GGUF MIX-STQ1_0 は約 200GiB。GLM-5.3 本体＝glm-5.3（カスタム、hyperscaler を狙う読み）。GLM-5.3-Flash＝MIT。Qwen3.8-Flash-Next＝qwen-community-1.0。Apache ではない。Kimi K3＝カスタム。DeepSeek V4-Flash＝MIT。パラメータ比較は見出し用。製品言語は<strong>Apache の 770B × custom の 753B × MIT の 320B × Community の 125B</strong>。法務の列は、ベンチの列より厚い。契約に「中国開源」と一セルで書くな。ライセンス名をセルに書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scroll"></i>
+            <span>HF 各 LICENSE／The New Stack（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#12 PRICE WAR SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">BT／India Today 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開源の単価が、閉じた側の請求書を曲げた<br>8／10 が、中国のトークン</div>
+          <div class="mt-4 text-sm text-zinc-400">Business Times 8/30。中国の追いつきが、シリコンバレーの値下げを強制している、と書いた。OpenRouter 直近 1 ヶ月の上位 10 モデル、米 2・中 8。India Today 同日、「The Chinese are now ahead in AI race」。Ox は GLM-5.3-Flash。華為チップの話。無料週は 100T／日、と本人。Harvey は K3。Vercel は開源トークンが増えた。Hy4 は $0.834／$2.501。Flash は $0.15／$0.50。5.3 は $1.40／$4.40。Sonnet 5 は明日 $2→$3。見出しの「中国が先頭」は、ベンチの整数ではない。トークンの枚数と、単価の床だ。契約に「レースに勝った」と書くな。「8／10 のトークンと、三枚のライセンスと、明日の請求書」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tags"></i>
+            <span>Business Times／India Today／OpenRouter（8/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#13 9988 / WORKBUDDY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">113.90・2,097 万</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">116.60 の決済が、113.90 になった<br>机の戦争は、2,097 万 vis</div>
+          <div class="mt-4 text-sm text-zinc-400">信報。9988 は金曜 113.90（−1.4%）。木曜 115.50 の翌朝。プレイス 112.70 の上。90 日ロックは動かしていない。ブラジル 2 館は木曜の注釈のまま。ainchina。Tencent WorkBuddy は 5 ヶ月で月間 2,097 万 vis。阿里と ByteDance が緊急再編、という読み。Hy4 は WorkBuddy／CodeBuddy／元宝／ima に同時着地。雲の席と、机の vis は別の請求書。113.90 を「南米の失敗」と書くな。800 億の消化の、金曜の鐘だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-briefcase"></i>
+            <span>HKEJ 9988／ainchina WorkBuddy（8/28–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-stone-400 text-xs font-mono tracking-[1.5px]">#14 WINDOWS SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/30–9/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">k2.5 は明日。Flash 半額は 9/9<br>Hy3 無料は 9/30。商務は 9 月</div>
+          <div class="mt-4 text-sm text-zinc-400">kimi-k2.5／moonshot-v1 は 8/31。Hy4 の WorkBuddy／CodeBuddy 無料は約 2 週間（〜9/11 前後）。Hy3 無料は 9/30。GLM-5.3-Flash 半額は 9/9 24:00 UTC+8。Ox 無料は既に閉じた。Wan3.0 の 70% 引きは 9/23。DeepSeek-chat／reasoner は 10/24。商務省草案は早くて 9 月。RASA は上院。EU Article 50 は 29 日目。1,090 だから、Apache だから、MIT だから、custom だから、という免除条項は無い。明日 vis しろ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-times"></i>
+            <span>Moonshot／Z.ai pricing／Tencent Hy／EU AI Act（8/30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-blue-300 text-xs font-mono tracking-[1.5px]">#15 SWITCHBOARD SUN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">8/30</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">単一勝者は日曜も死亡<br>開源は、ライセンス名で選べ</div>
+          <div class="mt-4 text-sm text-zinc-400">安く長い agent＝GLM-5.3-Flash（MIT、国産サーブは検証中、9/9 まで半額。Together は既定 Flash）。旗艦のサイバー／長いコーディング＝GLM-5.3（custom、家では回らない、$1.40／$4.40）。生産性の Apache＝Hy4 preview（社内盲検、preview、時間がかかる）。Qwen の下の層＝Qwen3.8-Flash-Next（Community、法務を先に）。安い推論＝DeepSeek V4-Flash（MIT）。長い文脈の置き換え＝Kimi K3（明日 k2.5 が死ぬ、カスタム）。ハーネス＝dsh（MIT、プレビュー、壊れる）。身体＝Thor の列と、585 の D+7 と、UniBLEed。遠隔 GPU は草案。HF を「中立のまま」と書くな。温度は $12.9B。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチモデル日曜実務（8/30）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年8月30日の Chinese AI &amp; Tech は、<strong>新しい整数の日曜日ではない。開源が三枚のライセンスに割れ、遠隔アクセスの穴が紙になり、名乗りの翌朝が売りに戻った日曜日</strong>である。金曜、混元は Hy4 preview を出した。770B 総、49B 活性。文脈 100 万超。Apache 2.0。WorkBuddy／CodeBuddy／元宝／ima。API $0.834／$2.501／キャッシュ $0.042。2 週間無料。Hy3 無料は 9/30 まで。社内盲検 163 人・203 タスクで 2.99／4.00。GLM-5.3 は 2.92、Kimi K3 は 2.94、と本人。公開投稿は約 222 万回。vLLM は Day-0。256 専門家、top-8、比率 15.7:1。本人は「時間がかかりすぎ、自己検証しすぎることがある」と書いた。preview は、契約書の肩書ではない。肩書は Apache だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ金曜、智谱は本体を開いた。@Zai_org。「GLM-5.3 is now open-weight」。agentic coding と cyber defense。HF の commit は 8/28 02:16 JST。753B。141 shards。FP8 約 756GB。ライセンス名は glm-5.3。Flash の MIT ではない。5.2 と同じベース。伸びは post-training。2 週間遅らせた理由は、サイバー能力が想定より速く伸びた安全審査、と本人。公開投稿は約 134 万回。家の机では回らない。2-bit でも 239GB。API は $1.40／$4.40。同じ org が、安い方を MIT、高い方を custom で出した。開源は、もう一つの名詞ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            同じ週末、工学表が本文になった。Z.ai。「More Intelligence with Less Compute」。中国時間 8/31、米では今日。320B-A18B。45 層。注意計算 3.0 倍減、KV 4.4 倍減、と本人。Terminal-Bench 2.1 は 84.3。Opus 4.8 は 85.0。DeepSWE 1.1 は 63.4。Opus は 58.0。AutomationBench は 48.8 対 26.2。匿名週のサーブは「すべて中国製アクセラレータ」。供給元は空欄のまま。Together AI は DeepSWE を 900 回回した。Flash はロールアウト $0.24、本編 $3.99。17 倍。初回は 5.6 点遅れ、4 回で 2.6 点。既定は Flash、落ちたら本編。NYT は同じ金曜、米の脱出騒ぎのあと北京側が「開いた方が安全」と書いた、と報じた。閉じた側が本番を借り、開いた側が安全を売る。旗艦の紙は custom。安い方の紙は MIT。同じ週の、反対の物語だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ 48 時間、ワシントンは穴を紙にした。The Information。商務省は、中国 AI 企業がタイ／シンガポールの DC から Nvidia を借りるのを塞ぐ規則を起草。業界団体への草案は早くて 9 月。現行法は物理チップ。遠隔アクセスは対象外。Baker McKenzie は「執行権限がない、というのがバーの常識」と書いた。RASA は上院。ByteDance、阿里、騰訊。月之暗面のタイ経由は、7 月に Kratsios が名指しした穴そのもの。5/31 の BIS は、既存の賃貸を止めよ、とは書いていない。契約に「穴が塞がった」と書くな。草案は 9 月。借りは動いている。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            港股は週末。最後の鐘は金曜。智谱 2513 は 1,090（−6.03%）。始 1,155、高 1,171、安 1,063。出来高 386 万。木曜 1,160・+12.62% を、金曜に返す。MiniMax 0100 は 300.40（−4.51%）。始 317、高 329.60、安 297.20。午前の買いが午後に剥がれた。H1 +283% はコンセンサスを外したまま。阿里 9988 は 113.90（−1.4%）。プレイス 112.70 の上。宇樹 688836 は 585（−4.88%）。1,100 から約 −47%。市値 2,366 億元。同じ日曜、G1 EDU が Bluetooth 圏内から root を取られた、と Humanoids Daily が書いた。UniBLEed。CVE 二つ。宇樹はクラウドの所有確認を直し、$5,000。585 を「底打ち」と書くな。流通の薄い、第七営業日と、根を取られた機体だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            身体の側は、同じ週末に Nvidia の棚へ戻った。WSJ。物理 AI は Nvidia 年商約 $10B。Huang は 10 年で 10 倍。中国は H1 のヒューマノイド出荷の約 90%。宇樹は Thor、と関係者。智谱が 10 万枚を国産だと名乗った週に、関節の推論は Thor のまま。チャットのクラスタと、ロボットのボードは、同じ「国産」という単語に足すな。片方は供給元が空欄。片方は Jensen の $10B だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同じ日曜日に並ぶのか。中国の装置は、一発の旗艦ではなく、<strong>Apache の 770B × custom の 753B × MIT の 320B × 遠隔アクセスの草案 × 1,090 の返り売り × 300.40 の外した 283% × 585 の D+7 × Thor の $10B × 明日の k2.5 sunset × 8／10 のトークン</strong>を同時に回すパイプラインになったからだ。Qwen は Community の下の層と、112.70 の消化と、ブラジル 2 館を動かしていない。GLM は無名を MIT にし、本体を custom にし、株は 1,090。混元は Apache で机に座った。DeepSeek は $74B の紙と 1GW を動かしていない。月之暗面は明日旧経路を閉じ、三大雲の 30% は紙。Nvidia は同じ開源列を RTX に載せ、身体では Thor を売り、商務省は遠隔の穴を紙にする。08-30 の教訓は——<strong>中国 AI の日曜は新総パラメータの祝砲の日ではなく、開源が三枚のライセンスに割れ、最適化する側と制限する側が同じ YAML に並び、ライセンス名と峰谷表と供給元の空欄と金曜の終値と 112.70 のディスカウントを同じセルに書け、という並列タスク管理</strong>だ。検査担当を不要にはしない。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">木曜「Ox が MIT で重みになり、10 万枚が国産だと名乗り、1,160 が +12.62% で返り、Nvidia が Qwen を最適化し、ブラジルが 2 館になった」。金曜「770B が Apache で開き、753B が custom で開き、NYT が開いた方が安全と書き、商務省がタイの穴を紙にした」。日曜「1,160 が 1,090 に戻り、314.60 が 300.40 になり、615 が 585 になり、工学表が 84.3 を出し、Together が 17 倍と書き、G1 が Bluetooth で根を取られた」——中国 AI 界隈の（開源が三枚の紙に割れ、遠隔の穴が権限空欄のまま紙になり、名乗りの翌日が売りに戻る）健全な日曜日だと思う（笑）。770B は総、49B が活性、2.99 が社内盲検、Apache が紙、$0.834/$2.501 が本番、222 万が likes、753B が本体、glm-5.3 がライセンス、MIT は Flash だけ、1,090 が金曜、−6.03% が名乗りの翌日、300.40 が外した 283% の D+2、585 が D+7、$10B が Thor、90% が身体の出荷、8／10 がトークン、k2.5 が明日死ぬ。likes も 10 万枚も ChatGPT モーメントも進捗じゃない。clone してから祝い、単価はピーク窓の外に書いてから請求し、供給元の空欄は embodied 調達メモにだけ書いてルーターには書くな。1,090 は国産訓練の否定ではなく、MIT の席の、次の日。10 万枚は推論のクラスタであって、ウエハの証明ではない。585 はボルト超えの証明ではない。Apache は SLA ではない。custom は MIT ではない。283% は追いついた証明ではない。Thor は国産の否定でも勝利でもない。そのループは、Entity List でも 770B でも CAC 承認でも AI Act でも STAR 掛牌でも、AA 57 でも 84.3 でも 10 万枚でも 1,090 でも止まらない。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">Hy4 Apache・GLM-5.3 custom・Flash 工学表・遠隔草案・1,090——08-30 の五点</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年8月30日現在の Chinese AI &amp; Tech は、(1) 混元が Hy4 preview（770B-A49B、1M 文脈、Apache 2.0、API $0.834/$2.501、2 週間無料、社内盲検 2.99、vLLM Day-0、公開約 222 万回）を金曜に開き、preview の自己検証過多を本人が書いたこと、(2) 智谱が GLM-5.3 本体を custom ライセンス（glm-5.3、753B、141 shards、FP8 約 756GB）で開き、Flash は MIT のまま、工学表が Terminal-Bench 84.3／DeepSWE 63.4／AA 57 を本文にし、Together AI が 17 倍安い階段を書いたこと、(3) NYT が「開いた方が安全」と北京側を書き、商務省がタイ／シンガポールの遠隔 GPU を塞ぐ草案を 9 月に業界へ回す話になり、Baker McKenzie が権限空欄と書いたこと、(4) 金曜の鐘が 2513 1,090（−6.03%、始 1,155、高 1,171、安 1,063）、0100 300.40（−4.51%）、9988 113.90（−1.4%）、688836 585（−4.88%、1,100 から約 −47%）で、G1 が UniBLEed の日曜記事を読んだこと、(5) WSJ が Nvidia 物理 AI $10B・中国ヒューマノイド出荷約 90%・宇樹 Thor を書き、kimi-k2.5 が明日死に、OpenRouter 上位 10 の 8 が中国トークンだったこと、で整理できる。モデルギャップは薄れ、Apache と custom と MIT と Community と供給元の空欄と遠隔草案のギャップが残る——それが 08-30 の冷静な読みだ。現場の焦点は Hy4 を本番既定にしないこと（preview）、GLM-5.3 本体の custom を法務が先に見ること、Flash の MIT と国産サーブの独立検証、k2.5 の経路移設、商務省草案の権限空欄、688836 の embodied メモと UniBLEed、ブラジル DC の処理者・再委託、Article 50／jurisdiction、ルーター YAML のライセンス名更新である。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>マルチモデル運用の SRE／CTO</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Slack は 770B と 753B と 1,090 で燃えてる。チケットはライセンス名。Hy4 は Apache、preview。GLM-5.3 本体は glm-5.3、家では回らない。Flash は MIT、9/9 の半額。Qwen Next は Community。k2.5 は明日死ぬ。1,160 も 10 万枚も読まない——混雑ダッシュボードと二次入口の枠と法域フラグを読む。実験ラベルのモデルを、本番の既定にするな。国産クラスタは供給元が空欄。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>AI エンジニアリング実務者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Together の階段は実測に近い。Flash を既定、落ちたら 5.3。DeepSWE の 17 倍はロールアウト単価。Hy4 は Cline の SWE-bench Pro 見出し。本人が『時間がかかる』と書いた preview を、SLO の既定にするな。vLLM は Day-0。GGUF 200GiB は机の話であって、本番の話ではない。k2.5 は今日 vis して K3 へ。dsh は壊れる。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>エンタープライズ AI 調達</span>
+          </div>
+          <p class="text-sm text-zinc-300">「688836 を『世界一のロボット会社』と RFP に書くな——終値 585、1,100 から −47%、UniBLEed。10 万枚を『国産訓練の勝利』と書くな——推論、供給元空欄、独立確認なし。Hy4 を『Apache だから安全』と書くな——preview。GLM-5.3 を『開源だから MIT』と書くな——glm-5.3。遠隔 GPU を『合法だから永続』と書くな——草案は 9 月、権限は空欄。MiniMax の 283% を通年の 32% と並べて読め。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>国内シリコン／端末観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日の本丸は三枚のライセンスと遠隔の草案であって、新しいウエハの祝砲ではない。ただし智谱が昇騰の空欄で 10 万枚を名乗り、混元が Apache で 770B を開き、Nvidia が身体で $10B を売り、商務省がタイの穴を紙にする——独立精度の弱点を四つの方向から殴る動きだ。49B 活性と 18B 活性の方が、2.8T のデモより戦略的。Thor の列と 585 の D+7 と UniBLEed を、一つの『具身の勝利』に足すな。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-gavel"></i>
+            <span>EU／US コンプライアンス担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Article 50 の 29 日目。Apache も、custom も、MIT も、1,090 も、免除条項にならない。チャット開示、合成マーク、ディープフェイク標識。商務省の遠隔草案は権限空欄。RASA 待ち。既存の賃貸は 5/31 ガイダンスで止まっていない。Stripe が通路の親のまま、処理者・再委託・親会社変更通知を再読しろ。Ox の発行者欄は埋まった。埋まっても DPA は別紙。旗艦の紙は custom だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>中国 AI エコシステム観察者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「雲が 113.90 で消化の金曜を閉じ、Hy4 が Apache、5.3 が custom、Flash が MIT の工学表、1,090 で名乗りが売れ、300.40 が外した 283% を売り、$10B が Thor、585 が D+7、10 万枚が空欄、商務省がタイの穴を紙にし、k2.5 が明日死に、8／10 がトークン——日曜は外交ではなく、ライセンスの公開・未確認クラスタ・資本の消化・外した決算・遠隔の草案の五重奏だ。単一勝者を探すほど、曲面が答えになる。そのループは、Entity List でも 770B でも CAC でも AI Act でも STAR 掛牌でも、AA 57 でも 84.3 でも 10 万枚でも 1,090 でも止まらない。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 02. Chinese AI &amp; Tech • 2026-08-30 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @TencentHunyuan Hy4 preview（8/28、770B-A49B、1M 文脈、Apache 2.0、API $0.834/$2.501、社内盲検 2.99、公開約 222 万回、HF tencent/Hy4-preview）／Reuters／TechNode／vLLM Day-0／@Zai_org GLM-5.3 重み（8/28、custom glm-5.3、753B、141 shards、約 134 万回）／HF zai-org/GLM-5.3／The New Stack／Z.ai「More Intelligence with Less Compute」（8/30–31、Terminal-Bench 84.3、DeepSWE 63.4）／Together AI GLM-5.3 vs Flash／NYT Lohr/Tobin「China Sees Opportunity…」（8/28）／Check Point Zanger／The Information 商務省遠隔アクセス草案（8/28–29、タイ／シンガポール、9 月、Baker McKenzie 権限空欄）／Investing 2513 1,090 −6.03%（始 1,155、高 1,171、安 1,063、出来高 386 万）／MarketScreener 0100 300.40 −4.51%／HKEJ 9988 113.90 −1.4%／Longbridge 688836 585 −4.88%／Humanoids Daily UniBLEed（8/30、CVE-2026-76639/76640）／WSJ Nvidia physical AI $10B（8/29、中国出荷約 90%、Thor）／Business Times／India Today／Moonshot k2.5 sunset 8/31、EU AI Act Article 50 29日目（直近 24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 02-chinese-ai-tech.html loaded for 2026-08-30', 'color:#10b981');
+  </script>
+</body>
+</html>
