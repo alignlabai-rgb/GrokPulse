@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-09-04 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-09-04 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🔌</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">金曜——46,000 が戻り、4,490 は転換の下、<br>33% が 17 点差になり、棚は「分散」と名乗った</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年9月4日（金）。09-03 が「加権が 45,857 で 46,000 を失い、聯發は 4,340 で転換の下に残り、載板は 923 と跌停まで落ち、NVIDIA は Hugging Face $12.93B に署名し、Lutnick は建てなければ払え、と書いた木曜」なら、09-04 は<strong>SEMICON 最終日に加権が 46,551.13（+693）で 46,000 と 5 日線を取り戻し、聯發は 4,415 で高 4,490 まで行っても転換 4,513.75 の下に残り、Counterpoint は Samsung の HBM 売上を 33%（SK 50%、差 17 点）と数え、Boitano は棚を deconcentration platform と呼び、載板は 902 と 1,055 が赤、景碩だけ 819 で緑だった金曜</strong>だ。Yahoo／Taiwan News／中央社。成交 NT$8,256 億。週は +219.68。TSMC 2,410（+0.84%）。聯發 4,415（+1.73%）。鴻海 256（+3.43%）。台達電 1,825（+3.69%）。日月光 588（−0.17%）。3037 は 902（−2.28%）。南電 1,055（−2.31%）。景碩 819（+5.68%）。KOSPI 6,687.21（+1.64%）。Samsung 255,500（+2.20%）。SK 1,647,000（+3.20%）。NVDA 場中 233 近傍（+2% 超）。52 週高 $236.54。B300 時間貸し $6.29。H100 $2.67。倉庫は署名の翌日。閉幕はなお H1 2027。鋤は 2029。SGX は 9/8。Labor Day は 9/7。金曜の評価軸は <code>加権 46,551.13/+693 × TSMC 2,410/+0.84%/薄量 × 2454 4,415/+1.73%/高4,490/転換下 × 鴻海 256/+3.43% × 2308 1,825/+3.69% × 3037 902/−2.28% × 8046 1,055/−2.31% × 3189 819/+5.68% × AVGO×TOPPAN 星 × KOSPI 6,687.21/+1.64% × Samsung 255.5k/+2.20% × SK 1.647M/+3.20% × HBM 33/50/18 × NVDA 233近傍 × HF D+1/分散 × B300 $6.29 × H100 $2.67 × 外資 +NT$562億 × NFP +162k × 鋤 2029</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 46,551 / +693</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">台股 鐘 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">45,857 が 46,551 になった<br>46,000 は、最終日の鐘に戻った</div>
+          <div class="mt-4 text-sm text-zinc-400">Yahoo／Taiwan News／中央社。加権 46,551.13（+693.47、+1.51%）。5 日線 46,330 の上。成交 NT$8,256 億。木曜 9,463 億から薄い。週は +219.68（+0.47%）。電子 +1.63%、金融 +1.17%、櫃買 +1.83%。三大法人 +NT$629.7 億。外資は三日売りを止めて +NT$562.1 億。TSMC 2,410（+0.84%、+20）。始 2,415、高 2,415、安 2,395。U 字。出来高はなお薄い。南港は 16:00 に閉まった。契約に「需要が戻った」と書くな。「極限の見出しの三日目に、46,000 を鐘が返した日だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>Yahoo／Taiwan News／中央社 加権（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#02 4,415 / 4,513.75</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">TWSE 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">高は 4,490。終値は 4,415<br>転換までは、まだ 99 足りない</div>
+          <div class="mt-4 text-sm text-zinc-400">MarketWatch／Yahoo。聯發 2454。始 4,435、高 4,490、安 4,340、終 4,415（+1.73%、+75）。出来高 905 万。転換価 4,513.75。盤中高は 24 足りない。終値は 99 足りない。残り約 2.2%。外資は 535 張の買い越し。連 2 買。SGX はなお 9/8。Alphabet の額は空欄のまま。水曜 4,565 で超え、木曜 4,340 で下、金曜は高 4,490 でまた下。契約に「消化が終わった」と書くな。「4,490 は席。4,415 は答案。定着は終値が超える日」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-unlock"></i>
+            <span>MarketWatch 2454／Yahoo 法人（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#03 902 / 1,055 / 819</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">載板 分裂 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">923 が 902。跌停は 1,055 まで戻した<br>景碩だけが、766 から 819 へ</div>
+          <div class="mt-4 text-sm text-zinc-400">Yahoo／時報／MarketWatch。ユニマイクロン 3037。終 902（−2.28%、−21）。高 940、安 873。南電 8046 は 1,055（−2.31%、−25）。高 1,095、安 1,010。千元は守った。景碩 3189 は 819（+5.68%、+44）。安 766、高 828。Hock Tan は 2027 会計年度からシンガポールの載板を動かす、と。相手は TOPPAN。設備の交期は 2028〜2029、と時報。楊梅の ABF は別の列。札はなお慣例 PCB。契約に「基板が折れた」と書くな。「指数の緑の下に、載板の符号を置いた日だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stamp"></i>
+            <span>Yahoo／時報 AVGO×TOPPAN／MarketWatch（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 33% / 50% / 17pt</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Counterpoint 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">21 が 33 になった。SK は 50<br>差は 37 点から 17 点へ</div>
+          <div class="mt-4 text-sm text-zinc-400">Korea Herald／Aju Press。Counterpoint。Q2 の HBM 売上。Samsung 33%（Q1 は 21%）。SK hynix 50%（Q1 は 58%、前年は 64%）。Micron 18%（前四半期 21%）。差は 17 ポイント。一年前は 49。HBM3E がなお本体。HBM4 は後半で加速、と。Kim Jae-june は、後半の自社 HBM 売上の 60% 超を HBM4 にすると七月に書いた。250k の緑は、その否定ではない。契約に「王座が移った」と書くな。「33 は売上の席。50 はまだ上。鋤は 2029」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>Korea Herald／Aju Press／Counterpoint（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#05 6,687 / 255.5k</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">KOSPI 終値 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">−4% の二日後は +1.64%。6,700 は盤中<br>Samsung は 255.5k。SK は 1.647M</div>
+          <div class="mt-4 text-sm text-zinc-400">Aju Press／Financial News。KOSPI 6,687.21（+107.73、+1.64%）。高 6,697.60。安 6,632.77。個人売り ₩3.72 兆。海外 ₩4,793 億買い。機関 ₩1.67 兆買い。Samsung 255,500（+2.20%、+5,500）。SK 1,647,000（+3.20%、+51,000）。SK square 1,041,000（+6.1%）。銀行は逆。KB −3.3%。Waller のあと、金利の席からメモリの席へ。$20B のドルは水曜、為替の金庫へ入った。契約に「床が完走した」と書くな。「指数の緑と、33% の紙を同じ金曜に置いた日だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-won-sign"></i>
+            <span>Aju Press／Financial News KOSPI（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#06 $12.93B / 分散</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">HF D+1 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">署名の翌朝、棚は分散と名乗った<br>閉幕は H1 2027。規制は空欄のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">CNBC／Wccftech／Raymond James。Justin Boitano。Hugging Face は deconcentration platform、と。規制は圧倒的に前向きに見る、と。Huang は木曜、他の入札を退けるのにこの額が要った、と CNBC に書いた。Simon Leopold は strategically valuable。ソリューションであって GPU だけではない、と。NVDA 場中 233 近傍（+2% 超）。高 234.6 近傍。52 週 $236.54。閉幕は 2027 年前半。中立は約束。許可リストではない。契約に「GitHub を買った」と書くな。「分散と名乗った翌日に、株が 52 週高の下まで戻った日だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-signature"></i>
+            <span>CNBC／Wccftech／Raymond James（9/3–9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#07 256 / ¥1,019億</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">鴻海 債 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">247.5 が 256 になった<br>シンガポールの MTN は、1,019 億円</div>
+          <div class="mt-4 text-sm text-zinc-400">鉅亨／中央社／Yahoo。鴻海 2317。始 252.5、高 256、安 251、終 256（+3.43%、+8.5）。出来高 4,940 万。外資 26,408 張の買い越し。台達電 1,825（+3.69%、+65）。日月光 588（−0.17%）。Foxconn Singapore は鴻海保証の MTN。総額 1,019 億円、約 NT$206.56 億。うち 657 億円は 3 年。南港が施工の極限を名乗った三日目に、組み立ての札は緑。契約に「サーバが足りた」と書くな。「256 の緑の隣に、円の債を置いた日だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>鉅亨／中央社 Foxconn Singapore MTN（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 B300 $6.29</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">@Architect_Fi 金曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">株は 233 近傍、時間貸しは七日上がった<br>H100 $2.67。B300 は $6.28→$6.29</div>
+          <div class="mt-4 text-sm text-zinc-400">@Architect_Fi。$/GPU-hr。金曜：H100 $2.67（1D +0.35%、7D +3.78%、YTD +42.6%）。H200 $3.42。B200 $4.98。B300 $6.29（+0.10%／+8.07%／+48.7%、30 日ボラ 16.7%）。木曜 $2.65／$6.28。水曜 $2.64／$6.25。46,000 が戻っても、空きは下がらない。二つの値札を同じセルに書くな。スポットが先に織り込むのは、加権の緑でも、4,490 の席でもなく、今夜のワットと、今夜の空きと、prefill の別棟である。ガイドはなお $108B。中国の計算はゼロ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>@Architect_Fi GPU COMPUTE DAILY SNAPSHOT（9/3–9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#09 +162k / +NT$562億</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">NFP／外資 今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">雇用は 162k。予想は 55k<br>半導体は、冷やされなかった</div>
+          <div class="mt-4 text-sm text-zinc-400">@wallstengine／Yahoo。米国 8 月非農業 +162k（予想 +55k）。失業率 4.1%。7 月は −23k から +21k へ上方修正。X は「酷い数字なのに半導体が戻る」と書いた。台湾の外資は三日売りを止めて +NT$562.1 億。仁寶、聯電、鴻海、緯創、國巨。ソウルは Waller を読んで銀行からチップへ。NFP の厚さと、46,000 の戻りは、同じ金曜の二つの満期だ。契約に「利下げが着いた」と書くな。「雇用の厚みの上に、チップの緑を置いた日だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-briefcase"></i>
+            <span>BLS NFP／@wallstengine／Yahoo 外資（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#10 16:00 / 閉幕</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">SEMICON 最終日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">南港は 16:00 に閉まった<br>1.9 倍と 80% と 3ha は、壇のまま残った</div>
+          <div class="mt-4 text-sm text-zinc-400">SEMI。本展 9/2–4。最終日は 16:00。1,300 社、4,300 ブース。侯の 1.9 倍と同時 20 座、何軍の CoWoS CAGR 80% 超と白埔 3ha、蔡の 2027〜2029、簡の基板不足は、三日の本文になった。サイバーセキュリティ・サミットが最終日の戦略テーマ。CPO とシリコンフォトニクスは、信頼性の疑いをデータで壊した、と徐國晉が週の頭に書いた。閉幕は展示の終わりであって、775μm の終わりではない。契約に「足りた」と書くな。「壇は閉まった。産能は、まだねだる席だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-door-closed"></i>
+            <span>SEMI／Taipei Times／Focus Taiwan（9/2–9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 PAIR / N1X</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">IFA 翌日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">8 分 48 秒は、まだベータ<br>6,144 の箱は、まだ 10 月</div>
+          <div class="mt-4 text-sm text-zinc-400">NVIDIA blog／Tom's Hardware。Personal AI Router は木曜のベータ。家の RTX と Spark と M4。メモリは束ねない。N1X は 20 コアと 6,144 CUDA。TDP 45〜80W。出荷は 10 月。Acer と Lenovo が機種を出した。南港が施工人力の極限を名乗った隣で、家の 17% 稼働をクラスタにしたソフトは、金曜もベータのまま。契約に「オンプレが来た」と書くな。「空いているワットを、同じ家の中で順番に使うソフトだ。箱は 10 月」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-network-wired"></i>
+            <span>NVIDIA PAIR／Tom's Hardware N1X（9/3–9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-300 text-xs font-mono tracking-[1.5px]">#12 WINDOWS FRI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/4–9月</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">SEMICON は閉まった。SGX は 9/8<br>Labor Day は 9/7。鋤は 2029。N1X は 10 月</div>
+          <div class="mt-4 text-sm text-zinc-400">本展は今日で終わり。HF は署名済み、閉幕は H1 2027。規制は空欄。Boitano は分散と名乗った。ECB の SGX 上場は 9/8。転換 4,513.75 は終値がまだ下。S-1 は Labor Day（9/7）のあと。米株は月曜休み。遠隔 GPU の草案は早くて 9 月。権限は RASA 待ち。月 $12.5 億は 2029 年 5 月まで。インディアナの封装は 2029 年後半。封装が関税の「ここ」に入るかは空欄。N1X の箱は 10 月。買うのは 46,000 の戻りでも、$12.93B の翌日でもない。2027 に契約できる HBM の世代とハイ、降りる粗利がラック単価に乗る幅、インディアナが 2029 に本当に積むか、今夜の H100 $2.67 と B300 $6.29、監視税を織り込んだ遠隔の草案、同じ家主に月 $12.5 億を払う相手の供給が切れるかどうか、カスタム XPU が NVLink の内側でしか挿せない幅、転換 4,513.75 を終値が超えるかどうか、封装が「建てた」に入るかどうか、33% が 50% をどこまで削るかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>SEMICON／SGX／商務省／NVIDIA IR（8/27–9/4）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年9月4日、AI Hardware の中心は「<strong>SEMICON 最終日に加権が 46,000 を取り戻し、聯發は 4,490 まで行っても転換の下に残り、Samsung の HBM 売上は 33% で差 17 点になり、Hugging Face の棚は分散と名乗り、載板は符号が割れた</strong>」ことだ。09-03 が 46,000 を失い、4,340 で転換の下に残り、載板を下限まで落とし、$12.93B に署名を載せ、封装の定義を空欄のままにした木曜なら、09-04 は、その見出しが指数に戻り、署名の翌日だけが本文になった金曜日である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            南港は 16:00 に閉まった。侯永清の 1.9 倍と同時 20 座は、まだ極限のまま。何軍の CoWoS CAGR 80% 超と白埔 3ha は、検証の棟のまま。蔡力行の 2027、2028、2029 は、ねだる席のまま。建てる側の株は 2,410。薄い緑。U 字。出来高は薄い。指数は 46,551。46,000 は鐘に戻った。週は +219.68。外資は三日売りを止めて NT$562 億を買った。鴻海は 256。円の債は 1,019 億。組み立ての札は、施工の極限の三日目に緑だった。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            聯發の板は、蓋の三日目だった。高 4,490。転換 4,513.75 には 24 足りない。終値 4,415。99 足りない。残り約 2.2%。出来高は平均の近傍。外資は 535 張。連 2 買。SGX は 9/8。Alphabet の額は空欄。水曜 4,565 で超え、木曜 4,340、金曜 4,415。プレミアムの消化は、盤中の接近では終わらない。終値が超える日が、定着である。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            載板は、符号が割れた。ユニマイクロン 902（−2.28%）。南電 1,055（−2.31%）。千元は守った。景碩だけ 819（+5.68%）。安 766 から戻した。Hock Tan はシンガポールの載板を 2027 会計年度から動かす、と。相手は TOPPAN。時報は、設備の交期は 2028〜2029、と書いた。不足の壇と、跌停の翌日と、星の見出しは、同じシリコンの三つの満期だ。902 を「産能が余った」と書くな。札の列と、楊梅の列と、シンガポールの列は、三つの表のままである。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            倉庫は、署名の翌日に分散と名乗った。Boitano は deconcentration platform、と。規制は前向きに見る、と。Huang は他の入札を退けるのにこの額が要った、と。Leopold はソリューションであって GPU だけではない、と。18M 開発者。3M モデル。閉幕は 2027 年前半。中立は約束であって、許可リストではない。同じ金曜、NVDA は 233 近傍。52 週高 $236.54 の下。PAIR はベータ。N1X は 10 月。家の 17% 稼働をクラスタにしたソフトは、南港が閉まったあとも、箱ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            韓国の板は、指数もチップも緑だった。KOSPI 6,687.21（+1.64%）。高 6,698。6,700 は盤中。個人は ₩3.72 兆売った。海外と機関が受け取った。Samsung 255,500（+2.20%）。SK 1,647,000（+3.20%）。Counterpoint は同じ金曜、HBM 売上を 33 / 50 / 18 と数えた。差は 17 点。一年前は 49。Kim の 60% 超は、七月の本文だ。250k の緑は、その肯定でも否定でもない。席の移動である。Lutnick の「ここ」に封装が入るかは空欄。鋤は 2029。株と時間貸しは、またずれた。B300 は $6.29。H100 は $2.67。空いているラックの値段は、46,000 の戻りを待たない。NFP は +162k。予想は +55k。雇用の厚みの上に、チップの緑を置いた。09-03 が「46,000 を失い、4,340 で転換の下に残り、載板を下限まで落とし、$12.93B に署名を載せ、封装の定義を空欄のままにした木曜」なら、09-04 は「<strong>46,000 を返し、4,490 で転換の下に残り、33% で差 17 点を数え、棚を分散と呼び、載板の符号を割った金曜</strong>」。無料なのはベータで、有料なのは転換の定着と、封装が「建てた」に入るかどうかと、33% が 50% をどこまで削るかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">木曜の自分「祝うのは署名でもない。転換の定着と、封装の定義と、10 月の箱のどれが本文で、金曜の始値がこの 46,000 割れを返すかどうかだ」——金曜の加権「じゃあ 46,551 まで返しておくね。出来高は薄めで」（笑）。聯發は 4,490 まで行って、4,415 で転換の下に残った。蔡は三年の産能をねだったまま。南港は 16:00 に閉まった。同じ日に欣興は 902、南電は 1,055、景碩だけ 819。Hock Tan はシンガポールを書いた。不足の壇と、星の見出しと、符号の割れは、仲が悪い。Hugging Face は分散と名乗った。$12.93B。中立は約束。規制は空欄。NVDA は 233 近傍で 52 週高の下。B300 は $6.29。株が緑のあいだも、空きは上がる。Samsung は 33%。SK は 50%。差は 17 点。鋤は 2029。祝うのは 46,000 の戻りでもない。転換の定着と、封装の定義と、33% の次の四半期のどれが本文で、火曜（Labor Day 明け、SGX の日）の始値がこの 4,415 を転換の上に置くかどうかだ。席は売り切れ。極限は、もう設備の方が先に名乗っている。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">46,551/+693・4,415／転換下・902／1,055／819・33/50/17・KOSPI +1.64%／255.5k・HF 分散・B300 $6.29——金曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年9月4日現在の AI Hardware 分野は、(1) 加権が 46,551.13（+693）で 46,000 と 5 日線を取り戻し、TSMC は 2,410（+0.84%）の薄い緑だったこと、(2) 聯發 2454 が 4,415（+1.73%）で転換価 4,513.75 の下に残り、高 4,490 でも超えなかったこと、(3) ユニマイクロン 902（−2.28%）、南電 1,055（−2.31%）、景碩 819（+5.68%）と載板の符号が割れたこと、(4) Counterpoint が Q2 HBM 売上を Samsung 33%、SK 50%、Micron 18%、差 17 点と数えたこと、(5) KOSPI 6,687.21（+1.64%）の下で Samsung 255,500（+2.20%）、SK 1,647,000（+3.20%）とメモリが緑だったこと、(6) NVIDIA が Hugging Face を deconcentration platform と呼び、場中 233 近傍まで戻したこと、(7) 鴻海 256（+3.43%）と Foxconn Singapore 1,019 億円債、(8) B300 時間貸し $6.29、H100 $2.67、NFP +162k、外資 +NT$562 億、(9) SEMICON が 16:00 に閉まり、SGX は 9/8、Labor Day は 9/7、鋤はなお 2029、が重なっている。2026 年 9 月 SEMICON 最終日の評価軸はピーク FLOPS より、<strong>46,000 の戻り、転換の下、載板の符号、33% の席、$12.93B の分散、封装の定義</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>TSMC／ファウンドリ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「1.9 倍は水曜の極限だ。80% の CoWoS と白埔の 3 ヘクタールは木曜の本文だ。今日の本文は 2,410 の薄い緑と、16:00 の閉幕だ。加権の +693 は、権値の緑だ。語るのは 2027 までの封装と、検証を 25〜50% 速くする棟と、775μm の天井だ。出来高が薄い戻りを、需要の完走と書くな。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>MediaTek／カスタム XPU 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「水曜は 4,565 で転換を超えた。木曜の終値は 4,340。今日の高は 4,490。終値は 4,415。残り 2.2%。上場は 9/8。蔡は三年の産能をねだったまま。契約に『勝った』と書くな。定着は終値が超える日だ。Alphabet の額は、まだ空欄だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>メモリ／HBM 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Counterpoint は 33 と 50 と 18 だ。差は 17 点。一年前は 49。Kim の 60% 超は七月の本文だ。KOSPI の緑は指数であって、255.5k でも 1.647M でもある。Lutnick の『ここ』に封装が入るかは空欄。鋤は 2029 年後半。775μm は、関税の見出しでは上がらない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-stamp"></i>
+            <span>基板／原産地視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「923 は下限の日だった。今日は 902。南電は 1,055。千元は守った。景碩は 819。Hock Tan はシンガポールを書いた。TOPPAN。設備の交期は 2028〜2029、と時報。捜索は慣例 PCB の札。楊梅の ABF は別の列。Nvidia の箱の高級基板が偽物、と契約に書くな。捜査は続く。会長は、火曜の壇に残っている。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-fuchsia-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-fuchsia-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-warehouse"></i>
+            <span>NVIDIA／配布層視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「倉庫は温度ではなかった。8-K だ。今日は分散と名乗った。$11.9B と $1B。閉幕は H1 2027。ハブは開いたまま、と書いた。PAIR は家の空きを順番に使う。N1X は 10 月。6,144。株は 233 近傍。B300 は $6.29。契約に『GitHub を買った』と書くな。中立は約束であって、許可リストではない。規制は空欄のまま。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは 46,000 の戻りでも、$12.93B の翌日でも、4,415 の緑でもない。2027 に契約できる HBM の世代とハイ、降りる粗利がラック単価に乗る幅、インディアナが 2029 に本当に積むか、今夜の H100 $2.67 と B300 $6.29、監視税を織り込んだ遠隔の草案、同じ家主に月 $12.5 億を払う相手の供給が切れるかどうか、カスタム XPU が NVLink の内側でしか挿せない幅、転換 4,513.75 を終値が超えるかどうか、封装が『建てた』に入るかどうか、33% が 50% をどこまで削るか、10 月の N1X が 80W で何トークン出すかだ。板は台湾が 46,000 戻り、韓国が指数もチップも緑、米国は HF の分散で 52 週高の下。金曜に動くのは転換の消化と、載板の符号と、$12.93B の翌日と、封装の空欄である。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-09-04 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Yahoo／Taiwan News 加権/+693、MarketWatch 2454/2330、Counterpoint HBM 33/50、CNBC HF 分散、@Architect_Fi GPU-hr 9/4、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-09-04', 'color:#10b981');
+  </script>
+</body>
+</html>
