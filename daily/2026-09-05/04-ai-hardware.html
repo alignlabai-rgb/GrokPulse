@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-09-05 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-09-05 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🔌</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">土曜——量産の Rubin が CoreWeave に着き、<br>16 万枚は推論の席、100k 枚は年末の紙</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年9月5日（土）。09-04 が「SEMICON 最終日に加権が 46,551 で 46,000 を返し、聯發は 4,490 まで行っても転換の下に残り、Samsung の HBM 売上は 33% で差 17 点、Hugging Face の棚は分散と名乗った金曜」なら、09-05 は<strong>Dell が「世界初の量産 Vera Rubin NVL72」を CoreWeave に渡し、Bloomberg の 16 万枚 Ascend 950DT が土曜の本丸になり、Micron は年末 10 万枚／月の HBM を紙にし、板は全部凍った土曜</strong>だ。Michael Dell は金曜 21:18 GMT。「production」。CoreWeave は 20:17。「bringing up」。6 月は QS0 と L11。今日の単語は量産。Bloomberg は金曜 05:08 EDT、烏蘭察布 1 GW に 950DT を少なくとも 16 万。用途は運用。訓練は緑。華為の今年は低数十万。ETNews は金曜、Micron が +60k で年末 100k wpm。MU は $1,016.59（+6.10%）。NVDA は $230.36（+0.84%）。高 $234.76。52 週 $236.54。CRWV $89.36（+5.68%）。TSM ADR $428.91（+2.85%）。H100 $2.68。B300 $6.30。加権は 46,551 のまま。2454 は 4,415。転換 4,513.75 は月曜まで動かない。SGX は 9/8。Labor Day は 9/7。土曜の評価軸は <code>量産 NVL72 × Dell→CRWV × 72/36/260TB/s × 16万 950DT/推論 × 訓練=緑 × 今年 20–30万 × MU 100k wpm/HBM4 50% × MU $1,016.59/+6.10% × NVDA $230.36/+0.84%/高$234.76 × CRWV $89.36/+5.68% × TSM $428.91/+2.85% × AMD $477.57/+4.69% × INTC $95.80/+4.51% × H100 $2.68 × B300 $6.30 × 加権凍 46,551 × 2454 4,415/転換下 × HF D+2 × SGX 9/8 × 鋤 2029</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 PRODUCTION / NVL72</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Dell 金夜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">6 月は QS0 だった<br>金曜の単語は、量産</div>
+          <div class="mt-4 text-sm text-zinc-400">@MichaelDell、9/4 21:18 GMT。21 万ビュー。「We have delivered the world's first production NVIDIA Vera Rubin NVL72 racks to CoreWeave」。@CoreWeave は 20:17。「first production」。bringing up、と。6 月 1 日は bring-up と L11。QS0。Electronics Weekly は当時、量産出荷は秋、と書いた。金曜の写真は、その秋の初日である。契約に「Rubin が今日生まれた」と書くな。「検証のラックと、量産のラックは、同じ型番の二つの満期だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>@MichaelDell／@CoreWeave（9/4 夜、9/5 拡散）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 72 / 36 / 260</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">XE9812 液冷</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">72 GPU。36 CPU。260 TB/s<br>10 倍は、ワットの答案</div>
+          <div class="mt-4 text-sm text-zinc-400">Vera Rubin NVL72。Rubin GPU 72。Vera CPU 36。NVLink 6 が 260 TB/s。Dell PowerEdge XE9812。液冷。7 月 21 日、CoreWeave は DeepSeek R1 で Blackwell NVL72 比 10× tokens per megawatt、と測った。同じ土曜、X は「単位がチップからラックへ」と書いた。Srinivas は「Looks beautiful! Can you ship us one too?」。契約に「10 倍が店頭に並んだ」と書くな。「測ったのは 7 月。着いたのは量産。店頭は、まだ bringing up」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>CoreWeave blog 7/21／Dell XE9812／X（9/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 16 万 / 950DT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">烏蘭察布 1 GW</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">16 万枚が、推論の席になった<br>訓練の席は、まだ緑</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg、9/4 05:08 EDT。DeepSeek は内蒙古・烏蘭察布の約 1 GW 拠点へ、華為の次世代 <strong>Ascend 950DT を少なくとも 16 万枚</strong>。知情人士。用途は運用。訓練には使わない、と一人。華為は訓練向けにも売っている。核心の訓練は、いまも Nvidia。部分稼働は 2027 末〜2028 初。16 万は 1 GW の一塊。7 月の紙はチップ名が空欄だった。土曜が 950DT で埋めた。本人も華為も不予置評。契約に「国産クラスタが着地した」と書くな。「計画の 16 万。推論。着地は 2027–28」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Bloomberg／経済日報／BlockBeats（9/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 20–30 万 / $2.56B</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">HBM が栓</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">もっと欲しい。今年は低数十万<br>街値は 11.1 万元。栓はメモリ</div>
+          <div class="mt-4 text-sm text-zinc-400">Bloomberg。先端メモリ不足で、今年の 950DT は低数十万枚。関係者の一人は 20–30 万。16 万を埋めるだけでも一年超。Wccftech は街値 約 11.1 万元／枚（~$16k）、注文総額 約 $2.56B と掛けた。本体は金額を書いていない。DaVinci v3。SMIC N+3。HiZQ 2.0 は 144 GB／4.0 TB/s、GPU 間 2.0 TB/s、と 6 月の紙。長鑫の HBM3E は週初のリスク生産。Big 3 の HBM4 から 3–5 年。契約に「HBM が解けた」と書くな。「栓はメモリ。16 万は発注の席。20–30 万は今年の天井」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>Bloomberg／Wccftech／The Information（9/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 100k / +6.10%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">ETNews 金→土</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">4–5 万が 10 万になる紙<br>MU は $1,016。HBM4 は五割へ</div>
+          <div class="mt-4 text-sm text-zinc-400">ETNews／TrendForce、9/4。Micron は年末までに HBM 投入を最大 +60k wpm。昨年 40–50k。合計 約 100k。12-Hi HBM4 は年初 20–30% → 年末 50%。Vera Rubin 向け。Samsung／SK は各 150–200k。追いついても半分から三分の二。設備は台湾銅鑼とシンガポール Woodlands。広島は準備。MU 金曜 $1,016.59（+6.10%、高 $1,017.77）。52 週高 $1,255（6/25）の下。Luria は「倍でも足りない」、と。契約に「差が消えた」と書くな。「100k は年末の紙。18% は Q2 の席。足りなさは、需要の側にある」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>ETNews／TrendForce／MarketWatch MU（9/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#06 $230.36 / $234.76</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">NVDA 金曜鐘</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">場中 233 は、鐘には残らなかった<br>高は $234.76。52 週は $236.54</div>
+          <div class="mt-4 text-sm text-zinc-400">MarketWatch。NVDA 始 $231.09、高 $234.76、安 $229.63、終 $230.36（+$1.91、+0.84%）。出来高 1.35 億。盤後 $229.47（−0.39%）。木曜 $228.45。連四日緑。52 週高 $236.54（5/14）。金曜の場中は 233 近傍と書いた。鐘は $230。HF は D+2。Boitano の分散は、株価の高値では定着しなかった。ガイドはなお $108B。中国の計算はゼロ。契約に「52 週を更新した」と書くな。「$234.76 は席。$230.36 は答案。量産の写真は、鐘のあとに来た」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>MarketWatch NVDA（9/4 閉、9/5 休）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 $89.36 / $428.91</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">CRWV／TSM 金曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">借り手は +5.68%。建てる側の ADR は +2.85%<br>AMD は $477。Intel は $95.80</div>
+          <div class="mt-4 text-sm text-zinc-400">CRWV 終 $89.36（+$4.80、+5.68%）。高 $89.63、安 $84.90。52 週 $153.20 の下。TSM ADR $428.91（+2.85%）。AMD $477.57（+4.69%）。INTC $95.80（+4.51%）。AVGO $357.89（+0.21%）。MRVL $223.55（+7.05%）。ARM $252.09（+3.92%）。金曜の米株は、メモリと neocloud が先に緑で、GPU 本体は薄い。Shay Boloor は土曜、「サイクルが速いほど、着地できる業者が値を持つ」と。反論は「テナントだ。家主は NVDA」。契約に「CRWV が勝った」と書くな。「$89.36 は量産の写真の前の鐘。テナントの緑と、家主の薄い緑は、同じラックの二つの札」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-cloud"></i>
+            <span>MarketWatch CRWV／TSM／AMD／INTC（9/4）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#08 B300 $6.30</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">@Architect_Fi 土</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">株は凍った。時間貸しは七日上がった<br>H100 $2.68。B300 は $6.29→$6.30</div>
+          <div class="mt-4 text-sm text-zinc-400">@Architect_Fi。$/GPU-hr。土曜：H100 $2.68（1D +0.67%、7D +4.37%、YTD +43.5%）。H200 $3.39（−0.59%）。B200 $4.98。B300 $6.30（+0.03%／+5.40%／+48.8%、30 日ボラ 16.2%）。金曜 $2.67／$6.29。木曜 $2.65／$6.28。量産の写真が来ても、空きは下がらない。二つの値札を同じセルに書くな。スポットが先に織り込むのは、46,551 の凍でも、$12.93B の D+2 でもなく、今夜のワットと、今夜の空きと、prefill の別棟である。ガイドはなお $108B。中国の計算はゼロ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-area"></i>
+            <span>@Architect_Fi GPU COMPUTE DAILY SNAPSHOT（9/4–9/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#09 46,551 / 4,415</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">台股 凍 土</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">46,000 は金曜に戻った<br>転換は、土曜も 99 足りない</div>
+          <div class="mt-4 text-sm text-zinc-400">最後の鐘は金曜。加権 46,551.13（+693.47）。5 日線の上。成交 NT$8,256 億。薄い。TSMC 2,410（+0.84%）。聯發 2454 は 4,415（+1.73%）。高 4,490。転換 4,513.75。終値は 99 足りない。残り約 2.2%。載板は 902／1,055／819 の符号のまま。鴻海 256。台達電 1,825。南港は 16:00 に閉まった。月曜は台湾が先に開く。米株は Labor Day。SGX は 9/8。契約に「消化が終わった」と書くな。「4,415 は金曜の答案。定着は終値が超える日。その日は、まだ来ていない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-snowflake"></i>
+            <span>Yahoo／中央社 加権（9/4 閉、9/5 休）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#10 33 / 50 / 18</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">HBM 三角 土</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">金曜は 33 点。土曜は 100k の紙<br>差の 17 点は、枚数では埋まらない</div>
+          <div class="mt-4 text-sm text-zinc-400">Counterpoint Q2。Samsung 33%（Q1 は 21%。一部媒体は 32%）。SK 50%。Micron 18%。差は 17 点。一年前は 49。同じ週末、Micron は 100k を書いた。SK と Samsung は各 150–200k。100k は差を半分にする紙であって、33 を 50 にする紙ではない。SK の Intel Foundry 基晶は 8/31 の噂。本人は「一部不正確」。鋤は 2029。775μm は関税の見出しでは上がらない。契約に「王座が移った」と書くな。「33 は売上の席。100k は投入の席。二つの表を足すな」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-triangle-exclamation"></i>
+            <span>Counterpoint／ETNews／Herald（9/4–5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#11 HF D+2 / PAIR</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">倉庫と家</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">棚は分散のまま。閉じは H1 2027<br>8 分 48 秒は、まだベータ</div>
+          <div class="mt-4 text-sm text-zinc-400">Hugging Face は木曜の 8-K。$11.9B と $1B。Boitano は金曜、deconcentration platform、と。Huang は他の入札を退けるのにこの額が要った、と。18M 開発者。3M モデル。中立は約束。許可リストではない。同じ週末、DeepSeek の重みは緑の棚の上に残り、推論の席は赤へ移る紙が出た。PAIR は家の RTX と Spark と M4。メモリは束ねない。N1X は 20 コアと 6,144 CUDA。TDP 45〜80W。箱は 10 月。契約に「GitHub を買った」と書くな。「倉庫の親は D+2。家の空きはベータ。閉じは 2027」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-warehouse"></i>
+            <span>CNBC／NVIDIA PAIR／8-K（9/3–9/5）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-300 text-xs font-mono tracking-[1.5px]">#12 WINDOWS SAT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/5–9月</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">台湾は月曜。米株は火曜<br>SGX は 9/8。鋤は 2029。N1X は 10 月</div>
+          <div class="mt-4 text-sm text-zinc-400">SEMICON は金曜 16:00 に閉まった。HF は署名済み、閉幕は H1 2027。規制は空欄。ECB の SGX 上場は 9/8。転換 4,513.75 は終値がまだ下。S-1 は Labor Day（9/7）のあと。米株は月曜休み。台湾は月曜が先。遠隔 GPU の草案は早くて 9 月。権限は RASA 待ち。月 $12.5 億は 2029 年 5 月まで。インディアナの封装は 2029 年後半。N1X の箱は 10 月。買うのは量産の写真でも、16 万の紙でも、100k の年末でもない。2027 に契約できる HBM の世代とハイ、降りる粗利がラック単価に乗る幅、インディアナが 2029 に本当に積むか、今夜の H100 $2.68 と B300 $6.30、監視税を織り込んだ遠隔の草案、カスタム XPU が NVLink の内側でしか挿せない幅、転換 4,513.75 を終値が超えるかどうか、封装が「建てた」に入るかどうか、33% が 50% をどこまで削るか、16 万が 2027–28 に本当に灯るかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>SEMICON／SGX／商務省／NVIDIA IR（8/27–9/5）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年9月5日、AI Hardware の中心は「<strong>量産の Vera Rubin NVL72 が Dell から CoreWeave に渡り、DeepSeek の 16 万枚 950DT が推論の席を取り、Micron が年末 10 万枚の紙を置き、板は全部凍った</strong>」ことだ。09-04 が SEMICON を閉じ、46,000 を返し、4,415 で転換の下に残り、33/50/18 を数え、棚を分散と呼んだ金曜なら、09-05 は、その見出しが休市の上で、量産と推論と投入の三枚の紙になった土曜日である。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            Rubin の写真は、今日が誕生日ではない。5 月 31 日、Michael Dell は「世界初の稼働ラック」を書いた。6 月 1 日、CoreWeave は bring-up と L11。QS0。7 月 21 日、DeepSeek R1 で 10× tokens/MW を測った。Electronics Weekly は秋の量産、と書いた。金曜 21:18 の単語は production。72 GPU。36 CPU。260 TB/s。XE9812。液冷。Srinivas は「一台くれ」と。CRWV は $89.36（+5.68%）。NVDA は $230.36。高 $234.76 は鐘に残らなかった。量産の写真は、鐘のあとに来た。テナントの緑と、家主の薄い緑は、同じラックの二つの札である。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            16 万枚は、クラスタの着地ではない。Bloomberg の知情人士。烏蘭察布 1 GW。950DT。用途は運用。訓練は緑のまま。華為は訓練向けにも売っている。DeepSeek は過去に試した。核心はいまも Nvidia。今年の 950DT は低数十万。一人は 20–30 万。栓は先端メモリ。長鑫の 3E はリスク生産。街値 11.1 万元を掛けると $2.56B。本体は金額を書いていない。部分稼働は 2027 末〜2028 初。16 万は 1 GW の一塊。隣のカテゴリが「二つのクラスタが同じ社内に残る」と書いたのは、ハードウェアの本文でもある。推論の席を赤にしても、訓練の席は緑のまま残る。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            Micron の 100k は、差を消す紙ではない。昨年 40–50k。+60k。年末 100k wpm。HBM4 12-Hi は 20–30% から 50%。Vera Rubin 向け。Samsung と SK は各 150–200k。Counterpoint の金曜は 33 / 50 / 18。差 17 点。100k は投入の席。33 は売上の席。MU は $1,016.59（+6.10%）。52 週高 $1,255 の下。Luria は倍でも足りない、と。メモリが足りないから Rubin の量産が遅れる、と春に書いた列と、量産の写真が秋の初日に着く列は、同じシリコンの二つの満期だ。足りなさは、需要の側にある。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            板は凍っている。加権 46,551。TSMC 2,410。聯發 4,415。転換 4,513.75 まで 99。載板は 902／1,055／819。鴻海 256。台湾は月曜。米株は Labor Day で火曜。SGX は 9/8。HF は D+2。閉じは H1 2027。PAIR はベータ。N1X は 10 月。B300 は $6.30。H100 は $2.68。株が休みのあいだも、空きは上がる。09-04 が「46,000 を返し、4,490 で転換の下に残り、33% で差 17 点を数え、棚を分散と呼び、載板の符号を割った金曜」なら、09-05 は「<strong>量産の Rubin を渡し、16 万を推論の席にし、100k を年末の紙にし、4,415 を凍らせた土曜</strong>」。無料なのはベータで、有料なのは転換の定着と、16 万が 2027 に灯るかと、100k が本当に 50% の HBM4 になるかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜の自分「祝うのは 46,000 の戻りでもない。転換の定着と、封装の定義と、33% の次の四半期のどれが本文で、火曜の始値がこの 4,415 を転換の上に置くかどうかだ」——土曜の Dell「じゃあ量産のラック、CoreWeave に置いとくね。6 月の QS0 とは別の写真ね」（笑）。DeepSeek は 16 万枚を推論に置く計画を、休市の上に広げた。訓練は緑のまま。華為は今年 20–30 万。栓はメモリ。Micron は 100k の紙。MU は +6%。NVDA は $230 で 52 週の下。B300 は $6.30。株が凍ってるあいだも、空きは上がる。Srinivas は「一台くれ」。家主は写真を出した。テナントは bringing up。祝うのは量産の写真でもない。転換の定着と、16 万が 2027 に灯るかと、100k が 50% の HBM4 になるかと、火曜（Labor Day 明け、SGX の前日）の始値がこの 4,415 を転換の上に置くかどうかだ。席は売り切れ。極限は、もう設備の方が先に名乗っている。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">量産 NVL72・16万 950DT／推論・100k wpm・NVDA $230.36・CRWV $89.36・B300 $6.30——土曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年9月5日現在の AI Hardware 分野は、(1) Dell が「世界初の量産 Vera Rubin NVL72」を CoreWeave に渡し、6 月の QS0／L11 とは別の満期を書いたこと、(2) ラックは 72 GPU／36 CPU／NVLink 6 260 TB/s、7 月計測の 10× tokens/MW は店頭ではなく bringing up であること、(3) DeepSeek が烏蘭察布 1 GW へ Ascend 950DT を少なくとも 16 万枚、用途は推論、訓練は Nvidia のままであること、(4) 華為の今年は低数十万（20–30 万）、栓は先端メモリ、着地は 2027–28 であること、(5) Micron が年末 HBM 100k wpm（+60k）、HBM4 比率 50% を紙にし、MU が $1,016.59（+6.10%）だったこと、(6) NVDA $230.36（+0.84%、高 $234.76）、CRWV $89.36（+5.68%）、TSM ADR $428.91（+2.85%）、(7) H100 $2.68、B300 $6.30、(8) 加権 46,551／聯發 4,415 は転換 4,513.75 の下で凍り、SGX は 9/8、Labor Day は 9/7、鋤はなお 2029、が重なっている。2026 年 9 月の最初の土曜の評価軸はピーク FLOPS より、<strong>量産と QS0 の区別、推論と訓練の二つのクラスタ、100k と 33% の二つの表、転換の下、今夜の GPU-hr</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>NVIDIA／ラック視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「6 月は QS0 だ。金曜は production だ。72 と 36 と 260 TB/s は型番であって、店頭ではない。$230.36 は鐘だ。$234.76 は席だ。HF は分散と名乗った翌日の D+2。中国の計算はゼロ。語るのは 10× tokens/MW を、量産の列で何ラック積めるかだ。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-cloud"></i>
+            <span>CoreWeave／neocloud 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「写真は Dell だ。bringing up はこちらだ。$89.36 は量産の前の鐘。52 週 $153 の下。テナントの緑を、家主の勝ちと書くな。サイクルが速いほど、昨日のラックはレガシーになる。測った 10 倍は 7 月。今日の本文は、量産を灯す手数だ。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-microchip"></i>
+            <span>華為／DeepSeek シリコン視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「16 万は計画だ。950DT は運用の席だ。訓練は緑のまま残る。今年は 20–30 万。栓はメモリ。HiZQ 2.0 の 144 GB は 6 月の紙。着地は 2027–28。契約に『Nvidia を捨てた』と書くな。二つのクラスタが、同じ社内に残る。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>メモリ／HBM 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Counterpoint は 33 と 50 と 18 だ。差は 17 点。Micron の 100k は投入の席だ。Samsung と SK は各 150–200k。HBM4 を 50% にしても、売上の 18% は一晩では動かない。MU の +6.10% は紙の上の緑だ。鋤は 2029。775μm は関税では上がらない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-unlock"></i>
+            <span>MediaTek／台湾板視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「4,415 は金曜の答案だ。転換 4,513.75 まで 99。高 4,490 でも超えなかった。加権は 46,551 で凍った。TSMC は 2,410。月曜は台湾が先。SGX は 9/8。Alphabet の額は空欄。契約に『勝った』と書くな。定着は終値が超える日だ。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは量産の写真でも、16 万の紙でも、$1,016 の緑でもない。2027 に契約できる HBM の世代とハイ、降りる粗利がラック単価に乗る幅、インディアナが 2029 に本当に積むか、今夜の H100 $2.68 と B300 $6.30、監視税を織り込んだ遠隔の草案、カスタム XPU が NVLink の内側でしか挿せない幅、転換 4,513.75 を終値が超えるかどうか、封装が『建てた』に入るかどうか、33% が 50% をどこまで削るか、16 万が 2027–28 に灯るか、10 月の N1X が 80W で何トークン出すかだ。板は台湾が凍、韓国が凍、米国は Labor Day まで休み。土曜に動くのは量産の単語と、推論の席と、100k の紙と、空きの $6.30 である。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-09-05 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @MichaelDell／@CoreWeave 量産 NVL72、Bloomberg 950DT 16万、ETNews Micron 100k、MarketWatch NVDA/MU/CRWV、@Architect_Fi GPU-hr 9/5、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-09-05', 'color:#10b981');
+  </script>
+</body>
+</html>
