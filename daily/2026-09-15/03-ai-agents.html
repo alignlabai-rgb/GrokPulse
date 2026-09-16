@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-09-15 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-09-15 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🎭</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">火曜——Koa が着いた。AIforce は箱の外。<br>125 の最初の週に、殻が Sol を吸った。D+13</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年9月15日（火）。Moscone が開いた。09-14 が「125 が着いた。箱から名前が外れた。Siri は同僚ではない。T-1。D+12」なら、09-15 は<strong>Koa が Agentforce 用の CRM 推論として冬の米リージョンを約束し、AIforce が Claude／Slack／Lightning に CRM を運び、七つの名前が舞台に立ち、Siemens が 132 カ国の inbound を 100% 拾い、Adecco が 27,000 人へ Coworker を広げ、同じ火曜に Claude Code の殻へ Sol が漏れ、Google の全エンジニアに Opus 5 が枠付きで入り、Bot は十三日目</strong>だ。昨日、Agentforce は箱から降りた。今日、AIforce、Claudeforce、Slackforce が着いた。名前を外した会社が、新しい force を三体出した。Koa は Nemotron 3 Super。顧客データはゼロ。誤りは三分の一。パイロットは十月。GA は冬。Hunter はパイロットのまま。価格は無い。125 は昨日着いた。今日、The Information は殻の中身が差し替え可能だと書いた。2.1.273 は gateway にヒントを出した。opt-in。契約に「Salesforce がフロンティアになった」「Agentforce が死んだ」「Anthropic がシェアを失った」「Google が Claude に乗り換えた」と書くな。「Koa は冬。AIforce は箱の外。Hunter はパイロット。125 の最初の週に、殻が Sol を吸った。D+13」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 KOA</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Salesforce × NVIDIA</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">CRM の推論モデル。Nemotron 3 Super<br>顧客データはゼロ。誤りは三分の一。冬</div>
+          <div class="mt-4 text-sm text-zinc-400">Koa。Agentforce 用。Nemotron 3 Super を、二十七年の CRM 知から作った合成データで後訓練。Rohan Kumar、「Not a single byte of customer data」。重みは Salesforce。推論は自前基盤。CRM Benchmark で先行モデル並み、誤りは 3× 少ない。arXiv 2609.15066。パイロットは 1-800Accountant、Baxter Credit Union、Engine、Formula 1、UChicago Medicine、Xero。社内 Slack の agent は既に走っている。GA は冬、米リージョン。Govindarajan は、Qwen の provenance が不明だから主権ある米 pretrained を待っていた、と。フロンティアの減速論の隣で、企業は自前の推論を切り出した。契約に「Salesforce がフロンティアになった」「顧客データで訓練した」と書くな。「CRM 特化を、自前基盤に置いた。GA は冬。測れ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-microchip"></i>
+            <span>Salesforce／NVIDIA Blog／TechCrunch（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 AIFORCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">今日 Moscone</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Salesforce が、箱の外へ出た<br>権限は既存。ZDR。Coworker は 35 日で 10 万</div>
+          <div class="mt-4 text-sm text-zinc-400">AIforce。live interface layer。データ、ワークフロー、業務論理、意味、権限、セキュリティ、ガバナンスを、任意の AI 面へ。Benioff、「interface revolution」。人はダッシュボードを開かなくていい。Salesforce が来る。Claudeforce、Slackforce、Agentforce Coworker。新しい権限モデルは無い。移行は無い。ZDR。モデル提供者は業務データを残さない、と。Coworker は Lightning 内の同僚。既存の Agentforce を呼ぶ。ボタン一つ。最初の 35 日で 10 万人が起動。Fulton Bank は数週で 20 ユースケース、約 3,000 人。昨日、Agentforce は箱から降りた。今日、AIforce が箱の外を製品にした。契約に「CRM が死んだ」「座席が要らなくなった」と書くな。「箱の外に権限を運んだ。価格は未開示。契約を vis しろ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Salesforce AIforce／CX Today／SiliconANGLE（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 CLAUDEFORCE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Claude 内の Salesforce</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">37 の営業スキル。MCP は既製品<br>Claude Code プラグインは 40 超。ベータ</div>
+          <div class="mt-4 text-sm text-zinc-400">Claudeforce。Salesforce in Claude。事前構築の MCP。手動セットアップと認証とスキル対応を省く、と。営業スキル 37。見込みからパイプライン衛生。Tableau と service／marketing／commerce は「近い将来」。パイロットは Deloitte、GitLab、Legora。全顧客へベータ。Claude Code の Salesforce Development プラグインは 40 超のスキルと、動的に載る sub-plugin。Stokes は今日、共同ユーザーへ公開ベータ、と。Scott White（Anthropic enterprise）は、最前線はクリックを減らし、agent に仕事を渡している、と。Amodei は同じ舞台で車のブレーキを翻訳した。顧客の話と、減速の話が、同じマイクに乗った。契約に「Claude が Salesforce の既定になった」と書くな。「37 スキル。ベータ。ZDR。権限は既存。測れ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-plug"></i>
+            <span>Salesforce／TechTarget／CX Today（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 SEVEN ON STAGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">金の紙が、火の舞台へ</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Casey／Paige／Carter／Hunter／Marshall／Piper／Fin<br>六体は GA。Hunter はパイロット。11 月</div>
+          <div class="mt-4 text-sm text-zinc-400">七つの名前が、Main Keynote に立った。Casey は help。Paige は IT／HR。Carter は shopper。Hunter は outbound。Marshall は供給網。Piper は inbound。Fin は CX。六体は GA。Hunter は長期 runtime。日と週のゴール。パイロット。GA は 11 月。7B AWU。Q2 だけで 3.2B、と本人。Fin は Anthropic の会話の 79% を自律解決、と。Engine の help は chat の 50%。価格は未開示。昨日、箱から Agentforce を外した。今日、七つの名前を呼んだ。契約に「職務が着いた」「Hunter が GA した」と書くな。「六体は GA。Hunter はパイロット。価格は無い。契約を vis しろ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-users"></i>
+            <span>Salesforce／CX Today／Futurum（9/11–15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#05 SIEMENS 100%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Busch・今日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">月 2,500 件を、18,000 人の前で拾う<br>132 カ国。Marshall は 90 分。Piper は先</div>
+          <div class="mt-4 text-sm text-zinc-400">Siemens。inbound は月 2,500 超の未資格。二つの agent——engagement と qualification——が Sales Cloud で拾い、18,000 人の売り手へ回す。今日、132 カ国で 100%。公開鍵付きのメール。内部 ID は出さない。Busch、「virtual engineer」。Teamcenter SLM を Agentforce に挿す。技術的な答えを、販売と保守へ。Piper はパートナー受付の待ちを消す、と。Marshall は供給者の onboard。デモでは 90 分で覚えた、と。Slackbot が認証・財務・リスクを裏で回し、Regrello が SAP へ。週を日へ、と本人。Huang は同じ舞台で「agentforce every company」。契約に「Siemens が無人販売になった」と書くな。「100% は inbound の接触。Piper は先。Marshall は 90 分。測れ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>Salesforce／ITPro／TipRanks（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#06 ADECCO 27,000</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Machuel・40 カ国</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Coworker を 27,000 人へ。Claude<br>2.5M 通。今年さらに 20,000 人を置いた、と</div>
+          <div class="mt-4 text-sm text-zinc-400">Adecco Group。Agentforce Coworker を 40 カ国超へ。英仏パイロットのあと。27,000 人。Claude。無制限の Agentforce 360。採用 agent は既に 10 カ国、売上の 50%。Coworker は 2025 年 4 月から 250 万超の agent–候補やり取りを文脈にする、と。Machuel は keynote。「AI has to happen with people, not to people」。リクルーターは 35〜40% の時間を戻した、と。今年さらに 20,000 人を置いた、と。Ada は Agentforce Voice。24 時間。契約は 2027 まで無制限。契約に「人員を agent に替えた」「40 カ国が完了した」と書くな。「27,000 人へ広げた。Claude。250 万通。20,000 は本人。測れ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-tie"></i>
+            <span>Adecco／Unite.AI／ITPro keynote（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#07 GUARDIAN / FABRIC</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Trust 14:15 PT</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Guardian は Trust Layer の次<br>Fabric は登録簿。Harness は六製品の束</div>
+          <div class="mt-4 text-sm text-zinc-400">火 14:15 PT、Trust Across Agents, Data, and Platforms。Enterprise AI Harness は先週プレビュー。Informatica、Data 360、Tableau、Guardian（旧 Einstein Trust Layer）、MuleSoft Agent Fabric、Agentforce Studio。Guardian は agent の identity を、ユーザー権限の外へも縛る、と。Fabric はデジタル労働力の登録簿。性能、コスト、統治。keynote は Agent Fabric の scanner が、新しい agent を連続で探す画面を出した。日曜の Harness 調査は kill 33%、自動ゲート 19%。観測が商品になった月曜の隣に、火曜の統治スタックが並んだ。契約に「独立監査が始まった」「kill が 100% になった」と書くな。「Harness は六製品。Guardian は改名。Fabric は登録簿。kill は 33% のまま vis しろ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shield-halved"></i>
+            <span>TechTarget／CX Foundation／keynote（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#08 HARNESS BYPASS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Information・2.1.273</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Claude Code の殻に、Sol を挿す<br>125 の最初の週。ヒントは opt-in</div>
+          <div class="mt-4 text-sm text-zinc-400">The Information、Alix Coutures。開発者が Claude Code の harness を、OpenRouter 経由で GPT-5.6 Sol など非 Anthropic モデルに向けている。Boris Cherny は先月、オンラインの諍いの中心にいた。昨日、夏の +50% が閉じ、恒久 125。今日比 −17%。同じ 48 時間、殻は残り、中身が差し替え可能だと報じられた。今日、Claude Code 2.1.273。x-claude-code-request-class、agent-type、compaction、prev-tool-durations。LLM gateway 向け。既定オフ。<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>。製品の希少性が、モデルではなく harness にあることの、現場の証明である。契約に「Anthropic がシェアを失った」「公式が Sol を認めた」と書くな。「125 の最初の週に、harness がモデルを外した。ヒントは opt-in」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shuffle"></i>
+            <span>The Information／Techmeme／Claude Code changelog（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#09 ANTIGRAVITY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Google 全エンジニア</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">全エンジニアに Opus 5。枠付き<br>Gemini は primary。Claude Code は直接ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">Business Insider。内部 IDE Antigravity 経由で、全エンジニアが Claude Opus 5 を使える。これまで DeepMind と優先案件だけだった。外部の Claude Code と Codex は、直接は禁止のまま。広報、「Gemini remains our primary and foundational model」。third-party は quota、specialized use cases。Google は Anthropic に最大 $40B を投じる側でもある。Flash 3.8 でも、社内のコーディング不満は残っていた、と複数の社員。同じ火曜、Coder は Agent Relay に Claude Code を載せた、と。自前インフラ。sandbox。監査。早期アクセス。Google は自前 harness に競合を挿し、Coder は顧客の箱に Claude Code を挿す。契約に「Google が Claude に乗り換えた」と書くな。「枠付きで Opus 5。primary は Gemini。harness は自前。Relay は早期」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code"></i>
+            <span>Business Insider／Coder／Dataconomy（9/14–15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#10 BOT D+13</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/3 から十三日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Enterprise の二週間は、十三日目<br>9/17 前後が終わり。Frontier は Bot ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">Grok Bot for Enterprise。9/3。今日は十三日。9/17 前後が終わり。雲が先。蓋を閉じても死なない。口座は 1 台。同じユーザーの Bot はコンピュータを共有する。Bot 専用の支出上限は、今は無い。公開、削除、署名は人が残る。4.7 は金曜から cook。RL が長さを罰しすぎた。解ける難題を途中で捨てる。Copilot Frontier はオプトイン。EU は外。Bot はこの発表に入っていない。docs は今日も更新されている。契約に「Grok が Copilot の既定になった」「Bot が Office に着いた」「二週間が永久になった」と書くな。「Frontier。オプトイン。EU は外。Bot は十三日。監査を vis しろ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-robot"></i>
+            <span>x.ai／docs.x.ai／The Verge（9/3–15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#11 17,000 / $100M</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Delangue・明日 DC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">traces を出せ。計算 $100M<br>商用モデルは解析を拒んだ。GLM 5.2 で読んだ</div>
+          <div class="mt-4 text-sm text-zinc-400">Clément Delangue。今日 X。「first publicly disclosed agent cyberattack victim」。traces の全面公開と、オープンコミュニティ向け $100M 相当の計算。現金ではない。GPT-5.6 Sol と、refusal を切った未公開機。数日、17,000 超の個別動作。商用ツールが OpenAI 関連コードの解析を拒み、Z.ai の GLM 5.2 で読んだ、と。Nvidia は OpenAI の投資家であり、HF の買収者（$12.9B、2027 上期）。明日 DC、Politico decoded。15 州の保全通知は八月から残る。Dreamforce の統治スタックの隣に、実害の traces が乗っている。契約に「OpenAI が traces を出した」と書くな。「要求を再掲し、明日ワシントンへ行く」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-lines"></i>
+            <span>Delangue X／TNW／Forbes（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-yellow-400 text-xs font-mono tracking-[1.5px]">#12 SIRI D+1 / CHROME T+5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">ベータと既定オン</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Siri は同僚ではない。英語。EU は外<br>Chrome は既定オンの五日目。タブを vis しろ</div>
+          <div class="mt-4 text-sm text-zinc-400">iOS 27 は昨日。Siri AI はベータ。英語。15 Pro から。EU は DMA で外。中国は認可待ち。Gemini は訓練に使った、と Apple。ランタイムではない。専用アプリ。企業の harness ではない。Claude in Chrome と Cowork 内蔵は木、切っていなければ既定オン。今日は T+5。通知は無かった席が、ログイン済みタブを貸している。4.7 は cook。Astra はスキルを短くしろ、全部読むな、完了を先に書け、と。長い仕事の失敗は、二つの向き。契約に「Siri がエージェントになった」「既定を戻した」「4.7 が着いた」と書くな。「ベータ。英語。EU は外。Chrome は既定。タブを vis しろ。4.7 は cook」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>Apple／Anthropic Chrome／Musk X（9/10–15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-blue-300 text-xs font-mono tracking-[1.5px]">#13 SLACKFORCE / CODE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Surfaces と multiplayer</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Slackbot が CRM を動かす<br>Slack Code は、チームのコーディングを公開に</div>
+          <div class="mt-4 text-sm text-zinc-400">Slackforce Surfaces。Salesforce と Slack と他ツールの live 面を、会話の中で濾す。Slackbot は静かな口座を見つけ、ケースとスレッドを読み、担当を付け替え、フォローのタスクを作り、win-back の下書きを出す、と本人。Slack CRM。プロンプトで口座を作り、メモを残し、レコードを更新。Slack Code はコーディングを multiplayer にする。セッションは公開が既定。成果はメッセージではなく、動くコードとプロトタイプ、と。Engine は年 80 万件。待つ代わりに、会話の中で面を作れ、と。AWS DevOps Agent も Slack へ、と別紙。契約に「Slack が IDE になった」「CRM 座席が消えた」と書くな。「Surfaces は live。Code は公開既定。権限は既存。vis しろ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-comments"></i>
+            <span>Salesforce Slackforce／Engine／AWS（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-green-300 text-xs font-mono tracking-[1.5px]">#14 TUE WINDOW</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/15–2028-03</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">今日は Koa と AIforce と 125 の最初の週<br>明日は Dreamforce 二日目。Bot は 9/17</div>
+          <div class="mt-4 text-sm text-zinc-400">今日：Koa パイロット。AIforce／Claudeforce／Slackforce。七つの名前。Siemens 100%。Adecco 27,000。Trust 14:15。Guardian／Fabric。Claude Code 2.1.273。harness に Sol。Antigravity Opus 5。Coder Relay。Bot D+13。HF 17,000。Siri D+1。Chrome T+5。9/16：Dreamforce 続く。Delangue DC。9/17 前後：Bot Enterprise 二週間の終わり。9/18：Gateway $2/$10 終了。9/21 17:00 PT：WebMCP 審査終了。9/29：OpenAI DevDay、SF。10 月：Koa 顧客パイロット。AI Skills／Agent Optimizer。Missionforce の後訓練 NVIDIA。10/10：SWE-2 の $20 無料が終わる。11 月：Hunter GA。11/12：Cursor から OpenAI モデルが外れる。Astra は来ない。冬：Koa GA、米。2028 年 3 月：automated researcher。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-times"></i>
+            <span>9/15 火曜窓／9–2028（9/15）より</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#15 SWITCHBOARD TUE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/15</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Koa をフロンティアと書くな。AIforce を座席廃止と書くな<br>殻を公式と書くな。単一勝者は火曜も死亡</div>
+          <div class="mt-4 text-sm text-zinc-400">日常＝Grok 4.6＋Build／Bot（allowlist・送信スコープ。Enterprise は十三日／二週間。Chief と専門。4.7 は cook。ID なし。Salesforce はコネクタであり監査表ではない。Copilot Frontier はオプトイン。EU 外）／Spark 1.3 xhigh／3.8 Flash。難完遂＝Fable 5.1（Claude Code。High。plugin eval。並列 256 は上限。125 の最初の週。harness に Sol が漏れる。keep-awake は idle。蓋は殺す。sandbox 先オン）／Astra（$10/$50。Plus は 5–45。スキルは短く。完了を先に。Vending $15,515）／SWE-2（Devin 内。API 無し。10/10 まで $20）。長い自律＝Grok Bot（雲。蓋でも死なない。監査）／Claude Code（今日 125。2.1.273）／Agents API（米所在。ZDR なし。subagent 3）／Antigravity 内 Opus 5（Google 社員、枠付き）。CRM＝Koa パイロット（米、冬 GA）／Claudeforce ベータ（37 スキル）／Coworker（10 万／35 日）／七名前（Hunter はパイロット）。ブラウザ＝Cowork 内蔵（貸すな）／Chrome（既定オン。T+5）。声＝GPT-Live-1／3.8 Live／Siri AI（ベータ。英語。EU 外。同僚ではない）。列は Koa × AIforce × 125 の殻 × D+13 × T+5。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-random"></i>
+            <span>マルチ箱・Koa・AIforce・125・D+13 実務（9/15）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年9月15日の AI Agents は、月曜の着地と箱とベータを、火曜の舞台と殻と人数で読み直した日である。いちばん短い新事実は、Salesforce が自前の CRM 推論を出したことだ。Koa。Nemotron 3 Super。二十七年の知から作った合成。顧客データはゼロ。誤りは三分の一。重みは自前。推論は自前。パイロットは F1 と病院と会計士。GA は冬、米リージョン。フロンティアの減速論——Huang の false choice、Amodei の車のブレーキ——の隣で、企業はドメインの推論を切り出した。契約に「Salesforce がフロンティアになった」と書くな。「CRM 特化を、自前基盤に置いた。冬。測れ」と書け。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            同じ火曜、AIforce が箱の外を製品にした。live interface layer。権限は既存。ZDR。Claudeforce、Slackforce、Agentforce Coworker。人はダッシュボードを開かなくていい。Salesforce が来る。Coworker は 35 日で 10 万人。Claudeforce は 37 の営業スキル。MCP は既製品。ベータ。Deloitte、GitLab、Legora。Claude Code プラグインは 40 超。昨日、The Information は約 20 製品から Agentforce を外した、と書いた。Sales Cloud は Sales Cloud。今日、AIforce と Claudeforce と Slackforce が着いた。名前を外した会社が、新しい force を三体出した。ARR は +240%、$1.5B 超。説明は昨日も無い。契約に「Salesforce が agent をやめた」「座席が消えた」と書くな。「箱の外に権限を運んだ。新しい force は三体。価格は未開示。契約を vis しろ」と書け。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            七つの名前は、金の紙から火の舞台へ移った。Casey、Paige、Carter、Hunter、Marshall、Piper、Fin。六体は GA。Hunter はパイロット、11 月。長期 runtime。日と週のゴール。7B AWU。Q2 は 3.2B。Fin は Anthropic の 79%。Engine は 50%。Siemens は月 2,500 の未資格を、18,000 人の前で 132 カ国 100% 拾う。Piper は先。Marshall は 90 分。Teamcenter を挿す。Adecco は Coworker を 40 カ国、27,000 人へ。Claude。250 万通。Machuel は 35〜40% の時間と、今年さらに 20,000 人を置いた、と。Ada は Voice。Huang は「agentforce every company」。数字は本人。契約に「職務が着いた」「無人販売になった」と書くな。「六体は GA。Hunter はパイロット。100% は接触。27,000 は展開。測れ」と書け。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            統治は、14:15 の Trust に束ねられた。Enterprise AI Harness。Informatica、Data 360、Tableau、Guardian（旧 Einstein Trust Layer）、MuleSoft Agent Fabric、Agentforce Studio。Guardian は agent の identity を、ユーザー権限の外へも縛る、と。Fabric は登録簿。scanner が新しい agent を探す画面が、keynote に出た。日曜の調査は kill 33%、ゲート 19%。月曜の Airrived は「見えないものは統治できない」。火曜のスタックは六製品。kill の数字は動いていない。Slackforce は Surfaces と Slack Code。公開が既定。Engine は年 80 万件を、会話の中の面で処理する、と。契約に「独立監査が始まった」「kill が 100% になった」と書くな。「Harness は六製品。Fabric は登録簿。kill は 33%。vis しろ」と書け。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            コーディングの列は、舞台の下で別の答えを出した。昨日、125 が着いた。今日比 −17%。今日、The Information は Claude Code の殻に Sol が OpenRouter から挿さっている、と書いた。2.1.273 は gateway に class と agent-type と compaction のヒントを出した。opt-in。Google は全エンジニアに Opus 5。Antigravity。枠付き。Gemini は primary。Claude Code と Codex の直接は禁止のまま。Coder は Agent Relay に Claude Code を載せた。自前インフラ。早期。製品の希少性がモデルではなく harness にあることの、三つの現場である。Grok Bot は十三日目。9/17 前後。4.7 は cook。Siri は D+1、ベータ、英語、EU 外。Chrome は T+5、既定オン。Delangue は 17,000 手と $100M の計算を再掲し、明日 DC。商用モデルが解析を拒み、GLM 5.2 で読んだ。契約に「Anthropic がシェアを失った」「Google が乗り換えた」「4.7 が着いた」と書くな。「125 の最初の週に、殻が Sol を吸った。枠付き。Relay は早期。Bot は十三日。4.7 は cook」と書け。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月は multi-agent の本番信頼と Harness Tax。能力がコモディティになると、買い手が払うのはモデル名ではなく<strong>Koa をフロンティアと書かないか、AIforce を座席廃止と書かないか、箱から降りた名前を撤退と書かないか、Hunter を GA と書かないか、125 を値上げと書かないか、殻を公式と書かないか、Opus 5 を乗り換えと書かないか、Siri を同僚と書かないか、33% を制御と書かないか、完了を vis するか</strong>になる。09-12 は harness を売った木。09-13 は 150 の最後の夜。09-14 は 125 が着いたことと、名前が箱から降りたことと、Siri は同僚ではないことと、T-1 と、D+12。09-15 は Koa が着いたことと、AIforce が箱の外であることと、125 の最初の週に殻が Sol を吸ったことと、D+13 である。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            09-15 を一文で言えばこうだ。Koa は冬。顧客データはゼロ。誤りは三分の一。AIforce は箱の外。権限は既存。ZDR。Claudeforce はベータ。37 スキル。Coworker は 10 万／35 日。七つの名前。Hunter はパイロット。Siemens は 100% の接触。Adecco は 27,000。Guardian は改名。Fabric は登録簿。kill は 33%。125 は昨日。殻に Sol。2.1.273 は opt-in。Antigravity は枠付き。Gemini は primary。Bot は十三日。4.7 は cook。Siri はベータ。Chrome は既定。17,000 手は明日 DC。賢い独白はもう足りない。問題は、Koa をフロンティアと書かず、AIforce を座席廃止と書かず、Hunter を GA と書かず、殻を公式と書かず、33% を制御と書かず、<code>/usage</code> と kill とタブと契約書の製品名と冬の GA を vis してから次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜は名前を箱から外した。火曜は AIforce と Claudeforce と Slackforce を出した。親切というより、勇敢（笑）。Koa は Nemotron。顧客データを一バイトも使わず、冬に来る。Huang は新しい法律は要らないと言いながら、同じ壇上で CRM モデルを出荷した。Amodei は車のブレーキを翻訳して、37 スキルのベータを隣に置いた。Siemens は 132 カ国の inbound を 100% 拾う。Adecco は 27,000 人。数字は本人。測れ。で、Claude Code は 125 の最初の週に、殻だけ残して Sol を吸っている人がいる。2.1.273 は gateway にヒントを出した。opt-in。Google は自社エンジニアに Opus 5 を配って、Gemini は primary と言っている。Bot は十三日目。蓋を閉じても雲は死なない。4.7 はまだ cook。Siri は英語のベータ。Chrome は既定オンの五日目。タブを vis しろ。Delangue は明日 DC。17,000 手を GLM で読んだ。商用が拒んだ。Grok の火曜相棒は十五枚：Koa は冬、AIforce は箱の外、37 スキル、七名前、Siemens 100%、Adecco 27,000、Guardian／Fabric、殻に Sol、Antigravity は枠付き、Bot は十三日、17,000、Siri ≠ 同僚、Slack Code は公開既定、窓、単一勝者は死亡。Koa をフロンティアと書くな。AIforce を座席廃止と書くな。殻を公式と書くな。フォルダを貸すな。長い仕事の途中で、捨てるな。戻るな。測れ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">火曜の主戦場は「Koa＝CRM 推論・冬 GA・顧客データゼロ」「AIforce＝箱の外・Claudeforce ベータ・Coworker 10 万」「七名前＝Hunter はパイロット」「Siemens 100%／Adecco 27,000」「125 の最初の週に殻が Sol」。Koa × AIforce × 125 の殻 × D+13 × T+5</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年9月15日の AI Agents 分野は、Salesforce が Dreamforce 開幕日に Koa（Nemotron 3 Super 後訓練、顧客データゼロ、CRM Benchmark で誤り 3× 少、パイロット複数社、冬・米 GA）と AIforce（Claudeforce／Slackforce／Agentforce Coworker、権限は既存、ZDR、Coworker は 35 日で 10 万人）を出し、金に発表した七つの名前（Casey／Paige／Carter／Hunter／Marshall／Piper／Fin。六体 GA、Hunter は 11 月パイロット、7B AWU）を Main Keynote に載せたこと、Siemens が月 2,500 超の inbound を 18,000 人・132 カ国で 100% 接触し Piper／Marshall／Teamcenter を接続したこと、Adecco が Coworker を 40 カ国・27,000 人へ広げ Claude と 250 万通の文脈で今年さらに 20,000 人を置いたと本人が言ったこと、Trust Across Agents で Guardian（旧 Trust Layer）と Agent Fabric と六製品の Enterprise AI Harness を束ねた一方 kill は 33% のままであること、同じ火曜に The Information が Claude Code の harness へ GPT-5.6 Sol 等を挿す現場を報じ 2.1.273 が gateway ヒントを opt-in で出したこと、Google が Antigravity 経由で全エンジニアに Opus 5 を枠付き配布し Gemini を primary と書いたこと、Coder が Agent Relay に Claude Code を載せたこと、Grok Bot Enterprise が十三日目（9/17 前後終了、4.7 は cook）、Siri AI が D+1 のベータ、Chrome 既定オンが T+5、Delangue が 17,000 手と $100M 計算を再掲し明日 DC であること、Koa／AIforce／125 の殻／D+13／T+5 の列定石が同時進行した。本番の鍵はフロンティア順位表ではなく、「誰の Koa をフロンティアと書き、誰の AIforce を座席廃止と書き、誰の Hunter を GA と書き、誰の 125 を値上げと書き、誰の殻を公式と書き、誰の 33% を制御と書き、<code>/usage</code> と kill とタブと契約書の製品名と冬の GA が vis できるか」の agent システムにある。09-14 の「125 が着いたことと名前が箱から降りたことと Siri は同僚ではないことと T-1 と D+12 の月曜」に続き、09-15 は「Koa が着いたことと AIforce が箱の外であることと 125 の最初の週に殻が Sol を吸ったことと D+13 の火曜」だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI・業務自動化責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Koa をフロンティアと書くな。冬。米。顧客データはゼロ、は本人。AIforce は箱の外。権限は既存。ZDR。七つの名前。Hunter はパイロット。価格は無い。契約を vis しろ。Siemens の 100% は接触。Adecco の 27,000 は展開。席を増やすな。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>Agentフレームワーク／CLI開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「今日 <code>/usage</code>。125 の最初の週。殻に Sol。2.1.273 は opt-in。High。plugin eval。並列 256 は上限。Claudeforce プラグインは 40 超。ベータ。Antigravity は枠付き。Relay は早期。Astra はスキルを短く。完了を先に。現場は容量。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-flask"></i>
+            <span>AIエージェント研究者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「誤り三分の一は CRM Benchmark。arXiv 2609.15066。ドメイン特化とフロンティアは別列。$15,515 は模擬一年。五連続は 2.8%。4.7 は途中で捨てる。Siri はベータ。Gemini は訓練。ランタイムではない。出荷は Astra と Koa パイロット。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>AI運用・ガバナンス／セキュリティ担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「kill は 33%。ゲート 19%。Guardian は改名。Fabric は登録簿。Harness は六製品。17,000 手は明日 DC。Chrome は既定。T+5。Bot は十三日。口座 1 台。タブは貸すな。AIforce の ZDR と、Agents API の ZDR なしを、同じ紙に書くな。kill switch を vis しろ。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>Agent運用・コスト最適化担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「台帳に seat×harness×cache率×effort×Bot枠×コンテナ×Koa パイロット。125 は昨日。殻に Sol は安いが、公式ではない。Koa は冬までフロンティアを焼くな、が本人のゲートウェイ話。6x で枠を焼くな。4.7 の cook で予算を移すな。Coworker 10 万は起動数。請求ではない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを検証可能な反復仕事に限定し、Claude Code（Fable 5.1、High、plugin eval、並列は上限、Escape は層、keep-awake は idle、蓋は殺す、sandbox 先オン、Strict、今日 <code>/usage</code>、125、殻に Sol は公式ではない、2.1.273 は opt-in）と Codex（Astra ピッカー、スキルは短く、完了を先に、Agents API は米・ZDR なし）と Copilot（Grok は Frontier・オプトイン・EU 外）と Grok Bot（Enterprise 十三日／二週間、Chief＋専門、口座 1 台、監査、4.7 は cook）と Cursor Projects（coordinator は書かない、6x は本人、Astra は来ない、11/12）と Cowork 内蔵（ログインを貸すな、Chrome は既定オン T+5）を並走。Siri は同僚ではない。Koa は冬・米。Claudeforce はベータ。Hunter はパイロット。人が書くのはゴールと stop と allowlist と検証方法と共有状態の置き場と除外リストと完了条件と契約書の製品名。完了時間・請求・手戻り・harness・既定・125・殻・Koa・AIforce・D+13・kill 33%・4.7 cook・箱の外の force・凍結を一枚に。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-09-15 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Dreamforce Koa／AIforce、Claude Code 2.1.273、The Information、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-09-15', 'color:#10b981');
+  </script>
+</body>
+</html>
