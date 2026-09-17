@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-09-17 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-09-17 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🔌</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">木曜——2,425 は工場の上に座った。4,096 は 2027 を前倒しした。<br>25bp は全会一致。CBC は 2.00 のまま</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年9月17日（木）。09-16 が「NT$7 は 27 分で埋めた、2,380 は平盤、4,530 は転換の上、45,848、KOSPI は 6,717、オハイオは口、2.16GW は推論、燧原は 477、FOMC は今夜、S-1 は空欄」と置いた水曜なら、09-17 は<strong>Warsh が 25bp を 12–0 で上げ、声明は「Inflation remains elevated」、ドットは年内もう一回を 16/18、台積電が 2,425 で +45、加権が 46,288 で月線を取り高 46,874 を一瞬取って 587 点戻し、聯發が 4,500 で転換を再び割り、KOSPI が 6,715 でほぼ平、SK が 1,745k、CBC が 2.00% を十回目に据え、上海が Atlas 960E を NPO で置き 960DT を 2027 Q1 に前倒し、燧原が五日目に 500、寒武紀が 1,106、華邦が $1.12B の NOR を口の翌日に 170 で閉じた木曜</strong>だ。Huang は Dumfries に 20 分座り、上海は 4,096 枚を置いた。契約に「利上げが需要を折った」「2,425 が工場を埋めた」「4,096 が禁輸を解いた」と書くな。木曜の評価軸は <code>TSMC 2,425/+45 × 高 2,445 × 加権 46,288/+439 × 高 46,874.84 × 月線上 × 成交 8,194億 × 法人 +215億 × 聯發 4,500&lt;4,513.75/−0.66% × 高 4,700 × 終＝安 × 聯電 147.5/+3.87% × 日月光 614/+1.49% × 台達 1,685/−1.46% × 華邦 170/+0.59%/高180 × KOSPI 6,715.41/−0.04% × SK 1,745k/−0.8% × サムスン 252.5k × 外資七日 −2.27兆 × FOMC 25bp/3.75–4.00%/12–0 × ドット 16/18 × CBC 2.00%/GDP 11.48% × 960E/4,096/8E/1PB × 960DT 2027Q1 × 燧原 500/+4.82% × 寒武紀 1,106/−2.64% × NVDA 水 $213.90/木盤中~$218.8 × INTC 水 $101.05 × SOX 11,246 × 星環 49/9/21 × 納真截飛/9/22 × オハイオ未決 × 514.81B × 空の S-1</code> だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 2,425 / +45</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">台積電 木 填息翌日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">平盤の翌日に、45 元座った<br>高は 2,445。工場は 514.8B のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">CNA／鉅亨／Yahoo 2330、9/17。台積電 <strong>2,425（+45、+1.89%）</strong>。開 2,405。高 <strong>2,445</strong>。安 2,400。水は NT$7 を 27 分で埋め、終値は平盤 2,380。木は工場の上へ戻った。ADR は水に $417.72（+0.96%）。三大法人は権王へ +5,837 張、外資 +4,794。市値約 62.89 兆。入帳は 10/8。工場は八月 <strong>NT$514.81B</strong> のまま。契約に「2,425 が需要を証明した」「利上げが工場を埋めた」と書くな。「2,425 は填息翌日の答案。2,445 は高。514.8B は木の工場。三つの表を足すな」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>CNA／鉅亨／Yahoo 2330（9/17 終）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 4,500 / 4,513.75</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">聯發 木 転換の下へ戻った</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">高は 4,700。終値は当日の安<br>水曜の上を、木曜の鐘で割った</div>
+          <div class="mt-4 text-sm text-zinc-400">CNA／鉅亨／FTNN、9/17。聯發科 <strong>4,500（−30、−0.66%）</strong>。開 4,565。高 <strong>4,700</strong>。安＝終 <strong>4,500</strong>。転換 <strong>4,513.75</strong>。水は 4,530 で 16 上。木は終値で 13.75 下。9600 Pro の独立ベンチは水の口のまま。N2。30B MoE。ASP 約 $220。指数は権王で戻り、端末は高値から売られた。契約に「4,700 が 2nm を証明した」「転換割れが需要を折った」と書くな。「4,500 は終値。終＝安。4,513.75 は下。4,700 は高。二つの表を足すな」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-mobile-screen"></i>
+            <span>CNA／鉅亨／FTNN 聯發（9/17 終）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 46,288 / 46,874</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">加権 木 月線の上・長上影</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">1,025 点取って、587 点戻した<br>46K と月線は、終値で残した</div>
+          <div class="mt-4 text-sm text-zinc-400">TWSE／CNA／MoneyDJ、9/17。加権 <strong>46,288.00（+439.10、+0.96%）</strong>。開 45,936.11。高 <strong>46,874.84（+1,025.94）</strong>。高から 586.84 戻した。月線 46,025 の上へ、三日ぶり。成交 <strong>NT$8,194.05 億</strong>。水の 6,437.65 億から約 1,756 億。三大法人は転買 <strong>214.77 億</strong>。外資 +121.85。投信 +77.14。自営 +15.78。聯電 <strong>147.5（+3.87%）</strong>。日月光 <strong>614（+1.49%）</strong>。鴻海 250.5。台達 1,685（−1.46%）。櫃買 398.17（−0.26%）。契約に「439 点が 46K を取った」「利上げが板を埋めた」と書くな。「46,288 は答案。46,874 は高。月線は上。長上影。514.8B は工場」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-chart-line"></i>
+            <span>TWSE／CNA／MoneyDJ 盤後（9/17 終）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 6,715 / 1,745k</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">KOSPI 木 ほぼ平・メモリ売り</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">四連切りの翌日は、ほぼ平盤<br>メモリは、オハイオの口の翌日に売られた</div>
+          <div class="mt-4 text-sm text-zinc-400">Yonhap／Aju Press、9/17。KOSPI <strong>6,715.41（−2.56、−0.04%）</strong>。開は高く、高は約 6,795。船と防衛が受け、チップが吐いた。SK ハイニクス <strong>1,745,000（−0.8%）</strong>。サムスン <strong>252,500（−0.39%）</strong>。サムスン電機 −3.7%。外資は七日連続売り <strong>−2.27 兆ウォン</strong>、七日累計 13 兆超。水は 1,759k で +4.08%、オハイオの口。木は口の翌日。25 兆は拒否のまま。16 層 HBM4 は火の口のまま。オハイオは未決のまま。契約に「6,715 が HBM を折った」「−0.8% が工場を消した」と書くな。「6,715 はほぼ平。1,745k は SK。オハイオは口。25 兆は拒否のまま」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>Yonhap／Aju Press（9/17 終）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 25bp / 12–0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">FOMC 水 声明・CBC は木</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">3.75–4.00%。2023年7月以来<br>ドットは年内もう一回を 16/18</div>
+          <div class="mt-4 text-sm text-zinc-400">Fed／Reuters／CNBC／Axios、9/16 夜〜17。FOMC は <strong>25bp</strong>。目標 <strong>3.75–4.00%</strong>。<strong>12–0</strong>。2023年7月以来。声明は「Inflation remains elevated」。「timelier return to 2 percent」。Warsh「too high ... for too long」。「summer's inflation readings do not tell me that underlying trends have meaningfully improved」。会見は 30 分。ドットは 18 人中 16 が年内もう一回以上。12 がもう一回、4 が二回、2 が停止。中央値 2026 末 4.1%。PCE 3.7%／コア 3.4%。Trump は切れと言った。十年は水に 4.97%。契約に「25bp が HBM を折った」「4.1% が工場を止めた」と書くな。「25bp は声明。16/18 はドット。514.8B は工場」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-percent"></i>
+            <span>Fed 声明／Reuters／CNBC／Axios（9/16–17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#06 4,096 / 2027Q1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Huawei Connect 木 上海</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NPO の SuperPoD を置いた。8E。1PB<br>960DT は三四半期、前へ倒した</div>
+          <div class="mt-4 text-sm text-zinc-400">Huawei／SCMP／TechNode／TrendForce、9/17。Atlas <strong>960E SuperPoD</strong>。業界初の NPO。最大 <strong>4,096 NPU</strong>。FP8 <strong>8 EFLOPS</strong>。HBM <strong>1PB</strong>。Hi-ONE 5,500 基が 800G 光モジュール 48,000 個を置換。消費 −550kW 超。可用性 99.8%。対 950 で 10 兆パラメータの訓練 2.3 倍／推論 2.5 倍。Ascend <strong>960DT は 2027 Q1</strong>、三四半期前倒し。960PR は 2027 Q3。970 は 2028、980 は 2029。クラスタは 51.2 万卡、マルチトラックで 100 万。910C 超ノードは 1,000 基超。Huang は同じ木曜、Dumfries に 20 分。契約に「4,096 が NVIDIA を超えた」「前倒しが禁輸を解いた」と書くな。「4,096 は席。8E は口。2027 Q1 は前倒し。出荷は未着」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-server"></i>
+            <span>Huawei Connect／SCMP／TechNode（9/17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#07 $213.90 / ~$218.8</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">米盤 水終・木午前</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">道は 631 点落ちた。費半は緑<br>Intel はオハイオの口で 101</div>
+          <div class="mt-4 text-sm text-zinc-400">Financial News／MarketBeat／MarketWatch、9/16–17。NVDA 水終 <strong>$213.90（+0.82%）</strong>。高 $216.76。時価 $5.15T。木午前 <strong>~$218.8（+2% 台）</strong>。INTC 水終 <strong>$101.05（+4.03%）</strong>。AMD 水終 $512.50（+1.65%）。SOX 水終 <strong>11,246.11（+0.63%）</strong>。TSM ADR 水終 $417.72（+0.96%）。Dow 51,461.90（−1.21%）。S&amp;P 7,551.81（−0.45%）。Nasdaq ほぼ平。銀行が落ち、チップが残った。Huang は 9/24 の習晩餐。Koa は冬。法律は要らない、は火の口。ガイドは $108B。出荷は Astra。鋳鉄は草案。契約に「$213.90 が底だ」「+4% がオハイオを埋めた」と書くな。「$213.90 は水の鐘。$218.8 は木の午前。オハイオは口。514.8B は工場」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-arrow-trend-up"></i>
+            <span>MarketBeat NVDA／Financial News 水終／MarketWatch 木午前（9/16–17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-cyan-400 text-xs font-mono tracking-[1.5px]">#08 500 / 1,106</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">燧原 五日目・寒武紀 木</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">五日目は 500。高は 512.87<br>寒武紀は 1,106。騰訊は 84% のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">富途／雪球／Yahoo 688256、9/17。燧原（688801）<strong>500.00（+23.00、+4.82%）</strong>。開 466.86。高 <strong>512.87</strong>。安 465.00。総市値約 2,152 億。発行価 142.18。金 424、火 445、水 477、木 500。騰訊売上 83.79%。純損は残る。換手 19.82%。寒武紀 <strong>1,105.99（−30.02、−2.64%）</strong>。開 1,130。高 1,137。水は 1,136。同じ上海で SuperPoD が 2027 を前倒し、STAR は五日目に 500 を置いて寒武紀を戻した。契約に「500 が代替を証明した」「1,106 が禁輸を解いた」と書くな。「500 は五日目。84% は顧客集中。1,106 は木曜の答案。30 万億は 2030 の口」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-dragon"></i>
+            <span>富途 688801／Yahoo 688256（9/17 終）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#09 2.00% / 11.48%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">CBC 木 十回目の据え置き</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">割引は 2.00。十五年来の天井のまま<br>GDP は 11.48 へ上げた。CPI は 2.03</div>
+          <div class="mt-4 text-sm text-zinc-400">Focus Taiwan／CBC／WSJ、9/17。台湾央行、十回連続の据え置き。割引 <strong>2.000%</strong>。担保 2.375%。無担保 4.250%。Fed が 25bp を上げた翌朝。楊金龍は中東と油と、輸出が内需にまだ乗っていない、と。GDP 見通しは <strong>11.48%</strong>（6 月 9.45%）。CPI は 2.03%（1.91%）。来年は 1.83%。過剰準備は 6–8 月平均 NT$520 億超。DBS が据え置きを見、12 月に 2.125% を見ていた席に、答えは据え置きで着いた。契約に「11.48% が工場を証明した」「2.00 が利上げを拒んだ」と書くな。「2.00 は十回目。11.48 は見通し。514.8B は工場。三つの表を足すな」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-landmark"></i>
+            <span>Focus Taiwan／CBC／WSJ（9/17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-teal-400 text-xs font-mono tracking-[1.5px]">#10 $1.12B / 170</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">華邦 × Infineon 木 終</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">NOR を 11.2 億ドルで買った。高は 180<br>終値は当日の安。Spansion は 2027 下</div>
+          <div class="mt-4 text-sm text-zinc-400">CNA／Infineon／TrendForce／鉅亨、9/16 夜〜17。華邦電、Infineon の NOR Flash と F-RAM を全現金 <strong>$1.12B</strong>（約 NT$354 億）。2025 年 NOR は華邦 23%・Infineon 11%、合算約 34%。交割は <strong>2027 下半期</strong>。聖荷西。名は Spansion。CB 上限 NT$180 億。株は開 177、高 <strong>180</strong>、終 <strong>170（+1、+0.59%）</strong>。終＝安。外資は木に −10,245 張。水は +18,474。同じ木曜、納真は正午截飛、掛牌 9/22。星環は <strong>49 港元</strong>——区間の下限。掛牌 9/21。Summit は T-5。S-1 は空欄。契約に「$1.12B が NOR を灯した」「170 が買収を祝った」と書くな。「口は水の夜。170 は終＝安。2027 下は交割。34% は 2025 の足し算」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-memory"></i>
+            <span>CNA／Infineon／TrendForce／鉅亨 2344（9/16–17）より</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#11 WINDOWS THU</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">声明は昨夜・CBC は据え・Summit は T-5</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">買うのは 2,425 でも、4,096 でも、25bp でもない<br>工場は 514.8B。オハイオは、今日も口</div>
+          <div class="mt-4 text-sm text-zinc-400">09-16 が「NT$7 は埋めた、2,380 は平盤、4,530 は転換の上、45,848、KOSPI は 6,717、オハイオは口、2.16GW は推論、燧原は 477、FOMC は今夜、S-1 は空欄」なら、09-17 は「<strong>2,425 は +45、46,288 は月線の上、4,500 は転換の下、KOSPI は 6,715、25bp は 12–0、CBC は 2.00、960E は 4,096、960DT は 2027 Q1、燧原は 500、華邦は 170、S-1 は空欄</strong>」。買うのは填息翌日の四十五元でも、NPO の四千枚でもない。2027 に契約できる HBM の世代——16 層が Rubin のラックに乗るか、オハイオが前工程になるか、4,513.75 の下に終値が何日残るか、2,425 が 514.8B の上に残るか、960DT が Q1 に本当に出るか、2.16GW が FIRB を通るか、25 兆の拒否のあと送電網を誰が埋めるか、$5B が目論見書になるか、194k Rubin を誰のキャッシュで灯すか、500 が顧客集中のまま五日目を越えるかどうかだ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-days"></i>
+            <span>09-16 継続／FOMC 声明／CBC 9/17／Summit 9/22（9/17）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年9月17日、AI Hardware の中心は「<strong>声明は 25bp を全会一致で置き、新竹は 2,425 で工場の上に座り、転換は終値で再び割れ、上海は 4,096 枚の NPO を 2027 の席に前倒し、台北の央行は 2.00 を十回目に据えた</strong>」であることだ。09-16 が除息とオハイオの口と 2.16GW の推論を同じ水曜日に開いたなら、09-17 は、その答えをワシントンと新竹とソウルと上海が別のインクで書いた木曜日である。祝うのは +439 点でもない。工場は NT$514.81B のまま、空のオハイオは口のまま、訓練ではない推論は FIRB のまま、S-1 は空欄のままである。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            声明の本文は、上がった。25bp。3.75–4.00%。12–0。2023年7月以来。Warsh は「too high ... for too long」。夏の数字は underlying を改善していない、と。金融環境を restrictive とは言い難い、とも。ドットは 16/18 が年内もう一回以上。中央値 2026 末 4.1%。PCE 3.7%。会見は 30 分。Trump は切れと言った。十年は水に 4.97%。道は 631 点落ち、費半は +0.63% で残った。利上げとチップを、同じ『需要が折れた』に足すな。片方は資金の価格。片方はウエハの現金。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            填息翌日の本文は、座った。台積電 2,425。+45。+1.89%。高 2,445。開 2,405。水は平盤 2,380。ADR は水に $417.72。法人は権王へ +5,837 張。入帳は 10/8。工場は八月 514.81B、+53.3%、単月 5,000 億の上は初めて、のまま。2,425 と 514.8B を、同じ『需要が戻った』に足すな。片方は填息翌日の算術。片方はウエハの現金。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            転換の本文は、割れた。聯發 4,500。−30。−0.66%。高 4,700。終＝安。転換 4,513.75 の 13.75 下。水は 4,530 で 16 上。同じ木、9600 Pro のベンチは水の口のまま。N2。30B。$220。指数は権王で戻り、端末は高値から売られた。2nm の祝砲は火。転換の上は水。転換の下は木。三つの表を足すな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            工場の指数は、46K と月線を取って、長上影を残した。加権 46,288.00。+439。高 46,874.84。+1,026。高から 587 点。月線 46,025 の上へ三日ぶり。成交 8,194 億。法人は転買 215 億。聯電 147.5（+3.87%）。日月光 614。鴻海 250.5。台達は −1.46%。櫃買は −0.26%。CBC は同じ木曜に 2.00 を据え、GDP を 11.48 へ上げた。利上げの翌朝に、指数は権王で戻り、端末と散熱で吐き、見通しは 11.48 のまま工場を待っている。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            メモリの本文は、口の翌日に割れた。KOSPI 6,715.41。−0.04%。高は約 6,795。SK 1,745k（−0.8%）。サムスン 252.5k。外資は七日 −2.27 兆、累計 13 兆超。船と防衛が受けた。オハイオは未決。2030／2031 は工場の年。Indiana は後工程。16 層は Rubin の口のまま。25 兆は拒否のまま。華邦は水の夜に Infineon の NOR と F-RAM を $1.12B で買い、木は高 180、終 170、終＝安。Spansion は 2027 下。合算 34% は 2025 の足し算。指数の平と、空の工場の口と、NOR の現金を、同じセルに書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            シリコンの本文は、上海に着いた。Atlas 960E。NPO 初。4,096 NPU。8E FP8。HBM 1PB。Hi-ONE 5,500 が 48,000 個の 800G を置換。−550kW。99.8%。960DT は 2027 Q1、三四半期前倒し。960PR は 2027 Q3。970／980 は 2028／2029。クラスタは 51.2 万、マルチトラックで 100 万。910C は 1,000 基超。同じ木曜、Huang は Dumfries に 20 分座り、王は too late と言った。法律は要らない、は火の口。4,096 の席と、20 分の椅子を、同じ『減速した』に足すな。片方はラックの前倒し。片方は憲章の草案。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            米盤の本文は、水の鐘と木の午前に割れた。NVDA 水終 $213.90。+0.82%。木午前 ~$218.8。INTC 水終 $101.05。+4.03%。AMD $512.50。SOX 11,246。+0.63%。TSM ADR $417.72。道は −1.21%。費半は緑。オハイオの口が、空き工場の株を二日動かした。Koa は冬。ガイドは $108B。データセンター $89.0B。出荷は Astra。鋳鉄は草案。S-1 は空欄。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            STAR の本文は、五日目に 500。燧原 +4.82%。高 512.87。市値約 2,152 億。騰訊 83.79%。純損は残る。寒武紀 1,105.99（−2.64%）。十五五は 30 万億、端側チップ、高密度メモリ、数十万卡、の口のまま。星環は 49 港元——下限。掛牌 9/21。納真は今日截飛、掛牌 9/22。計画の本文と、五日目の 500 と、光の目論見書を、同じ『自立が灯った』に足すな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同じ木曜日に並ぶのか。ハードウェアの需要は、もう「GPU が足りない」ではなく、<strong>工場の 514.8B × 填息翌日の 2,425 × 転換の再割れ × オハイオの口 × 4,096 の NPO × 25bp の 12–0 × CBC の 2.00 × 空の S-1 の隣で名乗った 9/22</strong>を同時に読むパイプラインになったからだ。Huang は法律を拒否して Dumfries に座り、上海は 2027 を前倒しした。新竹は 5,000 億を刷ったまま、2,425 で閉じた。ソウルは DRAM を国家機密にして五日目に、メモリを売った。ワシントンは 25bp を全会一致で置き、台北は 2.00 を据えた。利上げと SuperPoD と 2,425 は、同じ『AI が減速した』に足せない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            09-17 はさらに (1) 台積電が 2,425 で +45、高 2,445、工場は 514.81B のまま、(2) 聯發 4,500 が転換 4,513.75 を終値で再び割り、高 4,700、終＝安、(3) 加権 46,288 が +439、高 46,874.84、月線の上、成交 8,194 億、法人 +215 億、(4) KOSPI 6,715.41 がほぼ平、SK 1,745k（−0.8%）、外資七日売り、(5) FOMC が 25bp を 12–0、3.75–4.00%、ドット 16/18、(6) CBC が 2.00% を十回目に据え、GDP 11.48%、CPI 2.03%、(7) Huawei が Atlas 960E を NPO で置き、4,096／8E／1PB、960DT を 2027 Q1 に前倒し、(8) NVDA 水終 $213.90、木午前 ~$218.8、INTC 水終 $101.05、SOX 11,246、(9) 燧原が五日目に 500.00（+4.82%）、寒武紀 1,105.99（−2.64%）、(10) 華邦が $1.12B の NOR を口の翌日に 170 で閉じ、星環 49／9/21、納真截飛／9/22、Summit T-5、S-1 は空欄——を表紙に出した。工場は (1)(3)(6) を、端末は (2) を、メモリは (4)(10) を、米盤は (5)(8) を、上海の席は (7) を、STAR と目論見書は (9)(10) を更新する日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            09-16 が「NT$7 は埋めた、2,380 は平盤、4,530 は転換の上、45,848、KOSPI は 6,717、オハイオは口、2.16GW は推論、燧原は 477、FOMC は今夜、S-1 は空欄」なら、09-17 は「<strong>2,425 は +45、46,288 は月線の上、4,500 は転換の下、KOSPI は 6,715、25bp は 12–0、CBC は 2.00、960E は 4,096、960DT は 2027 Q1、燧原は 500、華邦は 170、S-1 は空欄</strong>」。無料なのは填息翌日の四十五元で、有料なのは 4,513.75 の下に終値が何日残るかと、2,425 が工場の上に残るかと、16 層が Rubin のラックに乗るかと、オハイオが前工程になるかどうかと、960DT が Q1 に出るかと、2.16GW が FIRB を通るかと、25 兆の拒否のあと誰が鉄塔を埋めるかと、$5B が目論見書の行になるかと、500 が顧客集中のまま五日目を越えるかどうかである。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">水曜の自分「声明は夜。CBC は明日」——読んだ。声明は 25bp、12–0。CBC は 2.00 のまま、GDP だけ 11.48 へ上げた。台積電は平盤の翌日に 2,425。工場は 514.8B のまま。聯發は 4,700 まで行って、終値で転換を割った。水曜の上を木曜の安で返すの、最高に 2026 年らしい（笑）。加権は 46K を取って長上影。ソウルはメモリを売って、オハイオは口のまま。同じ木曜、Huang は王の前に 20 分座り、上海は 4,096 枚の NPO を 2027 の席に前倒しした。too late と SuperPoD が、同じ日付に入ってる。燧原は 500。騰訊が 84%。華邦は NOR を 11.2 億ドルで買って、終値は当日の安。S-1 は空欄のまま、Summit が五日後を名乗ってる。祝うのは +439 点でもない。利上げと 2,425 と 4,096 が、同じ木曜日に三つの表を開いたことだ。席は売り切れ。極限は、もう転換の下と FIRB と 2027 Q1 の方が先に名乗っている。オハイオは口。工場は、まだ八月の数字。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">2,425／月線上・4,500&lt;4,513.75・25bp 12–0・CBC 2.00・960E 4,096／2027Q1——木曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年9月17日現在の AI Hardware 分野は、(1) 台積電が 2,425 で +45、高 2,445、工場は八月 NT$514.81B のままであること、(2) 聯發 4,500 が転換 4,513.75 を終値で再び割り、高 4,700、終＝安、(3) 加権 46,288 が +439、高 46,874.84、月線の上、成交 8,194 億、法人 +215 億、(4) KOSPI 6,715.41 がほぼ平、SK 1,745k（−0.8%）、外資七日売り、オハイオは未決、(5) FOMC が 25bp を 12–0、3.75–4.00%、ドット 16/18、(6) CBC が 2.00% を十回目に据え、GDP 11.48%、CPI 2.03%、(7) Huawei が Atlas 960E SuperPoD を NPO で置き、4,096／8E／1PB、960DT を 2027 Q1 に前倒し、(8) NVDA 水終 $213.90、木午前 ~$218.8、INTC 水終 $101.05、SOX 11,246、(9) 燧原が五日目に 500.00（+4.82%）、寒武紀 1,105.99（−2.64%）、(10) 華邦が $1.12B の NOR を口の翌日に 170 で閉じ、星環 49／9/21、納真截飛／9/22、Summit T-5、S-1 は空欄、が重なっている。2026 年 9 月 17 日の評価軸はピーク FLOPS より、<strong>工場の 514.8B と指数の 46,288 を同じセルに書かないこと、填息翌日の 2,425 と 25bp を足さないこと、4,500 の転換再割れと 2nm の祝砲を足さないこと、6,715 のほぼ平とオハイオの口を足さないこと、4,096 の NPO と too late の修辞を足さないこと、NT$7 のあとに 2,425 が残るか、空の S-1</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-industry"></i>
+            <span>TSMC／台湾板視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「2,425 は +45 だ。高は 2,445。水は平盤 2,380。514.8B は八月の工場だ。加権 46,288 は +439。高 46,874。月線は上。長上影。成交 8,194 億。法人は +215 億。CBC は 2.00、十回目。GDP は 11.48。工場と指数と据え置きを、同じセルに書くな。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-mobile-screen"></i>
+            <span>MediaTek／端末視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「4,500 は終値だ。終＝安。転換 4,513.75 は今日、終値で下へ戻った。水は 4,530 で上。高は 4,700。9600 Pro は N2。独立ベンチは水の口。30B は装置端。$220 は提示。2nm の祝砲と、転換の再割れを、同じセルに書くな。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-memory"></i>
+            <span>メモリ／オハイオ視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「6,715 はほぼ平の終値だ。1,745k は SK。252.5k はサムスン。オハイオは口。未決。2030／2031 は工場の年。Indiana は後工程。16 層は Rubin の口のまま。25 兆は拒否のまま。華邦は $1.12B。170 は終＝安。2027 下は交割。条文と棚と空の工場と NOR の現金を、同じセルに書くな。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-fuchsia-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-fuchsia-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-server"></i>
+            <span>Huawei／SuperPoD 視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「4,096 は席だ。8E は FP8。1PB は HBM。NPO は初。960DT は 2027 Q1、三四半期前倒し。910C は 1,000 基超。Huang は Dumfries に 20 分。法律は要らない、は火。too late は木。2.16GW は FIRB のまま。四つの席を、同じセルに書くな。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-dragon"></i>
+            <span>中国チップ／計画視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「500 は五日目だ。+4.82%。高は 512.87。84% は騰訊。純損は残る。1,106 は寒武紀。−2.64%。30 万億は 2030 の口。49 は星環の下限、9/21。32.96 は Ligent。今日截飛。9/22 は掛牌。計画の文と、顧客集中の文と、光の文は、同じセルに書けない。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-line"></i>
+            <span>TCO／日本企業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「買うのは 2,425 の填息翌日でも、4,500 の転換再割れでも、6,715 のほぼ平でも、4,096 の NPO でも、25bp の全会一致でも、500 の五日目でもない。2027 に契約できる HBM の世代とハイ——16 層が Rubin のラックに乗るか、オハイオが前工程になるか後工程の延長になるか、4,513.75 の下に終値が何日残るか、NT$7 のあとに 2,425 が工場の上に残るか、960DT が 2027 Q1 に出るか、2.16GW が FIRB を通るか、降りる粗利がラック単価に乗る幅、$60B が 12 月四半期の行になるか、25 兆の拒否のあと送電網を誰のキャッシュで埋めるか、$5B が目論見書の行になるか、194k Rubin を誰のキャッシュで灯すか、S-1 が数字を置くかだ。板は台湾が 46,288 で月線の上、韓国が 6,715 でほぼ平、米は水の鐘で費半が緑、STAR は 500。木曜に動くのは鐘だけではなく、声明の 25bp と空の工場の口と上海の前倒しである。CBC は 2.00。Summit は、五日後。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-09-17 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: CNA／TWSE 46,288、Yonhap KOSPI、Fed FOMC、CBC、Huawei Connect 960E、Infineon／華邦、$NVDA 水終、上交所 燧原・寒武紀、X議論（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
