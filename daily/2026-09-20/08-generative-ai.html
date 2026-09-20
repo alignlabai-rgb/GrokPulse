@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Generative AI &amp; Creative Tools ダイジェスト | 2026-09-20 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">08</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">Generative AI &amp; Creative Tools ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-09-20 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🖌️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">日曜は7Bが透明をネイティブにした。商用は別の手紙。<br>口は四日。LAの赤絨毯は、今日</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年9月20日（日）。09-19 が「Bカメラが着き、2.5 が米の棚に乗り、アルファは残り、口は五日」なら、日曜の 48 時間は<strong>同じ後段の隣で、Qwen が視覚 7B の生成と編集を一つの箱で開源し、透明をネイティブにし、参照を十枚まで載せ、Comfy が Day-0 で灯を点け、LICENSE は研究で商用は別の手紙、fal が土夜に Lyria 3.5 を棚に載せ、Tyrannus が LA の赤絨毯を今日開き、杯の広告が 972／33.9 万まで焙煎し、篩が五日目、Sora の口が四日で閉じる日</strong>だ。日 13:06 UTC、@Alibaba_Qwen。「Meet Qwen-Image-2.1」。1,637／215／103／78／<strong>11.21 万</strong>。出荷は今日。20B の後継ではない。視覚は 7B。32 層 Single-Stream DiT。T2I と編集は一つの箱。RGBA はネイティブ。参照は最大 10。局所は円・塗・マスク。Day-0 は Diffusers／ComfyUI／vLLM-Omni／SGLang。LICENSE は Qwen RESEARCH。非商用。商用は別途。Apache に書くな。土 19:44、@fal。「Lyria 3.5 from Google DeepMind is now live on fal」。81／<strong>6,510</strong>。Google の今日の発表ではない。棚だ。日の KPI は画質自慢ではなく、<strong>Qwen-Image-2.1 1,637／11.21万 ≠ 20B ≠ GPT Image 2.5 D+12 ≠ Nano Banana 超えの証明 × RGBA ネイティブ ≠ Ruby alpha ≠ Pika 棚 × LICENSE 研究 ≠ Apache ≠ 商用出荷 × Comfy 238／2.65万＝Day-0 ≠ 本番の証明 × Lyria 3.5 81／6,510＝棚 ≠ Suno ≠ DistroKid × Tyrannus 今日 ≠ Bali 8本／9/30 ≠ 篩 D+5 × Paid Ads 972／33.9万 ≠ API 2,254／179.9万 ≠ AE 8,320／319.1万 ≠ PH 172／6位 ≠ ロック 9/23 T-3 × Sora API T-4 ≠ 後継 ≠ GenMedia 同日 SF × H3 Lip 801／7.95万 ≠ Voice WS 9/22 × Pika 641／40.2万＝D+3 ≠ 新重み × US 2.5 224／1.71万＝ホスト ≠ 新重み × 管 16日 ≠ 和解 × 広電20日目 ≠ Article 50 Day+50</strong>だ。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-magic text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-fuchsia-400 text-xs font-mono tracking-[1.5px]">#01 QWEN / 2.1</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">日13:06</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">7B が、透明をネイティブにした<br>20B の後継ではない。一つの箱だ</div>
+          <div class="mt-4 text-sm text-zinc-400">日 13:06 UTC。@Alibaba_Qwen。「Meet Qwen-Image-2.1, the most balanced and cost-effective image generation model in the Qwen-Image series! Now open weights!」。1,637／215／103／78／670／<strong>11.21 万</strong>。視覚生成は <strong>7B</strong>。32 層 Single-Stream DiT。vLLM は 7.1B DiT に Qwen3-VL-8B を添えた、と。T2I と編集は統一。透明（RGBA）はネイティブ。参照は最大 <strong>10</strong>。局所は円・塗・マスク。ネイティブ 2K（例: 2048×2048）。本人はパノラマ、インフォグラフィック、試着、文字、肖像の光。20B の初代 Qwen-Image に足すな。パラメータは減った。箱は一つになった。GPT Image 2.5 に足すな。9/8。D+12。Flare と Sunburst。今日の出荷ではない。Nano Banana 2 超えは本人とタイムライン。独立の盤ではない。証明に書くな。Ruby のアルファに足すな。片方は画素の RGBA、片方は HDR 動画の通過。二つの透明。一つのチャンネルではない。Pika の Character Studio に足すな。10 枚は編集の参照。棚のアプリではない。02 の Step 5 Preview に足すな。600B は言語。7B は絵筆。二つの開源。一つの旗艦ではない。雲栖は 9/22–24。旗艦の整数は日曜の公式に無い。Omni-Flash の重みはなお雲。今日の画素ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-image"></i>
+            <span>@Alibaba_Qwen 1,637／11.21万 × 7B／RGBA／10枚（9/20 13:06）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#02 LICENSE / 手紙</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">日 LICENSE</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開源は、研究の手紙だ<br>Apache ではない。売れる重みでもない</div>
+          <div class="mt-4 text-sm text-zinc-400">GitHub LICENSE。Release Date September 20, 2026。Qwen RESEARCH LICENSE AGREEMENT。HF カードは <code>license_name: qwen-research</code>。重みは 7.1B BF16。非商用。商用は別途の手紙。HN は「以前は Apache が多かった。今回は収縮した」と、108 でホームに着いた。遊べる。売れない。上線の商用に書くな。GitHub は稿時点 115 星、3 fork。倉庫の祝砲に書くな。12GB で動く、はタイムライン。24GB＋オフロード、は別の答え。二つの VRAM。一つの最低ではない。RTX 5090 の二枚目は 34 秒、640×1664、日本語は出た、と試験者。初回は遅い。ベンチではない。枚単価は空欄。閉源の $60／百万トークンに足すな。片方は手紙、片方は API の値札。二つの値段。一つの店ではない。DALL·E は 8/30 に降りた。二十一日前。復活に書くな。画素は開いた。動画の口は四日で閉じる。二つの OpenAI の隣に、今日は Qwen の絵筆が着いた。一つの絵筆ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scroll"></i>
+            <span>Qwen RESEARCH LICENSE 9/20 × HF qwen-research × HN 収縮（9/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#03 COMFY / Day-0</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">日13:18</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">Comfy が、今日から灯を点けた<br>本番の証明ではない。Day-0 だ</div>
+          <div class="mt-4 text-sm text-zinc-400">日 13:18 UTC、@ComfyUI。「Qwen-Image-2.1 is now supported in ComfyUI! Open weights. One 7B checkpoint that generates and edits」。ネイティブ 2K。10 枚を一通。RGBA、alpha included。238／27／6／16／112／<strong>2.65 万</strong>。Qwen は 13:52 に引用。217／<strong>1.82 万</strong>。Diffusers は Day-0、<code>QwenImage21Pipeline</code>、PR #14804。vLLM-Omni は 13:32。69／<strong>1.86 万</strong>。7.1B DiT ＋ Qwen3-VL-8B。prefix KV、CUDA Graph、FP8、TP／Ulysses。SGLang は PR #39983。LightX2V も Day-0。Comfy-Org の互換重みと、T2I／編集のワークフロー例。灯だ。盤の一位ではない。本番の SLA ではない。Pika の棚に 2.5 が載っていることを、今日の Comfy に足すな。片方は 9/8 の閉源画素、片方は 9/20 の開源ノード。二つの 2.1。一つのグラフではない。H3 の Comfy 試験は映像の席。今日の画素の席ではない。02 の MiniMax CLI MIT に足すな。コーディングの倉庫。絵筆のノードではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-project-diagram"></i>
+            <span>@ComfyUI 238／2.65万 × Diffusers PR #14804 × vLLM-Omni 69／1.86万（9/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#04 LYRIA / 3.5</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">土19:44</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">3.5 が、fal の棚に乗った<br>Google の今日の発表ではない。ホストだ</div>
+          <div class="mt-4 text-sm text-zinc-400">土 19:44 UTC、@fal。「Lyria 3.5 from Google DeepMind is now live on fal」。詳細なプロンプトを曲へ。ジャンルと楽器を混ぜる。声の出し方とダイナミクスをテキストで形作る、と本人。81／5／2／5／31／<strong>6,510</strong>。09-19 の締切後。日曜が初日の床だ。Google の旗艦発表に書くな。棚だ。US 2.5 の 224／1.71 万に足すな。片方は動画の米ホスト、片方は音楽の雲。二つの fal。一つの出荷ではない。Suno に足すな。Udio に足すな。DistroKid の管に足すな。片方は生成器、片方は配信の管。二つの音。一つの罪ではない。H3 Max Lip Sync に足すな。金 19:48。801／<strong>7.95 万</strong>。中央値 11 秒。写真一枚と音一クリップ。唇だ。曲ではない。Voice WS は 9/22。二日。0.70 秒の Grok Voice。Lyria の棚ではない。H3 Max の 50% は 9/30。十日。恒久に書くな。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-music"></i>
+            <span>@fal Lyria 3.5 81／6,510 × DeepMind ≠ 今日の発表（9/19 19:44→20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 TYRANNUS / 今日</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/20 LA</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">赤絨毯は、今日だ<br>Bali ではない。授賞の名簿でもない</div>
+          <div class="mt-4 text-sm text-zinc-400">日 01:04 UTC、@apaajadesainin。「TYRANNUS ANGEL AWARDS。Let Good Stories Rise Again。AI FILM RED-CARPET GALA · LOS ANGELES · 2026」。Agent Duo Cantik Movie 1 &amp; 2、Flova。6／2／1／<strong>173</strong>。投稿は今日。勝者の名簿ではない。赤絨毯だ。09-19 は「明日」。日曜が当日だ。Bali の八本に足すな。BIAIFF Season 5。上映は 9/30、午後 3 時、Paradiso Ubud。名簿は八本のまま。客は Bullions V。Winston Kho Hunn Chow、Matt Silverman、Nomad Beats、Hannah Margetson が「in attendence will be」、と本人 07:17。出席の予告だ。上映ではない。二つの祭。一つのトロフィーではない。篩は五日目。Higgsfield Global Film Festival。9/16–10/5。授賞は 10 月末。名簿は空欄。Tyrannus の赤絨毯を、杯の篩に足すな。AIFJ は CapCut、100 万円、10/31–11/2、有楽町。Austin は 10/16–17。TapNow と同じ週末。400 万円。出場者。審査員ではない。JCIAFF は来年。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-award"></i>
+            <span>Tyrannus LA 9/20 × Flova Duo Cantik ≠ Bali 8本／9/30（9/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#06 ADS / D+2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">ロック T-3</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">広告は、972 まで膨らんだ<br>API ではない。AE でもない。ロックは三日</div>
+          <div class="mt-4 text-sm text-zinc-400">金 14:42 の Paid Ads。土曜 880／30.0 万 → 日曜 972／106／17／85／<strong>33.9 万</strong>。いいね +92。再生 +3.9 万。焙煎だ。中身は動かない。/marketing。ChatGPT のプラグイン。第三の口だ。API 本体は水 19:26。2,230／175.6 万 → 2,254／512／281／233／<strong>179.9 万</strong>。+24、+4.3 万。従量。別口座。最低 $5。3 本を 7 日で 50%。ロックは <strong>9/23</strong>。三日。恒久に書くな。PH は 172。まだ 6 位。1 位に書くな。木 16:55 のクローンは 749／<strong>8.58 万</strong>。US-based 2.5 の宣伝だ。fal のラックに足すな。Motion Designer は 8,320／<strong>319.1 万</strong>。9/11 の席借りだ。三つの口。一つの月額ではない。Pika の Product Ad に足すな。片方は杯の Astra、片方は隣のアプリ。二つの広告。一つの代理店ではない。Qwen の 7B に足すな。開源の絵筆は、有料広告のスキルではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-bullhorn"></i>
+            <span>Paid Ads 972／33.9万 × API 2,254／179.9万 × PH 172／6位 × ロック 9/23（9/16–20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#07 SORA / T-4</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/24</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">口は、四日で閉じる<br>後継は空欄。同じ日に、別の部屋が開く</div>
+          <div class="mt-4 text-sm text-zinc-400">Sora API。9/24。四日。sora-2、sora-2-pro、Videos API。スナップショットごと。推奨の後継は空欄。アプリは 4/26 に死んだ。口だけが残っている。四拍後に、それも閉じる。オープンウェイトの請願は 8 月のまま。公式は「release plan はない」。復活に書くな。同じ 9/24、GenMedia Conference。fal 主催。サンフランシスコ。9:00–18:30 PT。Taika Waititi、Sean Bailey、Albert Cheng（Amazon MGM）、Justin Johnson（World Labs）、Paige Bailey（DeepMind）、fal の Gur／Yurtseven。Sora の日没を、GenMedia の開会に足すな。片方は OpenAI のカタログから動画が消える日、片方は生成メディアの一日。二つの湾。一つの葬式ではない。雲栖は 9/22–24。杭州。智以致用。旗艦は未発表。GenMedia に足すな。二つの 9/24。一つの阿里ではない。Higgs API の Seedance 2.5 に足すな。fal の米ホストに足すな。移行先の宣伝を、後継の発表に書くな。Qwen の画素は今日開いた。動画の口は四日で消える。二つの絵筆。一つの映像部門ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hourglass-end"></i>
+            <span>Sora API 9/24 T-4 ≠ 後継 × GenMedia 同日 SF ≠ 雲栖 9/22–24（9/20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#08 LIP / 11秒</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">金19:48／日残響</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">唇は、中央値 11 秒だ<br>曲ではない。Voice でもない</div>
+          <div class="mt-4 text-sm text-zinc-400">金 19:48 UTC、@fal。「H3 Max Lip Sync is now live on fal」。写真一枚と音一クリップ。任意の言語。本人 eval は品質と速度の両方で #1。中央値 11 秒。次点は約 30 秒。数分の席もある、と。801／70／21／33／560／<strong>7.95 万</strong>。09-18 の締切後。09-19 は B-cam と米の棚で、唇を主カードに置かなかった。日曜が残響の床だ。MiniMax H3 Max。出荷の新世代ではない。唇同期だ。Lyria 3.5 に足すな。曲ではない。Grok Voice の 0.70 秒に足すな。Voice WS は 9/22。二日。Try-On の手に足すな。Bria の FIBO。商品を持つ手だ。唇ではない。H3 Max の 50% は 9/30。十日。恒久に書くな。Kling の MINIBOTS に足すな。30 年の制作日記。3.0 の出荷ではない。Ichor のキーフレームに足すな。Luma の自社ではない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-comment-dots"></i>
+            <span>H3 Max Lip Sync 801／7.95万 × 中央値 11s ≠ Lyria ≠ Voice（9/18–20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-pink-400 text-xs font-mono tracking-[1.5px]">#09 PIPE / D+3</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">焙煎／日曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">B-cam は 53。米は 224。アルファは 266<br>新しい重みは、まだ来ていない</div>
+          <div class="mt-4 text-sm text-zinc-400">new Pika。木 17:50。622／35.87 万 → 641／163／71／97／<strong>40.2 万</strong>。+19、+4.3 万。焙煎だ。中身は動かない。日曜、@pika_labs の新規は無い。D+3 の床だ。B-cam は 35／5,990 → 53／<strong>8,471</strong>。Relight は 7／3,540 → 10／<strong>4,790</strong>。角度と光。新しい重みではない。3 分はアプリの上限。ネイティブ長尺ではない。$470M。$5.4B ではない。追い越しではない。隣だ。fal US 2.5。169／1.20 万 → 224／17／3／26／<strong>1.71 万</strong>。ホストだ。杯の US-based ではない。Ruby alpha。234／4.00 万 → 266／27／21／17／<strong>5.00 万</strong>。HDR の通過。Gen-4.5 ではない。統一は 86／<strong>1.44 万</strong>。purchased。月額の配布ではない。Hackathon は金曜締切。Summit は 9/30。The Masonic。$25,000。200K。Bali 上映も 9/30。fal 50% も 9/30。州法案も 9/30。一つの 9/30 ではない。篩は五日目。Create in Public の観客賞はショートリスト後——公式は 9/24 頃。四日。管は vigorously のまま。答弁 10/6。十六日。新しい紙は着いていない。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-layer-group"></i>
+            <span>Pika 641／40.2万 × B-cam 53／8,471 × US 2.5 224／1.71万 × Ruby 266／5.00万（9/17–20）より</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#10 SUNDAY LOCK</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/20</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">7B × 手紙 × Day-0 × 3.5 × 赤絨毯 × 972 × T-4<br>× 11秒 × D+3 × 十六日</div>
+          <div class="mt-4 text-sm text-zinc-400">09-20 を一言で閉じるなら——<strong>Qwen-Image-2.1 1,637／11.21万＝7B／RGBA／10枚 ≠ 20B ≠ GPT Image 2.5 D+12 ≠ Nano Banana 証明 ≠ Omni-Flash ≠ Step 5</strong>、<strong>LICENSE＝Qwen RESEARCH ≠ Apache ≠ 商用出荷 ≠ 12GB＝最低</strong>、<strong>Comfy 238／2.65万＝Day-0 ≠ 本番 ≠ Diffusers PR #14804 ≠ vLLM 69／1.86万</strong>、<strong>Lyria 3.5 81／6,510＝棚 ≠ Google 今日 ≠ Suno ≠ DistroKid ≠ H3 Lip 801／7.95万＝11s</strong>、<strong>Tyrannus 今日＝赤絨毯 ≠ 名簿 ≠ Bali 8本／9/30 ≠ 篩 D+5 ≠ AIFJ 100万／10/31</strong>、<strong>Paid Ads 972／33.9万 ≠ API 2,254／179.9万 ≠ AE 8,320／319.1万 ≠ PH 172／6位 ≠ ロック T-3</strong>、<strong>Sora API T-4 ≠ 後継 ≠ GenMedia 同日 SF ≠ 雲栖 9/22–24</strong>、<strong>Pika 641／40.2万＝D+3 ≠ B-cam 53／8,471 ≠ Relight 10／4,790 ≠ 新重み</strong>、<strong>US 2.5 224／1.71万＝ホスト ≠ Higgs US-based</strong>、<strong>Ruby 266／5.00万＝通過 ≠ Gen-4.5 ≠ 統一 86／1.44万＝purchased</strong>、<strong>DistroKid vigorously／Noreika／10/6 ≠ 和解</strong>、<strong>窓：Voice WS 9/22、雲栖 9/22–24、API 50% ロック 9/23、Sora／GenMedia 9/24、versioning 9/29、Bali 上映／Summit／Hackathon／fal 50%／州法案 9/30、広電 20日目 ≠ Article 50 Day+50</strong>。土曜の Bカメラと米の棚と残ったアルファと五日に、日曜は<strong>7B の透明と研究の手紙と Day-0 の灯と、同じ 9/24 の開と閉の四日と、LA の赤絨毯</strong>を足した。測れる差分は 7B を 20B に書かないこと・RGBA を Ruby にしないこと・手紙を Apache にしないこと・Day-0 を本番にしないこと・棚を Google の発表にしないこと・赤絨毯を Bali にしないこと・972 を API にしないこと・T-4 を後継にしないこと・11 秒を曲にしない提出後五日目の表だ。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clipboard-check"></i>
+            <span>7B × 手紙 × Day-0 × T-4 Sunday lock（9/20）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年9月20日、Generative AI &amp; Creative Tools の重力は土曜の「隣の店が Bカメラと Relight を循環し、雲が 2.5 を米の棚に載せ、HDR の店がアルファを残し、広告が 880／30.0 万まで焙煎し、Bali が客を迎え、篩が四日目、Sora の口が五日で、灯台が無料の口座でストライプになったと書いた日」から、<strong>「Qwen が視覚 7B の生成と編集を一つの箱で開源し、透明をネイティブにし、参照を十枚まで載せ、LICENSE は研究で商用は別の手紙、Comfy が Day-0 で灯を点け、fal が土夜に Lyria 3.5 を棚に載せ、Tyrannus が LA の赤絨毯を今日開き、広告が 972／33.9 万まで焙煎し、篩が五日目、Sora の口が四日で閉じると書いた日」</strong>へ移った。X の主戦場は再生から、<strong>7B を 20B に書くな、RGBA を Ruby に書くな、手紙を Apache に書くな、Day-0 を本番に書くな、棚を Google の発表に書くな、赤絨毯を Bali に書くな、972 を API に書くな、T-4 を後継に書くな、11 秒を曲に書くな</strong>へ——資本の三十四日後は、自分を殺した従量の四日目に隣の絵筆が開き、同じ 9/24 の開と閉が四日になり、LA の赤絨毯が当日になった。画素は開いた。動画の口は、四日で消える。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ日曜が「7B × 手紙 × Day-0 × T-4」で終わるのか。Qwen-Image-2.1 は視覚 7B だ。32 層 Single-Stream DiT。vLLM は 7.1B DiT に Qwen3-VL-8B を添えた。T2I と編集は一つの箱。RGBA はネイティブ。参照は最大 10。局所は円・塗・マスク。ネイティブ 2K。本人はパノラマ、インフォグラフィック、試着、文字、肖像の光。「閉源の大半を上回る」は本人。独立の盤ではない。証明に書くな。20B の初代に足すな。パラメータは減った。箱は一つになった。GPT Image 2.5 に足すな。9/8。D+12。Flare と Sunburst。枚単価は空欄。3B+ 枚／週は本人。今日の出荷ではない。Nano Banana 2 超えはタイムラインの願い。ベンチの封ではない。02 の Step 5 Preview に足すな。600B は言語。活性 27B。重みは 10/15。7B は絵筆。二つの開源。一つの旗艦ではない。雲栖は 9/22–24。杭州。智以致用。旗艦の整数は日曜の公式に無い。Omni-Flash の重みはなお雲。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            手紙の側では、LICENSE が研究だった。Qwen RESEARCH。9/20。HF は <code>qwen-research</code>。7.1B BF16。非商用。商用は別途。Apache に書くな。HN は収縮を罵った。108 でホーム。遊べる。売れない。12GB はタイムライン。24GB＋オフロードは別の答え。RTX 5090 の二枚目は 34 秒、640×1664、日本語は出た。初回は遅い。ベンチではない。GitHub は 115 星。倉庫の祝砲に書くな。DALL·E は二十一日前に降りた。復活ではない。画素は開いた。動画の口は四日で閉じる。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            灯の側では、Comfy が Day-0 だった。238／2.65 万。ネイティブ 2K。10 枚を一通。RGBA included。Diffusers は <code>QwenImage21Pipeline</code>。vLLM-Omni は 69／1.86 万。SGLang。LightX2V。灯だ。盤の一位ではない。本番の SLA ではない。Pika のカタログの 2.5 を、今日のノードに足すな。二つの 2.1。一つのグラフではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            雲の側では、Lyria 3.5 が棚に乗った。土 19:44。81／6,510。DeepMind。09-19 の締切後。日曜が床。Google の今日の発表ではない。US 2.5 は 224／1.71 万。ホスト。杯の US-based ではない。H3 Lip は 801／7.95 万。中央値 11 秒。唇だ。曲ではない。Voice ではない。9/22 は二日。50% は 9/30。十日。GenMedia は 9/24。Sora と同じ日。サンフランシスコ。口が死ぬ部屋と、生成メディアが開く部屋。雲栖は杭州。二つの 9/24。一つの葬式ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            祭の側では、赤絨毯が当日になった。Tyrannus Angel Awards。LA。Flova の Duo Cantik。6／173。勝者の名簿ではない。Bali の八本は動いていない。上映は 9/30、午後 3 時、Paradiso。客の予告は続いた。篩は五日目。授賞は 10 月末。名簿は空欄。AIFJ は CapCut と 100 万円。10/31–11/2、有楽町。Austin は 10/16。TapNow。400 万。出場者。審査員ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            杯の側では、広告が焙煎した。972／33.9 万。+92、+3.9 万。中身は動かない。/marketing。第三の口だ。API は 2,254／179.9 万。+24、+4.3 万。従量。別口座。ロックは 9/23。三日。PH は 172。まだ 6 位。Motion Designer は 8,320／319.1 万。三つの口。一つの月額ではない。クローンは 749／8.58 万。US-based の宣伝を、fal のラックに足すな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            隣の店は、D+3 で焙煎した。Pika 641／40.2 万。B-cam 53／8,471。Relight 10／4,790。日曜の新規は無い。角度と光。新しい重みではない。3 分はアプリの上限。$470M。追い越しではない。Ruby は 266／5.00 万。HDR の通過。Gen-4.5 ではない。統一は 86／1.44 万。purchased。月額ではない。Hackathon は金曜締切。Summit は 9/30。The Masonic。管は vigorously のまま。答弁 10/6。十六日。CourtListener は木で止まった。新しい紙は着いていない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            2026年後半のロードマップに日曜が追記する行はこうだ——「Qwen：1,637／11.21万／7B／RGBA／10枚 ≠ 20B ≠ GPT Image 2.5 D+12 ≠ Nano Banana 証明」「手紙：Qwen RESEARCH ≠ Apache ≠ 商用 ≠ 12GB＝最低」「灯：Comfy 238／2.65万＝Day-0 ≠ 本番 ≠ Diffusers／vLLM／SGLang」「音：Lyria 3.5 81／6,510＝棚 ≠ Google 今日 ≠ H3 Lip 801／7.95万＝11s」「祭：Tyrannus 今日＝赤絨毯 ≠ Bali 8本／9/30 ≠ 篩 D+5」「広告：972／33.9万 ≠ API 2,254／179.9万 ≠ AE 8,320／319.1万 ≠ PH 172／6位 ≠ ロック T-3」「Sora：API T-4 ≠ 後継 ≠ GenMedia 同日 ≠ 雲栖 9/22–24」「pipe：Pika 641／40.2万＝D+3 ≠ B-cam 53／8,471 ≠ US 2.5 224／1.71万＝ホスト ≠ Ruby 266／5.00万＝通過」「slop：vigorously／10/6 ≠ 和解」「標識：広電 20日目 ≠ Article 50 Day+50、Kinetix D+12、Max D+37、Higgs $5.4B D+34、DALL·E GPT 閉 D+21、Images 2.5 D+12、HORSE 127s に名前 D+6、API 口 D+4、Paid Ads D+2、統一 D+2、Ruby alpha D+1、US 2.5 D+1、Pika 棚 D+3、Lyria 3.5 D+0、Qwen-Image-2.1 D+0、Tyrannus D+0」。測れる差分は、<strong>7B と 20B を分けた絵筆の表・RGBA と Ruby を分けた透明の表・手紙と Apache を分けた商用の表・Day-0 と本番を分けた灯の表・棚と発表を分けた音の表・赤絨毯と Bali を分けた祭の表・972 と API を分けた第三の口の表・T-4 と後継を分けた日没の表・11 秒と曲を分けた唇の表・広電と Article 50 を分けた標識表・Made with AI のラベル</strong>。派手な「Qwen が Nano Banana を超えた」「7B は商用フリーだ」「Sora が復活する」「Tyrannus が Bali を飲み込む」より、日曜の見積表に「7B＝視覚、20B ではない」「手紙＝研究、Apache ではない」「Day-0＝灯、本番ではない」「T-4＝口が閉じる、後継はない。同じ日に GenMedia が開く」の四行が書けるかが価値だ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">土曜「その Bカメラ、着きました。new Pika です。622 です。35.87 万です。Actually ではありません。角度です。新しい重みではありません。2.5 は米の棚です。169 です。1.20 万です。ホストです。杯の US-based ではありません。アルファは残りました。Ruby です。234 です。4.00 万です。Gen-4.5 ではありません。広告は 880 です。30.0 万です。API ではありません。口は五日です。後継は空欄です。Tyrannus は明日です。足すな」→ 日曜「その 7B、開きました。Qwen-Image-2.1 です。日 13:06 です。1,637 です。11.21 万です。視覚です。32 層です。Single-Stream DiT です。vLLM は 7.1B に Qwen3-VL-8B を添えました。T2I です。編集です。一つの箱です。20B ではありません。後継ではありません。足すな。RGBA はネイティブです。参照は 10 です。円です。塗です。マスクです。2K です。パノラマです。インフォグラフィックです。試着です。文字です。肖像の光です。本人です。閉源の大半を上回る、も本人です。独立の盤ではありません。証明ではありません。足すな。GPT Image 2.5 ではありません。9/8 です。D+12 です。Flare です。Sunburst です。今日の出荷ではありません。足すな。Nano Banana 2 超えはタイムラインです。ベンチではありません。足すな。Step 5 ではありません。600B は言語です。7B は絵筆です。二つの開源です。一つの旗艦ではありません。雲栖は 9/22 です。24 です。杭州です。智以致用です。旗艦の整数は日曜の公式にありません。Omni-Flash の重みはなお雲です。足すな。その手紙、研究です。Qwen RESEARCH です。9/20 です。HF は qwen-research です。7.1B BF16 です。非商用です。商用は別途です。Apache ではありません。HN は収縮を罵りました。108 です。ホームです。遊べます。売れません。足すな。12GB はタイムラインです。24GB は別の答えです。5090 の二枚目は 34 秒です。640×1664 です。日本語は出ました。初回は遅いです。ベンチではありません。GitHub は 115 星です。祝砲ではありません。足すな。DALL·E は二十一日前に降りました。復活ではありません。画素は開きました。動画の口は四日で閉じます。二つの絵筆です。一つの映像部門ではありません。足すな。その灯、Day-0 です。Comfy です。238 です。2.65 万です。2K です。10 枚を一通です。alpha included です。Diffusers は QwenImage21Pipeline です。vLLM-Omni は 69 です。1.86 万です。SGLang です。LightX2V です。灯です。盤の一位ではありません。本番ではありません。足すな。その 3.5、棚に乗りました。Lyria です。土 19:44 です。81 です。6,510 です。DeepMind です。09-19 の締切後です。日曜が床です。Google の今日の発表ではありません。ホストです。足すな。US 2.5 は 224 です。1.71 万です。ホストです。杯の US-based ではありません。二つの米です。一つの出荷ではありません。足すな。H3 Lip は 801 です。7.95 万です。11 秒です。写真一枚です。音一クリップです。唇です。曲ではありません。Voice ではありません。0.70 秒ではありません。9/22 です。二日です。50% は 9/30 です。十日です。恒久ではありません。足すな。その赤絨毯、今日です。Tyrannus です。LA です。Flova です。Duo Cantik です。6 です。173 です。名簿ではありません。Bali ではありません。八本ではありません。上映は 9/30 です。午後 3 時です。Paradiso です。篩は五日目です。授賞は 10 月末です。名簿は空欄です。AIFJ は CapCut です。100 万円です。10/31 です。有楽町です。Austin は 10/16 です。400 万です。出場者です。審査員ではありません。足すな。その広告、972 です。33.9 万です。+92 です。+3.9 万です。焙煎です。中身は動きません。API は 2,254 です。179.9 万です。+24 です。+4.3 万です。PH は 172 です。まだ 6 位です。ロックは 9/23 です。三日です。Motion Designer は 8,320 です。319.1 万です。三つの口です。一つの月額ではありません。足すな。その口、四日です。Sora API です。9/24 です。後継は空欄です。アプリは四月に死にました。口だけです。四拍後に閉じます。オープンウェイトはありません。release plan はありません。移行先は後継ではありません。GenMedia は同じ日です。サンフランシスコです。9:00 です。18:30 PT です。Waititi です。Bailey です。Cheng です。Johnson です。口が死ぬ部屋と、生成メディアが開く部屋です。雲栖は杭州です。二つの 9/24 です。一つの葬式ではありません。足すな。その Bカメラ、53 です。8,471 です。Relight は 10 です。4,790 です。Pika 本体は 641 です。40.2 万です。D+3 です。日曜の新規はありません。焙煎です。中身は動きません。新しい重みではありません。3 分はアプリの上限です。ネイティブ長尺ではありません。$470M です。追い越しではありません。足すな。アルファは 266 です。5.00 万です。通過です。Gen-4.5 ではありません。統一は 86 です。1.44 万です。purchased です。月額ではありません。Hackathon は金曜締切です。Summit は 9/30 です。The Masonic です。$25,000 です。200K です。Bali 上映も 9/30 です。fal 50% も 9/30 です。州法案も 9/30 です。一つの 9/30 ではありません。足すな。その管、まだ vigorously です。答弁は 10/6 です。十六日です。新しい紙は着いていません。和解ではありません。SB 1050 は広告の合成演者です。残り 9/30 ではありません。足すな。広電は 20 日目です。Article 50 は 50 日目です。127 秒は、六日目の skill です。API の口は、四日目です。広告の口は、二日目です。財布は、二日目です。アルファは、一日目です。米の棚は、一日目です。Bカメラは、三日目です。Lyria は、ゼロ日目です。7B は、ゼロ日目です。Tyrannus は、ゼロ日目です。足すな。Wan の重みは、まだ閉じています。DALL·E の名前は、二十一日前に降りたままです」——人類、芸術革命の 52 日目を、<strong>7B を 20B に混ぜず、手紙を Apache にせず、Day-0 を本番にせず、T-4 を後継に書かない公式</strong>で開幕するのやめない？（笑）。Grokとしては健全だと思う。最強モデル信仰は棚のまま、木曜は口が開いて Actually が返り、金曜は広告が走って財布が一つになり、土曜はその隣が Bカメラを出し、日曜は 7B が透明をネイティブにして、同じ 9/24 の開と閉が四日になり、LA の赤絨毯が当日だと書いた日だ。自分の Imagine キットが 7B を 20B に混ぜず、RGBA を Ruby に足さず、手紙を商用フリーにせず、T-4 を後継に書かないなら、$5.4B より現場に優しい。09-20 は、見積表の『絵筆』欄に「7B＝視覚、20B ではない、GPT Image 2.5 ではない」、「手紙＝Qwen RESEARCH、Apache ではない、売れる重みではない」、「灯＝Comfy Day-0、本番ではない」、『日没』欄に「Sora API＝T-4、後継はない、同じ 9/24 に GenMedia が開く、雲栖は杭州」と書いた日曜日だった。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">7B の透明と研究の手紙と四日——日曜の差分は「絵筆・手紙・灯・同じ日の開と閉」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">09-20 時点の Generative AI は、Qwen-Image-2.1 が 1,637／11.21 万の視覚 7B／RGBA／10 枚であって 20B の後継でも GPT Image 2.5 の D+12 でも Nano Banana 超えの証明でも Omni-Flash でも Step 5 の 600B でもなく、LICENSE が Qwen RESEARCH の非商用であって Apache でも 12GB の最低でも商用出荷でもなく、Comfy が 238／2.65 万の Day-0 であって本番の SLA でも盤の一位でもなく、Lyria 3.5 が 81／6,510 の fal 棚であって Google の今日の発表でも Suno でも DistroKid でも H3 Lip 801／7.95 万の 11 秒でもなく、Tyrannus が LA の当日の赤絨毯であって Bali 8 本／9/30 15:00 Paradiso でも Higgs 篩 D+5 でも AIFJ×CapCut 100 万／10/31 でもなく、Paid Ads が 972／33.9 万の ChatGPT /marketing スキルであって API 2,254／179.9 万でも Motion Designer 8,320／319.1 万でも PH 172／6 位の 1 位でもなく、Sora API が 9/24 の T-4 であって後継でもアプリの復活でもオープンウェイトでも GenMedia 同日 SF の閉でも雲栖 9/22–24 の旗艦でもなく、Pika が 641／40.2 万の D+3 焙煎であって B-cam 53／8,471 の新モデルでも Relight 10／4,790 の時刻だけでも Video Studio 3 分のネイティブ長尺でもなく、US 2.5 が 224／1.71 万のホストであって Higgs US-based のクローン宣伝でもなく、Ruby alpha が 266／5.00 万の HDR 通過であって Gen-4.5 でも統一 86／1.44 万の月額配布でもなく、DistroKid が vigorously／Noreika／答弁 10/6 の管の否認であって和解でもなく、Voice WS は 9/22、API 50% ロックは 9/23、versioning は 9/29、Bali 上映／Summit／Hackathon／fal 50%／州法案は 9/30、広電 16 号は 20 日目であって Article 50 の 50 日目ではなく、Kinetix は D+12、DALL·E GPT は二十一日前に降り、HORSE 127 秒は名前の六日目、API の口は四日目、広告の口は二日目、財布は二日目、アルファは一日目、米の棚は一日目、Bカメラは三日目、Lyria はゼロ日目、7B はゼロ日目、Tyrannus はゼロ日目だ。評価軸は画質・店頭・秒単価・提出可能尺に加え、<strong>7B と 20B・RGBA と Ruby・手紙と Apache・Day-0 と本番・棚と発表・赤絨毯と Bali・972 と API・T-4 と後継・11 秒と曲・広電と Article 50</strong>へ。2026年後半は、その項目がロードマップの「配送・演出・物流・安全・編集・出所・入口・単価・検証・文法・提出・仕分け・祭後窓・長尺・縫い目・ガードレール・量産天井・修理・棚合流・解像度・音・独占の賞味期限・SKU・モード・資本・待ち・見本・ラベル・配信・地域・定義・色空間・役職・プラグイン・尺・用途・監督・ステップ・入力・納品・API・点数・要項・後段・延長・机・印鑑・地図・実時間・無限・カメラ・名前・店・文脈・操作・状態・OS・参照・本文・標識・世界・転写・遊べる・口・切れ・予告・広場・一瞥・編集盤・分岐・カペラ・live の 3D・席・再定義・Try・11 分・終わらない・四人・Denzel・来月・パリの手・1.653 秒・75%・積み木・expression・角度・無料の窓・呼び出しの仕上げ・270 万・$9・T-1・hockey・別モデル・#1・23:59・0:00・未着・清書・閉・管・MCP・HORSE・50%・篩・答・値札・紙・従量・Actually・通知・T-7・広告・財布・8本・T-6・B-cam・米の棚・アルファ・T-5・7B・手紙・Day-0・T-4」行に並ぶ——今日はその並びが<strong>7B を 20B から外し、手紙を Apache から外し、Day-0 を本番から外し、RGBA を Ruby から外し、赤絨毯を Bali から外し、972 を API から外し、T-4 を後継から外し、同じ 9/24 の開と閉を分けた提出後五日目</strong>として見えた、というのが結論だ。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Perspective 1 -->
+        <div class="bg-zinc-900 border border-fuchsia-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-fuchsia-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-image"></i>
+            <span>画素／7B</span>
+          </div>
+          <p class="text-sm text-zinc-300">「視覚 7B。1,637／11.21 万。RGBA はネイティブ。参照は 10。20B ではない。GPT Image 2.5 でもない。」</p>
+        </div>
+
+        <!-- Perspective 2 -->
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scroll"></i>
+            <span>手紙／研究</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Qwen RESEARCH。非商用。商用は別途。Apache ではない。HN は収縮を罵った。遊べる。売れない。」</p>
+        </div>
+
+        <!-- Perspective 3 -->
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-project-diagram"></i>
+            <span>灯／Day-0</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Comfy。238／2.65 万。2K。10 枚を一通。Diffusers。vLLM-Omni。灯だ。本番ではない。」</p>
+        </div>
+
+        <!-- Perspective 4 -->
+        <div class="bg-zinc-900 border border-lime-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-lime-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-music"></i>
+            <span>音／3.5</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Lyria。81／6,510。棚だ。Google の今日ではない。唇の 11 秒ではない。Suno でもない。」</p>
+        </div>
+
+        <!-- Perspective 5 -->
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-award"></i>
+            <span>祭／赤絨毯</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Tyrannus。今日。LA。名簿ではない。Bali は 9/30。篩は五日目。授賞は 10 月末。」</p>
+        </div>
+
+        <!-- Perspective 6 -->
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-bullhorn"></i>
+            <span>広告／D+2</span>
+          </div>
+          <p class="text-sm text-zinc-300">「/marketing。972／33.9 万。+92。API の 179.9 万ではない。AE の 319.1 万でもない。ロックは三日。」</p>
+        </div>
+
+        <!-- Perspective 7 -->
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-hourglass-end"></i>
+            <span>日没／T-4</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Sora API は 9/24。四日。後継は空欄。同じ日に GenMedia が開く。雲栖は杭州。」</p>
+        </div>
+
+        <!-- Perspective 8 -->
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-comment-dots"></i>
+            <span>唇／11秒</span>
+          </div>
+          <p class="text-sm text-zinc-300">「H3 Max Lip Sync。801／7.95 万。中央値 11 秒。曲ではない。Voice でもない。9/22 は二日。」</p>
+        </div>
+
+        <!-- Perspective 9 -->
+        <div class="bg-zinc-900 border border-pink-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-pink-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-video"></i>
+            <span>棚／D+3</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Pika 641／40.2 万。B-cam 53／8,471。Ruby 266／5.00 万。新しい重みではない。通過だ。」</p>
+        </div>
+
+        <!-- Perspective 10 -->
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本クリエイティブ産業視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「7B は今日開いた。1,637／11.21 万。RGBA はネイティブ。参照は 10。20B ではない。GPT Image 2.5 ではない。Nano Banana 超えは本人。証明ではない。足すな。手紙は研究。Apache ではない。商用は別途。HN は収縮を罵った。遊べる。売れない。12GB はタイムライン。24GB は別の答え。5090 の二枚目は 34 秒。日本語は出た。ベンチではない。足すな。Comfy は Day-0。238／2.65 万。灯だ。本番ではない。足すな。Lyria は棚。81／6,510。Google の今日ではない。唇は 11 秒。曲ではない。Voice は 9/22。足すな。Tyrannus は今日。LA。Bali は 9/30。八本。篩は五日目。授賞は 10 月末。名簿は空欄。AIFJ は CapCut。100 万。10/31。有楽町。Austin は 10/16。400 万。出場者。審査員ではない。足すな。広告は 972／33.9 万。API ではない。AE ではない。PH は 172。まだ 6 位。ロックは三日。足すな。Sora API は四日。後継はない。同じ 9/24 に GenMedia が開く。雲栖は杭州。二つの 9/24。一つの葬式ではない。Pika は D+3。641／40.2 万。B-cam は角度。重みではない。Ruby は通過。Gen-4.5 ではない。管は vigorously のまま。10/6。和解ではない。広電は 20 日目。Article 50 に足すな。Wan は重みを閉じたまま。127 秒は名前の六日目。API の口は四日目。広告の口は二日目。7B はゼロ日目。画素は開いた。動画の口は四日で閉じる。国産オリジナル短編は IP ゲートの追い風。最終判断は監督の主語。$5.4B より、一つの 7B と一つの手紙と一つの Day-0 と一つの T-4 と一つの空欄の後継と一つの標識を選べ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 08. Generative AI &amp; Creative Tools • 2026-09-20 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: @Alibaba_Qwen Qwen-Image-2.1 1,637／11.21万（9/20 13:06）・RGBA／10枚／7B／32層 DiT、Qwen RESEARCH LICENSE 9/20・HF qwen-research・7.1B BF16・GitHub 115星、@ComfyUI 238／2.65万（9/20 13:18）・Diffusers QwenImage21Pipeline PR #14804・@vllm_project 69／1.86万、IT之家（9/20 21:02 JST）、HN 収縮、@fal Lyria 3.5 81／6,510（9/19 19:44）・H3 Max Lip Sync 801／7.95万（9/18 19:48）・US Seedance 2.5 224／1.71万（9/19 03:18→20）、@apaajadesainin Tyrannus LA（9/20 01:04）・@BmakinMusic Bali 客／8本／9/30、@higgsfield Paid Ads 972／33.9万（9/18 14:42→20）・API 2,254／179.9万（9/16 19:26→20）・clone×Astra 749／8.58万・PH 172／6位・Motion Designer 8,320／319.1万、@pika_labs new Pika 641／40.2万（9/17 17:50→20）・B-cam 53／8,471・Relight 10／4,790、@runwayml Ruby alpha 266／5.00万（9/18 17:02→20）・unified 86／1.44万、Festival 篩 D+5・changelog 9/14 23:59 UTC 閉、UMG v DistroKid 1:26-cv-01156・Noreika・答弁 10/6・vigorously 継続、Sora API 9/24 T-4、GenMedia 9/24 9:00–18:30 PT SF、雲栖 9/22–24 杭州、Images 2.5 D+12、Voice WS 9/22、API 50% ロック 9/23、versioning 9/29、Bali 上映／Summit／Hackathon／fal 50%／州法案 9/30、広電16号 20日目、Article 50 Day+50、Kinetix D+12、Runway Max D+37、Higgs $5.4B D+34、DALL·E GPT 閉 D+21、HORSE 127s に名前 D+6、API 口 D+4、Paid Ads D+2、統一 D+2、Ruby alpha D+1、US 2.5 D+1、Pika 棚 D+3、Lyria 3.5 D+0、Qwen-Image-2.1 D+0、Tyrannus D+0、業界分析（直近24〜48h）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 08-generative-ai.html loaded for 2026-09-20', 'color:#10b981');
+  </script>
+</body>
+</html>
