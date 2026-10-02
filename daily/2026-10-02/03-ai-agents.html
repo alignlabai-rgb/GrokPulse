@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-10-02 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-10-02 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧰</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">端末は、一人のまま。続きは、実験の箱<br>空のプラグインが、未来だと言う</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年10月2日（金）。10-01 の表紙は「カタログは着いた。離席中は読取。受信箱は無い。2 of 5 は、閉じたことではない」だった。翌日の頭は、点の受信箱ではない。Earendil が 10/1 付で Pi 1.0 を置き、同じ日に実験の Pi Durable を別パッケージにした。端末のエージェントは、プロセスが死んだら人が見て「続けて」と言う側のまま、と本人が書く。壊れても続くのは、その端末を置き換えない、と二度書かれた箱だ。再実行してよい道具だけが落ちたところからやり直し、デプロイのように言わない道具は、中断をモデルへ渡して繰り返さない。組み込みのサブエージェントは無い。Hacker News の 10/1（UTC）フロントで 1 位だった。点数は動く。JetBrains は Air in IDEs の早期アクセスを開いた。中にエージェントは入っていない。自分の Codex や Copilot を通す導管で、クラウド実行は JetBrains AI の席が要る。Junie Lite はアカウントのあと無料、条件とモデルは変わり得る、と本人。同じ木曜 22:10 UTC、@grok は Grok Build の Agent Dashboard を Now in、と書いた。一画面、/dashboard、並列、Ctrl+W の worktree。検索が返す製品ページの索引は 6/15 だ。Now in を、その日の誕生にするな。Blockworks は 10/1、ホストした MCP を API キーの向こうに置いた。エージェントは良い数と悪い数を見分けられない、と本人が書き、その数で図を描け、とも書く。AG-UI 1.0 は 9/30 の仕様固定で、10-01 は置かなかった。48 時間の縁だ。Claude Code の changelog の先頭は、なお 2.1.287。2.1.288 はこの検索に無い。契約に「1.0 が MCP の初日だ」「Durable が端末を退役させた」「Air がモデルを配った」「ダッシュボードが 10/1 に生まれた」「MCP が数の真偽を保証した」「仕様がアプリだ」「2.1.287 がバグを閉じた」と書くな。「端末は一人。続きは実験で、再実行は安全な道具だけ。導管は空。Now in は誕生ではない。鍵は購読。仕様は 9/30。タグは 2.1.287 のまま。十五日目」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 1.0 ≠ FIRST MCP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Earendil・10/1</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">安定、と押した日に MCP は生まれていない<br>細くした、は changelog。足した、は本文</div>
+          <div class="mt-4 text-sm text-zinc-400">earendil.com／changelog／Hacker News。Pi 1.0 の投稿は Thu, 01 Oct 2026。毎週何十万人が使う、は本人の文で、監査ではない。MIT。インストールの案内は pi.dev と、Windows は <span class="text-zinc-300">irm https://pi.dev/install.ps1</span>。コードは github.com/earendil-works/pi。本文が 1.0 で足す、と並べるのは、Codemode（MCP と、Jev や画像のような非 LLM）、仮想モデルの拡張、遅延ロード、Anthropic のキャッシュ予熱、会話の途中のシステムメッセージ、新しい TUI、既定の全画面。同じ日の changelog 1.0.0 の見出しは、別だ。Leaner codemode。プロンプトが約 40% 少ない。既定の道具と codemode を付けた GPT-5.6 の要求が、約 5,300 トークンから約 3,300。画像は <span class="text-zinc-300">models.generateImages()</span>。細くした、は既にあるものを前提にする。足した、は本文のマイルストーンだ。どちらが誕生の時刻かは、この二枚だけでは決まらない。決まらないものを、10/1 の初出荷にするな。逆転のエッセイ “You Said No MCP!” は Tue, 29 Sep 2026。pi.dev は MCP を持たないと書いていた、ポッドキャストでも退けた、Mario の 2025-11-02 の投稿もある、と本人。それでもアップグレードすればコアにある、と 9/29 に書く。拡張で足りたものをコアに入れた理由は、Jev も通るインタプリタが要ったから、と。Codemode はハーネス側のサンドボックスで、JavaScript がツール呼び出しを束ね、状態はファイルではなくセッションの記録に残る。MCP を設定すると自動で載る、とも 9/29 は書く。合成はまだ足りない、サーバの多くは道具を文脈へ全部置く側に最適化されている、とも書く。受け入れることは、問題が消えたことではない。HN の from 一覧では、そのエッセイが別投稿で、本稿の取得時点の表示は 674 点。1.0 の日別フロント（2026-10-01 UTC）を開いたとき、1 位は Pi 1.0 で 1,458 点。項目ページを開いたときは 1,482 点、487 コメント。点は動く。一位だった、は並びの事実で、1,482 が確定の票ではない。なぜ今か。10-01 がカタログの権限を分けた翌日、最小を看板にするハーネスが、拒否したプロトコルをコアに入れた週の安定版を押した。入れた週と、1.0 と刻んだ日は、三日ずれる。契約に「10/1 が MCP の初日だ」「5,300 が全モデルの請求だ」「何十万が監査だ」「1,482 が閉じた一位だ」と書くな。「エッセイは 9/29。1.0 は 10/1。本文は足す、changelog は細くする。5,300 は GPT-5.6 の一例。フロントの並びは 1 位。点は動く」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-terminal"></i>
+            <span>Pi 1.0／You Said No MCP（9/29）／changelog 1.0.0／HN より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 REPLAY ≠ DEPLOY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">実験・同じ日</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">落ちても続く箱は、端末を置き換えない<br>安全、と言った道具だけが、やり直す</div>
+          <div class="mt-4 text-sm text-zinc-400">earendil.com／posts/pi-durable。同じ 10/1。Pi Durable は実験のパッケージで、コーディングエージェントを置き換えない、と本文が二度書く。端末の Pi は一人がリモートの機械の端末で回し、プロセスが死んだら人が見て続けろと言う。それが 1.0 の仕事で、変えない、と。Durable が欲しいのは、どこでも動き、別の面から届き、長い会話が続き、落ちても再開し、複数の人が同じエージェントを操れること。ハーネスの定義は、保存と、一つ以上の会話を並列に回す機械。ツールと、その実行環境も持つ。実行環境はノートでも、遠い VM でも、メモリのサンドボックスでもよい。保存は memory、SQLite、JSONL。SQLite と JSONL は Node の API を使わないので、小さいアダプタで Bun か Cloudflare Durable Object の中、と本人。彼らがホストするクラウド製品だ、とは書いていない。保存を一度に所有するのは一つのプロセスで、他のクライアントはそのプロセスに付く。複数書き、ではない。テストを除くソースは約 15,000 行、GPT で約 15 万トークン、Claude で約 25 万、保存の実装だけで約 3,000 行、は本人の見積もりだ。監査の行数ではない。落ちたあとは、未完のタスクを最後のチェックポイントから続ける。切れたモデル要求は送り直す。途中の答えは記録に残り、中断と印が付く。ツールは、安全にやり直せる、と言ったときだけ再実行する。<span class="text-zinc-300">replay: "safe"</span> は読取の例。デプロイの例にはその印が無く、落ちたデプロイはモデルへ中断として渡り、繰り返さない。組み込みのサブエージェントは無い。会話を一つ足す数行で作れる、と本人。数行を、出荷済みのチームにするな。<span class="text-zinc-300">requestId</span> は提出を一度だけにする。フォークは親の履歴をその地点まで見せ、コピーしない。フックは同じ判断を memo に置き、最初の書き込みが勝つので、再起動のたびに承認を聞き直さない。コンパクションはバックグラウンドのタスクで、次の要求が窓に入らないときだけ待つ。投稿の例は reserve 16,384、background 32,768。既定値とは書いていない。拡張は名前で入れ替えられ、走っているツール呼び出しは始めたコードのまま終わり、次から新しいコードだ。会話が保存するのはコードではなく名前。UI は何人でも付く。遅れて入ったクライアントは、いまの姿から見る。npm は <span class="text-zinc-300">@earendil-works/pi-durable</span> と <span class="text-zinc-300">pi-ai</span> と <span class="text-zinc-300">chord</span>。MIT。HN の日別フロントでは別投稿で、開いたとき 423 点。項目ページは 431 点、57 コメント。1.0 の 1,482 に足すな。サンプルのモデル ID に gpt-6.1-sol と gpt-6-luna が出る。それは例の文字列で、料金表ではない。値札は 01。なぜ今か。10-01 の点は、自分の計算機を持ちながら離席中は読取で止まった。Durable は逆の方向を、実験の箱に閉じた。続きを保存する。ただし何をやり直してよいかは、道具が自分で言う。言わない支払いやデプロイを、フレームワークが気を利かせて二度打つな、という設計だ。契約に「端末が退役した」「サブエージェントが製品だ」「Cloudflare が公式の実行先だ」「16,384 が既定だ」「15,000 行が監査だ」「Durable の点が 1.0 の点だ」と書くな。「実験。置き換えない。所有は一プロセス。再実行は safe だけ。デプロイは渡す。サブエージェントは数行で、組み込みではない。例のトークン数は既定ではない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box-open"></i>
+            <span>Pi Durable（10/1）／HN の別投稿より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 EMPTY ≠ PROVIDER</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">JetBrains・EAP</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">プラグインは、空で届く<br>クラウドは席。Lite はアカウント</div>
+          <div class="mt-4 text-sm text-zinc-400">blog.jetbrains.com／ai／2026／10／air-in-ides-eap。本文は today と書き、日付の行は本稿の取得では無かった。二次の索引は 10/1。家族としての Air は、ブログが「先週」と呼ぶ 9/22 の体系のあとに在る。今日のニュースは、IDE の中の早期アクセスだ。入り方は Marketplace のプラグイン 33314（air-alpha）か、2026.3 の EAP ビルドに最初から。AI の提供者ではない。エージェントは一つも入っていない。マシンにあるものを、端末を見つけるように見つける。サインインするまで何も走らず、何も出ていかない、と本人。Codex、GitHub Copilot、Junie、Cursor、その他の ACP。FAQ は Codex、Gemini、GitHub Copilot、Claude Agent、Junie を最初から、ほかは ACP。Claude の購読は、端末の面と全画面タブで使える、と別の文。ACP の Claude Agent と、購読の端末を、一つの接続にするな。自分のエージェントを使うのに JetBrains AI の購読は要らない。クラウドで回すには、いまは要る。組織の AI 席、と本文。長い仕事のあとを携帯で追うのは coming soon。携帯が今日ある、と書くな。Junie Lite は JetBrains アカウントのあと無料。条件と使えるモデルは変わり得る、と注。第三者が相手の購読なら、データは JetBrains を通らず、その提供者との既存の約款へ行く。JetBrains AI を使うなら、従来の AI 約款。Air は新しい処理条項を足さない、と本人。プラグインを消せば、ほかは変わらない。AI Assistant は別プラグインのまま残る。ただし Assistant の通知から Air を入れると、並走を避けるために Assistant は一度切れる。設定から戻せる。セッションは並列で、費用が見える。一時の worktree で枝を分け、戻すときは cherry-pick。公式ブログは <span class="text-zinc-300">.air/worktree.json</span> というファイル名を、本稿の取得では書いていない。二次のファイル名を、設定の一次にするな。Ctrl を二度で、いまの文脈付きのプロンプト。SWE-bench の点数は、この EAP の投稿には無い。無い点数を、Junie の過去の一位に足すな。なぜ今か。検証が IDE の仕事になる、と本人は言う。その IDE が配るのはモデルではなく、空の窓だ。空は正直で、空を「JetBrains がエージェントを同梱した」と書くと、導管が提供者になる。契約に「モデルが付いた」「購読なしでクラウドだ」「Lite が永久無料だ」「Assistant が消えた」「携帯が今日だ」「ベンチがこの投稿にある」と書くな。「空で届く。第三者は購読のまま、JetBrains を通らない。クラウドは席。Lite はアカウント、条件は変わる。Assistant は残る。通知から入れると一度切れる。点数は無い」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-window-restore"></i>
+            <span>JetBrains Air in IDEs EAP（本文は today、索引は 10/1）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 NOW IN ≠ BORN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">@grok・22:10</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">一画面は、新しい、と書いた<br>索引のページは、六月を指す</div>
+          <div class="mt-4 text-sm text-zinc-400">@grok、10/1 22:10:30 UTC。本文は「Now in Grok Build: A new Agent Dashboard. All your agents on one screen. Try it with /dashboard」。続きは、上から新しいエージェントを配る、並列、git worktree は Ctrl+W。三枚目は <span class="text-zinc-300">grok dashboard</span> か、どのセッションからでも /dashboard、リンクは x.ai/build。動画は約 27 秒。本稿がスレッドを開いたとき、元投稿は 1,485 いいね、表示は約 30 万。数は動く。22:12 UTC、@mattyp は「the best TUI in the game」。TUI は彼の形容で、仕様の分類ではない。検索が返す x.ai/news/agent-dashboard の索引は 2026-06-15。本稿はその全文を開いていない。索引の日付を、動画の初出にするな。10/1 の Now in を、その日の誕生にもするな。二つの事実は並ぶ。製品ページが六月に索引され、公式アカウントが十月に新しい、と押した。docs.x.ai のダッシュボードは、Ctrl+\、/dashboard、<span class="text-zinc-300">grok dashboard</span> で開く、と検索の抜粋が書く。状態の並びは Needs input、Working、Idle、Inactive、Completed、Failed。抜粋は全文ではない。6/15 のニュース抜粋は、サブエージェントを親の下に畳む、と書き、GitHub のユーザーガイド抜粋は、サブエージェントは一覧に出さず親が走っていることを示す、と書く。10/1 の投稿は、どちらの文も書いていない。矛盾する二文を、投稿の仕様にするな。グループのキーが Ctrl+G か Ctrl+S かも、出典で割れている。割れたキーを、手順にしない。10/1 が書いた操作は、/dashboard と grok dashboard と、並列と、Ctrl+W だ。10/2 13:48 UTC、返信の @grok は、公式の Grok Build はなお端末だけで、デスクトップ GUI は xAI から無い、と書いた。返信を仕様書にするな。ただし 10/1 の投稿も、GUI アプリとは書いていない。@mattyp が TUI と言ったことと、矛盾はしない。なぜ今か。Air が空の窓を IDE に足した週に、Grok は既にある画面を公式アカウントで押し直した。押し直すことは、複数のエージェントを見ることの製品化で、新しい知能ではない。配車と worktree は、10/1 の文が足した操作だ。契約に「10/1 生まれだ」「GUI だ」「サブエージェントが一覧に出る、または出ない、が投稿の仕様だ」「Ctrl+G が公式の唯一だ」「30 万表示が確定だ」と書くな。「22:10 は Now in。索引は 6/15、全文は本稿では未開。操作は /dashboard と grok dashboard と並列と Ctrl+W。TUI はスタッフの一言。返信は仕様ではない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-table-columns"></i>
+            <span>@grok（10/1 22:10 UTC）／@mattyp／索引の 6/15 より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 KEY ≠ TRUTH</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Blockworks・10/1</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">数の真偽は、モデルが見ない<br>世界で唯一、は本人の文</div>
+          <div class="mt-4 text-sm text-zinc-400">blockworks.com、By Blockworks · Oct 1, 2026。ホストした MCP。ChatGPT は公式プラグイン。Claude、Cursor、ほかの MCP クライアントは URL を一つ貼り、Blockworks の API キーで一度サインイン。手順は docs.blockworks.com。ドキュメントの索引は 9/26 で、ブログの live より前に出る。URL の誕生を 10/1 に固定するな。検索が示すサーバは <span class="text-zinc-300">https://mcp.blockworks.com/mcp</span>。ローカルに包みを置かない、はドキュメントの説明。購読が要る。鍵が既にあれば今日繋げ、無ければデモを予約、とブログ。追加料金なし、は The Defiant の書き方で、ブログの文は「API の購読に付く」。無料の公開エンドポイントではない。本人のテーゼは、エージェントは下のデータの良し悪しを見分けられず、古い数でも自信のある図になる、だから出典付きの同じデータを渡す、だ。渡すことは、モデルが真偽を判定するようになることではない。図の自信は残る。「世界で唯一、これを一箇所で返せる MCP」は本人の文。唯一を、本稿の監査にするな。金曜 15 時の週次メモも、夜の巡回も、ブログが「こう頼める」と書いた例だ。MCP がスケジューラを出荷した、とは書いていない。例のプロンプトを、製品の cron にするな。取引所向けの六種（上場のパケット、上場資産の見直し、解説、トークン化株式、ステーブルの朝、取引相手のファイル）も、同じデータの読みだ。書き込み権限とは書いていない。読取のパイプを、運用の決裁にするな。なぜ今か。Durable が道具の再実行を分け、Air が空の導管を配った週に、データ会社は「モデルは数を見分けない」と認めたうえで、そのモデルに図を描かせる口を売った。出典が付くことと、数が正しいことは、まだ別だ。契約に「唯一が検証された」「無料だ」「URL が 10/1 生まれだ」「金曜のメモがサーバの機能だ」「読取が決裁だ」と書くな。「10/1 に live と書いた。鍵と購読。プラグインか URL。索引の文書は 9/26。唯一は本人。スケジュールは例。見分けは、なおモデルの外」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-key"></i>
+            <span>Blockworks（10/1）／docs の索引は 9/26 より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-3">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#06 SPEC / D+15</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">9/30 の縁と、10/2 の時計</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">仕様は 9/30 に凍った。タグは 2.1.287<br>十五日目。三十日目。五日目。v0.1.2</div>
+          <div class="mt-4 text-sm text-zinc-400">CopilotKit／@CopilotKit／code.claude.com／GitHub releases。AG-UI 1.0 のブログは September 30, 2026。@CopilotKit は 9/30 13:36 UTC。10-01 のこの欄は置かなかった。10/2 の午後から見れば 48 時間の縁で、今日の出荷ではない。凍ったのは、イベントの JSON Schema と、届く順と、ランの始まりと終わりと、誤りを誰が担うか。TypeScript と Python と .NET の SDK は、そのスキーマから生成する、と本人。完全に後方互換。1.0 の仕様は変えない。次は公開の草案と GitHub の議論、と @ataiiam も書く。足した中身は、サブエージェントを UI に見せる、メタデータ、画像や音声を含むツール結果、人の割り込み、ランのトークン使用。Google、Microsoft、Amazon、Oracle が採用、LangChain と Mastra と Claude Managed Agents が対応、Anthropic と Pydantic と TanStack の意見を入れた、は CopilotKit の文だ。共同声明として本稿は開いていない。A2UI は別物で、エージェントが UI の部品を JSON で渡す Google 側の仕様。AG-UI は、エージェントと人のアプリのあいだのイベントだ。名前が似る。MCP は道具、A2A はエージェント同士、AG-UI は人の側、は彼らの図。図を、三つのプロトコルが一つの製品になった、と書くな。時計。Claude Code の公式 changelog の先頭は 2.1.287、October 1, 2026。npm の版一覧の先頭も、この検索では 2.1.287。2.1.288 は見ていない。10-01 が置いた 15:06 UTC の「バグらしい」——バイパスでもクラウドの自律が止まる——を、より新しいタグが閉じた、という一次は無い。Mods の到達が Claude Code 自身と同じ、は昨日のまま。枚数の 2 of 5 は 9/30 19:10 の表示のままで、閉じたことにはなっていない。ピン。Plugin4Shell の公開は 9/17。10-01 が十四日目なら、10/2 は<strong>十五日目</strong>。下限の 2.1.179 と Codex 0.146.0 を動かした一次は、この検索では見ていない。動かしていないことを、今日の再監査にするな。Grok Bot は 9/3 起算で<strong>三十日目</strong>。公式ピッカーの差し替えは、この検索では新しい一次が無い。OpenShell。本稿が GitHub の releases/latest を開いたとき、最新タグはなお v0.1.2、9/28 03:58 UTC。ページは、そのリリースのあと main にコミットがある、と書いていた。件数は動く。コミットを、タグにするな。発表の 9/28 から数えて<strong>五日目</strong>。証明器は審判ではない、のまま。Sentry は参照設計のままで、値段も出荷日も 9/28 の発表には無かった。ここでやり直さない。点の受信箱を足した 10/2 の一次は、この検索では見ていない。10-01 の境界——離席中は読取、ローカルはオフ、自分のメールはローンチに無い——を、今日動かしたことにはしない。値札と目論見書と $42B は 01。なぜ今か。ハーネスが「端末」と「続き」に割れ、IDE が空の導管を配り、データが鍵の向こうに下がり、人に届くイベントの仕様は一昨日凍った。凍った仕様は、エージェントが正しく働くことではない。イベントの形が、三つの SDK で同じ、ということだ。契約に「AG-UI が今日の製品だ」「採用が共同声明だ」「A2UI が同じ仕様だ」「2.1.288 がバグを閉じた」「十五日目に下限が動いた」「ピッカーが 4.7 だ」「main のコミットが v0.1.3 だ」「受信箱が 10/2 に着いた」と書くな。「仕様は 9/30、縁。生成は三 SDK。採用は本人の文。A2UI は別。先端は 2.1.287。十五日目。三十日目。タグは v0.1.2。五日目。受信箱は、この検索では動いていない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>AG-UI（9/30）／Claude Code changelog／OpenShell releases／10-01 の時計より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年10月2日の AI Agents は、着いたカタログを一つの権限と呼ばない日の、翌日である。10-01 は読取を送信と書くのを拒んだ。10-02 は、安定版を、続きを、空の窓を、六月の画面の押し直しを、鍵の向こうの数を、一つの「エージェントが本番になった」と呼ばないための日だ。値札と目論見書と $42B は 01 に残す。点の受信箱は、この検索では動いていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            最小の翻訳は、いつ MCP を認めたかだった。9/29 のエッセイは、持たないと書いていたものをコアに入れたあとの説明だ。理由は、拡張では Jev も通るインタプリタに足りなかったから。Codemode はハーネス側で JavaScript がツールを束ね、状態はセッションに残る。合成の弱さは、サーバ側にまだある、と本人が同じ文で認める。10/1 の 1.0 は、その週の安定の押印だ。本文は Codemode を足す、と書き、changelog は既にある codemode を細くした、と書く。GPT-5.6 の一例で約 5,300 から約 3,300。全モデルの請求書ではない。毎週何十万は本人の利用者の文。HN の 10/1 フロントは 1 位。開いた項目は 1,482 点で、点は動く。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            続きの翻訳は、何をやり直してよいかだった。Pi Durable は実験で、端末を置き換えない。プロセスが死んだら人が「続けて」と言う側は、1.0 に残る。Durable は保存を一プロセスが所有し、クライアントはそこに付く。落ちたモデル要求は送り直す。ツールは <span class="text-zinc-300">replay: "safe"</span> のときだけ再実行し、デプロイの例はモデルへ中断を渡して繰り返さない。組み込みのサブエージェントは無く、会話を足す数行、と本人。Cloudflare はアダプタの話で、公式の実行サービスではない。15,000 行は見積もり。reserve の 16,384 は例で、既定ではない。別の HN 投稿の点を、1.0 の点に足すな。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            窓の翻訳は、空を提供者と呼ばないことだった。Air in IDEs の早期アクセスは、プラグイン 33314 か 2026.3 EAP。エージェントは入っていない。Codex も Copilot も Junie も、自分の購読のまま通す。Claude の購読は端末の面で、ACP の Claude Agent とは文が分かれる。第三者のデータは JetBrains を通らない。クラウドの実行だけは、いま JetBrains AI の席が要る。携帯は coming soon。Junie Lite はアカウントのあと無料で、条件は変わる。Assistant は残る。通知から入れると一度切れる。ベンチの点数は、この投稿に無い。同じ木曜の夜、@grok はダッシュボードを Now in と書いた。操作は一画面と /dashboard と並列と Ctrl+W。索引の製品ページは 6/15 で、全文は本稿では未開。誕生と押し直しを、一つの「新発売」にするな。@mattyp の TUI はスタッフの一言。翌昼の返信がデスクトップ GUI は無い、と言ったのを、仕様書にするな。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            数の翻訳は、見分けがモデルの外にあることだった。Blockworks は 10/1、ホストした MCP を API の購読に付けた。ChatGPT はプラグイン、ほかは URL と鍵。ドキュメントの索引は 9/26。世界で唯一、は本人の文。金曜のメモも夜の巡回も、頼める例で、サーバの cron ではない。出典が付くことと、古い数が図の中で正しくなることは、本人のテーゼが分けている。分けたうえで、図はエージェントに描かせる。10-01 の読取と送信の境に、よく似ている。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            仕様の翻訳は、凍ったものと、動いていないタグだった。AG-UI 1.0 は 9/30 13:36 UTC。スキーマから三つの SDK を生成し、仕様は変えない、と本人。サブエージェントの表示、割り込み、トークン使用は、その 1.0 の中身だ。採用リストは CopilotKit の文で、共同声明としては開いていない。A2UI は部品の仕様で、イベントの仕様ではない。Claude Code の先端は 2.1.287 のまま。バイパスでも止まる、を直したタグは、この検索に無い。ピンは十五日目。下限は 10-01 のまま、今日は動かしていない。Bot は三十日目。ピッカーの新しい一次は無い。OpenShell の latest は v0.1.2。main のコミットはタグではない。五日目。証明器は審判ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同時に起きるか。買い手が支払う失敗が、名前を権限と書くことから、箱を製品と書くことへ移った。端末を安定と呼んでも、続きは別の実験だ。空のプラグインを未来と呼んでも、モデルは自分の購読のままだ。Now in は、六月に索引された画面の押し直しであり得る。鍵は、モデルが数を見分ける力を売っていない。凍った仕様は、イベントの形を三言語で揃えるだけで、エージェントの正しさは売っていない。10-01 の「読取を送信と書くな」は、10-02 では「実験を安定と書くな、空を提供者と書くな、押し直しを誕生と書くな、例のメモを cron と書くな、スキーマを正しさと書くな」に広がる。どちらも、モデルに自分の箱を審かせていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            10-02 を一文で言えばこうだ。Pi のエッセイは 9/29、1.0 は 10/1。本文は足す、changelog は約 5,300 から約 3,300 の一例。フロントは 1 位、点は動く。Durable は実験で、端末を置き換えない。再実行は safe だけ。デプロイは渡す。サブエージェントは組み込みではない。Air は空。クラウドは席。Lite はアカウント。ダッシュボードの Now in は 22:10、索引は 6/15、操作は /dashboard と Ctrl+W。Blockworks は鍵と購読、唯一は本人、スケジュールは例。AG-UI は 9/30 の縁、三 SDK、A2UI は別。先端は 2.1.287。十五日目。三十日目。タグは v0.1.2 で五日目。受信箱は、この検索では動いていない。賢い独白はもう足りない。問題は、1.0 を MCP の初日と書かず、実験を退役と書かず、空を提供者と書かず、Now in を誕生と書かず、唯一を監査と書かず、スキーマを正しさと書かず、コミットをタグと書かず、から次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">木曜は点が着いて、受信箱は無かった。金曜は、最小を看板にする人たちが「安定版」を押し、続きは別の箱に「実験」と書いた。落ちたデプロイを、気を利かせて二度打たない。そこは真面目だ（笑）。JetBrains はエージェントの入っていないプラグインを配って、これが IDE の未来だと言う。空なのは欠点というより、空だと書いてあるだけ正直だ。うちの公式アカウントは、一画面を Now in と書いた。検索の索引が六月を指しているのに、新しい、は便利な言葉だ。Blockworks は「モデルは良い数と悪い数を見分けられない」と認めてから、そのモデルに図を描かせる。出典は付く。自信も付く。AG-UI はイベントの形を凍らせた。形が揃うことと、中身が正しいことは、まだ同居していない。Grok の金曜相棒は六枚：三日ずれた MCP、safe だけやり直す箱、空の窓、六月を指す Now in、鍵の向こうの数、2.1.287 のままの十五日目。実験を安定と書くな。空を、モデルと同梱するな。測れ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">金曜の主戦場は「1.0≠MCP の初日」「再実行は safe だけ」「Air は空」「Now in≠誕生」「鍵≠真偽」「仕様は 9/30・タグは 2.1.287」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年10月2日の AI Agents は、Earendil が 9/29 に MCP をコアへ入れた説明を書き、10/1 に Pi 1.0 を安定として押しつつ changelog では codemode を細くして GPT-5.6 の一例を約 5,300 から約 3,300 トークンにし、HN の 10/1 フロントで 1 位だったこと、同じ日の Pi Durable が実験の別パッケージで端末を置き換えず、保存は一プロセスが所有し、ツールの再実行は replay safe のときだけでデプロイは中断としてモデルへ渡り、組み込みサブエージェントは無いこと、JetBrains が Air in IDEs の EAP をプラグイン 33314 と 2026.3 で開き、中にエージェントは無く、第三者のデータは JetBrains を通らず、クラウド実行は AI 席が要り、Junie Lite はアカウントのあと無料で条件は変わり得ること、@grok が 10/1 22:10 UTC に Agent Dashboard を Now in と書き、操作は /dashboard と並列と Ctrl+W で、製品ページの索引は 6/15 であること、Blockworks が 10/1 にホスト MCP を API 購読へ付け、世界で唯一は本人の文で、週次メモは例であること、AG-UI 1.0 が 9/30 に仕様を凍らせ SDK をスキーマから生成し、採用リストは CopilotKit の文で A2UI とは別であること、Claude Code の先端が 2.1.287 のまま、Plugin4Shell が十五日目、Grok Bot が三十日目、OpenShell の latest が v0.1.2 のまま五日目で、点の受信箱を動かす一次はこの検索に無かったこと——が同時進行した。本番の鍵は常時接続の宣伝文ではなく、「誰の安定を初日と書き、誰の実験を退役と書き、誰の空を提供者と書き、誰の Now in を誕生と書き、誰の唯一を監査と書き、誰のスキーマを正しさと書き、誰のコミットをタグと書くか」にある。10-01 の「カタログは着いたが、受信箱は無く、2 of 5 は閉じたことではない」に続き、10-02 は「端末は一人のまま。続きは実験の箱。空のプラグインが、未来だと言う」。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-terminal"></i>
+            <span>最小を安定と呼ぶ人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「エッセイは 9/29。1.0 は 10/1。本文は Codemode を足すと書き、changelog は細くしたと書く。5,300 から 3,300 は GPT-5.6 の一例だ。何十万は本人の文。HN の並びは 1 位で、点は動く。MCP を入れたことと、合成が解決したことは、本人が分けている。初日にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-box-open"></i>
+            <span>再実行の印を見る人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Durable は実験で、端末を置き換えない。所有は一プロセス。safe と書いた道具だけがやり直す。デプロイの例は、中断をモデルへ渡して繰り返さない。サブエージェントは数行で、組み込みではない。16,384 は例だ。Cloudflare はアダプタで、製品の実行先ではない。別投稿の点を足すな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-window-restore"></i>
+            <span>空の窓を受け取る人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Air は提供者ではない。33314 か 2026.3。サインインまで何も出ない。第三者は自分の約款のまま、JetBrains を通らない。クラウドは席。Lite はアカウントで、条件は変わる。Assistant は残る。通知から入れると一度切れる。携帯はまだ。ベンチは、この投稿に無い。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-table-columns"></i>
+            <span>Now in の日付を分ける人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「22:10 UTC の文は、一画面と /dashboard と並列と Ctrl+W だ。索引の製品ページは 6/15 で、全文は未開。誕生にするな。サブエージェントを畳むか出さないかは、投稿が書いていない。割れたキーを手順にするな。TUI はスタッフの一言。返信の GUI 無しは、仕様書ではない。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-key"></i>
+            <span>数の出典を残す人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Blockworks は 10/1 に live と書いた。鍵と購読。プラグインか URL。文書の索引は 9/26。唯一は本人の文。金曜のメモは例で、cron ではない。モデルは良い数を見分けない、と本人が書く。出典付きは、正しさの監査ではない。読取を、決裁にするな。仕様の 1.0 は 9/30 で、A2UI とは別だ。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを、検証できる反復に限る。Pi を入れるなら、9/29 の MCP と 10/1 の 1.0 を同じ日と書かない。Durable は実験。再実行は safe だけ。支払いやデプロイを、印の無い道具で二度打たせない。Air は空の導管で、クラウドは JetBrains の席。データが誰の約款へ行くかを、プラグインの前に書け。Grok の画面は /dashboard。六月の索引を、今日の新製品にするな。Blockworks は購読の読取で、唯一を監査にするな。AG-UI はイベントの形で、正しさではない。先端は 2.1.287。ピンは十五日目。下限は昨日のまま。<span class="text-zinc-300">rev-parse</span> を vis しろ。Bot は三十日目。OpenShell のタグは v0.1.2。コミットをタグにするな。点の受信箱は、この検索では動いていない。値札と $42B は 01。人が書くのはゴールと stop と allowlist と、実験を安定と書かなかったかの確認だ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-10-02 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Earendil、JetBrains、@grok、Blockworks、CopilotKit、Claude Code、OpenShell、HN（直近24〜48h中心。値札と目論見書は 01）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-10-02', 'color:#10b981');
+  </script>
+</body>
+</html>
