@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01. AI ダイジェスト | 2026-10-01 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">01</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-10-01 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🏷️</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">$2 の看板が三枚。旗艦はまだ門の向こう<br>50／410 はダウンロードできる側</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年10月1日（木）。09-29 の表紙は「二つの会場。6.1 は不出。カタログは未着」だった。同じ火曜の夜、出たのは GPT-6.1 Astra ではなく GPT-6.1 Sol。値札は Astra の五分の一、$2／$10、キャッシュ読み 95% 引き。Artificial Analysis は 52 対 Astra の 53、タスク単価 $0.72 対 $3.26。Chat にはまだ無い。水曜、Google は Gemini 4 Argon を出したが、先に渡したのは Fairwind の防御側。導入価格は同じ $2／$10、そのあと $4／$20。出力は 64K から 100 万。自社の表では DeepSWE 77.9 と CWE-bench 68 で並び、Terminal-bench は Opus 5.5 の 66.4 に 57.4 で負ける。AA は Argon 53 で Astra と並び、Sol より 1 点、Opus より約 5 点後ろ。同じ月曜、Anthropic は GLM-5.3 が ExploitBench で 50／410、Mythos Preview は 56／410、と書いた。重みは誰でも落とせる。拒否は 64%・92%・100% で抜けた、と本人。サンドボックス。実システムでは回していない。火曜のホワイトハウス合意は四層、罰則なし。行政は AI を SI と呼べ、と命令。水曜、CBS は FTC が OpenAI と Anthropic ほかを調べている、と本人の確認を伝えた。民事調査要求は出ていない。第三巡回は ROSS の公正使用を退けた。意見は封印。生成モデルの事件ではない。契約に「6.1 Astra が出た」「Argon が公開された」「GLM が病院を攻めた」「合意が法律だ」「FTC が召喚した」「生成 AI の学習が違法になった」と書くな。「Sol は出荷。Astra の次は不出。Argon は門。50／410 は開放。合意は道徳。紙は未発行。封印は非生成」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-robot text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 SOL 52</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">DevDay・火曜夜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">6.1 は出た。Astra ではない<br>AA は 52。タスクは $0.72</div>
+          <div class="mt-4 text-sm text-zinc-400">@sama／@thsottiaux／TechCrunch／Artificial Analysis。9/29。Fort Mason のカタログは GPT-6.1 Sol。<span class="text-zinc-300">gpt-6.1-sol</span>。入力 $2、出力 $10、キャッシュ読み $0.10（95%。GPT-6 Sol の 90% から一段）。Astra の標準 $10／$50 の五分の一。Tibo：「near Astra intelligence」「absolute workhorse」。Altman：「1/5th of the price」。TechCrunch は OpenAI の主張として、低努力の事実誤りの割合が GPT-6 Sol の 11.4% から 7.7% へ、全努力設定では Astra との差が 1.9 ポイント以内、と書く。AA Intelligence Index は max で 52、Astra max の 53 に 1 点。タスク単価 $0.72 対 $3.26。幻覚率は 60% から 54% へ下がったが、Astra の 51% よりは高い。Terminal-Bench は自社比で大きく上がった、と AA。提供は ChatGPT Work と Codex、Plus 以上。通常の Chat には未着。6.1 Astra は 9/28 の不出のまま。契約に「旗艦が交代した」「Chat で今日から使える」「Astra を止めた」と書くな。「Sol は出荷。52 対 53。$0.72。Chat は未着。6.1 Astra は不出」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-tag"></i>
+            <span>@sama／@thsottiaux／AA／TechCrunch（9/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 DOTS / 31 TPS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">@sama・木曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">dots は 24 時間。口は 31 トークン<br>Pro 500 は $500。遅さは本人が認めた</div>
+          <div class="mt-4 text-sm text-zinc-400">@sama／OpenAI Developer Community／X。9/29 と 10/1。dots は GPT-6 Astra 駆動の常時エージェント。各自にクラウドの計算機とブラウザ、プラグインは 4,000 超、と当日の整理。段階展開は Pro と Business Premium が先、Enterprise はベータ。地域の除外は整理ごとに揺れる。契約に全世界同時と書くな。Ultrafast は Codex で最大 8 倍、API は標準の 6 倍。Astra Ultrafast は入力 $60・出力 $300、と複数整理。Sol の Ultrafast は「coming soon」。Pro 500 は月 $500、Plus の 25 倍と Ultrafast。$200 枠を 20 倍から 10 倍へ、週次の GPT-6 Pro を 200 通から 100 通へ、は二次の整理。コミュニティ告知が確認しているのは 25 倍と Ultrafast。10/1 15:56 UTC、Altman：「6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much better now」。同じ夜、公開の Codex 計測は 6.1 Sol が 31.1 tok/s、6 Sol が 46.0、5.6 Sol が 54.9、という投稿。Tibo は容量を足した、と。VulcanBench は Low 努力で 6.1 が強い、と利用者ベンチ。別の投稿は「dumb mistakes」。評価環境の最能力ツール使用停止は 9/20 からの別表。製品の Astra と dots を、停止解除とは書くな。契約に「dots が無人で会社を回した」「全 Pro が半減した」「停止が解けた」と書くな。「dots は段階。$500 は新しい天井。31 tok/s は木曜の口。停止は別表」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gauge-high"></i>
+            <span>@sama／@thsottiaux／DevDay 整理（9/29–10/1）より</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 ARGON GATE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Google・水曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">旗艦は防御側が先。API は未着<br>自社の表は勝ちと負けを両方刷る</div>
+          <div class="mt-4 text-sm text-zinc-400">blog.google／Koray Kavukcuoglu／DeepMind の表／AA。9/30。Gemini 4 Argon。Gemini 3.1 Pro 以来の非 Flash 旗艦。先に渡すのは Fairwind の信頼されたサイバー防御側。開発者・企業・消費者は「as soon as possible」、最初の一般枠は有料 API と Google AI Ultra。日付は無い。米国政府の任意の事前アクセス手続きに入っている、と本人。導入価格 $2／$10、キャッシュ 95% 引き。脚注：導入期間のあと $4／$20。出力上限は 64K から 100 万。自社表の勝ちは DeepSWE v1.1 の 77.9（Astra 74.1、Opus 5.5 74.2）、Vals Index 68.9、AutomationBench 51.3、Harvey の法律エージェント 19.6（Astra 5.4）、CWE-bench v1 は Astra と 68 で同着。負けは Terminal-bench 4.0 の 57.4（Opus 66.4、Astra 58.2）、FrontierSWE v2 の 55.0（Astra 65.5）。AA は High で 53、Astra max と並び、Sol 52 の 1 点上、Opus 5.5 より約 5 点後ろ。幻覚は AA-Omniscience で 15%。Astra 51%、Sol 54%。タスク単価は導入価格で $1.99、Sol の $0.72 の約 2.7 倍。値上げ後は約 $3.98、という AA。社内ではメモリ最適化で 300 TiB 超を空け、上限の見積は 500 TiB から 1 PiB、と本人。Rust 移行は監査の前。サイバーのガードレールを外すのは Fairwind の防御側。Wiz の Scan for Good で、従来モデルが見逃した医療ソフトの露出を見つけた、と Google。攻撃の完了報告ではない。契約に「Argon を今日から叩ける」「全行で首位」「病院を破った」「ガードレール無しが一般公開」と書くな。「門。$2 のあと $4。100 万は出力。表は両方。AA は 53。15% は幻覚」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-door-closed"></i>
+            <span>Google 公式／DeepMind 表／AA（9/30–10/1）より</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 GLM 50/410</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Anthropic・月曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">開放ウェイトが Mythos に 6 本差<br>抜けは 64、92、100。$20.40 は Flash</div>
+          <div class="mt-4 text-sm text-zinc-400">anthropic.com／Frontier Red Team。9/29。Zhipu の GLM-5.3。ExploitBench（Chrome V8）のエンドツーエンド成功は 50／410。Claude Mythos Preview は 56／410。図の率は 12% と 14%。社内のバイナリ試験、OSS-Fuzz 系から無作為 100、完全な制御フロー乗っ取りは 4% 対 6%。Opus 4.6 と GLM-5.2 はゼロ。素の有害依頼は 0%。偽のレッドチーム物語で 64%、思考トークンの先埋め 92%、abliteration で 100%。Claude の API は試した条件で 0%。重みを削る作業は未経験のチームで約 2,200 GPU 時間、約 $4,400。慣れたチームなら約 600 GPU 時間・$1,200、と脚注。拒否率の平均は 95% から 6%。GPQA-Diamond は動かず。既知の Chrome 欠陥（CVE-2026-11645）を Flash が鎖にした例は、人の注意 20 分とモデル 8 時間、API で $20.40。ブラウザの未知欠陥はメンテナへ開示、と本人。評価は隔離。シミュレーションでは生成コードを実行していない。CAISI は 9/17、公開ウェイトで最もサイバー能力が高い、米国フロンティアに約四ヶ月、と。比較の米国側はガードレールを外し、限定公開モデルを含む。誰でも落とせるのは GLM の側。図 6 の「静かに死を」は、abliteration 後の模擬環境の思考引用。実害の記録ではない。契約に「GLM が本番を破った」「Mythos を超えた」「Claude も同じ穴だ」と書くな。「50 対 56。4% 対 6%。抜けは三条件。$4,400 と $20.40。実行はしていない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-unlock"></i>
+            <span>Anthropic Frontier Red Team／CAISI（9/17・9/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 ACCORD / SI</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">白宮・火曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">四層。罰則なし。道徳的に拘束<br>行政文書は AI ではなく SI</div>
+          <div class="mt-4 text-sm text-zinc-400">whitehouse.gov／Axios／Al Jazeera／Forbes。9/29。昼の非公開のあと、White House Accord on Super Intelligence。副題は Joint Commitment on Frontier Responsibilities。約 300 語、一枚。四層は、社内統制、それを見る社内チーム、外部監査、取締役会の独立委員会。罰則は無い。監査結果の公表も監査人の名前も義務ではない。政府への事故報告義務も無い。実施の切り方は各社。いつか法律にしてもよい、という一文は残る。署名はトランプ、Pichai、Amodei、Zuckerberg、Brockman、Musk、Huang。Amodei は「a start」。トランプは morally binding、「憲法のようなもの」、追加のガードレールが要るかと問われて no、という報道。同じ日の大統領令は、行政機関の非法定文書で Artificial Intelligence／AI を Super Intelligence／SI に置き換えろ、と。既発の規則・契約・補助金・過去文書は改めない。APST が連邦の定義を提案する。スローダウンの合意ではない。09-29 が「昼食は非公開。モラトリアムは拒否の読み」と書いた行の、着地はこれ。契約に「規制ができた」「各社が止めた」「AI という語が法律から消えた」と書くな。「四層。罰則なし。SI は行政の呼称。法定文書は残った」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-signature"></i>
+            <span>White House／Axios／Al Jazeera（9/29）より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 FTC / SEAL</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">CBS・Reuters・水／火</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">調査は本人が認めた。紙は未発行<br>公正使用の敗訴は封印。非生成</div>
+          <div class="mt-4 text-sm text-zinc-400">CBS／New York Post 経由の整理／Reuters／IPWatchdog。9/29–30。CBS は FTC 自身が、OpenAI、Anthropic、ほかの AI 企業への調査を確認した、と書く。開始はこの夏。問いの枠は FTC 法の不公正または欺瞞。両社は直後のコメントを出していない、と CBS。New York Post は、Ferguson 委員長の下で数週間調べており、民事調査要求を Anthropic、OpenAI、評価団体 METR に出す、と政権高官。要求は本稿の時点で未発行。FTC のプレスリリースは確認されていない。合意の翌日に、任意の四層と強制の調査が並んだ。別件、9/29。第三巡回は Thomson Reuters 対 ROSS（No. 25-2153）で、デラウェアの Bibas 判事の公正使用否定を維持、と Reuters。意見は封印。当事者に 10 日以内の墨消し案、と IPWatchdog。ROSS は Westlaw の headnote で競合する法律検索を訓練し、2021 年に製品を閉じた。生成モデルではない。控訴審として AI 訓練と公正使用に初めて答えた、という報道。理由は未読。契約に「FTC が召喚した」「METR が被疑者だ」「生成 AI の学習が違法になった」と書くな。「調査は確認。CID は未発行。封印。非生成。理由は未読」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-gavel"></i>
+            <span>CBS／NY Post 報道／Reuters／IPWatchdog（9/29–30）より</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-red-400 text-xs font-mono tracking-[1.5px]">#07 THREE NAMES</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">WSJ・木曜</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">三人は「別れた」。確認文は未着<br>警告は退けられた、という NYT。訴は一通</div>
+          <div class="mt-4 text-sm text-zinc-400">WSJ／NYT／Axios。9/29 と 10/1。WSJ は 10/1、OpenAI が安全チームの研究者三人と「別れた」と報じた。同紙のソースは、機密を外部の AI 安全団体に共有した、と。OpenAI の確認文は本稿の取得範囲に無い。逮捕でも内部告発の確定でもない。9/29、NYT は、最新モデルの試験中の監視が足りないという社員の警告が繰り返し退けられた、と報じた。内部文書そのものは未取得。同じ日、Axios は非営利 LASST がサンフランシスコ上位裁判所で OpenAI を提訴した、と書く。対象は 7 月の Hugging Face 事案。エージェント由来の損害を巡る訴訟として報じられた最初の一通。判決ではない。09-29 の「HF へ $100M は話、閉じず」は別の行のまま。契約に「三人が漏洩を認めた」「NYT が文書を公開した」「HF 訴訟で OpenAI が敗れた」と書くな。「WSJ は離別。確認文は未着。NYT は警告。LASST は提訴。判決は無い」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-user-slash"></i>
+            <span>WSJ／NYT／Axios（9/29–10/1）より</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-lime-400 text-xs font-mono tracking-[1.5px]">#08 SAME $2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">AA・木の朝</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">看板は同じ $2／$10。請求書は別<br>Opus はまだ上。4.7 は 46 のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">Artificial Analysis／09-29 の表。10/1 時点の独立指数は、見出しの整数で Opus 5.5 が依然トップ（09-29 の表は max 58、再計測の読みは 57.6）、Sonnet 5.5 が 56、Argon と Astra が 53、Sol が 52、Grok 4.7 は 46 のまま。看板だけ見ると Sol、Sonnet 5.5、Argon の導入価格は全部 $2／$10。AA のタスク単価は Sol $0.72、Argon 導入 $1.99、値上げ後約 $3.98、Astra $3.26。Sonnet 5.5 は同じ看板でトークンが重く、前日までの計測では約 $7.60。Argon の出力はタスクあたり約 62k、Sol は約 38k。幻覚 15% は Argon の本当の差で、指数 1 点ではない。Pew は 9/30、合成回答と米国世論パネル約 300 問を比べ、平均差 12 ポイント、15 ポイント超は 28% の問、と書いた。人が要らない、ではない。Moonshot に紐づく蒸留は、OpenAI が 7/24–25 に 16,000 要求超を止め、7/28 までに閉じた、という開示が今週の整理に乗った。実行日は 7 月。契約に「$2 は同じ請求」「Opus が落ちた」「蒸留が今日起きた」「世論調査をモデルで置換できた」と書くな。「看板は三枚。単価は $0.72／$1.99／重い Sonnet。46 は 4.7。Pew は 12。蒸留は 7 月」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scale-unbalanced"></i>
+            <span>AA／Pew Research／OpenAI 開示の整理（9/29–10/1）より</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年10月1日の AI は、火曜の朝に「カタログ未着、6.1 は不出」と書いた行が、木曜の夜には三枚の $2 と一枚の門と、ダウンロードできる 50／410 に分かれた、と読める日である。09-29 の表紙は会場と申立と Petri だった。10-01 の表紙は、その上に「Sol は出荷した」「Argon は Fairwind の先」「GLM の重みは開いている」「合意は罰則なし」「FTC は調査を認め、紙は出していない」が乗る。契約に「旗艦戦争が終わった」「名前を SI に変えたから能力が変わった」と書くな。「整数は 1 点。希少性は、誰が重みを持つか、誰が門の内側か、誰が紙を受け取るか」と書け。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            製品の翻訳は、出さなかった次世代の隣で、中位を五分の一で出したことだった。GPT-6.1 Astra は十月の ChatGPT／Codex から外れたまま。出た 6.1 は Sol。AA は 52 対 53。タスクは $0.72 対 $3.26。OpenAI 自身の事実誤りは低努力で 11.4 から 7.7。幻覚は 54% で、Astra の 51% をまだ下回らない。Chat は未着。Work と Codex が先。dots は Astra 駆動で段階展開。Pro 500 は月 $500。$200 枠の半減は二次の整理で、25 倍と Ultrafast がコミュニティ告知の確認範囲。10/1、Altman は Sol が史上最速で伸び、負荷で遅かった、と自分で書いた。同じ夜の計測は 31.1 tok/s。頭の速さと口の速さは別の請求書である。評価中の最能力ツール使用停止を、製品発表で解除されたと書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            門の翻訳は、Google が自社の表に負け筋を残したことだった。Argon は DeepSWE 77.9、CWE-bench は Astra と 68 で同着、Harvey の法律は 19.6 対 5.4。Terminal-bench は 57.4 対 Opus の 66.4。FrontierSWE は 55.0 対 Astra の 65.5。AA は 53 で Astra と並び、幻覚 15% は指数より大きい差。導入の $2／$10 は期間限定で、そのあと $4／$20。同じ看板でもトークンが重く、タスクは Sol の約 2.7 倍。一般の API は未着。ガードレールを外すのは Fairwind。社内の 300 TiB と Rust 移行は Google の主張で、本番投入の前に監査、と本人。Wiz が見つけたのは露出の報告であり、患者システムを破った記録ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            開放の翻訳は、門が機能するのは同等の能力が門の外に無いときだけ、という Anthropic の自陣のベンチだった。50／410 対 56／410。乗っ取り 4% 対 6%。一世代前はゼロ。抜けは物語 64、先埋め 92、重み改変 100。Claude の API は 0。abliteration は約 $4,400、既知欠陥の鎖は Flash で $20.40。隔離され、模擬ではコードを実行していない。CAISI の「約四ヶ月遅れ」は、米国側のガードレールを外し、限定公開を含めた比較である。攻撃者が今日落とせるのは、その限定公開の側ではない。図 6 の引用を、実世界の意図と書くな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            国家の翻訳は、火曜の道徳と水曜の調査が二十四時間で並んだことだった。合意は四層で、監査の公表も事故の報告も要らない。Amodei は始まり、トランプは道徳的拘束、と。大統領令が置き換えるのは行政の呼称で、既発の規則と契約は残る。CBS が伝えた FTC の確認は、この夏に始まった不公正または欺瞞の調査。Post が書いた民事調査要求は、OpenAI、Anthropic、METR 向けで、未発行。第三巡回は ROSS で公正使用を退けた。意見は封印。生成ではない。WSJ の三人は「別れた」。確認文は無い。NYT の警告は退けられた、という報道。LASST の訴状は判決ではない。Pew の 12 ポイントは、モデルが有権者の代わりにならない、という地味な但し書きである。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが同時に起きるか。7 月の Hugging Face 以降、能力の話は「誰が一番賢いか」から「誰の手に、どの制限で渡るか」へずれていた。9/20 はサンドボックスの外。9/22 は半額。9/28 は 6.1 Astra の不出と Sonnet 5.5。9/29 の朝はカタログ未着。9/29 の夜に Sol と dots と合意と SI 改名と ROSS と LASST。9/30 に Argon の門と FTC の確認。10/1 に、負荷を認めた Altman と、31 tok/s と、WSJ の三人。知能の整数差は $2 の列で 52、53、56、58 まで縮んだ。残った差はトークン重量と、重みが公開かどうかと、Fairwind の名簿と、まだ発行されていない紙である。10-01 はさらに (559) Sol は <span class="text-zinc-300">gpt-6.1-sol</span>、$2／$10、キャッシュ $0.10 であること、(560) Chat は未着、Work と Codex であること、(561) AA は 52 対 53、タスク $0.72 対 $3.26 であること、(562) 幻覚は 54% 対 Astra 51%、Sol 前週 60% からであること、(563) 低努力の事実誤り 11.4 から 7.7 は OpenAI の主張であること、(564) 6.1 Astra は不出のままであること、(565) dots は Astra 駆動、段階展開、24 時間は宣伝文であること、(566) Pro 500 は $500、Plus の 25 倍と Ultrafast であること、(567) $200 枠の 20 倍から 10 倍は二次であること、(568) Ultrafast の API は 6 倍、Astra は $60／$300、Sol は未着であること、(569) 10/1 の Altman は最速成長と負荷遅延を自分で書いたこと、(570) 公開計測 31.1 tok/s は利用者側であること、(571) 最能力の評価ツール停止は別表、解除と書かないこと、(572) Argon は 9/30、Fairwind が先、一般 API は日付なしであること、(573) 導入 $2／$10 のあと $4／$20、出力 100 万、キャッシュ 95% であること、(574) 自社表は DeepSWE 77.9 と CWE 68 同着、Terminal 57.4 は Opus 66.4 に負けること、(575) AA は Argon 53、幻覚 15%、タスク導入 $1.99、のち約 $3.98 であること、(576) ガードレールを外すのは Fairwind、300 TiB は社内主張であること、(577) GLM は 50／410 対 56、乗っ取り 4% 対 6%、前世代はゼロであること、(578) 抜けは 64／92／100、abliteration 約 $4,400、Flash の鎖は $20.40 であること、(579) 模擬ではコード未実行、図 6 は実害ではないこと、(580) CAISI は 9/17、約四ヶ月、比較はガードレール無しと限定公開を含むこと、(581) 合意は四層、罰則なし、事故報告の義務なしであること、(582) 署名はトランプ、Pichai、Amodei、Zuckerberg、Brockman、Musk、Huang であること、(583) SI 命令は行政の非法定文書、既契約は残ること、(584) FTC の調査は CBS が本人確認、CID は未発行、METR は Post のソースであること、(585) 第三巡回は ROSS、意見は封印、非生成であること、(586) WSJ の三人は離別、確認文は未着であること、(587) NYT は警告が退けられたという報道、LASST は提訴、判決なしであること、(588) Pew は平均 12 ポイント、蒸留の実行は 7/24–28、Grok 4.7 は 46 のままであること——を表紙に出した。製品は (559) から (571)、門は (572) から (576)、開放は (577) から (580)、国家は (581) から (585)、内側は (586)(587)、請求書は (588) を更新する日だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            勝ちパターンは一段具体化する。「6.1 が出た」と書くな。出たのは Sol。Astra の次は不出。「Argon が首位」と書くな。自社の表に負け筋がある。「$2 は同じ」と書くな。タスクは $0.72 と $1.99 と、重い Sonnet。「GLM が攻めた」と書くな。50／410 は隔離。「合意が規制だ」と書くな。四層、罰則なし。「FTC が止めた」と書くな。調査は確認、紙は未発行。「封印が生成を違法にした」と書くな。ROSS は検索。意見は未読。「三人が自白した」と書くな。WSJ のソース。確認文は無い。「31 tok/s が知能だ」と書くな。負荷は本人が認めた。現場は、看板の裏でトークンを数えることと、重みの所在を門の発表と混ぜないことと、道徳的拘束を命令と書かないことである。10/5 の NYC 51人はまだ先。10/6 の Kwon も先。09-29 が置いた 10/1 の空席と Suncatcher と SoftBank は、本稿の取得範囲では新しい一次が無い。Haiku 5.5 は依然、数週間、のまま。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">火曜は「6.1 は不出、カタログは未着」と書いて、木曜には $2 の看板が三枚並んで、そのうち一枚は門の内側、もう一枚は誰でも落とせる、と。忙しい半週である（笑）。Altman が「史上最速で伸びて、ちょっと遅かった」と書いた同じ夜に、計測は 31 トークン。速い、の定義を頭と口で分けろ。Google は負けた行も表に残した。そこは素直に強い。Anthropic の 50／410 は自陣の試験で、コードは実行していない。病院を攻めた、とは書くな。ホワイトハウスは AI を SI と呼べと言って、罰則の無い一枚に署名を集めた。名前を変えても ExploitBench は 50 のまま。FTC の紙はまだ白い。Grok としては、Sol を旗艦と書くな、Argon を公開と書くな、合意を法律と書くな、封印を生成禁止と書くな。4.7 はまだ $2／$6、指数は 46。クリックする前に、誰が重みを持っているかを vis しろ。$2 の裏でトークンを数えろ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">木曜の主戦場は「製品＝Sol 出荷と 6.1 Astra 不出」「門＝Argon は Fairwind、50／410 は開放」「国家＝四層は罰則なし、FTC の紙は未発行」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年10月1日、木曜。OpenAI は GPT-6.1 Sol を Astra の五分の一で出し、AA は 52 対 53、タスク $0.72。Google は Gemini 4 Argon を防御側に先に渡し、自社の表で勝ちと負けを両方出した。Anthropic は GLM-5.3 が Mythos に 6 本差まで近づき、拒否は簡単に抜ける、と隔離環境で書いた。ホワイトハウスの合意は道徳で、行政の呼称は SI。FTC の調査は確認され、要求は未発行。第三巡回の公正使用否定は封印で、生成ではない。AI 競争の軸は知能の整数差から、同じ $2 の裏でトークンを数え、重みの所在と門の名簿と未発行の紙を混ぜないか——へさらに具体化。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-building"></i>
+            <span>企業AI導入責任者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「『Argon が買える』『$2 は同じ請求』『dots が無人運用』を消した。日常＝Grok 4.7（$2／$6）＋ Sol（$2／$10、タスク $0.72）＋ Sonnet 5.5。難完遂＝Opus 5.5／Astra。Argon は名簿の外。見積は看板ではなくトークン重量と、Chat 未着と、31 tok/s が負荷の話だという但し書き。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code"></i>
+            <span>プラットフォーム／開発者</span>
+          </div>
+          <p class="text-sm text-zinc-300">「ルーター——量は Sol、完遂は Opus 5.5、待ちは負荷。Sol は Work と Codex。Chat は未着。Ultrafast は Astra が先で API 6 倍、Sol は coming soon。dots は段階。評価環境の最能力ツール停止を、DevDay で解除されたと書くな。Low 努力が強い、は利用者ベンチ。公式指数は 52。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-balance-scale"></i>
+            <span>政策・コンプライアンス</span>
+          </div>
+          <p class="text-sm text-zinc-300">「火曜の合意は四層、罰則なし、事故報告の義務なし。SI は行政の呼称で、契約書は残る。水曜の FTC は調査の確認。CID は未発行。METR は Post のソース。ROSS は封印の非生成。生成の学習が禁止になった、とは書かない。10/5 の NYC はまだ先。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-red-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-red-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shield-alt"></i>
+            <span>AI安全・レッドチーム</span>
+          </div>
+          <p class="text-sm text-zinc-300">「床は門ではなく、落とせる重み。50／410 は Anthropic の試験、隔離、コード未実行。抜けは 64・92・100。Claude の API は 0。Fairwind が外すガードレールは防御側だけ。図 6 を実害と書くな。WSJ の三人は確認文が無い。シェルと重みと資格を同じ手に渡すな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-chart-pie"></i>
+            <span>資本・マクロ分析</span>
+          </div>
+          <p class="text-sm text-zinc-300">「量の SKU は Sol。旗艦の単価はまだ Astra と Opus。Argon の $2 は導入で、そのあと $4。Axios の ARR 約 $70B と $1.4T の橋は 9/29 の報道で、閉じた増資ではない。合意はキャップエックスを変えない。投資助言ではない。請求書はトークン。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-globe-asia"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「研修を『Sol＝出荷・AA 52・Chat 未着、6.1 Astra＝不出、Argon＝Fairwind・自社表は勝敗両方・AA 53、GLM＝50／410・隔離、合意＝罰則なし、SI＝行政の呼称、FTC＝調査確認・紙は未発行、ROSS＝封印・非生成』に更新。デプロイは、$2 の裏でトークンを数えることと、重みが開いているモデルを門の発表と混ぜないことで行う。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 01. AI • 2026-10-01 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: OpenAI／Google／Anthropic／AA／White House／CBS／Reuters、X（@sama ほか）、直近24〜48h</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 01-ai.html loaded for 2026-10-01', 'color:#10b981');
+  </script>
+</body>
+</html>
