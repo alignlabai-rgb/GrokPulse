@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-10-03 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-10-03 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🪤</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">穴は、逆だ。点は、ボタンで止まった<br>タグは 2.1.288。Latest は、なお v0.1.2</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年10月3日（土）。10-02 の表紙は「端末は、一人のまま。続きは、実験の箱。空のプラグインが、未来だと言う」だった。翌日、Claude Code の公式 changelog の先頭は 2.1.288、October 2, 2026。10-02 が「先端は 2.1.287。15:06 の止まりを、より新しいタグは閉じていない」と書いたあとのタグだ。閉じた、と箇条が名指しするのは別の穴である。bypassPermissions かシェルの許可規則の下で、<span class="text-zinc-300">bash -c</span> か <span class="text-zinc-300">sh -c</span> の中の危険な rm（/ やホーム）が、プロンプト無しで走っていた。#96300。10/1 15:06 UTC に Boris Cherny が「バグらしい」と言った、バイパスでもクラウドの細かい編集が止まり続ける件は、読んだ 2.1.288 の箇条には無い。止まりすぎと、聞かずに消すは、逆だ。同じ金曜の 18:00 UTC、The Verge は点を一人で試した。回線の工事は、押し続けの人間チェックで止まった。無料の見学は見逃し、$35 の日券を出した。照り焼きは、ログインを手伝ってから届いた。サイトと動画は、権限を大量に渡したあと動いた。$100 は既存の Pro で、新しい値札ではない。お気に入り発言は 01。ディスクの予告も 01 で、日付は無い。Clef は 10/1 の縁で、文を返さない決定だ。Copilot のレビュー API は 10/2。Balanced が既定になった日は、投稿が 9/28 と書く。OpenShell の Latest は v0.1.2。プレの v0.1.3-pre.3 は 10/2 のタグで、安定ではない。証明器のバイナリを snap に入れた、は題。審判ではない。ピンは十六日目。Bot は三十一日目。契約に「2.1.288 が 15:06 の止まりを閉じた」「点がほぼ何でもした」「Clef が文の正しさを保証した」「10/2 に既定が切り替わった」「pre.3 が Latest だ」と書くな。「穴は逆。点はボタンで止まった。決定は確率。API は口。既定の日は 9/28。Latest は v0.1.2。十六日目」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 RM ≠ STOP</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">2.1.288・10/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">タグは進んだ。直した穴は、逆向き<br>止まりは、名指しされていない</div>
+          <div class="mt-4 text-sm text-zinc-400">code.claude.com の changelog。先頭は 2.1.288、説明は October 2, 2026。ページは GitHub の CHANGELOG.md から生成する、と書く。どの配布チャンネルの今の版かは、この頁は書いていない。changelog の先頭を、全員の端末にするな。名指しの修正はこうだ。危険な rm——例は / かホーム——が、<span class="text-zinc-300">bash -c</span> か <span class="text-zinc-300">sh -c</span> の中で、プロンプト無しに走っていた。条件は bypassPermissions か、シェルの許可規則。#96300。前日の 2.1.287 は、同じ rm が <span class="text-zinc-300">~</span> かワイルドカードへ出力を向けたとき always-ask を失う、を直している。条件が違う。二日分を一つの穴にするな。10/1 15:06 UTC、@bcherny は、Auto mode と dangerously bypass を付けてもクラウドが細かい編集で止まり続ける、という報告に “Looking, seems like a bug” と返した。直した、とは書いていない。2.1.288 を読んだ範囲で、その報告を名指しする箇条は無い。途中の API タイムアウトで、無人セッションとサブエージェントが部分応答から続ける、は別の箇条だ。思考だけの応答は再試行する、とも書く。15:06 の止まりとは書いていない。書いていないものを、閉じたことにするな。同じ版の許可は、もう一枚ある。PreToolUse と PermissionRequest のフックは、照合に失敗したとき、または道具の入力が JSON にならなかったとき、飛ばされていた。いまは呼び出しを止める。飛ばすのが通過だった穴を、止める側へ倒した。すべてのフックがサンドボックスになった、ではない。MCP は、道具の実行中に追加の OAuth 範囲を求めたら、再認証を聞く。聞かない範囲の拡大ではない。リモートの結果が 16MB を超えるか解析できないとき、MCP の道具が二度走ることがあった。それも直した、と書く。10-02 の Durable は、印の無いデプロイを二度打たない設計だった。こちらは、バグとして二度走っていたものを止めた。設計の印と、不具合の修正を、同じ再実行ポリシーにするな。npm の自動更新は、プラットフォーム用バイナリの取得に失敗し、プレースホルダの <span class="text-zinc-300">claude</span> stub だけが入ったときにも成功と出していた。表示を、版にするな。直した、は changelog。バックグラウンドのコマンド時間制限は、無人（<span class="text-zinc-300">-p</span>、Agent SDK、CI、クラウド）だけに適用する、と変わった。端末とデスクトップアプリと VS Code には制限が無い、と書く。無人を、無制限にしたのではない。なぜ今か。10-02 は「より新しいタグが 15:06 を閉じた一次は無い」と書いた。タグは翌日あった。あったタグが塞いだのは、止まりすぎではなく、聞かずに消す側だ。バイパスという言葉を共有しているだけで、故障の向きは逆である。契約に「15:06 が直った」「python -c も塞がった」「フックがサンドボックスだ」「成功表示が版だ」「無人に制限が無くなった」「changelog が全員のインストールだ」と書くな。「先端の頁は 2.1.288。rm は bash -c と sh -c、プロンプト無し、bypass か許可規則。#96300。287 のリダイレクトとは別。15:06 は名指しされていない。フックの失敗は、いま止める。MCP の二度走りは 16MB か解析不能。stub の成功表示は嘘だった。制限が残るのは無人」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-terminal"></i>
+            <span>Claude Code changelog 2.1.288（10/2）／@bcherny（10/1 15:06 UTC）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 HOLD ≠ DONE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">The Verge・18:00 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">点は、ほぼ何でも、ではなかった<br>止めたのは人間チェックと、彼女自身</div>
+          <div class="mt-4 text-sm text-zinc-400">theverge.com、Allison Johnson、Oct 2, 2026, 6:00 PM UTC。見出しは、仕事のソフトが夕食も頼める、だ。新しい発表ではない。10-01 が拾った dots の、一人の実地だ。点は今ひとつ。複数は将来、と彼女が OpenAI の言として書く。彼女は自分の点を Dotty McDotface と名付けた。01 が拾った、Altman が Every で自分の点を Dotty と呼ぶ話とは別の点だ。混ぜるな。お気に入り投稿は 01。仮想機械には Blender と GIMP が最初からある、と彼女。自分のコンピュータはデスクトップの ChatGPT アプリ経由。電話もできる。試した席は月 $100 の Pro で、経費にした、と書く。10-01 の Pro の値札の繰り返しで、新しい値段ではない。Muse と Instinct は、少なくとも今は無料、と彼女。広告その他は、彼女の推測だ。推測を、Meta の料金表にするな。回線の開通予約は、ほぼそこまで行って止まった。メールの中の $100 のプロモは見つけた。見つけたのは、繋いだ受信箱の読取の一例だ。点自身のメールアドレスがローンチに着いた、とは書いていない。10-01 の「自分のアドレスはローンチに無い」を、この一例で覆すな。止まった理由は人間チェックだ。点の言として彼女が引く。“This particular check needs a sustained mouse hold that my browser controls don’t support.” 押し続けを、ブラウザ操作が支えられない。彼女が押した。会計の画面まで行った。Muse のような仮想カードは、この流れには無かった、と彼女は書く。事業者は月 $5 の割引のために銀行口座を求めた。番号を打ったのは彼女ではない。打たなかったのも彼女だ。製品が口座番号を拒んだ、とは書いていない。コワーキングの無料見学は見逃し、$35 の一日券を出した。同じ用件を Instinct にやらせたら数分で無料の予約まで行った、は彼女の一例で、ベンチではない。電話で点は “I jumped to the wrong conclusion” と言った、と彼女。Ikea は、セキュリティチェックのループでログインできなかった。近所の照り焼きは、クラウドのブラウザを門前で拒んだ。説明として点が出したのは、サイトがクラウドのブラウザを止めるときの OpenAI のヘルプ頁だ。Uber Eats へのログインを手伝ったあと、照り焼きは届いた。届いたことと、一人で届いたことは別だ。自分のサイトの作り直しは、約 10 分の電話のあと、彼女が皿を洗っているあいだに次の版が来た。完璧ではないが、前より良い、と彼女。デスクトップを開けたあとの二つの仕事——デスクトップの動画を一本のソーシャル用にまとめる、プロトタイプの変更をサイトへ載せる——は、「驚くほど多くの権限」を渡したうえで動いた、と書く。既定がオンに変わった、とは書いていない。10-01 のローカルは任意で、最初はオフ、の境界を、彼女が自分で開けた一例だ。開けた一例を、既定の反転にするな。“can do nearly anything” は、彼女が OpenAI の言として引用符で置く文だ。彼女の結果は、混ざっている。自分の仕事では月 $100 の値ではない、とも書く。それは感想だ。なぜ今か。10-01 は、離席中の proactive research を読取に閉じ、送信もブラウザも計算機も動かさない、とヘルプを引いた。金曜の実地は、人が横にいるときの点だ。横にいるときでも、ボタンの押し続けと、口座番号と、ログインは、人に戻っている。常時、が、コンビニの前で年齢確認を頼む瞬間がある。契約に「ほぼ何でもできた」「仮想カードが無いと OpenAI が仕様で書いた」「Instinct が勝った」「既定のローカルがオンだ」「自分のアドレスが着いた」「口座を製品が拒んだ」「$100 が新しい値札だ」「Dotty が公式名だ」と書くな。「レビューは 10/2 18:00 UTC。点は一つ。人間チェックで止まった。無料見学は見逃した。照り焼きはログインの手伝いのあと。サイトと動画は、権限を渡したあと。口座は彼女が打たなかった。お気に入りと、もう一人の Dotty は 01」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-hand"></i>
+            <span>The Verge ハンズオン（10/2 18:00 UTC）。発表の境界は 10-01。お気に入りは 01</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 PROBABILITY ≠ PROSE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Clef・10/1 の縁</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">決定は、文を返さない<br>38.8ms は、27B の中央値ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">developers.cloudflare.com の changelog。October 1, 2026。10-02 はこの欄を置かなかった。10/3 の初出荷ではない。縁だ。モデルは <span class="text-zinc-300">@cf/cloudflare/clef</span> と <span class="text-zinc-300">clef-flash</span>。Workers AI チームが学習した最初のモデル、は本人の文。決定モデルで、Typesafe の Jev と同じ族。テキストを生成しない。入力の状態と、型のある質問を読み、許された答えごとに確率を返す。自由文は無く、推論トークンも待たない、と本人。エージェントがすぐ動ける決定の例は、チケットの振り分け、要求の拒否、人への上げ、だ。例を、出荷済みの運用にするな。重みは Apache 2.0 で Hugging Face。ホストは Workers AI。RL の微調整は、同じ投稿でデザインパートナーの申し込みだ。自分で回す公開ボタンではない。申し込みを、一般提供にするな。速度は、43 本のベンチで、中央値が Jev の 2.5 倍、flash は 13 倍、と本文。表は別だ。中央値は Clef 209.3ms、flash 38.8ms、Jev 524.1ms。p95 は 238.6、122.4、536.0。13 倍は本文の整数。表の 524.1÷38.8 は約 13.5。本文の整数と、表の商を、一つの計測にするな。両方本人。10 本の決定ベンチで、Clef のモデルが 7 本で最高、と書く。「Clef のモデル」は族だ。27B だけが 7 本、ではない。表に出る範囲では、BFCL の case exact は flash 98.76、Clef 98.47、Jev 95.75。BANKING77 の macro-F1 は Clef 94.20。CLINC150+OOS は Clef 97.43 に対し flash は 66.77 で、Jev の 89.27 より下。家電は flash 97.73、Clef 82.95、Jev 52.27。残りの 3 本の名前は、この changelog の表には無い。無い負けを、勝ちにするな。Typesafe 自身のワークフロー評価では、請求処理、顧客対応、セキュリティ事故の 3 領域で Jev に勝つ。4 つ目の名前は、この頁に無い。大きさは Clef が 27B、flash が 9B。窓はどちらも 64K。質問は一要求 64 まで。型は noul（はいの確率）、choice（選択肢と確率と信頼）、score（段階の確率）。画像は四つまで。テキストだけの決定モデルと違い、視覚のエンコーダがある、と本人。Jev に視覚が無い、と名指ししてはいない。脅威情報の例は、Browser Run と組んでドメインを取得し描画し分類するのに 2.2 秒。同じ流れの gpt-oss-120b は 4.7 秒。これは中央値ではない。ガードレールの文は、道具を呼ぶ前に「この行動をしてよいか」を数十ミリ秒で見る、だ。数十ミリ秒は flash の 38.8 に近く、27B の 209.3 ではない。三つの時計を一つにするな。値段の頁はリンクだけで、本稿は開いていない。開いていない値札を、無料にするな。なぜ今か。2.1.288 が、文字列の rm を人が確認する側へ戻し、点がボタンの押し続けを人に返した週に、Cloudflare は道具の前に置く決定を、文ではなく確率にした。確率は、行動が正しいことの証明ではない。自由文を待たない、という製品の形だ。契約に「10/3 生まれだ」「27B が 7 本全部で勝った」「38.8ms が 27B だ」「2.2 秒が中央値だ」「13 倍が表の商だ」「RL が一般提供だ」「確率が正しさだ」「無料だ」と書くな。「日付は 10/1。文は返さない。中央値は 209.3 と 38.8。7 本は族。CLINC では flash が負けている。2.2 秒は描画込みの一例。RL は申し込み。値段は未開」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-scale-balanced"></i>
+            <span>Cloudflare changelog（10/1）。10-02 は未収。今日の初出荷ではない</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 API ≠ SEPT 28</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">GitHub・10/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">新しいのは、頼む口<br>既定が動いた日は、九月</div>
+          <div class="mt-4 text-sm text-zinc-400">github.blog／changelog。October 2, 2026。Improvement。Copilot のコードレビューを、REST と GraphQL から頼める。依頼ごとに努力の水準を指定できる。一般提供は Copilot Pro、Pro+、Max、Business、Enterprise。スクリプトと、自前の流れと、社内ツールからレビューを始められる、と本人。始める口であって、プルリクエストをマージする権限とは書いていない。口を、決裁にするな。リードは、Balanced がいま既定だ、とも書く。本文は分ける。8 月 28 日に予告したとおり、既定の努力は、Copilot code review を使う新規と既存のリポジトリと組織で Balanced を使う。明示的に Lite を選んでいた設定は尊重された。効力は September 28, 2026。now を、土曜の切替にするな。努力の中身の定義は、もっと前の投稿にある。1 ヶ月より前だ。ここでは、10/2 が「指定できる」と書くことと、「Lite を明示していれば 9/28 に動かなかった」と書くことだけを使う。上書きは、Enterprise、組織、リポジトリ、個人の順で、下が上を覆せる、と本文。同じ 10/2 の Retired は、別の投稿だ。Gemini 3.5 Flash、Gemini 3.6 Flash、Kimi K2.7 Code、Claude Opus 4.7 を、その日をもって廃止。対象は Copilot Chat、インライン編集、ask、agent モード、補完。代替は Gemini 3.8 Flash、Kimi K3、Claude Opus 5.5。Enterprise の管理者は、代替をモデルポリシーで有効にする必要があるかもしれない。有効にすると、VS Code と github.com の選択に出る。廃止モデルを手で消す作業は要らない、と本人。ピッカーから消えることと、エージェントの仕事の定義が変わることは別だ。agent モードが列に入っているので、ここへ置く。モデルそのものの値札は 01 に残せる。なぜ今か。レビューを人の画面の外から始められるようになった日と、既定が深くなった日は、投稿の中で四日ずれて見える。ずれを、一回の「賢くなった」にするな。廃止は、同じ金曜のピッカーの話だ。契約に「10/2 に既定が Balanced へ切り替わった」「API がマージする」「Lite の明示が無効だ」「廃止がエージェントの新能力だ」「代替が全員に既に見える」と書くな。「口は 10/2。努力は依頼ごと。既定の効力は 9/28。Lite の明示は残った。マージとは書いていない。廃止は四モデル。agent モードも列にある。消す作業は要らない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-pull-request"></i>
+            <span>GitHub Changelog（レビュー API と、同日のモデル廃止。10/2）より</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 PRE ≠ LATEST</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">OpenShell・10/2</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">snap に証明器を詰めた<br>Latest の印は、火曜のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">github.com／NVIDIA/OpenShell。本稿が releases/latest を開いたとき、Latest はなお v0.1.2。github-actions が 28 Sep 03:58 に出している。頁は、そのリリースのあと main へ 74 コミット、と書いていた。数は動く。コミットを、タグにするな。別頁の v0.1.3-pre.3 は、olivercalder が 02 Oct 11:51 にタグした、と頁が書く。年とタイムゾーンは、その行には無かった。題は <span class="text-zinc-300">feat(snap): ship the standalone prover binary in the snap (#3717)</span>。Latest の印は付いていない。プレの snap に、単体の証明器バイナリを同梱した、は題だ。証明器が審判になった、とは書いていない。10-02 の「証明器は審判ではない」は、この題では動いていない。インストールの例は、なお <span class="text-zinc-300">OPENSHELL_VERSION=v0.1.2</span>。pre.3 の頁に、安定版の案内は無い。発表の 9/28 から数えて<strong>六日目</strong>。Sentry は参照設計のままで、値段も出荷日も 9/28 の発表には無かった。ここでやり直さない。なぜ今か。2.1.288 が危険な rm を人の確認へ戻し、Clef が道具の前に確率を置いた週に、エージェントの実行を外から縛るランタイムの安定タグは動いていない。動いたのは、プレの snap が証明器のバイナリを同梱した、という題だ。同梱は、エージェントが正しく働いたことの証明ではない。契約に「v0.1.3 が安定だ」「74 が閉じた件数だ」「証明器が審判だ」「11:51 が UTC だ」「六日目にポリシーが変わった」と書くな。「Latest は v0.1.2、9/28 03:58。開いたとき main は 74。数は動く。pre.3 は 02 Oct 11:51 のタグで、題は snap の証明器。Latest ではない。六日目」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-box"></i>
+            <span>OpenShell releases/latest と v0.1.3-pre.3 の頁より</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-3">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#06 D+16 / D+31</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">時計と、01 との境界</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">十六日目。三十一日目<br>ディスクの日付は、01 のまま無い</div>
+          <div class="mt-4 text-sm text-zinc-400">時計だけ進んだものと、今日の検索で動かなかったものを分ける。Plugin4Shell の公開は 9/17。10-02 が十五日目なら、10/3 は<strong>十六日目</strong>。下限の Claude Code 2.1.179 と Codex 0.146.0 を動かした新しい一次は、この検索では見ていない。Copilot と Gemini CLI の「未修正」を、今日やり直したことにもしない。動かしていないことを、今日の再監査にするな。Grok Bot は 9/3 起算で、10-02 の三十日目の翌日、<strong>三十一日目</strong>。公式ピッカーの差し替えは、この検索では新しい一次が無い。点の自分のメールアドレスは、The Verge の実地には着いていない。着いたように見える $100 のプロモは、繋いだメールの読取だ。2.1.286 の「2 of 5」は、枚数の表示のままで、2.1.288 がそれを閉じた、とは changelog が書いていない。枚数を、割り込みの終了にするな。ディスク全体の追加制御は 01。Apple は「very explicit user action」と書き、ロールアウト日は無い。rm の穴を changelog が塞いだことと、macOS がディスクを閉じたことを、同じ「閉じた」にするな。Academy の $100M と、FT の $8B と、軌道の連絡は 01。値札に戻さない。なぜ今か。土曜のエージェントは、新しい知能の整数では動いていない。動いたのは、向きの違う穴のタグと、人がボタンを押す実地と、文を返さない決定の縁と、レビューを始める口と、安定ではない snap だ。止まって見えるものと、勝手に消えるものと、確率だけ返すものと、タグの印が付かないものが、同じ週に並ぶ。契約に「十六日目に下限が動いた」「ピッカーが差し替わった」「受信箱が着いた」「2 of 5 が閉じた」「ディスクが施行された」「$8B がこの欄だ」と書くな。「十六日目。三十一日目。下限は未再監査。ピッカーの新しい一次は無い。点のアドレスは、このレビューには無い。枚数は表示。ディスクの日付は 01 に無く、ここでも無い」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>10-01／10-02 の時計、changelog、The Verge。ディスクと値札は 01</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年10月3日の AI Agents は、実験を安定と書くな、と書いた翌日である。10-02 は、Pi の端末を一人のままにし、続きを実験の箱に分け、空のプラグインを提供者と呼ばず、Now in を誕生と呼ばなかった。10-03 はその禁則を、タグの中身へ移す。タグが進んだ。進んだ先が塞いだ穴は、昨日の読者が期待した穴ではない。値札と Academy とディスクの予告と $8B は 01 に残す。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            最小の翻訳は、バイパスという言葉が二つの故障を隠すことだった。公式 changelog の先頭は 2.1.288、October 2。危険な rm が <span class="text-zinc-300">bash -c</span> か <span class="text-zinc-300">sh -c</span> の中で、プロンプト無しに走っていた。条件は bypassPermissions かシェルの許可規則。#96300。2.1.287 が直したのは、同じ rm が <span class="text-zinc-300">~</span> かワイルドカードへ出力を向けたときに always-ask を失うことだ。条件が違う。10/1 15:06 UTC に Cherny が「バグらしい」と言ったのは、バイパスでもクラウドの細かい編集が止まり続けることだ。2.1.288 の読んだ箇条は、それを名指ししない。止まりすぎと、聞かずに消すは、逆向きである。無人とサブエージェントが、途中のタイムアウトから部分応答を続ける、はもう一つの箇条で、15:06 ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            許可の翻訳は、飛ばすことが通過だった、だ。PreToolUse と PermissionRequest は、照合に失敗するか、入力が JSON にならないと、フックを飛ばしていた。2.1.288 は呼び出しを止める。止めることは、サンドボックスが生まれたことではない。MCP は、実行中に追加の範囲を求めたら再認証を聞く。16MB 超か解析できない結果で二度走っていた道具は、止めた、と書く。Durable が印の無いデプロイを二度打たない設計だったのとは、層が違う。npm の更新は、中身が stub でも成功と出していた。成功の表示を、版にするな。時間制限が残るのは無人の側で、端末とデスクトップと VS Code は制限が無い、と changelog。無人を無制限にしたのではない。どのチャンネルに 2.1.288 が載ったかは、この頁は書いていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            実地の翻訳は、常時がボタンで止まることだった。The Verge の 10/2 18:00 UTC は、新しい製品ではない。点は一つ。複数は将来、とレビュアーが OpenAI の言として書く。彼女の Dotty McDotface と、01 の本人の Dotty は別だ。回線の開通は、押し続けの人間チェックで止まった。ブラウザ操作が、その押し続けを支えられない、と点自身が言った、と彼女は引く。彼女が押して、会計まで行った。銀行口座は打たなかった。打たなかったのは彼女で、製品の拒否ではない。無料の見学は見逃し、$35 を出した。Instinct が無料を見つけたのは、彼女の一例だ。電話の点は、間違った結論に飛んだ、と言った。Ikea はループし、照り焼きはクラウドのブラウザを拒み、ログインを手伝ったあと届いた。サイトと動画は、驚くほど多くの権限のあと動いた。既定のローカルがオンに変わった、とは書いていない。メールの $100 プロモは、繋いだ受信箱の読取で、点自身のアドレスが着いたことではない。“can do nearly anything” は引用であって、彼女の結果はその文より狭い。月 $100 は既存の Pro だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            決定の翻訳は、文が無いことだった。Clef は 10/1 で、10-02 が置かなかった縁だ。今日の初出荷ではない。状態と質問を読み、許された答えの確率を返す。自由文は無い。27B と 9B、窓は 64K、ライセンスは Apache 2.0。中央値は 209.3ms と 38.8ms。本文の 13 倍と、表から割った約 13.5 は、両方本人で、同じ数ではない。7 本で最高、は族の話だ。CLINC では flash が Jev より下にいる。2.2 秒は、描画して分類した一例で、中央値ではない。数十ミリ秒はガードレールの文で、27B の中央値ではない。RL はデザインパートナーの申し込み。値段は開いていない。確率は、行動が正しいことの証明ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            口の翻訳は、日付が二つあることだった。10/2 に新しいのは、REST と GraphQL から Copilot のコードレビューを頼め、依頼ごとに努力を指定できることだ。対象プランは Pro、Pro+、Max、Business、Enterprise。マージする、とは書いていない。Balanced が既定、の効力は本文が 9/28 と書く。8/28 の予告のあとで、Lite を明示していれば尊重された。リードの now を、土曜の切替にするな。同じ日の廃止は、Gemini 3.5 Flash、3.6 Flash、Kimi K2.7 Code、Opus 4.7。agent モードも列にある。代替は 3.8 Flash、Kimi K3、Opus 5.5。ポリシーで有効にしないと、選択に出ないかもしれない。消す作業は要らない。ピッカーは、能力の定義ではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            印の翻訳は、プレが安定を置換しないことだった。OpenShell の Latest は、開いたときなお v0.1.2、9/28 03:58。main は 74 コミット、と頁が書いていた。数は動く。v0.1.3-pre.3 は 02 Oct 11:51 のタグで、年とタイムゾーンはその行に無かった。題は、単体の証明器バイナリを snap に入れる、だ。審判ではない。六日目。ピンは十六日目で、下限は今日再監査していない。Bot は三十一日目で、ピッカーの新しい一次は無い。「2 of 5」は表示のままだ。ディスクの日付は 01 に無く、ここでも無い。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同時に起きるか。買い手が支払う失敗が、「エージェントが止まる」から「エージェントが聞かずに手を動かす」へ寄った週に、公式のタグが塞いだのは後者の、ごく狭いラッパだった。前者の 15:06 は、名指しされていない。実地の点は、まさに前者のように止まり、ボタンの押し続けを人に返した。Cloudflare は、その手の前に、文ではなく確率を置いた。GitHub は、レビューを始める口を足し、既定が深くなった日は四日前だと本文に書いた。実行を外から縛るランタイムの安定タグは動かず、プレの snap が証明器を同梱した。10-02 の「実験を安定と書くな、空を提供者と書くな」は、10-03 では「止まりの修正を、消す穴の修正と書くな。実地を、ほぼ何でもと書くな。確率を正しさと書くな。九月の既定を十月の切替と書くな。プレを Latest と書くな」に続く。どれも、モデルに自分の境界を審かせていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            10-03 を一文で言えばこうだ。changelog の先頭は 2.1.288。rm は bash -c と sh -c、プロンプト無し、bypass か許可規則、#96300。287 のリダイレクトとは別。15:06 の止まりは名指しされていない。フックの失敗は、いま止める。MCP の二度走りは 16MB か解析不能。stub の成功は嘘だった。制限が残るのは無人。点の実地は 18:00 UTC。一つ。人間チェックで止まり、無料見学を見逃し、照り焼きは手伝いのあと。口座は彼女が打たなかった。お気に入りは 01。Clef は 10/1。中央値は 209.3 と 38.8。7 本は族。RL は申し込み。レビューの口は 10/2。既定の効力は 9/28。廃止は四モデル。Latest は v0.1.2。pre.3 は snap の証明器で、審判ではない。六日目。十六日目。三十一日目。ディスクの日付は無い。賢い独白はもう足りない。問題は、逆の穴を同じバイパスと書かず、実地を仕様と書かず、確率を正しさと書かず、now を切替日と書かず、プレを安定と書かず、から次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">金曜は、実験を安定と書くな、で終わった。土曜はタグが一つ進んで、直したのが止まりすぎではなく、聞かずに rm が走ることだった。バイパスという同じ言葉で、逆の穴を塞いだ気になるな（笑）。点は照り焼きを頼めた。その前に、このボタンを押し続けてくれ、と人間に頼んでいる。常時の相棒が、コンビニの前の高校生になる瞬間だ。Clef は文を書かない。確率だけ返す。文が無いのは、正しい、ではない。OpenShell はプレの snap に証明器を詰めて、Latest の印は火曜のまま。GitHub はレビューを頼む口を足して、既定が動いた日は九月だと本文に書いた。ディスクの日付は 01 に無く、ここでも無い。Grok の土曜相棒は六枚：逆の rm、ボタンで止まった点、文を書かない決定、9/28 を 10/2 と書かない口、プレではない Latest、十六日目。止まりを、消す穴の修正と書くな。測れ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">土曜の主戦場は「rm≠止まり」「実地≠ほぼ何でも」「確率≠正しさ」「API≠9/28」「pre≠Latest」「十六日目」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年10月3日の AI Agents は、Claude Code の changelog 先頭が 2.1.288（October 2）になり、危険な rm が bash -c または sh -c の中でプロンプト無しに走っていたのを、bypassPermissions かシェル許可規則の条件下で塞いだと #96300 に書き、2.1.287 のリダイレクト時の always-ask 喪失とは条件が違い、10/1 15:06 UTC の「バイパスでも細かい編集が止まり続ける」は読んだ箇条が名指ししないこと、照合失敗か JSON 化できない PreToolUse／PermissionRequest はフックを飛ばさず呼び出しを止め、MCP は追加スコープで再認証を聞き、16MB 超か解析不能で二度走っていた道具を直し、npm 更新が stub だけでも成功と出していたのを直し、時間制限は無人に残して端末側は制限無しと書いたこと、The Verge が 10/2 18:00 UTC に点を一人で試し、人間チェックの押し続けで止まり、無料見学を見逃して $35 を出し、照り焼きはログインの手伝いのあと届き、銀行口座はレビュアーが打たず、サイトと動画は大量の権限のあと動き、点は今ひとつで複数は将来、お気に入りと本人の Dotty は 01 であること、Cloudflare Clef が 10/1 に文ではなく確率を返し、中央値が 209.3ms と 38.8ms、10 本中 7 本は族の話で flash は CLINC で負け、2.2 秒は描画込みの一例、RL はデザインパートナーの申し込みであること、GitHub が 10/2 に Copilot コードレビューを REST／GraphQL から頼め努力を依頼ごとに指定できるようにし、Balanced 既定の効力は 9/28 で Lite の明示は残り、同日に四モデルを agent モードも含めて廃止したこと、OpenShell の Latest が v0.1.2 のまま、開いたとき main は 74 コミット、v0.1.3-pre.3 は 02 Oct 11:51 の snap への証明器同梱で審判ではなく六日目であること、Plugin4Shell が十六日目で下限は未再監査、Grok Bot が三十一日目でピッカーの新しい一次は無く、点自身のアドレスはこのレビューに無く、ディスクの日付は 01 のまま無いこと——が同時進行した。本番の鍵は常時接続の宣伝文ではなく、「誰の止まりを誰の rm と書き、誰の実地を誰の仕様と書き、誰の確率を誰の正しさと書き、誰の九月を誰の十月と書き、誰のプレを誰の Latest と書くか」にある。10-02 の「端末は一人のまま。続きは実験の箱」に続き、10-03 は「穴は、逆だ。点は、ボタンで止まった」。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-terminal"></i>
+            <span>逆の穴を分ける人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「先頭は 2.1.288、October 2。rm は bash -c と sh -c、プロンプト無し、bypass か許可規則。#96300。287 はリダイレクトで always-ask を失う側だ。15:06 の止まりは、読んだ箇条に無い。フックの失敗は、いま止める。サンドボックスではない。MCP の二度走りは 16MB か解析不能。stub の成功は嘘だった。制限が残るのは無人。changelog を、全員の版にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-hand"></i>
+            <span>ボタンを押した人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「実地は 10/2 18:00 UTC。点は一つ。押し続けで止まった。無料見学は見逃し、$35 を出した。照り焼きはログインのあと。口座を打たなかったのはレビュアーだ。サイトと動画は、権限を渡したあと。既定のローカルは、この記事では反転していない。繋いだメールの読取を、点のアドレスにするな。お気に入りと、もう一人の Dotty は 01。$100 は既存の Pro。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-scale-balanced"></i>
+            <span>確率だけ受け取る人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Clef は 10/1。文は返さない。中央値は 209.3 と 38.8。13 倍は本文、表の商は約 13.5。7 本は族で、CLINC では flash が負けている。2.2 秒は描画込み。数十ミリ秒は 27B の中央値ではない。RL は申し込み。値段は未開。確率を、正しさの監査にするな。今日の初出荷にもするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code-pull-request"></i>
+            <span>既定の日を分ける人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「口は 10/2。REST と GraphQL。努力は依頼ごと。Pro から Enterprise。マージとは書いていない。Balanced の効力は 9/28。Lite の明示は残った。now を切替日にするな。廃止は 3.5 Flash、3.6 Flash、Kimi K2.7 Code、Opus 4.7。agent モードも列にある。代替はポリシーかもしれない。消す作業は要らない。ピッカーを、能力にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-box"></i>
+            <span>プレを Latest と呼ばない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「Latest は v0.1.2、9/28 03:58。開いたとき main は 74。数は動く。pre.3 は 02 Oct 11:51。年もタイムゾーンも、その行には無い。題は snap の証明器。審判ではない。六日目。安定の案内は、プレの頁には無い。コミットをタグにするな。ピンは十六日目。下限は、今日は動かしていない。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを、検証できる反復に限る。Claude Code は 2.1.288 を changelog が先頭に置く。成功表示ではなく、バイナリの版を見ろ。塞いだと書いてあるのは bash -c と sh -c の危険な rm で、15:06 の止まりではない。フックが照合に失敗すると、いまは止まる。止まりが増えるのは、穴を閉じた副作用であり得る。点を仕事に置くなら、一つ、人間チェックで止まり、口座は人が打つ前提で、デスクトップは既定オフのまま自分で開けたときだけ、と書け。お気に入りは 01。Clef をガードに置くなら、返すのは確率で、38.8ms は flash、2.2 秒は別の時計、値段は未開、RL は申し込み。Copilot のレビュー API は開始であってマージではない。既定の効力は 9/28。Lite を明示した設定を、土曜に失ったことにするな。廃止四モデルは、agent モードの選択からも落ちる。代替はポリシーを確認してから。OpenShell を入れるなら Latest の印は v0.1.2。pre.3 の証明器を、正しさの審判にするな。<span class="text-zinc-300">rev-parse</span> を vis しろ。ピンは十六日目。Bot は三十一日目。ディスクの日付は 01 に無く、施行日を社内手順に書くな。人が書くのはゴールと stop と allowlist と、逆の穴を同じバイパスと書かなかったかの確認だ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-10-03 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Claude Code changelog、The Verge、Cloudflare、GitHub Changelog、OpenShell、@bcherny（直近24〜48h中心。値札とディスクは 01）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-10-03', 'color:#10b981');
+  </script>
+</body>
+</html>
