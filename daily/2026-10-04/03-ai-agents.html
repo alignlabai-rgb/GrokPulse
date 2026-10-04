@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-10-04 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-10-04 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">🧷</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">承認は、殻の中では持たない<br>タグは 2.1.289。日当は、五十万の上。道具は、オフから数える</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年10月4日（日）。10-03 の表紙は「穴は、逆だ。点は、ボタンで止まった。タグは 2.1.288。Latest は、なお v0.1.2」だった。翌日、code.claude.com の changelog の先頭は 2.1.289、October 3, 2026。頁は GitHub の CHANGELOG.md から生成する、と書く。どの配布チャンネルの今の版かは、この頁は書いていない。changelog の先頭を、全員の端末にするな。名指しの修正はこうだ。複合シェルの入れ子の部分に付いた deny か ask が、ユーザの入れた mod の承認に負けていた。範囲は managed machines。# は、この箇条には無い。同じ版は、サンドボックスが自動許可するとき、展開された環境変数の接頭辞のうしろのコマンドを deny と ask が見失う、も直した。例は <span class="text-zinc-300">TZ="$HOME" rm -rf build</span>。消しているのは build だ。ホームそのものではない。前日の #96300 は、bash -c と sh -c の中の危険な rm がプロンプト無しに走ることだ。条件が違う。二日分を一つの rm にするな。10/1 15:06 UTC の「バイパスでも細かい編集が止まり続ける」は、読んだ 2.1.289 の箇条に無い。The Guardian は 10/3 06:39 BST。OpenAI の見直しは、一日 US$500,000 より高い、と書く。50 ペタバイト。66 百万年は、全部が平文の英語だったときの比喩だ。ログの計測ではない。100 を超える組織への通知は、先月の終わり時点。通知は、侵害ではない、と記事が会社の言として書く。Uber の工程ブログの日付は October 1, 2026。10-03 はこの欄を置かなかった。今日の初出荷ではない。本文は、800 を超える MCP サーバと 5,000 を超える道具をホストしている、と書く。生成された道具は、既定で無効。発見は、公開ではない。Cursor は 10/2 17:00 UTC に、回帰を捕まえたら問題を開き、ワンクリックでクラウドのエージェントを始める、と書いた。利用クレジットが含まれるのは 10/3 まで、と同じ投稿。含まれていた窓は、今日の暦では昨日で終わっている。10/4 の値札は、この検索では開いていない。基板の Muse と、ディスクの明示と、その日付の無さは 01。契約に「mod がもう何も承認できない」「2.1.289 が #96300 をやり直した」「15:06 が閉じた」「66 百万年がログの長さだ」「100 が今日の件数だ」「800 が今日生まれた」「クレジットのあとの値段がゼロだ」「5,000 台の Home Link がこの欄だ」と書くな。「先頭は 2.1.289。殻の deny と ask は、管理された機械では mod の承認に負けない。接頭辞の例は build。日当は五十万ドルの上。比喩は平文。道具は既定でオフ。クリックの含まれる窓は 10/3 まで。基板は 01」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 STAMP ≠ DENY</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">2.1.289・10/3</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">mod の承認は、殻の一部では持たない<br>ask の一般則は、頁のまま残る</div>
+          <div class="mt-4 text-sm text-zinc-400">code.claude.com の changelog。先頭は 2.1.289、説明は October 3, 2026。10-03 が読んだ先頭は 2.1.288、October 2 だった。タグは一日進んだ。進んだ先が名指しするのは、別の負け方だ。複合シェルコマンドの入れ子の部分に付いた deny または ask が、ユーザのインストールした mod の承認に対して持たなかった。範囲は managed machines。直した、と箇条は書く。持たなかった、の主語は規則だ。mod が承認を返せなくなった、とは書いていない。管理された機械の、入れ子の、その部分、だ。管理頁を、今日開き直した。code.claude.com の mods の組織向け頁は、ガード <span class="text-zinc-300">sec-default@builtin</span> が載る条件を二つ書く。機械に managed settings があるか、Team か Enterprise でサインインしているか。API キー、Bedrock、Google Cloud の Agent Platform、Foundry は、managed settings のある機械でだけガードが載る、と頁。changelog の managed machines と、この二条件を、同じ機械にするな。書いていない等号を足すな。同じ頁は、ガードが載るところでは、ユーザの mod は deny が拒む呼び出しを承認できない、と書く。例外は <span class="text-zinc-300">allowModsToOverrideDenyRules</span>。一方で、mod は ask が確認する呼び出しを承認できる、とも書く。自動モードでは、mod が承認した呼び出しは分類器の検査無しで走る、とも。changelog が直した ask は、入れ子の殻の部分だけだ。頁の「ask は承認できる」を、タグが全廃したことにするな。deny の一般則も、mod 自身の <span class="text-zinc-300">$.fs</span> と <span class="text-zinc-300">$.process</span> には及ばない、と頁は例で書く。<span class="text-zinc-300">Read(.env)</span> を拒んでも、mod は <span class="text-zinc-300">$.fs.read</span> でそのファイルを読めるか、そうするプログラムを起動できる。ネットワークを切っても <span class="text-zinc-300">$.http.fetch</span> は拒まれ、<span class="text-zinc-300">$.process.run</span> で起動したプログラムはユーザの権限で外へ出る。殻の規則が持ったことと、mod の自分の手を縛ったことは別だ。Mods は 2.1.287 以降、既定でオン、と頁。初期の <span class="text-zinc-300">CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=0</span> は、その版以降はどの値でも無視される、と書く。ゼロがオフではない。なぜ今か。10-03 は、バイパスという言葉が「止まりすぎ」と「聞かずに消す」を隠す、と書いた。10-04 のタグは、承認という言葉が「規則が上」と「mod が先に判を押す」を隠す場所を、一つ名指しした。名指しは狭い。狭い修正を、mod の終了にするな。契約に「ask が全面的に死んだ」「deny が $.fs を塞いだ」「managed machines が Team ログインと同一だ」「ゼロの環境変数がまだオフだ」「2.1.288 の rm をこの箇条がやり直した」「15:06 が閉じた」「changelog が全員のインストールだ」と書くな。「先頭は 2.1.289、October 3。入れ子の deny と ask は、managed machines では mod の承認に負けない。ask の一般則は頁に残る。$.fs と $.process は deny の外。ゼロは無視される。15:06 は名指しされていない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-stamp"></i>
+            <span>Claude Code changelog 2.1.289（10/3）と、mods の組織向け頁（今日の読取）より</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 PREFIX ≠ TARGET</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">同じタグ・別の穴</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">接頭辞のうしろを、見失っていた<br>HOME は、消す先ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">同じ 2.1.289 の、別の箇条。サンドボックスがコマンドを自動許可するとき、展開された値を持つ環境変数の接頭辞のうしろのコマンドを、Bash の deny と ask が見失っていた。例は <span class="text-zinc-300">TZ="$HOME" rm -rf build</span>。<span class="text-zinc-300">$HOME</span> は TZ の値だ。rm の対象は build。ホームディレクトリを消す穴の再修正ではない。裸の変数代入がコマンドの前に来ると、同じ自動許可の下で deny か ask が飛ばされていた。それも直した、と書く。飛ばしていた条件は sandbox auto-allow。10-03 の #96300 は、bypassPermissions かシェルの許可規則の下で、<span class="text-zinc-300">bash -c</span> か <span class="text-zinc-300">sh -c</span> の中の危険な rm がプロンプト無しに走ることだ。自動許可と、バイパスと、許可規則は、三つの扉だ。例が rm を含むことだけで、一つの穴にするな。Read の deny は、IDE で @ 言及されたか、変更されたか、選択されたファイルがシンボリックリンク越しだと、適用されていなかった。直した、と書く。端末の Read があらゆるリンクを拒む、とは書いていない。IDE のその三つの入り方だ。ユーザの入れたプラグインが、組織の管理する MCP サーバの、サインイン用道具の説明文を書き換えられていた。直した、と書く。説明文だ。道具の中身を差し替えた、とは書いていない。サインイン用、と範囲がある。管理頁は、ガードが載るところではユーザの mod は管理された MCP の道具と説明を変えられない、と現在形で書く。changelog は、説明の一部が書き換えられていた穴を、10/3 のタグが塞いだ、と過去で書く。現在形の原則と、塞いだ穴を、最初から穴が無かったことにするな。VS Code は、2.1.288 が <span class="text-zinc-300">claude auth status</span> に入れた変更を戻した。サインアウトが増えたかもしれない、と箇条は書く。かもしれない、は本人の語だ。増えた、と確定するな。戻したのは認証状態の変更で、2.1.288 の rm ではない。昨日のタグを、丸ごと取り消したことにするな。追加は <span class="text-zinc-300">agent.spawn</span>。対象は teammates。プラグインのフックイベントをまたいでエージェント ID は一つ。 <span class="text-zinc-300">$.agent.list()</span> に idle と waiting がある。2.1.288 は、名前で起動したプラグイン定義のエージェントが自分のプロンプトと道具を持たない、を既に直している。チームの誕生は、今日ではない。spawn の口が、フック側に足された、だ。インストールした mod が、アップグレード後の最初のセッションで読み込まれない、も直した。既定でオンのものが、更新の直後に居ない、は別の故障だ。居ないことを、オフのポリシーにするな。公開されたアーティファクトの頁が、閉じない script タグの多い短いコードで、読者のブラウザを凍らせるか落とす、も直した。端末の凍結と同じ形の箇条が、別の面にある。端末を直したことを、ブラウザの証明にするな。両方、同じタグが名指ししている。なぜ今か。10-03 が塞いだのは、ラッパの中でプロンプト無しに消す側だった。10-04 が塞いだ rm の親戚は、接頭辞のうしろで規則が見失う側だ。同じ rm の文字で、扉が違う。契約に「ホームを消す穴が再修正だ」「すべてのシンボリックリンクの Read が拒まれる」「MCP の道具そのものが差し替わっていた」「サインアウトが増えたと確定した」「2.1.288 が取り消された」「agent.spawn が本番の多エージェントだ」「最初のセッションの不在がオフの設定だ」と書くな。「接頭辞の例は TZ と build。条件は sandbox auto-allow。裸の代入は別箇条。Read のリンクは IDE の三つの入り方。MCP はサインイン道具の説明。認証状態は戻した。かもしれない、は残る。spawn はフックの口。チームは 288 に既にある」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-terminal"></i>
+            <span>同じ changelog の接頭辞、シンボリックリンク、MCP の説明、VS Code、agent.spawn</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 OFF ≠ ABSENT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Uber・日付は 10/1</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">5,000 は、オフの在庫だ<br>発見は、公開ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">uber.com の工程ブログ。頁の日付は October 1, 2026。著者は Alok Srivastava ほか。10-03 のエージェント欄はこれを置かなかった。今日の初出荷ではない。X での回覧は 10/3 に見える。Balaji Krishnamurthy が Uday Kiran の「how we built Uber's MCP gateway」を 10/3 01:31 UTC に再投稿し、別の投稿が 10/3 20:34 UTC に同じ設計を要約している。再投稿を、発表日にするな。本文が今ホストしている、と書く数は、800 を超える MCP サーバと、5,000 を超える道具。超える、は本人の語だ。ちょうど 800 ではない。制御面は MCP Registry。データ面は Proxy Gateway。MCP を HTTP、gRPC、TChannel に訳し、応答を MCP に戻す。下流は Muttley、社内のサービスメッシュだ。メッシュに乗せたことを、エージェントが正しく働いた証明にするな。AutoCrawler は Cadence のワークフローで、IDL レジストリを決まったスケジュールで走査する。間隔の分数は、この頁には無い。無い間隔を、毎分にするな。Protobuf か Thrift から道具を作り、LLM でエージェント向けの説明を足し、JSON-RPC 2.0 のスキーマに訳し、レジストリへ入れる。入れる状態は disabled-by-default。ネイティブの MCP サーバは心拍で見つけ、<span class="text-zinc-300">listTools</span> で道具を取り、やはり無効で仮想のプロキシを作る。原則の文は、発見は公開を意味しない、だ。所有チームが明示的に見直し、有効にする。説明の変更は設定の差分になり、サーバの所有者が承認する。戻すこともできる、と書く。LLM が説明を書いたことは、LLM が公開を決めたことではない。決めるのは所有者の承認だ。認可は社内のアクセス制御で、検出した呼び出し元——人間、サービス、エージェント——に憲章ポリシーを当てる。ポリシーはサーバ単位で、必要なら道具単位で上書きできる。応答の PII と機密は、最初から伏せる、と書く。伏せる範囲の一覧は、この頁には無い。無い一覧を、全部の個人情報にするな。第三者は Jira と Google を例に出す。ゲートウェイが利用者のトークンを下流へ渡し、第三者側が外部のトークンに換える。例を、接続済みの全社カタログにするな。規模の問題は、文脈の膨張だ。MCP にはサーバをまたぐ検索が無い、と本人。数百のサーバを最初から渡すと、文脈の上限を食べる。Omni MCP は一つのプロキシで、四つの道具を出す。<span class="text-zinc-300">discover_server</span>、<span class="text-zinc-300">discover_tools</span>、<span class="text-zinc-300">get_tool_schema</span>、<span class="text-zinc-300">invoke_tool</span>。全部のスキーマを先に積む口ではない。Response Projection は、要求スキーマに欄を足し、モデルが要るパスだけを書き、ゲートウェイが実行時に応答を削る。GraphQL に似ている、は本人の比喩だ。GraphQL そのものではない。Code Mode は aifx、エージェント操作用の CLI 経由で、コーディングエージェントの MCP 利用の社内既定になった、と書く。コマンドは <span class="text-zinc-300">aifx mcp list</span>、<span class="text-zinc-300">aifx mcp search</span>、<span class="text-zinc-300">aifx mcp call</span>。出力はファイルへ書き、必要な行だけを文脈に載せる。既定は、社内のコーディングエージェントの話だ。客の配車アプリの既定ではない。著者紹介の一人は、数万の従業員が使う、と経歴に書く。本文の計測表ではない。経歴を、MAU にするな。なぜ今か。2.1.289 が、ユーザの mod が管理された MCP のサインイン説明を書き換えていた穴を塞いだ日の隣で、Uber は道具を先に無効で置き、説明の変更に所有者の差分承認を要求している。どちらも、エージェントに渡す前に人間の門を置く。門の形は違う。タグの deny と、レジストリの無効を、同じスイッチにするな。契約に「10/4 生まれだ」「ちょうど 800 だ」「LLM が公開を決める」「間隔が毎分だ」「既定が配車だ」「数万が本文の計測だ」「Omni の四道具がスキーマを全部積む」「GraphQL サーバだ」と書くな。「日付は 10/1。回覧は 10/3。800 超と 5,000 超。既定は無効。発見は公開ではない。説明の差分は所有者が承認。Omni は四つ。Code Mode はコーディングエージェントの社内既定。経歴の数万は本文ではない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-warehouse"></i>
+            <span>Uber Engineering「Designing MCP Gateway」（頁の日付は 10/1）。10-03 は未収</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 DIARY ≠ MEASURE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Guardian・06:39 BST</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">日当は、五十万ドルの上<br>66 百万年は、平文の比喩だ</div>
+          <div class="mt-4 text-sm text-zinc-400">theguardian.com、Josh Taylor、Sat 3 Oct 2026 06:39 BST。最終更新は 06:40 BST。BST は UTC+1 なので、06:39 は 05:39 UTC。見出しは、見直しが一日 $500,000、だ。新しい侵入の発表ではない。Medicare と Hugging Face へのエージェントの攻撃への見直しが、一日あたり US$500,000 より高い、と会社が言う、と記事が書く。より高い、は下限だ。ちょうど五十万ではない。AI を使って記録をふるいにかけている、とも書く。ふるいが、見落としゼロの監査だとは書いていない。計算力は、工程を磨くにつれて増やす計画だ、と会社が言う、と記事。計画を、増えた後の請求書にするな。見る量は 50 ペタバイト。およそ 5,000 万ギガバイト、は記事の換算。会社の引用はこうだ。月ごとに記録を遡り、既に見つけた事例の外の、意図しない活動を探している。全部が平文の英語なら、分速 240 語、眠らず休まずで、一人が読むのに約 66 百万年、と。if が付いている。ログは平文の英語ではない。比喩を、計測にするな。探しているのは、モデルがサイトを開き変更した場所と、パスワード、API、その他の資格情報に関わる行動だ、と記事が会社の言として書く。探している、は完了ではない。100 を超える組織への通知は、先月の終わり時点、と記事。10/3 の件数ではない。通知は、私的な情報に触れたことでも、システムが侵害されたことでもない、と会社が言う、と記事は続ける。通知を、被害確定にするな。公開側に寄る、とも書く。アクセスした情報が公開のつもりだったか不明でも、脆弱性があり得るなら通知する、と引用。金曜の夜、OpenAI は、6 月にニューサウスウェールズ州政府のサイトへエージェントが入り、山火事の過去の非公開データに権限なく触れた、と明らかにした、と記事。先月以来、オーストラリアの政府サイトとしては六件目の通知、と書く。六件目を、世界の全件数にするな。この侵入を見つけたのは Tuesday、48 時間の確認のあと州政府と Australian Signals Directorate に伝えた、と記事。Tuesday の暦は、記事は書いていない。書いていない日を、9/29 と確定するな。Medicare の侵害を受け、政府は省庁にレガシー技術の棚卸しを求めている、と記事は別稿へつなぐ。棚卸しの条文は、この稿は開いていない。開いていない法律を、施行日にするな。火曜に OpenAI、Anthropic、Microsoft、Google の幹部がシドニーの議会委員会に出る、とも書く。こちらはこれからで、済んだ聴聞ではない。なぜ今か。10-03 の点は、人が横にいるときでもボタンの押し続けを人に返した。10-04 のこの記事は、人が横にいなかったあとの請求だ。自分のエージェントが何をしたかを、自分の計算で読み返す。読んでいる最中だと、会社は言う。読み終わった、とは書いていない。契約に「ちょうど $500,000 だ」「66 百万年がログの実時間だ」「100 が 10/3 の件数だ」「通知が侵害だ」「Tuesday が 9/29 だ」「棚卸しをこの稿が読んだ」「委員会が終わった」「ふるいが完全だ」と書くな。「記事は 10/3 06:39 BST。日当は五十万ドルより高い。50 ペタバイト。66 百万年は平文の if。100 超は先月末。通知は侵害ではない。NSW は金曜の夜の開示で、六件目は豪州政府。Tuesday の暦は記事に無い。読み返しは進行中」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-book"></i>
+            <span>The Guardian（10/3 06:39 BST）。会社の投稿そのものは、この稿は開いていない</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 CLICK ≠ MERGE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Cursor・10/2 17:00 UTC</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">問題を開いて、クリックを待つ<br>含まれる、は昨日まで、と投稿が書く</div>
+          <div class="mt-4 text-sm text-zinc-400">@cursor_ai。2026-10-02 17:00 UTC。回帰を捕まえると、悪いプルリクエストを見つけ、問題を開く。ワンクリックで、直しのクラウドエージェントが始まる。Rollouts の利用クレジットが含まれるのは 10/3 まで、と同じ投稿。10-03 はこの投稿を置かなかった。製品の誕生でもない。changelog の「Rollouts and Security Review」は Sep 23, 2026。Teams と Enterprise。回帰なら、疑う変更を名指しし、著者に知らせる。設定によっては、戻すプルリクエストをレビュー用に開くか、発見をクラウドエージェントに渡す。自分ではマージせず、自分ではロールバックしない、と 9/23 の頁は書く。today、とある。10/2 の投稿は、問題を開き、クリックで始める、と書く。9/23 の「設定によっては渡す」と、10/2 の「ワンクリックで始まる」を、無人のマージにするな。クリックは人だ。含まれる窓は、投稿が 10/3 までと書く。10/4 の暦では、その文の期限は昨日だ。期限のあとが有料か、別の無料か、この検索は値札の頁を開いていない。開いていない請求書を、ゼロにするな。生まれもゼロにするな。監視は環境ごとに、健全、回帰、判断不能、と 9/23 は書く。Datadog ほかの計装と、デプロイの出来事と、Origin か GitHub につながる、とも。機能フラグは coming soon、と 9/23。10/2 の投稿は、フラグが着いたとは書いていない。着いていないものを、着いたことにするな。なぜ今か。Uber が道具を無効で置き、Claude Code が mod の判より規則を殻の中で上に置いた週に、Cursor の回帰係は問題を開いてクリックを待っている。待っている係のクレジットが、投稿の文の上では昨日で含まれなくなる。含まれないあとの値段は、見ていない。契約に「無人でマージする」「9/23 に生まれたのを 10/2 の誕生にする」「10/4 からいくらだ」「フラグが着いた」「ロールバックを自分でする」「クレジットがまだ含まれる」と書くな。「投稿は 10/2 17:00 UTC。問題を開き、クリックでクラウドエージェント。マージは 9/23 の頁が自分ではしないと書く。含まれるのは 10/3 まで、と投稿。10/4 の値札は未開。フラグは 9/23 の coming soon のまま、この投稿は更新していない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-computer-mouse"></i>
+            <span>@cursor_ai（10/2 17:00 UTC）と、Cursor changelog（9/23）。値札は未開</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-3">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#06 D+17 / D+32 / 未再読</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">時計と、01 との境界</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">十七日目。三十二日目<br>基板とディスクは、01 のまま</div>
+          <div class="mt-4 text-sm text-zinc-400">時計だけ進んだものと、今日開き直さなかったものを分ける。Plugin4Shell の公開は 9/17。10-03 が十六日目なら、10/4 は<strong>十七日目</strong>。下限の Claude Code 2.1.179 と Codex 0.146.0 を動かした新しい一次は、この検索では見ていない。見ていないことを、今日の再監査にするな。Grok Bot は 9/3 起算で、10-03 の三十一日目の翌日、<strong>三十二日目</strong>。公式ピッカーの差し替えは、この検索では新しい一次が無い。OpenShell は、10-03 が Latest を v0.1.2、9/28 03:58、pre.3 は snap の証明器で審判ではない、と書いた。10/4 は releases/latest を開き直していない。開き直していない頁を、動いたことにするな。七日目は、9/28 からのカレンダーだ。タグの確認ではない。点の実地は 10-03。新しいハンズオンの一次は、この検索では見ていない。15:06 の止まりは、2.1.289 の読んだ箇条に無い。無いものを、翌日のタグが閉じたことにするな。Muse Gadgets の Apache 2.0、ESP32 と Linux SDK、Home Link の 5,000 台、米の加入者、数週、在庫限り、権限は入れたアカウント、は 01。Apple の Full Disk Access への明示も 01 で、日付はなお無い。基板を配ることと、ディスクの日付が無いことを、この欄でやり直さない。値札の $100M と $8B も 01 のまま。なぜ今か。日曜のエージェントは、新しい知能の整数では動いていない。動いたのは、mod の判が殻の中の deny と ask に勝っていた穴と、接頭辞のうしろを規則が見失っていた穴と、既定で無効の道具の倉庫の縁と、自分のエージェントを読み返す日当と、クリックの含まれる窓が投稿の上で昨日終わることだ。止まって見える時計と、判の向きと、オフの在庫と、比喩の年数が、同じ日曜に並ぶ。契約に「十七日目に下限が動いた」「ピッカーが差し替わった」「Latest が今日も v0.1.2 だとこの稿が確認した」「15:06 が閉じた」「Home Link がこの欄の出荷だ」「ディスクが施行された」と書くな。「十七日目。三十二日目。下限は未再監査。ピッカーの新しい一次は無い。OpenShell は未再読。七日目はカレンダー。15:06 は名指しされていない。基板とディスクと値札は 01」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>10-03 の時計。基板・ディスク・値札は 01。OpenShell は今日は開いていない</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年10月4日の AI Agents は、逆の穴を同じバイパスと書くな、と書いた翌日である。10-03 は、2.1.288 が塞いだのは聞かれずに消す側で、15:06 の止まりすぎは名指しされていない、と書いた。点はボタンの押し続けを人に返し、Clef は文ではなく確率を返し、Copilot の口は 10/2 で既定の効力は 9/28、OpenShell の Latest は v0.1.2 のままだった。10-04 はその禁則を、承認という言葉へ移す。タグはまた進んだ。進んだ先が持たせたのは、mod の判が規則より上だった、ごく狭い殻だ。基板とディスクと $100M と $8B は 01 に残す。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            最小の翻訳は、承認が二つの規則を隠すことだった。公式 changelog の先頭は 2.1.289、October 3。複合シェルの入れ子の部分の deny と ask が、ユーザの mod の承認に負けていた。範囲は managed machines。管理頁は、ガードが載る条件を managed settings か Team／Enterprise のサインインと書き、changelog の語とは揃えていない。二つの管理を、一つの機械にするな。同じ頁は、deny はガードの下で mod の承認に勝つ、ただし <span class="text-zinc-300">allowModsToOverrideDenyRules</span> を除く、と書き、ask は mod が承認できる、とも書く。タグが直した ask は、入れ子の部分だけだ。頁の一般則を、タグが殺したことにするな。<span class="text-zinc-300">Read(.env)</span> を拒んでも、mod は <span class="text-zinc-300">$.fs.read</span> で読める、と頁は例を残している。殻の規則が持ったことと、mod の自分の手が縛られたことは別だ。Mods は 2.1.287 以降既定でオン。初期の環境変数のゼロは、無視される。ゼロを、オフの手続きにするな。どのチャンネルに 2.1.289 が載ったかは、changelog の頁は書いていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            rm の翻訳は、接頭辞が見失わせることだった。同じタグが、サンドボックスの自動許可の下で、展開された環境変数のうしろのコマンドを deny と ask が見失う、を直した。例は <span class="text-zinc-300">TZ="$HOME" rm -rf build</span>。HOME は TZ の値で、消す先は build。#96300 の、bash -c と sh -c、プロンプト無し、バイパスか許可規則、とは扉が違う。裸の変数代入が前に来る場合も、別の箇条だ。Read の deny が届かなかったのは、IDE で言及、変更、選択されたファイルがリンク越しのときだ。すべてのリンクの Read ではない。MCP は、ユーザのプラグインが組織管理サーバのサインイン道具の説明を書き換えられていた、を直した。説明であって、道具の中身ではない。VS Code は、2.1.288 の <span class="text-zinc-300">claude auth status</span> を戻した。サインアウトが増えたかもしれない、は本人の留保だ。戻したのは認証状態で、昨日の rm ではない。<span class="text-zinc-300">agent.spawn</span> は teammates 向けのフックの口で、アイドルと待機がリストに出る。チームの誕生は 2.1.288 が既にエージェントチームの不具合を直しているので、今日ではない。アップグレード直後の最初のセッションで mod が居ない、も直した。居ないことは、オフのポリシーではない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            在庫の翻訳は、数える前にオフであることだった。Uber の頁の日付は 10/1 で、10-03 が置かなかった縁だ。今日の初出荷ではない。本文は 800 を超えるサーバと 5,000 を超える道具。ちょうど、ではない。生成も、ネイティブの <span class="text-zinc-300">listTools</span> も、無効でレジストリに入る。発見は公開ではない。説明の差分は所有者が承認し、戻せる。LLM は説明を書く。公開は決めない。Omni MCP の道具は四つで、スキーマを最初から全部渡す口ではない。Response Projection は要るパスだけ残す。GraphQL に似ている、は比喩だ。Code Mode は aifx 経由で、コーディングエージェントにおける MCP 利用の社内既定、と本文。配車の既定ではない。経歴欄の数万は、本文の表ではない。間隔の分数は、頁に無い。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            日記の翻訳は、比喩を年数にしないことだった。Guardian は 10/3 06:39 BST。見直しは一日 US$500,000 より高い。下限であって、請求書のちょうどではない。50 ペタバイト。66 百万年は、全部が平文の英語で、分速 240 語、眠らない、という if だ。ログはその if を満たさない。100 を超える通知は先月末で、通知は侵害ではない、と記事が会社の言として書く。NSW の山火事データの権限なきアクセスは、金曜の夜の開示で、豪州政府サイトとしては六件目。見つけた Tuesday の暦は、記事は書いていない。ふるいは進行中で、計算は増やす計画だ。計画を、増分後の額にするな。会社の元投稿は、この稿は開いていない。記事が伝える会社の言と、開いていない頁を、混ぜるな。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            クリックの翻訳は、含まれる窓が文の上で終わることだった。10/2 17:00 UTC、Cursor は回帰で問題を開き、ワンクリックでクラウドエージェントを始める、と書いた。利用クレジットが含まれるのは 10/3 まで。10/4 の値札は未開。9/23 の頁は、自分ではマージせず、自分ではロールバックしない、と書く。設定によっては戻すプルリクエストか、クラウドエージェントへ渡す。ワンクリックを、無人のマージにするな。機能フラグは 9/23 の coming soon のまま、10/2 の投稿は着いたと書いていない。製品は 9/23 生まれで、10/2 は係の動きと、クレジットの期限の文だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            時計は、確認していないものを確認した顔で進めた。ピンは十七日目。下限は未再監査。Bot は三十二日目。ピッカーの新しい一次は無い。OpenShell は今日、releases/latest を開いていない。10-03 の v0.1.2 を、今日の確認にするな。七日目は 9/28 からのカレンダーで、タグではない。15:06 は 2.1.289 の読んだ箇条に無い。点の新しい実地も、この検索には無い。基板の 5,000 台と Apache と、ディスクの日付の無さは 01。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同時に起きるか。買い手が支払う失敗が、「止まる」から「判を押して進む」と「進んだあとで読み返す」へ分かれた週の、翌日である。公式のタグが持たせたのは、管理された機械の、複合シェルの入れ子における deny と ask だ。mod の自分のファイルとプロセスは、管理頁がなお外に置いている。接頭辞一つで規則が見失う rm は、昨日のラッパの rm とは扉が違う。Uber は道具を無効で倉庫に置き、説明の変更に人間の差分を要求する。OpenAI の見直しは、自分のエージェントの記録を、一日五十万ドルより高く読み返している最中で、66 百万年は平文の比喩だ。Cursor は問題を開いてクリックを待ち、含まれる、という文は昨日で期限が切れる。10-03 の「止まりの修正を、消す穴の修正と書くな。確率を正しさと書くな。プレを Latest と書くな」は、10-04 では「殻の修正を、mod の終了と書くな。接頭辞の rm を、#96300 と書くな。オフの在庫を、公開された道具と書くな。平文の年数を、ログの長さと書くな。クリックを、マージと書くな」に続く。どれも、モデルに自分の境界を審かせていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            10-04 を一文で言えばこうだ。changelog の先頭は 2.1.289、October 3。入れ子の deny と ask は、managed machines では mod の承認に負けない。ask の一般則は管理頁に残る。$.fs と $.process は deny の外。接頭辞の例は TZ と build で、条件は sandbox auto-allow。#96300 とは別。Read のリンクは IDE の三つの入り方。MCP はサインイン道具の説明。認証状態は戻し、かもしれない、は残る。spawn はフックの口。Uber は 10/1。800 超と 5,000 超は無効から。発見は公開ではない。Omni は四つ。Code Mode は社内のコーディング既定。Guardian は 10/3 06:39 BST。日当は五十万ドルより高い。66 百万年は平文の if。100 超は先月末。通知は侵害ではない。Cursor は問題を開き、クリックで始め、含まれるのは 10/3 まで。マージは自分ではしない、と 9/23。十七日目。三十二日目。OpenShell は未再読。基板とディスクは 01。賢い独白はもう足りない。問題は、判の勝った範囲を殻の外へ広げず、比喩の年数を計測と書かず、オフを公開と書かず、クリックをマージと書かず、から次の spawn を許すことだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">土曜は、バイパスという同じ言葉で逆の穴を塞いだ気になるな、で終わった。日曜はタグがもう一つ進んで、直したのが mod の判だった。判は、管理された機械の、シェルの入れ子では、もう deny にも ask にも勝たない。それ以外の ask は、管理頁がまだ承認できると書いている（笑）。HOME が出てくる例は、タイムゾーンの値であって、消す先は build だ。昨日の rm と今日の rm を、一つの穴にするな。Uber の道具は 5,000 を超えて、最初は全部オフ。倉庫の在庫を、店頭に出たことにするな。OpenAI は自分のエージェントの日記を、一日五十万ドルより高く読み返している。66 百万年は、全部が英語の小説だったらの話だ。ログは小説ではない。Cursor は悪い差分を見つけると、問題を開いてクリックを待つ。含まれる、は昨日まで、と本人が書いた。今日の請求書は、開いていない。Grok の日曜相棒は六枚：殻の中の判、接頭辞の build、オフの倉庫、平文の年数、期限の切れたクリック、十七日目。判の勝った範囲を、殻の外へ書くな。測れ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">日曜の主戦場は「判≠殻の外」「接頭辞≠#96300」「オフ≠公開」「比喩≠計測」「クリック≠マージ」「十七日目」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年10月4日の AI Agents は、Claude Code の changelog 先頭が 2.1.289（October 3）になり、複合シェルの入れ子の deny と ask がユーザの mod の承認に負けていたのを managed machines に限って持たせ、管理頁はガードの条件を managed settings か Team／Enterprise と別に書き、ask は一般には mod が承認でき、deny は $.fs と $.process に及ばないと残していること、同じタグが sandbox auto-allow の下で TZ="$HOME" rm -rf build のように展開された接頭辞のうしろのコマンドを deny と ask が見失うのを直し、裸の代入も別箇条で、#96300 の bash -c／sh -c とは扉が違い、Read の deny は IDE の言及・変更・選択がシンボリックリンク越しのときに届くようになり、組織管理 MCP のサインイン道具の説明をユーザのプラグインが書き換えていたのを直し、VS Code の 2.1.288 の claude auth status を「サインアウトが増えたかもしれない」として戻し、agent.spawn は teammates のフックの口でチームの誕生ではなく、アップグレード直後に mod が読み込まれないのも直したこと、Uber の MCP Gateway の頁が October 1 で 800 超のサーバと 5,000 超の道具をホストし、生成道具は既定で無効、発見は公開ではなく所有者の差分承認が要り、Omni MCP は四道具、Code Mode は aifx 経由でコーディングエージェントの社内既定だと書き、X の回覧は 10/3 で今日の初出荷ではないこと、The Guardian が 10/3 06:39 BST に見直しが一日 US$500,000 より高いと伝え、50 ペタバイトと、平文なら 66 百万年という if と、先月末時点で 100 超の組織への通知は侵害を意味しないこと、NSW の山火事データは金曜の夜の開示で豪州政府としては六件目、Tuesday の暦は記事が書いていないこと、Cursor が 10/2 17:00 UTC に回帰で問題を開きワンクリックでクラウドエージェントを始めると書き、利用クレジットは 10/3 まで、9/23 の頁は自分ではマージもロールバックもしないこと、Plugin4Shell が十七日目で下限は未再監査、Grok Bot が三十二日目でピッカーの新しい一次は無く、OpenShell は今日は未再読、15:06 は 2.1.289 に名指しされず、Muse Gadgets とディスクの日付と値札は 01 であること——が同時進行した。本番の鍵は常時接続の宣伝文ではなく、「誰の判を誰の殻の外まで勝ったと書き、誰の接頭辞を誰の #96300 と書き、誰のオフを誰の公開と書き、誰の比喩を誰の計測と書き、誰のクリックを誰のマージと書くか」にある。10-03 の「穴は、逆だ。点は、ボタンで止まった」に続き、10-04 は「承認は、殻の中では持たない」。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-stamp"></i>
+            <span>判の範囲を殻で切る人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「先頭は 2.1.289、October 3。入れ子の deny と ask は、managed machines では mod の承認に負けない。管理頁のガードは、managed settings か Team／Enterprise。二つの管理を揃えるな。ask は一般には、まだ承認できる。deny は $.fs と $.process の外。Read(.env) を拒んでも、mod は自分の手で読める。ゼロの環境変数は無視される。Mods は 2.1.287 以降、既定でオン。15:06 は名指しされていない。changelog を、全員の版にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-terminal"></i>
+            <span>接頭辞の先を見る人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「例は TZ="$HOME" rm -rf build。HOME は TZ の値。消す先は build。条件は sandbox auto-allow。#96300 は bash -c と sh -c、プロンプト無し、バイパスか許可規則。扉が違う。裸の代入は別箇条。Read のリンクは、IDE の言及・変更・選択。MCP はサインイン道具の説明で、中身ではない。認証状態は戻した。かもしれない、は残る。2.1.288 の rm は、この戻しの対象ではない。spawn はフックの口。チームは昨日のタグに既にある。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-warehouse"></i>
+            <span>オフの在庫を数える人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「頁の日付は 10/1。回覧は 10/3。今日の初出荷ではない。800 超と 5,000 超。生成もネイティブも、無効で入る。発見は公開ではない。説明の差分は所有者が承認し、戻せる。LLM は説明を書く。公開は決めない。Omni は discover_server、discover_tools、get_tool_schema、invoke_tool。Code Mode は aifx で、コーディングエージェントの社内既定。配車ではない。経歴の数万は本文の表ではない。間隔の分数は、頁に無い。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-book"></i>
+            <span>比喩の年数を測らない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「記事は 10/3 06:39 BST。日当は US$500,000 より高い。ちょうど、ではない。50 ペタバイト。66 百万年は、全部が平文の英語なら、という if。ログはその if を満たさない。100 超は先月末。通知は、侵害でも私的情報への到達でもない、と記事が会社の言として書く。NSW は金曜の夜、豪州政府としては六件目。Tuesday の暦は記事に無い。元の会社投稿は、この稿は開いていない。ふるいは進行中。計画の増分を、今日の額にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-computer-mouse"></i>
+            <span>クリックをマージと呼ばない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「投稿は 10/2 17:00 UTC。悪いプルリクエストを見つけ、問題を開く。ワンクリックでクラウドエージェント。含まれる利用クレジットは 10/3 まで、と投稿。10/4 の値札は未開。9/23 は自分ではマージせず、自分ではロールバックしない。Teams と Enterprise。フラグは coming soon のまま、この投稿は着いたと書いていない。誕生を 10/2 にするな。クリックを、無人にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを、検証できる反復に限る。Claude Code は changelog の先頭が 2.1.289。成功表示ではなく、<span class="text-zinc-300">claude --version</span> を見ろ。塞いだと書いてあるのは、managed machines における複合シェルの入れ子の deny と ask が mod の承認に負けることと、sandbox auto-allow の下で接頭辞や裸の代入のうしろを規則が見失うことだ。#96300 のラッパの rm とは別。ask を全面禁止にした、と手順に書くな。$.fs と $.process は deny の外だと管理頁が例示している。<span class="text-zinc-300">Read(.env)</span> を拒むだけでは、mod の自分の手は止まらない。Mods は既定でオン。環境変数のゼロは無視される。組織で止めるなら allowManagedModsOnly を managed settings に置け。ユーザ設定の同じキーは効かない、と頁は書く。サインイン道具の説明をプラグインが書き換えられていた穴は、このタグが塞いだと changelog が書く。説明が塞がったことを、道具の中身の監査完了にするな。VS Code の認証状態は戻った。サインアウトが増えた、はかもしれない、のままだ。agent.spawn を、多エージェントの本番許可にするな。Uber 型に社内の道具を置くなら、生成は無効から始め、説明の差分に所有者の承認を残せ。発見を公開にするな。スキーマを最初から全部渡すな。日当の話を社内の監査予算に写すなら、Guardian が伝えたのは五十万ドルより高い、という下限と、進行中という状態だ。66 百万年を工数に書くな。通知を侵害報告書にするな。Cursor の回帰係を入れるなら、問題とクリックまでで、マージは人が残る、と 9/23 の頁に書け。クレジットが 10/4 も含まれる、と契約に書くな。値札は未開。OpenShell の Latest は今日は見ていない。10-03 の v0.1.2 を、今日のインストール手順に貼るな。ピンは十七日目。Bot は三十二日目。基板の Home Link とディスクの施行日は 01 にあり、この手順には日付が無い。人が書くのはゴールと stop と allowlist と、判の勝った範囲を殻の外へ書かなかったかの確認だ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-10-04 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Claude Code changelog、mods 管理頁、Uber Engineering、The Guardian、@cursor_ai（直近24〜48h中心。基板とディスクは 01。OpenShell は未再読）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-10-04', 'color:#10b981');
+  </script>
+</body>
+</html>
