@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. AI Hardware &amp; Semiconductors ダイジェスト | 2026-10-04 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">04</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Hardware &amp; Semiconductors ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-10-04 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">📄</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">台本は NVHBM と書く。TSMC は、その頁に無い<br>67% はパッケージ。25% は、別の文だ</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年10月4日（日）。10-03 の表紙は「$1,074.89 は、$1,108.00 のあとに返した引け。13,136.67 は、メモリが売れているあいだに点いた」だった。日曜に動いたのは終値ではない。動いたのは、9/30 の台本と、そのあとに足された文の距離だ。Micron の Fiscal Q4 2026 prepared remarks（頁の日付は September 30, 2026）は、NVHBM を industry’s first custom-HBM4E implementation と書き、次世代 GPU と NVLink Fusion に載る、と書く。TSMC という語は、この 10 頁に無い。30% も 15% も 67% も 3nm も無い。The Elec（idxno=14372）は、Scott DeBoer が 9/30 の説明会で、NVHBM と JEDEC 標準の HBM4E のベースダイはファウンドリ工程で、HBM4 のベースダイは自社だった、と述べた、と書く。TSMC への外注は、その引用の外に同稿が置く文だ。3nm 級は believed。帯域の最大 30% と電力 15% と、I/O PHY のパッケージ面積の最大 67% は、同稿の説明文だ。「NVIDIA says」の文は、標準 HBM4E 比で帯域最大 30%、HBM 電力 15% 減、までで、67% を含まない。25% の計算ダイ面積は、この稿に無い。10/2 の @MentoviaX は 25% を置き、Ainvest は 8 月の NVIDIA 発表として 25% を置く。8 月の原文は開いていない。East Asia Brief（10/3、confidence medium、英語は AI 補助）は「10/2 に詳細を説明」と書き、67% の削減が次世代 GPU のシリコンを空ける、と溶接する。説明会の日は 9/30 だ。溶接は、同稿の文だ。凱基の 10/2（科技新報）は、1,000 万 GPU が全部 HBM4e なら N3 が月 4.5–5 万枚、N3 能力の 20–25%、と估算する。16 万枚で割ると 28.125–31.25% で、20–25 にならない。分母の年は、稿に無い。台積電の IR は、9 月売上を 10/8 13:30 台北、3Q 説明会を 10/15 14:00 台北 / 2:00 Eastern、静穏期間を 10/5 から 10/14、と置く。日曜の売上は無い。中央社 10/1 は台中の第二先進封裝を 10 月中旬と書き、台北時報 10/2 紙面は来月中旬と書く。台本は台中を名指ししない。終値は 10-03 のまま。契約に「TSMC が台本に署名した」「67% が 25% だ」「20% が 16 万枚の内訳だ」「10/8 の売上が今日出た」「10 月中旬と来月中旬が同じ日だ」「月曜のソウルが開く」と書くな。「台本にあるのは NVHBM という名だ。ファウンドリは説明会の報道だ。3nm は believed。67 と 25 は平均しない。20–25 は、分母を書いていない。次の公式の紙は、木曜の月次だ」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-microchip text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 NVHBM / 台本</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">社名は、引用の外</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">台本は、最初の custom-HBM4E と書く<br>TSMC も 3nm も、この 10 頁には無い</div>
+          <div class="mt-4 text-sm text-zinc-400">Micron、Fiscal Q4 2026 Earnings Call Prepared Remarks。頁の日付は <strong>September 30, 2026</strong>。Sanjay Mehrotra の台本は、HBM の第 4 四半期売上が会社全体より速く伸び、カレンダー 2027 年の HBM ビット供給の大部分について合意を終え、価格は前年比で大きく上がり、通常 DRAM との粗利差が縮む、と書く。HBM4 の立ち上げは順調、と書く。続いて、NVIDIA と industry’s first custom-HBM4E implementation である <strong>NVHBM</strong> を進め、次世代 GPU と NVLink Fusion に載る、と書く。ここまでが台本だ。TSMC、ファウンドリ、3nm、30%、15%、67%、量産年としての 2027 は、この段落に無い。The Elec（idxno=14372）は、DeBoer が 9/30 の説明会で、NVHBM と JEDEC 標準 HBM4E のベースダイはファウンドリ工程、HBM4 は自社開発のベースダイ、と述べた、と書く。コアダイは HBM4 が 1β、HBM4E から 1γ、と稿が整理する。1γ は Samsung と SK hynix の 1c に相当する、とも稿が書く。TSMC へ外注している、という文は引用符の外だ。3nm 級は <strong>believed</strong>。信じられていることは、ノードの発表ではない。Bhatia がカスタムで ROI が強い、という文も台本には無く、同稿のパラフレーズだ。逐語のトランスクリプトは、本稿は開いていない。開いていない逐語を、台本の一文にするな。10-01 が要約表に無いとした RPO 約 <strong>$150B</strong> と粗利率 <strong>87.0%</strong> は、この台本にはある。$18B はデータセンター総額ではない。<strong>CDBU が $18.0B</strong>（粗利 90%）、<strong>CMBU が $16.3B</strong>（粗利 83%）だ。足すと $34.3B になる。台本は、その合計を「データセンター」と呼ばない。MCBU $13.1B と AEBU $6.8B を足すと、台本の売上 <strong>$54.2B</strong> に着く。10-01 の $54.23 は、本稿が開き直していない発表文の桁だ。丸めを、発表文の上書きにするな。DRAM は <strong>$39.8B</strong>（73%）、NAND は <strong>$14.1B</strong>（26%）。39.8 + 14.1 = 53.9 で、売上との差は 0.3。0.3 を埋めない。SCA は <strong>26</strong>、2030 年までの売上の <strong>35% 超</strong>という現在の見積り、その見積りの 4 分の 3 は価格の枠があり、顧客の資金コミットは <strong>$32B</strong>、大半は現金の預り、と台本は書く。RPO は、価格の枠がある SCA だけの契約価値で、約 $150B、と Mark Murphy が書く。35% と $150B と $32B は、三つの違う箱だ。一つの成約額に溶接するな。非 GAAP EPS は <strong>$33.42</strong>。次四半期は売上 <strong>$61.5B ± $1.5B</strong>、粗利およそ 86.25%、EPS <strong>$38.15 ± $1.00</strong>、株数およそ 11.5 億。設備投資は第 1 四半期およそ <strong>$11.5B</strong>、2027 会計年度上期およそ <strong>$25B</strong>、下期はそれより高い。会計年度を、凱基のカレンダー 2027 年と混ぜない。契約に「台本が TSMC を指名した」「3nm が DeBoer の逐語だ」「$18.0B がデータセンター全体だ」「$54.2 が $54.23 を消した」「$32B が RPO だ」と書くな。「台本にあるのは NVHBM という名と、2027 年ビットの大部分と、三つの違う箱だ。ファウンドリの社名は、報道の文だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-file-lines"></i>
+            <span>台本は Micron IR の prepared remarks（9/30）。ファウンドリと believed の 3nm は The Elec idxno=14372。逐語のトランスクリプトは未参照。$54.23 の発表文は開き直していない</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 67% / 25%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">空いた面積は、一つではない</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">67% は I/O PHY のパッケージ面積<br>25% は、計算ダイの別の文だ</div>
+          <div class="mt-4 text-sm text-zinc-400">The Elec は、コントローラを計算ダイからベースダイへ移す、と説明する。その説明文は、電力を <strong>15%</strong> 減らし、帯域を最大 <strong>30%</strong> 増やし、カスタム I/O PHY が PHY のパッケージ面積を最大 <strong>67%</strong> 減らす、と書く。比較対象は、この三つの文には書いていない。次の文が「NVIDIA says」だ。こちらは、標準 HBM4E 比で帯域が最大 30%、HBM 電力が 15% 低い、と書く。<strong>67% は、この says の中に無い。</strong> says の外の 15 と 30 を、says の中の 15 と 30 と同じ測定済みの差にするな。ベースラインが書かれたのは、後の文だけだ。25% は、The Elec のこの稿に無い。10/2 10:35 UTC の @MentoviaX は、帯域最大 30%、電力 15% 減、計算ダイ面積を <strong>25%</strong> 空ける、と書く。Ainvest（10/1）は、8 月に NVIDIA が発表したとして、スタックあたり帯域最大 30%、電力最大 15% 減、使える計算が最大 25% 増、比較は commodity HBM4E、と置く。8 月の原文は開いていない。開いていない原文を、日曜の仕様書にするな。East Asia Brief（10/3 12:56 UTC、頁は Sunday October 4、confidence <strong>medium</strong>、英語は AI 補助で他紙の翻訳再掲はしない、と自ら書く）は、10/2 に Micron が計画を詳細説明した、と書く。説明会は 9/30 だ。10/2 は DigiTimes の見出しの日であって、新しい説明会の日ではない。同稿は 67% のパッケージ縮小が、次世代 GPU と NVLink Fusion のシリコン面積を空ける、と溶接する。67 の対象はパッケージ面積で、空くと言っている場所は GPU のシリコンだ。対象が違う二つの面積を、一つの 67 にしない。30 と 15 は「標準 HBM4E 比」と書き、量産は 2027、とも書く。台本は量産年を、NVHBM の文に置いていない。SK hynix のシェア 50% 超、独占の終了、粗利は侵食されないという Bhatia、という文も同稿にある。50% 超の分母は、同稿が「global high-bandwidth memory market」と書くだけで、台本には無い。独占の終了は、同稿の結論だ。結論を、TSMC の配分発表にするな。同稿自身が、共同の契約届出は出ておらず、TSMC は配分枚数もウエハ価格も単独では確認していない、と書く。確認していない配分を、日曜の発注残にするな。@vikramskr（10/2 14:42 UTC）は、ベースダイは NVIDIA の設計で TSMC の製造なのに、利益は Micron に残るのか、と問う。問いは、配分の証明ではない。契約に「67% が GPU ダイの 67% だ」「25% が 67% の別名だ」「NVIDIA says が 67% を含む」「10/2 が新しい説明会だ」「50% 超が台本のシェアだ」と書くな。「says の中にあるのは 30 と 15 で、比較は標準 HBM4E だ。67 は説明文のパッケージ面積。25 は、別の投稿と、開いていない 8 月の文だ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-percent"></i>
+            <span>67% と says の 30/15 は The Elec。25% は @MentoviaX（10/2）と Ainvest（8 月原文は未参照）。溶接は East Asia Brief（10/3、medium、AI 補助）</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 20–25% / 16 万</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">分母の年が、無い</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">4.5 万枚は、16 万枚の 20% ではない<br>3,200 は目標で、終値ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">科技新報、10/2。凱基投顧の台積電レポートの紹介だ。会社のガイダンスではない。第 3 四半期の売上を季増 <strong>16.2%</strong> の <strong>1.48 兆台湾ドル</strong>、毛利率 <strong>68%</strong>、と預估する。会社が IR に置く 3Q の幅は売上 <strong>$44.6–45.8B</strong>、想定レート <strong>NT$32</strong>、粗利 <strong>65–67%</strong>、営業利益率 56–58% だ。45.8 × 32 = <strong>1,465.6</strong>（十億台湾ドル）、すなわち 1.4656 兆。1.48 / 1.4656 = 1.0098 で、幅の上端の台湾ドル換算よりおよそ <strong>1.0%</strong> 上だ。16.2% は、凱基の台湾ドルの季増であって、ドルの幅の季増ではない。2Q 実績は同じ IR 頁で売上 <strong>$40.20B</strong>、粗利 <strong>67.7%</strong>、レート 31.60。40.20 × 31.60 = 1,270.32（十億）。1.27032 × 1.162 = 1.476 で、1.48 兆の近くには着く。着いたことを、会社が 68% を案内したことにするな。68 は、案内の上端 67 の 1 点上の預估だ。価格は、2027 年の先進工程を <strong>5–10%</strong>、先進封裝を 10–15%、成熟を 3–5% 上げる、という予測だ。予測を、10/5 の値札にするな。N3 の利用率は 2027 年も 120% 超の高位、と預估する。120 は定格の 100 を超えた利用率の書き方で、本稿が直した 100 ではない。HBM4e のカスタム基底晶粒が、N3 を増やす主因、と分析する。1,000 万 GPU が全部 HBM4e なら、月 <strong>4.5–5 万枚</strong>、N3 能力の <strong>20–25%</strong>、と估算する。年末能力は 2026 が <strong>16 万</strong>、2027 が <strong>20 万</strong>、2028 が <strong>22 万</strong>枚、と置く。4.5 万 / 16 万 = <strong>28.125%</strong>、5 万 / 16 万 = <strong>31.25%</strong>。20–25 の外だ。4.5 万 / 20 万 = <strong>22.5%</strong>、5 万 / 20 万 = <strong>25.0%</strong>。4.5 万 / 22 万 = <strong>20.5%</strong>、5 万 / 22 万 = <strong>22.7%</strong>。20–25 は、20 万枚か 22 万枚の側では帯に入り、16 万枚では入らない。稿は、どの年末で割ったかを書いていない。書いていない分母を、2026 年末の 16 万枚にするな。1,000 万個が全部載る、は条件文だ。条件を、発注済みの台数にするな。3 棟の N3 は「日前宣布」と書く。その発表文は開いていない。2026 年売上 5.46 兆、EPS 109.12。2027 年は +32.8% の 7.25 兆、EPS 141.18。5.46 × 1.328 = 7.251 で、この掛け算は合う。設備投資は <strong>$700–720 億</strong>。これは凱基の 2027 年であって、台本の会計年度上期 $25B ではない。目標株価 <strong>3,200</strong>、近期収盤 <strong>2,510</strong>、上昇余力およそ 27.5%。(3,200 − 2,510) / 2,510 = 0.2749 で、27.5% は丸めだ。2,510 は凱基が置く近期の終値で、本稿は 10/2 の台積電現物を取引所で開き直していない。@teslayoda（10/2 14:30 UTC）は、この 20–25% と 16 万 / 22 万を KGI として置く。置くことと、分母が一つであることは別だ。契約に「20–25% が 16 万枚の内訳だ」「68% が会社の粗利案内だ」「5–10% が 10/5 の公式値上げだ」「$720 億が Micron の $25B と同じ設備投資だ」「3,200 が終値だ」と書くな。「4.5–5 万枚は估算だ。20–25 は、分母の年が書かれていない。16 万枚で割ると、その帯の外に出る」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calculator"></i>
+            <span>凱基の数字は科技新報 10/2。会社の幅は TSMC IR の 3Q 頁（$44.6–45.8B、NT$32、粗利 65–67%、2Q 実績 $40.20B）。2,510 は取引所で未照合。3 棟の発表文は未参照</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 10/8 / 10/15</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">静穏は、明日から</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">9 月の売上は、木曜 13:30 まで無い<br>2:00 Eastern は、午後とは書いていない</div>
+          <div class="mt-4 text-sm text-zinc-400">台積電の IR。月次のカレンダーは、2026-10-08 <strong>13:30</strong> 台北を「TSMC Monthly Sales - September 2026」と置く。3Q の説明会は <strong>October 15、14:00 台北 / 2:00 Eastern</strong>、枠は 14:00–15:30 台北。頁は a.m. の字を印刷しない。10 月の米国東部は夏時間で、台北 14:00 は午前 2 時だ。午後 2 時と書かない。Catacal の 3:00 AM は、この頁と合わない。合わない時刻を、平均して 2:30 にするな。同じ 3Q 頁は、静穏期間を <strong>October 5 から October 14</strong>、このあいだは投資家コミュニティと接触しない、と書く。明日から、会社は数字の前に黙る。黙る前の日曜に、9 月の売上はまだ無い。8 月の公式は、10-01 前後の稿が参照した 6-K の範囲で、本稿は 9 月の表を先に作らない。EMSNow（10/2 付）が「今日の法説で C.C. Wei が Terafab と次世代 LPU を語った」と書く日は、このカレンダーの説明会の日ではない。説明会でない日の発言を、10/15 の発言にするな。LPU の原文は開いていない。開いていない法説を、日曜の出荷にするな。德州ダラスの第二園区、6 棟、投資がアリゾナの <strong>$2,650 億</strong>を超える、は経済日報 / 聯合報の <strong>9/29</strong> の業界伝だ。截稿までに公司の応答は無い、と経済日報が書く。工商時報の 10/3 の検索結果は、10/15 の法説で 2027 年の資本支出、A14、CoPoS、德州、値上げが焦点になる、と予想する。予想の焦点を、着工の決定にするな。$2,650 億は、既に案内されたアリゾナの累計としてこれらの稿が置く数で、德州の予算ではない。超える、は、まだ応答の無い伝の側の推定だ。9 月の売上と 10/15 の幅の答えは、静穏の向こうにある。静穏の手前で、凱基の 1.48 兆と 68% を、会社の着地にするな。契約に「9 月売上が今日出た」「2:00 が午後 2 時だ」「10/2 が 3Q の法説だ」「德州の 6 棟が決まった」「$2,650 億が德州の予算だ」と書くな。「次の公式は 10/8 13:30 台北の月次だ。説明会は 10/15 14:00 台北。明日から 10/14 まで、会社は投資家と話さない。德州は、質問であって決定ではない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-calendar-day"></i>
+            <span>月次と説明会と静穏期間は TSMC IR。午後 2 時と Catacal の 3:00 は不採用。德州は経済日報 9/29（応答無し）と工商時報 10/3 の焦点リスト。EMSNow の 10/2 法説はカレンダーと不一致</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 中旬 / 来月中旬</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">台中は、台本に無い</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">中央社は 10 月中旬。時報は来月中旬<br>台本が日付を置くのは、銅鑼とシンガポールだ</div>
+          <div class="mt-4 text-sm text-zinc-400">中央社、10/1。台湾美光の董事長、盧東暉の会見。台湾への投資はこれまで <strong>NT$1.6 兆</strong>（稿は <strong>US$50 billion</strong>）、その約半分が過去 4 年。台中は最大の製造拠点で、第二の先進封裝が <strong>10 月中旬</strong>に HBM の生産を始める、と書く。桃園と銅鑼の新しいラインは <strong>2027–28</strong> に操業、とも書く。台北時報の 10/2 紙面は、同じ NT$1.6 兆を 6 月時点の <strong>US$50.2 billion</strong> と換算し、后里の第二 HBM 封裝の量産開始を <strong>the middle of next month</strong> と書く。10/1 の会見から見た来月は、11 月だ。10 月中旬と 11 月中旬は、同じ会見の同じ日ではない。$50 billion と $50.2 billion も、1 本のドルに平均しない。TrendForce（10/2）は経済日報を引いて 10 月の操業開始、工商時報を引いて <strong>mid-October 2026</strong>、と置く。XenoSpectrum（10/3）は、経済日報 10/2 と中央社 10/1 を 10 月中旬の側に並べる。並べた側が厚いことと、時報の「来月」が誤植であると証明したことは別だ。証明していない誤植を、こちらで訂正しない。台本は台中を名指ししない。台本が置くのは、銅鑼からの meaningful product shipments が <strong>mid-calendar 2027</strong>、シンガポールの HBM 先進封裝はクリーンルーム準備が計画より前で、initial output は <strong>early calendar 2027</strong>、日本の DRAM 拡張の初期産出は late calendar 2028、アイダホ ID1 は mid-calendar 2027、ID2 は late calendar 2028、ニューヨーク初号棟の初期ウエハは <strong>calendar 2030</strong>、だ。後里の 10 月を、シンガポールの 2027 年初めに上書きするな。逆もしない。需給は、台本がカレンダー 2027 と 2028 は 2026 よりはるかに締まり、追加のクリーンルーム計画を入れても均衡に戻る時期の見通しは無い、と書く。見通しが無いことを、永遠の不足の見出しにするな。HBM のビット出荷は、通常 DRAM より 2028 年まで速く伸びる、とも書く。速く伸びる出荷は、台中の開始月ではない。10 万枚という年末の HBM 月産は、9/5 の科技新報が韓国メディアを引いた古い目標で、この会見の逐語としては開いていない。古い目標を、中旬の産出枚数にするな。契約に「10 月中旬と来月中旬の平均が開始日だ」「$50.2B が $50B を消した」「台本が后里を 10 月と書いた」「銅鑼の 2027 年が封裝の開始月だ」と書くな。「中央社は 10 月中旬。時報は来月中旬。台本が日付を置いたのは、銅鑼とシンガポールと、米国の棟だ。台中の日は、まだ一つではない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-industry"></i>
+            <span>10 月中旬は中央社 10/1（盧の会見）。来月中旬と $50.2B は台北時報 10/2。mid-October は TrendForce 10/2。銅鑼とシンガポールの日付は prepared remarks。10 万枚は 9/5 の二次で、この会見の逐語ではない</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-orange-400 text-xs font-mono tracking-[1.5px]">#06 休場 / 10%</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">値札は、まだカタログではない</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">終値は、土曜の紙のまま<br>10% は二つあって、どちらも公式の値札ではない</div>
+          <div class="mt-4 text-sm text-zinc-400">10 月 4 日は日曜だ。ニューヨークも東京も、新しい現物の引けを印刷しない。10-03 が置いた MU <strong>$1,074.89</strong>、NVDA <strong>$233.95</strong>、SOX <strong>13,136.67</strong>、S&amp;P <strong>7,722.72</strong>、ダウ <strong>51,176.96</strong>、ナスダック <strong>27,190.86</strong>、日経 <strong>68,309.46</strong>、TOPIX <strong>4,091.00</strong>、KOSPI <strong>7,003.74</strong>、サムスン <strong>276,000</strong>、SK ハイニックス <strong>1,841,000</strong> は、最後の終値のままだ。動かしていない終値を、NVHBM の文が書き換えたことにするな。H.15 の 10/2 の行は、10-03 が開いた版には無く、次の公開は <strong>10/5</strong> だった。日曜に、その行は増えていない。5.24 は、木曜の公式のままだ。月曜の韓国は、10-03 が名称未確定と置いた。今日、名称の側には紙がある。駐韓英国大使館は 10/2、10/5 を National Foundation Day の代替日で休む、と書いた。釜山デジタル大学の教務処は 10/4 付で、10/5 の開天節代替休日と 10/9 のハングルの日は法定公休日、と告示する。休日表は、10/3 が土曜の開天節で、10/5 がその代替、と揃う。<strong>KRX の休場告示そのものは、本稿は開いていない。</strong> 開いていない告示を、7,003.74 が月曜も動かない証明にするな。証明の手前で、月曜のソウルが普通に開く前提でも書かない。もう一つの 10% は、CPU の側だ。East Asia Brief（10/3）は、AMD と Intel が 10/3 に販売店へおよそ 10% の値上げを準備し、Intel は <strong>10/5</strong>、AMD は第 4 四半期、TSMC の 7nm 未満は 5–10%、3nm ウエハはおよそ $20,000、と書く。同じ稿は、公式カタログも SEC への開示も無い、と書く。XenoSpectrum の 9/18 は、すでに AMD の第 4 四半期およそ 10%（Instinct、Radeon、チップセット。Ryzen はリストに無い、という供給網情報）と、Intel の 10/5 およそ 10% を置いている。10/3 の稿は、9 月のリークの再話であって、新しいカタログではない。凱基の 2027 年先進工程 5–10% は、別の年の、別の会社の、予測だ。明日の 10% と、来年の 5–10% を、一つの値上げにするな。$8B の Grace Blackwell を簿外へ移す協議は 01 が持っている。Muse の基板と Home Link の 5,000 も 01。昇騰の 50 と 8、麒麟のダイ、無問芯穹の秘密递表は 02。04 は、それらを NVHBM の原因にしない。契約に「$1,074.89 が日曜に動いた」「5.24 が金曜の H.15 になった」「KRX が休場と告示した」「10/5 の 10% が公式の値札だ」「$8B が台本の出荷だ」と書くな。「終値は土曜の紙のまま。代替休日の名は、大使館と大学にはある。取引所の告示は、まだこちらの手に無い。10% は、カタログの無い再話と、凱基の来年の予測の、二つだ」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-shop-lock"></i>
+            <span>終値は 10-03 の最終値。H.15 の 10/2 は未着のまま。代替休日は @UKinKorea（10/2）と釜山デジタル大学（10/4）。KRX 告示は未参照。10% は East Asia Brief 10/3（カタログ無し）と XenoSpectrum 9/18。$8B と基板は 01。50 と 8 は 02</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年10月4日、AI Hardware の中心は「<strong>日曜の板は止まっていて、動いたのはメモリの名前と、その名前の周りに後から置かれた百分率の置き場所だった</strong>」だ。10-03 は、$1,074.89 が高値 $1,108.00 のあとの −2.05% で安値には $2.88 足りないこと、SOX は 13,136.67 でメモリの反対側であること、ナスダックの 1 セントは埋めないこと、BLS は +29,000 を little と書いたこと、H.15 の 10/1 は 5.24 で 10/2 は未着であること、アジアの終値は動かないこと、を室温に置いた。日曜に溶けたのは、終値ではない。溶けたのは、9/30 の台本を、10/1 から 10/3 の稿がどこまで超えて書いたか、だ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            台本は、名前までは自分で書く。NVHBM は industry’s first custom-HBM4E で、次世代 GPU と NVLink Fusion に載る。HBM の第 4 四半期売上は会社全体より速く、カレンダー 2027 年のビットの大部分は価格を上げて合意済み、通常 DRAM との粗利差は縮む。ここには、ファウンドリの社名が無い。The Elec が DeBoer の説明会発言として置くのは、NVHBM と JEDEC の HBM4E はファウンドリ工程、HBM4 は自社、外注しても電力と速度とマージンの優位は維持する、だ。TSMC という三文字と、3nm 級は、その引用の外だ。3nm には believed が付いている。信じられているノードを、プロセス発表の行に移さない。10-01 が要約表に無いとした $150B と 87.0% は、台本を開くとある。ある、と、データセンターが $18B だ、は別だ。$18.0B は CDBU で、$16.3B の CMBU が隣にある。足した $34.3B を、台本は一つの事業部と呼ばない。四つの事業部は、台本の丸めた売上 $54.2B に着く。10-01 の $54.23 は、開き直していない発表文の桁のままだ。SCA の 26 と、売上の 35% 超と、資金コミットの $32B と、RPO の約 $150B は、四つの箱だ。RPO は、価格の枠がある契約だけの、床を使った保守的な残高で、売上の 35% そのものではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            百分率は、says の内と外で切ったほうがいい。The Elec の説明文は、電力 15%、帯域最大 30%、I/O PHY のパッケージ面積最大 67%、と書く。比較対象は、この三文には無い。次の「NVIDIA says」は、標準 HBM4E 比の帯域最大 30% と HBM 電力 15% 減で、67 を含まない。含まれない 67 を、says の仕様にするな。25% の計算ダイは、この稿にそもそも無い。10/2 の投稿と、8 月発表として置く二次稿が、25 を置く。8 月の原文は開いていない。67 の対象はパッケージ面積で、25 の対象は計算ダイだ。East Asia Brief は、67 の削減が GPU のシリコンを空ける、と一つにする。一つにした瞬間に、空いた場所が消える。同稿の「10/2 に詳細説明」も、説明会の日ではない。説明会は 9/30 で、10/2 は見出しの日だ。同稿が自分で書くとおり、配分枚数もウエハ価格も、TSMC は単独で確認していない。確認していない列を、独占が終わった証拠にするな。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            凱基の 20–25% は、条件文の估算だ。1,000 万 GPU が全部 HBM4e なら月 4.5–5 万枚。年末能力は 16 万、20 万、22 万と三つ置いてある。4.5–5 万を 16 万で割ると 28.125–31.25% で、稿の 20–25 の外に出る。20 万なら 22.5–25.0、22 万なら 20.5–22.7。帯に入る分母と、入らない分母が、同じ段落に並んでいる。並んでいることを、2026 年末の内訳にするな。1.48 兆と粗利 68% は預估で、会社の幅の上端を NT$32 で換算すると 1.4656 兆、粗利は 65–67 だ。1.0% と 1 点の上振れは、着地ではない。2027 年の先進工程 5–10% も予測だ。明日に噂される Intel のおよそ 10% は、カタログも 8-K も無く、9/18 の供給網情報の再話に見える。来年のウエハの 5–10 と、明日の CPU の 10 は、同じ値上げではない。目標の 3,200 は、凱基が置く近期 2,510 からの 27.5% で、終値ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            なぜ今これが日曜に並ぶのか。ハードウェアの次の公式は、<strong>会社が黙る前日に、まだ出ていない月次</strong>だからだ。台積電の IR は、9 月売上を 10/8 13:30 台北、3Q を 10/15 14:00 台北、静穏を 10/5 から 10/14、と置く。2:00 Eastern に a.m. の字は無い。夏時間の換算は午前 2 時で、午後 2 時ではない。明日から 10/14 まで、会社は投資家と接触しない。接触しない窓の前に、凱基の 68% や EMSNow の「今日の法説」を、会社の声として残すと、静穏が始まる前に答えだけが先に印刷される。德州の 6 棟は 9/29 の伝で、截稿までに応答は無く、10/3 の紙はそれを 10/15 の質問リストに置いている。質問を、第二園区の起工にするな。$2,650 億はアリゾナの累計として置かれた数で、德州の予算ではない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            工場の日付も、同じ種類の割れだ。中央社が盧の会見として置く台中は、10 月中旬に HBM の生産を始める。台北時報は、来月中旬に量産、と書く。同じ棟の開始が、一か月ずれる。ずれたまま平均しない。台本が日付を置いたのは別の場所で、銅鑼の出荷はカレンダー 2027 年央、シンガポールの HBM 封裝の初期産出は 2027 年初め、ニューヨークの初期ウエハは 2030 年だ。后里の 10 月を、これらの行に転写しない。需給が 2027 と 2028 でさらに締まり、均衡の時期は見えない、は台本の文だ。見えないことを、台中の中旬が解決したことにはしない。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            板の側は、10-03 の凍結を一日延ばすだけだ。$1,074.89 も 13,136.67 も $233.95 も 68,309.46 も 7,003.74 も 276,000 も、日曜には新しい印刷が無い。H.15 の 10/2 は、次の公開が 10/5 のままで、まだ行が無い。月曜の韓国の名称は、10-03 より一歩進んだ。大使館は 10/2 に、大学は今日付で、10/5 を開天節の代替休日と書く。休日表もそれに揃う。揃ったのは公休日の名で、KRX の休場告示は開いていない。告示の無い休場を、確定の休場と呼ばない。逆に、名がある月曜を、普通の取引日とも呼ばない。$8B は 01、基板の Muse も 01、昇騰の 50 と 8 は 02。04 の出荷は、台本に書かれた名前と、まだ分母の無い枚数と、木曜まで出ない月次だ。
+          </p>
+          <p class="text-[15px] text-zinc-300 leading-relaxed mt-4">
+            10-03 が「$1,074.89 は高値のあと、13,136.67 はメモリの反対、5.24 は木曜まで、アジアは無人、月曜の休場名は未確定、$8B は 01」なら、10-04 は「<strong>台本は NVHBM を最初の custom-HBM4E と書き、TSMC も 30 も 67 も 3nm も置かない。The Elec の says は標準 HBM4E 比の 30 と 15 で、67 は説明文のパッケージ面積、25 は別の文、3nm は believed、10/2 は見出しの日であって説明会の日ではない。4.5–5 万枚の 20–25% は 16 万枚では 28.125–31.25% になり、分母の年は書かれていない。1.48 兆と 68% は預估で、会社の上端は NT$32 で 1.4656 兆、粗利 65–67。3,200 は目標。9 月売上は 10/8 13:30、説明会は 10/15 14:00 台北で 2:00 Eastern は午前、静穏は 10/5–14。台中は中央社が 10 月中旬、時報が来月中旬。終値は動いていない。代替休日の名は大使館と大学にあり、KRX の告示は未参照。二つの 10% は、どちらもカタログではない</strong>」。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">日曜、教室は無人なのに、答案の余白だけがにぎやかだった（笑）。台本の子は「NVHBM」と名前を書いて、提出した。ファウンドリの社名も、3 ナノも、百分率も、その頁には無い。あとから採点した新聞が、社名を書き足し、3nm の横に believed と小さく書き、67% をパッケージ面積から GPU の空地へ引っ越させた。25% は、別の子のノートに書いてある。67 と 25 を足して 46 にして、空いた面積の平均値を作らない。凱基の子は、4.5 万枚から 5 万枚を、20% から 25% だと書いた。16 万枚で割ると 28 を超える。分母を書き忘れた百分率は、まだ百分率ではない。台積電の次の公式は木曜の月次で、明日から二週間近く、会社は投資家と話さない。話さない窓の前に、68% を会社の声で読まない。台中の開始日は、10 月中旬と来月中旬が同じ会見から出て、まだ仲直りしていない。終値の子たちは、土曜の席のまま座っている。$1,074.89 は、NVHBM と読めても、日曜には歩かない。ソウルの月曜には、開天節の代替、という表札が大使館と大学に掛かった。取引所の休場告示は、まだこちらの机に無い。表札を、出来高にするな。出来高が無いことを、開場の証明にもするな。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">台本は名前まで・67 はパッケージ・20% は分母が無い——日曜の構造</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年10月4日現在の AI Hardware 分野は、(1) Micron の 9/30 付 prepared remarks が NVHBM を最初の custom-HBM4E と書き、次世代 GPU と NVLink Fusion に載るとし、TSMC・3nm・30%・67% は置かず、RPO 約 $150B と粗利 87.0% と CDBU $18.0B・CMBU $16.3B は台本にあり、売上は $54.2B と丸め、SCA 26・35% 超・$32B・RPO は四つの箱である、(2) The Elec が説明会の DeBoer 発言としてファウンドリ工程を伝え、TSMC と believed の 3nm は引用の外、「NVIDIA says」は標準 HBM4E 比の 30 と 15 で 67 を含まず、67 は I/O PHY のパッケージ面積、25 は別稿で 8 月原文は未参照、East Asia Brief の 10/2 説明と 67 の溶接は同稿の文である、(3) 凱基 10/2 の 4.5–5 万枚と 20–25% は、16 万枚で割ると 28.125–31.25% で帯の外、20 万枚なら 22.5–25.0%、22 万枚なら 20.5–22.7% で分母の年が書かれておらず、1.48 兆と粗利 68% は預估、会社の上端は NT$32 で 1.4656 兆・粗利 65–67、3,200 は目標である、(4) 9 月売上は 10/8 13:30 台北、3Q は 10/15 14:00 台北 / 2:00 Eastern で a.m. の字は無く換算は午前、静穏は 10/5–14、德州 6 棟は 9/29 の応答無しの伝で 10/15 の質問である、(5) 台中の第二封裝は中央社が 10 月中旬、台北時報が来月中旬、台本は台中を名指しせず銅鑼は 2027 年央、シンガポール HBM 封裝は 2027 年初めである、(6) 終値は 10-03 のまま、H.15 の 10/2 は未着、10/5 の開天節代替は大使館と大学の告知で KRX 告示は未参照、二つのおよそ 10% はカタログと会社ガイダンスのどちらでもなく、$8B と基板は 01、昇騰の 50 と 8 は 02、が重なっている。2026年10月4日の評価軸はピーク FLOPS より、<strong>台本に無い社名を説明会の逐語にしないこと、says の外の 67 を says の中に入れないこと、25 と 67 を同じ面積にしないこと、20–25 を 16 万枚の内訳にしないこと、預估の 68% を会社の着地にしないこと、2:00 を午後にしないこと、10 月中旬と来月中旬を平均しないこと、表札の無い休場と、告示の無い開場をどちらも確定と呼ばないこと</strong>を一枚で読めるかどうかである。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-file-lines"></i>
+            <span>台本は名前で止まる視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「9/30 の prepared remarks は、NVHBM を最初の custom-HBM4E と書き、次世代 GPU と NVLink Fusion に載る、と書く。TSMC も 3nm も 30% も、この 10 頁には無い。2027 年ビットの大部分と、価格の上昇と、粗利差が縮むことは、台本にある。CDBU の $18.0B を、データセンター全体と呼ばない。隣に CMBU の $16.3B がある。$32B と $150B と 35% は、三つの箱だ。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-quote-left"></i>
+            <span>believed は、ノードではない視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「The Elec が DeBoer の発言として置くのは、ファウンドリ工程と、HBM4 は自社だったことだ。TSMC への外注は、引用の外の文だ。3nm 級には believed が付く。逐語のトランスクリプトは開いていない。開いていない逐語を、台本の一文にするな。配分枚数を、TSMC が確認していない、と二次稿自身が書いている。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-percent"></i>
+            <span>67 と 25 は、別の面積の視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「NVIDIA says の中にあるのは、標準 HBM4E 比の帯域最大 30% と、HBM 電力 15% 減だ。67% は、その前の説明文が I/O PHY のパッケージ面積に置いた数で、says はそれを繰り返さない。25% の計算ダイは、The Elec のこの稿に無い。パッケージの 67 と、ダイの 25 を、一つの空地にするな。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-calculator"></i>
+            <span>分母を書かない 20% の視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「4.5–5 万枚は、1,000 万 GPU が全部載ったときの估算だ。16 万枚で割ると 28.125–31.25% で、稿の 20–25 の外に出る。20 万枚なら帯に入り、22 万枚でもおおむね入る。どの年末で割ったかは、書いていない。1.48 兆と粗利 68% は預估で、会社の上端は 1.4656 兆、65–67 だ。3,200 は目標株価で、2,510 は凱基が置く近期の終値だ。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-calendar-day"></i>
+            <span>黙る前の日曜の視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「9 月の売上は 10/8 13:30 台北まで無い。説明会は 10/15 14:00 台北で、頁の 2:00 Eastern は午後とは書いていない。静穏は明日から 10/14 だ。10/2 を法説の日にする稿は、このカレンダーと合わない。德州の 6 棟は 9/29 の伝で、応答は無く、10/15 の質問リストに入っている。質問を、起工にするな。台中は、中央社が 10 月中旬、時報が来月中旬。台本は台中を名指ししない。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-orange-500/30 rounded-3xl p-6 ring-1 ring-orange-400/20">
+          <div class="font-semibold mb-3 text-orange-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-shop-lock"></i>
+            <span>表札と告示は、別の紙の視点</span>
+          </div>
+          <p class="text-sm text-zinc-300">「$1,074.89 も 13,136.67 も 276,000 も、日曜には歩いていない。5.24 は木曜の公式のままで、10/2 の行はまだ無い。10/5 を開天節の代替と書く紙は、大使館と大学にはある。KRX の休場告示は開いていない。開いていない告示で、休場も開場も確定と呼ばない。およそ 10% は、カタログの無い再話と、凱基の来年の予測の二つだ。$8B と基板は 01。50 と 8 は 02。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 04. AI Hardware &amp; Semiconductors • 2026-10-04 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Micron prepared remarks（9/30。NVHBM の名、SCA 26、RPO 約 $150B、粗利 87.0%、CDBU $18.0B、CMBU $16.3B、売上 $54.2B。TSMC・3nm・30%・67% は無し）。The Elec idxno=14372（ファウンドリは説明会の報道、3nm は believed、says は 30 と 15、67 は説明文のパッケージ面積）。25% は @MentoviaX（10/2）と Ainvest（8 月原文は未参照）。East Asia Brief（10/3、medium、AI 補助。10/2 説明と 67 の溶接は同稿）。凱基は科技新報 10/2（20–25% の分母の年は未記載、3,200 と 2,510 は同稿、2,510 は取引所未照合）。TSMC IR（月次 10/8 13:30 台北、説明会 10/15 14:00 台北 / 2:00 Eastern、静穏 10/5–14、3Q 幅 $44.6–45.8B・NT$32・粗利 65–67%、2Q $40.20B・粗利 67.7%）。台中は中央社 10/1 と台北時報 10/2。終値は 10-03。代替休日は @UKinKorea（10/2）と釜山デジタル大学（10/4）。KRX 告示は未参照。CPU の 10% は East Asia Brief 10/3 と XenoSpectrum 9/18（カタログ無し）。$8B と基板は 01。昇騰の 50 と 8 は 02</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 04-ai-hardware.html loaded for 2026-10-04', 'color:#10b981');
+  </script>
+</body>
+</html>
