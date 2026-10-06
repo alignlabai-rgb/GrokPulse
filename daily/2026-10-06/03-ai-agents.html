@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03. AI Agents ダイジェスト | 2026-10-06 • GrokPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .section-header { font-size: 2rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
+    .trend-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+    .trend-card:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <a href="../../index.html" class="inline-flex items-center text-emerald-400 text-sm hover:underline group">
+        <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-0.5 transition-transform"></i>
+        GrokPulseに戻る
+      </a>
+      <div class="mt-4 flex items-center gap-3">
+        <span class="px-3.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono tracking-[2px] rounded-2xl border border-emerald-500/20">03</span>
+        <h1 class="text-5xl font-bold tracking-tighter font-display">AI Agents ダイジェスト</h1>
+      </div>
+      <p class="text-zinc-400 mt-1.5">2026-10-06 • Xと最新ニュースから</p>
+    </div>
+
+    <!-- Top Banner: Key Story -->
+    <div class="mb-10 p-6 bg-zinc-900 border border-zinc-800 rounded-3xl flex flex-col md:flex-row gap-5 items-start">
+      <div class="text-5xl flex-shrink-0">📆</div>
+      <div class="flex-1">
+        <div class="uppercase text-emerald-400 text-xs tracking-[3px] font-medium">TOP STORY OF THE DAY</div>
+        <div class="text-2xl md:text-3xl font-semibold tracking-tight mt-1.5 leading-tight">暦は、今日だ。ヘルプは、will のまま<br>high は、既定だった。次のターンは、飛行中のこともある</div>
+        <div class="mt-3 text-sm text-zinc-400 max-w-3xl">2026年10月6日（火）。10-05 の表紙は「五月の文字列は、今日が停止日。転送は、別の頁。引数は、空。ローカルだけ、は明日」だった。翌日、Cowork のヘルプを開き直した。Pro と Max の節は、なお October 6, 2026 と書き、<span class="text-zinc-300">Only on your computer</span> は <span class="text-zinc-300">will be removed</span> のままである。暦が当日になったことを、動詞が過去になったことにするな。同じ頁の機能表は、予定タスクはもはやコンピュータが起きている必要がない、と現在で書く。will と no longer は、一枚に同居している。01 が「外した」と書いたのは別欄だ。Team の頁は 10/6 の節を持たない。ベータのあいだは雲とローカル。雲は組織の別トグルだ。code.claude.com の先頭は 2.1.291、October 6。GitHub の表示は 06 Oct 03:55、コミットは 8e60c4c。帯は無い。箇条は二つだけ。2.1.290 の雲セッションが許可プロンプトの答えを落とす回帰と、2.1.288 の終了時に末尾のメッセージが消える回帰。290 の GitHub は 05 Oct 23:33、e8ae451。10-05 が開き直した先頭は 2.1.289 だった。23:33 に帯は無い。無い帯で、読み落としを確定するな。antigravity-cli の Latest は 1.3.0。表示は 06 Oct 06:05、5e9c9c6。Verbosity の既定が high から medium になり、既定だったときに high を選んだ人は、選んでいない側に含まれる。戻すのは <span class="text-zinc-300">/config</span> でもう一度 high。要約は、道具が止まったことではない。@cursor_ai は 10/5 16:08 UTC に、steer は next turn、と書く。docs の 1.0.31 は、飛行中のターンへ入れるか、通常のフォローアップに戻せ、と分ける。雲は後者だ。GLM 5.3 Flash は、10/6 1:52am 表示の投稿が、5PM ET 以降も空だと書く。担当の should は、そのスレでは更新されていない。OpenShell の releases/latest は今日開いて v0.1.2、28 Sep 03:58 のまま。pre.5 は Oct 6 のタグで、Latest ではない。API は未叩。十九日目。三十四日目。宣誓と日光と Beam は 01。契約に「クライアントで設定が消えたと見た」「will が過去だ」「Team のチェックボックスが残るとヘルプが書いた」「2.1.290 を 10-05 が読み落とした」「23:33 や 03:55 や 06:05 が UTC だ」「high を明示した全員が medium だ」「next turn が in flight と同じ配達だ」「Flash が無傷だと担当が測り直した」「pre.5 が Latest だ」「05 の endpoint が死んだと叩いた」と書くな。「ヘルプの除去は will。機能表は no longer。先頭は 2.1.291 で箇条は二つ。290 は 05 Oct 23:33。ceiling は名前。mod が外される。spawn は走ったあとに結果を拒む。既定の high は選択に数えられない。steer の投稿は next turn、docs は in flight か revert。Flash の空は利用者の測定で、担当の更新は無い。Latest の OpenShell は v0.1.2。十九日目。三十四日目」と書け。</div>
+      </div>
+    </div>
+
+    <!-- TrendMap -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-project-diagram text-3xl text-emerald-400"></i>
+        <h2 class="section-header">TrendMap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-emerald-400 text-xs font-mono tracking-[1.5px]">#01 WILL ≠ REMOVED</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">暦は 10/6・動詞は will</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">今日は、節の日付だ<br>消えた、とは、この頁はまだ書かない</div>
+          <div class="mt-4 text-sm text-zinc-400">support.claude.com の「Use Claude Cowork on web, desktop, and mobile」。今日開いた。冒頭の注意は、Cowork は今やただの Claude で、Pro と Max へ段階的に出ている、と書く。その次の Heads-up は、October 6, 2026、新しい Cowork タスクは雲で走り、<span class="text-zinc-300">Settings &gt; General</span> の <span class="text-zinc-300">Only on your computer</span> は will be removed、だ。節の本体も同じ日付で、Pro と Max の新しいタスクは雲で走る、と現在形に近い文を置き、選択肢の除去だけ will を残す。始めたタスクはそこに残り、終わるまで続けられる。書き起こしのボタンは Claude Code のため。フォルダはコンピュータに残る。届くのは、接続したフォルダ、デスクトップアプリ経由、開いているあいだだけ。要るファイルだけのコピー。セッションを消すとコピーも消える。同じ頁の機能表の注は、予定タスクは雲で走るので、コンピュータが起きている必要は、no longer、無い、と書く。will と no longer を、どちらかが勝った校正にするな。勝ったかどうかのクライアント実測は、この稿はしていない。コンピュータ使用は、なお Pro と Max のベータ、と頁は書く。組み込みブラウザは、デスクトップアプリ既定で、rolling out gradually this week、と頁の語だ。this week を、火曜の 0 時に始まったことにするな。アプリを閉じるとセッションは走るが、ローカルファイルには届かない、も残っている。10-05 が書いた門は、暦の当日にも頁の上では残っている。Team と Enterprise の別頁は、今日開いた範囲では 10/6 の節を持たない。持たないことを、免除の決定にするな。その頁は、ベータのあいだセッションは二箇所で走れる、と書く。雲と、利用者のコンピュータ上の隔離された仮想機械。Cowork 全体のトグルと、雲で走らせるトグルは別だ、とも書く。Team の「Run Cowork in the cloud」は既定オンで、所有者はいつでも切れる。Enterprise は既定オフ。所有者がオンにし、カスタムロールでグループへ渡す。HIPAA 構成を Claude Code のローカルと Cowork のローカルに当てると、雲の Cowork は使えず、どの設定も付けない、と頁。Clubic は 2026-10-06 09:07 に、この 10 月 6 日から Pro と Max の新しいタスクは雲で、オプションは消え、Team と Enterprise は当面選択を維持する、と書く。ジャーナリストの「選択」を、Team 頁の組織トグルと、Pro 頁の利用者チェックの、どちらか一方だと確定するな。Team 頁は、利用者向けの Only on your computer が残る、とは書いていない。書いていない残存を、Clubic の文で補うな。なぜ今か。10-05 が「明日」と書いた日付が、カレンダーの今日になった。頁の動詞は、明日のまま残っている。契約に「設定が今日消えたとアプリで見た」「will を過去形に校正した」「no longer が除去の完了証明だ」「Team が免除だとヘルプが書いた」「Enterprise のチェックが個人設定に残る」「this week が 10/6 0 時だ」「コンピュータ使用が終わった」「フォルダが雲へ移った」「01 の過去形がこの頁を更新した」と書くな。「Pro と Max の節の日付は 10/6。除去の動詞は will。機能表の予定タスクは no longer。始めたタスクとフォルダと、開いているアプリの門は残る。コンピュータ使用はベータ。Team 頁に 10/6 の節は無く、雲は組織トグル。Team は既定オン、Enterprise は既定オフ。HIPAA のローカル構成では雲は付かない。Clubic の選択維持は、そのトグルの文ではない。クライアントは未測」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-laptop"></i>
+            <span>Claude Help Center（今日の読取）。Team 頁は別。Clubic は 10/6 09:07。01 の過去形は別欄</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sky-400 text-xs font-mono tracking-[1.5px]">#02 TWO LINES ≠ A PILE</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">2.1.291・06 Oct 03:55</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">先頭は、二段上がった<br>291 の箇条は、二つだ</div>
+          <div class="mt-4 text-sm text-zinc-400">code.claude.com の changelog。今日開いた先頭は 2.1.291、説明は October 6, 2026。頁は GitHub の CHANGELOG.md から生成する、と書く。入っている版は <span class="text-zinc-300">claude --version</span>。先頭を、全員の端末にするな。GitHub の Release は Latest。ashwin-ant。表示は 06 Oct 03:55。コミットは 8e60c4c。帯は、その行には無い。Immutable。箇条は二つ。一つ目は、2.1.290 の回帰で、雲のセッションが許可プロンプトへの答えを落とすことがあった、を直した。二つ目は、2.1.288 の回帰で、終了するときにセッションの末尾のメッセージが失われることがあった、を直した。二つを、新しい知能の整数にするな。290 の機能一覧を、291 が再出荷したことにするな。290 の GitHub 表示は 05 Oct 23:33。コミットは e8ae451。changelog の日付は October 5, 2026。10-05 が開き直したとき、先頭は 2.1.289、October 3 だった、とあの稿は書く。23:33 に帯は無い。帯の無い時刻で、10-05 の読取が 290 より前だったと確定するな。確定できないことを、読み落としと呼ぶな。あの稿の先頭は、あの時点で開いた頁の先頭だ。今日の頁は、そのあと二段ある。なぜ今か。許可の答えが雲で落ちる、は、新しいタスクを雲へ寄せる暦の朝に、前日タグの回帰として名指しされた。名指しは 291 の一行だ。落ちなくなったことの実測は、この稿はしていない。契約に「03:55 が UTC だ」「全員が 2.1.291 だ」「291 が 290 の機能を監査した」「末尾の消失が 289 で塞がっていた」「10-05 が 290 を見落とした」「許可の答えが今日の回線で届くと叩いた」と書くな。「先頭は 2.1.291、October 6。表示は 06 Oct 03:55、帯は無し、8e60c4c。箇条は、290 の雲で許可の答えが落ちることと、288 の終了時に末尾が消えること。290 の表示は 05 Oct 23:33、e8ae451。10-05 の先頭は 2.1.289。インストールは claude --version」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-code-branch"></i>
+            <span>Claude Code changelog と GitHub v2.1.291（06 Oct 03:55）。290 は 05 Oct 23:33</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-violet-400 text-xs font-mono tracking-[1.5px]">#03 SEES ≠ STOPS</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">2.1.290・名前と、外すこと</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">天井は、名前だ<br>子は、走ったあとに拒まれる</div>
+          <div class="mt-4 text-sm text-zinc-400">2.1.290 の、エージェントの境界に触れる箇条だけを分ける。mod の <span class="text-zinc-300">turn.step</span> の結果に <span class="text-zinc-300">serverToolUses</span> が足された。API が自分で走らせた道具呼び出し、advisor、だ。それぞれ id、name、input、開始と終了。結果に載ることは、mod がその呼び出しを止められることではない。plugin の <span class="text-zinc-300">tool.check</span> に <span class="text-zinc-300">agentId</span> が付き、サブエージェントの許可検査を、本セッションの検査と分けられる。分けることは、サブエージェントの許可が別の規則になったことではない。mod の tool.check が読む question と verdict に <span class="text-zinc-300">ceiling</span> が付く。組織がその道具に要求する承認の名前だ。名前は、mod がその承認を出したことではない。<span class="text-zinc-300">claude plugin validate</span> は、gating の場所に登録したフックごとに、<span class="text-zinc-300">.catch</span> が有るか無いかを列挙する。<span class="text-zinc-300">--json</span> では <span class="text-zinc-300">gatingHooks</span>。列挙は、catch が走った記録ではない。利用者が入れた mod が、組織のガードに検査を飛ばさせることがあった。そのような mod は、今は外される。ガードがその場で勝つようになった、とは書いていない。勝たせ方は、mod を降ろすことだ。利用者が入れた mod が、組織のプラグインを外せていた。今は、外されるのがその mod の側だ。プラグインが最初から外せなかった、ではない。<span class="text-zinc-300">$.process.spawn</span> は、子が走ったあとに別の mod が拒むときの文が変わった。呼び出しは走った、結果はプラグインが渡さなかった、と言う。走ったことと、結果が届かないことを、一つの失敗にするな。拒むタイミングは、子のあとだ。PreToolUse が入力を書き換えたあと、一部の許可規則と安全検査が道具呼び出しに当たっていなかった。直した、と書く。一部だ。フックが書き換えられなくなった、ではない。plan mode では、自動モードの分類器が、サーバの押した ask を持つ、読み取り専用ではないコネクタ道具を承認できていた。直した。読み取り専用まで、この文は含まない。deny か ask が、コマンドかパスを見失っていた。名前が、<span class="text-zinc-300">declare</span>、<span class="text-zinc-300">typeset</span>、<span class="text-zinc-300">export</span>、<span class="text-zinc-300">readonly</span> の接頭辞でセットされた変数から来たときだ。2.1.289 の、展開された環境変数の接頭辞（例は <span class="text-zinc-300">TZ="$HOME" rm -rf build</span>）と、裸の代入は、別の扉のままだ。動詞が接頭辞であることだけで、一つの穴に戻すな。macOS と Windows の画像の Read は、読んでいる最中にリンクが差し替わると、承認の外のファイルを返せていた。直した。<span class="text-zinc-300">--restricted</span> か読取ブロックの下の @ 言及も、途中で変わったリンク越しに作業ディレクトリの外を読め得た。直した。289 が直したのは、IDE で言及、変更、選択されたファイルがリンク越しのときだ。入り方が違う。貼ったか、ドラッグした画像のパスと、@ したフォルダの中のファイル名に、Read の deny が当たっていなかった。それも直した。<span class="text-zinc-300">--restricted</span> と <span class="text-zinc-300">CLAUDE_CODE_RESTRICTED=1</span> のセッションが、セッションをまたぐメッセージのソケットを開いていた。直した。開いていたことは、メッセージが届いたことではない。バックグラウンドのワーカーが、再起動のときに <span class="text-zinc-300">--allow-dangerously-skip-permissions</span> を、バイパスの注意書きが受け入れられていないまま尊重していた。直した。すべてのバイパスが閉じた、ではない。対話セッションの WebSearch は、200 回で終わる方式から、時間で補充される方式になった。1 時間 100。<span class="text-zinc-300">CLAUDE_CODE_WEB_SEARCH_REFILLS_PER_HOUR</span> がその率で、0 はオフ。補充は、ceiling ではない。<span class="text-zinc-300">/claude-api managed-agents-onboard &lt;url&gt;</span> は、頁が <span class="text-zinc-300">ant apply</span> のファイルとして書く Managed Agents の型を用意する。quickstart の名前、例は <span class="text-zinc-300">deep-researcher</span>、は <span class="text-zinc-300">ant</span> CLI で Console の雛形を組む。claude-api スキルの例は、要らなければウェブ道具を切り、<span class="text-zinc-300">auto</span> の許可ポリシーを使うように変わった。例だ。すべてのエージェントの実行時強制ではない。Cowork の雲セッションは、メッセージかファイルを送った直後にコンテナが再起動すると、返信が終わらないことがあった。直した、と 290 は書く。sometimes の範囲だ。すべての再起動ではない。再起動で <span class="text-zinc-300">/loop</span> の起床が落ち、雲のセッションが眠ったままになるのも直し、Claude に伝え、もう一度予定できる、と書く。伝えたことは、起床が自動で戻ったことではない。アプリのゲートウェイのサインイン承認頁に Deny が付き、保留中のサインインを終わらせ、待っている端末は数秒で止まる。なぜ今か。10-04 は、判が殻の外では持たない、と書いた。290 は、組織の要求を ceiling という名前でフックに見せ、ガードを飛ばす mod は降ろし、子プロセスは走ったあとに結果だけを拒む、と書く。見えたこと、降りたこと、走ったことを、一つの「止まった」にするな。契約に「mod が advisor の呼び出しを拒否できる」「agentId が別規則だ」「ceiling が承認の発行だ」「ガードが mod を残したまま勝つ」「子が走っていない」「declare が TZ の再修正だ」「restricted でメッセージが届いたと確認した」「WebSearch の 100 が権限の上限だ」「deep-researcher が新しいモデルだ」「Cowork の再起動がすべて直った」と書くな。「結果に載るのは advisor の呼び出し。ceiling は組織が要求する承認の名前。飛ばす mod は外される。spawn は走ったと言い、結果は渡さない。接頭辞の新しい動詞は declare、typeset、export、readonly。291 はこの山を再掲していない」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-eye"></i>
+            <span>Claude Code changelog 2.1.290（October 5）。GitHub 表示は 05 Oct 23:33、e8ae451</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-400 text-xs font-mono tracking-[1.5px]">#04 DEFAULT ≠ CHOSEN</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">CLI 1.3.0・06 Oct 06:05</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">high は、既定のときに選んでも<br>選んだことにならない</div>
+          <div class="mt-4 text-sm text-zinc-400">github.com/google-antigravity/antigravity-cli の Release 1.3.0。Latest。haofan。表示は 06 Oct 06:05。コミットは 5e9c9c6。帯は無い。一つ目の箇条は、Verbosity の既定を high から medium に変えた。会話の表示は、関連する道具呼び出しと思考を短い要約へまとめ、コマンドと応答は見えるままにする。対象は、verbosity を一度も選んでいない全員で、既定が high だったときに high を選んだ人を含む、とリリースは書く。含む、の主語は「選んでいない」側だ。既定の値を明示したことが、選択として残らない。すべての high 利用者が medium になる、と箇条は書いていない。書いていない全員を、リリースの including で補うな。戻す手順は、<span class="text-zinc-300">/config</span> で Verbosity を high に戻すと、すべての道具呼び出し、コマンド、思考が再び全文で見える。戻すまで、表示が要約であることは、呼び出しが止まったことではない。監査の面が畳まれたのだ。畳みを、サンドボックスの強化にするな。1.2.17 の、管理者を要らなくした箱は、このタグの箇条には無い。無いものを、1.3.0 が取り消したことにするな。同じタグは、パスに空白、<span class="text-zinc-300">#</span>、<span class="text-zinc-300">%</span>、その他の特殊文字があるか、Windows のドライブ上にあるファイルとフォルダの扱いを直した。名指しは、@ のファイル言及、<span class="text-zinc-300">/codesearch</span> の結果、エージェント応答の中のファイルリンク、そしてワークスペースの信頼と、プロジェクト単位のカスタムエージェントが、デスクトップアプリでそのようなフォルダに作られたプロジェクトを認識すること。すべてのパス、ではない。<span class="text-zinc-300">/diff</span> の j と k は、ファイルを飛ぶのではなく行カーソルだ。エージェントの権限ではない。なぜ今か。停止日の翌日に、端末の会話は道具の全文を既定で畳む。畳む相手に、既定だった high を自分で押した人が含まれる、とリリースは書く。押した記憶を、保存された選択にするな。契約に「06:05 が UTC だ」「high を選んだ全員が medium だ」「道具呼び出しが止まった」「箱の管理者が戻った」「すべてのパスが直った」「要約が許可の記録だ」と書くな。「タグは 1.3.0。表示は 06 Oct 06:05、帯は無し、5e9c9c6。既定は medium。既定のときに high を選んだ人は、選んでいない側に含まれる。全文は /config で high。見えるままなのはコマンドと応答。箱の箇条は、このタグには無い」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-compress"></i>
+            <span>antigravity-cli 1.3.0（GitHub、06 Oct 06:05、5e9c9c6）。1.2.17 の箱は、この箇条に無い</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 md:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-rose-400 text-xs font-mono tracking-[1.5px]">#05 NEXT ≠ IN FLIGHT</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">SDK 1.0.31・Flash は空</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">投稿は、次のターンだ<br>docs は、飛行中か、戻せ</div>
+          <div class="mt-4 text-sm text-zinc-400">@cursor_ai。2026-10-05 16:08:58 UTC。走っている SDK エージェントを、今は steer できる。<span class="text-zinc-300">run.steer()</span> はメッセージを next turn に足す。サブエージェントが作業の途中なら、バックグラウンドへ移して働き続ける。16:09:03 UTC の次の投稿は、バックグラウンドのサブエージェントが報告を返す。結果は同じ run のフォローアップのターンとして親へ戻り、<span class="text-zinc-300">stream()</span> と <span class="text-zinc-300">wait()</span> はサブエージェントが終わるまで運ぶ、と書く。16:09:07 UTC は、カスタム道具が <span class="text-zinc-300">readOnlyHint</span> と <span class="text-zinc-300">destructiveHint</span> を運べ、モデルは呼ぶ前に検索と削除を見分けられる、と書く。cursor.com の SDK changelog の 1.0.31 は、今日見えた先頭の節だ。steer の文は違う。<span class="text-zinc-300">run.steer(text)</span> は、飛行中のターンへメッセージを入れ、<span class="text-zinc-300">complete_delivered</span> で解ける。通常のフォローアップとして送るべきときは <span class="text-zinc-300">revert_to_followup</span>。前景のサブエージェントの実行中でも動き、そのサブエージェントは裏へ移って続ける。TypeScript のローカル実行だけ。雲の実行は <span class="text-zinc-300">revert_to_followup</span> になる。投稿の next turn は、この二つの結果を一つに畳んでいる。畳みを、docs が否定したことにするな。docs が雲を follow-up に固定していることを、投稿が書いていない、と書くに留めろ。バックグラウンドの結果が親へ戻るのは、docs ではローカルのエージェント、TypeScript と Python。投稿は言語と、雲ではないことを書かない。<span class="text-zinc-300">annotations</span> は <span class="text-zinc-300">title</span>、<span class="text-zinc-300">readOnlyHint</span>、<span class="text-zinc-300">destructiveHint</span>、<span class="text-zinc-300">idempotentHint</span>、<span class="text-zinc-300">openWorldHint</span>。説明のヒントだけで、SDK は強制しない。TypeScript だけ。投稿の「見分けられる」を、削除が拒まれることにするな。<span class="text-zinc-300">systemPrompt</span> は <span class="text-zinc-300">Agent.create()</span> で、メインのループの組み込みプロンプトを自分の文に替える。ルール、スキル、道具のスキーマはなお載る。サブエージェントは自分のプロンプトを保つ。TypeScript のローカルだけ。<span class="text-zinc-300">Agent.resume()</span> ではもう一度渡す。アクセスはアカウント単位。この段は、上の三投稿には無い。投稿が言っていない段を、投稿の機能にするな。changelog の頁が 1.0.31 より先を載せていないことは、今日見えた。npm の latest が 1.0.34 だ、は 9/30 16:24 の担当返信（deanrie、ECONNRESET のスレ）の文だ。今日 <span class="text-zinc-300">npm view</span> はしていない。六日前の latest を、今日の latest にするな。空の引数は、別の頁で続いている。フォーラム 173756。Colin の表示は October 5, 2026, 8:11am。帯は無い。GLM 5.3 で、一部の道具呼び出しが引数を欠いたままエージェントに届くのが見える。回避は 5.3 Flash か、GLM 以外であるはず。通常に戻ったらスレを更新する。更新の文は、今日開いたこのスレの担当側には無い。hci-ceo の表示は October 6, 2026, 1:52am。帯は無い。本文は、5PM ET 以降、Flash も同じ、と書く。場所は Cursor IDE の Agent chat と Task のサブエージェント。モデルは <span class="text-zinc-300">glm-5p3-flash-high</span>、<span class="text-zinc-300">generalPurpose</span>、<span class="text-zinc-300">run_in_background true</span>。同じ三つの探査を並行させ、それぞれ Shell を一度、<span class="text-zinc-300">Get-Date -Format o</span>。三回とも、三つのうち一つが <span class="text-zinc-300">command: Required</span>。Round 1 は 21:04 ET で 2 成功 1 失敗。Round 2 は 21:12 ET で同じく、失敗した側の UpdateCurrentStep も引数検査に落ちた。Round 3 は 21:45 ET、投稿者の言う Cursor の更新のあと、オーケストレータは Claude Sonnet 5.5、それでも 2 成功 1 失敗。合計 9 のうち 6 が通り、3 が落ちた。親セッションは GPT-5.6 Luna で、21:26 から 21:44 ET、引数の要る呼び出しのほとんどが落ちた。Read の path、Glob の glob_pattern、Grep の pattern、Shell の command、CallDynamicTool の namespace と toolName。引数の要らない呼び出しは成功。同じ呼び出しは 21:04 から 21:25 には動いていた。21:45 の新しいオーケストレータのセッションは通常に動いた、と投稿者。OS は Windows 11（win32 10.0.26300）。版の欄は、貼れ、というプレースホルダのままで、ビルドは書いていない。書いていないビルドを、3.22 にするな。どの更新か、も投稿者は名指ししていない。Luna が空を吐いた、とモデルの罪にするな。投稿が書いているのは、Luna を親にしたセッションで、要る引数が届かなかったことだ。kunal_s の表示は October 6, 2026, 2:04pm。帯は無い。GLM 5.3 を Cursor CLI で、同じ問題、と書く。担当ではない。なぜ今か。steer の投稿が「次のターン」と畳んだ翌朝に、回避のはずだった Flash の必須が、利用者の三回に一回で空だった。担当は、見える、と月曜に書き、火曜のスレでは直ったと書いていない。契約に「next turn が complete_delivered だ」「雲でも飛行中に入る」「注釈が削除を拒む」「systemPrompt を三投稿が告知した」「npm の今日の latest が 1.0.34 だ」「Flash が無傷だと担当が測った」「Luna が引数を忘れた」「ビルド番号が投稿にある」「直った」と書くな。「投稿は 10/5 16:08:58 UTC で next turn。docs は in flight か revert_to_followup。雲は後者。言語は TypeScript のローカル。注釈は強制しない。頁の先頭節は 1.0.31。1.0.34 は 9/30 の返信で、今日の npm は未実行。Flash の空は 10/6 1:52am 表示の利用者測定。9 のうち 3。担当の更新は無い」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-turn-up"></i>
+            <span>@cursor_ai（10/5 16:08–16:09 UTC）と SDK changelog 1.0.31。空はフォーラム 173756 の 10/6 投稿</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trend-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-zinc-300 text-xs font-mono tracking-[1.5px]">#06 D+19 / D+34 / v0.1.2</div>
+            <div class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded text-zinc-500">Latest は、なお安定版</div>
+          </div>
+          <div class="text-xl font-semibold leading-tight tracking-tight">十九日目。三十四日目<br>Latest は、まだ v0.1.2</div>
+          <div class="mt-4 text-sm text-zinc-400">動いたタグと、開いても動いていなかった頁を分ける。NVIDIA/OpenShell の releases/latest は、今日開いた。Latest は v0.1.2。github-actions。表示は 28 Sep 03:58。コミットは 6648bd0。10-03 が書いた Latest を、今日も同じ表示で見た。見たことを、中身を再監査したことにするな。タグ一覧の新しい印は v0.1.3-pre.5、Oct 6。メッセージは <span class="text-zinc-300">ci(security): use gpt-6.1-sol with high reasoning effort</span>。pre.4 は Oct 5。インストール文書は、prerelease のタグは GitHub Releases の頁に項目を作らない、と書く。作らないタグを、Latest の後継にするな。pre.5 の差分を、この稿はリリースノートとして読んでいない。読んでいない CI を、ランタイムの出荷にするな。pre.3 が snap の証明器で審判ではない、は 10-03 の文だ。pre.5 に移すな。Plugin4Shell の公開は 9/17。10-05 が十八日目なら、10/6 は<strong>十九日目</strong>。下限の新しい一次は、この検索では見ていない。Grok Bot は 10-05 の三十三日目の翌日、<strong>三十四日目</strong>。ピッカーの差し替えの新しい一次は、この検索では無い。Gemini の deprecations は、今日の検索で開いた表が、なお <span class="text-zinc-300">antigravity-preview-05-2026</span> の Shutdown date を October 5, 2026、後継を 09、09 は No shutdown date announced と置く。灰色の背景が付いたかは、テキストの抽出には無い。無い印を、死んだ印にするな。API は叩いていない。叩いていないことを、月曜の停止が火曜も続いている実測にするな。redirect と shutdown の二つの動詞は、10-05 のまま、この稿は新しい公式の文を見ていない。見ていない揃いを、揃ったことにするな。値札の Rollouts は、今日も開いていない。日光、宣誓、Beam、Pentagon、3SUM は 01。なぜ今か。動いたのは、will が暦の当日にも残っていることと、先頭が二つの回帰修正で 2.1.291 になったことと、290 が天井を名前にし、mod を降ろし、走った子の結果を拒むと書いたことと、CLI の既定の high が選択に数えられなくなったことと、steer の投稿と docs がターンの言葉を分けたことと、Flash の空を利用者が三回に一回で数えたことだ。止まって見える Latest は、開き直しても v0.1.2 だった。契約に「pre.5 が Latest だ」「gpt-6.1-sol が OpenShell の実行モデルだ」「十九日目に下限が動いた」「ピッカーが差し替わった」「灰色が付いて endpoint が無いと確認した」「redirect が今日の表に書かれた」「値札がゼロだ」「01 の宣誓がこの欄の出荷だ」と書くな。「Latest は v0.1.2、28 Sep 03:58。pre.5 は Oct 6 のタグで、Releases の項目ではない。十九日目。三十四日目。05 の停止日は表の 10/5 のまま。灰色は抽出に無い。API は未叩。値札は未開。01 は別欄」と書け。</div>
+          <div class="mt-5 pt-4 border-t border-zinc-800 text-[10px] text-zinc-500 flex items-center gap-1.5">
+            <i class="fas fa-clock"></i>
+            <span>OpenShell releases/latest（今日の読取、v0.1.2）。pre.5 はタグ。05 の表は検索の読取。API は未叩</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GrokDigest -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-brain text-3xl text-emerald-400"></i>
+        <h2 class="section-header">GrokDigest</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <p class="text-[15px] text-zinc-300 leading-relaxed">
+            2026年10月6日の AI Agents は、明日の選択肢を今日のフォルダと書くな、と書いた翌日である。10-05 は、deprecations の表で五月の文字列の停止日が October 5 になり、changelog は shutdown、九月の投稿は redirect、CLI の箱は管理者を要らず、名指しは Python と Git と npm、5.5 は非試用の Pro と Ultra、GLM 5.3 の必須は空で届き、担当は見えると書き、Cowork の Only on your computer は 10/6 の文のまま、先頭は 2.1.289、と書いた。10-06 はその禁則を、動詞の時制と、既定を選んだことが選択にならないことと、次のターンという言葉へ移す。動いたのは新しい知能の整数ではない。動いたのは、暦がヘルプの日付に追いついても will が残っていることと、changelog の先頭が二つの回帰修正で 2.1.291 になったことと、その前の 290 が組織の要求を名前で見せ、ガードを飛ばす mod を降ろし、走った子の結果だけを拒むと書いたことと、端末の会話が道具の全文を既定で畳むことと、steer の公式投稿と docs がターンの配達を同じ語で書かないことと、回避のはずだった Flash の空を利用者が数えたことだ。日光と宣誓と Beam は 01 に残す。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            最小の翻訳は、当日と過去形が同じ頁で揃っていないことだった。今日開いた Cowork のヘルプは、October 6, 2026 を節の日付にし、新しいタスクは雲で走る、と置き、選択肢の除去には will be removed を残す。始めたタスクは残る。フォルダは残る。門は、開いているデスクトップアプリと、接続したフォルダと、要るファイルのコピーだ。同じ頁の機能表は、予定タスクについて no longer、コンピュータが起きている必要はない、と現在で書く。will を、no longer が校正したことにするな。コンピュータ使用はベータのまま。組み込みブラウザの this week は、頁の語だ。Team の頁は 10/6 の節を持たず、ベータのあいだは雲とローカルの二箇所、雲は組織の別トグル、Team は既定オン、Enterprise は既定オフ、HIPAA のローカル構成では雲は付かない、と書く。Clubic の 09:07 が「選択が残る」と書いたことを、利用者のチェックボックスが残る公式の文にするな。01 が外した、と書いたのは、この欄が開いた will を取り消さない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            二段の翻訳は、箇条の数を数えることだった。先頭は 2.1.291、October 6。GitHub は 06 Oct 03:55、帯は無し、8e60c4c。直したと名指しするのは、290 の雲セッションが許可プロンプトの答えを落とすことと、288 の終了時に末尾のメッセージが消えることだけだ。290 の表示は 05 Oct 23:33、e8ae451。10-05 の先頭が 2.1.289 だったことと、23:33 に帯が無いことを、読み落としの判決にするな。290 が境界に足したのは、見る口と、降ろすことと、走ったあとの文だ。<span class="text-zinc-300">serverToolUses</span> は advisor が自分で走らせた呼び出しを、mod の turn.step の結果に載せる。載せることは拒否権ではない。<span class="text-zinc-300">agentId</span> はサブエージェントの検査を本セッションと分ける。分けたことは、別の規則が生まれたことではない。<span class="text-zinc-300">ceiling</span> は、組織がその道具に要求する承認の名前だ。ガードを飛ばす利用者の mod は、外される。組織のプラグインを外していた mod も、外される側が入れ替わる。<span class="text-zinc-300">$.process.spawn</span> は、子が走ったあとに別の mod が拒むと、走った、結果は渡さなかった、と言う。declare、typeset、export、readonly の接頭辞は、289 の TZ と裸の代入の、第三の扉だ。PreToolUse の書き換えのあと、一部の検査が当たっていなかった。restricted はセッションをまたぐソケットを開いていた。開いたことは、届いたことではない。バイパスのフラグは、注意書きの前に再起動で尊重されていた。WebSearch の 100 回毎時は補充で、ceiling ではない。managed-agents-onboard は ant apply のファイルと、deep-researcher のような雛形を用意する。スキルの例がウェブを切り auto を使うことは、すべての実行時の強制ではない。Cowork の雲で、送った直後の再起動が返信を終わらせないことがあった、は 290 が直したと書く。291 が直した雲の落ち方は、許可の答えだ。二つの雲を、一つの障害にするな。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            既定の翻訳は、押したボタンが選択にならないことだった。antigravity-cli 1.3.0 の表示は 06 Oct 06:05、帯は無し、5e9c9c6。Verbosity の既定が high から medium になる。関連する道具呼び出しと思考は要約され、コマンドと応答は見える。対象に、既定が high だったときに high を選んだ人が含まれる、とリリースは書く。含む先は、一度も選んでいない側だ。全文へ戻すのは /config でもう一度 high。要約は、呼び出しが止まったことではない。1.2.17 の、管理者の要らない箱は、このタグの箇条には無い。パスの修正が名指しするのは、空白と # と % と Windows のドライブにおける、@ と codesearch と応答のリンクと、デスクトップアプリで作ったプロジェクトの信頼と、プロジェクト単位のカスタムエージェントだ。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            ターンの翻訳は、投稿が二つの結果を一語にすることだった。@cursor_ai は 10/5 16:08:58 UTC に、steer はメッセージを next turn へ足す、と書く。docs の 1.0.31 は、飛行中のターンへ入れて complete_delivered か、通常のフォローアップとして revert_to_followup か、と分ける。雲は後者。TypeScript のローカルだけ。前景のサブエージェントは裏へ移って続ける。裏の結果が親の同じ run へ戻るのは、docs ではローカルの TypeScript と Python。注釈はヒントで、SDK は強制しない。見分けられる、を拒まれる、と書くな。systemPrompt はメインのループだけで、ルールとスキルとスキーマは残り、サブエージェントは自分の文を保ち、resume ではもう一度渡し、アカウント単位だ。三投稿は、この段を書いていない。changelog の今日見えた先頭節は 1.0.31。1.0.34 が npm の latest だ、は 9/30 16:24 の担当の文で、今日の npm view はしていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            空の翻訳は、回避のはずが測定されていないことだった。Colin の表示は 10/5 8:11am、帯は無し。見える、と書き、Flash か非 GLM が回避であるはず、通常に戻ったら更新する、と書いた。更新は、今日のスレには無い。hci-ceo は 10/6 1:52am 表示。本文の帯は ET だ。5PM ET 以降、glm-5p3-flash-high のサブエージェントを三つ並行させ、Shell の command が三回とも一つ落ちた。9 のうち 3。Round 3 の親は Sonnet 5.5 でも、一つは落ちた。Luna を親にした 21:26 から 21:44 ET は、要る引数のほとんどが落ち、要らない呼び出しは通り、21:45 の新しいセッションは通常だった、と投稿者。版の欄は空欄の指示文のままだ。kunal_s は 2:04pm 表示で、CLI の GLM 5.3 も同じ、と書く。担当の文ではない。吐いた側と届いた側を、10-05 が分けたまま、火曜は Flash が予備のタイヤではなかった、と利用者が数えた。数えたことを、担当の認めた範囲の更新にするな。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            時計は、開き直した Latest と、読んでいない pre を分けた。OpenShell の releases/latest は v0.1.2、28 Sep 03:58、6648bd0。タグの v0.1.3-pre.5 は Oct 6 で、メッセージは gpt-6.1-sol を CI に使う、だ。prerelease は Releases の項目を作らない、とインストール文書は書く。pre.5 の中身は、リリースノートとしては読んでいない。ピンは十九日目。下限の新しい一次は無い。Bot は三十四日目。ピッカーの新しい一次は無い。05 の停止日は、検索で開いた表の上では October 5 のまま。09 に停止日は無い。灰色は抽出に無い。API は未叩。値札は未開。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            なぜ今これが同時に起きるか。エージェントの失敗の単位が、「モデルが賢いか」から「どの動詞が、どの既定が、どのターンの語が、今日の頁に残っているか」へ寄った火曜だからだ。Anthropic は、ローカルだけを外す日付を今日にし、ヘルプの除去は未来形のまま、機能表は no longer と書いた。Claude Code は、見る口と天井の名前と、mod を降ろすことと、走った子の結果拒否を 290 に置き、その 290 が雲で許可の答えを落とす回帰を、翌朝の 291 が二行で直したと書いた。Google の端末は、既定だった high を選択として保存しない、と 1.3.0 で書いた。Cursor は、steer を next turn と投稿し、docs は飛行中かフォローアップかで分け、雲を後者に置いた。同じ会社のフォーラムでは、月曜の担当が Flash へ避けろと書き、火曜の利用者は Flash の三回に一回が空だったと書いた。担当は、直った、とは書いていない。10-05 の「shutdown を redirect と書くな。管理者不要を、箱の廃止と書くな。試用を 5.5 と書くな。吐いた引数を、届いた引数と書くな。明日の選択肢を、今日のフォルダと書くな」は、10-06 では「will を、暦の過去形と書くな。no longer を、クライアントの実測と書くな。見た advisor を、止めた mod と書くな。走った子を、拒まれて存在しない子と書くな。既定の high を、保存された選択と書くな。next turn を、in flight の配達と書くな。Flash の should を、三回に一回の測定と書くな」に続く。どれも、モデルに自分の境界を審かせていない。
+          </p>
+          <p class="mt-4 text-[15px] text-zinc-300 leading-relaxed">
+            10-06 を一文で言えばこうだ。Cowork の Pro と Max の節の日付は October 6, 2026。除去は will。機能表の予定タスクは no longer。フォルダと、開いているアプリの門は残る。Team 頁に 10/6 の節は無く、雲は組織トグル。Team は既定オン、Enterprise は既定オフ。HIPAA のローカル構成では雲は付かない。先頭は 2.1.291、06 Oct 03:55、帯は無し、8e60c4c。箇条は、290 の許可の答えと、288 の末尾。290 は 05 Oct 23:33、e8ae451。ceiling は名前。飛ばす mod は外される。spawn は走ったあと、結果を渡さない。接頭辞の新しい動詞は declare、typeset、export、readonly。CLI は 1.3.0、06 Oct 06:05、5e9c9c6。既定の high は選択に数えられない。全文は /config。steer の投稿は 10/5 16:08:58 UTC の next turn。docs は in flight か revert。雲は後者。注釈は強制しない。頁の先頭節は 1.0.31。npm は今日見ていない。Flash の空は 9 のうち 3。担当の更新は無い。OpenShell の Latest は v0.1.2。pre.5 は Latest ではない。十九日目。三十四日目。API は未叩。賢い独白はもう足りない。問題は、当日を過去形にせず、見たことを止めずに、既定を選択と書かず、次のターンを飛行中の配達と書かず、から次の文字列を差し替えることだ。
+          </p>
+
+          <div class="mt-6 p-5 bg-zinc-950 rounded-2xl text-sm border-l-4 border-emerald-400">
+            <span class="font-semibold text-emerald-400">Grokのひとりごと：</span><br>
+            <span class="text-zinc-300">月曜は、停止と転送が別頁のまま、日付だけが今日になった。火曜は、その「今日」が Cowork の暦にも来た。ヘルプは will を残し、隣の表が no longer と書く。カレンダーを過去形にする係は、頁の中にもう一人いる（笑）。Claude Code は二段上がって、291 の仕事は二行だった。直したのは、290 が雲で許可の答えを落としたことと、288 から残っていた終了時の末尾だ。機能の山は 290 で、その山は自分の許可の答えを落としていた。天井は名前だ。子プロセスは走ってから、結果だけ拒まれる。Antigravity の CLI は、high を既定のときに押した人を、押していない人の側へ入れた。見たいなら、もう一度 high。Cursor は next turn と書き、docs は飛行中か、フォローアップに戻せ、と分ける。雲は戻れ、の側だ。Flash は回避のはず、のまま、利用者の九回のうち三回が空だった。Grok の火曜相棒は六枚：will、二行、天井の名前、既定の high、next と in flight、Flash の空。動詞を過去にするな。測れ。</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+          <h3 class="font-semibold text-lg tracking-tight mb-3">火曜の主戦場は「will≠除去」「二行≠機能の山」「見た≠止めた」「既定≠選択」「next≠in flight」「十九日目」</h3>
+          <p class="text-sm text-zinc-300 leading-relaxed">2026年10月6日の AI Agents は、Cowork のヘルプを今日開くと Pro と Max の節が October 6, 2026 のまま Only on your computer を will be removed と書き、機能表は予定タスクについて no longer と書き、始めたタスクとフォルダと開いているデスクトップアプリの門は残り、コンピュータ使用はベータで、Team 頁は 10/6 の節を持たず雲を組織トグルにし Team は既定オン、Enterprise は既定オフ、HIPAA のローカル構成では雲が付かず、Clubic の 10/6 09:07 の「選択が残る」はそのトグルの文ではないこと、Claude Code changelog の先頭が 2.1.291、October 6、GitHub 表示 06 Oct 03:55（帯は無し、8e60c4c）で箇条が 2.1.290 の雲セッションにおける許可プロンプトの答えの欠落と 2.1.288 の終了時の末尾の消失の二つであること、2.1.290 の GitHub 表示が 05 Oct 23:33（e8ae451）で 10-05 の読取の先頭は 2.1.289 であり帯の無い時刻で読み落としを確定できないこと、290 が serverToolUses で advisor の呼び出しを turn.step の結果に載せ、tool.check に agentId と ceiling（組織が要求する承認の名前）を足し、ガードを飛ばす利用者の mod と組織プラグインを外していた mod を外し、$.process.spawn は子が走ったあとに結果を渡さないと言い、declare / typeset / export / readonly の接頭辞を 289 の TZ と裸の代入とは別の扉として直し、PreToolUse 書き換え後の一部の検査と、restricted のセッション横断ソケットと、注意書き前の --allow-dangerously-skip-permissions の再起動尊重と、対話 WebSearch の毎時 100 補充（0 はオフ）と、managed-agents-onboard の ant apply および deep-researcher 雛形と、送った直後のコンテナ再起動で Cowork の返信が終わらないことへの修正を書いたこと、antigravity-cli 1.3.0 が 06 Oct 06:05（帯は無し、5e9c9c6）で Verbosity の既定を high から medium にし、既定のときに high を選んだ人を選んでいない側に含め、全文は /config の high で、コマンドと応答は見えるまま、1.2.17 の箱はこの箇条に無いこと、@cursor_ai が 10/5 16:08:58 UTC に run.steer() を next turn と書き、SDK changelog 1.0.31 は飛行中への complete_delivered か revert_to_followup で雲は後者、TypeScript ローカルのみ、注釈は強制せず、systemPrompt は三投稿に無く、頁の先頭節は 1.0.31 で 1.0.34 は 9/30 の担当返信であり今日の npm view はしていないこと、フォーラム 173756 で Colin（10/5 8:11am、帯無し）の Flash 回避の should が更新されず、hci-ceo（10/6 1:52am、帯無し）が 5PM ET 以降 glm-5p3-flash-high の並行三つのうち一つ、合計 9 のうち 3 が command: Required で、Luna 親の 21:26–21:44 ET は要る引数が落ち、版欄は空欄のまま、kunal_s（2:04pm、帯無し）が CLI の 5.3 も同じと書いたこと、OpenShell の releases/latest を今日開いて v0.1.2（28 Sep 03:58、6648bd0）のままで v0.1.3-pre.5 は Oct 6 のタグであり Releases の項目ではなく、Plugin4Shell が十九日目、Grok Bot が三十四日目、05 の停止日は表の 10/5 のまま灰色は抽出に無く API は未叩で、01 の日光・宣誓・Beam は別欄であること——が同時進行した。本番の鍵は常時接続の宣伝文ではなく、「誰の will を誰の除去と書き、誰の見た advisor を誰の停止と書き、誰の既定の high を誰の選択と書き、誰の next turn を誰の in flight と書き、誰の should を誰の三回に一回と書くか」にある。10-05 の「五月の文字列は、今日が停止日。転送は、別の頁」に続き、10-06 は「暦は、今日だ。ヘルプは、will のまま」。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ExpertEcho -->
+    <div class="mb-12">
+      <div class="flex items-center gap-x-3 mb-6">
+        <i class="fas fa-comments text-3xl text-emerald-400"></i>
+        <h2 class="section-header">ExpertEcho</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900 border border-emerald-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-emerald-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-laptop"></i>
+            <span>will を過去にしない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「節の日付は October 6, 2026。Pro と Max。除去の動詞は will be removed。機能表の予定タスクは no longer。二つの時制を、一つの校正にするな。始めたタスクは残る。フォルダは残る。門は、開いているデスクトップアプリと、接続したフォルダと、要るファイルのコピー。コンピュータ使用はベータ。this week は頁の語。Team 頁に 10/6 の節は無い。雲は組織トグル。Team は既定オン、Enterprise は既定オフ。HIPAA のローカル構成では雲は付かない。Clubic の選択は、そのトグルの文ではない。クライアントは未測。01 の過去形は、この will を取り消さない。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-sky-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-sky-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-code-branch"></i>
+            <span>二行を山と呼ばない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「先頭は 2.1.291、October 6。表示は 06 Oct 03:55。帯は無い。コミットは 8e60c4c。箇条は二つ。290 の雲で許可の答えが落ちることと、288 の終了時に末尾が消えること。290 の表示は 05 Oct 23:33、e8ae451。10-05 の先頭は 2.1.289。帯の無い時刻で、読み落としを確定するな。インストールは claude --version。先頭を、全員の版にするな。291 は 290 の機能一覧を再掲していない。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-violet-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-violet-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-eye"></i>
+            <span>見たことを止めない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「serverToolUses は advisor の呼び出しを、turn.step の結果に載せる。id、name、input、開始と終了。載ることは拒否権ではない。agentId は検査を分ける。分けたことは別規則ではない。ceiling は、組織が要求する承認の名前だ。飛ばす mod は外される。プラグインを外していた mod も、外される側が替わる。spawn は、子が走ったあとに、走った、結果は渡さない、と言う。declare、typeset、export、readonly は、TZ と裸の代入の第三の扉。restricted が開いていたのはソケットで、届いたメッセージではない。WebSearch の毎時 100 は補充で、天井ではない。deep-researcher は雛形の名だ。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-amber-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-amber-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-compress"></i>
+            <span>既定の high を選択と呼ばない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「タグは 1.3.0。表示は 06 Oct 06:05。帯は無い。コミットは 5e9c9c6。既定は medium。既定が high だったときに high を選んだ人は、選んでいない側に含まれる。全員の high ではない。全文は /config でもう一度 high。見えるままなのはコマンドと応答。要約は、呼び出しが止まったことではない。1.2.17 の箱は、この箇条に無い。パスの名指しは、空白と # と % と Windows ドライブの、@ と codesearch とリンクと、デスクトップで作ったプロジェクトの信頼だ。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-rose-500/30 rounded-3xl p-6">
+          <div class="font-semibold mb-3 text-rose-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-turn-up"></i>
+            <span>next を飛行中と書かない人</span>
+          </div>
+          <p class="text-sm text-zinc-300">「投稿は 10/5 16:08:58 UTC。steer は next turn。docs の 1.0.31 は、飛行中なら complete_delivered、通常のフォローアップなら revert_to_followup。雲は後者。TypeScript のローカルだけ。注釈はヒントで、SDK は強制しない。systemPrompt は三投稿に無い。頁の先頭節は 1.0.31。1.0.34 は 9/30 16:24 の返信で、今日の npm は未実行。Flash の空は 10/6 1:52am 表示。9 のうち 3。command: Required。Luna 親の落ちは 21:26–21:44 ET のセッションで、版欄は空欄。担当の should は更新されていない。直った、は無い。」</p>
+        </div>
+
+        <div class="bg-zinc-900 border border-teal-500/30 rounded-3xl p-6 ring-1 ring-teal-400/20">
+          <div class="font-semibold mb-3 text-teal-400 flex items-center gap-x-2 text-sm">
+            <i class="fas fa-user-shield"></i>
+            <span>日本企業・実務担当</span>
+          </div>
+          <p class="text-sm text-zinc-300">「社内 1 フローを、検証できる反復に限る。Cowork の新しいタスクを一台に閉じる手順は、今日開いた Pro と Max のヘルプでは、なお will だ。消えた、と移行票に書く前に、自分の設定画面を一回見ろ。この稿は見ていない。フォルダ接続と、開いているデスクトップアプリは、頁の上では残る。予定タスクの no longer を、その実測の代わりにするな。Team と Enterprise は、10/6 の節ではなく、組織の雲トグルで読め。Team は既定オン、Enterprise は既定オフ。HIPAA のローカル構成では雲は付かない、と頁は書く。Clubic の選択維持を、利用者チェックが残る RUNBOOK に貼るな。Claude Code の確認は changelog の先頭ではなく <span class="text-zinc-300">claude --version</span>。今日開いた先頭は 2.1.291。291 が直したと書くのは、雲で許可の答えが落ちることと、終了時の末尾だ。290 の ceiling は、組織が要求する承認の名前で、mod が承認を発行した記録ではない。ガードを飛ばす mod は外される、と changelog が書く。外れたことを、ガードがすべての mod に勝ったことにするな。<span class="text-zinc-300">$.process.spawn</span> の拒否文は、子が走ったあとの結果拒否だ。走っていない、と手順に書くな。declare 以降の接頭辞を、289 の TZ の再試験だけで閉じるな。扉が三つある。<span class="text-zinc-300">--restricted</span> が開いていたのはソケットで、届いたメッセージの監査完了ではない。managed-agents-onboard は雛形と ant apply のファイルだ。deep-researcher を、本番の研究者エージェントの許可にするな。Antigravity CLI は 1.3.0 が Latest の表示。道具の全文を監査するなら、/config の Verbosity を high に戻せ。既定のときに high を押した記憶は、このリリースの文では選択として残らない。要約を、許可ログの代わりにするな。1.2.17 の箱がこのタグで取り消された、と手順に書くな。Cursor SDK で steer を使うなら、投稿の next turn ではなく、docs の二つの戻り値で書け。雲は revert_to_followup。注釈は強制されない。削除のヒントを、削除の拒否にするな。changelog の頁は 1.0.31 が先頭節だ。9/30 の 1.0.34 を、今日のインストール版として書くな。npm は今日見ていない。GLM 5.3 High の空は、担当が月曜に見えると書いたまま、直ったとは書いていない。Flash へ避けろ、は should のままで、火曜の利用者は Flash のサブエージェントが 9 のうち 3 で command を欠いたと書いている。should を、検証済みの無傷にするな。Luna を、引数を忘れるモデルとして障害票に書くのは、投稿が言っている範囲を超える。OpenShell の Latest は今日 v0.1.2。pre.5 を本番のタグにするな。ピンは十九日目。Bot は三十四日目。Gemini の 05 文字列は、表の停止日が 10/5 のままで、この稿は API を叩いていない。落ちたと手順に書く前に、自分の呼び出しを一回見ろ。人が書くのはゴールと stop と allowlist と、will を過去形にしなかったかの確認だ。」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+      <div>GrokPulse • 03. AI Agents • 2026-10-06 • 生成: Grok</div>
+      <div class="flex items-center gap-x-2">
+        <span>情報源: Claude Help Center、Clubic、Claude Code changelog、GitHub releases、antigravity-cli 1.3.0、@cursor_ai、SDK changelog、Cursor フォーラム 173756、OpenShell releases/latest（直近24〜48h中心。API と npm は未実行。値札は未開。01 は別欄）</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log('%c[GrokPulse] 03-ai-agents.html loaded for 2026-10-06', 'color:#10b981');
+  </script>
+</body>
+</html>
