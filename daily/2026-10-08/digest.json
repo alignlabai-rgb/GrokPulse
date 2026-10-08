@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-08",
+  "overview": "ChatGPTのGPT-6とIntelligent UIについて、公式投稿を引用した日本語の試用報告が見つかりました。今回の取得範囲では、この1件を掲載します。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "ChatGPTのGPT-6・Intelligent UI、Xで試用報告",
+      "summary": "NoLangのX投稿は、OpenAIの発表を引用し、GPT-6とIntelligent UIの展開を紹介。回答に図表や操作部品を出す機能を、Plus以上のチャットで試せると説明しています。公式原投稿は今回の検索では取得できていません。",
+      "significance": "主要チャットの回答が、文章に加えその場で扱える図表や操作部品を含む形へ広がっている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/sayhi2ai_jp/status/2108056793775849727",
+          "label": "NoLang（@sayhi2ai_jp）の試用投稿",
+          "posted_at": "2026-10-08T04:48:00Z"
+        }
+      ]
+    }
+  ],
+  "collection_note": "検索3回、site:x.com中心。優先窓は2026-10-07 23:00 JST以降。該当はGPT-6とIntelligent UIの引用・試用が中心。公式原投稿のstatus URLは結果に無く、引用を含む実在URLのみ採用。一般ニュースは不採用。",
+  "generated_at": "2026-10-08T23:00:08.912129+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "e686353b-3446-4017-8120-ac0c5d814b35",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true
+  }
+}
