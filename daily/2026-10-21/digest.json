@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-21",
+  "overview": "直近約24時間のX上位では、OpenAIの長時間キャッシュ、オープンモデルOrnith、エージェント基盤の報道、NVIDIAの人型研究基盤と電力制約、動画生成の利用報告が中心だった。中国ラボの一次発表、長寿、バイオ、新チップ、核融合は取れなかった。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "OpenAI、APIのプロンプトキャッシュを最長12時間に対応",
+      "summary": "OpenAI開発者アカウントが、APIで12時間のプロンプトキャッシュを選べると告知した。常駐エージェントは数時間空いても、共有指示やツールを安いキャッシュ入力単価で再利用できる。OpenAIのTibo氏は、ログイン中のCodexとWorkではキャッシュを維持し、古い会話へ戻っても不利にならないと補足した。",
+      "significance": "長時間動かすエージェントのAPI費用が下がり、作業の中断と再開がしやすくなる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+          "label": "OpenAI Developers",
+          "posted_at": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2112712984644784534",
+          "label": "Tibo",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Ornith、1220億規模のOrnith-1.5をMITで公開と告知",
+      "summary": "Ornith公式が、オープンウェイトのOrnith-1.5-122BをMITライセンスで公開したと投稿した。単一のNVIDIA DGXカードで動き、同規模のオープンモデルで最高水準だと主張し、コーディングとエージェント指標の自己申告値を併記している。第三者による再現は、この投稿群にはない。",
+      "significance": "単一筐体で動くとする大規模オープンモデルで、自前検証やエージェント実験の選択肢が増える。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/ornith_/status/2112553477457268799",
+          "label": "Ornith",
+          "posted_at": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/ryanCarerhq1/status/2112591088359817478",
+          "label": "Ryan Carter",
+          "posted_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Kol Tregaskes氏、Google研究のHarness²公開を要約",
+      "summary": "同氏は、Google Cloud AI ResearchがHarness²をApache 2.0で公開したと要約した。モデル本体は固定し、指示文、記憶、ツール、サブエージェントなど外枠の修正を試して良くなったものだけ残す研究枠組みだという。GLM-5とGemini 3.5 Flashでベンチが上がったとし、公式サポート製品ではないとも書いている。",
+      "significance": "同じモデルのまま、エージェントの作業環境を経験で改善する研究実装が流通している。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/koltregaskes2/status/2112884357321077221",
+          "label": "Kol Tregaskes News",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "旺旺氏、Android操作エージェントARTEMISの公開を紹介",
+      "summary": "旺旺氏は、GoogleがAndroidを自動操作するエージェントARTEMISをオープンソース化したと紹介した。MCP経由でClaude CodeやCodexなどから操作・試験でき、数秒間隔のFlashと複数エージェントのProがあるという。AndroidWorldの完了率は99%超、iOSは計画中とされ、Google自身の投稿は今回の結果にない。",
+      "significance": "アプリのタップ試験をエージェントへ渡す選択肢として開発者の間で共有されている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/TiagerBao/status/2112774693954470048",
+          "label": "旺旺",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "AEON、ホテル予約対応のAgentic Checkout V2を開始",
+      "summary": "AEON公式がAgentic Checkout V2の開始を告知した。Travala経由のホテル予約に対応し、オンチェーンのエージェント財布で資金管理と取引追跡ができるという。買い物から旅行予約へ、エージェントが実行する経済活動を広げたとしている。二次投稿は中国語で同じ内容を解説している。",
+      "significance": "エージェントが予算内で実在サービスを予約する決済の実装例が公式に示された。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/AEON_Community/status/2112849119236722728",
+          "label": "AEON.XYZ",
+          "posted_at": "2026-10-21"
+        },
+        {
+          "url": "https://x.com/Bitcoin188/status/2112897281985024492",
+          "label": "比特币道",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Bloomberg、Nvidiaが豪Firmusへの出資を協議と報道",
+      "summary": "Bloombergは、豪州のAIクラウド企業Firmusが新規株式公開を取りやめた後、Nvidiaが数億ドル規模の出資を協議しているとThe Informationの記事を引用して伝えた。協議の段階であり、契約成立や金額の確定は投稿に示されていない。",
+      "significance": "AIクラウド企業の資金調達と、Nvidiaの計算資源側の関与が再び市場で注目されている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2112753267922940384",
+          "label": "Bloomberg",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "市場解説がHuang氏の、電力がAI増設の隘路との発言を紹介",
+      "summary": "Shay Boloor氏が、NvidiaのJensen Huang CEOが今後数年は電力がAI構築の主要な隘路の一つであり続けると述べた映像を投稿した。電力の確保と、1ワットあたりの計算量を高めることが重要だという市場解説を添え、新しい半導体製品の発表ではない。",
+      "significance": "計算チップだけでなく、電力供給がAI設備拡大の制約として改めて共有されている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/StockSavvyShay/status/2112879511130050660",
+          "label": "Shay Boloor",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "NVIDIA、人型研究機Agile ONE SNとIsaac新ツールを発表",
+      "summary": "NVIDIA Roboticsが、エージェント向けIsaacツールの追加と、Agile Robotsの研究用人型Agile ONE SNを発表した。Isaac GR00TとJetson Thorを使い、人型技能の開発、学習、検証を一つの基盤で行うとしている。新しいデータセット、実行環境、ロボット学習フレームワークも含む。",
+      "significance": "人型ロボットの技能開発を、研究者が同じNVIDIA基盤上で試せる参照機が示された。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/NVIDIARobotics/status/2112854462708519013",
+          "label": "NVIDIA Robotics",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Benzinga、Huang氏のPhysical AIと工場自動化の発言を紹介",
+      "summary": "Benzingaは、Huang氏が次のAIの波は物理世界を扱うPhysical AIであり、推論できるロボットが中心になると述べ、今後10年で工場の自動化が大きく進むと見ている、と紹介した。出典はHill & Valley Forumで、この投稿は新製品の発売告知ではない。",
+      "significance": "Nvidia首脳が、生成AIの次を工場とロボットの自動化に置いている発言として流通した。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Benzinga/status/2112511145244549475",
+          "label": "Benzinga",
+          "posted_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "LOOPY氏、Kling 4.0の一貫性と生成費用を使用報告",
+      "summary": "LOOPY氏は、今回出たとみるKling 4.0を使い、参照の一貫性に加え、指示していない空間や小物も保たれたと書いた。30秒動画の生成が速く、費用はSeedance 2.5の約3分の1という体感も挙げている。公式アカウントの発表は結果になく、別利用者の作例投稿が同日にある。",
+      "significance": "短尺制作者が、Klingの新版を費用と一貫性の点で実用候補として試し始めている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/VibeEverything/status/2112831200536690844",
+          "label": "LOOPY",
+          "posted_at": "2026-10-21"
+        },
+        {
+          "url": "https://x.com/Alin_Reaper05/status/2112833687502913915",
+          "label": "Alin",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Sail氏、Seedance 2.5で巨大な猫の尺度を再検証",
+      "summary": "Sail氏は「街のバスの横に巨大な猫」という短い指示を、Seedance 2.5の720p・5秒で追加条件なしに再実行した。頭が二階建てバスより高い構図になり、巨大さの指示を理解したと判断している。他者の比較ではKlingやVeoが約3階分で止まったとし、自分の生成は4分未満だった。",
+      "significance": "短い指示でも寸法を守るかが、動画モデルを選ぶ実用水準の比較材料になっている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AsWill11/status/2112844517833404419",
+          "label": "Sail",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Shane Hegde氏、Runwayの制作流れとSeedance 2.5を検証",
+      "summary": "30日連続のツール検証の9日目として、同氏がRunwayを試した。自社サイトからブランドキットを取り込み、生成からタイムライン編集へ進める点を評価した。一方、内蔵のSeedance 2.5は遅く、指示を重ねると崩れたという。ロゴの手動拡大ができず、機能が多く最初の使い方が分かりにくいとも書いた。",
+      "significance": "動画生成だけでなく、ブランド資産と編集まで含む実作業での限界が共有された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/shanehegde/status/2112677547771080809",
+          "label": "Shane Hegde",
+          "posted_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Shlcy氏、広告制作OSSのIzumiが工程全体を組むと紹介",
+      "summary": "Shlcy氏は、Googleのオープンソース広告プロジェクトIzumi（冒頭表記はlzumi）が、Gemini、Veo、Imagen、Lyria、音声合成を組み合わせていると紹介した。AIディレクターが物語と鏡頭のリズムを計画し、その後に動画生成を組むという。香り、靴、化粧品、食品の作例があるとし、画面生成だけでない制作工程への参加が進むとまとめた。リポジトリの実在は未確認。",
+      "significance": "広告動画を、単発生成から企画・映像・音の分業へ広げる公開プロジェクトとして注目されている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/CY160909/status/2112684034467975501",
+          "label": "Shlcy",
+          "posted_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "FreeInd、6つの動画モデルを同一指示で比較と投稿",
+      "summary": "FreeIndは、柱の後ろという同一課題でSora 2 Pro、Veo 3.1 Fast、Gen-4.5、Video O1、FLUX 3 Video、Seedance 2.5を並べ、どれが勝つかを問う投稿をした。自社の無料比較ページへの誘導が中心で、各モデルの得点や勝敗の結論は本文に書かれていない。",
+      "significance": "主要動画モデルを同じ構図で見比べる素材が、製品発表とは別に出回っている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/freeindin/status/2112855273736151434",
+          "label": "FreeInd",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    }
+  ],
+  "collection_note": "検索は3件のみ。いずれもkeywordのTop、上限10、since:2026-10-20 until:2026-10-22。01、03、04、05、08は結果あり。02はGLM、Kimi、DeepSeekが割引案内に出るだけで中国ラボの一次発表はなし。06長寿と07バイオは該当なし。新チップや核融合の具体発表も上位になかった。マウス抽選、個人のAMD自作、仮想通貨の宣伝は除外。引用内の一次URLは出典に使用し、未記載のリポジトリは確認していない。",
+  "generated_at": "2026-10-21T23:05:36.549384+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "41c95b4c-f186-4731-80fe-ca5d29066701",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true
+  }
+}
