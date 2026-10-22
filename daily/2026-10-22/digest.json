@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-22",
+  "overview": "Claude Duetの登録待ち案内、Grokの更新可能な成果物、エージェント決済、NVIDIAの部材調達、Unitreeの実演、HiggsfieldでのKling 4.0提供を収録した。中国モデルの利用報告とAI創薬の話題も含む。予定・第三者の説明・公式提供開始を区別して読む。",
+  "items": [
+    {
+      "category": "03-ai-agents",
+      "headline": "Claude Duet、作業を提案し実行前に確認するAIとして開発参加者が紹介",
+      "summary": "Pablo Stanley氏は、Anthropicに入社しClaude Duetの開発に一部関わったと投稿した。Duetは必要な作業を利用者へ持ち寄り、実行する前に確認する能動型エージェントだという。ウェイトリストへの登録を案内しており、一般提供開始の告知ではない。",
+      "significance": "確認を挟む個人エージェントがウェイトリストに入り、チャットの先の委任型の仕事が進み始めている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/pablostanley/status/2112988293260578990",
+          "label": "Pablo Stanley",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Grok Botが更新できるレポートやダッシュボードに対応、との第三者報告",
+      "summary": "Coin Bureauは、Grok Botがレポート、メモ、ダッシュボードを作り、エージェントが後から編集・更新できるライブ成果物に対応したと伝えた。単発の質問応答から継続作業へ競争が移っているという文脈で、Claude Duetと並べている。xAI公式アカウントの投稿は今回の結果に無い。",
+      "significance": "主要チャットが成果物を保持して更新する流れで、継続作業を任せる製品競争が始まっている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/coinbureau/status/2113123225211396225",
+          "label": "Coin Bureau",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "t54.ai、XRP Ledger上のx402決済が1400万件超と発信",
+      "summary": "t54.aiは、XRP Ledger上で1400万件超のx402取引が決済されたと投稿した。エージェント決済では誰が承認し、何に使え、失敗時にどうするかが信頼の論点だとしている。共同創業者Chandler Fang氏は、支払いを起点に信用や金融市場へ広がり得ると書いている。新しい基盤モデルの発表ではない。",
+      "significance": "エージェントがサービス対価を払う取引が台帳上で積み上がり、認可範囲と失敗時の扱いが実装課題になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/t54ai/status/2113257452481253488",
+          "label": "t54.ai",
+          "posted_at": "2026-10-22"
+        },
+        {
+          "url": "https://x.com/chandler_agi/status/2113259916945482023",
+          "label": "Chandler Fang",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Binance AI Pro利用者がDeepSeekモデルで残高照会を試したと報告",
+      "summary": "CandyDD氏はBinanceのAgent IDを作り、AI Proのウェブ版でDeepSeek V4.1 Flash（低）を選び、残高照会とトークン交換の確認カードまで試したと画像付きで書いた。Agentic Walletは主財布と分離されたエージェント用財布だと整理している。BinanceとDeepSeekの公式投稿は結果に無く、利用報告である。",
+      "significance": "中国系モデルが取引所のエージェント画面で選べる段階にあり、実資金では承認とアドレスの自己確認が要る。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/fan128168/status/2113268682185179469",
+          "label": "CandyDD",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Solana文書へのAI助手追加を第三者が報告、機能範囲は未確認",
+      "summary": "aboalialhzober氏はSolanaがAIエージェントを追加したとし、solana.com/docs/ai-assistantへのリンクを投稿した。Solana公式アカウントの告知は今回の結果に無く、機能範囲や提供状態は本文だけでは確認できない。開発者向け文書の更新を指す第三者投稿である。",
+      "significance": "主要チェーンの文書にAI助手が載った可能性があり、公式の機能範囲は別途確認が必要になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/aboalialhzober/status/2113254826670739672",
+          "label": "عبدالعزيز آل حزوبر",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIAの部材調達拡大を第三者が報告、基板・先端パッケージも対象",
+      "summary": "Serenity氏は、NVIDIAが基板、先端パッケージ、検査、光エンジンの供給能力を確保する契約を結んだと投稿した。イビデン、サムスン電機、ユニミクロンの基板供給力2.5倍や、Amkorの能力拡大を挙げている。NVIDIA自身の発表は今回取得していない。",
+      "significance": "AIアクセラレータの制約が、基板、封止、検査、光接続の能力確保にまで広がっている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/aleabitoreddit/status/2113094859439690104",
+          "label": "Serenity",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Unitree人型が回転蹴り・宙返りを実演、Coin Bureauが映像を紹介",
+      "summary": "Coin Bureauは、Unitreeの最新人型ロボットが回転蹴り、宙返り、膝や肘の打撃を行う映像を紹介した。4メートルの台からマットへ飛び降り、起き上がる動作にも触れている。第三者による映像の説明で、今回の取得範囲では製品名・価格・発売条件は確認できていない。",
+      "significance": "人型が跳躍や打撃を実演する段階で、警備の演出と実際の製品仕様を分けて見る必要がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/coinbureau/status/2112944502239375503",
+          "label": "Coin Bureau",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Tesla決算の自動運転・人型ロボット・AIチップ計画を第三者が要約",
+      "summary": "Lane Rogers氏は、Teslaの2026年第3四半期決算で示された計画として、Robotaxiの時間拡大、Cybercab、Optimusの初期生産、AIチップの試作などを整理した。投稿は今後のロードマップの紹介で、多くは目標時期であり、提供開始済みという意味ではない。Tesla公式投稿は今回取得していない。",
+      "significance": "自動運転の時間拡大、人型の初期生産、自社AIチップ試作が同じ計画に並ぶが、多くは2027年前後の目標である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/TheLaneRogers/status/2113224278124495294",
+          "label": "Lane Rogers",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "TeslaとSpaceXの合併協議は未確定、とマスク氏発言を第三者が紹介",
+      "summary": "Coin Bureauは、マスク氏がTeslaとSpaceXの合併への確実視は過大だと述べ、協議を地雷原でのタップダンスに例えたと報告した。両社が独立取締役の特別委員会で検討しているという説明。条件合意や合併成立の発表ではない。",
+      "significance": "合併は未合意で、全株式の半数という高い条件があるとされ、AIやロボットの統合はまだ検討段階である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/coinbureau/status/2112778408170012866",
+          "label": "Coin Bureau",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "HiggsfieldがKling 4.0の動画生成を提供開始と発表",
+      "summary": "Higgsfield AIはKling 4.0を同サービスで提供開始したと発表した。人物・物体・音声をまとめて指定するOmni Reference、1回で30秒のシーン生成、開始・中間・終了フレームの指定を挙げる。ネイティブ4Kは「近日対応」で、すでに提供中という意味ではない。",
+      "significance": "参照情報と音声を使う30秒の動画生成をサービス上で試せる段階。4Kの提供時期とは区別できる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/higgsfield/status/2112923547563917801",
+          "label": "Higgsfield AI",
+          "posted_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "MITの細胞シグナル追跡AIを第三者が紹介、論文の所在は未確認",
+      "summary": "Avo Reid氏は、MITの研究者が細胞を組織や器官へ導くシグナルを追跡するAIモデルを開発したと画像付きで投稿した。幹細胞工学、疾患研究、再生医療を変え得るという説明だが、論文名、公開日、査読の有無は本文に無い。実験的な研究紹介であり、治療の提供開始ではない。",
+      "significance": "細胞間シグナルのモデル化は再生医療の上流だが、投稿だけでは再現性や臨床までの距離は判断できない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/avoreid/status/2113255829591691553",
+          "label": "Avo Reid",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "Basecamp Researchの1.4億ドル調達と創薬AI事業を第三者が紹介",
+      "summary": "Denis Borodin氏は、Basecamp Researchが自然界の遺伝データでAIを訓練し医薬品候補を設計する事業で1億4000万ドルを調達したと投稿し、治療パイプラインのサイトを示した。製薬・バイオ向けのライセンスと共同開発で、チャットボットの定額契約ではなく、条件は非開示だという。出資元や公式発表の投稿は結果に無い。",
+      "significance": "天然の遺伝データを使うAI創薬が大型調達の対象になっているが、契約条件と臨床段階は未記載である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/denisborodinsci/status/2113236849615396964",
+          "label": "Denis Borodin",
+          "posted_at": "2026-10-22"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索3回・各最大10件から12件を掲載し、13本の原投稿を照合。共用の出典は各記事の主題に合わせて整理した。長寿・老化研究の新着は今回確保できず。NVIDIA、Tesla、DeepSeek、MIT関連には第三者投稿を含み、内容の真実性や試験結果まで保証するものではない。",
+  "generated_at": "2026-10-22T23:00:48.651067+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "be2eca79-c457-4e84-a0d8-eddd10d1a62f",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true
+  }
+}
