@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-24",
+  "overview": "Claude Code担当者の退職、NVIDIAのロボット学習基盤Isaac Lab 3.0、Twi音声合成の予告など7件。第三者による生物データ解析の報告や、複数分野を扱う日次まとめも含む。独立した新モデル・長寿研究の一次投稿は今回の検索では得られなかった。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "Claude CodeのThariq氏とデスクトップ版作者がAnthropic退職を公表",
+      "summary": "Thariq氏は1年以上Claude Codeに携わったあと休息に入ると投稿した。デスクトップ版の作者Anthony Morris氏も最終出社を明かし、近く次の計画を共有すると書いた。両者とも使命への賛同を述べ、不満や内部対立には触れていない。",
+      "significance": "Claude Codeの主な発信役が同時期に抜け、開発者向け情報源と製品の継続体制が焦点になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/trq212/status/2113844051938054167",
+          "label": "Thariq",
+          "posted_at": "2026-10-24"
+        },
+        {
+          "url": "https://x.com/amorriscode/status/2113972174524674247",
+          "label": "Anthony Morris",
+          "posted_at": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "NVIDIAがロボット学習向けIsaac Lab 3.0の正式版を公開",
+      "summary": "NVIDIA RoboticsはIsaac Lab 3.0を正式リリースしたと発表した。軽いモジュール構成に加え、マルチ物理とマルチレンダリング、大規模学習、実機展開、Newton統合、OVRTX、強化学習の後学習、LEAPPを挙げた。製品担当のRuben D'Sa氏も公開を確認している。",
+      "significance": "シミュレーションから実機までのロボット学習環境が更新され、研究と実装の土台が変わる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/NVIDIARobotics/status/2113407332747293131",
+          "label": "NVIDIA Robotics",
+          "posted_at": "2026-10-22"
+        },
+        {
+          "url": "https://x.com/ruben_dsa/status/2113440216941801868",
+          "label": "Ruben D'Sa",
+          "posted_at": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Mario Nawfal氏がGTCベルリンの小型ロボットMicroduckを紹介",
+      "summary": "同氏は、NVIDIAのGTC Berlin基調で4体の小型オープンソースロボットMicroduckが着座、起立、仮眠の動作を見せたと投稿した。開発者や学生が身体技能を教え、改造し、結果を共有する用途だと説明している。NVIDIA公式の該当投稿はこの検索に含まれない。",
+      "significance": "教育・研究向けの小型実機がPhysical AIの入口として舞台に出た、という第三者報告である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/MarioNawfal/status/2113480537902055495",
+          "label": "Mario Nawfal",
+          "posted_at": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "VanGridがスマホ撮影をロボット向け3Dデータにする構想を宣伝",
+      "summary": "複数の投稿が、倉庫や店内などをスマホで撮り、点群やガウシアンスプラット、メッシュにする報奨金型の収集を紹介している。端末上で顔やナンバーを伏せ、Base上に撮影の来歴を残すとしている。Zhao氏はNVIDIA Inceptionの支援にも触れた。運営の発表投稿は未取得。",
+      "significance": "室内など既存地図が届きにくい現場を、ロボットと世界モデル向けデータとして集める動きである。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/bitnexst/status/2113555444673196383",
+          "label": "bitnexs",
+          "posted_at": "2026-10-23"
+        },
+        {
+          "url": "https://x.com/Zhao_x_BNB/status/2113925184407392471",
+          "label": "Zhao",
+          "posted_at": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Khaya AIが新しいTwi音声合成の予告を公開し映像はVeoで制作",
+      "summary": "Khaya AIは、近日公開予定のTwi向けTTSを、水域の問題を題材にしたショーケース動画で紹介した。ナレーションは同社の次世代TTS、映像のBロールはGoogle Veoだと明記し、モデル改善への意見を募っている。一般提供の日付は書かれていない。",
+      "significance": "アフリカ言語の音声モデル予告と、動画生成Veoの実制作利用が同じ投稿で確認できる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/KhayaAI/status/2113990951718805809",
+          "label": "khaya.ai",
+          "posted_at": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "OpenAIのAIエージェントがCRISPRデータを解析したと第三者が報告",
+      "summary": "TheTopSecretCorporationは、OpenAIが多数のAIエージェントでマウス脳細胞のCRISPRアトラスを約32分で解析し、疾患研究の手がかりを出したと投稿した。治療法ではなく、研究者が検証できる仮説だと注記し、OpenAIの解説ページへリンクしている。OpenAI本人の投稿は未取得。",
+      "significance": "大規模な生物データへエージェント群を当て、仮説生成を速める研究支援の事例として伝わっている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/TopSecretCorp/status/2113978986476793993",
+          "label": "TheTopSecretCorporation",
+          "posted_at": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "AI日次まとめがKimi新モデル・音声AI・遺伝子編集などを報告",
+      "summary": "Astrohacker Labsのまとめは、Kimi K3.1 Proの公開、Prime Medicineの体内プライム編集の初投与、OpenAIの学習環境の封じ込め強化、Blockの音声モデルDessa、CursorのPC操作と1Passwordの代理ログイン、AWSの容量不足を挙げた。いずれも同じ第三者投稿からの情報で、各社の一次発表は今回未取得。",
+      "significance": "6つの動きを一覧できる参考情報。別々の裏付けが6件あるわけではなく、詳細な性能値・臨床状況は一次発表との照合が必要。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AstrohackerLabs/status/2113933361727111655",
+          "label": "Astrohacker",
+          "posted_at": "2026-10-24"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索は3回、各Top10件。12候補のうち同じ日次まとめ投稿を使う6候補を1件に統合し、7件・原投稿10件を掲載。まとめ由来の6分野の動きは一次発表未照合。原投稿のID・著者・本文・日付は確認したが、全主張の真偽を検証した意味ではない。長寿研究の一次投稿は取得できなかった。追加生成・追加検索なし。",
+  "generated_at": "2026-10-24T22:56:06.066948+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "1c4f21cd-0022-44c6-b17d-a2a3ca512e14",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "cli_json_text"
+  }
+}
