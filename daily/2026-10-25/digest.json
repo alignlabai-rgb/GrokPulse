@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-25",
+  "overview": "10月25日のX検索では、Moonshot公式ではなく第三者によるKimi K3.1 Proの仕様整理、エージェント向けAPIと決済の案内、野村メモの転載、Kling 4.0の配信追加が中心。半導体の新製品と長寿・バイオの研究発表は、この3検索では確認できなかった。",
+  "items": [
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "MEKがKimi K3.1 Proの仕様と11月4日のウェイト公開予定を整理",
+      "summary": "投稿者MEKは、Kimi K3.1 Proが100万トークン文脈、総パラメータ2.8兆、活性1040億で、UnrealやCAD、財務分析など実務作業を狙うと紹介。Kimi、Kimi Work、Kimi Code、APIで既に使え、オープンウェイトは2026年11月4日予定と記す。Moonshot公式投稿ではない。",
+      "significance": "公開予定日と利用窓口が具体的で、中国大型モデルの実装比較に使える。数値は第三者整理であり要確認。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Mekarly/status/2114353959271797207",
+          "label": "MEK",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "中国がAIによる失業への対策を指示したとする投稿を投資家が紹介",
+      "summary": "10月24日、monはPolymarketが10月23日に伝えた「中国が政府機関へ、AIによる大量の雇用喪失への計画策定を命じた」という報道を引用し、エージェントとロボットが仕事を連鎖的に担う移行期を論じた。政府の一次文書はこの検索結果にない。",
+      "significance": "政策そのものより、雇用と税、エネルギーのボトルネックをセットで見る市場側の反応として読める。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/moninvestor/status/2113959152246509706",
+          "label": "mon",
+          "posted_at": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "TermiXとBinanceのエージェント連携構想を第三者が紹介",
+      "summary": "CandyDAOは、YZi Labs支援のTermiXをAIエージェント経済の清算・決済層と位置づけ、Binanceの.ai Agent IDによるログインと連携が近く出ると書いた。取引量、統合の深さ、手数料、外部Skillsの開放が成否だと整理。TermiX本体の投稿は記事リンクのみ。",
+      "significance": "エージェント向けの決済と本人識別をつなぐ構想。製品間の連携が実装・提供されたことを確認した発表ではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/CandyDAO_leaf/status/2114348934625890487",
+          "label": "leaf",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "MintGoがBSCの新規ミントを通知するAPIの利用申請を開始",
+      "summary": "Seawinはmintgo.funでBSC API申請を開始し、新規プロジェクトの初回ミントをミリ秒級で通知すると発表。コミュニティ配信のほか、Binanceの.AI Agent IDに紐づくエージェントへ接続し、分析や自動ミントに使う例を示した。無料枠はSeawin NFT保有者限定。",
+      "significance": "オンチェーンの検知をエージェントの入力にする、実装済みの開発者向け口が開いた。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/Seawin_eth/status/2114329967693906098",
+          "label": "Seawin",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Build3DAOがNVIDIA共同など7件のAIハッカソン期限を一覧化",
+      "summary": "Build3DAOが締切順に整理。GitLabは10月27日、NebiusとNVIDIAのGlobal AI Hackathonは5万ドルで10月30日、TwitchとOpenAI Codexは11月3日。Vultr Agent Rush、ETHGlobal Mumbai、PayPal AI、Meta VR Startも含む。各主催の一次告知はこの検索に含まれない。",
+      "significance": "今後数週間の実装イベントと賞金の目安。チップ発表ではなく開発者向け日程のまとめ。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Build3DAO/status/2114326493811945679",
+          "label": "Build3 DAO",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "野村のロボット産業見通しとされるメモがXに投稿される",
+      "summary": "2030FYが野村のロボット産業メモを転載。ロボット知能はGPT-2前夜で、2026年末から2027年初の主要モデルが進展のきっかけだが量産の転換点ではないとする。工場の無人稼働と精度98%超は未達、データは100万時間規模が閾値と記載。野村公式アカウントの投稿ではない。",
+      "significance": "人型ロボットの実用時期を、脳・データ・手の指標に分けて見る材料。予測であり出荷発表ではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/2030FY_X/status/2114356941980131453",
+          "label": "2030FY",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Acu.ethがVangridのスマホ3D収集をPhysical AIのデータ層と解説",
+      "summary": "Acu.ethは、Vangridがスマホで依頼地点の3Dを集め、再構成資産と取得来歴をオンチェーンで確認できると説明。WebとAndroidは2026年8月の900万ドルシード公表前に出荷済みだという。新製品発表ではなく、既存ネットワークの意義を論じた投稿。",
+      "significance": "ロボット学習に足りないのは汎用画像より、日時つきの現場形状だというデータ側の論点。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/0xLongDC/status/2114168913013669981",
+          "label": "Acu.eth",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "RaywakeがKling 4.0のAPI提供開始を告知",
+      "summary": "RaywakeはKling 4.0を自社で公開したと発表。720pまたは1080p、縦横、正方形、21:9に対応し、商品写真から開始フレームと終了フレームを指定できる。利用はRaywake API経由。快手やKling公式アカウントの投稿は、この検索結果にはない。",
+      "significance": "Kling 4.0をアプリ外のAPIと画角指定で試せる経路が、統合事業者から出た。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/raywakesi/status/2114311666532008144",
+          "label": "Raywake",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "同じ動画指示でSeedanceとKlingを比較、カメラの動きに差との報告",
+      "summary": "DevGetsITがmakeugc上で同一プロンプトを使い、カメラが人物の背後へ飛び込む指示を検証。Seedance 2.5は水しぶきを貫くワンカットになり、Kling 3 Turbo Proはプール際に留まったと10秒動画付きで報告。新モデルの発売告知ではなく制作者テスト。",
+      "significance": "同条件でもカメラ指示の従い方がモデルで分かれる、短い実例。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/devgetsit/status/2114331861019173317",
+          "label": "DevGetsIT",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "動画制作者がMuse AIで55秒動画を短時間に作れたと報告",
+      "summary": "日本語圏のAI動画制作者むくは、SeedanceやKlingの方が上だとしつつ、Muse AIなら約55秒の動画を短時間で作れると投稿し実作を添付。差は今後クオリティ評価へ寄るとの所感。製品のバージョン番号や公式リリース日は書かれていない。",
+      "significance": "長尺を急いで出す実務では、最高品質以外の生成手段も比較対象になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/muku_sns/status/2114234719433015618",
+          "label": "むく",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Devin Cloudで複数モデルを併用したとの個人報告、モデル名は未確認",
+      "summary": "ZephyrはQloo関連の作業をDevin Cloudで進め、Fable 5.1、表記上のgbt-6.1、Opus 5.5を実行役と組み合わせるのが効率的だと書いた。各名称の提供元による発表は今回の検索になく、実在・提供状況は未確認の個人報告。",
+      "significance": "エージェントIDEで複数モデルを束ねる使い方の例。モデル名は噂扱い。",
+      "status": "rumor",
+      "sources": [
+        {
+          "url": "https://x.com/zephyr_ov/status/2114331248369807693",
+          "label": "Zephyr",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    }
+  ],
+  "collection_note": "検索は3件のみ。いずれもTop、上限10、since:2026-10-24 until:2026-10-26。OpenAI・Anthropic・Gemini・DeepSeek・NVIDIA・AMDの製品発表、半導体・電池・核融合、長寿、CRISPR、Sora・Veo・Runwayの一次投稿は無かった。04はNVIDIA共同ハッカソンの言及のみで独立記事にせず、06と07は該当なし。日常語のrunwayやrobot、暗号資産の宣伝は除外。 選定した原投稿11件のID・著者・本文・日付は確認済み。個別の性能や予測の真偽、提供元の発表まで照合した意味ではない。",
+  "generated_at": "2026-10-25T23:02:43.173011+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "71552dd7-15b2-4bf6-a5e1-9631a4a0e161",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "cli_json_text"
+  }
+}
