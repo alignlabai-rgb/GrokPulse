@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-26",
+  "overview": "10月25〜26日のX上位では、主要モデルの新発売より、予測市場エージェントの招待テスト、オンチェーン決済の契約解説、ロボット世界モデルの比較、一人称映像からの全身モーション公開が中心だった。生成動画はChatGPT向けCapCut連携の第三者告知とKling 4 Flashの作例比較。中国モデル、長寿、バイオの一次情報は無かった。",
+  "items": [
+    {
+      "category": "03-ai-agents",
+      "headline": "SpoonOSが予測市場向けAIエージェントの招待制テストを開始",
+      "summary": "SpoonOSはArenaを再開し、自作したAIエージェントに予測市場の取引を任せる機能を出した。10月26日9時から11月2日9時（UTC）は招待制のコミュニティテストで、資金は不要、USDTの賞がある。公開ローンチ前の実験段階で、本番の成績保証は示されていない。",
+      "significance": "エージェントに市場取引を試させる入口が開いた。現時点は招待制の試験であり、実資金の運用実績ではない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/SpoonOS_ai/status/2114642332935225526",
+          "label": "SpoonOS",
+          "posted_at": "2026-10-26"
+        },
+        {
+          "url": "https://x.com/SpoonOS_ai/status/2114643042233680212",
+          "label": "SpoonOS",
+          "posted_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "第三者がTermiXのエージェント決済用コントラクトを調査したと報告",
+      "summary": "@StratAlchemyはTermiXの稼働中コントラクトをDuneで調べ、ERC-8004の身分NFTに加え、エスクロー、キャンペーン金庫、ステーク、評判の計5契約がBNB ChainとBaseでUSDCとUSDTの仕事精算に使われていると説明した。TermiX公式の投稿は今回の結果にない。",
+      "significance": "エージェント間の少額仕事を安定通貨で預かり、評価後に払う構成を、第三者が契約単位で追える。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/StratAlchemy/status/2114678623483633720",
+          "label": "Strategy Alchemist",
+          "posted_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "渡邉究氏がOpenAIの数学論文公開と自身の研究手順を解説",
+      "summary": "中央大学の渡邉究氏はYouTubeで、OpenAIが700本超の数学論文を公開し、その中に一般化向井予想の解決を主張する論文があると説明した。自身もChatGPTを使って研究し、arXivにプレプリントを出した経緯を話している。OpenAI本体の投稿は検索結果に無い。",
+      "significance": "数学の未解決問題へのモデル関与を、当事者の数学者が動画で辿れる。解決の成否自体は論文側の主張。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Kiwamu_Watanabe/status/2114619531981402272",
+          "label": "渡邉究",
+          "posted_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "大阪公立大の学生向けに複数生成AIの無料利用案内が共有",
+      "summary": "大阪公立大学（ハム大）の非公式学生アカウントが、ChatGPT、Gemini、Grok、Claudeを学内ポータル経由で、Copilotを大学メールで無料利用できると案内した。Copilotは企業学習に使われにくい扱いだと注記している。大学公式の新規発表かは投稿だけでは分からない。",
+      "significance": "日本の学生が課題や就職活動で使えるモデルの入口が、具体的なURL付きで共有された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/omuichinen/status/2114349176914124939",
+          "label": "ハム大まめちしき",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "ChatGPTデスクトップ向けCapCut連携を予告する投稿が登場",
+      "summary": "紹介者Sallam Mendes氏が、ChatGPTデスクトップ向けCapCutプラグインを「近日公開」と投稿した。編集可能な動画草案を組む連携を紹介している。早期アクセスの範囲やモバイル・Webへの展開時期は当事者の一次発表で未確認。誰でも既に使えることを確認した告知ではない。",
+      "significance": "対話から動画編集へつなぐ構想として注目できるが、利用可否と提供時期はまだ確認が必要。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/SallamMendes/status/2114265419381166274",
+          "label": "Sallam Mendes",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "制作者NOBUがKling 4 Flashの動きを通常のKling 4と比べた",
+      "summary": "AIアニメ制作者のNOBUは、Kling 4 Flashでしか出ないキレのある動きがあり、通常のKling 4ではそこまで機敏に動かないと、約10秒の作例付きで投稿した。新モデルの正式リリース告知ではなく、既存版の使い分けを示す実務メモである。",
+      "significance": "同じKling系でもFlashと通常版でモーションの性質が違い、短尺を作るときの選択基準になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/nbykos/status/2114291035283341400",
+          "label": "NOBU",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "ロボットの動作を言葉で指定する世界モデル、研究者が2手法を比較",
+      "summary": "@_bbelousovはNAVER AI LabのLaLa-Worldを紹介した。行動を文章にして複数ロボットと通常動画から次状態を予測し、シミュレーションではドメイン別モデルを上回り、動画生成型と同等で計画が13.9倍速いという。併記のPhysWord（NVIDIA、北京大学、UCバークレー）は動作語で映像と触覚を予測し、実機4課題で71.7%（FTP-1は55.0%、π0.5は45.8%）。LaLa-Worldはシミュのみ。",
+      "significance": "言葉で行動を書く方式が並び、速度はLaLa-World、実機の触覚はPhysWordという差が読み取れる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/_bbelousov/status/2114475589541527903",
+          "label": "Boris Belousov",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "一人称カメラから全身の動きを推定するOmniEgoCap、共著者が公開を紹介",
+      "summary": "ソウル国立大のCho氏らを、共著者のJoo氏が紹介した。NeurIPS 2026のOmniEgoCapは、頭部の軌跡と映った手から共通形式の全身モーションを出す。Aria、GoPro、Quest 3、iPhoneを再学習なしで扱い、コード、チェックポイント、ベンチマークOmniEgoDB、対話デモを公開している。",
+      "significance": "日常の一人称デバイスが、ロボット学習向けの人体動作データを集める手段になり得る。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/jhugestar/status/2114630546848690231",
+          "label": "Hanbyul Joo",
+          "posted_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "解説投稿がロボット向け3Dスキャン網VanGridの需要を紹介",
+      "summary": "@XTrendTrackerXは、衛星や車載カメラが届かない屋内や歩道際を、検証済みのモバイル3Dスキャンで集めるVanGridを紹介した。受注バウンティ62万ドル超、シード900万ドルと記す。同社公式の投稿は今回の検索結果に無く、数字は当該投稿の記載である。",
+      "significance": "ロボットが動く現場の3Dが学習データの穴だという指摘と、収集網への支払い例がセットで示された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/XTrendTrackerX/status/2114280192478789829",
+          "label": "TrendTrackerX",
+          "posted_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIAがマスク氏のAI事業を大口クラウド顧客に分類したとの紹介",
+      "summary": "AI紹介アカウントがJensen Huang氏の発言として、マスク氏のAI事業の規模が大きくなり、NVIDIAが企業向け顧客からクラウド事業者の区分へ移したと伝えた。映像の切り抜きによる第三者紹介で、GPU台数や契約量を確認した発表ではない。",
+      "significance": "巨大顧客の計算需要が、チップ供給側の顧客分類を変える水準だという第三者経由の指摘。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AlltheLatestAI/status/2114582846048518457",
+          "label": "The AGI Countdown",
+          "posted_at": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Metaの約350億ドル調達と半導体3社の出資可能性を個人が投稿",
+      "summary": "@MikeGuarinoは、MetaがAI向けに約350億ドルの株式調達を進め、NVIDIA、AMD、Broadcomが拘束力のない形で最大50億ドル分を買う可能性があると書いた。当事者や一次資料の投稿は検索結果に無く、確認できない見方である。",
+      "significance": "AI設備投資と供給企業による資金支援の関係が話題。当事者の確認が得られた資金調達発表ではない。",
+      "status": "rumor",
+      "sources": [
+        {
+          "url": "https://x.com/MikeGuarino/status/2114718000100028451",
+          "label": "Mike Guarino",
+          "posted_at": "2026-10-26"
+        }
+      ]
+    }
+  ],
+  "collection_note": "検索は指定どおり3回のみ。各回Top、上限10、since:2026-10-25 until:2026-10-27。実投稿があったのは01、03、04、05、08。02のDeepSeek・Qwen・Kimi・GLMの製品発表、06の長寿、07のCRISPR・バイオ試験は0件。SoraとVeoは人名ノイズが大半。半導体・電池・核融合の当事者発表は無く、NVIDIAは第三者の発言紹介のみ。採用は取得したstatus URLだけで、同一URLの使い回しはしていない。 原投稿12件のID・著者・本文・日付を確認したが、全主張の真偽を検証した意味ではない。",
+  "generated_at": "2026-10-26T23:00:18.234321+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "a86d1b56-bd56-476d-907f-f7e3fabfb737",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
