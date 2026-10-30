@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-30",
+  "overview": "10月29日以降のX検索では、実機を動かすエージェント、Runwayの公式機能、ゲノム言語モデルの研究発表が確認できた。半導体は評価額・調達・規制・GPU出品の報道が中心。長寿の該当投稿はなく、中国モデルはDeepSeekの利用枠まとめに限られた。",
+  "items": [
+    {
+      "category": "03-ai-agents",
+      "headline": "一つの指示で実機iPhoneを操作する機能をMobilerun創業者が公開",
+      "summary": "MobilerunのNiels Schmidt氏は、iPhoneをMobilerun Cloudへ接続すれば、エージェントが実機を単一プロンプトで操作できると動画付きで示した。MacまたはLinuxで2分以内に始められ、ClaudeやCodexからも自動化できるとしている。実験的な開発者向け機能で、一般向け正式版の範囲は投稿だけでは不明。",
+      "significance": "エージェントが画面上のチャットを越え、手元のスマホ操作まで担える具体例になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/nielsmdt99/status/2115810265166204955",
+          "label": "Niels Schmidt",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Teslaの人型ロボットOptimus Gen 3が初期生産に入ったと第三者が紹介",
+      "summary": "AIBoticsは、TeslaがFremontで大量生産ラインの初期生産を始め、研究室の手作業ではないGen 3人型を作っていると投稿した。外部納入目標は2027年後半、計算は独自AI5を想定し、連続稼働での手の摩耗が課題だとしている。出典は2026年10月のTesla決算説明会で、Tesla公式アカウントの投稿ではない。",
+      "significance": "人型ロボットがデモから工場の生産体制へ移ったかの判断材料になるが、一次確認が別途必要。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AIBoticssq/status/2115849235648106682",
+          "label": "AIBotics",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "OpenAIがGoogle製AIチップの購入を準備との報道を第三者が紹介",
+      "summary": "AIBoticsはThe Informationの10月28日報道として、OpenAIがNvidia GPUへの近排他的依存を崩すためGoogle TPUを購入し、次の計算クラスタに使う準備をしていると投稿した。モデルをTPU向けに最適化する採用を始め、GoogleはOracle CloudでTPUを出す準備だという。同投稿は企業の確認はないと明記している。",
+      "significance": "最前線ラボの計算資源がNvidia以外へ広がるなら、モデル提供のコストと供給制約が変わり得る。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AIBoticssq/status/2115880972314923354",
+          "label": "AIBotics",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "NVIDIAチップの対中販売と諜報活動の疑いをTechCrunchが紹介",
+      "summary": "TechCrunchは、中国へNvidiaチップを違法に売ったとされるシンガポールのAIクラウド企業について、幹部が中国の諜報員だった可能性もあるとNYTが関係者から聞いたと紹介した。記事見出しはNvidia CEOを狙った諜報計画を米国が調べた、という内容。容疑の成否は投稿時点で確定していない。",
+      "significance": "先端GPUの輸出管理と対中迂回が、企業不祥事に加えて安全保障案件として報じられた。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/TechCrunch/status/2115846902033842297",
+          "label": "TechCrunch",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "インドのAM IntelligenceがAIチップ購入へ最大30億ドル調達を目指すと報道",
+      "summary": "Bloombergは、インドのAIインフラ企業AM Intelligenceが、以前発表したNvidia次世代チップの購入資金として最大30億ドルの調達を目指していると、関係者の話として伝えた。調達の完了や納入時期は投稿には書かれていない。",
+      "significance": "アジアの計算インフラ需要が、次世代Nvidiaチップの大型発注として続いていることを示す。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2116012255254896685",
+          "label": "Bloomberg",
+          "posted_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "DeepSeekの無料利用経路を個人が一覧化、終了済みの特典も含む",
+      "summary": "Zazzy Stardust氏は、公式APIは有料だとしたうえで、Infron、NVIDIA NIM、OpenCode Zenなど10経路の無料枠や登録クレジットを列挙した。Claude Code、Codex、Cursor、OpenCodeから互換キーで使えるとし、枠・地域・期限は各社で確認するよう注記した。Infronの1日1000回は10月29日終了とある。DeepSeek公式の発表ではない。",
+      "significance": "開発ツールからモデルを試す経路の参考情報。10月29日終了の特典もあり、現在使える無料枠を保証する一覧ではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/zazzy_stardust/status/2115853646256873864",
+          "label": "Zazzy Stardust",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "RTX 5080の24GB版が12月にも登場との報道をDigital Foundryが紹介",
+      "summary": "Digital Foundryは、NvidiaがRTX 5080 24GBの発売を前倒ししており、12月にも届く可能性があるという報道を共有した。確定した発売日、価格、従来版との性能差は投稿本文にはない。",
+      "significance": "ゲームとローカルAIの両方で、24GB級のコンシューマGPUが年内に増えるかが焦点になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/digitalfoundry/status/2116163233333551586",
+          "label": "Digital Foundry",
+          "posted_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "A100を9000基超含むスパコンがeBayに出品されたとDexertoが報道",
+      "summary": "Dexertoは、あるIT企業が300ラックのAIスーパーコンピュータをeBayに6000万ドル、翌日配送50ドルで出品し、Nvidia A100が9000基超含まれると画像付きで伝えた。出品者名、稼働状態、取引成立は投稿から確認できない。",
+      "significance": "中古GPUを大量にまとめて売る出品例として紹介された。現物の状態や売買成立を確認した報告ではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Dexerto/status/2115753065588400427",
+          "label": "Dexerto",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Kling 4.0をPixVerseで使う作例と期間限定の利用枠をクリエイターが紹介",
+      "summary": "複数のクリエイターが、Kling 4.0をPixVerse上で使い、宇宙や都市戦の短編を作ったと投稿した。Ultraでは10日間、テキスト、画像、参照、最初と最後のフレームを使うTransitionでクレジット消費ゼロの無制限生成ができると案内している。PixVerse公式アカウントの投稿は今回の結果に含まれない。",
+      "significance": "制作アプリ経由でKlingを試す販促情報。対象プランや期間、追加料金などの条件は公式投稿で未確認。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/pushpendratips/status/2116110856996159666",
+          "label": "Pushpendra Tripathi",
+          "posted_at": "2026-10-30"
+        },
+        {
+          "url": "https://x.com/Its_Saad_kkk/status/2116138301883125934",
+          "label": "Its_Saad_kkk",
+          "posted_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Runwayが短編映像をゲームに変えるApp Studioの作例を紹介",
+      "summary": "Runway公式は、App Studioを使えば短編映画を本格的なビデオゲームへ変えられ、コーディングは不要だと動画付きで投稿した。対応する作品の長さ、公開範囲、利用料金は本文に書かれていない。既存の短編事例を引用した機能紹介である。",
+      "significance": "生成動画が視聴用クリップから、操作できるアプリへ広がる公式の一歩として読める。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/runwayml/status/2115868388987752583",
+          "label": "Runway",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "少数の例から生物の配列を設計するEvo 2研究を研究者が発表",
+      "summary": "Stanford・Arc InstituteのGaryk Brixi氏らは、言語モデルの文脈内学習をゲノム言語モデルEvo 2でも行い、少数例からタンパク質、新規抗体、CRISPR-Cas9領域、ミトコンドリアゲノム、バクテリオファージ全体を生成できたと発表した。合成配列を連鎖的に使い、より難しい設計へ進む実験だという。製品化された検査や治療ではない。",
+      "significance": "再学習なしの少数例で生物配列を設計できると、実験計画の初期案づくりが速くなる可能性がある。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/garykbrixi/status/2115832881776091565",
+          "label": "Garyk Brixi",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "AIを使う医薬品開発企業Formation Bioが6億ドル調達とAxios編集者が報道",
+      "summary": "AxiosのDan Primack氏は、Formationが6億ドルを調達し、AIのバイオテックにおけるボトルネックを解消すると投稿した。リンク先はFormation BioとAI創薬の記事。資金の使途の詳細やパイプライン上の薬の段階は投稿本文にはない。",
+      "significance": "モデルそのものより、創薬開発の詰まりをAIで解く会社に大型資金が付いた例として追える。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/danprimack/status/2115844845357170815",
+          "label": "Dan Primack",
+          "posted_at": "2026-10-29"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索3回、Top各10件、since:2026-10-29 until:2026-10-31。14候補から前日掲載済みの評価額報道と、同じ買収照会の再報道を除き12記事・原投稿13件を掲載。長寿の該当投稿は未取得。開発元の発表と第三者報道・販促を区別。原投稿のID・著者・本文・日付は確認したが、研究成果や販売条件まで独立検証した意味ではない。追加生成・追加検索なし。",
+  "generated_at": "2026-10-30T22:57:31.548981+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "b6d36081-5166-409b-b916-d43d492277bc",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
