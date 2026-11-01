@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-01",
+  "overview": "11月1日時点のX検索では、DeepMindの英国向け審査支援、NVIDIAの電波望遠鏡でのエージェント利用、Hoveritの試射が公式投稿として確認できた。OpenAIの調達縮小はFT引用の二次情報で、動画はKling 4.0の比較と短編が中心。長寿とバイオの該当投稿はなかった。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "英国の12自治体向けにGemini製住宅申請支援ツール、DeepMindが展開を紹介",
+      "summary": "DeepMind公式は、住宅の建築・増改築申請を担当者が審査する作業を助ける「PlanAssist」をGeminiで構築したと発表。担当者の審査時間を最大58%減らせたと説明し、12自治体へ提供するとしている。短縮率は開発元による報告。",
+      "significance": "行政手続きで生成AIの短縮効果が公式に数値付きで示され、他の自治体が導入を検討する材料になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2116524000977285321",
+          "label": "Google DeepMind",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "OpenAIの調達目標が300億ドルから200億ドルに縮小とのFT引用投稿",
+      "summary": "投稿はFTを引き、目標を300億ドル・評価額1.4兆ドルから200億ドル・1.25兆ドルへ下げ、初回クローズは200億ドル未満になり得ると伝えた。別投稿は赤字と計算契約の規模に触れた。OpenAI公式の確認投稿は結果にない。",
+      "significance": "巨額の計算契約を支える資金調達が縮小したという報道で、AI投資の前提を点検するきっかけになる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/KobeissiLetter/status/2116357848464601125",
+          "label": "The Kobeissi Letter",
+          "posted_at": "2026-10-31"
+        },
+        {
+          "url": "https://x.com/Ric_RTP/status/2116487727705133197",
+          "label": "Ricardo",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "電波望遠鏡をAIエージェントが操作、NVIDIAが宇宙からの信号探索を紹介",
+      "summary": "NVIDIA AIは、北カリフォルニアのAllen Telescope ArrayをAIエージェントが操作し、地球外からの信号の可能性を探す事例を紹介した。SETI InstituteとBreakthrough ListenがHoloscanやCUDA-Xを利用する研究用途の説明で、信号の発見を報告した投稿ではない。",
+      "significance": "対話以外に、研究用の大型観測装置をエージェントが担う公式な利用例が示された。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/NVIDIAAI/status/2116560120457142451",
+          "label": "NVIDIA AI",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "MotionBricksの動作生成をブラウザと自作アバターで試せる個人デモが公開",
+      "summary": "日本語の開発者は、PC版Chrome向けに矢印キーで姿勢の間をAIが補完するデモをHugging Faceへ出した。自作VRMも読み込め、モデル取得は約300MB。NVIDIA MotionBricksの個人による実験公開で、公式の製品発売ではない。",
+      "significance": "研究デモを手元のブラウザと自作アバターで再現でき、モーション生成の動作確認がしやすくなる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/monoradio102/status/2116414021180297532",
+          "label": "monoradio",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Claude CodeでBlenderのロボット映像を制作、13時間・約213ドルとの個人報告",
+      "summary": "投稿者はOpus 5.5 Extra Highを使い、タイルや歯車、ばねを含むカメレオン型ロボットをコードからモデリングしアニメ化したと動画で示した。所要13時間4分、費用213.05ドル。Anthropicの発表ではなく個人の制作実験である。",
+      "significance": "3Dモデル作成から動作・描画までコードで進めた制作例。時間と金額は投稿者の実験結果で、一般的な料金や必要時間の見積もりではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/MrTacticalX/status/2116701707237253481",
+          "label": "Mr Tactical",
+          "posted_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "AIエージェントで運営するAniccaが10月の売上230ドル・費用680ドルを申告",
+      "summary": "Aniccaは、人間の従業員ゼロでAIエージェントが業務を担うとし、10月の売上230ドル、費用680ドルと投稿した。アプリ26本のうち5本が却下され、承認後も5日間未公開のものが1本あったという。数字は自社申告で、外部監査の記載はない。",
+      "significance": "エージェントに会社運営を任せた小さい実収支が公開され、費用が先行する度合いが見える。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/diceai0/status/2116326809272799472",
+          "label": "Anicca",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "群衆とカメラ移動を同じ場面で比較、SocialSightがKlingとSeedanceの映像を公開",
+      "summary": "同アカウントは、かかしがカラスを追うトウモロコシ畑の映像で二つの動画モデルを比べた。多数のキャラクターと速いローアングル追跡がテーマの制作テストで、各社の正式なモデル発表投稿ではない。",
+      "significance": "群衆とカメラ移動という実用条件で、現行の動画生成モデルの違いを短時間で確認できる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/SocialSight/status/2116561295180771481",
+          "label": "SocialSight",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "制作者ICOがKling 4で森を舞台にした短編「Once, in the Woods」を公開",
+      "summary": "制作者ICOが、森を舞台にした「Once, in the Woods」を公開し、Klingへの謝辞と「Kling4」のタグを添えた。幼いころの不思議な体験や想像力をテーマにした本人の作品投稿である。",
+      "significance": "Kling 4が短編一本を通す制作に使われた実例で、モデル名だけの宣伝より完成尺が分かる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/ICO_AIvideo/status/2116833954766684486",
+          "label": "ICO",
+          "posted_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Hoveritが徘徊型弾薬の飛行試験を公開、未舗装路から発射",
+      "summary": "Hoveritは累計55回超の発射を続け、Mk1が30回以上、Mk2が20回以上、Mk3が5回以上とした。今回のMk2はインド・タールの砂地で、舗装滑走路のない地点から飛ばしたと発表した。配備完了ではなく試験継続である。",
+      "significance": "自律飛翔体の開発が遠隔地での繰り返し試射として公開され、完成版と試験の区別が明確になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/KAWAUAVPVTLTD/status/2116786463572426777",
+          "label": "Hoverit",
+          "posted_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "実行しなかった動作も記録するロボット制御器との個人投稿、開発元は不明",
+      "summary": "名前のない中国の技術者が、不採用の動作候補も基板に残す制御器を作ったとCodioが書いた。毎秒約4万判断、半年間無事故でも412回は危険な次善策があったとする。機関、論文、製品名は示されていない。",
+      "significance": "安全余裕を実行しなかった動作から測る話だが、出典がなく噂として切り離す必要がある。",
+      "status": "rumor",
+      "sources": [
+        {
+          "url": "https://x.com/0xCodio/status/2116588015988494550",
+          "label": "Codio",
+          "posted_at": "2026-10-31"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索3回、Top各10件、since:2026-10-31 until:2026-11-02。取得した10記事・原投稿11件を掲載し、12件の目安に合わせる追加生成はしていない。長寿・バイオの該当発表と中国主要モデルの一次発表は未取得。制御器の出典不明情報は噂と表示。原投稿のID・著者・本文・日付の確認は、効果・収支・性能の独立検証ではない。追加検索なし。",
+  "generated_at": "2026-11-01T23:02:48.890489+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "5f4aeb01-50b8-4f32-8211-f4ad2bcb10c4",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
