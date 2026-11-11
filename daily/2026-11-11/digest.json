@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-11",
+  "overview": "Googleが長時間タスク向けGemini 4 CarbonとGemini Robotics 2.5を発表。企業向けエージェント、ロボット学習データ、TSMC売上、Moonshot AIなどのチップ調達報道、Runwayのリアルタイム映像研究を11件に整理しました。前日と同じ長寿AI投稿は重複掲載していません。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "GoogleがGemini 4 Carbonを展開開始、長時間の開発・科学タスク向け",
+      "summary": "Googleは11月10日、複雑な問題を長く検討し、検証を繰り返すモデル「Gemini 4 Carbon」の展開開始を発表した。ソフト開発、サイバーセキュリティ、科学などを用途に挙げ、Gemini APIと法人向けでの提供を案内している。",
+      "significance": "短い回答だけでなく、調査や実装と検証を長く続ける作業に使うモデルの選択肢になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2120219371473617099",
+          "label": "Google DeepMind",
+          "posted_at": "2026-11-10"
+        },
+        {
+          "url": "https://x.com/sundarpichai/status/2120185896469496180",
+          "label": "Sundar Pichai",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "MicrosoftとIBM、業界向け基盤Imagine Enterpriseを発表",
+      "summary": "MicrosoftはIBM Consultingと共同で、業界別プロセス上のAIエージェントを構築・実行・統制するImagine Enterpriseを導入すると発表した。実験から業務上の成果へ移すための基盤と位置づけている。",
+      "significance": "企業はチャット単体ではなく、部門をまたぐエージェントの運用と統制を検討しやすくなる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/MSFTnews/status/2120144331512168785",
+          "label": "Microsoft News and Stories",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Kalshi、Anthropicが安全対策より速い自己改善を警告と伝える",
+      "summary": "予測市場のKalshiは、Anthropicが自社AIによるモデル改善が安全対策の追随を上回っていると警告した、と投稿した。今回の検索結果にはAnthropic自身の発表文は含まれない。",
+      "significance": "公式原文の確認前の二次情報であり、安全体制の評価には一次資料が必要になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Kalshi/status/2120181939919536271",
+          "label": "Kalshi",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Bloomberg、Anthropic上場後のロックアップに調整リスクと伝える",
+      "summary": "Bloombergは、Copper SkyのJack Selby氏の見方として、Anthropicの大型IPOとその後のロックアップ解除がAI関連取引の山と連鎖的な調整を招く恐れがあると報じた。上場の実施そのものの公式発表ではない。",
+      "significance": "モデル性能ではなく、株式供給の時期がAI関連投資の時間軸を左右し得るという見方である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2120404923590250552",
+          "label": "Bloomberg",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "DeepMind、日常作業を学ぶGemini Robotics 2.5を公開",
+      "summary": "Google DeepMindは、洗濯物たたみや菓子の提供、工場での自動車部品の自律仕分けなど、数百の日常技能を学べるとする物理AI「Gemini Robotics 2.5」の能力例を動画で公開した。",
+      "significance": "家事と製造の両方を学習対象に含み、汎用ロボットの実証候補が具体化している。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2120169787896525104",
+          "label": "Google DeepMind",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Nebius、ロボット学習用Physical AIのCLIとSDKを公開",
+      "summary": "Nebiusは、Nebius AI Cloud上でロボットを教えるオープンソースのCLIとSDK「Nebius Physical AI」を発表した。アームの把持、ヒューマノイドの歩行、四足ロボットの走行を例に挙げている。",
+      "significance": "クラウド上でロボットの動作を学習させるための開発道具。対応機体や必要な計算量を確認しながら試せる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/nebiusai/status/2120490966335549728",
+          "label": "Nebius",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "MemoriesUploadを公開、ロボット学習向けに人の一人称作業動画を収集",
+      "summary": "11月10日、Shawn Shen氏は、人が作業する様子を一人称視点で集める「MemoriesUpload」を公開したと投稿した。高品質な収集には撮影機器、モデル、基盤の組み合わせが必要と説明し、1年以上かけて構築してきたとしている。",
+      "significance": "ロボットの学習用データを、動作モデルだけでなく収集設備から整える取り組み。学習効果の独立検証は別に必要。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/shawnshenjx/status/2120177161860706806",
+          "label": "Shawn Shen",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Bloomberg、TSMCの月次売上が60%増だったと報じる",
+      "summary": "Bloombergは、世界的なAIインフラ構築の中核であるTSMCの月次売上が60%増加したと伝えた。増加の対象月や内訳は、この投稿本文だけでは分からない。",
+      "significance": "先端半導体の需要が、AI向け設備投資となお強く連動していることを示す指標になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2120029960345645469",
+          "label": "Bloomberg",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Bloomberg、Moonshot AIが今夏にNVIDIA最先端チップを利用と報じる",
+      "summary": "Bloombergは、北京当局へ出された文書に基づき、中国AI企業Moonshot AIが今夏にNVIDIAの最先端チップ群へアクセスしたと報じた。輸出規制下でも米国製ハードへ依存している点を強調している。",
+      "significance": "中国のフロンティアAIと輸出規制の実効性を、実際のチップ調達から点検する材料になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2120018656344080748",
+          "label": "Bloomberg",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Reuters、禁輸対象の中国大学がNVIDIA H200を購入と報じる",
+      "summary": "Carl Quintanilla氏はReutersとして、人民解放軍と関係の深い中国の大学が米国の輸出ブラックリストに載りながら、先月NVIDIAのH200を購入したと調達記録が示している、と投稿した。",
+      "significance": "高性能AIチップの規制対象先への流れが、政策と実際の購入記録の差として再び問題になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/carlquintanilla/status/2120513276320637263",
+          "label": "Carl Quintanilla",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Runway、応答するリアルタイム映像の試作を紹介",
+      "summary": "Runwayは、Labsのデザイナー兼プロトタイパーRyan Stephen氏が、利用者に応答するリアルタイム映像が学習、制作、共同作業をどう変え得るかを探る社内視点を公開した。一般提供の開始とは書かれていない。",
+      "significance": "生成して書き出す動画から、対話しながら変わる映像へ研究が向いていることを示す。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/runwayml/status/2120199384709353583",
+          "label": "Runway",
+          "posted_at": "2026-11-10"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索は3回、3分野群を各10件のTopで取得（11月10〜11日対象）。12候補から前日と同一の長寿AI投稿1件を除き11件。12原投稿の発信元・本文・日付を照合し、省略本文の未確認部分は要約へ補いません。中国主要モデルの一次発表、長寿の新規情報、バイオ試験は今回の掲載にありません。報道・当事者の自己報告と独立実証は区別しています。",
+  "generated_at": "2026-11-11T22:59:48.418029+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "9a87396d-ceb6-4c5f-80e9-77562819d3c2",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
