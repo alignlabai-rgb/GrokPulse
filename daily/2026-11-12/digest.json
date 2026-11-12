@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-12",
+  "overview": "OpenAIの思考過程監視研究、NVIDIAチップの対中供給を巡る報道、Runwayのロボット制御モデル、実機iPhoneを操作するエージェントなど12件を整理しました。研究発表・作例・第三者の報道を区別し、前日と同じNebius投稿は除いています。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "OpenAI、AIの「考える過程」をどこまで監視できるか研究を公開",
+      "summary": "11月11日、OpenAIのJeffrey Wang氏は、AIが回答までに示す思考過程（CoT）の監視に関する研究を紹介した。学習の段階に応じて、思考過程を使わずに解ける能力や、思考過程を制御できる度合いがどう変わるかを調べたという。",
+      "significance": "AIが示す説明を安全性の監視に使えるかを検討する研究。省略された投稿本文だけで結果の詳細までは判断できない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/jeffreygwang/status/2120581630196879460",
+          "label": "Jeffrey Wang",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "OpenAIの国家安保担当がなりすまし通話に応じたとThe Intercept記者が報道",
+      "summary": "The InterceptのSam Biddle氏は、OpenAIの国家安全保障担当者がウクライナ情報機関との通話だと思い込まされたが、相手はロシアのいたずら二人組で、通話がオンライン公開されたと記事付きで伝えた。会社側の一次発表ではない。",
+      "significance": "企業の窓口でも、相手の身元をどう確認するかが情報管理の課題になる。記事内容は記者の報告として紹介する。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/samfbiddle/status/2120667078810308636",
+          "label": "Sam Biddle",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Anthropicの研究開発が最大3倍速との投稿、METR監査を根拠に紹介",
+      "summary": "投稿者Ripu氏は、METRによる11週間の監査でAnthropicの研究開発が最大3倍速くなり、加速の約80%を社内AIが担ったと紹介した。数値は同氏の投稿によるもので、METR自身の発表や計測条件は今回の取得資料では確認していない。",
+      "significance": "AIがAI開発をどれだけ速めるかという話題。自己改善の独立実証とみなすには、元の測定方法を確認する必要がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Ripuhiring/status/2120523568794701856",
+          "label": "Ripu",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Dan Fein氏、Fable 5.2で作った「Claudeを試す仮想空間」を紹介",
+      "summary": "11月11日、Dan Fein氏は、Fable 5.2で作ったClaudeの体験デモをリンク付きで公開した。仮想空間を歩き、置かれたコンピュータの前に座るとClaudeを試せるという趣向。モデルの新発売ではなく、制作者による作例の紹介。",
+      "significance": "AIで作る成果物を、文章や静止画から、利用者が動かして体験する製品デモへ広げる例になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/dfeinition/status/2120330644261589051",
+          "label": "Dan Fein",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "RainFocusが会議運営向けClaudeコネクタを始めたと報道",
+      "summary": "Murtuza J Merchant氏は、RainFocusのコネクタによりAnthropicのClaudeが参加者照会、部屋の収容人数、ブースのライブ追跡を、スプレッドシートの書き出しなしで行えるとFathom記事付きで伝えた。",
+      "significance": "カンファレンス運営の定型照会を、既存のClaudeから直接叩く業務連携の一例である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/murtuza_merc/status/2120788939892043961",
+          "label": "Murtuza J Merchant",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Niels氏、クラウドの実機iPhoneをAIエージェントで操作するデモを紹介",
+      "summary": "11月12日、Niels Schmidt氏はMobileRunを案内し、クラウド上の実機iPhoneをAIエージェントに渡してアプリ操作や作業を行わせるデモを紹介した。接続は約30秒とする投稿者の説明で、独立した所要時間の測定ではない。",
+      "significance": "ブラウザ自動化ではなく、モバイル実機をエージェントの実行環境にする製品デモである。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/nielsmdt99/status/2120865389051826670",
+          "label": "Niels Schmidt",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "中国向けAIチップ迂回供給の取り締まりで米政権内に対立、Axios報道",
+      "summary": "Axiosは、トランプ大統領がNVIDIA先端AIチップの中国への迂回を疑う企業への取り締まりを木曜日に承認した一方、商務長官Howard Lutnick氏が繰り返し妨げたとスクープした。規制の施行状況自体は投稿にない。",
+      "significance": "AIチップの輸出対策が実際にどう運用されるかは、政権内の調整にも左右されるとする報道。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/axios/status/2120623772612911161",
+          "label": "Axios",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "中国AI企業がNVIDIAの計算資源確保を急ぐ、ロイター報道",
+      "summary": "ロイターは12日、スパイ疑惑を背景に米国の規制強化が警戒されるなか、中国のAI企業がNVIDIAの先端チップ容量の確保を急いでいると伝えた。新しい輸出規則の確定は、この投稿では述べていない。",
+      "significance": "供給不安が、中国側の計算資源の前倒し確保として既に動いている可能性を示す。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Reuters/status/2120756000860823865",
+          "label": "Reuters",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Runwayがロボット制御モデルPraxis-1をApache 2.0で一般公開",
+      "summary": "Runwayは11日、動画の事前学習を実ロボットの制御に転用する世界行動モデルPraxis-1を全員に公開したと発表した。重みはApache 2.0で、自前ハードウェアでの実行と微調整に使えるとしている。実験APIではなく配布開始の告知である。",
+      "significance": "動画生成の事前学習が、クローズドAPIではなくオープン重みのロボット制御として出た。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/runwayml/status/2120533081182577116",
+          "label": "Runway",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "ロボットが限界を知り、助けを求めて学ぶ制御手法EqCを研究者が紹介",
+      "summary": "11月12日、Runhan Huang氏は「Equilibrium Energy Control（EqC）」を紹介した。ロボットの制御モデルが自分の能力の限界を把握し、エージェントに助けを求め、その介入を次の自律動作につなげるという研究の方向性を説明している。",
+      "significance": "失敗しそうな時に止まって支援を求める設計に注目。投稿本文が省略されているため、成功率や比較数値は掲載していない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/RunhanH/status/2120711971469131909",
+          "label": "Runhan Huang",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "被写体を追いかけて撮るカメラロボットBeni、第三者が映像を紹介",
+      "summary": "WallStreetBotsは、被写体を追い複数アングルの4Kを撮るAIカメラロボットBeniを動画付きで紹介した。カメラマンや三脚が不要だとしている。メーカー公式の発売告知ではなく、第三者の製品紹介である。",
+      "significance": "一人での撮影を支援する機材の候補。追尾精度や画質、撮影スタッフを代替できる範囲は、この紹介だけでは未確認。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/WallStreetB0Ts/status/2120824913397264703",
+          "label": "WallStreetBots",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "06-longevity",
+      "headline": "長寿番組がラパマイシンのヒト寿命証拠は初期段階と解説",
+      "summary": "Longevity Science Podcastは、ラパマイシンのmTOR作用が老化研究で注目される一方、動物実験の有望さはヒトの長寿の証明ではなく、ヒトの証拠はまだ初期だと動画で述べた。新しい臨床試験の結果発表ではない。",
+      "significance": "人気の老化薬候補について、動物データとヒト証拠の距離を短く注意している。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/longevityscipod/status/2120427178210799886",
+          "label": "Longevity Science Podcast",
+          "posted_at": "2026-11-11"
+        }
+      ]
+    }
+  ],
+  "collection_note": "11月11〜12日を対象にX検索を3分野群で各1回、Top各10件。13候補から前日と同じNebius投稿を除き12件。13原投稿の発信元・本文・日付を照合。省略本文にしかない研究数値は掲載せず、第三者の数値は帰属を明記しました。中国製基盤モデルの新発表、バイオ試験、公式の新規動画モデルは未収録。投稿内容の照合は独立した真偽実証ではありません。",
+  "generated_at": "2026-11-12T23:03:25.623845+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "36b9562a-a161-4a77-94fd-d2114ae89504",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
