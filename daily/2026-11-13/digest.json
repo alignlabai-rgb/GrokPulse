@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-13",
+  "overview": "11月12〜13日の検索では、NVIDIAのCEO交代発表と、規制対象チップを使う中国の計算案件をめぐるReuters報道が中心だった。Anthropic関連は会議機能のベータ伝聞と凍結提訴の投稿、動画ではRunwayのSeedance 2.5 FlashとLeonardo上のKling 4.0が公式追加された。",
+  "items": [
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIAがCEO交代を発表、Jensen Huang氏の退任をReutersが報道",
+      "summary": "NVIDIA NewsroomはCEO交代を発表し、リリースを案内した。ReutersはJensen Huang氏が退任し、同氏が築いたAI半導体企業の先行きが不透明になるとしている。二つの投稿本文に後任名はない。交代は発表済みで、移行条件の詳細は投稿内にない。",
+      "significance": "AI計算資源の最大手で経営トップが替わるため、供給と輸出規制への次の姿勢が焦点になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/nvidianewsroom/status/2120876571829662014",
+          "label": "NVIDIA Newsroom",
+          "posted_at": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/Reuters/status/2120898160176345362",
+          "label": "Reuters",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Reuters、規制下NVIDIAチップの中国計算案件は30億ドル超と報道",
+      "summary": "Reutersは独占として、NVIDIAが米輸出規制で中国のAIデータセンター市場から実質的に閉め出されたと述べる一方、規制対象プロセッサを前提にした中国の計算プロジェクトを30億ドル超確認したと報じた。個別案件名やチップ型番はこの投稿にない。",
+      "significance": "規制後も進行中の中国側計算基盤が、制限下のNVIDIAチップに依存する規模が数字で示された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Reuters/status/2121172668313485774",
+          "label": "Reuters",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Reuters、中国AI企業がNVIDIAチップ確保を急いでいると報道",
+      "summary": "Reutersは独占として、スパイ疑惑が対米規制の強化懸念を強めるなか、中国のAI企業がNVIDIAチップ容量の確保を急いでいると報じた。投稿本文に対象企業名、確保量、契約時期の内訳はない。確保の動きは報道段階である。",
+      "significance": "短期の計算容量の争奪が、中国AI開発の当面の制約とコストに響き得る。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Reuters/status/2120756000860823865",
+          "label": "Reuters",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "AnthropicのClaude Meetingsベータをunusual_whalesが伝えた",
+      "summary": "unusual_whalesは、Anthropicがビデオ会議へClaudeを入れるClaude Meetingsをベータ公開したと投稿した。議事録、担当者と期日付きのアクション項目、チャットへの回答、会議中の文書作成ができるとしている。Anthropic公式の投稿はこの検索結果にない。",
+      "significance": "会議そのものをモデルの作業場にすると、議事の記録とタスク化の手順が変わる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/unusual_whales/status/2120985988650369393",
+          "label": "unusual_whales",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "市民団体などがAnthropicやOpenAIらに高度AIの凍結を求め提訴",
+      "summary": "@ir_replaceable_はHeat Initiative、Public Citizen、secureainowとともに、Anthropic、OpenAI、Google、Meta、SpaceXを提訴したと投稿した。制御を外れる、または生物兵器やサイバー攻撃を可能にする高度AIの即時凍結を求める内容で、裁判所の判断は示されていない。",
+      "significance": "主要開発企業の開発・公開のペースが、司法手続き上の争点として持ち込まれた。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/ir_replaceable_/status/2120898088373981626",
+          "label": "Irreplaceable",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Quarkslabのエージェント脆弱性調査ワークフローを0xor0neが共有",
+      "summary": "@0xor0neがQuarkslabのブログを共有し、AIエージェントで脆弱性調査の作業手順を組み、遠隔コード実行までつなぐ試みを紹介した。研究・実験のワークフローであり、一般向け製品の発売告知ではない。手順の中身は投稿本文にはない。",
+      "significance": "調査の自動化が進むと、防御側はエージェントの権限分離と検証を先に置く必要が出る。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/0xor0ne/status/2120910592642789829",
+          "label": "0xor0ne",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "M365障害をエージェント起因とみる見方、公式は原因を未記載",
+      "summary": "@AuroraIntelは障害について、AIエージェントの作業が問題を起こし、技術者が影響を追っているように見えると推測した。Microsoft 365 Statusは原因をエージェントとは書かず、段階的復旧中、容量は基準未回復、遅延メール保護のためタイムアウトを48時間へ延長、案件MO1550821とした。",
+      "significance": "原因は未確認のまま、メール遅延を受け付ける時間窓が48時間に広がっている。",
+      "status": "rumor",
+      "sources": [
+        {
+          "url": "https://x.com/AuroraIntel/status/2121195315458109570",
+          "label": "Aurora Intel",
+          "posted_at": "2026-11-13"
+        },
+        {
+          "url": "https://x.com/MSFT365Status/status/2121188436769956078",
+          "label": "Microsoft 365 Status",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "Asimovが人型ロボット382日目のロボット視点映像を公開",
+      "summary": "Menlo Research系のAsimovは、オープンソース人型を公開開発する382日目として、人とAIエージェントの双方がロボットの視界を見る映像を投稿した。継続中の開発更新であり、一般販売の開始や完成仕様の発表ではない。",
+      "significance": "人型の視覚がエージェントの入力になる段階で、物理作業の確認と自律化の接点が増える。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/asimovinc/status/2121094797989712296",
+          "label": "Asimov",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "RunwayがSeedance 2.5 Flashの動画生成を提供開始",
+      "summary": "Runway公式はSeedance 2.5 Flashを同プラットフォームで利用可能にしたと告知した。動画をより速く、より低いコストで生成できるとしている。速度倍率、料金、解像度の数値はこの投稿にない。提供は開始済みである。",
+      "significance": "同じ系のモデルを短時間・低コストで試せ、制作時の反復を増やしやすい。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/runwayml/status/2121051193921118712",
+          "label": "Runway",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Leonardo.AiがKling 4.0の長回し動画生成を提供",
+      "summary": "Leonardo.Ai公式はKling 4.0をLeo上で使えると告知した。約30秒・ワンテイクで、長いカメラ移動、演技、音声と台詞をカットせず載せられるとしている。解像度や料金の数値は投稿にない。提供は開始済みである。",
+      "significance": "短いカットのつなぎから、ワンシーンを通しで作る動画工程に寄る。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/LeonardoAi/status/2121196460171469187",
+          "label": "Leonardo.Ai",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "第三者投稿、Anthropicが1人運営のバイオ企業を買収したと再掲",
+      "summary": "@AlshiceeはDAO Labsの分析を引き、AnthropicがClaude中心の1人バイオを買収し、Cody Tranbarger氏が外部11実験室を調整してMithril Medicineを運営した例だと述べた。引用元は11月10日の投稿で、Anthropic公式の買収発表はこの検索にない。",
+      "significance": "確認が取れれば、少人数と外部ラボをAIで束ねる研究運営が買収対象になる事例になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Alshicee/status/2120717200541556947",
+          "label": "Percee",
+          "posted_at": "2026-11-12"
+        }
+      ]
+    }
+  ],
+  "collection_note": "キーワード検索3本（Top、各10件、since:2026-11-12 until:2026-11-14、約24〜42時間）。06-longevityは該当なし。DeepSeek、Qwen、Kimi、GLM、OpenAI、Geminiの製品発表、AMD・核融合・電池研究も結果になかった。本文のない記事、一般解説、創作デモは除外。NVIDIA NewsroomとMicrosoft 365 Statusは結果内の引用投稿。買収と障害原因は発表元未確認。",
+  "generated_at": "2026-11-13T23:04:24.685026+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "68f88e69-5605-4928-a917-945b2d72d7ba",
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "cli_json_text"
+  }
+}
