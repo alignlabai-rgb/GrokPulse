@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-14",
+  "overview": "既出の原投稿と重なる1件を除き、11件を掲載。MathArenaでGemini 4 Carbonが首位に、Jasper Dekoninck氏が紹介／Patel氏、GoogleのTPUはNVIDIAに劣らないと比較結果を説明／Qwen系27Bモデルでロボット操作、デモを使わず学習した研究を公開",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "MathArenaでGemini 4 Carbonが首位に、Jasper Dekoninck氏が紹介",
+      "summary": "11月13日、Jasper Dekoninck氏は、数学評価MathArenaでGemini 4 CarbonがGPT-6.1 Solを抜いて首位、Fable 5.2が2位になったと投稿した。得点差や評価セットの更新内容は、この投稿本文には示されていない。",
+      "significance": "数学能力を比べる評価での順位変動を伝える発信。用途に合うかの判断には、評価条件と得点差も確認したい。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/j_dekoninck/status/2121263753006374997",
+          "label": "Jasper Dekoninck",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Patel氏、GoogleのTPUはNVIDIAに劣らないと比較結果を説明",
+      "summary": "Fireside Alphaは、SemiAnalysisのDylan Patel氏が、毎夜行う比較でGoogleのTPUはNVIDIA製品に劣らないと述べたと紹介した。別の投稿では、NVIDIAの影響力低下がAnthropicのIPOに有利との見方も伝えた。いずれも同氏の評価として読む情報。",
+      "significance": "AIの計算基盤を選ぶ際、GPU以外も比較対象になるという議論。試験条件や各社の収益数値は今回未確認。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/firesidealpha/status/2121092214680129831",
+          "label": "Fireside Alpha",
+          "posted_at": "2026-11-13"
+        },
+        {
+          "url": "https://x.com/firesidealpha/status/2121070130935570607",
+          "label": "Fireside Alpha",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Qwen系27Bモデルでロボット操作、デモを使わず学習した研究を公開",
+      "summary": "11月13日、Jiaming Tang氏は、Qwen系の270億パラメータモデルを、実演データなしでシミュレーション内の自己試行から訓練し、ロボットアームを動かしたと紹介した。RTX 5090上で毎秒220トークン超とする数値は本人の報告。実機の成功率は省略された本文では確認できない。",
+      "significance": "公開モデルをロボット制御に使い、学習時の実演データを減らす方向の研究例。速度は独立測定ではない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/jmtang42/status/2121303649976455502",
+          "label": "Jiaming Tang",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "TechCrunch、中国の最先端AIは禁輸NVIDIAチップで学習と報道",
+      "summary": "TechCrunchは11月13日、新調査として中国の最も進んだAIモデルが輸出禁止のNVIDIA製チップで訓練されたと報じた。投稿本文にモデル名、チップ型番、学習規模はない。",
+      "significance": "輸出規制下でも先端学習がNVIDIA製チップに依存している、とする第三者報道である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/TechCrunch/status/2121312917450523100",
+          "label": "TechCrunch",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "FBIサイバー部門、AIエージェント基盤ARTEXの攻撃悪用に警告",
+      "summary": "FBI Cyber Branchは、LLMを使うオープンソースのエージェント基盤ARTEXが、サイバー侵入の複数工程を自動化する目的で悪用されていると警告した。少なくとも2026年8月以降に使われたとする説明で、具体的な標的や侵害指標は今回の省略本文では確認できない。",
+      "significance": "エージェントの利用では、実行権限とアクセス範囲を明確にする必要性を示す防御側への注意喚起。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/FBICyberBranch/status/2121317398305186287",
+          "label": "FBI Cyber Branch",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Tripoが3D工程を任せるAgentic Canvasを正式公開",
+      "summary": "Tripo公式はAgentic Canvasの正式公開を告知した。要件を書くとエージェントが計画し、ツールを接続して3D工程を実行し、制作向けアセットを作る。再利用パイプラインと複数アセットの一括処理を掲げる。実験機能ではなく公開段階との告知。",
+      "significance": "3D制作の段取り自体をエージェントに渡す製品が、利用可能な状態になった。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/tripoai/status/2121256785369571547",
+          "label": "Tripo",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "AI企業が顧客へ資金を出す「循環取引」をBull Theoryが整理",
+      "summary": "Bull Theoryは、IMFがAI関連の循環的取引1兆4000億ドルを問題視したとする解説を投稿した。大手テック企業が顧客へ資金を提供し、その顧客がクラウドや半導体を買う構図を紹介している。金額の集計方法とIMF原資料は今回未確認。",
+      "significance": "AI需要の規模を見る際、売上だけでなく、購入資金を誰が出しているかも検討点になるという第三者の分析。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/BullTheoryio/status/2121229491326664766",
+          "label": "Bull Theory",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIA、SGLangとMilesとの5世代にわたる協業を紹介",
+      "summary": "NVIDIA AI公式は、SGLangプロジェクトとMilesコミュニティとの協業を投稿した。AmpereからVera Rubinまで5世代、2年以上の共同開発、100件超のモデル当日対応、10件超の開発者イベントだとする。新しいチップの発売発表ではない。",
+      "significance": "オープンな推論基盤との継続協業が、モデル立ち上げ速度の根拠として示された。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/NVIDIAAI/status/2121288164530897240",
+          "label": "NVIDIA AI",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Huang氏がAIを「超知能」と呼ぶ考えを説明、Bloombergが紹介",
+      "summary": "Bloombergは、Jensen Huang氏が「超知能」という呼称を擁護する発言を紹介した。「人工知能」という名前自体に疑問を示し、車を「偽物の馬」とは呼ばないと例えたという。名称を巡る見解で、モデルの性能や製品発売の発表ではない。",
+      "significance": "AIをどう名付け、社会へ説明するかという議論。強い呼称だけで実際の能力や安全性が示されるわけではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2121297337142165736",
+          "label": "Bloomberg",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "水陸両用ロボットC-Rayの映像をMassimo氏が紹介",
+      "summary": "Massimo氏は11月13日、水陸両用ロボット「C-Ray」の映像を共有した。静かに動き、電力消費を抑え、目立ちにくくする偵察向け設計だと説明している。開発元による発売告知や、消費電力などの測定結果ではない。",
+      "significance": "低電力の水陸両用偵察ロボットの映像例が、第三者経由で追加された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Rainmaker1973/status/2121269858671243720",
+          "label": "Massimo",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "変形した物体も追跡するTrack Any State、Cornellの研究を紹介",
+      "summary": "Ilir Aliu氏は、Cornellの研究者による「Track Any State」を紹介した。リンゴが切られるなど、形や状態が変わっても対象を追い続けることを目指す視覚研究だという。コードとデータセットへの案内はあるが、発表時期や性能比較の詳細は省略本文では確認できない。",
+      "significance": "ロボットが扱った物の形が変わっても同じ対象だと認識するための研究例。新製品の発売ではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/IlirAliu_/status/2121318418880016740",
+          "label": "Ilir Aliu",
+          "posted_at": "2026-11-13"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索を3分野群で各1回、Top各10件（11月13日UTC以降中心）。12候補の13原投稿を照合し、前日と同じLeonardo投稿は自動除外します。長寿・バイオの研究情報は掲載なし。省略本文にない成功率や売上内訳は補わず、第三者の比較数値は帰属を明記。出所の照合は独立した真偽・性能の実証ではありません。",
+  "generated_at": "2026-11-14T23:00:34.328273+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "0681c06e-217d-44e1-815e-b6c9258ff75e",
+    "deduplication": {
+      "previous_verified_dates": [
+        "2026-11-13",
+        "2026-11-12"
+      ],
+      "rule": "All source post IDs already present in the last two calendar dates of Pages-verified editions",
+      "removed_items": [
+        {
+          "category": "08-generative-ai",
+          "headline": "Leonardo.AiがKling 4.0の30秒ワンカット生成に対応",
+          "summary": "Leonardo.Ai公式は、Kling 4.0をLeoで使えると告知した。30秒・ワンカットで、長いカメラ移動、動作、音、会話をカットなしで載せる使い方を示している。新モデルの初公開日はこの投稿だけでは分からない。",
+          "significance": "動画生成を短クリップでなく、音付きの連続ショットとして組む提供が公式に示された。",
+          "status": "official",
+          "sources": [
+            {
+              "url": "https://x.com/LeonardoAi/status/2121196460171469187",
+              "label": "Leonardo.Ai",
+              "posted_at": "2026-11-13"
+            }
+          ]
+        }
+      ],
+      "retained_items": 11,
+      "offline_only": true
+    },
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
