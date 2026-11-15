@@ -1,0 +1,198 @@
+{
+  "date": "2026-11-15",
+  "overview": "11月14〜15日（UTC）のX上位では、新モデルの一般公開よりAnthropicの効率曲線と上場、OpenAI Daybreak、DeepSeek API、Nvidia首脳を巡る論評、Blackwell学習疑惑、TSMCの出資計画が目立つ。長寿とバイオは論文紹介、生成動画の新発表は薄かった。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "TestingCatalogが14日、各社のAI製品と上場動向を一つの要約に列挙",
+      "summary": "第三者ブリーフは、米Pro向けChatGPT Wallet、Antigravityの動的ワークフロー、GeminiのWallet連携、Claude Duetの招待拡大、Anthropicの18日価格決定・19日頃のANT上場（最大644億ドル）、DeepSeek APIの検索・音声・OCR/ASR/TTS、Sesameの有料化に加え、Grok Botの会議参加とManusのSide chatを一つの投稿にまとめた。",
+      "significance": "提供範囲や上場日程を、各社の一次投稿ではなく要約アカウント経由でまとめて追える。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2121534991725113363",
+          "label": "TestingCatalog",
+          "posted_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "OpenAIのTibo氏がDaybreakの改善点について利用者の意見を募集",
+      "summary": "Codex担当のTibo氏は15日、サイバーチームとしてDaybreakのモデル、Codexプラグイン、青/赤チームのアクセス、文書、レッドチーミングとDefense Factoryについて改善点を尋ねた。新しい数値付きリリースではなく、既存機能への公式な意見募集である。",
+      "significance": "防御向け開発者は、アクセス範囲やプラグインの優先度が社内で検討中だと分かる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2121845965997101118",
+          "label": "Tibo",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "元関係者の投稿を受け、Anthropicの事前学習効率曲線が再解説された",
+      "summary": "14日の投稿は、IPOロードショー資料として共有された事前学習の計算効率グラフを再掲し、対数軸でも超指数的に見えると指摘した。Mythosは単発ではなく、当初より少ない計算で再学習できるという読みで、投稿者はX軸の定義を自ら不明としている。",
+      "significance": "同じ能力に必要な計算が減り続けるなら、設備投資の前提と製品サイクルの見方が変わる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AISafetyMemes/status/2121432704038346925",
+          "label": "AISafetyMemes",
+          "posted_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "QuantaがAnthropic研究者による思考注入の内省実験を紹介",
+      "summary": "Quanta Magazineは14日、Anthropicの研究者が大規模言語モデルは自分の思考過程を把握しているかをthought injectionで試した、とするポッドキャストを告知した。注入された内部状態を自己報告できるかという実験で、製品の提供開始ではない。",
+      "significance": "モデルが内部状態をどこまで言語化できるかは、監査や信頼性評価の前提に関わる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/QuantaMagazine/status/2121722343684792435",
+          "label": "Quanta Magazine",
+          "posted_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "第三者アカウントがOpenAIのロボットによる自社製造計画を投稿",
+      "summary": "Space and Technologyは15日、OpenAIがAIロボットで自社データセンターを建設し、チップ、タービン、太陽光パネルを製造する計画だと画像付きで述べた。OpenAI公式の発表ではなく、計画として伝えられた第三者情報である。",
+      "significance": "実現すれば計算インフラの自社製造につながるが、現時点では未確認の計画報道である。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/spaceandtech_/status/2121901727242952714",
+          "label": "Space and Technology",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "BloombergとZeroHedgeがHuang氏とNvidiaの行方をそれぞれ論じた",
+      "summary": "Bloombergは15日、シリコンバレーの中心人物はもういないとしてNvidiaとAI産業の次を問う記事を共有した。ZeroHedgeは同日、Sacks氏がAnthropic側の安全重視派はモデルとチップの政府統制を望むとし、Huang氏の退場をオープンソース対立と結ぶ記事を紹介した。いずれも公式声明ではない。",
+      "significance": "チップ供給とオープン／クローズドの規制論が、経営トップの処遇とセットで語られている。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2121960170443997196",
+          "label": "Bloomberg",
+          "posted_at": "2026-11-15"
+        },
+        {
+          "url": "https://x.com/zerohedge/status/2121755174871900235",
+          "label": "zerohedge",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "TechmemeがTSMCによる5億ドルのチップ新興投資計画を伝えた",
+      "summary": "Techmemeは15日、日経報道として、TSMCがチップのスタートアップやサプライヤーなど上流パートナーへ出資する5億ドルの新ファンドを計画し、次のNvidiaも支えたいと説明したと投稿した。計画の段階で、運用開始の発表ではない。",
+      "significance": "先端半導体の周辺産業へ資金が向かえば、装置や材料のスタートアップに出資機会が広がる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Techmeme/status/2121857390870176121",
+          "label": "Techmeme",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Tom's HardwareがDeepSeekとKimiのBlackwell学習疑惑を紹介",
+      "summary": "14日、Tom's Hardwareは、研究者がGPUのフィンガープリントで重みを統計分析し、DeepSeekやKimiなど中国のモデルが輸出規制対象のNvidia Blackwellで学習されたと主張している、と報じた。各社やNvidiaが確認した投稿ではない。",
+      "significance": "規制対象GPUの利用が重みから推定できるなら、輸出管理の実効性を点検する材料になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/tomshardware/status/2121617279708455061",
+          "label": "Tom's Hardware",
+          "posted_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "記者がマレーシアのNvidiaサーバーと中国顧客計画を指摘",
+      "summary": "Murtuza J Merchant氏は15日、数億ドル規模のNvidiaサーバーを置いたマレーシアのデータセンターが中国の巨大テックへサービスする計画で、運営者はLutnick氏の旧会社の顧客であり、同氏が現在チップ規則を書いているとするFathom記事を共有した。",
+      "significance": "第三国のデータセンター経由で計算資源が供与される経路が、輸出規制の点検対象になり得る。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/murtuza_merc/status/2121913031231967453",
+          "label": "Murtuza J Merchant",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "インド系アカウントが半導体設計人材30万人・世界の約20%と投稿",
+      "summary": "Indian Infra Reportは14日、インドにチップ設計技術者が30万人おり、世界の半導体設計人材150万人の約20%だと画像付きで述べた。政府や業界団体がこの窓で出した一次統計ではなく、アカウントによる数値の共有である。",
+      "significance": "設計人材の所在は、AIチップの開発拠点を見るときの基礎情報になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Indianinfoguide/status/2121530568395440539",
+          "label": "Indian Infra Report",
+          "posted_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "category": "06-longevity",
+      "headline": "Aging Science Newsが社会・集団・生物の老化を統合する論文を紹介",
+      "summary": "14日、老化分野のアカウントが、社会・人口集団・生物学の老化研究を健康な加齢へ束ねるConvergent Geroscience論文（Aging Cell）を共有した。新薬の承認やヒト試験の結果ではなく、研究の枠組みを示す論文紹介である。",
+      "significance": "寿命や健康加齢を、分子だけでなく集団と社会の要因と一緒に整理する動きが共有された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/AgingBiology/status/2121581841668878789",
+          "label": "Aging Science News",
+          "posted_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "投稿者が、AIでファージ療法を耐性菌向けに改良する論文を紹介",
+      "summary": "15日、Danik氏はScienceの論文を共有し、AIがファージ療法を多剤耐性菌向けに高度化しており、古い治療法に新しい設計手段が加わるとしている。臨床試験の開始告知ではなく、研究論文の紹介である。",
+      "significance": "耐性菌に効くファージの選定を計算で絞れれば、実験の試行を減らせる可能性がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Dani21422k/status/2121959450269347936",
+          "label": "Danik12",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    }
+  ],
+  "collection_note": "キーワード検索3本のみ（Top各10、since 2026-11-14 until 2026-11-16）。公式の新モデル一般公開は少なく、01は日次要約・効率曲線・内省、03はDaybreakの意見募集、02はBlackwell疑惑、04はHuang論評・TSMC・マレーシアDC・インド人材、05はロボット製造の第三者投稿、06と07は論文紹介。08はKling 4.0の作品投稿のみでSora・Veo・Runwayの新発表は無く、核融合・電池・ロボット試作の一次情報もほぼ無し。",
+  "generated_at": "2026-11-15T22:59:54.005756+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "e781df48-7e7b-434d-bbbc-7f3f109d3682",
+    "deduplication": {
+      "previous_verified_dates": [
+        "2026-11-14",
+        "2026-11-13"
+      ],
+      "rule": "All source post IDs already present in the last two calendar dates of Pages-verified editions",
+      "removed_items": [],
+      "retained_items": 12,
+      "offline_only": true
+    },
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "cli_json_text"
+  }
+}
