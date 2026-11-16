@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-16",
+  "overview": "Qwen4-Maxの発表、OpenRouterでの提供、ArenaのWeb開発評価を中心に10件を整理しました。AIチップ輸出規制の報道、設備投資の見通し、治験運営の試算と細胞老化の総説も紹介。原投稿を確認できなかった情報は掲載から外しています。",
+  "items": [
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "AlibabaがQwen4-Maxを発表、視覚対応と100万トークンの文脈長",
+      "summary": "11月16日、Qwen公式は新しいMoE構造の「Qwen4-Max」を発表した。視覚入力への対応と100万トークンの文脈長を掲げ、前モデルQwen3.8-Maxを最大約50%少ないトークンで上回ると説明している。比較は提供元の主張で、独立した検証結果ではない。",
+      "significance": "画像と長文を一緒に扱う仕事で比較する候補になる。料金や公開範囲の詳細は提供元の案内を確認する必要がある。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+          "label": "Qwen",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Unsloth、小型Qwen4の予告と27Bモデルの16GB動作見込みを投稿",
+      "summary": "Unslothは、より小型のQwen4モデルが近く公開されると伝え、Qwen4-27Bは16GB RAMの環境で動くと投稿した。公開時期とメモリ要件はUnsloth側の説明で、今回確認できたQwen公式の保存本文や独立した動作試験では裏付けていない。",
+      "significance": "ローカル実行を見込む場合、メモリ要件は公式仕様の公開まで確定情報として扱えない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/UnslothAI/status/2122156142860386600",
+          "label": "Unsloth AI",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "OpenRouterがQwen4-Maxの提供を開始、開発・事務・長時間エージェント向け",
+      "summary": "11月16日、OpenRouterはQwen4系列初のモデル「Qwen4 Max」を利用可能にしたと告知した。コーディング、オフィス作業、長い時間をかけるエージェント用途を挙げている。Vercel側の投稿は原投稿の応答を保存できなかったため、対応内容や出力長・割引率は掲載しない。",
+      "significance": "OpenRouterを使っている開発者には、既存の接続先から新モデルを試す選択肢が増える。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/OpenRouter/status/2122158038631281136",
+          "label": "OpenRouter",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "Arena、Qwen4-MaxをWeb開発評価で暫定6位・1750点と掲載",
+      "summary": "ArenaはQwen4-MaxがCode ArenaのWebDevで暫定1750点、6位になったと投稿した。Qwen3.8-Max（0902）の1676点から74点上昇したという。HTMLは1748点で6位、Brand & Marketingは1705点で8位とも記載している。順位と得点は同評価での結果。",
+      "significance": "モデル公開直後の相対評価の手掛かりになるが、全用途の優劣を示すものではなく、評価条件と得点差も見る必要がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/arena/status/2122153582384583156",
+          "label": "Arena.ai",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "WSJ発で米政権がNvidiaなど5社をAI国家代表に指名へ",
+      "summary": "CointelegraphはWSJを引き、トランプ政権がNvidia、Amazon、Microsoft、OpenAI、AnthropicをAIのnational championsに含め、米企業の海外ビジネスを後押しする方針だと伝えた。指名は予定段階で、各社自身の発表は今回の検索結果に含まれない。",
+      "significance": "輸出や海外展開で、指定企業とそれ以外の扱いが分かれる可能性がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Cointelegraph/status/2122184810672087464",
+          "label": "Cointelegraph",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "FTがAI半導体の輸出規則を強める議会の動きを報道",
+      "summary": "Financial Timesは、Nvidiaを巡るスキャンダルを受け、米議会がAI半導体の輸出規則を厳しくする方向へ動いていると15日に投稿した。対象範囲や施行日は投稿本文には書かれていない。",
+      "significance": "中国向け計算資源の調達条件が、立法によってさらに狭まる可能性がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/FT/status/2121925257162297677",
+          "label": "Financial Times",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "SemiAnalysisが2028年AI加速チップ支出見通しを28%引き下げ",
+      "summary": "456Xは、SemiAnalysisが2028年のAIアクセラレータ支出見通しを28%引き下げたと紹介した。主因はチップ価格の低下で、影響の中心はNVIDIA GPU、BroadcomのTPU/ASIC収入は最も持ちこたえるという整理である。販売数量そのものの崩壊が主因だとは書いていない。",
+      "significance": "設備投資の金額見通しは、台数の減少より価格下落で動くシナリオが示された。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/OptionKing666/status/2122300968222257179",
+          "label": "456X",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Bloombergがアジア半導体株安にNvidiaとAnthropic売却を併記",
+      "summary": "Bloombergは16日、アジアの半導体比率が高い株式市場が再び売られ、背景に米国市場の弱さ、Nvidiaの混乱、Anthropicの注目される株式売却に備えた持ち高調整があると投稿した。売却価格や日程は本文にない。",
+      "significance": "モデル企業の資本取引が、アジア半導体株の短期変動要因として報じられた。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/business/status/2122225664916865474",
+          "label": "Bloomberg",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "Medable CEOがエージェント型臨床開発で治験能力2倍と試算",
+      "summary": "MedableのMichelle Longmire氏は、AI創薬が進むほど治験の受け入れ能力が不足するとして、エージェント型の臨床開発による費用と時間の削減をモデル化した。その試算では治験処理能力を2倍にできると見積もっている。本人のモデルによる見積もりであり、実証試験の結果公表ではない。",
+      "significance": "創薬AIの制約が、モデル性能から治験運営の処理能力へ移る論点を示した。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/LongmireMD/status/2122138730869707049",
+          "label": "Michelle Longmire",
+          "posted_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "category": "06-longevity",
+      "headline": "Aging誌、細胞老化から精密な抗老化介入を考える総説を紹介",
+      "summary": "Aging誌は第18巻の総説「Cellular senescence: from pathogenic mechanisms to precision anti-aging interventions」を注目記事として紹介した。細胞老化の病的な仕組みと精密な介入を扱うレビューで、新薬の承認やヒトでの効果実証を伝える投稿ではない。",
+      "significance": "細胞老化研究の論点を整理する文献の入口。臨床で利用できる治療法が確立したことを意味しない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/AgingJrnl/status/2122011769749045447",
+          "label": "Aging Journal",
+          "posted_at": "2026-11-15"
+        }
+      ]
+    }
+  ],
+  "collection_note": "X検索は3分野群で各1回、Top各10件。14候補15原投稿のうち5投稿の応答を保存できず、取得済み10原投稿だけで10件を掲載。Vercelの詳細とCodex容量改善、海外拠点の規制、Axis Robotics、動画比較の各情報は未収録。HTTP404後の再取得・追加生成は行っていません。出所の照合は内容の独立実証ではありません。",
+  "generated_at": "2026-11-16T22:56:21.839745+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "9d9480de-d7ac-4444-a429-df4f6d5f1fe8",
+    "deduplication": {
+      "previous_verified_dates": [
+        "2026-11-15",
+        "2026-11-14"
+      ],
+      "rule": "All source post IDs already present in the last two calendar dates of Pages-verified editions",
+      "removed_items": [],
+      "retained_items": 10,
+      "offline_only": true
+    },
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "cli_json_text"
+  }
+}
