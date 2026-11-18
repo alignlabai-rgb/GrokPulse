@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-18",
+  "overview": "NVIDIAの売上急増と対中チップ出荷停止の報道、長時間動くAIの評価手法、Kling Image 4.0、工場の人型ロボット、血管グラフトの臨床試験など12件。企業の発表・報道・研究者の見解を分け、何が新しく何が未確認かを整理しました。",
+  "items": [
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIAが2027年度第3四半期の売上高1158億ドルを発表",
+      "summary": "NVIDIA Newsroomは2027年度第3四半期の決算を発表。売上高は1158億ドルで前年同期比103%増、うちデータセンター部門は1076億ドルで110%増だったと報告した。",
+      "significance": "AI向け計算基盤を含むデータセンター事業の売上拡大を示す、同社発表の四半期実績。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/nvidianewsroom/status/2122805252533670248",
+          "label": "NVIDIA Newsroom",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIAの黄仁勲氏退任後もAIのオープン戦略は継続、Sarah Perez氏が伝える",
+      "summary": "Sarah Perez氏は「Jensen Huang氏の退任後もNVIDIAのオープンソースAI戦略は維持されると同社が説明した」と投稿した。今回照合した原投稿は同氏による短い報告で、NVIDIA自身の退任発表や後継人事の裏付けまでは含まれない。",
+      "significance": "経営交代に関する報告として紹介。退任の経緯や時期を判断するには、会社自身の発表を確認する必要がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/SarahPerezTC/status/2122831439368441943",
+          "label": "Sarah Perez",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "Reuters、NVIDIAが対中向けの米国承認AIチップ出荷を停止と報道",
+      "summary": "Reutersは、NVIDIAが米国の承認を受けた対中国向けAIチップの出荷を停止したと報じた。照合した投稿は短い見出しで、対象の型番や停止理由は示されていない。",
+      "significance": "中国向けの承認済みGPU供給が止まると、現地の学習・推論用チップの調達計画に直結する。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Reuters/status/2122985740917203327",
+          "label": "Reuters",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "中国がAI兵器向けに高性能NVIDIAチップを求めるとの報告、Reutersが紹介",
+      "summary": "Reutersは、米国の規制下でも中国がAI兵器向けに先進的なNVIDIAチップを求めている、とする報告を紹介した。照合した投稿だけでは調達主体・数量や実際の入手状況は分からない。",
+      "significance": "民生向けAI半導体の輸出管理と、軍事転用をどこまで防げるかが供給網の焦点になる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Reuters/status/2123038694869241890",
+          "label": "Reuters",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "軍事目標を判定するAIが民間人や学校を誤認、模擬試験の研究を紹介",
+      "summary": "Clash Reportは、模擬シナリオでAIが民間人、救急車、投降する兵士、学校を軍事目標と誤認したという独立研究を紹介した。Anthropicのモデルが最も悪く、OpenAIは上位でも誤りが残ったとする。同投稿の本文は省略されており、研究原文や条件は今回確認していない。",
+      "significance": "軍事判断へのモデル利用では、平均精度だけでなく、民間人や施設の誤認がリスクになる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/clashreport/status/2122709049997209898",
+          "label": "Clash Report",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Judgment Labs、長時間動くAIエージェントを評価するAgent-as-a-Judgeを発表",
+      "summary": "Judgment Labsは、100万トークンを超える長いエージェント実行の評価手法を紹介した。自社の実行記録の20%超が100万トークンを超え、最大は10億超という。長い記録では、分割してLLMに採点させる方法よりF1（精度指標）が0.21高く、費用は62%低かったと報告した。",
+      "significance": "長時間のAI作業をどう点検するかという課題への提案。数値は開発元の比較結果で、一般的な効果の保証ではない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/JudgmentLabs/status/2122785981896212527",
+          "label": "Judgment Labs",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "大手AIラボのデータ保管基盤としてLanceDBを紹介、Tunguz氏が投稿",
+      "summary": "Tomasz Tunguz氏は、大手AIラボやAIインフラ企業に共通する要素としてLanceDBを紹介した。学習と推論のデータを保管するレイクハウスだと説明している。",
+      "significance": "AIモデルの開発・運用を支えるデータ基盤の事例。投稿には導入企業の一覧や性能比較はない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/ttunguz/status/2122761262312595945",
+          "label": "Tomasz Tunguz",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "中国の自動車部品ラインに人型ロボット15台が入ったと紹介",
+      "summary": "Ronald van Loon氏は、CyberRobooo氏の映像として、人型ロボット15台が中国の実際の自動車部品生産ラインに入ったと投稿した。稼働時間、運営企業、自律の度合いは本文に書かれていない。",
+      "significance": "製造現場で人型ロボットを使う事例として共有された映像。生産性や自律動作の範囲は、この投稿本文だけでは評価できない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Ronald_vanLoon/status/2122599872142704884",
+          "label": "Ronald van Loon",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "Kling AI、画像生成のKling Image 4.0を発表",
+      "summary": "Kling AIの公式アカウントが「Kling Image 4.0」を紹介した。投稿は映像付きの短い告知で、解像度、料金、APIや一般利用の開始条件は本文に示されていない。",
+      "significance": "Klingの画像製品の新たな告知。利用を検討する際は、提供範囲や料金の案内が追加されるかが次の確認点になる。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/Kling_ai/status/2122707362603794601",
+          "label": "Kling AI",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "Humacyte、脚の静脈採取を減らす既製の血管グラフトで10人の試験を開始",
+      "summary": "Longevity Technologyは、Humacyteが既製の血管グラフトを使う10人の臨床試験を開始したと伝えた。バイパス手術で患者の脚から静脈を採取する負担を減らすことを目指す。今回の投稿には試験結果は示されていない。",
+      "significance": "手術に使う血管を用意する方法の選択肢を探る臨床段階の動き。効果や安全性の結果は、試験開始の知らせとは別に確認が要る。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/LongevityTech/status/2122983890327351615",
+          "label": "Longevity Technology",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "AIで創薬期間はどう変わるか、LifeSciVCの見積りをWallach氏が共有",
+      "summary": "D.A. Wallach氏は、LifeSciVCの資料にある「AIが医薬品開発の期間に与え得る影響」の見積りを共有した。Daphne Koller氏の仕事を引用した図だと説明している。画像の内容や短縮幅の数値は、照合した投稿本文だけでは確認できない。",
+      "significance": "創薬AIの期待を開発期間の見積りとして議論する材料。実際に期間短縮が達成されたという結果の報告ではない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/dawallach/status/2122552846315135185",
+          "label": "D.A. Wallach",
+          "posted_at": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "category": "06-longevity",
+      "headline": "老化研究に基盤モデルとAIエージェントを、Zhavoronkov氏が見解",
+      "summary": "Alex Zhavoronkov氏は、老化の進み具合を測る「老化クロック」が終わるのではなく、基盤モデルとエージェントを使う老化研究の時代が始まるという見方を投稿し、動画へのリンクを示した。新たな実験結果の発表ではない。",
+      "significance": "老化指標とAI活用をどう組み合わせるかという研究者の見解。今回確認した範囲は原投稿の短い本文に限られる。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/biogerontology/status/2122850256274510145",
+          "label": "Alex Zhavoronkov",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    }
+  ],
+  "collection_note": "11月17〜18日を対象に3分野群を各1回検索し、12候補の12原投稿の本文・日付・出所を照合。中国主要モデルの新版などは今回の検索結果にありません。省略本文にない帰属や成果は補わず、研究の比較値は発表元の主張として紹介します。出所の照合は、報道内容や性能の独立した真偽確認ではありません。",
+  "generated_at": "2026-11-18T23:02:40.708575+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "7541fd3a-01bc-4d99-816e-858d22dc68da",
+    "deduplication": {
+      "previous_verified_dates": [
+        "2026-11-17",
+        "2026-11-16"
+      ],
+      "rule": "All source post IDs already present in the last two calendar dates of Pages-verified editions",
+      "removed_items": [],
+      "retained_items": 12,
+      "offline_only": true
+    },
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
