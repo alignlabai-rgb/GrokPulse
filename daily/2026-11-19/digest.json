@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-19",
+  "overview": "Gemini 4 Neonの提供開始、GLM・DeepSeekの国内無料枠、Flowith 3.0、MetaのAIによる誤送信報道、AIによる半導体設計、量子計算連携、老化・感覚研究、Runwayの作品公募など12件。前日と同内容のNVIDIA関連記事3件を外し、8分野を整理しました。",
+  "items": [
+    {
+      "category": "01-ai",
+      "headline": "GoogleがGemini 4 NeonをProとUltra向けに提供開始",
+      "summary": "GoogleのGemini公式アカウントは、Gemini 4 Neonを11月18日からGoogle AI ProとUltraの契約者向けに、モバイル、デスクトップ、ウェブで提供すると発表した。フロンティア級の推論と速い応答が必要な作業に向くと説明している。",
+      "significance": "有料プランの利用者は、推論を要する作業を新しいGeminiで試せる段階に入った。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/GeminiApp/status/2123168704662012079",
+          "label": "Google Gemini",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Palo Alto NetworksがApplied Computeを45億ドルで買収へ、WSJ報道",
+      "summary": "WSJ Techは、Palo Alto NetworksがAI企業Applied Computeを評価額45億ドルの全株式交換で買収することに合意したと報じた。Applied Computeは元OpenAI研究者が創業したサンフランシスコの企業だという。取引完了の知らせではなく、買収合意の報道。",
+      "significance": "セキュリティ大手が、元OpenAI勢の応用AI企業を大型の株式取引で取り込む動きである。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/WSJTech/status/2123159851912110414",
+          "label": "WSJ Tech",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "01-ai",
+      "headline": "Anthropicの安全性を批判する公開声明が出たとPolymarketが投稿",
+      "summary": "Polymarketは、科学者・法学者・技術分野のリーダーの連合が、IPOを前にAnthropicの安全性を批判する公開声明を出したと投稿した。今回確認できたのはPolymarketの短い投稿で、声明本文や署名者の一覧は照合していない。",
+      "significance": "AI企業の安全性を巡る批判の速報。声明の存在・内容や個々の批判の妥当性は、今回の原投稿照合だけでは確定しない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Polymarket/status/2123124579619267015",
+          "label": "Polymarket",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "02-chinese-ai-tech",
+      "headline": "さくらのAI推論基盤、GLMとDeepSeekを月3000回まで無料で提供と報道",
+      "summary": "ITmedia AI＋は、さくらのAI推論基盤で「GLM-5.3-Flash」と「DeepSeek-V4.1-Flash-1017」を月3000リクエストまで無料で提供すると報じた。中国系モデルを国内の推論基盤から試すための提供枠となる。",
+      "significance": "GLMとDeepSeekを試す選択肢が増える。無料枠の集計方法や利用条件の詳細は、提供元の案内で確認する必要がある。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/itm_aiplus/status/2123321700104433816",
+          "label": "ITmedia AI＋",
+          "posted_at": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "Flowith、AIとの共同制作を行うキャンバス「Flowith 3.0」を発表",
+      "summary": "Flowithは、人とAIが共同で制作するキャンバス製品「Flowith 3.0」を紹介した。チャット欄から無限キャンバスへ移した従来の仕組みを、さらに広げるという告知。照合した本文は途中で省略されており、料金・対応モデル・動画回数の条件は確認できない。",
+      "significance": "複数のAI作業を制作画面で扱う製品の更新。今回の本文から確認できる範囲に絞り、割引率やモデル提供条件は掲載しない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/flowith/status/2123406249681424705",
+          "label": "Flowith",
+          "posted_at": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "category": "03-ai-agents",
+      "headline": "MetaのAIがSignalのメッセージにアクセスしチャットを誤送信、Reuters報道",
+      "summary": "Reutersは、MetaのAIエージェントMuseが従業員の暗号化されたSignalメッセージにアクセスし、別の相手向けとみられる社内チャットを送信したと報じた。Reutersが確認した社内投稿に基づく報道で、Metaは例外的な事例だと説明したという。",
+      "significance": "エージェントにどのメッセージを読ませ、誰に送らせるかという権限設計の問題を示す事例。今回確認した範囲は報道投稿。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/Reuters/status/2123312820129591485",
+          "label": "Reuters",
+          "posted_at": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "NVIDIA、計算ジョブ管理のSlurmを拡張し量子プロセッサとの連携を発表",
+      "summary": "NVIDIA AI InfrastructureはSC26で、計算ジョブ管理のSlurmを拡張したと発表した。スーパーコンピュータ拠点で使われている作業手順に、量子プロセッサ（QPU）を組み込むための取り組みだと説明している。",
+      "significance": "既存の研究用計算環境と量子プロセッサをつなぐ動き。具体的な性能改善や導入条件は、この省略された本文だけでは確認できない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/NVIDIAAIInfra/status/2123097733573550442",
+          "label": "NVIDIA AI Infrastructure",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "04-ai-hardware",
+      "headline": "OpenAI、AMDのGPU設計指標を最大14%改善できる案をAIで発見と報告",
+      "summary": "OpenAIはAMDと協働し、AIが5カ月未満で主力GPUの設計部品（IP）のPPAを最大14%改善する案を見つけたと報告した。PPAは消費電力・処理性能・回路面積を扱う設計指標。同じ手法を独自推論チップJalapeñoにも用いたという。",
+      "significance": "長年最適化してきた半導体設計にAIを使う例。14%は発表元が示す設計指標の改善幅で、製品全体の速度向上率を示す数値ではない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/OpenAI/status/2123100386638877054",
+          "label": "OpenAI",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "05-physical-tech",
+      "headline": "American Fusion、実験装置Texatronで初のプラズマ生成を報告",
+      "summary": "American Fusionは、研究科学者Fabrice Davidが、John Brandenburgの核融合概念に基づく実験機Texatronで、チームとして初めてプラズマを生成した様子を公開した。発電の実用化ではなく、初期の実験段階である。",
+      "significance": "プラズマを生成できたという初期の実験報告。核融合による正味のエネルギー獲得や発電の実証を示す投稿ではない。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/FusionAMFN/status/2123174813648753042",
+          "label": "American Fusion",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "06-longevity",
+      "headline": "米国の基礎老化研究費は増えないとSinclair氏が指摘、NIH予算の0.8%と投稿",
+      "summary": "David Sinclair氏は、米上院の歳出委員会案について、増額対象はアルツハイマー研究で、基礎的な老化研究は増えないと指摘した。長寿研究はNIH予算の0.8%にとどまるという同氏の投稿であり、歳出案の原文や予算内訳は今回照合していない。",
+      "significance": "基礎的な老化研究への公的資金配分を巡る研究者の問題提起。成立した予算や確定した配分としては扱わない。",
+      "status": "reported",
+      "sources": [
+        {
+          "url": "https://x.com/davidasinclair/status/2122877842086056320",
+          "label": "David Sinclair",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "category": "07-biotech",
+      "headline": "清華大学、複数の感覚を調節するCRELD1を発見したと発表",
+      "summary": "清華大学は、肖佰龍教授のチームがCRISPR-Cas9を用いたスクリーニング系を作り、CRELD1が複数の感覚を担う重要な調節因子であることをNature Neuroscienceで示したと発表した。感覚と痛みの研究につながる発見だとしている。治療法の開始ではない。",
+      "significance": "感覚や痛みの分子機構を探る基礎研究。今回確認したのは大学の研究紹介で、論文全文や独立した再現検証は対象外。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/Tsinghua_Uni/status/2123371355257098729",
+          "label": "Tsinghua University",
+          "posted_at": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "category": "08-generative-ai",
+      "headline": "RunwayがAI Festival 2027の作品を募集、東京など3都市で上映予定",
+      "summary": "Runwayは、映画、デザイン、ファッション、広告、ゲームでAIを使って作られた作品を扱うAI Festival 2027の公募を開始したと告知した。ガラ上映はニューヨーク、ロサンゼルス、東京を予定し、祭典自体は2027年である。",
+      "significance": "映画・デザイン・ファッション・広告・ゲームのAI作品を発表する機会。応募条件や締切は、募集元の案内で確認する必要がある。",
+      "status": "official",
+      "sources": [
+        {
+          "url": "https://x.com/runwayml/status/2123098732770263485",
+          "label": "Runway",
+          "posted_at": "2026-11-18"
+        }
+      ]
+    }
+  ],
+  "collection_note": "11月18〜19日を対象にX検索3回。15候補の原投稿15件の出所・日付・本文を照合し、前日と同じ内容のNVIDIA関連3件を除外。12件・8分野を掲載。省略本文にない料金・モデル提供条件・設計ツール名は補わず、声明・予算批判や性能値は発信元に帰属させました。出所の照合は独立した真偽確認ではありません。",
+  "generated_at": "2026-11-19T22:56:52.306984+09:00",
+  "collector": {
+    "model": "grok-4.7-build-fast",
+    "session_id": "4bc49f72-c346-4748-acc7-9a1835d3fb16",
+    "deduplication": {
+      "previous_verified_dates": [
+        "2026-11-18",
+        "2026-11-17"
+      ],
+      "rule": "All source post IDs already present in the last two calendar dates of Pages-verified editions",
+      "removed_items": [],
+      "retained_items": 12,
+      "offline_only": true
+    },
+    "receipt": "receipt.json",
+    "source_provenance_verified": true,
+    "output_decoder": "reviewed_exact_narration_prefix"
+  }
+}
